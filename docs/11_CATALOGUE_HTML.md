@@ -11,6 +11,6 @@ python arketype.py build-html
 python catalogue/creer_pdf.py
 ```
 
-The second command requires `reportlab` and `cairosvg`. The printable PDF is included in the repository as `catalogue/Arketype_Visual_Catalogue_v1.2.2.pdf`.
+The second command requires `reportlab` and `cairosvg`. The printable PDF is included in the repository as `catalogue/Arketype_Visual_Catalogue_v1.4.0.pdf`.
 
 Reader illustrations contain no actual employee data, testimony, system secrets or operational approvals.

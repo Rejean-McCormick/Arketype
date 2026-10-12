@@ -1,10 +1,10 @@
 {
-  "library_version": "1.2.2",
+  "library_version": "1.4.0",
   "language": "en",
-  "tests_passed": 36,
-  "tests_run": 36,
+  "tests_run": 51,
+  "tests_passed": 51,
   "passed": true,
   "local_kit_template_checks": 19,
-  "local_kit_template_builds": 19,
-  "status": "local_verification"
+  "gui_virtual_display_smoke": true,
+  "mode": "local_nonpublishing"
 }

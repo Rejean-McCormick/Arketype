@@ -1,18 +1,27 @@
-# Arketype 1.3.0 — Unified desktop launcher verification
+# Arketype 1.4.0 — v10 ecosystem compatibility release report
 
-## Scope
+## What changed in the uploaded source archive
 
-The repository contains **19 neutral Kristal templates** with distinct `state_ref` identities, **14 design-only compositions**, **5 situated use-case profiles**, **10 visual patterns**, and **24 situated diagram records**. The former creation-only Tkinter window has been replaced by a desktop launcher with Home, Catalogue, Create Kristal and Developer Ops. The provided logo and brand color `#1E6864` appear in the UIs, not the README.
+- Added **Developer Ops > Ecosystem Compatibility** with explicitly selected paths for local Framework, Authoring Kit, Kristal workspace, Manager and Bootstrap checkouts. All checks are read-only; no external command is executed by the inspector.
+- Added allowlisted `compat` command, static file inspections, byte hashes, and clear `not_configured`, `review_required`, `declared_version_matches`, `metadata_only` and `identical_bytes` statuses.
+- Added ecosystem boundaries and usage documentation in English, including GitHub Wiki and README; retained supplied logo exclusively in HTML and desktop interfaces and brand color `#1E6864`.
+- Preserved 19 empty workspaces, 14 design-only assemblies, 5 use-case profiles, 10 visual motifs and 24 situated diagrams. Their original technical IDs, state_refs and the bundled Authoring Kit 3.2.4 are not changed.
+- Fixed a **pre-existing regression in the uploaded 1.3.0 repository**: the `dossier-suivi` blank template contained an extra `design/fiche-deposition-vierge.json` that its own validator forbids. Removed only this inappropriate noncanonical copy; the original blank form remains in `deposition-temoignage`.
+- Added a two-platform (Windows and Ubuntu), Python 3.11/3.12, read-only test matrix and `permissions: contents: read`. Repository actions are still tag-based and **immutable pin verification** remains a GitHub maintainer follow-up.
+- Regenerated the offline HTML and **13-page A4 PDF** from the English JSON sources. Removed stale PDF versions and `.git` metadata from the distributable ZIP.
 
-## Verification performed
+## Tests and inspection
 
-- **43/43 Python tests passed** on the extracted repository, including the existing Authoring Kit checks and new launcher command parsing, rejection, and hash-verification tests.
-- The new launcher was instantiated and navigated under `xvfb-run` on Linux: all four pages opened; the catalogue exposed 19 archetypes and five profiles; profile-to-creator handoff selected the intended primary archetype and composition recipe.
-- Console commands use a fixed allowlist, separate subprocess arguments (`shell=False`) and background execution; no arbitrary shell, publishing, synchronization or activation command is offered.
-- The catalogue HTML and **13-page A4 PDF** were regenerated from the English JSON source and the PDF was rendered for visual inspection.
-- GitHub Wiki sources now document the new launcher and Developer Ops in English; the repository README remains English and contains no logo.
-- The supplied Authoring Kit executable remains unmodified, and technical identifiers remain stable.
+- **51/51 Python unittest tests passed** on the extracted local repository, including 8 new ecosystem tests.
+- `python arketype.py validate --check-kit`: **PASS**, 19 archetypes, 14 recipes, 5 profiles and 24 diagrams, all 19 local Kit checks.
+- Linux virtual-display Tkinter smoke: **PASS** for the four launcher pages, `Ecosystem Compatibility` refresh/output, and selecting a use-case profile into the Create Kristal form.
+- Printable PDF generated as `catalogue/Arketype_Visual_Catalogue_v1.4.0.pdf` and its English A4 cover visually inspected.
+- Source ZIP CRC and every file-inventory SHA-256 verified at packaging.
 
-## Qualification limits
+## Deliberate evidence limitations
 
-The desktop UI has **not been tested on an actual Windows computer**; only a virtual-display Linux smoke test was performed. Passing local `check` and `build-v9` on empty templates does not validate real domain knowledge. There is no remote publication/activation and no real HR, testimony, or sensitive data in the templates.
+- A Framework `10.0.0-draft.3.1` label is a **declared design baseline**, not proof of Framework conformance or an approved GitHub commit SHA.
+- Local file byte identity proves only identity of bytes, not a qualified logical commitment or current remote HEAD.
+- The inspector does not run the Framework TCK, Manager runtime, Bootstrap doctor/plan/apply, KristalDiag/C1, C2 grants, C3 publishing, GitHub networking, or AI/domain builds on selected workspaces.
+- Manager source availability, GitHub collection readiness and Windows-native GUI testing remain separate tasks.
+- **No GitHub repository was changed, pushed, qualified, synchronized, published or activated.** This is a complete updated local source distribution for review/commit.

@@ -204,7 +204,7 @@ def create(type_slug: str, slug: str, title: str, parent: str | Path,
         (working/'design'/'composition-plan.json').write_text(json.dumps(plan,ensure_ascii=False,indent=2)+'\n','utf8')
         (working/'arketype.instance.json').write_text(json.dumps({
              'format':'arketype.instance-origin/1.0-non-normatif',
-             'library_version':'1.3.0','primary_archetype':type_slug,
+             'library_version':'1.4.0','primary_archetype':type_slug,
              'assembly_recipe':recipe,'additional_archetypes':[p['archetype'] for p in plan['components']],
              'state_ref_at_initialization':ws['state_ref'],
              'authoring_kit_reference':'3.2.4',

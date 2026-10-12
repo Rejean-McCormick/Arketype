@@ -1,7 +1,7 @@
 # Arketype
 
 **A visual archetype library for Kristal knowledge-state workspaces**  
-**Release:** 1.3.0 · **Status:** local design library, non-normative
+**Release:** 1.4.0 · **Status:** local design library, non-normative
 
 Arketype helps you explore, compare, and instantiate different structural forms of Kristals. It provides neutral workspace templates, documented archetypes, illustrative composition plans, a visual HTML catalogue, and local creation tools. Its diagrams explain *how a knowledge structure is organized*; they do not certify claims, establish domain standards, or authorize operational actions.
 
@@ -16,7 +16,7 @@ Arketype helps you explore, compare, and instantiate different structural forms 
 
 ## Start here
 
-1. Extract the repository archive, then **double-click `Lancer_Arketype.pyw`** on Windows (Python 3.10+ with Tkinter). It opens a unified desktop launcher with **Home**, **Catalogue**, **Create Kristal**, and **Developer Ops**. The Catalogue is searchable in the launcher; **Open full visual catalogue** opens the illustrated offline HTML view. The Developer Ops console runs only an explicit allowlist of local library commands, tests and validation—never an arbitrary shell.
+1. Extract the repository archive, then **double-click `Lancer_Arketype.pyw`** on Windows (Python 3.10+ with Tkinter). It opens a unified desktop launcher with **Home**, **Catalogue**, **Create Kristal**, and **Developer Ops**. The Catalogue is searchable in the launcher; **Open full visual catalogue** opens the illustrated offline HTML view. Developer Ops includes an allowlisted local console and **Ecosystem Compatibility** read-only diagnostics for explicitly selected checkouts—never an arbitrary shell, remote sync, or publication.
 2. You can also open **`catalogue/index.html`** directly without Python or Tkinter. It provides search, structural filters, labeled diagrams and links to JSON. Read the **[GitHub Wiki source](wiki/Home.md)** for concepts, detailed archetype descriptions, examples, composition rules, and safety boundaries.
 3. Use Python 3.10+ to explore or instantiate a workspace from the repository root:
 
@@ -57,11 +57,13 @@ python arketype.py build-html
 | `assemblages/*.json` | Fourteen non-canonical composition proposals |
 | `modeles/` | Neutral Authoring Kit workspaces; not populated domain datasets |
 | `catalogue/index.html` | Offline HTML interface generated from JSON |
-| `catalogue/Arketype_Visual_Catalogue_v1.3.0.pdf` | Included printable catalogue |
+| `catalogue/Arketype_Visual_Catalogue_v1.4.0.pdf` | Included printable catalogue |
 | `wiki/` | English GitHub Wiki pages, ready for a separate Wiki repository |
 | `Lancer_Arketype.pyw` | Single Windows entrypoint for the desktop launcher |
 | `arketype_gui.py` | Offline desktop UI: Home, Catalogue, Create Kristal, Developer Ops |
 | `arketype_launcher_ops.py` | Tested allowlist for local console operations (no shell) |
+| `arketype_ecosystem.py` | Read-only Framework / Kit / local workspace compatibility inspector |
+| `docs/ECOSYSTEM_ALIGNMENT.md` | Inter-repository ownership boundaries and inspection limits |
 
 The HTML and Windows interfaces use the visual branding color **`#1E6864`** and the supplied logo.
 
@@ -91,8 +93,12 @@ python -m unittest discover -s tests -v
 python arketype.py validate --check-kit
 ```
 
-The repository uses the included Kristal Authoring Kit **3.2.4** and refers to Kristal Framework **10.0.0-draft.3.1**. See [Getting Started](wiki/Getting-Started.md), [Architecture](wiki/Architecture.md), [CLI Reference](wiki/CLI-Reference.md), and [Security and Boundaries](wiki/Security-and-Boundaries.md) for the detailed workflow.
+The repository uses the included Kristal Authoring Kit **3.2.4** and refers to Kristal Framework **10.0.0-draft.3.1** (**draft**, not a qualified GitHub network). See [Getting Started](wiki/Getting-Started.md), [Architecture](wiki/Architecture.md), [CLI Reference](wiki/CLI-Reference.md), and [Security and Boundaries](wiki/Security-and-Boundaries.md) for the detailed workflow.
 
 ## GitHub Wiki publishing
 
 The `wiki/` folder is **ready-to-publish Wiki content**, but GitHub stores a repository Wiki in a **separate Git repository**. Committing this folder to the main Arketype repository does **not** publish the Wiki automatically. Follow [Publishing the Wiki](wiki/Publishing-the-Wiki.md) after enabling the Wiki on the intended GitHub repository; no remote publication is performed by this archive.
+
+## Ecosystem compatibility (read-only)
+
+In the Windows launcher open **Developer Ops → Ecosystem Compatibility**. Choose optional local Framework, external Kit, workspace, Manager and Bootstrap checkout folders to inspect metadata and file hashes. Results explicitly differentiate **declared reference**, **identical bytes**, **not configured**, **review required** and **not verified**. The inspector does not run C1/C2/C3 or access GitHub, and cannot publish or activate a Kristal. See [Ecosystem Alignment](docs/ECOSYSTEM_ALIGNMENT.md) and [Wiki guide](wiki/Ecosystem-Compatibility.md).

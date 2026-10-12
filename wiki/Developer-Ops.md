@@ -11,6 +11,7 @@ The desktop **Developer Ops** screen provides a supervised command palette and a
 | `validate`, `validate --check-kit` | Validate catalogue and optionally all Local Kit templates | No |
 | `test` | Run the Python unit test suite (may create temporary test workspaces) | No intended changes to shipped library |
 | `inventory` | Verify recorded local file hashes | No |
+| `compat [--framework DIR --kit DIR --workspace DIR --manager DIR --bootstrap DIR]` | Inspect selected local ecosystem sources and their status (read-only) | No |
 | `build-html` | Rebuild the local visual HTML from JSON | **Yes, local HTML only** |
 | `open-catalogue` | Open the local HTML in the default browser | No |
 | `clear` | Clear the console transcript | No |
@@ -22,3 +23,7 @@ The long-running processes run in background threads; GUI updates remain on the 
 Developer Ops deliberately does not run arbitrary commands, execute downloaded scripts, access connected services, modify a remote repository, certify factual claims, or publish/activate Kristals.
 
 **Next:** [Desktop Launcher](Desktop-Launcher) · [CLI Reference](CLI-Reference) · [Security and Boundaries](Security-and-Boundaries)
+
+## Ecosystem Compatibility tab
+
+The companion tab performs safe local file inspection, with explicit optional checkout paths. A hash or declared version match is **not** an independent qualification. See [Ecosystem Compatibility](Ecosystem-Compatibility) and [Ecosystem Alignment](../docs/ECOSYSTEM_ALIGNMENT.md).

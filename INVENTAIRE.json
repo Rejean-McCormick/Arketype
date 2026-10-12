@@ -1,13 +1,13 @@
 {
   "format": "arketype.file-inventory/1.0-non-normatif",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "scope": "local_archive_bytes_not_logical_commitments",
   "language": "en",
   "files": [
     {
       "path": ".github/workflows/tests.yml",
-      "sha256": "25f23defbeab14d45ecf6bdc6904f4590f96c6ae6894f802aadddf2b4a519246",
-      "size_bytes": 398
+      "sha256": "c473858ab4baaebce172209b321f3e34c2d52979496289c1985f7b858525b9b4",
+      "size_bytes": 1179
     },
     {
       "path": ".gitignore",
@@ -21,13 +21,18 @@
     },
     {
       "path": "CHANGELOG.md",
-      "sha256": "b6221237323334c499efbfed971195452503beaa440ffeec24b6a9e1eb318baf",
-      "size_bytes": 1386
+      "sha256": "ee9f82869dc69958c512866adaf8ccf4295ebc6925ceb89b4f83bf2b1380791a",
+      "size_bytes": 2452
     },
     {
       "path": "DESCRIPTION_GITHUB_EN.txt",
       "sha256": "c93ddf20584b31dea263f0b3bb474718826feb7aef7551108aa7958a6b4df4ae",
       "size_bytes": 327
+    },
+    {
+      "path": "GitSink.bat",
+      "sha256": "15b0af32d211ff210de0ed87eb4b374cf41f9302d92baf82a464a518ffe2c97e",
+      "size_bytes": 781
     },
     {
       "path": "Lancer_Arketype.pyw",
@@ -36,13 +41,18 @@
     },
     {
       "path": "RAPPORT_TESTS.md",
-      "sha256": "d8f0b98eacb7c947188f49761559701d1b2e6b1d8d837a10e231958396aebf12",
-      "size_bytes": 1891
+      "sha256": "7b7617363054c78a6cbd7e12557a747bdd43fd546dad496719284514c601880f",
+      "size_bytes": 3095
     },
     {
       "path": "README.md",
-      "sha256": "4918dd99f46add0461d8361a5df67a7a5f58962862fe7143230ce3f77f63e030",
-      "size_bytes": 6959
+      "sha256": "0381cd2927423c907cc02565247b98a252383b17d06c6752cdaea192fcae3af7",
+      "size_bytes": 7853
+    },
+    {
+      "path": "ZmartZnap.pyw",
+      "sha256": "70775b94ff616ed9efdb3d6b989639fa3cd22a250f1389fec485791d161df1ea",
+      "size_bytes": 22889
     },
     {
       "path": "archetypes/carte-jalons-preuves.json",
@@ -141,18 +151,23 @@
     },
     {
       "path": "arketype.py",
-      "sha256": "1f52fc9782abdc586326948abd1bb93eca09b44d207e56cf127e3ef477bd96d0",
+      "sha256": "a168546e39e80508ea06ff54438b72f52ddaea60240a6189fd41436bac0d6ef5",
       "size_bytes": 27020
     },
     {
+      "path": "arketype_ecosystem.py",
+      "sha256": "0132329213fb8103b9b39f8bed8fae7943b2fae9069523e70213c7a017ec0928",
+      "size_bytes": 10025
+    },
+    {
       "path": "arketype_gui.py",
-      "sha256": "63e5d475643d67fc544891a5bcda813d563b6360d07185a4b40a0bed93016f5d",
-      "size_bytes": 27913
+      "sha256": "6c6e79ff151ba19cf80c1ef85a2ec8932c5d11f6ac8054361942ac338141a222",
+      "size_bytes": 31551
     },
     {
       "path": "arketype_launcher_ops.py",
-      "sha256": "4b611eb0d1e7521052aa295dd4c2c81b9fc7fb23bc843b6699506c73535eabcc",
-      "size_bytes": 6276
+      "sha256": "716739470e79c819f8bd75a20405123f605694719c204cc2b0382afd73d1b4f0",
+      "size_bytes": 7509
     },
     {
       "path": "assemblages/atlas-preuves.json",
@@ -235,9 +250,9 @@
       "size_bytes": 1578
     },
     {
-      "path": "catalogue/Arketype_Visual_Catalogue_v1.3.0.pdf",
-      "sha256": "fe590b363ea46727d4900fd6f662516512d5b350b959eebed6adf018c8103731",
-      "size_bytes": 97158
+      "path": "catalogue/Arketype_Visual_Catalogue_v1.4.0.pdf",
+      "sha256": "34199474d855ffe3508943254f6ba17e918c0e9dcb5d21752cc2f6cac5c197df",
+      "size_bytes": 97159
     },
     {
       "path": "catalogue/__init__.py",
@@ -246,22 +261,22 @@
     },
     {
       "path": "catalogue/creer_pdf.py",
-      "sha256": "b2a046c5eb9c2ebaec15cee3b25142b75ee7b9be284757be12c55c439e296e3a",
+      "sha256": "83903ca44ff2bbb91146739a4d69052fd53d76c5e1120ef747024ea6896222b0",
       "size_bytes": 7865
     },
     {
       "path": "catalogue/index.html",
-      "sha256": "ef3a7882993b7fda0c45c47e24f3240ee02778e1a62118133077171b3ce6ed35",
+      "sha256": "dad3a5b897d82a120fb7f814b8493e6c4511fef68525a155b09fd235536a679e",
       "size_bytes": 128569
     },
     {
       "path": "catalogue/renderer.py",
-      "sha256": "50b3f20b6eeb22bab9cdeb700cf189759d4e3344f69366220b6b4b081c2a7d7e",
+      "sha256": "01b40b12750039ff89615cbefd91e84f9de77c5734315e970c5fa7eec30a03a3",
       "size_bytes": 21057
     },
     {
       "path": "catalogue.json",
-      "sha256": "e8eb34ae4f0d5b004fdc5ebd0d44333e00013e0ca877bca27cb07b883a5f3f80",
+      "sha256": "d82a45d9e4529cf11d390c82414bdeb791134560fbd69b7e431aff04604d0aa0",
       "size_bytes": 4468
     },
     {
@@ -316,8 +331,13 @@
     },
     {
       "path": "docs/11_CATALOGUE_HTML.md",
-      "sha256": "ff4d757ab55e063a9a2a8fc690d86913252fc94e9b595b6f84080b4d9edc7070",
+      "sha256": "28064cc15281177c48044268bce1e92d21b83bd2f589f5c318f86a2590863592",
       "size_bytes": 777
+    },
+    {
+      "path": "docs/ECOSYSTEM_ALIGNMENT.md",
+      "sha256": "cefe2f23c6fcf3d090a4c4aa37ce88b4d49c7f6f71246d10c77222f06a3ea7b2",
+      "size_bytes": 4461
     },
     {
       "path": "inventaires/archetypes-visuels.json",
@@ -3941,13 +3961,18 @@
     },
     {
       "path": "test-results.json",
-      "sha256": "77eb0ea10cac5d0c43c186fb46d080b262177c97beab523bff985fe20fb16bbf",
-      "size_bytes": 216
+      "sha256": "21a23939f3089f0f9738815a74437e62932958bd3ab95a5145d32550aaa7d3e6",
+      "size_bytes": 217
     },
     {
       "path": "tests/test_arketype.py",
       "sha256": "f3b8e6a3b0213319042bde542d94013fa8862dccd4d6904b3961a34fb26c2642",
       "size_bytes": 11458
+    },
+    {
+      "path": "tests/test_ecosystem.py",
+      "sha256": "334fc2af489fefeb3d8ab08c1155babd7a18f23f2a674a6252a533e440a2c6a7",
+      "size_bytes": 6028
     },
     {
       "path": "tests/test_launcher.py",
@@ -3961,7 +3986,7 @@
     },
     {
       "path": "wiki/Archetype-Catalog.md",
-      "sha256": "9124a9749449202b7ea4e08a7e3e805c39ad37ca5e8db89815b5a0436264f4e2",
+      "sha256": "19d8627e4a60e0433fe9318d9a9ad6395a549ff74aeac1671379754593b298ae",
       "size_bytes": 13970
     },
     {
@@ -3986,13 +4011,18 @@
     },
     {
       "path": "wiki/Desktop-Launcher.md",
-      "sha256": "c0aebb5b13db50e93ab900e76279cc12ef138925242f0c25046270f6d6ed8463",
-      "size_bytes": 1554
+      "sha256": "25ef7a7e42c33f354fbf2dccc9ec8f7d50ae0ab7528834a9e45c2691218a6eb7",
+      "size_bytes": 1810
     },
     {
       "path": "wiki/Developer-Ops.md",
-      "sha256": "4a7bd8c431f7d4fd1473b35d0afe569a3edf601f40e3dc2185e7f53728897232",
-      "size_bytes": 1804
+      "sha256": "4c0247c7fcb60c2d331ce8705231e7af0190c3c2b56ac91f3800185118efcd48",
+      "size_bytes": 2283
+    },
+    {
+      "path": "wiki/Ecosystem-Compatibility.md",
+      "sha256": "61904e35100f5a25826b9937b9b95d73e9541d23ac82917ffb654b9637c7be65",
+      "size_bytes": 2054
     },
     {
       "path": "wiki/Extending-Arketype.md",
@@ -4006,7 +4036,7 @@
     },
     {
       "path": "wiki/Getting-Started.md",
-      "sha256": "e91ae41971376e19612fbb7405f5ad29dd0d81cd3931af8dc3d64928b4953109",
+      "sha256": "2b9b943f7157ddddec106c2368a4ef254632e1090ed7b7b8b43d94c4ffaf7fa9",
       "size_bytes": 3619
     },
     {
@@ -4016,8 +4046,8 @@
     },
     {
       "path": "wiki/Home.md",
-      "sha256": "5c7ffa3beb2fa3ff815fa5745e56a8fbd1e94d96764b793ca2eb1d78ef3b0da7",
-      "size_bytes": 2930
+      "sha256": "325e108674c28fd7b4318442435615beb4897daad6046b842b14be6f6fa582c0",
+      "size_bytes": 3159
     },
     {
       "path": "wiki/Publishing-the-Wiki.md",
@@ -4036,8 +4066,8 @@
     },
     {
       "path": "wiki/Validation-and-Testing.md",
-      "sha256": "7de83462308f67fefb20a84d2a80e1e6d9c5bf8f3ed3df390da71829ef961609",
-      "size_bytes": 1844
+      "sha256": "5f8ea4d599cb8e833aebf90919ba115fd68d9eb03f73a85868e4d4331489bcca",
+      "size_bytes": 1898
     },
     {
       "path": "wiki/Visual-Grammar.md",
@@ -4051,8 +4081,8 @@
     },
     {
       "path": "wiki/_Sidebar.md",
-      "sha256": "87b07228a5890c22b1c0d17ad434997132daab1c49d8bc9b46feeb8902a2e295",
-      "size_bytes": 679
+      "sha256": "22959a5101e5d16514f030dd6a82b95415a9c6a075248f64f6c19d87eccade27",
+      "size_bytes": 732
     }
   ]
 }

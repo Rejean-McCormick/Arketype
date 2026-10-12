@@ -1,6 +1,6 @@
 # Archetype Catalog
 
-The table below lists **all 19 structural archetypes** shipped with Arketype 1.2.2. English names here are explanatory; the original JSON identifiers and stable slugs remain unchanged. A primary visual pattern is a *reader convention*, not a complete constraint on native data.
+The table below lists **all 19 structural archetypes** shipped with Arketype 1.4.0. English names here are explanatory; the original JSON identifiers and stable slugs remain unchanged. A primary visual pattern is a *reader convention*, not a complete constraint on native data.
 
 | ID | English archetype | Stable slug | Primary visual pattern | Typical uses |
 | --- | --- | --- | --- | --- |

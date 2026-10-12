@@ -104,7 +104,7 @@ class ArketypeDesktop(tk.Tk):
                             command=lambda item=page: self.show_page(item))
             btn.pack(fill='x', padx=8, pady=(10 if page == 'Home' else 3, 0))
             self.nav_buttons[page] = btn
-        tk.Label(self.nav, text='Arketype 1.3.0\nOffline design library',
+        tk.Label(self.nav, text='Arketype 1.4.0\nOffline design library',
                  bg='#edf4f1', fg=MUTED, justify='left', padx=17).pack(side='bottom', anchor='w', pady=20)
         self.pages: dict[str, ttk.Frame] = {}
         self.status_var = tk.StringVar(value='Ready · no remote actions')
@@ -141,7 +141,7 @@ class ArketypeDesktop(tk.Tk):
              'Choose an archetype, preview an optional design-only composition, and create a blank workspace.',
              'Create Kristal'),
             ('Developer Ops', 'Inspect and verify the library',
-             'Run approved local commands, unit tests, integrity checks, and HTML regeneration.',
+             'Run approved commands and inspect ecosystem compatibility without network writes.',
              'Open Developer Ops'),
         ]
         for page, title, explanation, cta in choices:
@@ -396,22 +396,29 @@ class ArketypeDesktop(tk.Tk):
             messagebox.showerror('Arketype — Creation issue', str(exc))
 
     def _make_ops(self):
-        p = self._page('Developer Ops', 'Developer Ops console',
-                       'Local allowlisted commands only. No shell execution, remote deployment, or activation.')
-        actions = ttk.Frame(p)
+        p = self._page('Developer Ops', 'Developer Ops',
+                       'Approved local operations and read-only ecosystem diagnostics. No shell, publication, or activation.')
+        tabs = ttk.Notebook(p)
+        tabs.pack(fill='both', expand=True)
+        console = ttk.Frame(tabs, padding=(2, 12))
+        diagnostic = ttk.Frame(tabs, padding=(2, 12))
+        tabs.add(console, text='Console')
+        tabs.add(diagnostic, text='Ecosystem Compatibility')
+        self.ops_tabs = tabs
+        actions = ttk.Frame(console)
         actions.pack(fill='x', pady=(0, 12))
         for title, cmd in (('Status', 'status'), ('Validate', 'validate'),
                            ('Check Local Kit', 'validate --check-kit'), ('Run tests', 'test'),
                            ('Verify inventory', 'inventory'), ('Regenerate HTML', 'build-html')):
             ttk.Button(actions, text=title, command=lambda c=cmd: self._run_console(c)).pack(side='left', padx=(0, 7))
-        self.ops_output = scrolledtext.ScrolledText(p, wrap='word', font=('Consolas', 10),
+        self.ops_output = scrolledtext.ScrolledText(console, wrap='word', font=('Consolas', 10),
                   bg='#112b2b', fg='#e4f4ed', insertbackground='white', relief='flat',
                   padx=14, pady=13)
         self.ops_output.pack(fill='both', expand=True)
         self.ops_output.insert('end', 'Arketype Developer Ops · Type help for available commands.\n'
                                       'No remote publication or activation is supported.\n\n')
         self.ops_output.configure(state='disabled')
-        command_frame = ttk.Frame(p)
+        command_frame = ttk.Frame(console)
         command_frame.pack(fill='x', pady=(10, 0))
         ttk.Label(command_frame, text='arketype >').pack(side='left')
         self.ops_input = tk.StringVar()
@@ -424,6 +431,60 @@ class ArketypeDesktop(tk.Tk):
                                          command=self._run_console)
         self.ops_run_button.pack(side='left')
         ttk.Button(command_frame, text='Clear', command=self._clear_console).pack(side='left', padx=(8, 0))
+
+        ttk.Label(diagnostic, text='Read-only source inspection — not a Framework conformance check or C1 qualification.',
+                  style='Sub.TLabel').pack(anchor='w', pady=(0, 10))
+        selectors = ttk.Frame(diagnostic)
+        selectors.pack(fill='x')
+        selectors.columnconfigure(1, weight=1)
+        self.ecosystem_paths = {}
+        for row, (name, label) in enumerate((
+            ('framework', 'Framework checkout (optional)'),
+            ('kit', 'External Authoring Kit checkout (optional)'),
+            ('workspace', 'Local Kristal workspace (optional)'),
+            ('manager', 'Manager checkout (optional)'),
+            ('bootstrap', 'Bootstrap checkout (optional)'),
+        )):
+            value = tk.StringVar()
+            self.ecosystem_paths[name] = value
+            ttk.Label(selectors, text=label).grid(row=row, column=0, sticky='w', padx=(0, 8), pady=4)
+            ttk.Entry(selectors, textvariable=value).grid(row=row, column=1, sticky='ew', pady=4)
+            ttk.Button(selectors, text='Browse…',
+                command=lambda var=value: self._browse_ecosystem_path(var)).grid(row=row, column=2, padx=(7, 0), pady=4)
+        buttons = ttk.Frame(diagnostic)
+        buttons.pack(fill='x', pady=(10, 8))
+        self.ecosystem_run_button = ttk.Button(buttons, text='Inspect local compatibility',
+                 style='Accent.TButton', command=self._refresh_ecosystem)
+        self.ecosystem_run_button.pack(side='left')
+        ttk.Label(buttons, text='Empty paths mean NOT CONFIGURED, not PASS.',
+                 style='Sub.TLabel').pack(side='left', padx=12)
+        self.ecosystem_output = scrolledtext.ScrolledText(diagnostic, wrap='word', font=('Consolas', 10),
+                  bg='#112b2b', fg='#e4f4ed', insertbackground='white', padx=14, pady=12,
+                  relief='flat')
+        self.ecosystem_output.pack(fill='both', expand=True)
+        self.ecosystem_output.insert('end', 'Choose local checkouts, or inspect only the bundled Kit and 19 neutral templates.\n'
+                 'No external commands, network or publishing actions will run.\n')
+        self.ecosystem_output.configure(state='disabled')
+
+    def _browse_ecosystem_path(self, variable):
+        directory = filedialog.askdirectory(title='Select a local checkout or workspace')
+        if directory:
+            variable.set(directory)
+
+    def _refresh_ecosystem(self):
+        if self.busy:
+            return
+        # Paths are options to a fixed read-only inspector, never shell arguments.
+        args = tuple(part for name, value in self.ecosystem_paths.items() if value.get().strip()
+                          for part in ('--' + name, value.get().strip()))
+        from arketype_launcher_ops import Operation
+        self._start_job('ecosystem', Operation('compat', 'local', args))
+
+    def _render_ecosystem(self, text):
+        self.ecosystem_output.configure(state='normal')
+        self.ecosystem_output.delete('1.0', 'end')
+        self.ecosystem_output.insert('end', text)
+        self.ecosystem_output.configure(state='disabled')
 
     def _history_up(self, event):
         if self.history:
@@ -475,6 +536,7 @@ class ArketypeDesktop(tk.Tk):
         self.busy = True
         self.ops_run_button.configure(state='disabled')
         self.create_button.configure(state='disabled')
+        self.ecosystem_run_button.configure(state='disabled')
         self.status_var.set('Working locally…')
         def work():
             try:
@@ -484,7 +546,7 @@ class ArketypeDesktop(tk.Tk):
                     self.events.put(('create', 0, str(result)))
                 else:
                     code, output = run_operation(payload)
-                    self.events.put(('operation', code, output))
+                    self.events.put((mode, code, output))
             except Exception as exc:
                 self.events.put((mode, 1, str(exc)))
         threading.Thread(target=work, daemon=True).start()
@@ -496,6 +558,7 @@ class ArketypeDesktop(tk.Tk):
                 self.busy = False
                 self.ops_run_button.configure(state='normal')
                 self.create_button.configure(state='normal')
+                self.ecosystem_run_button.configure(state='normal')
                 self.status_var.set('Ready · local only · no publication or activation')
                 if mode == 'create':
                     if code == 0:
@@ -504,6 +567,8 @@ class ArketypeDesktop(tk.Tk):
                         self._append_console('Created local workspace: ' + output)
                     else:
                         messagebox.showerror('Creation failed', output)
+                elif mode == 'ecosystem':
+                    self._render_ecosystem(output)
                 else:
                     self._append_console(output + f'\n[Exit code: {code}]\n')
                     if code != 0:

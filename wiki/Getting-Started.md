@@ -6,7 +6,7 @@ Start from a **local copy** of the full Arketype repository. Python **3.10 or la
 
 Open `catalogue/index.html` from the extracted repository. Search by keyword, filter by family or structural pattern, and inspect the labeled diagrams. Each archetype card links to a descriptive JSON file; use-case cards link to their proposed composition recipes. The catalogue is an offline generated projection.
 
-A printable edition is included as `catalogue/Arketype_Visual_Catalogue_v1.3.0.pdf`. It is optional: HTML is the primary interface.
+A printable edition is included as `catalogue/Arketype_Visual_Catalogue_v1.4.0.pdf`. It is optional: HTML is the primary interface.
 
 ## 2. Inspect the library
 

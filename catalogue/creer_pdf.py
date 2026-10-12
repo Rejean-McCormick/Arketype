@@ -65,7 +65,7 @@ def topbar(c,title='Arketype / Visual catalogue'):
 def footer(c,page):
     c.setFillColor(MUTED);c.setFont('ArketypeRegular',7)
     c.drawString(40,35,'Non-normative diagrams · no real domain data')
-    c.drawRightString(W-40,35,f'Arketype 1.3.0  ·  {page}')
+    c.drawRightString(W-40,35,f'Arketype 1.4.0  ·  {page}')
 
 
 def draw_diagram(c,diag,x,y,scale=0.56):
@@ -149,9 +149,9 @@ def main():
     dmap={(d['kind'],d['slug']):d for d in diagrams}
     a=sorted([{**x,**json.loads((ROOT/x['file']).read_text())} for x in index],key=lambda x:int(x['id'].split('-')[1]))
     objects=[('archetype',v) for v in a]+[('profile',v) for v in profiles]
-    target=ROOT/'catalogue/Arketype_Visual_Catalogue_v1.3.0.pdf'
+    target=ROOT/'catalogue/Arketype_Visual_Catalogue_v1.4.0.pdf'
     c=Canvas(str(target),pagesize=A4,pageCompression=1)
-    c.setTitle('Arketype — Visual Kristal Catalogue v1.3.0')
+    c.setTitle('Arketype — Visual Kristal Catalogue v1.4.0')
     c.setAuthor('Arketype')
     cover(c,patterns,len(a),len(profiles))
     page=2

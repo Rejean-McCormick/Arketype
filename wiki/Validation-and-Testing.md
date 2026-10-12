@@ -23,7 +23,7 @@ The repository's GitHub Actions workflow (`.github/workflows/tests.yml`) runs un
 - Local instantiation of selected new workspaces and preservation of independent identities.
 - HTML generation, source links, logo reference and brand-color presence.
 
-The v1.3.0 release report documents 43 passing tests, including Local Kit checks, and a Linux virtual-display launcher smoke test. Run the suite after editing this library; previous results do not guarantee future changes are correct.
+The v1.4.0 release report documents baseline release tests; additional ecosystem tests run in this version, including Local Kit checks, and a Linux virtual-display launcher smoke test. Run the suite after editing this library; previous results do not guarantee future changes are correct.
 
 ## What the checks explicitly do not prove
 

@@ -1,6 +1,6 @@
 # Desktop Launcher
 
-Arketype 1.3.0 ships a single Windows desktop entrypoint: **`Lancer_Arketype.pyw`**. Double-click it after extracting the whole repository. It requires Python 3.10+ and Tkinter, works offline, and uses the supplied UI logo and brand color `#1E6864`.
+Arketype 1.4.0 ships a single Windows desktop entrypoint: **`Lancer_Arketype.pyw`**. Double-click it after extracting the whole repository. It requires Python 3.10+ and Tkinter, works offline, and uses the supplied UI logo and brand color `#1E6864`.
 
 ## Four screens, three workflows
 
@@ -14,3 +14,6 @@ Arketype 1.3.0 ships a single Windows desktop entrypoint: **`Lancer_Arketype.pyw
 No UI action publishes, synchronizes, activates, or authorizes an operational response. All composition recipes remain design-only. A workspace starts with no canonical domain content. GUI operations are local; tests have run under a Linux virtual display, not on every Windows installation.
 
 **Next:** [Developer Ops](Developer-Ops) · [Working with Templates](Working-with-Templates) · [Visual Grammar](Visual-Grammar)
+
+
+**Developer Ops** includes **Ecosystem Compatibility**, an optional read-only comparison of locally selected Framework, Kit, workspace, Manager and Bootstrap checkouts. It never syncs or publishes. See [Ecosystem Compatibility](Ecosystem-Compatibility).
