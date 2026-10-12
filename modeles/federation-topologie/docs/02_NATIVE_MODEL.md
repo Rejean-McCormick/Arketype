@@ -1,21 +1,11 @@
-# Forme native candidate
+# Candidate native model
 
-**Archétype Arketype :** ARK-02 — Fédération / topologie
+**Native kind (stable machine identifier):** `identites_topologie_reservees`
 
-Parent, enfants et frontières d’ownership avec états référencés.
+**Reader pattern:** Federated network (`network`); secondary motifs: tree.
 
-## Primitives envisagées
+**Situated representation:** Independent knowledge states linked by topology, scope, and separately owned parent-child references.
 
-- `noeuds`
-- `liens_parent_enfant`
-- `scopes`
-- `references_epinglees`
-- `statuts_de_cristallisation`
+**Candidate primitives:** nodes, links parent enfant, scopes, references pinned, statuses of cristallisation.
 
-## Invariant d’intégrité conceptuelle
-
-Le parent référence des engagements d’enfants; il ne s’approprie ni ne copie leur contenu.
-
-## Fichier candidat
-
-`design/structure-candidate.json` est une **aide**, pas une source de vérité et pas un contrat logique v9 enregistré. Avant toute utilisation, décider les primitives réelles, réduire/étendre la forme, documenter ce qui serait perdu lors d’une conversion et définir les Logical Contracts exacts.
+The example in `design/structure-candidate.json` is a **noncanonical scaffold**, not registered domain content. Its existing property names are stable technical identifiers.

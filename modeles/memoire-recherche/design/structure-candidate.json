@@ -4,7 +4,7 @@
   "forme": "memoire-recherche",
   "statut": "illustration-non-canonique",
   "n_est_pas_un_artefact_enregistre": true,
-  "intention": "Suit connaissance établie, hypothèses, essais, résultats et obligations.",
+  "intention": "Hypotheses, observations, trials and findings over time. Research notebooks, inquiry histories and lab studies.",
   "primitives_possibles": [
     "connaissances",
     "hypotheses",
@@ -15,7 +15,7 @@
     "promotions"
   ],
   "contraintes_a_preserver": [
-    "Aucune promotion implicite d’un essai ou d’une stratégie en vérité du domaine."
+    "Preserve the difference between hypotheses and established findings."
   ],
   "exemple_payload_vide": {
     "knowledge": [],
@@ -26,5 +26,5 @@
     "promotion_records": []
   },
   "contrat_logique": "a_definir_pour_un_domaine_reel",
-  "bibliotheque": "Arketype 1.0"
+  "bibliotheque": "Arketype 1.2.2 (English edition)"
 }

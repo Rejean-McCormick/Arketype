@@ -1,12 +1,12 @@
-# Fiche d’archétype
+# Arketype record — Hybrid Composition
 
-- Identifiant Arketype : `ARK-15`
-- Famille : Composition
-- Profil d’amorce du Local Kit : `open`
-- Type de modèle natif **candidat** : `composition_de_sous_modeles`
-- Exemples de rapprochement : Partie Kristal conforme à extraire d’un système comme MediKristal
-- Statut : `stub`, non publié, pas de claims canoniques enregistrés
-- Le fichier `design/structure-candidate.json` reste volontairement **hors canon**
+- **Archetype:** `ARK-15` (`composition-hybride`).
+- **Family:** Composition.
+- **Local status:** `stub`, no domain assertions.
+- **Visual pattern:** network (Hybrid network).
+- **Candidate scaffold:** `design/structure-candidate.json`.
+- **Metadata:** `archetypes/composition-hybride.json`.
 
-- Fiche catalogue : `archetypes/composition-hybride.json` (à la racine de la bibliothèque).
-- Les primitives de design ne font **pas** partie du canon par défaut.
+**Use cases:** composite application, multi-system architecture, integrated knowledge.
+
+To create a new independent workspace, run `python arketype.py create --type composition-hybride --slug your-new-slug --title "Your title" --parent PATH` from the library root.

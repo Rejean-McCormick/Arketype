@@ -4,7 +4,7 @@
   "forme": "interpretations-couches",
   "statut": "illustration-non-canonique",
   "n_est_pas_un_artefact_enregistre": true,
-  "intention": "Sépare calculs/formes reproductibles et interprétations, comparaisons ou hypothèses.",
+  "intention": "Separate derived readings of shared underlying material. Comparative analysis and alternative interpretations.",
   "primitives_possibles": [
     "donnees",
     "transformations",
@@ -14,7 +14,7 @@
     "limites"
   ],
   "contraintes_a_preserver": [
-    "Une transformation exacte ne valide pas automatiquement sa lecture ontologique, causale ou historique."
+    "Keep interpretation and reproducible source distinct."
   ],
   "exemple_payload_vide": {
     "donnees": [],
@@ -25,5 +25,5 @@
     "contre_hypotheses": []
   },
   "contrat_logique": "a_definir_pour_un_domaine_reel",
-  "bibliotheque": "Arketype 1.0"
+  "bibliotheque": "Arketype 1.2.2 (English edition)"
 }

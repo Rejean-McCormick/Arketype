@@ -1,22 +1,11 @@
-# Forme native candidate
+# Candidate native model
 
-**Archétype Arketype :** ARK-12 — Interprétations multicouches
+**Native kind (stable machine identifier):** `regimes_interpretatifs_separes`
 
-Sépare calculs/formes reproductibles et interprétations, comparaisons ou hypothèses.
+**Reader pattern:** Interpretation layers (`multilayer`); secondary motifs: hub.
 
-## Primitives envisagées
+**Situated representation:** Multiple readings and comparisons refer to the same source material without replacing it.
 
-- `donnees`
-- `transformations`
-- `couches_interpretatives`
-- `liens_typés`
-- `hypotheses`
-- `limites`
+**Candidate primitives:** donnees, transformations, couches interpretatives, links typés, hypotheses, limites.
 
-## Invariant d’intégrité conceptuelle
-
-Une transformation exacte ne valide pas automatiquement sa lecture ontologique, causale ou historique.
-
-## Fichier candidat
-
-`design/structure-candidate.json` est une **aide**, pas une source de vérité et pas un contrat logique v9 enregistré. Avant toute utilisation, décider les primitives réelles, réduire/étendre la forme, documenter ce qui serait perdu lors d’une conversion et définir les Logical Contracts exacts.
+The example in `design/structure-candidate.json` is a **noncanonical scaffold**, not registered domain content. Its existing property names are stable technical identifiers.

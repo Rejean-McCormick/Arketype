@@ -4,7 +4,7 @@
   "forme": "procedure-protocole",
   "statut": "illustration-non-canonique",
   "n_est_pas_un_artefact_enregistre": true,
-  "intention": "Décrit préconditions, opérations, branches, ordre partiel, résultats et exceptions.",
+  "intention": "Ordered and conditional steps, roles, prerequisites and exceptions. SOPs, institutional protocols and checklists.",
   "primitives_possibles": [
     "conditions_entree",
     "etapes",
@@ -17,7 +17,7 @@
     "references_normatives"
   ],
   "contraintes_a_preserver": [
-    "Une procédure décrite ne donne pas permission de l’exécuter; confidentialité, droit, sécurité et contexte restent externes."
+    "Description, execution and authorization are different."
   ],
   "exemple_payload_vide": {
     "preconditions": [],
@@ -29,5 +29,5 @@
     "references_normatives": []
   },
   "contrat_logique": "a_definir_pour_un_domaine_reel",
-  "bibliotheque": "Arketype 1.0"
+  "bibliotheque": "Arketype 1.2.2 (English edition)"
 }

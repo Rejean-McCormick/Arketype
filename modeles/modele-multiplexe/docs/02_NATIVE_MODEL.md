@@ -1,23 +1,11 @@
-# Forme native candidate
+# Candidate native model
 
-**Archétype Arketype :** ARK-09 — Modèle multiplexe / organisations
+**Native kind (stable machine identifier):** `graphe_multiplexe_contextualise`
 
-Réseaux de rôles, institutions, ressources et règles selon des couches et échelles distinctes.
+**Reader pattern:** Organizational layers (`multilayer`); secondary motifs: network.
 
-## Primitives envisagées
+**Situated representation:** People, roles, institutions and resources are mapped in distinguishable relationship layers.
 
-- `entites`
-- `couches_relationnelles`
-- `roles`
-- `ressources`
-- `regles`
-- `temps`
-- `points_de_vue`
+**Candidate primitives:** entities, couches relationnelles, roles, resources, rules, time, points of vue.
 
-## Invariant d’intégrité conceptuelle
-
-Conserver les couches et perspectives; aucun rôle, droit ou autorité par défaut.
-
-## Fichier candidat
-
-`design/structure-candidate.json` est une **aide**, pas une source de vérité et pas un contrat logique v9 enregistré. Avant toute utilisation, décider les primitives réelles, réduire/étendre la forme, documenter ce qui serait perdu lors d’une conversion et définir les Logical Contracts exacts.
+The example in `design/structure-candidate.json` is a **noncanonical scaffold**, not registered domain content. Its existing property names are stable technical identifiers.

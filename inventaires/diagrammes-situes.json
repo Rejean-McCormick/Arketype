@@ -11,35 +11,35 @@
       "slug": "carte-jalons-preuves",
       "pattern": "hub",
       "status": "illustration_non_canonique",
-      "caption": "Carrefours, points terminaux et liens abrégés vers preuves déjà validées ailleurs.",
+      "caption": "Milestones and reached frontiers linked to proofs stored elsewhere; shortcuts do not replace proof.",
       "nodes": [
         {
           "id": "n1",
-          "label": "Jalons",
+          "label": "Milestones",
           "x": 330,
           "y": 119
         },
         {
           "id": "n2",
-          "label": "Preuve externe",
+          "label": "External proof",
           "x": 112,
           "y": 65
         },
         {
           "id": "n3",
-          "label": "Frontière",
+          "label": "Frontier",
           "x": 548,
           "y": 65
         },
         {
           "id": "n4",
-          "label": "Arrimage",
+          "label": "Docking point",
           "x": 112,
           "y": 185
         },
         {
           "id": "n5",
-          "label": "Question ouverte",
+          "label": "Open question",
           "x": 548,
           "y": 185
         }
@@ -68,23 +68,23 @@
       "slug": "compilation-collection",
       "pattern": "cluster",
       "status": "illustration_non_canonique",
-      "caption": "Une compilation regroupe des éléments relativement autonomes sous une cohérence éditoriale.",
+      "caption": "Independent entries collected, ordered and annotated without absorbing ownership of each entry.",
       "nodes": [
         {
           "id": "n1",
-          "label": "Recueil",
+          "label": "Collection",
           "x": 110,
           "y": 95
         },
         {
           "id": "n2",
-          "label": "Recette A",
+          "label": "Recipe A",
           "x": 262,
           "y": 48
         },
         {
           "id": "n3",
-          "label": "Recette B",
+          "label": "Recipe B",
           "x": 263,
           "y": 178
         },
@@ -129,7 +129,7 @@
       "slug": "composition-hybride",
       "pattern": "network",
       "status": "illustration_non_canonique",
-      "caption": "Assemblage de plusieurs sous-systèmes de nature différente, chacun gardant son rôle.",
+      "caption": "Different knowledge-state forms interact through explicit references and interface boundaries.",
       "nodes": [
         {
           "id": "n1",
@@ -194,23 +194,23 @@
       "slug": "deposition-temoignage",
       "pattern": "casefile",
       "status": "illustration_non_canonique",
-      "caption": "Déclarations, supports, transcriptions, signatures, versions et évaluations distinctes.",
+      "caption": "Attributed accounts, recordings, transcriptions, corrections and independent evaluations remain distinct.",
       "nodes": [
         {
           "id": "n1",
-          "label": "Déposition",
+          "label": "Deposition",
           "x": 160,
           "y": 122
         },
         {
           "id": "n2",
-          "label": "Récit original",
+          "label": "Original account",
           "x": 472,
           "y": 34
         },
         {
           "id": "n3",
-          "label": "Transcription",
+          "label": "Transcript",
           "x": 472,
           "y": 91
         },
@@ -222,7 +222,7 @@
         },
         {
           "id": "n5",
-          "label": "Évaluation",
+          "label": "Review",
           "x": 472,
           "y": 211
         }
@@ -251,23 +251,23 @@
       "slug": "diagnostic-causal",
       "pattern": "hub",
       "status": "illustration_non_canonique",
-      "caption": "Un problème central relie symptômes, causes possibles, tests et conclusions locales.",
+      "caption": "A reported fault links observations, competing hypotheses, discriminating tests and results.",
       "nodes": [
         {
           "id": "n1",
-          "label": "Panne",
+          "label": "Fault",
           "x": 330,
           "y": 119
         },
         {
           "id": "n2",
-          "label": "Symptômes",
+          "label": "Symptoms",
           "x": 112,
           "y": 65
         },
         {
           "id": "n3",
-          "label": "Hypothèses",
+          "label": "Hypotheses",
           "x": 548,
           "y": 65
         },
@@ -279,7 +279,7 @@
         },
         {
           "id": "n5",
-          "label": "Résultat",
+          "label": "Result",
           "x": 548,
           "y": 185
         }
@@ -308,23 +308,23 @@
       "slug": "dossier-suivi",
       "pattern": "casefile",
       "status": "illustration_non_canonique",
-      "caption": "Un dossier central accueille notes, événements, pièces, actions et évaluations distinctes.",
+      "caption": "A case centralizes meetings, documents, actions and assessments while keeping provenance and access controls.",
       "nodes": [
         {
           "id": "n1",
-          "label": "Dossier RH",
+          "label": "HR casefile",
           "x": 160,
           "y": 122
         },
         {
           "id": "n2",
-          "label": "Rencontres",
+          "label": "Meetings",
           "x": 472,
           "y": 34
         },
         {
           "id": "n3",
-          "label": "Pièces",
+          "label": "Documents",
           "x": 472,
           "y": 91
         },
@@ -336,7 +336,7 @@
         },
         {
           "id": "n5",
-          "label": "Suivi",
+          "label": "Follow-up",
           "x": 472,
           "y": 211
         }
@@ -365,17 +365,17 @@
       "slug": "etat-systemes",
       "pattern": "matrix",
       "status": "illustration_non_canonique",
-      "caption": "Chaque système est observé selon plusieurs dimensions, avec éventuellement des dates et des écarts.",
+      "caption": "Systems are measured on comparable dimensions at stated times, distinct from target configuration.",
       "nodes": [
         {
           "id": "n1",
-          "label": "Serveur A / OK",
+          "label": "Server A / OK",
           "x": 135,
           "y": 76
         },
         {
           "id": "n2",
-          "label": "Serveur B / ?",
+          "label": "Server B / ?",
           "x": 330,
           "y": 76
         },
@@ -393,13 +393,13 @@
         },
         {
           "id": "n5",
-          "label": "État cible",
+          "label": "Target state",
           "x": 330,
           "y": 173
         },
         {
           "id": "n6",
-          "label": "Écart",
+          "label": "Deviation",
           "x": 525,
           "y": 173
         }
@@ -411,11 +411,11 @@
       "slug": "federation-topologie",
       "pattern": "network",
       "status": "illustration_non_canonique",
-      "caption": "Sous-ensembles autonomes reliés par topologie, appartenance ou délégation.",
+      "caption": "Independent knowledge states linked by topology, scope, and separately owned parent-child references.",
       "nodes": [
         {
           "id": "n1",
-          "label": "Fédération",
+          "label": "Federation",
           "x": 330,
           "y": 118
         },
@@ -427,13 +427,13 @@
         },
         {
           "id": "n3",
-          "label": "Voie",
+          "label": "Path",
           "x": 546,
           "y": 55
         },
         {
           "id": "n4",
-          "label": "Cours",
+          "label": "Course",
           "x": 114,
           "y": 186
         },
@@ -476,29 +476,29 @@
       "slug": "interpretations-couches",
       "pattern": "multilayer",
       "status": "illustration_non_canonique",
-      "caption": "Une même base peut recevoir plusieurs lectures, analyses ou interprétations distinctes.",
+      "caption": "Multiple readings and comparisons refer to the same source material without replacing it.",
       "nodes": [
         {
           "id": "n1",
-          "label": "Faits sourcés",
+          "label": "Sourced facts",
           "x": 330,
           "y": 29
         },
         {
           "id": "n2",
-          "label": "Lecture A",
+          "label": "Reading A",
           "x": 330,
           "y": 88
         },
         {
           "id": "n3",
-          "label": "Lecture B",
+          "label": "Reading B",
           "x": 330,
           "y": 148
         },
         {
           "id": "n4",
-          "label": "Comparaison",
+          "label": "Comparison",
           "x": 330,
           "y": 208
         }
@@ -510,35 +510,35 @@
       "slug": "invariant-theorie",
       "pattern": "tree",
       "status": "illustration_non_canonique",
-      "caption": "Définitions, axiomes, invariants, théorèmes et dépendances conceptuelles.",
+      "caption": "Axioms and definitions support lemmas, theorems and explicit proof obligations.",
       "nodes": [
         {
           "id": "n1",
-          "label": "Axiome",
+          "label": "Axiom",
           "x": 330,
           "y": 40
         },
         {
           "id": "n2",
-          "label": "Théorème A",
+          "label": "Theorem A",
           "x": 170,
           "y": 111
         },
         {
           "id": "n3",
-          "label": "Théorème B",
+          "label": "Theorem B",
           "x": 492,
           "y": 111
         },
         {
           "id": "n4",
-          "label": "Lemme A",
+          "label": "Lemma A",
           "x": 170,
           "y": 198
         },
         {
           "id": "n5",
-          "label": "Lemme B",
+          "label": "Lemma B",
           "x": 492,
           "y": 198
         }
@@ -567,7 +567,7 @@
       "slug": "memoire-recherche",
       "pattern": "timeline",
       "status": "illustration_non_canonique",
-      "caption": "Questions, hypothèses, pistes, sources et résultats se sédimentent dans le temps.",
+      "caption": "Questions, hypotheses, trials and findings evolve over time with uncertainty preserved.",
       "nodes": [
         {
           "id": "n1",
@@ -577,25 +577,25 @@
         },
         {
           "id": "n2",
-          "label": "Hypothèse",
+          "label": "Hypothesis",
           "x": 208,
           "y": 121
         },
         {
           "id": "n3",
-          "label": "Essai",
+          "label": "Trial",
           "x": 330,
           "y": 121
         },
         {
           "id": "n4",
-          "label": "Résultat",
+          "label": "Result",
           "x": 453,
           "y": 121
         },
         {
           "id": "n5",
-          "label": "À vérifier",
+          "label": "Pending check",
           "x": 578,
           "y": 121
         }
@@ -624,17 +624,17 @@
       "slug": "modele-multiplexe",
       "pattern": "multilayer",
       "status": "illustration_non_canonique",
-      "caption": "Même réalité organisée sur plusieurs couches ou plans de relation.",
+      "caption": "People, roles, institutions and resources are mapped in distinguishable relationship layers.",
       "nodes": [
         {
           "id": "n1",
-          "label": "Personnes",
+          "label": "People",
           "x": 330,
           "y": 29
         },
         {
           "id": "n2",
-          "label": "Rôles",
+          "label": "Roles",
           "x": 330,
           "y": 88
         },
@@ -646,7 +646,7 @@
         },
         {
           "id": "n4",
-          "label": "Ressources",
+          "label": "Resources",
           "x": 330,
           "y": 208
         }
@@ -658,29 +658,29 @@
       "slug": "parcours-pedagogique",
       "pattern": "linear",
       "status": "illustration_non_canonique",
-      "caption": "Suite d’étapes d’apprentissage, avec jalons, ressources et bifurcations possibles.",
+      "caption": "Learning objectives, prerequisites, activities and assessments follow a navigable path.",
       "nodes": [
         {
           "id": "n1",
-          "label": "Découvrir",
+          "label": "Discover",
           "x": 84,
           "y": 120
         },
         {
           "id": "n2",
-          "label": "Comprendre",
+          "label": "Understand",
           "x": 250,
           "y": 120
         },
         {
           "id": "n3",
-          "label": "Pratiquer",
+          "label": "Practice",
           "x": 416,
           "y": 120
         },
         {
           "id": "n4",
-          "label": "Évaluer",
+          "label": "Assess",
           "x": 582,
           "y": 120
         }
@@ -705,23 +705,23 @@
       "slug": "procedure-protocole",
       "pattern": "branching",
       "status": "illustration_non_canonique",
-      "caption": "Étapes normées, préconditions, exceptions, rôles et issues possibles.",
+      "caption": "Prerequisites lead to ordered actions, decisions, exception paths and authorized closure.",
       "nodes": [
         {
           "id": "n1",
-          "label": "Précondition",
+          "label": "Prerequisite",
           "x": 74,
           "y": 120
         },
         {
           "id": "n2",
-          "label": "Étape",
+          "label": "Step",
           "x": 230,
           "y": 120
         },
         {
           "id": "n3",
-          "label": "Issue A",
+          "label": "Outcome A",
           "x": 410,
           "y": 65
         },
@@ -733,7 +733,7 @@
         },
         {
           "id": "n5",
-          "label": "Clôture",
+          "label": "Closure",
           "x": 582,
           "y": 120
         }
@@ -766,7 +766,7 @@
       "slug": "referentiel-semantique",
       "pattern": "cluster",
       "status": "illustration_non_canonique",
-      "caption": "Concepts, entités et relations regroupés en noyaux thématiques interreliés.",
+      "caption": "Source-linked concepts, entities and typed relationships arranged in related thematic clusters.",
       "nodes": [
         {
           "id": "n1",
@@ -788,13 +788,13 @@
         },
         {
           "id": "n4",
-          "label": "Contexte",
+          "label": "Context",
           "x": 440,
           "y": 100
         },
         {
           "id": "n5",
-          "label": "Entité",
+          "label": "Entity",
           "x": 560,
           "y": 178
         }
@@ -827,17 +827,17 @@
       "slug": "registre-evenementiel",
       "pattern": "timeline",
       "status": "illustration_non_canonique",
-      "caption": "Événements et changements consignés dans leur ordre ou leur datation.",
+      "caption": "Events, revisions, timestamps and provenance are recorded without assuming causality.",
       "nodes": [
         {
           "id": "n1",
-          "label": "Événement 1",
+          "label": "Event 1",
           "x": 85,
           "y": 121
         },
         {
           "id": "n2",
-          "label": "Révision",
+          "label": "Revision",
           "x": 208,
           "y": 121
         },
@@ -849,13 +849,13 @@
         },
         {
           "id": "n4",
-          "label": "Contrôle",
+          "label": "Review",
           "x": 453,
           "y": 121
         },
         {
           "id": "n5",
-          "label": "Événement 2",
+          "label": "Event 2",
           "x": 578,
           "y": 121
         }
@@ -884,11 +884,11 @@
       "slug": "simulation-transition",
       "pattern": "linear",
       "status": "illustration_non_canonique",
-      "caption": "États, transitions, paramètres et scénarios de passage.",
+      "caption": "Initial states progress through actions and transitions toward hypothetical outcomes.",
       "nodes": [
         {
           "id": "n1",
-          "label": "État initial",
+          "label": "Initial state",
           "x": 84,
           "y": 120
         },
@@ -906,7 +906,7 @@
         },
         {
           "id": "n4",
-          "label": "État final",
+          "label": "Final state",
           "x": 582,
           "y": 120
         }
@@ -931,35 +931,35 @@
       "slug": "taxonomie-classification",
       "pattern": "tree",
       "status": "illustration_non_canonique",
-      "caption": "Une racine se ramifie en catégories de plus en plus spécifiques, avec synonymes et variantes.",
+      "caption": "Natural categories branch into families and species with criteria, synonyms and cited authorities.",
       "nodes": [
         {
           "id": "n1",
-          "label": "Groupe racine",
+          "label": "Root group",
           "x": 330,
           "y": 40
         },
         {
           "id": "n2",
-          "label": "Famille A",
+          "label": "Family A",
           "x": 170,
           "y": 111
         },
         {
           "id": "n3",
-          "label": "Famille B",
+          "label": "Family B",
           "x": 492,
           "y": 111
         },
         {
           "id": "n4",
-          "label": "Espèce A1",
+          "label": "Species A1",
           "x": 170,
           "y": 198
         },
         {
           "id": "n5",
-          "label": "Espèce B1",
+          "label": "Species B1",
           "x": 492,
           "y": 198
         }
@@ -988,29 +988,29 @@
       "slug": "univers-oeuvres-medias",
       "pattern": "cluster",
       "status": "illustration_non_canonique",
-      "caption": "Univers, œuvres, personnages, médias et déclinaisons reliés comme constellation.",
+      "caption": "Works, characters, fictional events and media manifestations form a related universe.",
       "nodes": [
         {
           "id": "n1",
-          "label": "Univers",
+          "label": "Universe",
           "x": 110,
           "y": 95
         },
         {
           "id": "n2",
-          "label": "Personnage",
+          "label": "Character",
           "x": 262,
           "y": 48
         },
         {
           "id": "n3",
-          "label": "Œuvre",
+          "label": "Work",
           "x": 263,
           "y": 178
         },
         {
           "id": "n4",
-          "label": "Épisode",
+          "label": "Episode",
           "x": 440,
           "y": 100
         },
@@ -1049,7 +1049,7 @@
       "slug": "environnement-protocolaire",
       "pattern": "branching",
       "status": "illustration_non_canonique",
-      "caption": "Un protocole linéaire comporte bifurcations, exceptions, escalades et traces d’exécution séparées.",
+      "caption": "A process branches at decision points; execution logs and simulations remain separate.",
       "nodes": [
         {
           "id": "n1",
@@ -1065,7 +1065,7 @@
         },
         {
           "id": "n3",
-          "label": "Chemin A",
+          "label": "Path A",
           "x": 410,
           "y": 65
         },
@@ -1077,7 +1077,7 @@
         },
         {
           "id": "n5",
-          "label": "Clôture",
+          "label": "Closure",
           "x": 582,
           "y": 120
         }
@@ -1110,23 +1110,23 @@
       "slug": "etat-de-systemes",
       "pattern": "matrix",
       "status": "illustration_non_canonique",
-      "caption": "Les systèmes occupent les lignes; les dimensions d’état, les colonnes; la temporalité demeure distincte.",
+      "caption": "Rows represent systems; columns represent observed state dimensions; the timeline is external.",
       "nodes": [
         {
           "id": "n1",
-          "label": "Système A",
+          "label": "System A",
           "x": 135,
           "y": 76
         },
         {
           "id": "n2",
-          "label": "Système B",
+          "label": "System B",
           "x": 330,
           "y": 76
         },
         {
           "id": "n3",
-          "label": "Disponible ?",
+          "label": "Available?",
           "x": 525,
           "y": 76
         },
@@ -1138,13 +1138,13 @@
         },
         {
           "id": "n5",
-          "label": "Capacité",
+          "label": "Capacity",
           "x": 330,
           "y": 173
         },
         {
           "id": "n6",
-          "label": "Alerte",
+          "label": "Alert",
           "x": 525,
           "y": 173
         }
@@ -1156,17 +1156,17 @@
       "slug": "suivi-employe",
       "pattern": "casefile",
       "status": "illustration_non_canonique",
-      "caption": "Un dossier central relie documents, rencontres, suivis, témoignages et actions décidées, sans les fusionner.",
+      "caption": "A casefile links meetings, notes, decisions and separate testimony without collapsing their provenance.",
       "nodes": [
         {
           "id": "n1",
-          "label": "Dossier",
+          "label": "Casefile",
           "x": 160,
           "y": 122
         },
         {
           "id": "n2",
-          "label": "Rencontres",
+          "label": "Meetings",
           "x": 472,
           "y": 34
         },
@@ -1178,13 +1178,13 @@
         },
         {
           "id": "n4",
-          "label": "Décisions",
+          "label": "Decisions",
           "x": 472,
           "y": 152
         },
         {
           "id": "n5",
-          "label": "Prochain suivi",
+          "label": "Next action",
           "x": 472,
           "y": 211
         }
@@ -1213,35 +1213,35 @@
       "slug": "taxonomie-nature",
       "pattern": "tree",
       "status": "illustration_non_canonique",
-      "caption": "Une racine se ramifie en catégories, sous-catégories et spécimens avec synonymes et variantes.",
+      "caption": "A root category branches into groups, subgroups and specimens, with recorded synonyms.",
       "nodes": [
         {
           "id": "n1",
-          "label": "Vivant",
+          "label": "Living things",
           "x": 330,
           "y": 40
         },
         {
           "id": "n2",
-          "label": "Famille A",
+          "label": "Family A",
           "x": 170,
           "y": 111
         },
         {
           "id": "n3",
-          "label": "Famille B",
+          "label": "Family B",
           "x": 492,
           "y": 111
         },
         {
           "id": "n4",
-          "label": "Espèce A",
+          "label": "Species A",
           "x": 170,
           "y": 198
         },
         {
           "id": "n5",
-          "label": "Espèce B",
+          "label": "Species B",
           "x": 492,
           "y": 198
         }
@@ -1270,7 +1270,7 @@
       "slug": "troubleshooting-systeme",
       "pattern": "hub",
       "status": "illustration_non_canonique",
-      "caption": "Un nœud-problème central relie les observations, les causes possibles, les tests et les états observés.",
+      "caption": "An incident hub links reported symptoms, diagnostic tests, event logs, and observed system state.",
       "nodes": [
         {
           "id": "n1",
@@ -1280,7 +1280,7 @@
         },
         {
           "id": "n2",
-          "label": "Symptômes",
+          "label": "Symptoms",
           "x": 112,
           "y": 65
         },
@@ -1292,7 +1292,7 @@
         },
         {
           "id": "n4",
-          "label": "Hypothèses",
+          "label": "Hypotheses",
           "x": 112,
           "y": 185
         },
@@ -1322,5 +1322,6 @@
         }
       ]
     }
-  ]
+  ],
+  "language": "en"
 }

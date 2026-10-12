@@ -2,9 +2,9 @@
   "id": "ARK-14",
   "legacy_id": "TK-14",
   "slug": "simulation-transition",
-  "name": "Simulation / transitions",
-  "family": "Processus",
-  "description": "Établit règles de changement d’état et scénarios reproductibles.",
+  "name": "Simulation / Transitions",
+  "family": "Processes",
+  "description": "State-transition definitions and hypothetical scenarios. Simulation, state machines and training situations.",
   "kit_profile": "executable",
   "native_kind_candidate": "modele_etats_transitions",
   "responsibility_mode": "simulation-model-owner",
@@ -28,10 +28,10 @@
     "scenario",
     "resultats_derived"
   ],
-  "reference_use_case": "Simulateur, jeu, modèles exploratoires",
-  "integrity_rule": "Une sortie simulée n’est ni une observation du monde ni une autorisation d’agir.",
-  "antipattern": "Une simulation n’affirme pas une observation du monde réel.",
-  "design_question": "Quels paramètres et hypothèses gouvernent le scénario ?",
+  "reference_use_case": "Simulation, state machines and training situations.",
+  "integrity_rule": "Simulation does not grant real-world execution authority.",
+  "antipattern": "Do not confuse simulated outputs with observed events or execution authority.",
+  "design_question": "What transition rules and assumptions govern the scenario?",
   "template_path": "modeles/simulation-transition",
   "kind": "open_archetype_not_standard",
   "maturity": "candidate",
@@ -42,14 +42,22 @@
   "secondary_patterns": [
     "matrix"
   ],
-  "structure_label": "chaîne d’états",
-  "situational_schema": "États, transitions, paramètres et scénarios de passage.",
+  "structure_label": "State transitions",
+  "situational_schema": "Initial states progress through actions and transitions toward hypothetical outcomes.",
   "canonical_use_cases": [
-    "simulation de systèmes",
-    "transitions d’état",
-    "scénarios d’évolution"
+    "simulation",
+    "scenario analysis",
+    "state machine"
   ],
   "case_examples": [
-    "Simulations et transitions"
+    "Modelled transitions"
+  ],
+  "primitive_labels_en": [
+    "states",
+    "transitions",
+    "constraints",
+    "variables",
+    "scenario",
+    "results derived"
   ]
 }

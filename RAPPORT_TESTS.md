@@ -1,21 +1,21 @@
-# Rapport de vérification — Arketype 1.2.1
+# Arketype 1.2.2 — English edition verification report
 
-## Résultats locaux
+## Verified contents
 
-- **27/27 tests unitaires réussis** (17 tests historiques de la version 1.1 et 10 contrôles complémentaires).
-- `python arketype.py validate --check-kit` : **OK**, 19 modèles vérifiés par l'Authoring Kit 3.2.4.
-- **19 identités de workspace distinctes** : `state_ref` et `slug` alignés sur les 19 archétypes.
-- **ARK-17, ARK-18, ARK-19 réinitialisés** par `kristal.py init` : `check`, `build-v9`, `check` réussis; reçus locaux alignés sur le `state_ref` et zéro artefact logique métier généré.
-- **24 schémas situés** en JSON : 19 archétypes + 5 profils, avec vérification des références de nœuds et du statut `illustration_non_canonique`.
-- **HTML généré** à partir des inventaires JSON et fiches de domaine; présence contrôlée du logo SVG, de `#1e6864`, des filtres et des liens de sources.
-- **PDF illustré de 13 pages** construit depuis les mêmes inventaires, contrôlé visuellement sur la couverture, des pages d'archétypes et les profils d'usage. Aucune carte n'est divisée entre deux pages dans cette édition.
-- Aucun changement GitHub distant, aucune publication, activation ou qualification métier.
+- **19 candidate archetypes** and **19 neutral Local Kit workspaces** with distinct `state_ref` values.
+- **14 design-only assembly recipes**, **5 use-case profiles**, **10 visual patterns**, and **24 labeled situated diagrams**.
+- All source archetype metadata, use-case descriptions, assembly guidance, visual pattern labels, UI labels, root documentation, and template-facing documentation are in **English**.
+- **17 GitHub Wiki pages** in English; the README is in English and does not embed a logo.
+- User-supplied logo appears in both the generated offline HTML catalogue and the optional Windows Tkinter interface; brand color **#1E6864** is retained.
+- Printable **13-page A4 PDF** regenerated from the English JSON reader data and previewed visually.
+- **36/36 Python unit tests passed** on the English edition, including a full Authoring Kit check of every workspace.
+- All **19 starter workspaces** separately passed Authoring Kit `check`, `build-v9`, and `check` after English workspace metadata was applied. Their canonical domain indexes remain empty.
+- A new sample instance initialized successfully and generated English README/agent documentation.
 
-## Limites
+## Deliberately stable technical identifiers
 
-- Les dix motifs et les 24 diagrammes décrivent des formes de conception, **non des Logical Contracts** ou des preuves d'état.
-- Les `check` et `build-v9` sur des workspaces vides vérifient l'enveloppe locale, pas la validité scientifique, juridique ou opérationnelle d'un domaine.
-- L'interface Tkinter sous Windows et les rendus dans tous les navigateurs n'ont **pas** été testés ici.
-- Le HTML est statique; exécuter `python arketype.py build-html` après une modification des inventaires.
-- `python catalogue/creer_pdf.py` exige, pour régénérer le PDF, `reportlab` et `cairosvg` (le PDF est déjà inclus dans le dépôt).
-- Les exemples de témoignages, de dossiers d'employés et d'états techniques sont **vierges**. Une application réelle devra définir droits d'accès, conservation, sécurité, responsabilité et autorité des sources.
+Original slugs, file paths, schema property names and internal machine status values remain unchanged to protect existing integrations and references. The bundled upstream Authoring Kit executable (`kristal.py`) is also preserved, rather than presenting a modified fork as version 3.2.4; its internal diagnostic strings and comments may retain the upstream language. These machine details are not the reader-facing locale of the Arketype library.
+
+## Limits
+
+The diagrams and design JSON are noncanonical illustrations, not real domain Logical Contracts or qualified proof. Technical builds and local checks do not establish legal, factual, scientific or operational validity. GUI functionality has not been interactively tested on Windows. No remote GitHub repository or Wiki was changed; no publication or activation was performed.

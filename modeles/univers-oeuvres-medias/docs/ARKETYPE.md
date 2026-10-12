@@ -1,12 +1,12 @@
-# Fiche d’archétype
+# Arketype record — Media and Creative Universes
 
-- Identifiant Arketype : `ARK-13`
-- Famille : Structures
-- Profil d’amorce du Local Kit : `open`
-- Type de modèle natif **candidat** : `oeuvres_evenements_manifestations`
-- Exemples de rapprochement : KingKlown MEDIA, univers créatifs, musée
-- Statut : `stub`, non publié, pas de claims canoniques enregistrés
-- Le fichier `design/structure-candidate.json` reste volontairement **hors canon**
+- **Archetype:** `ARK-13` (`univers-oeuvres-medias`).
+- **Family:** Structures.
+- **Local status:** `stub`, no domain assertions.
+- **Visual pattern:** cluster (Creative universe cluster).
+- **Candidate scaffold:** `design/structure-candidate.json`.
+- **Metadata:** `archetypes/univers-oeuvres-medias.json`.
 
-- Fiche catalogue : `archetypes/univers-oeuvres-medias.json` (à la racine de la bibliothèque).
-- Les primitives de design ne font **pas** partie du canon par défaut.
+**Use cases:** worldbuilding, media archive, creative continuity.
+
+To create a new independent workspace, run `python arketype.py create --type univers-oeuvres-medias --slug your-new-slug --title "Your title" --parent PATH` from the library root.

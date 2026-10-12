@@ -1,45 +1,11 @@
-# Instructions IA locales — Kristal Local 3.2
+# Local Kristal — AI and contributor instructions
 
-Ce fichier concerne les agents qui **modifient** un Local Kristal. La couche `AI_START_HERE.md` n'existe que si un read model IA optionnel a été construit.
+This template is guidance for agents that edit a Local Kristal. The optional `AI_START_HERE.md` reader layer is present only after an appropriate build.
 
-Ne jamais inventer de contenu pour remplir un fichier vide. Un champ `unknown`, une liste vide ou un stub explicite est préférable à une fausse complétude.
+Never invent content simply to fill an empty file. A documented `unknown`, an empty list, or an explicit stub is better than a fabricated claim.
 
-Avant toute modification du canon :
+Before editing canonical artifacts: identify source authority, epistemic status, semantic ownership, and existing Semantic IDs. Keep logical content distinct from builds, hosted surfaces, caches, and derived AI reader layers. Never change a Logical Commitment by editing only compression, indexes, repository location, or `ai/`.
 
-1. identifier la source et l'autorité ;
-2. déterminer le régime épistémique ;
-3. vérifier l'ownership ;
-4. préserver les Semantic IDs existants ;
-5. distinguer contenu logique, build, matérialisation, hosting et read model ;
-6. mettre à jour les dérivés uniquement après le canon ;
-7. ne jamais changer un Logical Commitment en modifiant seulement compression, segment, index, cache, repo, branche, URL ou couche `ai/`.
+After any admitted canonical change, run the appropriate `check` and `build-v9` procedures, then validate any separately generated reader layer. A network publication requires qualification of the exact commit and an explicit publication decision. Activation is a separate action that requires authorization.
 
-Après une modification canonique :
-
-```text
-check
-  ↓
-build-v9
-  ↓
-portable AI read layer regenerated automatically
-  ↓
-check-ai
-```
-
-Pour une publication réseau optionnelle :
-
-```text
-export-hosted
-  ↓
-commit/push exact
-  ↓
-Kristal GitHub Setup: qualify exact commit
-  ↓
-Kristal GitHub Setup: publish / activate
-  ↓
-verify publication bundle
-  ↓
-activate seulement si explicitement demandé
-```
-
-Une IA peut préparer, vérifier et proposer. Elle ne doit pas considérer une sortie IA comme canonique, ni transformer une publication en activation implicite.
+An AI system may propose and prepare changes; its output is not automatically canonical or authorized for use.

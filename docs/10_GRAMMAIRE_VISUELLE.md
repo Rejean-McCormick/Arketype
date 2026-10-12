@@ -1,7 +1,7 @@
-# Grammaire visuelle · Arketype 1.2.1
+# Arketype visual grammar
 
-Les dix motifs sont **des conventions de projection visuelle** (`linear`, `branching`, `hub`, `cluster`, `tree`, `timeline`, `matrix`, `casefile`, `multilayer`, `network`). Un archétype est décrit par un motif principal et, si utile, des motifs secondaires.
+The same ten reader conventions apply to archetype cards and situated profiles: **linear**, **branching**, **hub**, **cluster**, **tree**, **timeline**, **matrix**, **casefile**, **multilayer**, and **network**.
 
-Chaque schéma situé possède des nœuds nommés et des connexions dans `inventaires/diagrammes-situes.json`. Il représente un cas **fictif**, hors canon et sans inférence automatique. Les liens graphiques ne valent ni référence épistémique ni preuve.
+Each diagram is linked to its source in `inventaires/diagrammes-situes.json`. Nodes carry illustrative English labels; edges show a candidate arrangement, not verified evidence. The graphic shape is intentionally not a new Framework Logical Contract or a mandatory database schema.
 
-Les métadonnées de structure dans `inventaires/archetypes-visuels.json` sont alignées sur les fiches détaillées `archetypes/*.json`.
+The authoritative catalogue sources for the visual projection are `catalogue.json`, `archetypes/*.json`, `inventaires/archetypes-visuels.json`, `inventaires/grammaire-visuelle.json`, `inventaires/profils-usage.json`, and `inventaires/diagrammes-situes.json`.

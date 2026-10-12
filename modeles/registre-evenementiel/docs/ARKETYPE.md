@@ -1,12 +1,12 @@
-# Fiche d’archétype
+# Arketype record — Event Ledger / Chronology
 
-- Identifiant Arketype : `ARK-11`
-- Famille : Structures
-- Profil d’amorce du Local Kit : `open`
-- Type de modèle natif **candidat** : `ledger_evenements_temporalises`
-- Exemples de rapprochement : Chroniques, trajectoires, provenance de décisions
-- Statut : `stub`, non publié, pas de claims canoniques enregistrés
-- Le fichier `design/structure-candidate.json` reste volontairement **hors canon**
+- **Archetype:** `ARK-11` (`registre-evenementiel`).
+- **Family:** Structures.
+- **Local status:** `stub`, no domain assertions.
+- **Visual pattern:** timeline (Dated event sequence).
+- **Candidate scaffold:** `design/structure-candidate.json`.
+- **Metadata:** `archetypes/registre-evenementiel.json`.
 
-- Fiche catalogue : `archetypes/registre-evenementiel.json` (à la racine de la bibliothèque).
-- Les primitives de design ne font **pas** partie du canon par défaut.
+**Use cases:** incident timeline, audit trail, historical chronology.
+
+To create a new independent workspace, run `python arketype.py create --type registre-evenementiel --slug your-new-slug --title "Your title" --parent PATH` from the library root.

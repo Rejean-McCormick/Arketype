@@ -1,9 +1,9 @@
-# Intention et scope
+# Purpose and scope
 
-Ce modèle neutre sert à démarrer un Kristal de famille **Compilation / collection**.
+This neutral starter workspace illustrates **Compilation / Collection** (`ARK-05`).
 
-**Forme candidate** : Choisit, ordonne, annote et compare des unités de savoir sans nécessairement les posséder.
+**Purpose:** Curated, ordered and annotated independent works or knowledge items. Cookbooks, reference collections and anthologies.
 
-Cas de référence (analogiques, non clonés) : Livre de recettes, anthologie, sélection d’œuvres.
+**Typical applications:** cookbook, anthology, curated reference.
 
-Aucun fait ou corpus métier n’est prérempli. Définir le domaine réel, les destinataires, les droits et les preuves avant de cristalliser quoi que ce soit.
+It contains no admitted domain facts, personal data, privileged process authority or normative Logical Contract. Define sources, scope, permissions and ownership for any real instance.

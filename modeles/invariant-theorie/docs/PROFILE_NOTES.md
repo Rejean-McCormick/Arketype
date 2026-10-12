@@ -1,5 +1,5 @@
-# Notes du profil `invariant`
+# Local Authoring Kit profile
 
-Point de départ possible : invariant, morphes équivalents, conséquences, témoins/certificats, opérationnalisations.
+**Profile:** `invariant`. This is an initial tooling profile, not proof of domain compliance.
 
-Ce profil est une amorce et non une contrainte normative.
+Semantic ownership, source authority, legal constraints, executable behaviour and publication must be established independently for each real use case.

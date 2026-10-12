@@ -2,9 +2,9 @@
   "id": "ARK-09",
   "legacy_id": "TK-09",
   "slug": "modele-multiplexe",
-  "name": "Modèle multiplexe / organisations",
+  "name": "Multiplex / Organizational Model",
   "family": "Structures",
-  "description": "Réseaux de rôles, institutions, ressources et règles selon des couches et échelles distinctes.",
+  "description": "Several relationship layers over shared entities. Organizational studies and social or institutional mappings.",
   "kit_profile": "open",
   "native_kind_candidate": "graphe_multiplexe_contextualise",
   "responsibility_mode": "relational-model-owner",
@@ -30,10 +30,10 @@
     "temps",
     "points_de_vue"
   ],
-  "reference_use_case": "Organisations humaines, pouvoir, réseaux techniques",
-  "integrity_rule": "Conserver les couches et perspectives; aucun rôle, droit ou autorité par défaut.",
-  "antipattern": "Ne pas écraser les perspectives ni les périodes divergentes.",
-  "design_question": "Comment chaque couche relationnelle est-elle située ?",
+  "reference_use_case": "Organizational studies and social or institutional mappings.",
+  "integrity_rule": "Avoid collapsing relationships from different layers.",
+  "antipattern": "Do not collapse distinct temporal, institutional or role relationships into one universal graph.",
+  "design_question": "Which layer owns each relationship and at what time?",
   "template_path": "modeles/modele-multiplexe",
   "kind": "open_archetype_not_standard",
   "maturity": "candidate",
@@ -44,14 +44,23 @@
   "secondary_patterns": [
     "network"
   ],
-  "structure_label": "structure multicouche",
-  "situational_schema": "Même réalité organisée sur plusieurs couches ou plans de relation.",
+  "structure_label": "Organizational layers",
+  "situational_schema": "People, roles, institutions and resources are mapped in distinguishable relationship layers.",
   "canonical_use_cases": [
-    "organisations complexes",
-    "relations sociales",
-    "vues multi-niveaux"
+    "organizational mapping",
+    "institutional studies",
+    "social relationships"
   ],
   "case_examples": [
-    "Organisations humaines"
+    "Human organizations"
+  ],
+  "primitive_labels_en": [
+    "entities",
+    "relationship layers",
+    "roles",
+    "resources",
+    "rules",
+    "time",
+    "viewpoints"
   ]
 }

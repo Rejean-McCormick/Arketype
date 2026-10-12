@@ -1,7 +1,7 @@
-# Hébergement et publication
+# Hosting and publication
 
-**Privé par défaut.** Le modèle ne contient pas de témoignages réels. Pour de vraies dépositions, le stockage, les restrictions et la conservation doivent être arrêtés par les responsables compétents.
+No network publication or activation is performed by Arketype. `build-v9` does not qualify domain claims or authorize publication.
 
-`build-v9` ≠ qualification ≠ publication ≠ activation. Aucune autorisation de publication ou de divulgation ne découle d'une validation technique.
+Kristal Manager may maintain a reading surface; GitHub hosting and Bootstrap/Setup workflows require independently verified, exact committed state references and authorization.
 
-Ne jamais mettre par défaut des identités, enregistrements, dépositions ou pièces jointes sensibles dans un dépôt public, des journaux, des index ouverts ou des Context Packs accessibles sans droits.
+Do not put personal, restricted or confidential content in a public repository or accessible Context Pack by default.

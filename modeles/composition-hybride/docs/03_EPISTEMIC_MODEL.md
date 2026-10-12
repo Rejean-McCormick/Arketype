@@ -1,5 +1,7 @@
-# Modèle épistémique — à qualifier
+# Epistemic model
 
-Règle structurante : **Ne pas assimiler application opérationnelle, dossier personnel, moteur de calcul et Kristal de connaissance.**
+**Integrity condition:** Do not merge semantic owners or treat application logic as canon.
 
-Le modèle ne contient aucune vérité ou preuve de domaine. Distinguer citations de source, autorité de l’émetteur, qualification de la preuve, engagements logiques, résultats calculés et autorisations. Toute sortie IA est une proposition, jamais un fait reconnu automatiquement.
+Source statements, observations, hypotheses, inferred conclusions and decisions can require different qualifiers. A referenced proof, testimony, or status report does not automatically establish factual truth, legal validity, or permission to act.
+
+**Design question:** Which interfaces, ownership boundaries and contract links are required?

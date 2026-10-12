@@ -4,7 +4,7 @@
   "forme": "modele-multiplexe",
   "statut": "illustration-non-canonique",
   "n_est_pas_un_artefact_enregistre": true,
-  "intention": "Réseaux de rôles, institutions, ressources et règles selon des couches et échelles distinctes.",
+  "intention": "Several relationship layers over shared entities. Organizational studies and social or institutional mappings.",
   "primitives_possibles": [
     "entites",
     "couches_relationnelles",
@@ -15,7 +15,7 @@
     "points_de_vue"
   ],
   "contraintes_a_preserver": [
-    "Conserver les couches et perspectives; aucun rôle, droit ou autorité par défaut."
+    "Avoid collapsing relationships from different layers."
   ],
   "exemple_payload_vide": {
     "entites": [],
@@ -26,5 +26,5 @@
     "perspectives": []
   },
   "contrat_logique": "a_definir_pour_un_domaine_reel",
-  "bibliotheque": "Arketype 1.0"
+  "bibliotheque": "Arketype 1.2.2 (English edition)"
 }

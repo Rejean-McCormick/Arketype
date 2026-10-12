@@ -1,12 +1,12 @@
-# Fiche d’archétype
+# Arketype record — Research Memory
 
-- Identifiant Arketype : `ARK-06`
-- Famille : Savoir
-- Profil d’amorce du Local Kit : `research`
-- Type de modèle natif **candidat** : `knowledge_research_strategy_separes`
-- Exemples de rapprochement : Projet scientifique, recherche formelle
-- Statut : `stub`, non publié, pas de claims canoniques enregistrés
-- Le fichier `design/structure-candidate.json` reste volontairement **hors canon**
+- **Archetype:** `ARK-06` (`memoire-recherche`).
+- **Family:** Knowledge.
+- **Local status:** `stub`, no domain assertions.
+- **Visual pattern:** timeline (Research history).
+- **Candidate scaffold:** `design/structure-candidate.json`.
+- **Metadata:** `archetypes/memoire-recherche.json`.
 
-- Fiche catalogue : `archetypes/memoire-recherche.json` (à la racine de la bibliothèque).
-- Les primitives de design ne font **pas** partie du canon par défaut.
+**Use cases:** research notebook, study record, experiment log.
+
+To create a new independent workspace, run `python arketype.py create --type memoire-recherche --slug your-new-slug --title "Your title" --parent PATH` from the library root.

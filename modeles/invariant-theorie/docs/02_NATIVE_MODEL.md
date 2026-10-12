@@ -1,23 +1,11 @@
-# Forme native candidate
+# Candidate native model
 
-**Archétype Arketype :** ARK-07 — Invariant / théorie formelle
+**Native kind (stable machine identifier):** `invariant_formalisations_preuves`
 
-Expose invariants, formulations, conséquences, témoins, réfutations et vérifications.
+**Reader pattern:** Formal dependency tree (`tree`); secondary motifs: linear.
 
-## Primitives envisagées
+**Situated representation:** Axioms and definitions support lemmas, theorems and explicit proof obligations.
 
-- `invariants`
-- `morphes_equivalents`
-- `consequences`
-- `contre_exemples`
-- `preuves`
-- `certificats`
-- `tests`
+**Candidate primitives:** invariants, morphes equivalents, consequences, contre exemples, proofs, certificats, tests.
 
-## Invariant d’intégrité conceptuelle
-
-Un test, une conséquence nécessaire et une preuve ne sont pas interchangeables.
-
-## Fichier candidat
-
-`design/structure-candidate.json` est une **aide**, pas une source de vérité et pas un contrat logique v9 enregistré. Avant toute utilisation, décider les primitives réelles, réduire/étendre la forme, documenter ce qui serait perdu lors d’une conversion et définir les Logical Contracts exacts.
+The example in `design/structure-candidate.json` is a **noncanonical scaffold**, not registered domain content. Its existing property names are stable technical identifiers.

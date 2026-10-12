@@ -2,9 +2,9 @@
   "id": "ARK-04",
   "legacy_id": "TK-04",
   "slug": "procedure-protocole",
-  "name": "Procédure / protocole",
-  "family": "Processus",
-  "description": "Décrit préconditions, opérations, branches, ordre partiel, résultats et exceptions.",
+  "name": "Procedure / Protocol",
+  "family": "Processes",
+  "description": "Ordered and conditional steps, roles, prerequisites and exceptions. SOPs, institutional protocols and checklists.",
   "kit_profile": "procedural",
   "native_kind_candidate": "procedure_graph_conditionnelle",
   "responsibility_mode": "procedure-owner",
@@ -32,10 +32,10 @@
     "exceptions",
     "references_normatives"
   ],
-  "reference_use_case": "PoliceOps, HospitalOps, recette exécutée",
-  "integrity_rule": "Une procédure décrite ne donne pas permission de l’exécuter; confidentialité, droit, sécurité et contexte restent externes.",
-  "antipattern": "Une étape de protocole ne donne pas le droit de la réaliser.",
-  "design_question": "Qui valide les versions, exceptions et cadres d’application ?",
+  "reference_use_case": "SOPs, institutional protocols and checklists.",
+  "integrity_rule": "Description, execution and authorization are different.",
+  "antipattern": "Do not confuse a documented protocol, its execution log, or permission to perform it.",
+  "design_question": "What prerequisites, roles, exceptions and authorizations apply?",
   "template_path": "modeles/procedure-protocole",
   "kind": "open_archetype_not_standard",
   "maturity": "candidate",
@@ -46,15 +46,25 @@
   "secondary_patterns": [
     "linear"
   ],
-  "structure_label": "séquence conditionnelle",
-  "situational_schema": "Étapes normées, préconditions, exceptions, rôles et issues possibles.",
+  "structure_label": "Conditional protocol",
+  "situational_schema": "Prerequisites lead to ordered actions, decisions, exception paths and authorized closure.",
   "canonical_use_cases": [
-    "environnement protocolaire",
-    "procédure métier",
-    "playbook opérationnel"
+    "standard operating procedure",
+    "field protocol",
+    "operations checklist"
   ],
   "case_examples": [
-    "PoliceOps",
-    "HospitalOps"
+    "PoliceOps / HospitalOps"
+  ],
+  "primitive_labels_en": [
+    "conditions entree",
+    "steps",
+    "transitions",
+    "branches",
+    "roles",
+    "resources",
+    "issues",
+    "exceptions",
+    "references normatives"
   ]
 }

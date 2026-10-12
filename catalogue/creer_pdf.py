@@ -54,7 +54,7 @@ def logo(c,x,y,w=76):
     c.drawImage(image,x,y,w,w*92/209,mask='auto')
 
 
-def topbar(c,title='Arketype / Catalogue visuel'):
+def topbar(c,title='Arketype / Visual catalogue'):
     c.setFillColor(BRAND); c.roundRect(34,H-60,51,43,8,fill=0,stroke=0)
     logo(c,40,H-55,44)
     c.setFillColor(BRAND);c.setFont('ArketypeBold',10);c.drawString(99,H-39,'ARKETYPE')
@@ -64,8 +64,8 @@ def topbar(c,title='Arketype / Catalogue visuel'):
 
 def footer(c,page):
     c.setFillColor(MUTED);c.setFont('ArketypeRegular',7)
-    c.drawString(40,35,'Conventions graphiques non normatives · aucune donnée réelle')
-    c.drawRightString(W-40,35,f'Arketype 1.2.1  ·  {page}')
+    c.drawString(40,35,'Non-normative diagrams · no real domain data')
+    c.drawRightString(W-40,35,f'Arketype 1.2.2  ·  {page}')
 
 
 def draw_diagram(c,diag,x,y,scale=0.56):
@@ -113,22 +113,22 @@ def card(c,a,d,y_top,profile=False):
     c.setFont('ArketypeBold',8);c.setFillColor(BRAND);c.drawString(x+15,y_top-219,'STRUCTURE')
     sit=a['situational_schema']
     print_text(c,sit,x+82,y_top-219,width-99,7.5,10,DARK,3)
-    c.setFont('ArketypeBold',8);c.setFillColor(BRAND);c.drawString(x+15,y_top-261,'USAGES')
+    c.setFont('ArketypeBold',8);c.setFillColor(BRAND);c.drawString(x+15,y_top-261,'USE CASES')
     uses=a['use_cases'] if profile else a['canonical_use_cases']
     print_text(c,' · '.join(uses),x+82,y_top-261,width-99,7.3,10,DARK,2)
     c.setFont('ArketypeRegular',7.1);c.setFillColor(MUTED)
-    rule='Assembler : '+', '.join([a['primary_archetype'],*a['supporting_archetypes']]) if profile else 'Motif : '+a['structure_label']
+    rule='Assembly: '+', '.join([a['primary_archetype'],*a['supporting_archetypes']]) if profile else 'Pattern: '+a['structure_label']
     print_text(c,rule,x+15,y_top-296,width-30,7.1,9,MUTED,2)
 
 
 def cover(c,patterns,arch_count,profile_count):
-    topbar(c,'Structures · motifs · usages')
-    c.setFillColor(BRAND);c.setFont('ArketypeBold',30);c.drawString(40,H-118,'Catalogue visuel')
-    c.setFont('ArketypeBold',18);c.drawString(40,H-146,'des Kristals')
-    print_text(c,'Des structures distinctes pour des connaissances distinctes. Des archétypes, des exemples situés et une grammaire visuelle commune.',40,H-174,W-80,10.6,16,MUTED,3)
+    topbar(c,'Structures · patterns · use cases')
+    c.setFillColor(BRAND);c.setFont('ArketypeBold',30);c.drawString(40,H-118,'Visual catalogue')
+    c.setFont('ArketypeBold',18);c.drawString(40,H-146,'of Kristals')
+    print_text(c,'Different knowledge structures deserve distinct shapes. Explore archetypes, situated examples, and one common visual grammar.',40,H-174,W-80,10.6,16,MUTED,3)
     c.setFillColor(PALE);c.roundRect(40,H-247,W-80,47,8,fill=1,stroke=0)
-    print_text(c,f'{arch_count} archétypes    ·    {profile_count} profils d’usage    ·    {len(patterns)} motifs visuels    ·    14 assemblages',55,H-226,W-100,11,16,BRAND,2,True)
-    c.setFont('ArketypeBold',14);c.setFillColor(DARK);c.drawString(40,H-276,'La grammaire graphique')
+    print_text(c,f'{arch_count} archetypes    ·    {profile_count} profiles    ·    {len(patterns)} visual patterns    ·    14 assemblies',55,H-226,W-100,11,16,BRAND,2,True)
+    c.setFont('ArketypeBold',14);c.setFillColor(DARK);c.drawString(40,H-276,'The visual grammar')
     y=H-303
     for i,p in enumerate(patterns):
         if i%2==0:
@@ -136,8 +136,8 @@ def cover(c,patterns,arch_count,profile_count):
         c.setFillColor(BRAND);c.setFont('ArketypeBold',10);c.drawString(53,y+7,p['label'])
         print_text(c,p['description'],255,y+7,W-305,8.1,11,MUTED,2)
         y-=42
-    c.setFillColor(BRAND);c.setFont('ArketypeBold',9);c.drawString(40,96,'Lecture / intégrité')
-    print_text(c,'Les diagrammes représentent des spécimens fictifs. Ils ne sont ni preuves, ni contrats logiques, ni décisions autorisées. Les droits, sources et frontières relèvent des Kristals réels.',40,78,W-80,8.5,12,MUTED,3)
+    c.setFillColor(BRAND);c.setFont('ArketypeBold',9);c.drawString(40,96,'Reading / integrity')
+    print_text(c,'The diagrams are fictional specimens, not evidence, Logical Contracts, or authorized decisions. Sources, access rights, and ownership boundaries belong to real Kristal instances.',40,78,W-80,8.5,12,MUTED,3)
     footer(c,1);c.showPage()
 
 
@@ -149,14 +149,14 @@ def main():
     dmap={(d['kind'],d['slug']):d for d in diagrams}
     a=sorted([{**x,**json.loads((ROOT/x['file']).read_text())} for x in index],key=lambda x:int(x['id'].split('-')[1]))
     objects=[('archetype',v) for v in a]+[('profile',v) for v in profiles]
-    target=ROOT/'catalogue/Arketype_Catalogue_Visuel_v1.2.1.pdf'
+    target=ROOT/'catalogue/Arketype_Visual_Catalogue_v1.2.2.pdf'
     c=Canvas(str(target),pagesize=A4,pageCompression=1)
-    c.setTitle('Arketype — Catalogue visuel des Kristals v1.2.1')
+    c.setTitle('Arketype — Visual Kristal Catalogue v1.2.2')
     c.setAuthor('Arketype')
     cover(c,patterns,len(a),len(profiles))
     page=2
     for i in range(0,len(objects),2):
-        topbar(c,'Archétypes' if i<len(a) else 'Profils situés')
+        topbar(c,'Archetypes' if i<len(a) else 'Situated profiles')
         for j,(kind,d) in enumerate(objects[i:i+2]):
             diagram=dmap[(kind,d['slug'])]
             card(c,d,diagram,H-88-j*348,profile=kind=='profile')

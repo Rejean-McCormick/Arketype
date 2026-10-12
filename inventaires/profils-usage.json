@@ -5,8 +5,8 @@
     {
       "id": "PRF-01",
       "slug": "troubleshooting-systeme",
-      "name": "Troubleshooting de système",
-      "summary": "Analyser symptômes, hypothèses, tests et historique pour résoudre un problème technique.",
+      "name": "System Troubleshooting",
+      "summary": "Track symptoms, test competing hypotheses, and preserve observations while resolving technical incidents.",
       "primary_archetype": "diagnostic-causal",
       "supporting_archetypes": [
         "registre-evenementiel",
@@ -18,34 +18,34 @@
         "timeline",
         "matrix"
       ],
-      "situational_schema": "Un nœud-problème central relie les observations, les causes possibles, les tests et les états observés.",
+      "situational_schema": "An incident hub links reported symptoms, diagnostic tests, event logs, and observed system state.",
       "use_cases": [
-        "support technique",
-        "pannes intermittentes",
-        "analyse de défaillances"
+        "technical support",
+        "intermittent faults",
+        "failure analysis"
       ],
       "inputs": [
-        "symptômes",
-        "journaux",
-        "états",
-        "tests"
+        "symptoms",
+        "event logs",
+        "observed states",
+        "test results"
       ],
       "outputs": [
-        "hypothèses priorisées",
-        "tests concluants",
-        "mesures recommandées"
+        "candidate causes",
+        "discriminating tests",
+        "recommended actions"
       ],
       "boundaries": [
-        "Le diagnostic n’est pas l’autorisation d’agir",
-        "Le journal d’événements n’est pas la cause"
+        "A diagnosis is not permission to intervene.",
+        "An event log does not by itself prove cause."
       ],
       "assemblage_reference": "troubleshooting-systeme"
     },
     {
       "id": "PRF-02",
       "slug": "environnement-protocolaire",
-      "name": "Environnement protocolaire",
-      "summary": "Décrire étapes, rôles, préconditions, exceptions et documents d’un protocole opératoire.",
+      "name": "Procedural Environment",
+      "summary": "Document prerequisites, authorized roles, exception handling and conditional process steps.",
       "primary_archetype": "procedure-protocole",
       "supporting_archetypes": [
         "registre-evenementiel",
@@ -55,34 +55,34 @@
       "secondary_patterns": [
         "linear"
       ],
-      "situational_schema": "Un protocole linéaire comporte bifurcations, exceptions, escalades et traces d’exécution séparées.",
+      "situational_schema": "A process branches at decision points; execution logs and simulations remain separate.",
       "use_cases": [
-        "protocoles médicaux",
-        "police ops",
-        "SOP industrielles"
+        "medical protocols",
+        "police operations",
+        "industrial SOPs"
       ],
       "inputs": [
-        "étapes",
-        "rôles",
-        "conditions",
+        "steps",
+        "roles",
+        "preconditions",
         "exceptions"
       ],
       "outputs": [
-        "procédure structurée",
-        "grille d’exécution",
-        "points de contrôle"
+        "structured procedure",
+        "execution checklist",
+        "control points"
       ],
       "boundaries": [
-        "Le protocole n’est pas le log d’exécution",
-        "La simulation n’est pas l’exécution autorisée"
+        "Documented steps do not imply permission to act.",
+        "Simulation is not authorized execution."
       ],
       "assemblage_reference": "environnement-protocolaire"
     },
     {
       "id": "PRF-03",
       "slug": "taxonomie-nature",
-      "name": "Taxonomie de la nature",
-      "summary": "Classifier espèces, éléments, catégories naturelles ou objets d’observation.",
+      "name": "Nature Taxonomy",
+      "summary": "Classify living and non-living natural entities with explicit criteria and source references.",
       "primary_archetype": "taxonomie-classification",
       "supporting_archetypes": [
         "referentiel-semantique"
@@ -91,34 +91,34 @@
       "secondary_patterns": [
         "cluster"
       ],
-      "situational_schema": "Une racine se ramifie en catégories, sous-catégories et spécimens avec synonymes et variantes.",
+      "situational_schema": "A root category branches into groups, subgroups and specimens, with recorded synonyms.",
       "use_cases": [
-        "faune et flore",
-        "minéraux",
-        "classes d’objets naturels"
+        "flora and fauna",
+        "minerals",
+        "natural objects"
       ],
       "inputs": [
-        "noms",
-        "critères de classement",
-        "synonymes",
+        "names",
+        "classification rules",
+        "synonyms",
         "sources"
       ],
       "outputs": [
-        "arbre taxonomique",
-        "glossaire",
-        "référentiel de classes"
+        "taxonomic tree",
+        "glossary",
+        "class reference"
       ],
       "boundaries": [
-        "Le classement n’est pas une preuve causale",
-        "L’observation d’un spécimen n’est pas la taxonomie entière"
+        "Classification is not causal proof.",
+        "One observation does not define the taxonomy."
       ],
       "assemblage_reference": "taxonomie-nature"
     },
     {
       "id": "PRF-04",
       "slug": "etat-de-systemes",
-      "name": "État de systèmes",
-      "summary": "Conserver et comparer l’état de plusieurs systèmes sur plusieurs dimensions.",
+      "name": "System-State Tracking",
+      "summary": "Compare the observed condition of several systems across measurable dimensions.",
       "primary_archetype": "etat-systemes",
       "supporting_archetypes": [
         "registre-evenementiel"
@@ -127,34 +127,34 @@
       "secondary_patterns": [
         "timeline"
       ],
-      "situational_schema": "Les systèmes occupent les lignes; les dimensions d’état, les colonnes; la temporalité demeure distincte.",
+      "situational_schema": "Rows represent systems; columns represent observed state dimensions; the timeline is external.",
       "use_cases": [
-        "parc de serveurs",
-        "machines personnelles",
-        "état de déploiements"
+        "servers",
+        "personal devices",
+        "deployment states"
       ],
       "inputs": [
-        "systèmes",
-        "indicateurs",
-        "dates",
+        "systems",
+        "metrics",
+        "timestamps",
         "versions"
       ],
       "outputs": [
-        "matrice d’état",
-        "écarts",
-        "suivis"
+        "state matrix",
+        "deviations",
+        "follow-up items"
       ],
       "boundaries": [
-        "Un snapshot n’est pas une chronologie exhaustive",
-        "L’état désiré n’est pas l’état observé"
+        "A snapshot is not a complete event history.",
+        "Desired configuration is not observed state."
       ],
       "assemblage_reference": "etat-de-systemes"
     },
     {
       "id": "PRF-05",
       "slug": "suivi-employe",
-      "name": "Dossier de suivi d’employé",
-      "summary": "Suivre un employé ou un dossier RH via pièces, notes, actions, rencontres et évaluations.",
+      "name": "Employee Follow-Up",
+      "summary": "Structure a restricted employee casefile with meeting notes, actions and dated supporting records.",
       "primary_archetype": "dossier-suivi",
       "supporting_archetypes": [
         "registre-evenementiel",
@@ -164,28 +164,29 @@
       "secondary_patterns": [
         "timeline"
       ],
-      "situational_schema": "Un dossier central relie documents, rencontres, suivis, témoignages et actions décidées, sans les fusionner.",
+      "situational_schema": "A casefile links meetings, notes, decisions and separate testimony without collapsing their provenance.",
       "use_cases": [
-        "suivi RH",
-        "dossier d’accompagnement",
-        "dossier d’intervention"
+        "employee support",
+        "HR follow-up",
+        "case management"
       ],
       "inputs": [
+        "meetings",
         "notes",
-        "rencontres",
-        "pièces",
+        "documents",
         "actions"
       ],
       "outputs": [
-        "dossier structuré",
-        "suivi chronologique",
-        "synthèses"
+        "case dossier",
+        "timeline",
+        "summaries"
       ],
       "boundaries": [
-        "Le dossier n’est pas un verdict automatique",
-        "Les accès et données sensibles exigent une gouvernance distincte"
+        "A casefile is not an automatic verdict.",
+        "Private employee information requires separate access controls and retention policy."
       ],
       "assemblage_reference": "suivi-employe"
     }
-  ]
+  ],
+  "language": "en"
 }

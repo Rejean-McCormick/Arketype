@@ -1,12 +1,12 @@
-# Fiche d’archétype
+# Arketype record — Invariant / Formal Theory
 
-- Identifiant Arketype : `ARK-07`
-- Famille : Savoir
-- Profil d’amorce du Local Kit : `invariant`
-- Type de modèle natif **candidat** : `invariant_formalisations_preuves`
-- Exemples de rapprochement : Primalité, invariants mathématiques, Prime Bridge
-- Statut : `stub`, non publié, pas de claims canoniques enregistrés
-- Le fichier `design/structure-candidate.json` reste volontairement **hors canon**
+- **Archetype:** `ARK-07` (`invariant-theorie`).
+- **Family:** Knowledge.
+- **Local status:** `stub`, no domain assertions.
+- **Visual pattern:** tree (Formal dependency tree).
+- **Candidate scaffold:** `design/structure-candidate.json`.
+- **Metadata:** `archetypes/invariant-theorie.json`.
 
-- Fiche catalogue : `archetypes/invariant-theorie.json` (à la racine de la bibliothèque).
-- Les primitives de design ne font **pas** partie du canon par défaut.
+**Use cases:** formal theory, invariant specification, proof dependency map.
+
+To create a new independent workspace, run `python arketype.py create --type invariant-theorie --slug your-new-slug --title "Your title" --parent PATH` from the library root.

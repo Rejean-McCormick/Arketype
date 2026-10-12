@@ -1,7 +1,11 @@
-# Native model
+# Candidate native model
 
-Kind candidat : `dossier_suivi_casefile`.
+**Native kind (stable machine identifier):** `dossier_suivi_casefile`
 
-Primitives candidates : dossiers, pieces, notes, actions, jalons, evaluations, restrictions_d_acces.
+**Reader pattern:** Case tracking dossier (`casefile`); secondary motifs: timeline.
 
-Structure décrite dans `design/structure-candidate.json` : non canonique.
+**Situated representation:** A case centralizes meetings, documents, actions and assessments while keeping provenance and access controls.
+
+**Candidate primitives:** casefiles, evidence items, notes, actions, jalons, evaluations, restrictions d access.
+
+The example in `design/structure-candidate.json` is a **noncanonical scaffold**, not registered domain content. Its existing property names are stable technical identifiers.

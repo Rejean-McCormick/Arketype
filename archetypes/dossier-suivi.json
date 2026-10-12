@@ -1,9 +1,9 @@
 {
   "id": "ARK-19",
   "slug": "dossier-suivi",
-  "name": "Dossier de suivi / casefile",
+  "name": "Casefile / Follow-Up",
   "family": "Structures",
-  "description": "Dossier structuré pour suivre une personne, un employé, un dossier RH ou un cas opérationnel dans la durée.",
+  "description": "Central record of documents, notes, actions and follow-ups. Employee follow-up, case management and tracked interventions.",
   "kit_profile": "open",
   "native_kind_candidate": "dossier_suivi_casefile",
   "responsibility_mode": "casefile-owner",
@@ -30,10 +30,10 @@
     "evaluations",
     "restrictions_d_acces"
   ],
-  "reference_use_case": "Dossier de suivi d’employé ou dossier de cas avec pièces et chronologie.",
-  "integrity_rule": "Le dossier, les pièces, les évaluations, les décisions et les données sensibles doivent rester séparés et tracés.",
-  "antipattern": "Ne pas transformer un dossier de suivi en verdict automatique ou en historique exhaustif sans gouvernance.",
-  "design_question": "Quelles pièces, quels accès et quelles durées de conservation le dossier doit-il supporter ?",
+  "reference_use_case": "Employee follow-up, case management and tracked interventions.",
+  "integrity_rule": "Sensitive assessments and decisions require explicit governance.",
+  "antipattern": "Do not transform a follow-up record into an automatic employment judgment.",
+  "design_question": "What access, retention, provenance and decision boundaries govern this case?",
   "template_path": "modeles/dossier-suivi",
   "kind": "open_archetype_not_standard",
   "maturity": "candidate",
@@ -44,14 +44,23 @@
   "secondary_patterns": [
     "timeline"
   ],
-  "structure_label": "dossier de suivi",
-  "situational_schema": "Un dossier central accueille notes, événements, pièces, actions et évaluations distinctes.",
+  "structure_label": "Case tracking dossier",
+  "situational_schema": "A case centralizes meetings, documents, actions and assessments while keeping provenance and access controls.",
   "canonical_use_cases": [
-    "suivi d’employé",
-    "dossier RH",
-    "suivi de cas"
+    "employee follow-up",
+    "HR casefile",
+    "case management"
   ],
   "case_examples": [
-    "Dossier de suivi d’employé"
+    "Employee follow-up record"
+  ],
+  "primitive_labels_en": [
+    "casefiles",
+    "documents",
+    "notes",
+    "actions",
+    "milestones",
+    "evaluations",
+    "access restrictions"
   ]
 }

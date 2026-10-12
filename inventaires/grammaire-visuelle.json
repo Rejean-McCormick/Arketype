@@ -1,40 +1,40 @@
 {
   "format": "arketype.visual-grammar/1.0-non-normatif",
   "version": "1.0.0",
-  "purpose": "Motifs visuels standardisés pour représenter la structure d'un Kristal",
+  "purpose": "Standard visual patterns for comparing Kristal knowledge structures.",
   "patterns": [
     {
       "id": "linear",
-      "label": "Linéaire",
-      "description": "Suite ordonnée d’étapes ou de transformations.",
+      "label": "Linear",
+      "description": "Ordered sequence of steps or transformations.",
       "ascii": [
         "[1] -> [2] -> [3] -> [4]"
       ],
       "best_for": [
-        "procédures",
-        "parcours",
+        "procedures",
+        "learning paths",
         "pipelines"
       ]
     },
     {
       "id": "branching",
-      "label": "Linéaire avec embranchements",
-      "description": "Chaîne principale avec bifurcations, exceptions et décisions.",
+      "label": "Branching sequence",
+      "description": "Main process with decisions, exception branches and alternate outcomes.",
       "ascii": [
         "[1] -> [2] -> [3]",
         "          \\-> [3a]",
         "          \\-> [3b]"
       ],
       "best_for": [
-        "protocoles",
-        "décisions conditionnelles",
-        "support opérationnel"
+        "protocols",
+        "conditional decisions",
+        "operations support"
       ]
     },
     {
       "id": "hub",
-      "label": "Noyau et satellites",
-      "description": "Un centre relie des observations, preuves, états ou pièces satellites.",
+      "label": "Hub and satellites",
+      "description": "A central case connects observations, proofs, state, and supporting documents.",
       "ascii": [
         "    [A]",
         "     |",
@@ -43,32 +43,32 @@
         "    [E]"
       ],
       "best_for": [
-        "diagnostic",
-        "cartes de preuves",
-        "dossiers centrés sur un cas"
+        "diagnosis",
+        "proof maps",
+        "case-centred evidence"
       ]
     },
     {
       "id": "cluster",
-      "label": "Grappe / constellation",
-      "description": "Plusieurs petits ensembles liés, sans hiérarchie centrale stricte.",
+      "label": "Cluster / constellation",
+      "description": "Interconnected clusters without one strict central hierarchy.",
       "ascii": [
         "(a)--(b)   (e)",
         " | \\  |   /",
         "(c)--(d)--(f)"
       ],
       "best_for": [
-        "écosystèmes",
-        "ensembles thématiques",
-        "organisations distribuées"
+        "knowledge ecosystems",
+        "thematic collections",
+        "distributed organizations"
       ]
     },
     {
       "id": "tree",
-      "label": "Arbre / taxonomie",
-      "description": "Hiérarchie ramifiée du général vers le particulier.",
+      "label": "Tree / taxonomy",
+      "description": "Branching classification from general groups to specific classes.",
       "ascii": [
-        "   [Racine]",
+        "   [Root]",
         "    /    \\",
         " [A]      [B]",
         " /  \\      |",
@@ -76,86 +76,87 @@
       ],
       "best_for": [
         "taxonomies",
-        "nomenclatures",
-        "classifications"
+        "nomenclature",
+        "classification"
       ]
     },
     {
       "id": "timeline",
-      "label": "Ligne du temps",
-      "description": "Événements, états ou décisions placés dans la durée.",
+      "label": "Timeline",
+      "description": "Dated sequence of events, states, revisions or decisions.",
       "ascii": [
         "t0 --- t1 --- t2 --- t3"
       ],
       "best_for": [
-        "suivi",
-        "historique",
-        "chronologies"
+        "follow-up",
+        "history",
+        "chronology"
       ]
     },
     {
       "id": "matrix",
-      "label": "Matrice / tableau d’état",
-      "description": "Comparer des éléments selon plusieurs dimensions ou critères.",
+      "label": "Matrix / state table",
+      "description": "Compare multiple items across multiple attributes or dimensions.",
       "ascii": [
         "      | A | B | C |",
         "sys-1 | x |   | y |",
         "sys-2 |   | x | y |"
       ],
       "best_for": [
-        "état de systèmes",
-        "inventaires",
-        "comparaisons"
+        "system state",
+        "inventories",
+        "comparisons"
       ]
     },
     {
       "id": "casefile",
-      "label": "Dossier / casefile",
-      "description": "Un dossier central contenant pièces, notes, évaluations et suivis.",
+      "label": "Casefile",
+      "description": "A dossier connects records, notes, evaluations and next actions.",
       "ascii": [
-        "[Dossier]",
-        " |- pièce 1",
+        "[Casefile]",
+        " |- item 1",
         " |- note",
         " |- action",
-        " \\- suivi"
+        " \\- follow-up"
       ],
       "best_for": [
-        "suivi d'employé",
-        "enquêtes",
-        "dossiers de cas"
+        "employee follow-up",
+        "investigations",
+        "case management"
       ]
     },
     {
       "id": "multilayer",
-      "label": "Multicouche",
-      "description": "Même sujet vu à travers plusieurs couches ou interprétations.",
+      "label": "Multilayer",
+      "description": "Several analytical layers or interpretations of a related subject.",
       "ascii": [
-        "[Couche 1]",
+        "[Layer 1]",
         "-----------",
-        "[Couche 2]",
+        "[Layer 2]",
         "-----------",
-        "[Couche 3]"
+        "[Layer 3]"
       ],
       "best_for": [
-        "interprétations",
-        "organisations",
-        "vues croisées"
+        "interpretations",
+        "organizations",
+        "multiple perspectives"
       ]
     },
     {
       "id": "network",
-      "label": "Réseau / fédération",
-      "description": "Plusieurs nœuds autonomes reliés par des liens de référence ou de coordination.",
+      "label": "Network / federation",
+      "description": "Autonomous nodes linked by explicit references or coordination relationships.",
       "ascii": [
         "[N1]--[N2]--[N3]",
         "  \\     |     /",
         "      [N4]"
       ],
       "best_for": [
-        "campus",
-        "fédérations",
-        "sous-systèmes autonomes"
+        "campuses",
+        "federations",
+        "independent subsystems"
       ]
     }
-  ]
+  ],
+  "language": "en"
 }

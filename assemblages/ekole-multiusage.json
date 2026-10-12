@@ -1,23 +1,23 @@
 {
   "format": "arketype.assembly-recipe/1.0-non-normatif",
   "id": "ekole-multiusage",
-  "title": "Ekole – savoir réutilisable",
+  "title": "Ekole Multi-purpose Knowledge",
   "primary_archetype": "referentiel-semantique",
   "components": [
     {
       "archetype": "modele-multiplexe",
       "relation": "couche_candidate",
-      "design_note": "Couches de relations contextualisées à spécifier selon les sources.",
+      "design_note": "Design-only link to Multiplex / Organizational Model. Keep independent ownership, references and validation explicit.",
       "status": "unresolved"
     },
     {
       "archetype": "parcours-pedagogique",
       "relation": "projection_ou_reference",
-      "design_note": "Parcours didactiques indépendants des faits encyclopédiques.",
+      "design_note": "Design-only link to Learning Path. Keep independent ownership, references and validation explicit.",
       "status": "unresolved"
     }
   ],
-  "guidance": "Le même savoir peut alimenter école, musée, loisir, recherche et création; les vues restent dérivées.",
+  "guidance": "Keep the shared semantic reference distinct from teaching and reader projections.",
   "composition_status": "design_only",
   "logical_contract": "to_define",
   "source_references": "to_pin_on_real_instance",

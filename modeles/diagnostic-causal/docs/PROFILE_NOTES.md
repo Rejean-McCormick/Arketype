@@ -1,5 +1,5 @@
-# Notes du profil `executable`
+# Local Authoring Kit profile
 
-Prévoir état, règles/transitions, observables, perturbations et sorties dérivées. Séparer structure et statistiques.
+**Profile:** `executable`. This is an initial tooling profile, not proof of domain compliance.
 
-Ce profil est une amorce et non une contrainte normative.
+Semantic ownership, source authority, legal constraints, executable behaviour and publication must be established independently for each real use case.

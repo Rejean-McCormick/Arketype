@@ -4,7 +4,7 @@
   "forme": "diagnostic-causal",
   "statut": "illustration-non-canonique",
   "n_est_pas_un_artefact_enregistre": true,
-  "intention": "Rassemble structure, modes de panne, observations et tests différenciants.",
+  "intention": "Symptoms, possible causes, test results and competing explanations. System troubleshooting, vehicle diagnosis and fault isolation.",
   "primitives_possibles": [
     "topologie",
     "etats_operatoires",
@@ -15,7 +15,7 @@
     "inference_derivee"
   ],
   "contraintes_a_preserver": [
-    "Ne pas confondre structure causale, pondération probabiliste, résultat de modèle et décision autorisée."
+    "Inferences are not permissions to perform interventions."
   ],
   "exemple_payload_vide": {
     "topologies": [],
@@ -27,5 +27,5 @@
     "inferences_derivees": []
   },
   "contrat_logique": "a_definir_pour_un_domaine_reel",
-  "bibliotheque": "Arketype 1.0"
+  "bibliotheque": "Arketype 1.2.2 (English edition)"
 }

@@ -1,5 +1,5 @@
-# Notes du profil `procedural`
+# Local Authoring Kit profile
 
-Point de départ possible : objets/états/opérations, ordre partiel, DAG ou hypergraphe. Ne pas forcer un DAG si les cycles sont sémantiques.
+**Profile:** `procedural`. This is an initial tooling profile, not proof of domain compliance.
 
-Ce profil est une amorce et non une contrainte normative.
+Semantic ownership, source authority, legal constraints, executable behaviour and publication must be established independently for each real use case.

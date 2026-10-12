@@ -4,7 +4,7 @@
   "forme": "carte-jalons-preuves",
   "statut": "illustration-non-canonique",
   "n_est_pas_un_artefact_enregistre": true,
-  "intention": "Carte de carrefours, frontières atteintes et extrémités; références vers les preuves déjà faites ailleurs.",
+  "intention": "Sparse milestones, branches and pointers to proofs held elsewhere. Progress maps, mathematical roadmaps and cross-theory docking points.",
   "primitives_possibles": [
     "carrefours",
     "points_terminaux",
@@ -15,7 +15,7 @@
     "obligations_ouvertes"
   ],
   "contraintes_a_preserver": [
-    "Un arc abrégé n’équivaut pas à une preuve: lien vers preuve exacte, portée et statut de validation requis."
+    "A shortcut edge does not constitute proof; pin exact proof references."
   ],
   "exemple_payload_vide": {
     "carrefours": [],
@@ -26,5 +26,5 @@
     "obligations_ouvertes": []
   },
   "contrat_logique": "a_definir_pour_un_domaine_reel",
-  "bibliotheque": "Arketype 1.0"
+  "bibliotheque": "Arketype 1.2.2 (English edition)"
 }

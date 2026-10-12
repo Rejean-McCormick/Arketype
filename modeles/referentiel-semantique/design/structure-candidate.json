@@ -4,7 +4,7 @@
   "forme": "referentiel-semantique",
   "statut": "illustration-non-canonique",
   "n_est_pas_un_artefact_enregistre": true,
-  "intention": "Savoirs, entités, propriétés, relations et contextes sourcés.",
+  "intention": "Connected concepts, entities and sourced relationships. Reusable knowledge stores, dictionaries, educational and cultural references.",
   "primitives_possibles": [
     "referents",
     "types",
@@ -14,7 +14,7 @@
     "provenance"
   ],
   "contraintes_a_preserver": [
-    "Ne pas confondre import Wikidata, preuve de source et fait validé; les adaptations pédagogiques restent des vues."
+    "Distinguish assertions from instructional projections and record sources."
   ],
   "exemple_payload_vide": {
     "referents": [],
@@ -25,5 +25,5 @@
     "vues_derivees": []
   },
   "contrat_logique": "a_definir_pour_un_domaine_reel",
-  "bibliotheque": "Arketype 1.0"
+  "bibliotheque": "Arketype 1.2.2 (English edition)"
 }

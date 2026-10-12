@@ -1,5 +1,7 @@
-# Modèle épistémique — à qualifier
+# Epistemic model
 
-Règle structurante : **Le cours ne devient pas propriétaire des faits du domaine; ne pas publier corrigés ou données sensibles dans les vues élève.**
+**Integrity condition:** Learning projection is not the whole knowledge base.
 
-Le modèle ne contient aucune vérité ou preuve de domaine. Distinguer citations de source, autorité de l’émetteur, qualification de la preuve, engagements logiques, résultats calculés et autorisations. Toute sortie IA est une proposition, jamais un fait reconnu automatiquement.
+Source statements, observations, hypotheses, inferred conclusions and decisions can require different qualifiers. A referenced proof, testimony, or status report does not automatically establish factual truth, legal validity, or permission to act.
+
+**Design question:** What is the sequence, and where do the knowledge references point?

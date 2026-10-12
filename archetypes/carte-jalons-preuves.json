@@ -2,9 +2,9 @@
   "id": "ARK-03",
   "legacy_id": "TK-03",
   "slug": "carte-jalons-preuves",
-  "name": "Carte de jalons et de preuves",
-  "family": "Savoir",
-  "description": "Carte de carrefours, frontières atteintes et extrémités; références vers les preuves déjà faites ailleurs.",
+  "name": "Milestone and Proof Map",
+  "family": "Knowledge",
+  "description": "Sparse milestones, branches and pointers to proofs held elsewhere. Progress maps, mathematical roadmaps and cross-theory docking points.",
   "kit_profile": "research",
   "native_kind_candidate": "graphe_creux_jalons_preuves",
   "responsibility_mode": "proof-map-owner",
@@ -30,10 +30,10 @@
     "points_arrimage",
     "obligations_ouvertes"
   ],
-  "reference_use_case": "Carte de chemins démonstratifs, points d’arrimage",
-  "integrity_rule": "Un arc abrégé n’équivaut pas à une preuve: lien vers preuve exacte, portée et statut de validation requis.",
-  "antipattern": "Ne jamais déduire « prouvé » d’un arc ou d’un lien seul.",
-  "design_question": "Quelle preuve, son état exact et quelle portée justifient chaque liaison ?",
+  "reference_use_case": "Progress maps, mathematical roadmaps and cross-theory docking points.",
+  "integrity_rule": "A shortcut edge does not constitute proof; pin exact proof references.",
+  "antipattern": "Do not mark a shortcut edge as a proof without a specific, scoped reference.",
+  "design_question": "Which external proof justifies each path and what is its verified scope?",
   "template_path": "modeles/carte-jalons-preuves",
   "kind": "open_archetype_not_standard",
   "maturity": "candidate",
@@ -44,14 +44,23 @@
   "secondary_patterns": [
     "linear"
   ],
-  "structure_label": "carte de jalons",
-  "situational_schema": "Carrefours, points terminaux et liens abrégés vers preuves déjà validées ailleurs.",
+  "structure_label": "Sparse proof roadmap",
+  "situational_schema": "Milestones and reached frontiers linked to proofs stored elsewhere; shortcuts do not replace proof.",
   "canonical_use_cases": [
-    "cartographie de démonstrations",
-    "atlas de preuves",
-    "carte d’arrimage"
+    "proof roadmap",
+    "research milestones",
+    "cross-theory references"
   ],
   "case_examples": [
-    "Carte des chemins rendus et des preuves avancées"
+    "Proof pathways and docking points"
+  ],
+  "primitive_labels_en": [
+    "junctions",
+    "endpoints",
+    "reached frontiers",
+    "summary edges",
+    "proof references",
+    "docking points",
+    "open obligations"
   ]
 }

@@ -1,23 +1,11 @@
-# Forme native candidate
+# Candidate native model
 
-**Archétype Arketype :** ARK-03 — Carte de jalons et de preuves
+**Native kind (stable machine identifier):** `graphe_creux_jalons_preuves`
 
-Carte de carrefours, frontières atteintes et extrémités; références vers les preuves déjà faites ailleurs.
+**Reader pattern:** Sparse proof roadmap (`hub`); secondary motifs: linear.
 
-## Primitives envisagées
+**Situated representation:** Milestones and reached frontiers linked to proofs stored elsewhere; shortcuts do not replace proof.
 
-- `carrefours`
-- `points_terminaux`
-- `frontieres_atteintes`
-- `arcs_resume`
-- `references_de_preuve`
-- `points_arrimage`
-- `obligations_ouvertes`
+**Candidate primitives:** carrefours, points terminaux, boundaries atteintes, arcs resume, proof references, points arrimage, obligations ouvertes.
 
-## Invariant d’intégrité conceptuelle
-
-Un arc abrégé n’équivaut pas à une preuve: lien vers preuve exacte, portée et statut de validation requis.
-
-## Fichier candidat
-
-`design/structure-candidate.json` est une **aide**, pas une source de vérité et pas un contrat logique v9 enregistré. Avant toute utilisation, décider les primitives réelles, réduire/étendre la forme, documenter ce qui serait perdu lors d’une conversion et définir les Logical Contracts exacts.
+The example in `design/structure-candidate.json` is a **noncanonical scaffold**, not registered domain content. Its existing property names are stable technical identifiers.

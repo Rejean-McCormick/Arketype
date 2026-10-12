@@ -1,3 +1,5 @@
-# Profil Authoring Kit
+# Local Authoring Kit profile
 
-`open` est un profil technique d'amorce. Il ne prouve ni procédure d'audition conforme ni statut juridique de la déposition.
+**Profile:** `open`. This is an initial tooling profile, not proof of domain compliance.
+
+Semantic ownership, source authority, legal constraints, executable behaviour and publication must be established independently for each real use case.

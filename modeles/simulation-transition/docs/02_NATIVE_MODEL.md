@@ -1,22 +1,11 @@
-# Forme native candidate
+# Candidate native model
 
-**Archétype Arketype :** ARK-14 — Simulation / transitions
+**Native kind (stable machine identifier):** `modele_etats_transitions`
 
-Établit règles de changement d’état et scénarios reproductibles.
+**Reader pattern:** State transitions (`linear`); secondary motifs: matrix.
 
-## Primitives envisagées
+**Situated representation:** Initial states progress through actions and transitions toward hypothetical outcomes.
 
-- `etats`
-- `transitions`
-- `contraintes`
-- `variables`
-- `scenario`
-- `resultats_derived`
+**Candidate primitives:** states, transitions, contraintes, variables, scenario, results derived.
 
-## Invariant d’intégrité conceptuelle
-
-Une sortie simulée n’est ni une observation du monde ni une autorisation d’agir.
-
-## Fichier candidat
-
-`design/structure-candidate.json` est une **aide**, pas une source de vérité et pas un contrat logique v9 enregistré. Avant toute utilisation, décider les primitives réelles, réduire/étendre la forme, documenter ce qui serait perdu lors d’une conversion et définir les Logical Contracts exacts.
+The example in `design/structure-candidate.json` is a **noncanonical scaffold**, not registered domain content. Its existing property names are stable technical identifiers.

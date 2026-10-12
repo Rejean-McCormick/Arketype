@@ -1,50 +1,95 @@
 # Arketype
 
-![Symbole K fourni](assets/logo-k.svg)
+**A visual archetype library for Kristal knowledge-state workspaces**  
+**Release:** 1.2.2 · **Status:** local design library, non-normative
 
-**Couleur de marque : `#1E6864`**
+Arketype helps you explore, compare, and instantiate different structural forms of Kristals. It provides neutral workspace templates, documented archetypes, illustrative composition plans, a visual HTML catalogue, and local creation tools. Its diagrams explain *how a knowledge structure is organized*; they do not certify claims, establish domain standards, or authorize operational actions.
 
-**Version 1.2.1 — Bibliothèque d’archétypes, profils d’usage et catalogue visuel pour Kristal**
+| Included | Count | What it means |
+| --- | ---: | --- |
+| Archetypes | **19** | Distinct structural starting points |
+| Neutral workspaces | **19** | Empty local templates with separate `state_ref` identities |
+| Composition recipes | **14** | Design-only ways to combine forms while preserving boundaries |
+| Use-case profiles | **5** | Concrete scenarios such as troubleshooting, taxonomy and employee follow-up |
+| Situated diagrams | **24** | Labeled illustrations, one per archetype and use-case profile |
+| Visual patterns | **10** | A shared vocabulary: tree, network, matrix, timeline, casefile and others |
 
-Arketype répertorie des formes de Kristals, leurs propriétés, leurs structures candidates, des **workspaces neutralisés**, des compositions guidées, des **profils d’usage situés** et un **catalogue HTML** généré depuis des inventaires JSON.
+## Start here
 
-Le dépôt contient **19 archétypes**, **19 modèles locaux vides**, **14 assemblages de conception** et **5 profils d’usage**. Les modèles ne contiennent aucun fait métier, aucune donnée réelle et **ne créent aucune autorité ni permission de publier**.
-
-## Nouveau dans cette version
-
-- **catalogue HTML** : `catalogue/index.html`
-- **grammaire visuelle standardisée** : linéaire, embranchements, hub, grappe, arbre, timeline, matrice, casefile, multicouche, réseau
-- **inventaires JSON liés** : `inventaires/grammaire-visuelle.json`, `inventaires/archetypes-visuels.json`, `inventaires/profils-usage.json`
-- **nouveaux archétypes** :
-  - **ARK-17** — Taxonomie / classification naturelle
-  - **ARK-18** — État de systèmes / parc technique
-  - **ARK-19** — Dossier de suivi / casefile
-- **nouveaux profils d’usage** : troubleshooting de système, environnement protocolaire, taxonomie de la nature, état de systèmes, suivi d’employé
-
-## Démarrer
+1. Extract the repository archive, then open **`catalogue/index.html`** in a browser. It works offline and provides search, structural filters, labeled diagrams, and links to the underlying JSON.
+2. Read the **[GitHub Wiki source](wiki/Home.md)** for concepts, detailed archetype descriptions, examples, composition rules, and safety boundaries.
+3. Use Python 3.10+ to explore or instantiate a workspace from the repository root:
 
 ```bash
 python arketype.py list
+python arketype.py search "taxonomy"
 python arketype.py profiles
 python arketype.py profile troubleshooting-systeme
-python arketype.py build-html
+python arketype.py recipes
 python arketype.py validate --check-kit
 ```
 
-Le catalogue HTML généré se trouve par défaut dans `catalogue/index.html`.
+To **preview** a new local workspace without writing anything:
 
-## Catalogue visuel et impression
+```bash
+python arketype.py create --type taxonomie-classification \
+  --slug nature-atlas --title "Nature Atlas" --parent . --dry-run
+```
 
-Ouvrir **`catalogue/index.html`** après extraction de l'archive. Aucune connexion n'est nécessaire.
-Rechercher par mot-clé et filtrer par famille ou motif. Chaque carte comprend un diagramme **situé avec nœuds nommés** et un lien vers sa fiche JSON.
-Pour régénérer le catalogue après modification des inventaires :
+Remove `--dry-run` to create `./nature-atlas` with a new identity and an empty canon. The optional Windows interface is **`Lancer_Arketype.pyw`** (Python with Tkinter); its graphical behavior on Windows has not been independently verified.
+
+## The catalogue and its source data
+
+The visual catalogue is a **generated projection**, not a live reader of committed Kristal states. Update its source inventories and regenerate it when needed:
 
 ```bash
 python arketype.py build-html
 ```
 
-Un exemple PDF est également fourni dans `catalogue/Arketype_Catalogue_Visuel_v1.2.1.pdf`. Pour imprimer depuis Chrome/Edge, utiliser Imprimer → PDF (les cartes et diagrammes disposent d'une mise en page dédiée).
+| Location | Responsibility |
+| --- | --- |
+| `catalogue.json` | Catalogue index and archetype file references |
+| `archetypes/*.json` | Individual archetype definitions and semantic boundaries |
+| `inventaires/archetypes-visuels.json` | Visual properties of the 19 archetypes |
+| `inventaires/grammaire-visuelle.json` | Ten standardized diagram patterns |
+| `inventaires/diagrammes-situes.json` | Labeled, illustrative nodes and edges |
+| `inventaires/profils-usage.json` | Five concrete use-case profiles |
+| `assemblages/*.json` | Fourteen non-canonical composition proposals |
+| `modeles/` | Neutral Authoring Kit workspaces; not populated domain datasets |
+| `catalogue/index.html` | Offline HTML interface generated from JSON |
+| `catalogue/Arketype_Visual_Catalogue_v1.2.2.pdf` | Included printable catalogue |
+| `wiki/` | English GitHub Wiki pages, ready for a separate Wiki repository |
 
-**Sources :** `catalogue.json`, `archetypes/*.json`, `inventaires/archetypes-visuels.json`, `inventaires/grammaire-visuelle.json`, `inventaires/profils-usage.json` et `inventaires/diagrammes-situes.json`. L'HTML est une projection générée et non une vue synchronisée en temps réel; la commande `build-html` effectue sa mise à jour.
+The HTML and Windows interfaces use the visual branding color **`#1E6864`** and the supplied logo.
 
-**Identité et sécurité :** chaque modèle neutre doit posséder un `state_ref` propre. Les reçus `build-v9` sont des preuves d'exécution technique locale, **pas** une qualification sémantique. Pour les témoignages et dossiers d'employés, ne pas saisir de données sensibles dans les modèles publics : les politiques d'accès, de conservation et de consentement restent à concevoir.
+## Representative use cases
+
+- **System troubleshooting:** causal diagnosis linked to observations, test results, and system-state snapshots.
+- **Procedural environments:** branching protocols with roles, preconditions, exceptions, and separately recorded execution traces.
+- **Nature taxonomy:** tree-based classifications with explicit criteria and sources.
+- **System-state tracking:** a matrix of observed systems, indicators, and dated snapshots.
+- **Employee follow-up:** a restricted casefile combining notes, actions, supporting documents, and timeline references.
+
+The same foundation also supports UCKK-style federations, multi-use Ekole knowledge references, sparse proof maps, media universes, research memory, and testimony/deposition records.
+
+## Important boundaries
+
+**Archetypes are proposed designs, not official Kristal contracts.** Arketype does not replace Kristal Framework, the Authoring Kit, domain-specific validation, or operational applications. Its templates contain no committed domain assertions, and its composition recipes are expressly marked `design_only`.
+
+- A recorded statement is not automatically a verified fact; a causal hypothesis is not an authorized remedy.
+- System observation, desired configuration, computed status, and operational decision remain distinct.
+- Employee, testimony, medical, and other sensitive records require a separate application with access control, retention rules, consent/legal basis where applicable, and audit protections. Do not put real sensitive data into the public templates.
+- **Building is not qualifying, synchronizing, publishing, or activating.** `check` and `build-v9` validate local technical structure, not domain truth.
+
+## Validate and extend
+
+```bash
+python -m unittest discover -s tests -v
+python arketype.py validate --check-kit
+```
+
+The repository uses the included Kristal Authoring Kit **3.2.4** and refers to Kristal Framework **10.0.0-draft.3.1**. See [Getting Started](wiki/Getting-Started.md), [Architecture](wiki/Architecture.md), [CLI Reference](wiki/CLI-Reference.md), and [Security and Boundaries](wiki/Security-and-Boundaries.md) for the detailed workflow.
+
+## GitHub Wiki publishing
+
+The `wiki/` folder is **ready-to-publish Wiki content**, but GitHub stores a repository Wiki in a **separate Git repository**. Committing this folder to the main Arketype repository does **not** publish the Wiki automatically. Follow [Publishing the Wiki](wiki/Publishing-the-Wiki.md) after enabling the Wiki on the intended GitHub repository; no remote publication is performed by this archive.

@@ -1,9 +1,9 @@
-# Intention et scope
+# Purpose and scope
 
-Ce modèle neutre sert à démarrer un Kristal de famille **Carte de jalons et de preuves**.
+This neutral starter workspace illustrates **Milestone and Proof Map** (`ARK-03`).
 
-**Forme candidate** : Carte de carrefours, frontières atteintes et extrémités; références vers les preuves déjà faites ailleurs.
+**Purpose:** Sparse milestones, branches and pointers to proofs held elsewhere. Progress maps, mathematical roadmaps and cross-theory docking points.
 
-Cas de référence (analogiques, non clonés) : Carte de chemins démonstratifs, points d’arrimage.
+**Typical applications:** proof roadmap, research milestones, cross-theory references.
 
-Aucun fait ou corpus métier n’est prérempli. Définir le domaine réel, les destinataires, les droits et les preuves avant de cristalliser quoi que ce soit.
+It contains no admitted domain facts, personal data, privileged process authority or normative Logical Contract. Define sources, scope, permissions and ownership for any real instance.

@@ -2,9 +2,9 @@
   "id": "ARK-10",
   "legacy_id": "TK-10",
   "slug": "parcours-pedagogique",
-  "name": "Parcours pédagogique",
+  "name": "Learning Path",
   "family": "Composition",
-  "description": "Objectifs, prérequis, séquences, exercices et évaluations reliés à des savoirs externes.",
+  "description": "Sequenced objectives, prerequisites and activities. Curricula and personalized learning journeys.",
   "kit_profile": "open",
   "native_kind_candidate": "parcours_didactique_reference",
   "responsibility_mode": "learning-path-owner",
@@ -28,10 +28,10 @@
     "criteres_evaluation",
     "references_savoir"
   ],
-  "reference_use_case": "Ekole; cours UCKK par projection vers Moodle",
-  "integrity_rule": "Le cours ne devient pas propriétaire des faits du domaine; ne pas publier corrigés ou données sensibles dans les vues élève.",
-  "antipattern": "Un objectif d’apprentissage ne valide pas à lui seul le fait enseigné.",
-  "design_question": "Quelles données de cours sont propres et quels savoirs sont externes ?",
+  "reference_use_case": "Curricula and personalized learning journeys.",
+  "integrity_rule": "Learning projection is not the whole knowledge base.",
+  "antipattern": "Do not make an instructional route the sole owner of the underlying knowledge.",
+  "design_question": "What is the sequence, and where do the knowledge references point?",
   "template_path": "modeles/parcours-pedagogique",
   "kind": "open_archetype_not_standard",
   "maturity": "candidate",
@@ -42,14 +42,22 @@
   "secondary_patterns": [
     "branching"
   ],
-  "structure_label": "parcours séquencé",
-  "situational_schema": "Suite d’étapes d’apprentissage, avec jalons, ressources et bifurcations possibles.",
+  "structure_label": "Learning sequence",
+  "situational_schema": "Learning objectives, prerequisites, activities and assessments follow a navigable path.",
   "canonical_use_cases": [
     "curriculum",
-    "progression d’apprentissage",
-    "itinéraire pédagogique"
+    "guided training",
+    "learning plan"
   ],
   "case_examples": [
-    "Parcours éducatif dans Ekole"
+    "Educational learning path"
+  ],
+  "primitive_labels_en": [
+    "objectives",
+    "dependencies",
+    "sequences",
+    "activities",
+    "assessment criteria",
+    "knowledge references"
   ]
 }

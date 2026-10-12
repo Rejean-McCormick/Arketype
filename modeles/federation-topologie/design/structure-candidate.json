@@ -4,7 +4,7 @@
   "forme": "federation-topologie",
   "statut": "illustration-non-canonique",
   "n_est_pas_un_artefact_enregistre": true,
-  "intention": "Parent, enfants et frontières d’ownership avec états référencés.",
+  "intention": "Hierarchy or network of separately identifiable knowledge states. Distributed campuses, organizational units and linked subsystems.",
   "primitives_possibles": [
     "noeuds",
     "liens_parent_enfant",
@@ -13,7 +13,7 @@
     "statuts_de_cristallisation"
   ],
   "contraintes_a_preserver": [
-    "Le parent référence des engagements d’enfants; il ne s’approprie ni ne copie leur contenu."
+    "A parent reference does not own or absorb a child state."
   ],
   "exemple_payload_vide": {
     "noeuds": [],
@@ -22,5 +22,5 @@
     "statuts_de_cristallisation": []
   },
   "contrat_logique": "a_definir_pour_un_domaine_reel",
-  "bibliotheque": "Arketype 1.0"
+  "bibliotheque": "Arketype 1.2.2 (English edition)"
 }

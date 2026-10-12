@@ -1,9 +1,9 @@
-# Intention et scope
+# Purpose and scope
 
-Ce modèle neutre sert à démarrer un Kristal de famille **Mémoire de recherche**.
+This neutral starter workspace illustrates **Research Memory** (`ARK-06`).
 
-**Forme candidate** : Suit connaissance établie, hypothèses, essais, résultats et obligations.
+**Purpose:** Hypotheses, observations, trials and findings over time. Research notebooks, inquiry histories and lab studies.
 
-Cas de référence (analogiques, non clonés) : Projet scientifique, recherche formelle.
+**Typical applications:** research notebook, study record, experiment log.
 
-Aucun fait ou corpus métier n’est prérempli. Définir le domaine réel, les destinataires, les droits et les preuves avant de cristalliser quoi que ce soit.
+It contains no admitted domain facts, personal data, privileged process authority or normative Logical Contract. Define sources, scope, permissions and ownership for any real instance.

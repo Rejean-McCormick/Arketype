@@ -1,5 +1,9 @@
-# Intent and scope
+# Purpose and scope
 
-Arbre de classification pour cartographier espèces, types, catégories ou éléments du vivant et de la nature.
+This neutral starter workspace illustrates **Taxonomy / Natural Classification** (`ARK-17`).
 
-Exemples : taxonomie du vivant, classification d’objets naturels, cartographie d’espèces.
+**Purpose:** Classification tree with groups, subclasses and synonyms. Nature maps, biological categories and material typologies.
+
+**Typical applications:** wildlife taxonomy, natural classification, specimen catalogue.
+
+It contains no admitted domain facts, personal data, privileged process authority or normative Logical Contract. Define sources, scope, permissions and ownership for any real instance.

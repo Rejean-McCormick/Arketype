@@ -1,9 +1,9 @@
-# Intention et scope
+# Purpose and scope
 
-Ce modèle neutre sert à démarrer un Kristal de famille **Simulation / transitions**.
+This neutral starter workspace illustrates **Simulation / Transitions** (`ARK-14`).
 
-**Forme candidate** : Établit règles de changement d’état et scénarios reproductibles.
+**Purpose:** State-transition definitions and hypothetical scenarios. Simulation, state machines and training situations.
 
-Cas de référence (analogiques, non clonés) : Simulateur, jeu, modèles exploratoires.
+**Typical applications:** simulation, scenario analysis, state machine.
 
-Aucun fait ou corpus métier n’est prérempli. Définir le domaine réel, les destinataires, les droits et les preuves avant de cristalliser quoi que ce soit.
+It contains no admitted domain facts, personal data, privileged process authority or normative Logical Contract. Define sources, scope, permissions and ownership for any real instance.

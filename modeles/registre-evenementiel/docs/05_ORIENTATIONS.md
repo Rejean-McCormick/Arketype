@@ -1,15 +1,7 @@
-# Orientations et Surfaces
+# Reader orientations and proposed views
 
-## Orientations utiles
+The primary suggested structure is **Dated event sequence**. A visual shape is a reader convenience and does not constrain every possible native organization.
 
-TODO
+A reader projection may show events, revisions, timestamps and provenance are recorded without assuming causality.
 
-## Dimensions qui ne sont PAS des Orientation Axes
-
-TODO
-
-## Projections à matérialiser
-
-TODO
-
-Une projection v6/v7 reste une projection d'interopérabilité ; elle ne remplace pas automatiquement le Logical Artifact v9 natif.
+Clearly mark source references, status, uncertainty, possible losses and access restrictions in any projection. No public view is authorized by this starter alone.

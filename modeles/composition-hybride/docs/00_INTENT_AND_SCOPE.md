@@ -1,9 +1,9 @@
-# Intention et scope
+# Purpose and scope
 
-Ce modèle neutre sert à démarrer un Kristal de famille **Composition hybride / sous-systèmes**.
+This neutral starter workspace illustrates **Hybrid Composition** (`ARK-15`).
 
-**Forme candidate** : Assemble plusieurs formes natives sans fusionner leurs propriétaires ni la couche opérationnelle.
+**Purpose:** An assemblage of several kinds of independent knowledge structure. Cross-system models and multi-part applications.
 
-Cas de référence (analogiques, non clonés) : Partie Kristal conforme à extraire d’un système comme MediKristal.
+**Typical applications:** composite application, multi-system architecture, integrated knowledge.
 
-Aucun fait ou corpus métier n’est prérempli. Définir le domaine réel, les destinataires, les droits et les preuves avant de cristalliser quoi que ce soit.
+It contains no admitted domain facts, personal data, privileged process authority or normative Logical Contract. Define sources, scope, permissions and ownership for any real instance.

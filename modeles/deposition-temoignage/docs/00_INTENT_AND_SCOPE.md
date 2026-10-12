@@ -1,7 +1,9 @@
-# Intention et périmètre
+# Purpose and scope
 
-Modèle neutre pour un **Kristal de dépositions / témoignages** : préserver qui a déclaré quoi, dans quel cadre, quand et sur quel support, ainsi que les versions, références et restrictions.
+This neutral starter workspace illustrates **Testimony / Deposition** (`ARK-16`).
 
-**Le témoignage est d'abord une source attribuée**. Une allégation rapportée n'est pas un fait qualifié. Le recueil effectif des témoignages doit être réalisé par une application et des responsables autorisés, avec gestion sécurisée des données sensibles, pas dans la copie publique de ce modèle.
+**Purpose:** Attributed accounts with recordings, transcriptions and revisions. Witness records and declarative evidence dossiers.
 
-Aucune personne, déclaration, signature, procédure judiciaire ni preuve n'est préremplie.
+**Typical applications:** witness statement, oral history, deposition record.
+
+It contains no admitted domain facts, personal data, privileged process authority or normative Logical Contract. Define sources, scope, permissions and ownership for any real instance.

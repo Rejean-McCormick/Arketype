@@ -1,15 +1,16 @@
-# Catalogue HTML · Arketype 1.2.1
+# Offline visual catalogue
 
-`catalogue/index.html` utilise les données des inventaires JSON et les fiches descriptives pour produire 19 cartes d’archétypes et 5 profils d’usage.
+`catalogue/index.html` is a generated, standalone HTML reader view with the supplied logo and the **#1E6864** brand palette. It presents 19 archetypes, 5 situated profiles, 10 graphical patterns and 24 labeled diagrams.
 
-- Mode hors ligne, sans dépendance réseau. Logo SVG fourni dans `assets/logo-k.svg`.
-- Couleur principale : `#1E6864`.
-- Recherche locale, filtre par famille, filtre par motif.
-- Schémas SVG **situés**, sérialisés dans `inventaires/diagrammes-situes.json`.
-- Liens relatifs vers les fichiers JSON après extraction.
-- CSS d’impression A4, avec cartes non divisées et détails dépliés.
-- PDF statique de référence dans `catalogue/Arketype_Catalogue_Visuel_v1.2.1.pdf`.
+The cards are generated from the source JSON inventories and linked archetype records, rather than from a hidden or separately maintained HTML model.
 
-Regénérer : `python arketype.py build-html`. Ce fichier généré **n’est pas un runtime live** ni une publication Kristal. Les schémas sont des illustrations non canoniques.
+Regenerate after editing source files:
 
-Pour régénérer le PDF : `python catalogue/creer_pdf.py` (nécessite les bibliothèques Python `reportlab` et `cairosvg`).
+```bash
+python arketype.py build-html
+python catalogue/creer_pdf.py
+```
+
+The second command requires `reportlab` and `cairosvg`. The printable PDF is included in the repository as `catalogue/Arketype_Visual_Catalogue_v1.2.2.pdf`.
+
+Reader illustrations contain no actual employee data, testimony, system secrets or operational approvals.

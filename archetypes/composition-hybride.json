@@ -2,9 +2,9 @@
   "id": "ARK-15",
   "legacy_id": "TK-15",
   "slug": "composition-hybride",
-  "name": "Composition hybride / sous-systèmes",
+  "name": "Hybrid Composition",
   "family": "Composition",
-  "description": "Assemble plusieurs formes natives sans fusionner leurs propriétaires ni la couche opérationnelle.",
+  "description": "An assemblage of several kinds of independent knowledge structure. Cross-system models and multi-part applications.",
   "kit_profile": "open",
   "native_kind_candidate": "composition_de_sous_modeles",
   "responsibility_mode": "composition-coordinator",
@@ -28,10 +28,10 @@
     "politiques",
     "projections"
   ],
-  "reference_use_case": "Partie Kristal conforme à extraire d’un système comme MediKristal",
-  "integrity_rule": "Ne pas assimiler application opérationnelle, dossier personnel, moteur de calcul et Kristal de connaissance.",
-  "antipattern": "Un modèle hybride n’est pas une fusion d’autorités.",
-  "design_question": "Quels sous-modèles doivent rester hors du canon Kristal ?",
+  "reference_use_case": "Cross-system models and multi-part applications.",
+  "integrity_rule": "Do not merge semantic owners or treat application logic as canon.",
+  "antipattern": "Do not merge independent semantic owners or embed executable app logic in a knowledge claim.",
+  "design_question": "Which interfaces, ownership boundaries and contract links are required?",
   "template_path": "modeles/composition-hybride",
   "kind": "open_archetype_not_standard",
   "maturity": "candidate",
@@ -42,14 +42,22 @@
   "secondary_patterns": [
     "multilayer"
   ],
-  "structure_label": "assemblage hybride",
-  "situational_schema": "Assemblage de plusieurs sous-systèmes de nature différente, chacun gardant son rôle.",
+  "structure_label": "Hybrid network",
+  "situational_schema": "Different knowledge-state forms interact through explicit references and interface boundaries.",
   "canonical_use_cases": [
-    "système composite",
-    "MediKristal partiel",
-    "orchestration inter-modèles"
+    "composite application",
+    "multi-system architecture",
+    "integrated knowledge"
   ],
   "case_examples": [
-    "MediKristal – partie conforme + dynamique applicative"
+    "MediKristal knowledge component"
+  ],
+  "primitive_labels_en": [
+    "submodels",
+    "boundaries",
+    "contrats interface",
+    "references",
+    "politiques",
+    "projections"
   ]
 }

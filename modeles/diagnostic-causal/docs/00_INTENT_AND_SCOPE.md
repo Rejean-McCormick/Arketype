@@ -1,9 +1,9 @@
-# Intention et scope
+# Purpose and scope
 
-Ce modèle neutre sert à démarrer un Kristal de famille **Diagnostic causal**.
+This neutral starter workspace illustrates **Causal Diagnosis** (`ARK-08`).
 
-**Forme candidate** : Rassemble structure, modes de panne, observations et tests différenciants.
+**Purpose:** Symptoms, possible causes, test results and competing explanations. System troubleshooting, vehicle diagnosis and fault isolation.
 
-Cas de référence (analogiques, non clonés) : VehicleDiag; composante diagnostique de MediKristal.
+**Typical applications:** system troubleshooting, vehicle diagnosis, root cause analysis.
 
-Aucun fait ou corpus métier n’est prérempli. Définir le domaine réel, les destinataires, les droits et les preuves avant de cristalliser quoi que ce soit.
+It contains no admitted domain facts, personal data, privileged process authority or normative Logical Contract. Define sources, scope, permissions and ownership for any real instance.

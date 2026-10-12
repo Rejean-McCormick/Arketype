@@ -1,23 +1,11 @@
-# Forme native candidate
+# Candidate native model
 
-**Archétype Arketype :** ARK-05 — Compilation / collection
+**Native kind (stable machine identifier):** `collection_referencee`
 
-Choisit, ordonne, annote et compare des unités de savoir sans nécessairement les posséder.
+**Reader pattern:** Curated collection (`cluster`); secondary motifs: casefile.
 
-## Primitives envisagées
+**Situated representation:** Independent entries collected, ordered and annotated without absorbing ownership of each entry.
 
-- `entrees`
-- `references`
-- `ordre`
-- `criteres_selection`
-- `variantes`
-- `annotations`
-- `provenance`
+**Candidate primitives:** entrees, references, ordre, criteres selection, variantes, annotations, provenance.
 
-## Invariant d’intégrité conceptuelle
-
-La compilation ne transfère pas les droits ni l’autorité des éléments; distinguer fiche originale de simple référence.
-
-## Fichier candidat
-
-`design/structure-candidate.json` est une **aide**, pas une source de vérité et pas un contrat logique v9 enregistré. Avant toute utilisation, décider les primitives réelles, réduire/étendre la forme, documenter ce qui serait perdu lors d’une conversion et définir les Logical Contracts exacts.
+The example in `design/structure-candidate.json` is a **noncanonical scaffold**, not registered domain content. Its existing property names are stable technical identifiers.

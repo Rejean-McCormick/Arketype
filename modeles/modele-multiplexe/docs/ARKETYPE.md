@@ -1,12 +1,12 @@
-# Fiche d’archétype
+# Arketype record — Multiplex / Organizational Model
 
-- Identifiant Arketype : `ARK-09`
-- Famille : Structures
-- Profil d’amorce du Local Kit : `open`
-- Type de modèle natif **candidat** : `graphe_multiplexe_contextualise`
-- Exemples de rapprochement : Organisations humaines, pouvoir, réseaux techniques
-- Statut : `stub`, non publié, pas de claims canoniques enregistrés
-- Le fichier `design/structure-candidate.json` reste volontairement **hors canon**
+- **Archetype:** `ARK-09` (`modele-multiplexe`).
+- **Family:** Structures.
+- **Local status:** `stub`, no domain assertions.
+- **Visual pattern:** multilayer (Organizational layers).
+- **Candidate scaffold:** `design/structure-candidate.json`.
+- **Metadata:** `archetypes/modele-multiplexe.json`.
 
-- Fiche catalogue : `archetypes/modele-multiplexe.json` (à la racine de la bibliothèque).
-- Les primitives de design ne font **pas** partie du canon par défaut.
+**Use cases:** organizational mapping, institutional studies, social relationships.
+
+To create a new independent workspace, run `python arketype.py create --type modele-multiplexe --slug your-new-slug --title "Your title" --parent PATH` from the library root.

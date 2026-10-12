@@ -1,9 +1,9 @@
-# Intention et scope
+# Purpose and scope
 
-Ce modèle neutre sert à démarrer un Kristal de famille **Parcours pédagogique**.
+This neutral starter workspace illustrates **Learning Path** (`ARK-10`).
 
-**Forme candidate** : Objectifs, prérequis, séquences, exercices et évaluations reliés à des savoirs externes.
+**Purpose:** Sequenced objectives, prerequisites and activities. Curricula and personalized learning journeys.
 
-Cas de référence (analogiques, non clonés) : Ekole; cours UCKK par projection vers Moodle.
+**Typical applications:** curriculum, guided training, learning plan.
 
-Aucun fait ou corpus métier n’est prérempli. Définir le domaine réel, les destinataires, les droits et les preuves avant de cristalliser quoi que ce soit.
+It contains no admitted domain facts, personal data, privileged process authority or normative Logical Contract. Define sources, scope, permissions and ownership for any real instance.

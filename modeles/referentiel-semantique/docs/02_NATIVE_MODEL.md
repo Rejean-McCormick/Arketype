@@ -1,22 +1,11 @@
-# Forme native candidate
+# Candidate native model
 
-**Archétype Arketype :** ARK-01 — Référentiel sémantique
+**Native kind (stable machine identifier):** `referentiel_contextualise`
 
-Savoirs, entités, propriétés, relations et contextes sourcés.
+**Reader pattern:** Semantic cluster (`cluster`); secondary motifs: tree.
 
-## Primitives envisagées
+**Situated representation:** Source-linked concepts, entities and typed relationships arranged in related thematic clusters.
 
-- `referents`
-- `types`
-- `relations_typees`
-- `assertions_contextualisees`
-- `sources`
-- `provenance`
+**Candidate primitives:** referents, types, typed relationships, assertions contextualisees, sources, provenance.
 
-## Invariant d’intégrité conceptuelle
-
-Ne pas confondre import Wikidata, preuve de source et fait validé; les adaptations pédagogiques restent des vues.
-
-## Fichier candidat
-
-`design/structure-candidate.json` est une **aide**, pas une source de vérité et pas un contrat logique v9 enregistré. Avant toute utilisation, décider les primitives réelles, réduire/étendre la forme, documenter ce qui serait perdu lors d’une conversion et définir les Logical Contracts exacts.
+The example in `design/structure-candidate.json` is a **noncanonical scaffold**, not registered domain content. Its existing property names are stable technical identifiers.

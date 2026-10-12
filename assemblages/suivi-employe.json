@@ -1,23 +1,23 @@
 {
   "format": "arketype.assembly-recipe/1.0-non-normatif",
   "id": "suivi-employe",
-  "title": "Dossier de suivi d’employé",
+  "title": "Employee Follow-Up Casefile",
   "primary_archetype": "dossier-suivi",
   "components": [
     {
       "archetype": "registre-evenementiel",
       "relation": "historique_du_dossier",
-      "design_note": "Le fil temporel reste distinct des pièces du dossier.",
+      "design_note": "Design-only link to Event Ledger / Chronology. Keep independent ownership, references and validation explicit.",
       "status": "unresolved"
     },
     {
       "archetype": "deposition-temoignage",
       "relation": "declarations_associees",
-      "design_note": "Les déclarations et témoignages éventuels gardent leur statut propre.",
+      "design_note": "Design-only link to Testimony / Deposition. Keep independent ownership, references and validation explicit.",
       "status": "unresolved"
     }
   ],
-  "guidance": "Définir précisément la gouvernance des accès, la sensibilité et la rétention des données.",
+  "guidance": "Define access, retention and provenance controls before using real employee data.",
   "composition_status": "design_only",
   "logical_contract": "to_define",
   "source_references": "to_pin_on_real_instance",

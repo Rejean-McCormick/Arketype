@@ -1,9 +1,9 @@
-# Intention et scope
+# Purpose and scope
 
-Ce modèle neutre sert à démarrer un Kristal de famille **Procédure / protocole**.
+This neutral starter workspace illustrates **Procedure / Protocol** (`ARK-04`).
 
-**Forme candidate** : Décrit préconditions, opérations, branches, ordre partiel, résultats et exceptions.
+**Purpose:** Ordered and conditional steps, roles, prerequisites and exceptions. SOPs, institutional protocols and checklists.
 
-Cas de référence (analogiques, non clonés) : PoliceOps, HospitalOps, recette exécutée.
+**Typical applications:** standard operating procedure, field protocol, operations checklist.
 
-Aucun fait ou corpus métier n’est prérempli. Définir le domaine réel, les destinataires, les droits et les preuves avant de cristalliser quoi que ce soit.
+It contains no admitted domain facts, personal data, privileged process authority or normative Logical Contract. Define sources, scope, permissions and ownership for any real instance.

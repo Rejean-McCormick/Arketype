@@ -1,23 +1,23 @@
 {
   "format": "arketype.assembly-recipe/1.0-non-normatif",
   "id": "univers-medias",
-  "title": "Univers, œuvres et parcours culturels",
+  "title": "Media Universe",
   "primary_archetype": "univers-oeuvres-medias",
   "components": [
     {
       "archetype": "compilation-collection",
       "relation": "projection_ou_reference",
-      "design_note": "Une sélection curatoriale ne devient pas propriétaire des œuvres.",
+      "design_note": "Design-only link to Compilation / Collection. Keep independent ownership, references and validation explicit.",
       "status": "unresolved"
     },
     {
       "archetype": "registre-evenementiel",
       "relation": "couche_candidate",
-      "design_note": "Distinguer événements fictifs et événements de publication.",
+      "design_note": "Design-only link to Event Ledger / Chronology. Keep independent ownership, references and validation explicit.",
       "status": "unresolved"
     }
   ],
-  "guidance": "Les manifestations physiques et les plateformes sont distinctes de l’identité de l’œuvre.",
+  "guidance": "Separate each work, version, medium and reader-derived interpretation.",
   "composition_status": "design_only",
   "logical_contract": "to_define",
   "source_references": "to_pin_on_real_instance",

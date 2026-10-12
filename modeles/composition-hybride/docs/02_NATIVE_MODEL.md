@@ -1,22 +1,11 @@
-# Forme native candidate
+# Candidate native model
 
-**Archétype Arketype :** ARK-15 — Composition hybride / sous-systèmes
+**Native kind (stable machine identifier):** `composition_de_sous_modeles`
 
-Assemble plusieurs formes natives sans fusionner leurs propriétaires ni la couche opérationnelle.
+**Reader pattern:** Hybrid network (`network`); secondary motifs: multilayer.
 
-## Primitives envisagées
+**Situated representation:** Different knowledge-state forms interact through explicit references and interface boundaries.
 
-- `sous_modeles`
-- `frontieres`
-- `contrats_interface`
-- `references`
-- `politiques`
-- `projections`
+**Candidate primitives:** submodels, boundaries, contrats interface, references, politiques, projections.
 
-## Invariant d’intégrité conceptuelle
-
-Ne pas assimiler application opérationnelle, dossier personnel, moteur de calcul et Kristal de connaissance.
-
-## Fichier candidat
-
-`design/structure-candidate.json` est une **aide**, pas une source de vérité et pas un contrat logique v9 enregistré. Avant toute utilisation, décider les primitives réelles, réduire/étendre la forme, documenter ce qui serait perdu lors d’une conversion et définir les Logical Contracts exacts.
+The example in `design/structure-candidate.json` is a **noncanonical scaffold**, not registered domain content. Its existing property names are stable technical identifiers.

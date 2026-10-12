@@ -4,7 +4,7 @@
   "forme": "parcours-pedagogique",
   "statut": "illustration-non-canonique",
   "n_est_pas_un_artefact_enregistre": true,
-  "intention": "Objectifs, prérequis, séquences, exercices et évaluations reliés à des savoirs externes.",
+  "intention": "Sequenced objectives, prerequisites and activities. Curricula and personalized learning journeys.",
   "primitives_possibles": [
     "objectifs",
     "dependances",
@@ -14,7 +14,7 @@
     "references_savoir"
   ],
   "contraintes_a_preserver": [
-    "Le cours ne devient pas propriétaire des faits du domaine; ne pas publier corrigés ou données sensibles dans les vues élève."
+    "Learning projection is not the whole knowledge base."
   ],
   "exemple_payload_vide": {
     "objectifs": [],
@@ -25,5 +25,5 @@
     "references_de_savoir": []
   },
   "contrat_logique": "a_definir_pour_un_domaine_reel",
-  "bibliotheque": "Arketype 1.0"
+  "bibliotheque": "Arketype 1.2.2 (English edition)"
 }

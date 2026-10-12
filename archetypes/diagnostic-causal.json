@@ -2,9 +2,9 @@
   "id": "ARK-08",
   "legacy_id": "TK-08",
   "slug": "diagnostic-causal",
-  "name": "Diagnostic causal",
-  "family": "Processus",
-  "description": "Rassemble structure, modes de panne, observations et tests différenciants.",
+  "name": "Causal Diagnosis",
+  "family": "Processes",
+  "description": "Symptoms, possible causes, test results and competing explanations. System troubleshooting, vehicle diagnosis and fault isolation.",
   "kit_profile": "executable",
   "native_kind_candidate": "reseau_causal_et_diagnostic",
   "responsibility_mode": "causal-model-owner",
@@ -29,10 +29,10 @@
     "tests",
     "inference_derivee"
   ],
-  "reference_use_case": "VehicleDiag; composante diagnostique de MediKristal",
-  "integrity_rule": "Ne pas confondre structure causale, pondération probabiliste, résultat de modèle et décision autorisée.",
-  "antipattern": "Séparer état observé, modèle et posterior calculé.",
-  "design_question": "Qui assume les décisions opérationnelles issues du diagnostic ?",
+  "reference_use_case": "System troubleshooting, vehicle diagnosis and fault isolation.",
+  "integrity_rule": "Inferences are not permissions to perform interventions.",
+  "antipattern": "Do not treat a possible cause as a confirmed diagnosis or an instruction to intervene.",
+  "design_question": "Which measurements distinguish competing causes?",
   "template_path": "modeles/diagnostic-causal",
   "kind": "open_archetype_not_standard",
   "maturity": "candidate",
@@ -44,15 +44,23 @@
     "timeline",
     "network"
   ],
-  "structure_label": "hub de diagnostic",
-  "situational_schema": "Un problème central relie symptômes, causes possibles, tests et conclusions locales.",
+  "structure_label": "Diagnostic hub",
+  "situational_schema": "A reported fault links observations, competing hypotheses, discriminating tests and results.",
   "canonical_use_cases": [
-    "troubleshooting de système",
-    "diagnostic de panne",
-    "analyse causale"
+    "system troubleshooting",
+    "vehicle diagnosis",
+    "root cause analysis"
   ],
   "case_examples": [
-    "VehicleDiag",
-    "Troubleshooting système"
+    "VehicleDiag / system troubleshooting"
+  ],
+  "primitive_labels_en": [
+    "topologie",
+    "etats operatoires",
+    "perturbations",
+    "observations",
+    "hypotheses",
+    "tests",
+    "inference derivee"
   ]
 }

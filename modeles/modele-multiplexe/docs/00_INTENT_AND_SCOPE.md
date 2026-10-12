@@ -1,9 +1,9 @@
-# Intention et scope
+# Purpose and scope
 
-Ce modèle neutre sert à démarrer un Kristal de famille **Modèle multiplexe / organisations**.
+This neutral starter workspace illustrates **Multiplex / Organizational Model** (`ARK-09`).
 
-**Forme candidate** : Réseaux de rôles, institutions, ressources et règles selon des couches et échelles distinctes.
+**Purpose:** Several relationship layers over shared entities. Organizational studies and social or institutional mappings.
 
-Cas de référence (analogiques, non clonés) : Organisations humaines, pouvoir, réseaux techniques.
+**Typical applications:** organizational mapping, institutional studies, social relationships.
 
-Aucun fait ou corpus métier n’est prérempli. Définir le domaine réel, les destinataires, les droits et les preuves avant de cristalliser quoi que ce soit.
+It contains no admitted domain facts, personal data, privileged process authority or normative Logical Contract. Define sources, scope, permissions and ownership for any real instance.

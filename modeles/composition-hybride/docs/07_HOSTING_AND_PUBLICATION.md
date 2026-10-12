@@ -1,23 +1,7 @@
-# Hosting et publication v10
+# Hosting and publication
 
-Le canon et les commitments restent v9. L'hébergement est une couche v10 séparée.
+No network publication or activation is performed by Arketype. `build-v9` does not qualify domain claims or authorize publication.
 
-## Node / repository
+Kristal Manager may maintain a reading surface; GitHub hosting and Bootstrap/Setup workflows require independently verified, exact committed state references and authorization.
 
-TODO — choisir le nœud de collection GitHub qui publiera cet état. Un dépôt peut héberger plusieurs Kristals si les permissions et le lifecycle sont communs.
-
-## State path
-
-TODO — utiliser un chemin stable et relatif au repo, par exemple `kristals/<slug>/state/state-snapshot.json`.
-
-## Qualification
-
-La qualification doit viser le commit exact contenant l'état exporté.
-
-## Publication
-
-La publication v10 produit un bundle vérifiable et une Release immuable. Elle ne modifie pas le Logical Commitment v9.
-
-## Activation
-
-L'activation reste séparée et optionnelle. Une Release publiée n'est pas automatiquement l'état actif d'un channel.
+Do not put personal, restricted or confidential content in a public repository or accessible Context Pack by default.

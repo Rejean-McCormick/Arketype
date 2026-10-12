@@ -1,12 +1,12 @@
-# Fiche d’archétype
+# Arketype record — Layered Interpretations
 
-- Identifiant Arketype : `ARK-12`
-- Famille : Savoir
-- Profil d’amorce du Local Kit : `layered`
-- Type de modèle natif **candidat** : `regimes_interpretatifs_separes`
-- Exemples de rapprochement : Pi-Theory, analyse culturelle ou sémiotique
-- Statut : `stub`, non publié, pas de claims canoniques enregistrés
-- Le fichier `design/structure-candidate.json` reste volontairement **hors canon**
+- **Archetype:** `ARK-12` (`interpretations-couches`).
+- **Family:** Knowledge.
+- **Local status:** `stub`, no domain assertions.
+- **Visual pattern:** multilayer (Interpretation layers).
+- **Candidate scaffold:** `design/structure-candidate.json`.
+- **Metadata:** `archetypes/interpretations-couches.json`.
 
-- Fiche catalogue : `archetypes/interpretations-couches.json` (à la racine de la bibliothèque).
-- Les primitives de design ne font **pas** partie du canon par défaut.
+**Use cases:** comparative study, interpretation layers, analysis views.
+
+To create a new independent workspace, run `python arketype.py create --type interpretations-couches --slug your-new-slug --title "Your title" --parent PATH` from the library root.

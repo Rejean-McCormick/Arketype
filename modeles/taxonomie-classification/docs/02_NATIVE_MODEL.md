@@ -1,7 +1,11 @@
-# Native model
+# Candidate native model
 
-Kind candidat : `arbre_taxonomique_classification`.
+**Native kind (stable machine identifier):** `arbre_taxonomique_classification`
 
-Primitives candidates : racines, groupes, classes, sous_classes, specimens, relations_de_classement, synonymes.
+**Reader pattern:** Classification tree (`tree`); secondary motifs: cluster.
 
-Structure décrite dans `design/structure-candidate.json` : non canonique.
+**Situated representation:** Natural categories branch into families and species with criteria, synonyms and cited authorities.
+
+**Candidate primitives:** roots, groupes, classes, sous classes, specimens, relations of classement, synonymes.
+
+The example in `design/structure-candidate.json` is a **noncanonical scaffold**, not registered domain content. Its existing property names are stable technical identifiers.

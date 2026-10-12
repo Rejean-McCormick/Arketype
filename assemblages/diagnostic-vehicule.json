@@ -1,23 +1,23 @@
 {
   "format": "arketype.assembly-recipe/1.0-non-normatif",
   "id": "diagnostic-vehicule",
-  "title": "VehicleDiag – raisonnement causal",
+  "title": "Vehicle Diagnostics",
   "primary_archetype": "diagnostic-causal",
   "components": [
     {
       "archetype": "modele-multiplexe",
       "relation": "couche_candidate",
-      "design_note": "La topologie physique ne doit pas être modifiée par la probabilité.",
+      "design_note": "Design-only link to Multiplex / Organizational Model. Keep independent ownership, references and validation explicit.",
       "status": "unresolved"
     },
     {
       "archetype": "simulation-transition",
       "relation": "projection_derivee",
-      "design_note": "Les scénarios ne sont pas des observations.",
+      "design_note": "Design-only link to Simulation / Transitions. Keep independent ownership, references and validation explicit.",
       "status": "unresolved"
     }
   ],
-  "guidance": "Les observations, perturbations, hypothèses et probabilités doivent rester distinguables.",
+  "guidance": "Separate observed symptoms, causal models, test results and repair decisions.",
   "composition_status": "design_only",
   "logical_contract": "to_define",
   "source_references": "to_pin_on_real_instance",

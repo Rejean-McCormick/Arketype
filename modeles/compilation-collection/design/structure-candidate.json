@@ -4,7 +4,7 @@
   "forme": "compilation-collection",
   "statut": "illustration-non-canonique",
   "n_est_pas_un_artefact_enregistre": true,
-  "intention": "Choisit, ordonne, annote et compare des unités de savoir sans nécessairement les posséder.",
+  "intention": "Curated, ordered and annotated independent works or knowledge items. Cookbooks, reference collections and anthologies.",
   "primitives_possibles": [
     "entrees",
     "references",
@@ -15,7 +15,7 @@
     "provenance"
   ],
   "contraintes_a_preserver": [
-    "La compilation ne transfère pas les droits ni l’autorité des éléments; distinguer fiche originale de simple référence."
+    "Curation does not imply ownership of every included item."
   ],
   "exemple_payload_vide": {
     "entrees": [],
@@ -25,5 +25,5 @@
     "references_epinglees": []
   },
   "contrat_logique": "a_definir_pour_un_domaine_reel",
-  "bibliotheque": "Arketype 1.0"
+  "bibliotheque": "Arketype 1.2.2 (English edition)"
 }

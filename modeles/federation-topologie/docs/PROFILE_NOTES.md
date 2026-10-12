@@ -1,5 +1,5 @@
-# Notes du profil `hierarchy-stub`
+# Local Authoring Kit profile
 
-Autorise identité/scope/topologie avant contenu. Parent référence enfant sans copier son contenu.
+**Profile:** `hierarchy-stub`. This is an initial tooling profile, not proof of domain compliance.
 
-Ce profil est une amorce et non une contrainte normative.
+Semantic ownership, source authority, legal constraints, executable behaviour and publication must be established independently for each real use case.

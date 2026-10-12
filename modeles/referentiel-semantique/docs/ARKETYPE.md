@@ -1,12 +1,12 @@
-# Fiche d’archétype
+# Arketype record — Semantic Reference
 
-- Identifiant Arketype : `ARK-01`
-- Famille : Savoir
-- Profil d’amorce du Local Kit : `open`
-- Type de modèle natif **candidat** : `referentiel_contextualise`
-- Exemples de rapprochement : Ekole — organisations humaines; encyclopédies offline
-- Statut : `stub`, non publié, pas de claims canoniques enregistrés
-- Le fichier `design/structure-candidate.json` reste volontairement **hors canon**
+- **Archetype:** `ARK-01` (`referentiel-semantique`).
+- **Family:** Knowledge.
+- **Local status:** `stub`, no domain assertions.
+- **Visual pattern:** cluster (Semantic cluster).
+- **Candidate scaffold:** `design/structure-candidate.json`.
+- **Metadata:** `archetypes/referentiel-semantique.json`.
 
-- Fiche catalogue : `archetypes/referentiel-semantique.json` (à la racine de la bibliothèque).
-- Les primitives de design ne font **pas** partie du canon par défaut.
+**Use cases:** knowledge base, semantic dictionary, museum and education reference.
+
+To create a new independent workspace, run `python arketype.py create --type referentiel-semantique --slug your-new-slug --title "Your title" --parent PATH` from the library root.

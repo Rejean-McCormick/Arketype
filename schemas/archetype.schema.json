@@ -31,10 +31,10 @@
     },
     "family": {
       "enum": [
-        "Savoir",
+        "Knowledge",
         "Composition",
         "Structures",
-        "Processus",
+        "Processes",
         "Sources"
       ]
     },

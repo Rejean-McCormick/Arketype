@@ -1,15 +1,9 @@
-# Frontière sémantique
+# Semantic ownership boundary
 
-## Possède
+**Candidate responsibility:** collection-curator.
 
-À définir lors de l’instanciation (aucune autorité transférée par le modèle).
+**Preserve:** Curation does not imply ownership of every included item.
 
-## Ne possède pas
+**Avoid:** Do not assume curation grants ownership of the referenced material.
 
-- Les faits, œuvres, droits ou décisions des systèmes cités en exemple.
-- Les contenus externes simplement référencés.
-- Les privilèges d’exécution ni les autorisations de publication.
-
-## Références externes
-
-Utiliser les références v9 épinglées à un engagement logique exact lorsque la connaissance dépend d’un autre Kristal.
+External sources and separately owned knowledge states should be linked through explicit references rather than silently duplicated into the local canon. Any real-world ownership decision requires a domain contract.

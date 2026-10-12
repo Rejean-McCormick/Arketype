@@ -1,4 +1,4 @@
-"""Tests standard library; aucun accès réseau ni publication."""
+"""Standard-library tests; no network access or publication."""
 import json
 from pathlib import Path
 import tempfile
@@ -15,11 +15,11 @@ class CatalogueTests(unittest.TestCase):
         self.assertEqual(r['recipe_count'],14)
         self.assertEqual(r['profile_count'],5)
     def test_recherche_unicode(self):
-        self.assertIn('parcours-pedagogique',[i['slug'] for i in arketype.search('PEDAGOGIQUE')])
-        self.assertIn('procedure-protocole',[i['slug'] for i in arketype.search('PoliceOps')])
+        self.assertIn('parcours-pedagogique',[i['slug'] for i in arketype.search('LEARNING')])
+        self.assertIn('procedure-protocole',[i['slug'] for i in arketype.search('institutional protocols')])
     def test_deposition_recherche(self):
-        self.assertIn('deposition-temoignage',[a['slug'] for a in arketype.search('TÉMOIGNAGE')])
-        self.assertIn('deposition-temoignage',[a['slug'] for a in arketype.search('Déposition')])
+        self.assertIn('deposition-temoignage',[a['slug'] for a in arketype.search('TESTIMONY')])
+        self.assertIn('deposition-temoignage',[a['slug'] for a in arketype.search('Deposition')])
         self.assertEqual(len(arketype.search('',family='Sources')),1)
     def test_deposition_aucune_verite_impliquee(self):
         a=arketype.archetype('deposition-temoignage')
@@ -74,7 +74,7 @@ class InstantiationTests(unittest.TestCase):
             self.assertEqual([],list(Path(td).glob('.arketype-staging-*')))
     def test_composed_instance_plan(self):
         with tempfile.TemporaryDirectory() as td:
-            p=arketype.create('referentiel-semantique','exemple-ekole','Référentiel',td,'ekole-multiusage')
+            p=arketype.create('referentiel-semantique','exemple-ekole','Semantic Reference',td,'ekole-multiusage')
             cp=arketype.read_json(p/'design'/'composition-plan.json')
             self.assertEqual(cp['recipe'],'ekole-multiusage')
             self.assertEqual(len(cp['components']),2)
@@ -82,7 +82,7 @@ class InstantiationTests(unittest.TestCase):
             self.assertFalse(arketype.read_json(p/'arketype.instance.json')['published'])
     def test_deposition_instance_contient_fiche_vierge(self):
         with tempfile.TemporaryDirectory() as td:
-            dest=arketype.create('deposition-temoignage','auditions-test','Collecte d’essai',td)
+            dest=arketype.create('deposition-temoignage','auditions-test','Test Collection',td)
             data=arketype.read_json(dest/'design/fiche-deposition-vierge.json')
             self.assertEqual(data['evaluation_distincte']['statut_factuel'],'non_evalue')
             self.assertFalse(arketype.read_json(dest/'arketype.instance.json')['published'])
@@ -144,25 +144,48 @@ class Upgrade121Tests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as td:
             dest=arketype.generate_html_catalog(Path(td)/'index.html')
             html=dest.read_text(encoding='utf-8')
-            for term in ('#1e6864','../assets/logo-k.svg','diagrammes-situes.json','search-arch','beforeprint','Diagnostic causal','Taxonomie de la nature'):
+            for term in ('#1e6864','../assets/logo-k.svg','diagrammes-situes.json','search-arch','beforeprint','Causal Diagnosis','Nature Taxonomy'):
                 self.assertIn(term,html)
     def test_all_kits_check_locally(self):
         report=arketype.validate(check_kit=True)
         self.assertTrue(report['ok'],report['errors'])
     def test_new_archetype_instance_form(self):
         with tempfile.TemporaryDirectory() as td:
-            dest=arketype.create('etat-systemes','essai-etat','Essai d’état',td)
+            dest=arketype.create('etat-systemes','essai-etat','State Test',td)
             self.assertTrue((dest/'design/matrice-etat-vierge.json').is_file())
             self.assertFalse(arketype.read_json(dest/'arketype.instance.json')['published'])
     def test_dossier_instance_not_deposition(self):
         with tempfile.TemporaryDirectory() as td:
-            dest=arketype.create('dossier-suivi','essai-dossier','Dossier neutre',td)
+            dest=arketype.create('dossier-suivi','essai-dossier','Neutral casefile',td)
             self.assertFalse((dest/'design/fiche-deposition-vierge.json').exists())
             self.assertTrue((dest/'design/fiche-suivi-vierge.json').exists())
     def test_taxonomy_instance_is_independent(self):
         with tempfile.TemporaryDirectory() as td:
-            dest=arketype.create('taxonomie-classification','essai-taxonomie','Taxonomie neutre',td)
+            dest=arketype.create('taxonomie-classification','essai-taxonomie','Neutral taxonomy',td)
             ref=arketype.read_json(dest/'kristal.workspace.json')['state_ref']
             self.assertNotEqual(ref,arketype.read_json(arketype.ROOT/'modeles/taxonomie-classification/kristal.workspace.json')['state_ref'])
+
+
+
+class EnglishEditionTests(unittest.TestCase):
+    def test_english_gui_labels_and_brand_logo(self):
+        ui=(arketype.ROOT/'Lancer_Arketype.pyw').read_text(encoding='utf8')
+        self.assertIn('Create Kristal',ui)
+        self.assertIn('Primary archetype',ui)
+        self.assertIn('logo-k-ui.png',ui)
+        self.assertNotIn('Créer le Kristal',ui)
+
+    def test_archetype_and_profile_labels_in_english(self):
+        self.assertEqual(arketype.archetype('diagnostic-causal')['name'],'Causal Diagnosis')
+        self.assertEqual(arketype.use_case_profile('suivi-employe')['name'],'Employee Follow-Up')
+        self.assertIn('Knowledge',{x['family'] for x in arketype.catalogue()})
+
+    def test_readme_and_guides_are_english(self):
+        readme=(arketype.ROOT/'README.md').read_text(encoding='utf8')
+        guide=(arketype.ROOT/'docs/01_CONCEPTS.md').read_text(encoding='utf8')
+        self.assertIn('Concepts and terminology',guide)
+        self.assertIn('visual HTML catalogue',readme)
+        self.assertNotIn('<img',readme.lower())
+        self.assertNotIn('![',readme)
 
 if __name__=='__main__':unittest.main()

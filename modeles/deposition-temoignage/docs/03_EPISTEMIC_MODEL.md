@@ -1,9 +1,7 @@
-# Modèle épistémique
+# Epistemic model
 
-- **Propos attribués** : représente que *X a déclaré P* à une séance/document précis, non que *P est vrai*.
-- **Observations rapportées** : distinguer ce qu'une personne dit avoir vu, ce qu'elle infère et ce qu'elle a appris de tiers.
-- **Chronologie** : distinguer date des événements allégués, date du recueil, date de la transcription, dates de modifications.
-- **Conflits** : deux récits divergents coexistent; ne pas en supprimer un silencieusement.
-- **Correction** : conserver les versions et enregistrer corrections, ajouts et retraits comme événements distincts selon droits applicables.
-- **Validation externe** : corroboration/contradiction et conclusions sont des sources ou artefacts distincts, jamais promotion implicite des propos.
-- **IA** : transcription ou résumé automatique = sortie dérivée à vérifier, pas déclaration signée ni canon reconnu.
+**Integrity condition:** Reported claims are not automatically verified facts.
+
+Source statements, observations, hypotheses, inferred conclusions and decisions can require different qualifiers. A referenced proof, testimony, or status report does not automatically establish factual truth, legal validity, or permission to act.
+
+**Design question:** Who may collect, retain and review accounts, and on what authority?

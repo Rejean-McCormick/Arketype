@@ -1,23 +1,23 @@
 {
   "format": "arketype.assembly-recipe/1.0-non-normatif",
   "id": "environnement-protocolaire",
-  "title": "Environnement protocolaire",
+  "title": "Procedural Environment",
   "primary_archetype": "procedure-protocole",
   "components": [
     {
       "archetype": "registre-evenementiel",
       "relation": "execution_trace",
-      "design_note": "Les traces d’exécution et audits ne sont pas le protocole canonique.",
+      "design_note": "Design-only link to Event Ledger / Chronology. Keep independent ownership, references and validation explicit.",
       "status": "unresolved"
     },
     {
       "archetype": "simulation-transition",
       "relation": "mise_en_situation",
-      "design_note": "Les simulations restent des dérivations non autorisantes.",
+      "design_note": "Design-only link to Simulation / Transitions. Keep independent ownership, references and validation explicit.",
       "status": "unresolved"
     }
   ],
-  "guidance": "Distinguer document normatif, exceptions, exécution réelle et simulations.",
+  "guidance": "Separate normative protocol descriptions, execution events and simulations.",
   "composition_status": "design_only",
   "logical_contract": "to_define",
   "source_references": "to_pin_on_real_instance",

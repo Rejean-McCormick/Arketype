@@ -1,29 +1,29 @@
 {
   "format": "arketype.assembly-recipe/1.0-non-normatif",
   "id": "troubleshooting-systeme",
-  "title": "Troubleshooting de système",
+  "title": "System Troubleshooting",
   "primary_archetype": "diagnostic-causal",
   "components": [
     {
       "archetype": "registre-evenementiel",
       "relation": "historique_associe",
-      "design_note": "La chronologie d’incident et les logs restent distingués du graphe causal.",
+      "design_note": "Design-only link to Event Ledger / Chronology. Keep independent ownership, references and validation explicit.",
       "status": "unresolved"
     },
     {
       "archetype": "etat-systemes",
       "relation": "etat_observe",
-      "design_note": "La matrice d’état fournit des snapshots et écarts, sans se substituer au diagnostic.",
+      "design_note": "Design-only link to System-State Matrix. Keep independent ownership, references and validation explicit.",
       "status": "unresolved"
     },
     {
       "archetype": "composition-hybride",
       "relation": "integration_technique",
-      "design_note": "Permet d’articuler plusieurs sous-systèmes techniques sans fusionner leurs autorités.",
+      "design_note": "Design-only link to Hybrid Composition. Keep independent ownership, references and validation explicit.",
       "status": "unresolved"
     }
   ],
-  "guidance": "Séparer symptômes, causes, logs, états observés et actions de remédiation.",
+  "guidance": "Distinguish symptoms, possible causes, event logs, observations and remediation authority.",
   "composition_status": "design_only",
   "logical_contract": "to_define",
   "source_references": "to_pin_on_real_instance",

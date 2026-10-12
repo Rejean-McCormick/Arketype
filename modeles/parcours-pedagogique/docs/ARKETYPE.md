@@ -1,12 +1,12 @@
-# Fiche d’archétype
+# Arketype record — Learning Path
 
-- Identifiant Arketype : `ARK-10`
-- Famille : Composition
-- Profil d’amorce du Local Kit : `open`
-- Type de modèle natif **candidat** : `parcours_didactique_reference`
-- Exemples de rapprochement : Ekole; cours UCKK par projection vers Moodle
-- Statut : `stub`, non publié, pas de claims canoniques enregistrés
-- Le fichier `design/structure-candidate.json` reste volontairement **hors canon**
+- **Archetype:** `ARK-10` (`parcours-pedagogique`).
+- **Family:** Composition.
+- **Local status:** `stub`, no domain assertions.
+- **Visual pattern:** linear (Learning sequence).
+- **Candidate scaffold:** `design/structure-candidate.json`.
+- **Metadata:** `archetypes/parcours-pedagogique.json`.
 
-- Fiche catalogue : `archetypes/parcours-pedagogique.json` (à la racine de la bibliothèque).
-- Les primitives de design ne font **pas** partie du canon par défaut.
+**Use cases:** curriculum, guided training, learning plan.
+
+To create a new independent workspace, run `python arketype.py create --type parcours-pedagogique --slug your-new-slug --title "Your title" --parent PATH` from the library root.

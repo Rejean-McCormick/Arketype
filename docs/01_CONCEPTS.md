@@ -1,27 +1,27 @@
-# Concepts et vocabulaire
+# Concepts and terminology
 
-**Arketype** : bibliothèque d'archétypes indépendante du standard Kristal; elle ne définit aucune nouvelle identité sémantique, aucune action automatique et aucun nouveau `Logical Commitment`.
+Arketype is a **non-normative structural archetype library** for Kristals. It does not create new Framework commitments, domain facts, permissions or an operational control plane.
 
-- **Archétype** : pattern de structure native et de responsabilité. Il décrit les informations que pourrait posséder un Kristal, ses obligations de preuve, sa frontière et ses anti-modèles.
-- **Modèle de départ (template)** : workspace techniquement initialisé par le Local Kit, de statut `stub`. Il ne possède aucun artefact canonique métier.
-- **Instance** : nouveau workspace doté du slug choisi et du `state_ref` généré par le Local Kit. L'unicité globale des slugs reste la responsabilité du propriétaire; deux machines pourraient choisir le même slug.
-- **Composition** : relation de conception entre plusieurs archétypes, pouvant aboutir à des artefacts au sein d'un Kristal, à plusieurs Kristals référencés, à une vue dérivée ou à un processus externe. Arketype ne décide pas à leur place.
-- **Profil de destination** : école, musée, recherche, répertoire, loisir, formation, application clinique, etc. Aucun profil d'usage n'impose une forme native.
-- **Plan de composition** : document `design/` qui liste des liens non résolus, sans engagement ni autorisation.
+- **Archetype:** a proposed structural and responsibility pattern, including candidate primitives, integrity obligations, anti-patterns and semantic ownership boundaries.
+- **Template:** an initialized `stub` workspace with an empty domain canon, using the bundled Local Authoring Kit.
+- **Instance:** a new workspace with a separately generated `state_ref` and a chosen slug. Cross-repository slug uniqueness remains the owner's responsibility.
+- **Composition:** a design relationship among independently owned structures. It might later become cross-Kristal references, a derived view, a logical artifact or an external process, but is not automatically any of those.
+- **Use-case profile:** a situated example such as a university, museum, troubleshooting workflow or casefile. An intended use does not dictate a unique native form.
+- **Composition plan:** an unresolved, design-only record stored outside canonical artifacts.
 
-Le mot **conforme** ne qualifie jamais automatiquement un Kristal obtenu depuis Arketype. La validité d’un workspace au regard de `check` signifie que l'enveloppe est cohérente, pas que les assertions sont vraies, utiles, légalement publiables ou intégrées à un système.
+Passing `check` means that the local envelope passed specified technical checks. It does **not** establish scientific truth, legal validity, data disclosure rights or permission to publish.
 
-## Distinctions essentielles
+## Responsibilities
 
-| Élément | Responsable |
-|---|---|
-| Ontologie, état, engagements v9/v10 | Kristal Framework et propriétaire du Kristal |
-| Initialisation, édition, check, build | Kristal Authoring Kit |
-| Classement, aide à la sélection, modèles neutres | Arketype |
-| Inventaire et synchro de surface | Manager |
-| Qualification, publication, activation | Qualificateurs + Bootstrap/Setup, avec autorisation |
-| Lecture contextualisée | Kompiler |
-| Affichage et navigation | Konstellation |
-| Exécution des tâches métier | Applications concernées, jamais déduite du canon |
+| Concern | Responsible component |
+| --- | --- |
+| Knowledge state, identity, commitments | Kristal Framework and the state owner |
+| Workspace initialization, checking, builds | Kristal Authoring Kit |
+| Archetype classification, selection and blank templates | Arketype |
+| Inventory and reading-surface synchronization | Kristal Manager |
+| Qualification, publication, activation | Dedicated, separately authorized workflows |
+| Contextual reading | Kompiler |
+| Reader visualization and navigation | Konstellation |
+| Operational actions | Domain application, not inferred from a knowledge artifact |
 
-Principe : **source ≠ preuve de vérité ≠ engagement logique ≠ autorité ≠ droit d'agir ≠ publication**.
+**Source ≠ verified truth ≠ logical commitment ≠ authority ≠ permission to act ≠ publication.**

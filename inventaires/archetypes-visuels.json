@@ -5,345 +5,346 @@
     {
       "id": "ARK-03",
       "slug": "carte-jalons-preuves",
-      "name": "Carte de jalons et de preuves",
-      "family": "Savoir",
+      "name": "Milestone and Proof Map",
+      "family": "Knowledge",
       "visual_pattern": "hub",
       "secondary_patterns": [
         "linear"
       ],
-      "structure_label": "carte de jalons",
-      "situational_schema": "Carrefours, points terminaux et liens abrégés vers preuves déjà validées ailleurs.",
+      "structure_label": "Sparse proof roadmap",
+      "situational_schema": "Milestones and reached frontiers linked to proofs stored elsewhere; shortcuts do not replace proof.",
       "canonical_use_cases": [
-        "cartographie de démonstrations",
-        "atlas de preuves",
-        "carte d’arrimage"
+        "proof roadmap",
+        "research milestones",
+        "cross-theory references"
       ],
       "file": "archetypes/carte-jalons-preuves.json"
     },
     {
       "id": "ARK-05",
       "slug": "compilation-collection",
-      "name": "Compilation / collection",
+      "name": "Compilation / Collection",
       "family": "Composition",
       "visual_pattern": "cluster",
       "secondary_patterns": [
         "casefile"
       ],
-      "structure_label": "collection éditoriale",
-      "situational_schema": "Une compilation regroupe des éléments relativement autonomes sous une cohérence éditoriale.",
+      "structure_label": "Curated collection",
+      "situational_schema": "Independent entries collected, ordered and annotated without absorbing ownership of each entry.",
       "canonical_use_cases": [
-        "livre de recettes",
-        "anthologie",
-        "collection thématique"
+        "cookbook",
+        "anthology",
+        "curated reference"
       ],
       "file": "archetypes/compilation-collection.json"
     },
     {
       "id": "ARK-15",
       "slug": "composition-hybride",
-      "name": "Composition hybride / sous-systèmes",
+      "name": "Hybrid Composition",
       "family": "Composition",
       "visual_pattern": "network",
       "secondary_patterns": [
         "multilayer"
       ],
-      "structure_label": "assemblage hybride",
-      "situational_schema": "Assemblage de plusieurs sous-systèmes de nature différente, chacun gardant son rôle.",
+      "structure_label": "Hybrid network",
+      "situational_schema": "Different knowledge-state forms interact through explicit references and interface boundaries.",
       "canonical_use_cases": [
-        "système composite",
-        "MediKristal partiel",
-        "orchestration inter-modèles"
+        "composite application",
+        "multi-system architecture",
+        "integrated knowledge"
       ],
       "file": "archetypes/composition-hybride.json"
     },
     {
       "id": "ARK-16",
       "slug": "deposition-temoignage",
-      "name": "Déposition / témoignage",
+      "name": "Testimony / Deposition",
       "family": "Sources",
       "visual_pattern": "casefile",
       "secondary_patterns": [
         "timeline"
       ],
-      "structure_label": "dossier de déposition",
-      "situational_schema": "Déclarations, supports, transcriptions, signatures, versions et évaluations distinctes.",
+      "structure_label": "Testimony dossier",
+      "situational_schema": "Attributed accounts, recordings, transcriptions, corrections and independent evaluations remain distinct.",
       "canonical_use_cases": [
-        "prise de témoignage",
-        "dossier de déposition",
-        "recueil déclaratif"
+        "witness statement",
+        "oral history",
+        "deposition record"
       ],
       "file": "archetypes/deposition-temoignage.json"
     },
     {
       "id": "ARK-08",
       "slug": "diagnostic-causal",
-      "name": "Diagnostic causal",
-      "family": "Processus",
+      "name": "Causal Diagnosis",
+      "family": "Processes",
       "visual_pattern": "hub",
       "secondary_patterns": [
         "timeline",
         "network"
       ],
-      "structure_label": "hub de diagnostic",
-      "situational_schema": "Un problème central relie symptômes, causes possibles, tests et conclusions locales.",
+      "structure_label": "Diagnostic hub",
+      "situational_schema": "A reported fault links observations, competing hypotheses, discriminating tests and results.",
       "canonical_use_cases": [
-        "troubleshooting de système",
-        "diagnostic de panne",
-        "analyse causale"
+        "system troubleshooting",
+        "vehicle diagnosis",
+        "root cause analysis"
       ],
       "file": "archetypes/diagnostic-causal.json"
     },
     {
       "id": "ARK-19",
       "slug": "dossier-suivi",
-      "name": "Dossier de suivi / casefile",
+      "name": "Casefile / Follow-Up",
       "family": "Structures",
       "visual_pattern": "casefile",
       "secondary_patterns": [
         "timeline"
       ],
-      "structure_label": "dossier de suivi",
-      "situational_schema": "Un dossier central accueille notes, événements, pièces, actions et évaluations distinctes.",
+      "structure_label": "Case tracking dossier",
+      "situational_schema": "A case centralizes meetings, documents, actions and assessments while keeping provenance and access controls.",
       "canonical_use_cases": [
-        "suivi d’employé",
-        "dossier RH",
-        "suivi de cas"
+        "employee follow-up",
+        "HR casefile",
+        "case management"
       ],
       "file": "archetypes/dossier-suivi.json"
     },
     {
       "id": "ARK-18",
       "slug": "etat-systemes",
-      "name": "État de systèmes / parc technique",
+      "name": "System-State Matrix",
       "family": "Structures",
       "visual_pattern": "matrix",
       "secondary_patterns": [
         "timeline"
       ],
-      "structure_label": "matrice d’état",
-      "situational_schema": "Chaque système est observé selon plusieurs dimensions, avec éventuellement des dates et des écarts.",
+      "structure_label": "System-state matrix",
+      "situational_schema": "Systems are measured on comparable dimensions at stated times, distinct from target configuration.",
       "canonical_use_cases": [
-        "inventaire d’état de systèmes",
-        "tableau de santé technique",
-        "suivi de parc"
+        "infrastructure status",
+        "asset inventory",
+        "system monitoring"
       ],
       "file": "archetypes/etat-systemes.json"
     },
     {
       "id": "ARK-02",
       "slug": "federation-topologie",
-      "name": "Fédération / topologie",
+      "name": "Federation / Topology",
       "family": "Composition",
       "visual_pattern": "network",
       "secondary_patterns": [
         "tree"
       ],
-      "structure_label": "réseau fédéré",
-      "situational_schema": "Sous-ensembles autonomes reliés par topologie, appartenance ou délégation.",
+      "structure_label": "Federated network",
+      "situational_schema": "Independent knowledge states linked by topology, scope, and separately owned parent-child references.",
       "canonical_use_cases": [
-        "fédération de sites",
-        "campus",
-        "réseau de sous-systèmes"
+        "multi-campus structure",
+        "federated sites",
+        "independent subsystems"
       ],
       "file": "archetypes/federation-topologie.json"
     },
     {
       "id": "ARK-12",
       "slug": "interpretations-couches",
-      "name": "Interprétations multicouches",
-      "family": "Savoir",
+      "name": "Layered Interpretations",
+      "family": "Knowledge",
       "visual_pattern": "multilayer",
       "secondary_patterns": [
         "hub"
       ],
-      "structure_label": "couches d’interprétation",
-      "situational_schema": "Une même base peut recevoir plusieurs lectures, analyses ou interprétations distinctes.",
+      "structure_label": "Interpretation layers",
+      "situational_schema": "Multiple readings and comparisons refer to the same source material without replacing it.",
       "canonical_use_cases": [
-        "analyses comparées",
-        "superposition d’interprétations",
-        "lecture multiangle"
+        "comparative study",
+        "interpretation layers",
+        "analysis views"
       ],
       "file": "archetypes/interpretations-couches.json"
     },
     {
       "id": "ARK-07",
       "slug": "invariant-theorie",
-      "name": "Invariant / théorie formelle",
-      "family": "Savoir",
+      "name": "Invariant / Formal Theory",
+      "family": "Knowledge",
       "visual_pattern": "tree",
       "secondary_patterns": [
         "linear"
       ],
-      "structure_label": "arbre théorique",
-      "situational_schema": "Définitions, axiomes, invariants, théorèmes et dépendances conceptuelles.",
+      "structure_label": "Formal dependency tree",
+      "situational_schema": "Axioms and definitions support lemmas, theorems and explicit proof obligations.",
       "canonical_use_cases": [
-        "corpus théorique",
-        "modèle formel",
-        "règles invariantes"
+        "formal theory",
+        "invariant specification",
+        "proof dependency map"
       ],
       "file": "archetypes/invariant-theorie.json"
     },
     {
       "id": "ARK-06",
       "slug": "memoire-recherche",
-      "name": "Mémoire de recherche",
-      "family": "Savoir",
+      "name": "Research Memory",
+      "family": "Knowledge",
       "visual_pattern": "timeline",
       "secondary_patterns": [
         "hub"
       ],
-      "structure_label": "mémoire évolutive",
-      "situational_schema": "Questions, hypothèses, pistes, sources et résultats se sédimentent dans le temps.",
+      "structure_label": "Research history",
+      "situational_schema": "Questions, hypotheses, trials and findings evolve over time with uncertainty preserved.",
       "canonical_use_cases": [
-        "carnet de recherche",
-        "dossier d’étude",
-        "journal d’exploration"
+        "research notebook",
+        "study record",
+        "experiment log"
       ],
       "file": "archetypes/memoire-recherche.json"
     },
     {
       "id": "ARK-09",
       "slug": "modele-multiplexe",
-      "name": "Modèle multiplexe / organisations",
+      "name": "Multiplex / Organizational Model",
       "family": "Structures",
       "visual_pattern": "multilayer",
       "secondary_patterns": [
         "network"
       ],
-      "structure_label": "structure multicouche",
-      "situational_schema": "Même réalité organisée sur plusieurs couches ou plans de relation.",
+      "structure_label": "Organizational layers",
+      "situational_schema": "People, roles, institutions and resources are mapped in distinguishable relationship layers.",
       "canonical_use_cases": [
-        "organisations complexes",
-        "relations sociales",
-        "vues multi-niveaux"
+        "organizational mapping",
+        "institutional studies",
+        "social relationships"
       ],
       "file": "archetypes/modele-multiplexe.json"
     },
     {
       "id": "ARK-10",
       "slug": "parcours-pedagogique",
-      "name": "Parcours pédagogique",
+      "name": "Learning Path",
       "family": "Composition",
       "visual_pattern": "linear",
       "secondary_patterns": [
         "branching"
       ],
-      "structure_label": "parcours séquencé",
-      "situational_schema": "Suite d’étapes d’apprentissage, avec jalons, ressources et bifurcations possibles.",
+      "structure_label": "Learning sequence",
+      "situational_schema": "Learning objectives, prerequisites, activities and assessments follow a navigable path.",
       "canonical_use_cases": [
         "curriculum",
-        "progression d’apprentissage",
-        "itinéraire pédagogique"
+        "guided training",
+        "learning plan"
       ],
       "file": "archetypes/parcours-pedagogique.json"
     },
     {
       "id": "ARK-04",
       "slug": "procedure-protocole",
-      "name": "Procédure / protocole",
-      "family": "Processus",
+      "name": "Procedure / Protocol",
+      "family": "Processes",
       "visual_pattern": "branching",
       "secondary_patterns": [
         "linear"
       ],
-      "structure_label": "séquence conditionnelle",
-      "situational_schema": "Étapes normées, préconditions, exceptions, rôles et issues possibles.",
+      "structure_label": "Conditional protocol",
+      "situational_schema": "Prerequisites lead to ordered actions, decisions, exception paths and authorized closure.",
       "canonical_use_cases": [
-        "environnement protocolaire",
-        "procédure métier",
-        "playbook opérationnel"
+        "standard operating procedure",
+        "field protocol",
+        "operations checklist"
       ],
       "file": "archetypes/procedure-protocole.json"
     },
     {
       "id": "ARK-01",
       "slug": "referentiel-semantique",
-      "name": "Référentiel sémantique",
-      "family": "Savoir",
+      "name": "Semantic Reference",
+      "family": "Knowledge",
       "visual_pattern": "cluster",
       "secondary_patterns": [
         "tree"
       ],
-      "structure_label": "référentiel en grappe",
-      "situational_schema": "Concepts, entités et relations regroupés en noyaux thématiques interreliés.",
+      "structure_label": "Semantic cluster",
+      "situational_schema": "Source-linked concepts, entities and typed relationships arranged in related thematic clusters.",
       "canonical_use_cases": [
-        "base de connaissances réutilisable",
-        "référentiel de concepts",
-        "noyau sémantique multiusage"
+        "knowledge base",
+        "semantic dictionary",
+        "museum and education reference"
       ],
       "file": "archetypes/referentiel-semantique.json"
     },
     {
       "id": "ARK-11",
       "slug": "registre-evenementiel",
-      "name": "Registre événementiel / chronologie",
+      "name": "Event Ledger / Chronology",
       "family": "Structures",
       "visual_pattern": "timeline",
       "secondary_patterns": [
         "casefile"
       ],
-      "structure_label": "ligne du temps",
-      "situational_schema": "Événements et changements consignés dans leur ordre ou leur datation.",
+      "structure_label": "Dated event sequence",
+      "situational_schema": "Events, revisions, timestamps and provenance are recorded without assuming causality.",
       "canonical_use_cases": [
-        "chronologie",
-        "journal d’activité",
-        "audit temporel"
+        "incident timeline",
+        "audit trail",
+        "historical chronology"
       ],
       "file": "archetypes/registre-evenementiel.json"
     },
     {
       "id": "ARK-14",
       "slug": "simulation-transition",
-      "name": "Simulation / transitions",
-      "family": "Processus",
+      "name": "Simulation / Transitions",
+      "family": "Processes",
       "visual_pattern": "linear",
       "secondary_patterns": [
         "matrix"
       ],
-      "structure_label": "chaîne d’états",
-      "situational_schema": "États, transitions, paramètres et scénarios de passage.",
+      "structure_label": "State transitions",
+      "situational_schema": "Initial states progress through actions and transitions toward hypothetical outcomes.",
       "canonical_use_cases": [
-        "simulation de systèmes",
-        "transitions d’état",
-        "scénarios d’évolution"
+        "simulation",
+        "scenario analysis",
+        "state machine"
       ],
       "file": "archetypes/simulation-transition.json"
     },
     {
       "id": "ARK-17",
       "slug": "taxonomie-classification",
-      "name": "Taxonomie / classification naturelle",
-      "family": "Savoir",
+      "name": "Taxonomy / Natural Classification",
+      "family": "Knowledge",
       "visual_pattern": "tree",
       "secondary_patterns": [
         "cluster"
       ],
-      "structure_label": "arbre taxonomique",
-      "situational_schema": "Une racine se ramifie en catégories de plus en plus spécifiques, avec synonymes et variantes.",
+      "structure_label": "Classification tree",
+      "situational_schema": "Natural categories branch into families and species with criteria, synonyms and cited authorities.",
       "canonical_use_cases": [
-        "taxonomie du vivant",
-        "classification d’objets naturels",
-        "cartographie d’espèces"
+        "wildlife taxonomy",
+        "natural classification",
+        "specimen catalogue"
       ],
       "file": "archetypes/taxonomie-classification.json"
     },
     {
       "id": "ARK-13",
       "slug": "univers-oeuvres-medias",
-      "name": "Univers / œuvres / médias",
+      "name": "Media and Creative Universes",
       "family": "Structures",
       "visual_pattern": "cluster",
       "secondary_patterns": [
         "network"
       ],
-      "structure_label": "constellation narrative",
-      "situational_schema": "Univers, œuvres, personnages, médias et déclinaisons reliés comme constellation.",
+      "structure_label": "Creative universe cluster",
+      "situational_schema": "Works, characters, fictional events and media manifestations form a related universe.",
       "canonical_use_cases": [
-        "lore",
-        "franchise",
-        "corpus créatif"
+        "worldbuilding",
+        "media archive",
+        "creative continuity"
       ],
       "file": "archetypes/univers-oeuvres-medias.json"
     }
-  ]
+  ],
+  "language": "en"
 }

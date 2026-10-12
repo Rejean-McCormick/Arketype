@@ -1,7 +1,9 @@
-# Semantic boundary
+# Semantic ownership boundary
 
-Le dossier, les pièces, les évaluations, les décisions et les données sensibles doivent rester séparés et tracés.
+**Candidate responsibility:** casefile-owner.
 
-Ne pas transformer un dossier de suivi en verdict automatique ou en historique exhaustif sans gouvernance.
+**Preserve:** Sensitive assessments and decisions require explicit governance.
 
-Ce modèle ne revendique ni la vérité des faits, ni une autorisation d’usage opérationnel.
+**Avoid:** Do not transform a follow-up record into an automatic employment judgment.
+
+External sources and separately owned knowledge states should be linked through explicit references rather than silently duplicated into the local canon. Any real-world ownership decision requires a domain contract.

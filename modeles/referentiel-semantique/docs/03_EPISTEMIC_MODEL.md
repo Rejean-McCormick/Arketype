@@ -1,5 +1,7 @@
-# Modèle épistémique — à qualifier
+# Epistemic model
 
-Règle structurante : **Ne pas confondre import Wikidata, preuve de source et fait validé; les adaptations pédagogiques restent des vues.**
+**Integrity condition:** Distinguish assertions from instructional projections and record sources.
 
-Le modèle ne contient aucune vérité ou preuve de domaine. Distinguer citations de source, autorité de l’émetteur, qualification de la preuve, engagements logiques, résultats calculés et autorisations. Toute sortie IA est une proposition, jamais un fait reconnu automatiquement.
+Source statements, observations, hypotheses, inferred conclusions and decisions can require different qualifiers. A referenced proof, testimony, or status report does not automatically establish factual truth, legal validity, or permission to act.
+
+**Design question:** Which concepts, sources and contexts does this knowledge state own?

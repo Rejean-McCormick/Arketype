@@ -1,21 +1,10 @@
 {
-  "format": "arketype.test-results/1.0-non-normatif",
-  "version": "1.2.1",
-  "unit_tests": {
-    "passed": 27,
-    "failed": 0,
-    "errors": 0
-  },
-  "kit_check": {
-    "passed": 19,
-    "failed": 0
-  },
-  "build_v9_new_models": {
-    "passed": 3,
-    "failed": 0
-  },
-  "inventory_validation": "passed",
-  "html_diagrams": 24,
-  "pdf_pages": 13,
-  "status": "local_verification_not_domain_qualification"
+  "library_version": "1.2.2",
+  "language": "en",
+  "tests_passed": 36,
+  "tests_run": 36,
+  "passed": true,
+  "local_kit_template_checks": 19,
+  "local_kit_template_builds": 19,
+  "status": "local_verification"
 }

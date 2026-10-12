@@ -4,7 +4,7 @@
   "forme": "simulation-transition",
   "statut": "illustration-non-canonique",
   "n_est_pas_un_artefact_enregistre": true,
-  "intention": "Établit règles de changement d’état et scénarios reproductibles.",
+  "intention": "State-transition definitions and hypothetical scenarios. Simulation, state machines and training situations.",
   "primitives_possibles": [
     "etats",
     "transitions",
@@ -14,7 +14,7 @@
     "resultats_derived"
   ],
   "contraintes_a_preserver": [
-    "Une sortie simulée n’est ni une observation du monde ni une autorisation d’agir."
+    "Simulation does not grant real-world execution authority."
   ],
   "exemple_payload_vide": {
     "variables": [],
@@ -25,5 +25,5 @@
     "sorties_derivees": []
   },
   "contrat_logique": "a_definir_pour_un_domaine_reel",
-  "bibliotheque": "Arketype 1.0"
+  "bibliotheque": "Arketype 1.2.2 (English edition)"
 }

@@ -1,23 +1,11 @@
-# Forme native candidate
+# Candidate native model
 
-**Archétype Arketype :** ARK-08 — Diagnostic causal
+**Native kind (stable machine identifier):** `reseau_causal_et_diagnostic`
 
-Rassemble structure, modes de panne, observations et tests différenciants.
+**Reader pattern:** Diagnostic hub (`hub`); secondary motifs: timeline, network.
 
-## Primitives envisagées
+**Situated representation:** A reported fault links observations, competing hypotheses, discriminating tests and results.
 
-- `topologie`
-- `etats_operatoires`
-- `perturbations`
-- `observations`
-- `hypotheses`
-- `tests`
-- `inference_derivee`
+**Candidate primitives:** topologie, etats operatoires, perturbations, observations, hypotheses, tests, inference derivee.
 
-## Invariant d’intégrité conceptuelle
-
-Ne pas confondre structure causale, pondération probabiliste, résultat de modèle et décision autorisée.
-
-## Fichier candidat
-
-`design/structure-candidate.json` est une **aide**, pas une source de vérité et pas un contrat logique v9 enregistré. Avant toute utilisation, décider les primitives réelles, réduire/étendre la forme, documenter ce qui serait perdu lors d’une conversion et définir les Logical Contracts exacts.
+The example in `design/structure-candidate.json` is a **noncanonical scaffold**, not registered domain content. Its existing property names are stable technical identifiers.

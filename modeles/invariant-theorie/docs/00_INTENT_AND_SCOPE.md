@@ -1,9 +1,9 @@
-# Intention et scope
+# Purpose and scope
 
-Ce modèle neutre sert à démarrer un Kristal de famille **Invariant / théorie formelle**.
+This neutral starter workspace illustrates **Invariant / Formal Theory** (`ARK-07`).
 
-**Forme candidate** : Expose invariants, formulations, conséquences, témoins, réfutations et vérifications.
+**Purpose:** Formal definitions, rules and logical dependencies. Theorem systems, invariant specifications and formal studies.
 
-Cas de référence (analogiques, non clonés) : Primalité, invariants mathématiques, Prime Bridge.
+**Typical applications:** formal theory, invariant specification, proof dependency map.
 
-Aucun fait ou corpus métier n’est prérempli. Définir le domaine réel, les destinataires, les droits et les preuves avant de cristalliser quoi que ce soit.
+It contains no admitted domain facts, personal data, privileged process authority or normative Logical Contract. Define sources, scope, permissions and ownership for any real instance.

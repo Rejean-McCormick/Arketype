@@ -1,12 +1,12 @@
 {
   "format": "kristal.local-workspace/3.2.0",
   "slug": "tpl-etat-systemes",
-  "title": "Modèle neutre — État de systèmes / parc technique",
+  "title": "Neutral template — System-State Matrix",
   "status": "stub",
   "state_ref": "urn:kristal:state:tpl-etat-systemes",
   "subject": {
     "id": null,
-    "label": "Modèle neutre — État de systèmes / parc technique"
+    "label": "Neutral template — System-State Matrix"
   },
   "target": {
     "portable_contract": "kristal_state/6.0",
@@ -20,16 +20,14 @@
   "semantic_ownership": {
     "owns": [],
     "does_not_own": [
-      "faits métier non enregistrés",
-      "données personnelles ou sensibles",
-      "conclusions et décisions opérationnelles",
-      "données d’autres Kristals",
-      "autorisations de publication ou d’activation"
+      "unverified domain facts",
+      "content belonging to external Kristals",
+      "operational permissions or publication authority"
     ]
   },
   "native_model": {
     "kind": "matrice_etat_systemes",
-    "description": "Structure candidate non normative ; pas de connaissances métier ni de contrat logique établi.",
+    "description": "Candidate neutral structure; no admitted or registered domain content.",
     "canonical_paths": [
       "canon/domain"
     ]

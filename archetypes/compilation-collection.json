@@ -2,9 +2,9 @@
   "id": "ARK-05",
   "legacy_id": "TK-05",
   "slug": "compilation-collection",
-  "name": "Compilation / collection",
+  "name": "Compilation / Collection",
   "family": "Composition",
-  "description": "Choisit, ordonne, annote et compare des unités de savoir sans nécessairement les posséder.",
+  "description": "Curated, ordered and annotated independent works or knowledge items. Cookbooks, reference collections and anthologies.",
   "kit_profile": "open",
   "native_kind_candidate": "collection_referencee",
   "responsibility_mode": "collection-curator",
@@ -30,10 +30,10 @@
     "annotations",
     "provenance"
   ],
-  "reference_use_case": "Livre de recettes, anthologie, sélection d’œuvres",
-  "integrity_rule": "La compilation ne transfère pas les droits ni l’autorité des éléments; distinguer fiche originale de simple référence.",
-  "antipattern": "L’ordre d’une compilation n’emporte ni droits ni autorité.",
-  "design_question": "Quels objets sont possédés, lesquels seulement référencés ?",
+  "reference_use_case": "Cookbooks, reference collections and anthologies.",
+  "integrity_rule": "Curation does not imply ownership of every included item.",
+  "antipattern": "Do not assume curation grants ownership of the referenced material.",
+  "design_question": "Which entries are owned, quoted or linked, and under what terms?",
   "template_path": "modeles/compilation-collection",
   "kind": "open_archetype_not_standard",
   "maturity": "candidate",
@@ -44,14 +44,23 @@
   "secondary_patterns": [
     "casefile"
   ],
-  "structure_label": "collection éditoriale",
-  "situational_schema": "Une compilation regroupe des éléments relativement autonomes sous une cohérence éditoriale.",
+  "structure_label": "Curated collection",
+  "situational_schema": "Independent entries collected, ordered and annotated without absorbing ownership of each entry.",
   "canonical_use_cases": [
-    "livre de recettes",
-    "anthologie",
-    "collection thématique"
+    "cookbook",
+    "anthology",
+    "curated reference"
   ],
   "case_examples": [
-    "Livre de recettes"
+    "Recipe collection"
+  ],
+  "primitive_labels_en": [
+    "entrees",
+    "references",
+    "ordre",
+    "selection criteria",
+    "variantes",
+    "annotations",
+    "provenance"
   ]
 }

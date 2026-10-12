@@ -1,5 +1,5 @@
-# Notes profil
+# Local Authoring Kit profile
 
-Profil Local Kit : `open`.
+**Profile:** `open`. This is an initial tooling profile, not proof of domain compliance.
 
-La visualisation Arketype ne remplace pas un contrat logique.
+Semantic ownership, source authority, legal constraints, executable behaviour and publication must be established independently for each real use case.

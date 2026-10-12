@@ -4,7 +4,7 @@
   "forme": "taxonomie-classification",
   "statut": "illustration-non-canonique",
   "n_est_pas_un_artefact_enregistre": true,
-  "intention": "Arbre de classification pour cartographier espèces, types, catégories ou éléments du vivant et de la nature.",
+  "intention": "Classification tree with groups, subclasses and synonyms. Nature maps, biological categories and material typologies.",
   "primitives_possibles": [
     "racines",
     "groupes",
@@ -15,7 +15,7 @@
     "synonymes"
   ],
   "contraintes_a_preserver": [
-    "Une relation de classement ne prouve pas une causalité ni une identité absolue; les critères de classement et leur version doivent être explicites."
+    "Classification criteria, authority and exceptions must be explicit."
   ],
   "exemple_payload_vide": {
     "racines": [],
@@ -26,5 +26,5 @@
     "relations_de_classement": []
   },
   "contrat_logique": "a_definir_pour_un_domaine_reel",
-  "bibliotheque": "Arketype 1.2"
+  "bibliotheque": "Arketype 1.2.2 (English edition)"
 }

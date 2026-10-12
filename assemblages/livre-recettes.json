@@ -1,17 +1,17 @@
 {
   "format": "arketype.assembly-recipe/1.0-non-normatif",
   "id": "livre-recettes",
-  "title": "Livre de recettes",
+  "title": "Recipe Collection",
   "primary_archetype": "compilation-collection",
   "components": [
     {
       "archetype": "procedure-protocole",
       "relation": "reference_externe",
-      "design_note": "Chaque recette/variante peut porter son propre DAG de procédure.",
+      "design_note": "Design-only link to Procedure / Protocol. Keep independent ownership, references and validation explicit.",
       "status": "unresolved"
     }
   ],
-  "guidance": "La compilation possède l’organisation du livre, pas nécessairement la totalité des recettes.",
+  "guidance": "Curate independent entries without silently claiming ownership of their sources.",
   "composition_status": "design_only",
   "logical_contract": "to_define",
   "source_references": "to_pin_on_real_instance",

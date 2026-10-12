@@ -4,7 +4,7 @@
   "forme": "invariant-theorie",
   "statut": "illustration-non-canonique",
   "n_est_pas_un_artefact_enregistre": true,
-  "intention": "Expose invariants, formulations, conséquences, témoins, réfutations et vérifications.",
+  "intention": "Formal definitions, rules and logical dependencies. Theorem systems, invariant specifications and formal studies.",
   "primitives_possibles": [
     "invariants",
     "morphes_equivalents",
@@ -15,7 +15,7 @@
     "tests"
   ],
   "contraintes_a_preserver": [
-    "Un test, une conséquence nécessaire et une preuve ne sont pas interchangeables."
+    "Proof obligations need real justification and scope."
   ],
   "exemple_payload_vide": {
     "invariants": [],
@@ -26,5 +26,5 @@
     "certificats": []
   },
   "contrat_logique": "a_definir_pour_un_domaine_reel",
-  "bibliotheque": "Arketype 1.0"
+  "bibliotheque": "Arketype 1.2.2 (English edition)"
 }

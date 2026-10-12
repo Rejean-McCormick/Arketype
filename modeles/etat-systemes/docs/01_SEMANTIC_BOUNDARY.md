@@ -1,7 +1,9 @@
-# Semantic boundary
+# Semantic ownership boundary
 
-L’état observé, le statut calculé, la configuration désirée et le jugement opératoire doivent rester distincts.
+**Candidate responsibility:** system-state-owner.
 
-Ne pas confondre un snapshot d’état avec un journal complet ou un protocole de réparation.
+**Preserve:** Observed, desired and inferred states must remain separate.
 
-Ce modèle ne revendique ni la vérité des faits, ni une autorisation d’usage opérationnel.
+**Avoid:** Do not confuse observed conditions, desired configuration and inferred health.
+
+External sources and separately owned knowledge states should be linked through explicit references rather than silently duplicated into the local canon. Any real-world ownership decision requires a domain contract.

@@ -1,9 +1,12 @@
-# ARK-19 — Dossier de suivi / casefile
+# Arketype record — Casefile / Follow-Up
 
-Forme visuelle dominante : `casefile`.
+- **Archetype:** `ARK-19` (`dossier-suivi`).
+- **Family:** Structures.
+- **Local status:** `stub`, no domain assertions.
+- **Visual pattern:** casefile (Case tracking dossier).
+- **Candidate scaffold:** `design/structure-candidate.json`.
+- **Metadata:** `archetypes/dossier-suivi.json`.
 
-Un dossier central accueille notes, événements, pièces, actions et évaluations distinctes.
+**Use cases:** employee follow-up, HR casefile, case management.
 
-Le dossier, les pièces, les évaluations, les décisions et les données sensibles doivent rester séparés et tracés.
-
-Arketype documente un modèle de départ non normatif, sans conclusions canoniques.
+To create a new independent workspace, run `python arketype.py create --type dossier-suivi --slug your-new-slug --title "Your title" --parent PATH` from the library root.

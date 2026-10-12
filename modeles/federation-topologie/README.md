@@ -1,29 +1,26 @@
-# Modèle neutre — Fédération / topologie
+# Neutral template — Federation / Topology
 
-**Type :** Local Kristal  
-**Workspace :** `kristal.local-workspace/3.2.0`  
-**État :** `kristal.state/9.0`
+**Type:** Local Kristal  
+**Workspace:** `kristal.local-workspace/3.2.0`  
+**State architecture:** `kristal.state/9.0`
 
-## Travail local
+## Local checks and builds
 
 ```bash
 python tools/kristal.py check .
 python tools/kristal.py build-v9 .
 ```
 
-Le build v9 n'active aucune couche IA par défaut.
+Building a state does not activate an AI layer by default.
 
-## IA / Kompiler (optionnel)
+## Optional AI reader outputs
 
 ```bash
 python tools/kristal.py build-ai .
 python tools/kristal.py check-ai .
-python tools/kristal.py pack-ai . --output Modèle neutre — Fédération / topologie-portable-ai.zip
+python tools/kristal.py pack-ai . --output portable-ai.zip
 ```
 
-## Synchronisation GitHub et publication
+## Hosting and publication
 
-- **Kristal Manager** : validation + synchronisation de la surface de lecture sous `kristals/<slug>/` dans une collection GitHub publique ou privée.
-- **Kristal GitHub Setup / Bootstrap** : qualification, publication et activation réseau.
-
-La synchronisation de lecture et la publication sont indépendantes de l'identité sémantique du state.
+Kristal Manager can synchronize a hosted reading surface. Kristal GitHub Setup / Bootstrap handles qualification, publication, and optional activation as separate authorized steps. A synchronized reader view is not a new semantic state or automatic publication.

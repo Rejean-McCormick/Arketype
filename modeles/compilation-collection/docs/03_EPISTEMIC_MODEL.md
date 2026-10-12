@@ -1,5 +1,7 @@
-# Modèle épistémique — à qualifier
+# Epistemic model
 
-Règle structurante : **La compilation ne transfère pas les droits ni l’autorité des éléments; distinguer fiche originale de simple référence.**
+**Integrity condition:** Curation does not imply ownership of every included item.
 
-Le modèle ne contient aucune vérité ou preuve de domaine. Distinguer citations de source, autorité de l’émetteur, qualification de la preuve, engagements logiques, résultats calculés et autorisations. Toute sortie IA est une proposition, jamais un fait reconnu automatiquement.
+Source statements, observations, hypotheses, inferred conclusions and decisions can require different qualifiers. A referenced proof, testimony, or status report does not automatically establish factual truth, legal validity, or permission to act.
+
+**Design question:** Which entries are owned, quoted or linked, and under what terms?

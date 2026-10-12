@@ -1,12 +1,12 @@
-# Fiche d’archétype
+# Arketype record — Simulation / Transitions
 
-- Identifiant Arketype : `ARK-14`
-- Famille : Processus
-- Profil d’amorce du Local Kit : `executable`
-- Type de modèle natif **candidat** : `modele_etats_transitions`
-- Exemples de rapprochement : Simulateur, jeu, modèles exploratoires
-- Statut : `stub`, non publié, pas de claims canoniques enregistrés
-- Le fichier `design/structure-candidate.json` reste volontairement **hors canon**
+- **Archetype:** `ARK-14` (`simulation-transition`).
+- **Family:** Processes.
+- **Local status:** `stub`, no domain assertions.
+- **Visual pattern:** linear (State transitions).
+- **Candidate scaffold:** `design/structure-candidate.json`.
+- **Metadata:** `archetypes/simulation-transition.json`.
 
-- Fiche catalogue : `archetypes/simulation-transition.json` (à la racine de la bibliothèque).
-- Les primitives de design ne font **pas** partie du canon par défaut.
+**Use cases:** simulation, scenario analysis, state machine.
+
+To create a new independent workspace, run `python arketype.py create --type simulation-transition --slug your-new-slug --title "Your title" --parent PATH` from the library root.

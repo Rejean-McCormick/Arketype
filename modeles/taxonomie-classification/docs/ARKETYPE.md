@@ -1,9 +1,12 @@
-# ARK-17 — Taxonomie / classification naturelle
+# Arketype record — Taxonomy / Natural Classification
 
-Forme visuelle dominante : `tree`.
+- **Archetype:** `ARK-17` (`taxonomie-classification`).
+- **Family:** Knowledge.
+- **Local status:** `stub`, no domain assertions.
+- **Visual pattern:** tree (Classification tree).
+- **Candidate scaffold:** `design/structure-candidate.json`.
+- **Metadata:** `archetypes/taxonomie-classification.json`.
 
-Une racine se ramifie en catégories de plus en plus spécifiques, avec synonymes et variantes.
+**Use cases:** wildlife taxonomy, natural classification, specimen catalogue.
 
-Une relation de classement ne prouve pas une causalité ni une identité absolue; les critères de classement et leur version doivent être explicites.
-
-Arketype documente un modèle de départ non normatif, sans conclusions canoniques.
+To create a new independent workspace, run `python arketype.py create --type taxonomie-classification --slug your-new-slug --title "Your title" --parent PATH` from the library root.

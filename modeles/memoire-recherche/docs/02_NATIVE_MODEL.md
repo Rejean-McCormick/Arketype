@@ -1,23 +1,11 @@
-# Forme native candidate
+# Candidate native model
 
-**Archétype Arketype :** ARK-06 — Mémoire de recherche
+**Native kind (stable machine identifier):** `knowledge_research_strategy_separes`
 
-Suit connaissance établie, hypothèses, essais, résultats et obligations.
+**Reader pattern:** Research history (`timeline`); secondary motifs: hub.
 
-## Primitives envisagées
+**Situated representation:** Questions, hypotheses, trials and findings evolve over time with uncertainty preserved.
 
-- `connaissances`
-- `hypotheses`
-- `tentatives`
-- `obligations`
-- `resultats`
-- `strategies`
-- `promotions`
+**Candidate primitives:** knowledge, hypotheses, tentatives, obligations, results, strategies, promotions.
 
-## Invariant d’intégrité conceptuelle
-
-Aucune promotion implicite d’un essai ou d’une stratégie en vérité du domaine.
-
-## Fichier candidat
-
-`design/structure-candidate.json` est une **aide**, pas une source de vérité et pas un contrat logique v9 enregistré. Avant toute utilisation, décider les primitives réelles, réduire/étendre la forme, documenter ce qui serait perdu lors d’une conversion et définir les Logical Contracts exacts.
+The example in `design/structure-candidate.json` is a **noncanonical scaffold**, not registered domain content. Its existing property names are stable technical identifiers.

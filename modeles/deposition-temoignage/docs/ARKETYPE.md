@@ -1,9 +1,12 @@
-# Fiche Arketype — Déposition / témoignage
+# Arketype record — Testimony / Deposition
 
-- Archétype : `ARK-16`
-- Famille : `Sources`
-- Statut : neutralisé, `stub`, sans déclarations ni identités.
-- Structure candidate : `design/structure-candidate.json`
-- Fiche de saisie **vierge illustratrice** : `design/fiche-deposition-vierge.json`
-- Le modèle documente comment structurer un recueil; ce n'est **pas** un logiciel d'audition sécurisé ou une norme juridique.
-- Pour créer un nouveau workspace indépendant : utiliser `python arketype.py create --type deposition-temoignage ...` à la racine de la bibliothèque.
+- **Archetype:** `ARK-16` (`deposition-temoignage`).
+- **Family:** Sources.
+- **Local status:** `stub`, no domain assertions.
+- **Visual pattern:** casefile (Testimony dossier).
+- **Candidate scaffold:** `design/structure-candidate.json`.
+- **Metadata:** `archetypes/deposition-temoignage.json`.
+
+**Use cases:** witness statement, oral history, deposition record.
+
+To create a new independent workspace, run `python arketype.py create --type deposition-temoignage --slug your-new-slug --title "Your title" --parent PATH` from the library root.

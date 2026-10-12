@@ -1,7 +1,11 @@
-# Modèle natif candidat : dépositions et témoignages
+# Candidate native model
 
-Structure proposée : déclaration → séances → interventions et propos attribués → supports/transcriptions → rectifications/versionnement → restrictions/provenance → références externes d'analyse.
+**Native kind (stable machine identifier):** `registre_declarations_provenance_versions`
 
-Ne pas confondre déclaration orale enregistrée, transcription, paraphrase du rédacteur, déclaration validée par le témoin, déclaration sous serment ou constatation indépendante. Les indicateurs `verifie` et `assermente` doivent être justifiés explicitement par les procédures applicables; aucun ne découle d'une simple saisie.
+**Reader pattern:** Testimony dossier (`casefile`); secondary motifs: timeline.
 
-Fichiers candidats hors canon : `design/structure-candidate.json` et `design/fiche-deposition-vierge.json`.
+**Situated representation:** Attributed accounts, recordings, transcriptions, corrections and independent evaluations remain distinct.
+
+**Candidate primitives:** declarants and pseudonymes, sessions and participants, questions and answers, statements attribues, dates of facts allegues, dates of recueil, supports originaux, transcriptions and traductions, corrections ajouts retractations, consentements and bases of traitement, restrictions d access, references externes of corroboration, proofs of capture and chaine of retention.
+
+The example in `design/structure-candidate.json` is a **noncanonical scaffold**, not registered domain content. Its existing property names are stable technical identifiers.

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Arketype — catalogue et instanciation locale.
 
-Métadonnées Arketype = documentation non normative ; création via Authoring Kit fourni.
+Arketype metadata is non-normative documentation; local creation uses the bundled Authoring Kit.
 Ce programme ne publie, ne synchronise ni n'active jamais un Kristal.
 """
 from __future__ import annotations
@@ -25,7 +25,7 @@ VALID_SLUG = re.compile(r'[a-z0-9]+(?:-[a-z0-9]+)*\Z')
 def read_json(path: Path) -> dict:
     value = json.loads(path.read_text(encoding='utf-8'))
     if not isinstance(value, dict):
-        raise ValueError(f'Le document doit être un objet JSON : {path}')
+        raise ValueError(f'Expected a JSON object : {path}')
     return value
 
 
@@ -43,7 +43,7 @@ def catalogue() -> list[dict]:
     for entry in index['archetypes']:
         rel = entry['file']
         if Path(rel).is_absolute() or '..' in Path(rel).parts:
-            raise ValueError(f'Chemin interdit dans le catalogue : {rel}')
+            raise ValueError(f'Disallowed catalogue path : {rel}')
         results.append(read_json(ROOT / rel))
     return results
 
@@ -51,7 +51,7 @@ def catalogue() -> list[dict]:
 def archetype(slug: str) -> dict:
     match = next((item for item in catalogue() if item['slug'] == slug), None)
     if match is None:
-        raise ValueError(f'Archétype inconnu : {slug}. Utiliser `python arketype.py list`.')
+        raise ValueError(f'Unknown archetype : {slug}. Use `python arketype.py list`.')
     return match
 
 
@@ -62,7 +62,7 @@ def assemblies() -> list[dict]:
 def assembly(key: str) -> dict:
     match = next((r for r in assemblies() if r['id'] == key), None)
     if match is None:
-        raise ValueError(f'Assemblage inconnu : {key}. Utiliser `python arketype.py recipes`.')
+        raise ValueError(f'Unknown assembly : {key}. Use `python arketype.py recipes`.')
     return match
 
 
@@ -73,7 +73,7 @@ def use_case_profiles() -> list[dict]:
 def use_case_profile(slug: str) -> dict:
     match = next((item for item in use_case_profiles() if item['slug'] == slug), None)
     if match is None:
-        raise ValueError(f'Profil d’usage inconnu : {slug}. Utiliser `python arketype.py profiles`.')
+        raise ValueError(f'Profil d’usage inconnu : {slug}. Use `python arketype.py profiles`.')
     return match
 
 
@@ -94,53 +94,53 @@ def search(term: str, family: str = '') -> list[dict]:
 def render_archetype(a: dict) -> str:
     return '\n'.join([
         f"{a['id']} — {a['name']}",
-        f"Famille : {a['family']} | Profil du Local Kit : {a['kit_profile']}",
-        f"Intention : {a['description']}",
-        f"Motif visuel : {a.get('visual_pattern','')} / {a.get('structure_label','')}",
-        f"Schéma situé : {a.get('situational_schema','')}",
-        f"Cas d’usage : {', '.join(a.get('canonical_use_cases', []))}",
-        f"Primitives candidates : {', '.join(a['primitive_candidates'])}",
-        f"Invariance à préserver : {a['integrity_rule']}",
-        f"Anti-modèle : {a['antipattern']}",
-        f"Question de conception : {a['design_question']}",
-        f"Exemple analogique : {a['reference_use_case']}",
-        f"Modèle neutre : {a['template_path']}",
-        'État : candidat, hors norme, sans assertions métier.'
+        f"Family: {a['family']} | Profil du Local Kit : {a['kit_profile']}",
+        f"Purpose: {a['description']}",
+        f"Visual pattern: {a.get('visual_pattern','')} / {a.get('structure_label','')}",
+        f"Situated structure: {a.get('situational_schema','')}",
+        f"Use cases: {', '.join(a.get('canonical_use_cases', []))}",
+        f"Candidate primitives: {', '.join(a['primitive_candidates'])}",
+        f"Integrity rule: {a['integrity_rule']}",
+        f"Anti-pattern: {a['antipattern']}",
+        f"Design question: {a['design_question']}",
+        f"Reference example: {a['reference_use_case']}",
+        f"Neutral template: {a['template_path']}",
+        'Status: candidate, non-normative, with no domain assertions.'
     ])
 
 
 def render_profile(p: dict) -> str:
     return '\n'.join([
         f"{p['id']} — {p['name']}",
-        f"Archétype principal : {p['primary_archetype']}",
-        f"Archétypes de soutien : {', '.join(p['supporting_archetypes'])}",
-        f"Motif visuel : {p['visual_pattern']}",
-        f"Résumé : {p['summary']}",
-        f"Schéma situé : {p['situational_schema']}",
-        f"Cas d’usage : {', '.join(p['use_cases'])}",
-        f"Limites : {' | '.join(p['boundaries'])}",
-        f"Assemblage : {p['assemblage_reference']}"
+        f"Primary archetype: {p['primary_archetype']}",
+        f"Supporting archetypes: {', '.join(p['supporting_archetypes'])}",
+        f"Visual pattern: {p['visual_pattern']}",
+        f"Summary: {p['summary']}",
+        f"Situated structure: {p['situational_schema']}",
+        f"Use cases: {', '.join(p['use_cases'])}",
+        f"Boundaries: {' | '.join(p['boundaries'])}",
+        f"Assembly: {p['assemblage_reference']}"
     ])
 
 
 def plan_for(primary: str, recipe: str | None = None, additions: list[str] | None = None) -> dict:
     archetype(primary)
     components = []
-    guidance = 'Définir les frontières, contrats, références et pertes éventuelles avant d’intégrer.'
+    guidance = 'Define boundaries, contracts, references and potential information loss before integration.'
     if recipe:
         design = assembly(recipe)
         if design['primary_archetype'] != primary:
-            raise ValueError('L’archétype principal ne correspond pas à celui de l’assemblage demandé.')
+            raise ValueError('Primary archetype does not match the requested assembly.')
         components = [dict(c) for c in design['components']]
         guidance = design['guidance']
     for slug in additions or []:
         archetype(slug)
         if slug == primary:
-            raise ValueError('Un archétype ne peut pas être ajouté à lui-même.')
+            raise ValueError('An archetype cannot be added to itself.')
         if any(c['archetype'] == slug for c in components):
             continue
         components.append({'archetype':slug, 'relation':'a_decider',
-                           'design_note':'Déterminer la frontière et l’ownership avant tout canon.',
+                           'design_note':'Determine semantic ownership boundaries before admitting any canonical content.',
                            'status':'unresolved'})
     return {'format':'arketype.composition-plan/1.0-non-normatif',
             'primary_archetype':primary,'recipe':recipe,
@@ -157,17 +157,17 @@ def create(type_slug: str, slug: str, title: str, parent: str | Path,
            dry_run: bool = False) -> Path | dict:
     a = archetype(type_slug)
     if not VALID_SLUG.fullmatch(slug or '') or len(slug) > 80:
-        raise ValueError('Slug attendu : minuscules ASCII, chiffres et tirets (1–80 caractères).')
+        raise ValueError('Expected slug: lowercase ASCII letters, digits and hyphens (1–80 characters).')
     if not title or not title.strip() or len(title.strip()) > 250:
-        raise ValueError('Titre attendu : 1–250 caractères non blancs.')
+        raise ValueError('Expected a nonblank title of 1–250 characters.')
     if '\x00' in str(parent):
-        raise ValueError('Chemin invalide.')
+        raise ValueError('Invalid path.')
     parent = Path(parent).expanduser().resolve(strict=True)
     if not parent.is_dir():
-        raise ValueError(f'Le dossier parent n’est pas un répertoire : {parent}')
+        raise ValueError(f'Parent path is not a directory : {parent}')
     destination = parent / slug
     if destination.exists() or destination.is_symlink():
-        raise FileExistsError(f'Le dossier cible existe déjà : {destination}')
+        raise FileExistsError(f'Destination already exists : {destination}')
     plan = plan_for(type_slug, recipe, additions)
     if dry_run:
         return {'destination': str(destination), 'archetype': a['id'], 'title':title.strip(),
@@ -175,7 +175,7 @@ def create(type_slug: str, slug: str, title: str, parent: str | Path,
     tool = ROOT / 'outils' / 'kristal.py'
     model = ROOT / a['template_path']
     if not tool.is_file() or not model.is_dir():
-        raise FileNotFoundError('Local Kit ou modèle de départ introuvable dans cette archive Arketype.')
+        raise FileNotFoundError('Bundled Authoring Kit or archetype template is missing from this Arketype archive.')
     with tempfile.TemporaryDirectory(prefix='.arketype-staging-', dir=str(parent)) as td:
         working = Path(td) / 'workspace'
         def run_kit(args: list[str]) -> None:
@@ -187,7 +187,7 @@ def create(type_slug: str, slug: str, title: str, parent: str | Path,
         ws=read_json(ws_file)
         source_ws=read_json(model/'kristal.workspace.json')
         ws['native_model']['kind']=a['native_kind_candidate']
-        ws['native_model']['description']='Forme candidate Arketype; connaissance métier et Logical Contract encore à définir.'
+        ws['native_model']['description']='Arketype candidate structure; domain knowledge and Logical Contract remain undefined.'
         ws['semantic_ownership']=source_ws['semantic_ownership']
         ws_file.write_text(json.dumps(ws,ensure_ascii=False,indent=2)+'\n',encoding='utf8')
         (working/'design').mkdir(exist_ok=True)
@@ -200,11 +200,11 @@ def create(type_slug: str, slug: str, title: str, parent: str | Path,
             if source.is_file():
                 shutil.copyfile(source,working/'docs'/filename)
         with (working/'docs'/'ARKETYPE.md').open('a',encoding='utf8') as f:
-            f.write(f'\n## Instance locale\n\n- Titre : **{title.strip()}**\n- Slug : `{slug}`\n- État initial : `{ws["state_ref"]}`\n- Contrats et assertions : **à concevoir**.\n')
+            f.write(f'\n## Local instance\n\n- Title: **{title.strip()}**\n- Slug : `{slug}`\n- Initial state: `{ws["state_ref"]}`\n- Contracts and assertions: **not yet defined**.\n')
         (working/'design'/'composition-plan.json').write_text(json.dumps(plan,ensure_ascii=False,indent=2)+'\n','utf8')
         (working/'arketype.instance.json').write_text(json.dumps({
              'format':'arketype.instance-origin/1.0-non-normatif',
-             'library_version':'1.2.1','primary_archetype':type_slug,
+             'library_version':'1.2.2','primary_archetype':type_slug,
              'assembly_recipe':recipe,'additional_archetypes':[p['archetype'] for p in plan['components']],
              'state_ref_at_initialization':ws['state_ref'],
              'authoring_kit_reference':'3.2.4',
@@ -214,9 +214,9 @@ def create(type_slug: str, slug: str, title: str, parent: str | Path,
         run_kit(['check',str(working)])
         index=read_json(working/'canon'/'state.index.json')
         if index.get('artifacts',[]) or index.get('canonical_artifacts',[]):
-            raise ValueError('Le workspace n’est pas vide : instanciation refusée.')
+            raise ValueError('Workspace is not empty; refusing to initialize.')
         if destination.exists() or destination.is_symlink():
-            raise FileExistsError(f'La destination a été créée entretemps : {destination}')
+            raise FileExistsError(f'Destination appeared during initialization : {destination}')
         working.rename(destination)
     return destination
 
@@ -246,7 +246,7 @@ def _diagram_svg(pattern: str) -> str:
 
 
 def generate_html_catalog(output_path: Path | None = None) -> Path:
-    """Compile les inventaires JSON dans une présentation HTML autonome hors ligne."""
+    """Render the JSON inventories as a self-contained offline HTML catalogue."""
     from catalogue.renderer import build
     return build(ROOT, output_path)
 
@@ -255,131 +255,131 @@ def validate(check_kit: bool = False) -> dict:
     errors=[]
     index=catalogue_index()
     if index.get('format')!='arketype.catalog/1.0-non-normatif':
-        errors.append('Mauvais format catalogue.')
+        errors.append('Invalid catalogue format.')
     types=catalogue()
-    if len(types) != len(index['archetypes']): errors.append('Nombre de fiches incohérent.')
+    if len(types) != len(index['archetypes']): errors.append('Archetype index and records have different counts.')
     allowed_patterns = {p['id'] for p in visual_grammar()['patterns']}
     slugs=set();ids=set();state_refs=set()
     for i,a in zip(index['archetypes'],types):
         slug=a.get('slug','')
-        if slug in slugs: errors.append(f'Slug répété : {slug}')
+        if slug in slugs: errors.append(f'Duplicate slug : {slug}')
         slugs.add(slug)
-        if a.get('id') in ids: errors.append(f'ID répété : {a.get("id")}')
+        if a.get('id') in ids: errors.append(f'Duplicate ID : {a.get("id")}')
         ids.add(a.get('id'))
         if (slug,i['id']) != (i['slug'],a.get('id')):
-            errors.append(f'Index désaligné : {slug}')
-        if not VALID_SLUG.fullmatch(slug): errors.append(f'Slug invalide : {slug}')
-        if a.get('family') not in ('Savoir','Composition','Structures','Processus','Sources'):
-            errors.append(f'{slug}: famille inconnue')
+            errors.append(f'Catalogue index mismatch : {slug}')
+        if not VALID_SLUG.fullmatch(slug): errors.append(f'Invalid slug : {slug}')
+        if a.get('family') not in ('Knowledge','Composition','Structures','Processes','Sources'):
+            errors.append(f'{slug}: unknown family')
         for required in ['name','description','family','kit_profile','native_kind_candidate','integrity_rule','template_path','antipattern','design_question','visual_pattern','situational_schema','structure_label']:
-            if not a.get(required): errors.append(f'{slug}: champ absent {required}')
-        if a.get('visual_pattern') not in allowed_patterns: errors.append(f'{slug}: motif visuel inconnu')
+            if not a.get(required): errors.append(f'{slug}: missing required field {required}')
+        if a.get('visual_pattern') not in allowed_patterns: errors.append(f'{slug}: unknown visual pattern')
         if a.get('kind')!='open_archetype_not_standard' or a.get('canonical_claims_in_template') is not False:
-            errors.append(f'{slug}: archétype prétend être une norme ou un corpus.')
+            errors.append(f'{slug}: archetype incorrectly claims normative status or preloaded domain data.')
         p=ROOT / a['template_path']
-        if not p.is_dir():errors.append(f'{slug}: modèle absent');continue
-        if p.resolve().parent != (ROOT/'modeles').resolve():errors.append(f'{slug}: chemin modèle interdit')
+        if not p.is_dir():errors.append(f'{slug}: template missing');continue
+        if p.resolve().parent != (ROOT/'modeles').resolve():errors.append(f'{slug}: disallowed template path')
         try:
             ws=read_json(p/'kristal.workspace.json')
             ca=read_json(p/'canon'/'state.index.json')
             shape=read_json(p/'design'/'structure-candidate.json')
             template_meta=read_json(p/'arketype.template.json')
-            if ws.get('slug') != 'tpl-'+slug: errors.append(f'{slug}: identité de modèle (slug) différente')
-            if ws.get('state_ref') != 'urn:kristal:state:tpl-'+slug: errors.append(f'{slug}: state_ref de modèle différent')
-            if ws.get('state_ref') in state_refs: errors.append(f'{slug}: state_ref dupliqué')
+            if ws.get('slug') != 'tpl-'+slug: errors.append(f'{slug}: template slug mismatch')
+            if ws.get('state_ref') != 'urn:kristal:state:tpl-'+slug: errors.append(f'{slug}: template state_ref mismatch')
+            if ws.get('state_ref') in state_refs: errors.append(f'{slug}: duplicate state_ref')
             state_refs.add(ws.get('state_ref'))
             receipt=read_json(p/'build/v9/build-receipt.json')
-            if receipt.get('state_ref') != ws.get('state_ref'): errors.append(f'{slug}: reçu build-v9 incohérent')
-            if receipt.get('generated_logical_artifacts') != 0: errors.append(f'{slug}: reçu non neutre')
-            if ws['profile'] != a['kit_profile']: errors.append(f'{slug}: profil incohérent')
-            if ws['native_model']['kind'] != a['native_kind_candidate']: errors.append(f'{slug}: forme incohérente')
-            if ws.get('status') != 'stub':errors.append(f'{slug}: modèle non neutralisé')
+            if receipt.get('state_ref') != ws.get('state_ref'): errors.append(f'{slug}: build-v9 receipt mismatch')
+            if receipt.get('generated_logical_artifacts') != 0: errors.append(f'{slug}: receipt contains generated domain artifacts')
+            if ws['profile'] != a['kit_profile']: errors.append(f'{slug}: profile mismatch')
+            if ws['native_model']['kind'] != a['native_kind_candidate']: errors.append(f'{slug}: native kind mismatch')
+            if ws.get('status') != 'stub':errors.append(f'{slug}: template is not a neutral stub')
             if ca.get('canonical_artifacts',[]) or ca.get('artifacts',[]):errors.append(f'{slug}: canon non vide')
-            if shape.get('id_type') != a['id']:errors.append(f'{slug}: design incohérent')
-            if template_meta.get('archetype_id')!=a['id']:errors.append(f'{slug}: origine incohérente')
+            if shape.get('id_type') != a['id']:errors.append(f'{slug}: design scaffold mismatch')
+            if template_meta.get('archetype_id')!=a['id']:errors.append(f'{slug}: template origin mismatch')
             if template_meta.get('format')!='arketype.template/1.0-non-normatif':
-                errors.append(f'{slug}: format modèle inconnu')
+                errors.append(f'{slug}: unknown template metadata format')
             if slug == 'deposition-temoignage':
                 dep = read_json(p / 'design' / 'fiche-deposition-vierge.json')
                 if dep.get('statut') != 'FORMULAIRE_VIERGE_HORS_CANON_NE_PAS_REMPLIR_DANS_LE_REPO':
-                    errors.append('deposition-temoignage: formulaire non neutre')
+                    errors.append('deposition-temoignage: non-neutral blank form')
                 if dep.get('evaluation_distincte', {}).get('statut_factuel') != 'non_evalue':
-                    errors.append('deposition-temoignage: conclusions factuelles préétablies')
+                    errors.append('deposition-temoignage: preset factual conclusions')
             if slug == 'dossier-suivi':
                 if (p/'design'/'fiche-deposition-vierge.json').exists():
-                    errors.append('dossier-suivi: formulaire de déposition copié')
+                    errors.append('dossier-suivi: copied deposition form')
                 form = read_json(p/'design'/'fiche-suivi-vierge.json')
                 if form.get('evaluation',{}).get('statut') != 'non_evalue':
-                    errors.append('dossier-suivi: évaluation non neutre')
+                    errors.append('dossier-suivi: non-neutral assessment')
             if slug == 'etat-systemes':
                 form = read_json(p/'design'/'matrice-etat-vierge.json')
                 if not form.get('dimensions'):
-                    errors.append('etat-systemes: matrice sans dimensions')
+                    errors.append('etat-systemes: matrix has no dimensions')
             if check_kit:
                 p_check=subprocess.run([sys.executable,str(p/'tools'/'kristal.py'),'check',str(p)], capture_output=True,text=True,timeout=120)
-                if p_check.returncode: errors.append(f'{slug}: échec check Local Kit: {p_check.stderr[-300:]}')
+                if p_check.returncode: errors.append(f'{slug}: Authoring Kit check failed: {p_check.stderr[-300:]}')
         except (OSError,ValueError,KeyError) as exc:
             errors.append(f'{slug}: {exc}')
     recipes=assemblies();recipes_id=set()
     for r in recipes:
-        if r['id'] in recipes_id:errors.append('Assemblage répété : '+r['id'])
+        if r['id'] in recipes_id:errors.append('Duplicate assembly : '+r['id'])
         recipes_id.add(r['id'])
-        if r.get('primary_archetype') not in slugs:errors.append(r['id']+': principal inconnu')
-        if r.get('composition_status')!='design_only':errors.append(r['id']+': assemblage prétend être canon')
-        if r.get('publication_authorization') is not False:errors.append(r['id']+': autorisation indue')
+        if r.get('primary_archetype') not in slugs:errors.append(r['id']+': unknown primary archetype')
+        if r.get('composition_status')!='design_only':errors.append(r['id']+': assembly incorrectly claims canonical status')
+        if r.get('publication_authorization') is not False:errors.append(r['id']+': unauthorized publication permission')
         for c in r['components']:
-            if c['archetype'] not in slugs:errors.append(r['id']+': composant inconnu '+c['archetype'])
-            if c['archetype']==r['primary_archetype']:errors.append(r['id']+': auto-composition')
-            if c.get('status')!='unresolved':errors.append(r['id']+': lien déclaré résolu sans preuve')
+            if c['archetype'] not in slugs:errors.append(r['id']+': unknown component '+c['archetype'])
+            if c['archetype']==r['primary_archetype']:errors.append(r['id']+': self-composition')
+            if c.get('status')!='unresolved':errors.append(r['id']+': link marked resolved without evidence')
     profs=use_case_profiles(); profile_ids=set()
     for p in profs:
-        if p['id'] in profile_ids: errors.append('Profil répété : '+p['id'])
+        if p['id'] in profile_ids: errors.append('Duplicate profile : '+p['id'])
         profile_ids.add(p['id'])
-        if p.get('primary_archetype') not in slugs: errors.append(p['slug']+': archétype principal inconnu')
+        if p.get('primary_archetype') not in slugs: errors.append(p['slug']+': unknown primary archetype')
         for s in p.get('supporting_archetypes',[]):
-            if s not in slugs: errors.append(p['slug']+': archétype de soutien inconnu '+s)
-        if p.get('visual_pattern') not in allowed_patterns: errors.append(p['slug']+': motif visuel inconnu')
-    # Graphes : chaque fiche et chaque profil a un schéma situé valide, hors canon.
+            if s not in slugs: errors.append(p['slug']+': unknown supporting archetype '+s)
+        if p.get('visual_pattern') not in allowed_patterns: errors.append(p['slug']+': unknown visual pattern')
+    # Graphs: each archetype and profile has a valid, noncanonical situated diagram.
     diagrams=read_json(ROOT/'inventaires'/'diagrammes-situes.json')['diagrams']
     visual_index=read_json(ROOT/'inventaires'/'archetypes-visuels.json')['archetypes']
-    if len(visual_index)!=len(types): errors.append('Inventaire visuel : nombre de fiches incohérent')
+    if len(visual_index)!=len(types): errors.append('Visual inventory: record count mismatch')
     if {(a['slug'],a['visual_pattern']) for a in visual_index} != {(a['slug'],a['visual_pattern']) for a in types}:
         errors.append('Inventaire visuel : alignement incorrect')
     expected={('archetype',a['slug'],a['visual_pattern']) for a in types} | {('profile',p['slug'],p['visual_pattern']) for p in profs}
     actual={(d['kind'],d['slug'],d['pattern']) for d in diagrams}
-    if actual!=expected or len(diagrams)!=len(expected): errors.append('Diagrammes situés : couverture/identité incorrecte')
+    if actual!=expected or len(diagrams)!=len(expected): errors.append('Situated diagrams: identity or coverage mismatch')
     for d in diagrams:
-        if d.get('status')!='illustration_non_canonique': errors.append(d['slug']+': schéma indûment canonique')
+        if d.get('status')!='illustration_non_canonique': errors.append(d['slug']+': diagram incorrectly marked canonical')
         labels={n['id'] for n in d['nodes']}
-        if len(labels)!=len(d['nodes']): errors.append(d['slug']+': nœuds dupliqués')
-        if not labels or any(not n.get('label') for n in d['nodes']): errors.append(d['slug']+': nœuds sans libellés')
-        if any(e.get('from') not in labels or e.get('to') not in labels for e in d['edges']): errors.append(d['slug']+': arête inconnue')
+        if len(labels)!=len(d['nodes']): errors.append(d['slug']+': duplicate nodes')
+        if not labels or any(not n.get('label') for n in d['nodes']): errors.append(d['slug']+': unlabeled nodes')
+        if any(e.get('from') not in labels or e.get('to') not in labels for e in d['edges']): errors.append(d['slug']+': edge references an unknown node')
     if not (ROOT/'assets/logo-k.svg').is_file(): errors.append('Logo SVG absent')
     return {'ok':not errors,'archetype_count':len(types),'recipe_count':len(recipes),'profile_count':len(profs),'situated_diagrams':len(diagrams),'local_kit_checks':check_kit,'errors':errors}
 
 
 def main(argv: list[str] | None = None) -> int:
-    parser=argparse.ArgumentParser(prog='arketype.py',description='Arketype — bibliothèque d’archétypes Kristal, non normative.')
+    parser=argparse.ArgumentParser(prog='arketype.py',description='Arketype — non-normative Kristal archetype library.')
     commands=parser.add_subparsers(dest='command',required=True)
-    ls=commands.add_parser('list',help='Lister les archétypes')
-    ls.add_argument('--family',default='',help='Famille : Savoir, Composition, Structures, Processus, Sources')
-    sh=commands.add_parser('show',help='Afficher la fiche complète');sh.add_argument('slug')
-    se=commands.add_parser('search',help='Rechercher noms, usages et propriétés');se.add_argument('term')
-    rec=commands.add_parser('recipes',help='Lister les assemblages documentés')
-    rp=commands.add_parser('recipe',help='Afficher un assemblage');rp.add_argument('id')
-    pr=commands.add_parser('profiles',help='Lister les profils d’usage')
-    pf=commands.add_parser('profile',help='Afficher un profil d’usage');pf.add_argument('slug')
-    bh=commands.add_parser('build-html',help='Générer le catalogue HTML');bh.add_argument('--output',default='')
-    v=commands.add_parser('validate',help='Contrôler cohérence Arketype (lecture seule)');v.add_argument('--check-kit',action='store_true')
+    ls=commands.add_parser('list',help='List archetypes')
+    ls.add_argument('--family',default='',help='Family: Knowledge, Composition, Structures, Processes, Sources')
+    sh=commands.add_parser('show',help='Show archetype details');sh.add_argument('slug')
+    se=commands.add_parser('search',help='Search names, use cases and properties');se.add_argument('term')
+    rec=commands.add_parser('recipes',help='List design-only assemblies')
+    rp=commands.add_parser('recipe',help='Show assembly details');rp.add_argument('id')
+    pr=commands.add_parser('profiles',help='List use-case profiles')
+    pf=commands.add_parser('profile',help='Show a use-case profile');pf.add_argument('slug')
+    bh=commands.add_parser('build-html',help='Generate the offline HTML catalogue');bh.add_argument('--output',default='')
+    v=commands.add_parser('validate',help='Check Arketype consistency (read-only)');v.add_argument('--check-kit',action='store_true')
     for command in ('create','compose'):
-        p=commands.add_parser(command,help='Instancier un Kristal local (ou préparer une composition)')
-        p.add_argument('--type',help='Archétype principal; facultatif avec --recipe')
-        p.add_argument('--recipe',help='Assemblage préétabli')
-        p.add_argument('--with',dest='additions',action='append',default=[],metavar='ARCHETYPE',help='Archétype supplémentaire; répéter au besoin')
-        p.add_argument('--slug',required=True,help='Identifiant du Kristal à créer')
-        p.add_argument('--title',required=True,help='Titre de ce Kristal')
-        p.add_argument('--parent',required=True,help='Dossier existant où créer le sous-dossier')
-        p.add_argument('--dry-run',action='store_true',help='Prévisualiser sans écrire')
+        p=commands.add_parser(command,help='Create a local Kristal or prepare a composition')
+        p.add_argument('--type',help='Primary archetype; optional when using --recipe')
+        p.add_argument('--recipe',help='Predefined assembly')
+        p.add_argument('--with',dest='additions',action='append',default=[],metavar='ARCHETYPE',help='Additional archetype; repeat if needed')
+        p.add_argument('--slug',required=True,help='Slug for the new Kristal')
+        p.add_argument('--title',required=True,help='Title for the new Kristal')
+        p.add_argument('--parent',required=True,help='Existing parent directory for new workspace')
+        p.add_argument('--dry-run',action='store_true',help='Preview without writing')
     args=parser.parse_args(argv)
     try:
         if args.command=='list':
@@ -391,7 +391,7 @@ def main(argv: list[str] | None = None) -> int:
         elif args.command=='search':
             matches=search(args.term)
             for a in matches: print(f"{a['id']}  {a['slug']} — {a['name']}")
-            if not matches: print('Aucun archétype trouvé.')
+            if not matches: print('No matching archetypes found.')
         elif args.command=='recipes':
             for r in assemblies():print(f"{r['id']:25} {r['title']} (principal : {r['primary_archetype']})")
         elif args.command=='recipe':
@@ -409,15 +409,15 @@ def main(argv: list[str] | None = None) -> int:
             return 0 if report['ok'] else 1
         elif args.command in ('create','compose'):
             typ=args.type or (assembly(args.recipe)['primary_archetype'] if args.recipe else None)
-            if not typ:parser.error('Indiquer --type ou --recipe.')
+            if not typ:parser.error('Provide --type or --recipe.')
             if args.command=='compose' and not (args.recipe or args.additions):
-                parser.error('compose attend --recipe ou au moins un --with.')
+                parser.error('compose requires --recipe or at least one --with.')
             result=create(typ,args.slug,args.title,args.parent,args.recipe,args.additions,args.dry_run)
             if isinstance(result,dict):print(json.dumps(result,ensure_ascii=False,indent=2))
-            else:print('Workspace Arketype neutralisé créé et contrôlé : '+str(result))
+            else:print('Neutral Arketype workspace created and checked : '+str(result))
         return 0
     except (OSError,ValueError,RuntimeError,KeyError,subprocess.TimeoutExpired) as exc:
-        print('ERREUR Arketype : '+str(exc),file=sys.stderr)
+        print('Arketype ERROR : '+str(exc),file=sys.stderr)
         return 1
 
 

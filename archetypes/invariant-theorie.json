@@ -2,9 +2,9 @@
   "id": "ARK-07",
   "legacy_id": "TK-07",
   "slug": "invariant-theorie",
-  "name": "Invariant / théorie formelle",
-  "family": "Savoir",
-  "description": "Expose invariants, formulations, conséquences, témoins, réfutations et vérifications.",
+  "name": "Invariant / Formal Theory",
+  "family": "Knowledge",
+  "description": "Formal definitions, rules and logical dependencies. Theorem systems, invariant specifications and formal studies.",
   "kit_profile": "invariant",
   "native_kind_candidate": "invariant_formalisations_preuves",
   "responsibility_mode": "formal-theory-owner",
@@ -30,10 +30,10 @@
     "certificats",
     "tests"
   ],
-  "reference_use_case": "Primalité, invariants mathématiques, Prime Bridge",
-  "integrity_rule": "Un test, une conséquence nécessaire et une preuve ne sont pas interchangeables.",
-  "antipattern": "Un algorithme ou test n’équivaut pas à une démonstration générale.",
-  "design_question": "Quels axiomes et systèmes de preuve sont employés ?",
+  "reference_use_case": "Theorem systems, invariant specifications and formal studies.",
+  "integrity_rule": "Proof obligations need real justification and scope.",
+  "antipattern": "Do not label a result proven without a qualified proof and scope.",
+  "design_question": "Which definitions and proof obligations underlie each invariant?",
   "template_path": "modeles/invariant-theorie",
   "kind": "open_archetype_not_standard",
   "maturity": "candidate",
@@ -44,14 +44,23 @@
   "secondary_patterns": [
     "linear"
   ],
-  "structure_label": "arbre théorique",
-  "situational_schema": "Définitions, axiomes, invariants, théorèmes et dépendances conceptuelles.",
+  "structure_label": "Formal dependency tree",
+  "situational_schema": "Axioms and definitions support lemmas, theorems and explicit proof obligations.",
   "canonical_use_cases": [
-    "corpus théorique",
-    "modèle formel",
-    "règles invariantes"
+    "formal theory",
+    "invariant specification",
+    "proof dependency map"
   ],
   "case_examples": [
-    "Théorie formelle et invariants"
+    "Formal theorem system"
+  ],
+  "primitive_labels_en": [
+    "invariants",
+    "equivalent expressions",
+    "consequences",
+    "counterexamples",
+    "proofs",
+    "certificates",
+    "tests"
   ]
 }

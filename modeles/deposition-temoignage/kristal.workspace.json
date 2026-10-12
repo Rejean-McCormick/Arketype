@@ -1,12 +1,12 @@
 {
   "format": "kristal.local-workspace/3.2.0",
   "slug": "tpl-deposition-temoignage",
-  "title": "Modèle neutre — Déposition / témoignage",
+  "title": "Neutral template — Testimony / Deposition",
   "status": "stub",
   "state_ref": "urn:kristal:state:tpl-deposition-temoignage",
   "subject": {
     "id": null,
-    "label": "Modèle neutre — Déposition / témoignage"
+    "label": "Neutral template — Testimony / Deposition"
   },
   "target": {
     "portable_contract": "kristal_state/6.0",
@@ -20,17 +20,14 @@
   "semantic_ownership": {
     "owns": [],
     "does_not_own": [
-      "établir automatiquement la vérité des déclarations",
-      "décisions judiciaires ou administratives",
-      "identités, informations sensibles ou enregistrements non autorisés",
-      "contrôle d’accès de l’application de capture",
-      "résultats de corroboration externes non explicitement reconnus",
-      "publications et autorisations de diffusion"
+      "unverified domain facts",
+      "content belonging to external Kristals",
+      "operational permissions or publication authority"
     ]
   },
   "native_model": {
     "kind": "registre_declarations_provenance_versions",
-    "description": "Modèle candidat de consignation de dépositions : seules des formes vides sont fournies, aucune personne ni parole réelle.",
+    "description": "Candidate neutral structure; no admitted or registered domain content.",
     "canonical_paths": [
       "canon/domain"
     ]

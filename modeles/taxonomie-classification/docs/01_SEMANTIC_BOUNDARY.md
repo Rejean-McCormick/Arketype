@@ -1,7 +1,9 @@
-# Semantic boundary
+# Semantic ownership boundary
 
-Une relation de classement ne prouve pas une causalité ni une identité absolue; les critères de classement et leur version doivent être explicites.
+**Candidate responsibility:** taxonomy-owner.
 
-Ne pas confondre taxonomie, observation de terrain et théorie causale.
+**Preserve:** Classification criteria, authority and exceptions must be explicit.
 
-Ce modèle ne revendique ni la vérité des faits, ni une autorisation d’usage opérationnel.
+**Avoid:** Do not equate a classification relationship with observed identity or causal evidence.
+
+External sources and separately owned knowledge states should be linked through explicit references rather than silently duplicated into the local canon. Any real-world ownership decision requires a domain contract.

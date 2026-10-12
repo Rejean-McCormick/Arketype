@@ -1,5 +1,9 @@
-# Intent and scope
+# Purpose and scope
 
-Structure pour décrire l’état courant et l’historique essentiel de systèmes, équipements ou environnements techniques.
+This neutral starter workspace illustrates **System-State Matrix** (`ARK-18`).
 
-Exemples : inventaire d’état de systèmes, tableau de santé technique, suivi de parc.
+**Purpose:** Observed condition of multiple systems across dimensions. Infrastructure status, asset state and configuration review.
+
+**Typical applications:** infrastructure status, asset inventory, system monitoring.
+
+It contains no admitted domain facts, personal data, privileged process authority or normative Logical Contract. Define sources, scope, permissions and ownership for any real instance.

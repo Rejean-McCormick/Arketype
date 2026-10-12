@@ -1,9 +1,9 @@
 {
   "id": "ARK-16",
   "slug": "deposition-temoignage",
-  "name": "Déposition / témoignage",
+  "name": "Testimony / Deposition",
   "family": "Sources",
-  "description": "Recueillir et conserver des récits attribués, leurs circonstances de collecte, versions, supports originaux, transcriptions, corrections et provenances, sans convertir les propos en faits établis.",
+  "description": "Attributed accounts with recordings, transcriptions and revisions. Witness records and declarative evidence dossiers.",
   "kit_profile": "open",
   "native_kind_candidate": "registre_declarations_provenance_versions",
   "responsibility_mode": "testimony-record-owner",
@@ -40,10 +40,10 @@
     "references_externes_de_corroboration",
     "preuves_de_capture_et_chaine_de_conservation"
   ],
-  "reference_use_case": "Enquête historique, recueil de témoignages, dépositions encadrées, recherche qualitative, récit oral, auditions internes.",
-  "integrity_rule": "Distinguer les mots du témoin, ceux de l’enquêteur, les faits allégués, les événements observés, la transcription et l’analyse. Préserver les versions et conserver la provenance; ne jamais présumer de la vérité ou de la valeur juridique.",
-  "antipattern": "Transformer une affirmation non vérifiée en fait canonique; écraser une version; confondre compte rendu, enregistrement, interprétation et déclaration signée; diffuser des identités sans autorisation.",
-  "design_question": "Qui est habilité à recueillir la déposition, sur quelle base, avec quelles protections, vérifications, versions et règles de conservation ?",
+  "reference_use_case": "Witness records and declarative evidence dossiers.",
+  "integrity_rule": "Reported claims are not automatically verified facts.",
+  "antipattern": "Never treat an attributed statement as established truth; preserve versions and restricted identity.",
+  "design_question": "Who may collect, retain and review accounts, and on what authority?",
   "template_path": "modeles/deposition-temoignage",
   "kind": "open_archetype_not_standard",
   "maturity": "candidate",
@@ -54,14 +54,29 @@
   "secondary_patterns": [
     "timeline"
   ],
-  "structure_label": "dossier de déposition",
-  "situational_schema": "Déclarations, supports, transcriptions, signatures, versions et évaluations distinctes.",
+  "structure_label": "Testimony dossier",
+  "situational_schema": "Attributed accounts, recordings, transcriptions, corrections and independent evaluations remain distinct.",
   "canonical_use_cases": [
-    "prise de témoignage",
-    "dossier de déposition",
-    "recueil déclaratif"
+    "witness statement",
+    "oral history",
+    "deposition record"
   ],
   "case_examples": [
-    "Auditions, témoignages, déclarations"
+    "Witness accounts and interviews"
+  ],
+  "primitive_labels_en": [
+    "declarants and pseudonyms",
+    "collection sessions and participants",
+    "questions and answers",
+    "attributed statements",
+    "dates of alleged events",
+    "collection timestamps",
+    "original media",
+    "transcripts and translations",
+    "corrections, additions and retractions",
+    "consent and processing basis",
+    "access restrictions",
+    "external corroboration references",
+    "capture integrity and custody chain"
   ]
 }

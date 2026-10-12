@@ -1,9 +1,9 @@
 {
   "id": "ARK-17",
   "slug": "taxonomie-classification",
-  "name": "Taxonomie / classification naturelle",
-  "family": "Savoir",
-  "description": "Arbre de classification pour cartographier espèces, types, catégories ou éléments du vivant et de la nature.",
+  "name": "Taxonomy / Natural Classification",
+  "family": "Knowledge",
+  "description": "Classification tree with groups, subclasses and synonyms. Nature maps, biological categories and material typologies.",
   "kit_profile": "open",
   "native_kind_candidate": "arbre_taxonomique_classification",
   "responsibility_mode": "taxonomy-owner",
@@ -30,10 +30,10 @@
     "relations_de_classement",
     "synonymes"
   ],
-  "reference_use_case": "Mapper des éléments de la nature, taxonomies et nomenclatures.",
-  "integrity_rule": "Une relation de classement ne prouve pas une causalité ni une identité absolue; les critères de classement et leur version doivent être explicites.",
-  "antipattern": "Ne pas confondre taxonomie, observation de terrain et théorie causale.",
-  "design_question": "Quel schéma de classification, quelles autorités de nomination et quelles exceptions doivent être tracés ?",
+  "reference_use_case": "Nature maps, biological categories and material typologies.",
+  "integrity_rule": "Classification criteria, authority and exceptions must be explicit.",
+  "antipattern": "Do not equate a classification relationship with observed identity or causal evidence.",
+  "design_question": "Which nomenclature, criteria and classification authorities apply?",
   "template_path": "modeles/taxonomie-classification",
   "kind": "open_archetype_not_standard",
   "maturity": "candidate",
@@ -44,14 +44,23 @@
   "secondary_patterns": [
     "cluster"
   ],
-  "structure_label": "arbre taxonomique",
-  "situational_schema": "Une racine se ramifie en catégories de plus en plus spécifiques, avec synonymes et variantes.",
+  "structure_label": "Classification tree",
+  "situational_schema": "Natural categories branch into families and species with criteria, synonyms and cited authorities.",
   "canonical_use_cases": [
-    "taxonomie du vivant",
-    "classification d’objets naturels",
-    "cartographie d’espèces"
+    "wildlife taxonomy",
+    "natural classification",
+    "specimen catalogue"
   ],
   "case_examples": [
-    "Taxonomie d’éléments de la nature"
+    "Nature classification"
+  ],
+  "primitive_labels_en": [
+    "roots",
+    "groups",
+    "classes",
+    "subclasses",
+    "specimens",
+    "classification relations",
+    "synonyms"
   ]
 }

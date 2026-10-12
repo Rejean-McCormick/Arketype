@@ -1,7 +1,9 @@
-# Frontière sémantique
+# Semantic ownership boundary
 
-**Possède potentiellement, après contrats du domaine :** représentations attribuées des déclarations, métadonnées de recueil, liens vers les supports originaux et leurs révisions, contexte de collecte et provenance.
+**Candidate responsibility:** testimony-record-owner.
 
-**Ne possède pas implicitement :** identité civile gérée par un autre service, vérités établies par enquête, cas judiciaires, jugement de fiabilité, politique de rétention, permission de diffuser, système d'authentification, preuves externes.
+**Preserve:** Reported claims are not automatically verified facts.
 
-Les pièces et évaluations externes doivent être **référencées**, non absorbées sans décision de propriété. Une empreinte d'octets démontre l'intégrité d'une représentation, pas la vérité du contenu.
+**Avoid:** Never treat an attributed statement as established truth; preserve versions and restricted identity.
+
+External sources and separately owned knowledge states should be linked through explicit references rather than silently duplicated into the local canon. Any real-world ownership decision requires a domain contract.

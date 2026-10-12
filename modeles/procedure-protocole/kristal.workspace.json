@@ -1,12 +1,12 @@
 {
   "format": "kristal.local-workspace/3.2.0",
   "slug": "tpl-procedure-protocole",
-  "title": "Modèle neutre — Procédure / protocole",
+  "title": "Neutral template — Procedure / Protocol",
   "status": "stub",
   "state_ref": "urn:kristal:state:tpl-procedure-protocole",
   "subject": {
     "id": null,
-    "label": "Modèle neutre — Procédure / protocole"
+    "label": "Neutral template — Procedure / Protocol"
   },
   "target": {
     "portable_contract": "kristal_state/6.0",
@@ -20,14 +20,14 @@
   "semantic_ownership": {
     "owns": [],
     "does_not_own": [
-      "connaissances métier non établies",
-      "contenus appartenant à des Kristals externes",
-      "autorisations opérationnelles et publication"
+      "unverified domain facts",
+      "content belonging to external Kristals",
+      "operational permissions or publication authority"
     ]
   },
   "native_model": {
     "kind": "procedure_graph_conditionnelle",
-    "description": "Proposition structurelle neutralisée; aucun contenu métier accepté ou enregistré.",
+    "description": "Candidate neutral structure; no admitted or registered domain content.",
     "canonical_paths": [
       "canon/domain"
     ]

@@ -1,8 +1,9 @@
-# Glossaire
+# Glossary
 
-- **Témoignage** : propos attribués à une personne dans un contexte de recueil.
-- **Déposition** : déclaration consignée dans un cadre déterminé; sa portée et ses exigences dépendent du cadre applicable.
-- **Allégation** : contenu déclaré, sans présumer de sa véracité.
-- **Transcription** : représentation textuelle d'un support source, parfois à corriger/valider.
-- **Attestation** : validation ou formalité explicite, non présumée.
-- **Corroboration** : élément indépendant évalué selon des règles définies, distinct du témoignage original.
+- **Archetype:** non-normative structural and responsibility pattern.
+- **Template:** empty workspace scaffold initialized with the bundled Local Kit.
+- **Instance:** independently initialized workspace with its own `state_ref`.
+- **Canonical artifact:** domain content admitted under an applicable Logical Contract.
+- **Derived projection:** a reader view or computation, not necessarily an authoritative assertion.
+- **Semantic ownership:** explicit responsibility for a knowledge claim and its scope.
+- **Design-only assembly:** an unresolved composition plan rather than a committed multi-state integration.

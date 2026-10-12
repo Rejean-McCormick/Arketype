@@ -1,8 +1,7 @@
-# Orientations et vues candidates
+# Reader orientations and proposed views
 
-- Séance → déclarants et interventions, avec permission effective.
-- Déclaration → segments attribués et liens vers transcription et support original.
-- Assertion rapportée → sources, contradictions et versions, sans promotion implicite.
-- Chronologie de recueil ≠ chronologie des faits allégués.
+The primary suggested structure is **Testimony dossier**. A visual shape is a reader convenience and does not constrain every possible native organization.
 
-Ne jamais proposer une projection publique sans examen des droits et restrictions de consultation.
+A reader projection may show attributed accounts, recordings, transcriptions, corrections and independent evaluations remain distinct.
+
+Clearly mark source references, status, uncertainty, possible losses and access restrictions in any projection. No public view is authorized by this starter alone.

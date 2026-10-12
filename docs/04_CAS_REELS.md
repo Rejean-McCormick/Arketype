@@ -1,18 +1,21 @@
-# Cas sources — rapprochements, pas certifications
+# Situated use cases
 
-Ce classement reflète les archives et descriptions fournies; les associations sont **des propositions de conception**, pas des audits complets de conformité.
+Arketype is domain-agnostic. Its examples illustrate structural decisions, not pre-approved applications.
 
-| Cas | Archétype dominant | Composition proposée | Point de vigilance |
-|---|---|---|---|
-| UCKK, Univers-Cité, Moodle | `federation-topologie` | `uckk-campus` | Les voies/cours possèdent leurs contenus; projection Moodle distincte |
-| Ekole — organisations humaines, peuples autochtones, Européens, Québec | `referentiel-semantique` | `ekole-multiusage` | Corpus Wikidata offline enrichi ≠ vérité vérifiée par défaut; multiusage |
-| Carte des chemins validés | `carte-jalons-preuves` | `atlas-preuves` | Nœuds carrefours et endpoints, preuves les plus avancées, références exactes |
-| Collecte de témoignages et auditions | `deposition-temoignage` | `dossier-depositions` | Parole attribuée ≠ vérité établie; confidentialité, corrections et contrôle d’accès |
-| PoliceOps, HospitalOps | `procedure-protocole` | `operations-protocoles` | Protocoles ne confèrent pas d’autorisation opérationnelle |
-| MediKristal | `composition-hybride` | `medi-connaissances` | Seulement le noyau de connaissances potentiellement Kristal; système clinique plus vaste |
-| Livre de recettes | `compilation-collection` | `livre-recettes` | Compilation ≠ procédure de chaque recette |
-| VehicleDiag | `diagnostic-causal` | `diagnostic-vehicule` | Inférence ≠ topologie physique |
-| KingKlown / musées / médias | `univers-oeuvres-medias` | `univers-medias` | Œuvre ≠ fichier de représentation, fiction ≠ histoire documentaire |
-| Théories mathématiques et recherche | `invariant-theorie` ou `memoire-recherche` | `atlas-preuves` en appui | Test numérique ≠ preuve formelle, essai ≠ canon |
+**UCKK / campus:** a university can be represented as a federation of referenced states (institution, pathways and courses). A parent-child link is not ownership of a child's logical content.
 
-Les **interfaces existantes** comme Kompiler, Konstellation, UCKK, Moodle, la Médiathèque ou les applications métiers ne sont pas installées ni modifiées par Arketype.
+**Ekole:** a sourced semantic reference can support teaching, museums, independent research and creative exploration through different reader projections. Instructional sequences should not replace or absorb the general-purpose source reference.
+
+**System troubleshooting:** pair a causal diagnosis hub with an event ledger and measured system-state matrix. Preserve the difference between a symptom, a candidate explanation, a discriminating test and operational authorization.
+
+**Protocols:** distinguish versioned steps and conditional branches from execution logs, simulations, and permissions.
+
+**Nature taxonomy:** classify groups and specimens under sourced classification criteria; keep individual observations, synonyms and naming authority explicit.
+
+**System-state tracking:** organize observed states by system and dimension, with timestamps and separately referenced events; desired state is not measured state.
+
+**Employee follow-up:** maintain a casefile with meetings, documents, actions and access controls. Such a template is not an HR decision system and contains no actual personal data.
+
+**Deposition and testimony:** store attributed speech, recordings, transcripts and revisions without asserting that the reported content is true.
+
+**MediKristal:** only specific knowledge-state components may be represented as Kristals. Application logic and operational authority remain distinct.

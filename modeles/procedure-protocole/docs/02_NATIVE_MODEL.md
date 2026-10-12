@@ -1,25 +1,11 @@
-# Forme native candidate
+# Candidate native model
 
-**Archétype Arketype :** ARK-04 — Procédure / protocole
+**Native kind (stable machine identifier):** `procedure_graph_conditionnelle`
 
-Décrit préconditions, opérations, branches, ordre partiel, résultats et exceptions.
+**Reader pattern:** Conditional protocol (`branching`); secondary motifs: linear.
 
-## Primitives envisagées
+**Situated representation:** Prerequisites lead to ordered actions, decisions, exception paths and authorized closure.
 
-- `conditions_entree`
-- `etapes`
-- `transitions`
-- `branches`
-- `roles`
-- `ressources`
-- `issues`
-- `exceptions`
-- `references_normatives`
+**Candidate primitives:** conditions entree, etapes, transitions, branches, roles, resources, issues, exceptions, references normatives.
 
-## Invariant d’intégrité conceptuelle
-
-Une procédure décrite ne donne pas permission de l’exécuter; confidentialité, droit, sécurité et contexte restent externes.
-
-## Fichier candidat
-
-`design/structure-candidate.json` est une **aide**, pas une source de vérité et pas un contrat logique v9 enregistré. Avant toute utilisation, décider les primitives réelles, réduire/étendre la forme, documenter ce qui serait perdu lors d’une conversion et définir les Logical Contracts exacts.
+The example in `design/structure-candidate.json` is a **noncanonical scaffold**, not registered domain content. Its existing property names are stable technical identifiers.

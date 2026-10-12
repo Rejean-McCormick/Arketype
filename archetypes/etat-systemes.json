@@ -1,9 +1,9 @@
 {
   "id": "ARK-18",
   "slug": "etat-systemes",
-  "name": "État de systèmes / parc technique",
+  "name": "System-State Matrix",
   "family": "Structures",
-  "description": "Structure pour décrire l’état courant et l’historique essentiel de systèmes, équipements ou environnements techniques.",
+  "description": "Observed condition of multiple systems across dimensions. Infrastructure status, asset state and configuration review.",
   "kit_profile": "open",
   "native_kind_candidate": "matrice_etat_systemes",
   "responsibility_mode": "system-state-owner",
@@ -30,10 +30,10 @@
     "statuts",
     "ecarts"
   ],
-  "reference_use_case": "Stocker l’état de tel et tel de mes systèmes, comparer et suivre leur évolution.",
-  "integrity_rule": "L’état observé, le statut calculé, la configuration désirée et le jugement opératoire doivent rester distincts.",
-  "antipattern": "Ne pas confondre un snapshot d’état avec un journal complet ou un protocole de réparation.",
-  "design_question": "Quelles dimensions d’état, quelles fréquences d’observation et quels écarts sont importants ?",
+  "reference_use_case": "Infrastructure status, asset state and configuration review.",
+  "integrity_rule": "Observed, desired and inferred states must remain separate.",
+  "antipattern": "Do not confuse observed conditions, desired configuration and inferred health.",
+  "design_question": "Which measurements and observation times form each state snapshot?",
   "template_path": "modeles/etat-systemes",
   "kind": "open_archetype_not_standard",
   "maturity": "candidate",
@@ -44,14 +44,23 @@
   "secondary_patterns": [
     "timeline"
   ],
-  "structure_label": "matrice d’état",
-  "situational_schema": "Chaque système est observé selon plusieurs dimensions, avec éventuellement des dates et des écarts.",
+  "structure_label": "System-state matrix",
+  "situational_schema": "Systems are measured on comparable dimensions at stated times, distinct from target configuration.",
   "canonical_use_cases": [
-    "inventaire d’état de systèmes",
-    "tableau de santé technique",
-    "suivi de parc"
+    "infrastructure status",
+    "asset inventory",
+    "system monitoring"
   ],
   "case_examples": [
-    "État de systèmes personnels ou opérationnels"
+    "Personal and operational systems"
+  ],
+  "primitive_labels_en": [
+    "systems",
+    "components",
+    "state dimensions",
+    "values",
+    "observation dates",
+    "statuses",
+    "deviations"
   ]
 }

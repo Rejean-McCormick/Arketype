@@ -4,7 +4,7 @@
   "forme": "deposition-temoignage",
   "statut": "illustration-non-canonique",
   "n_est_pas_un_artefact_enregistre": true,
-  "intention": "Recueillir et conserver des récits attribués, leurs circonstances de collecte, versions, supports originaux, transcriptions, corrections et provenances, sans convertir les propos en faits établis.",
+  "intention": "Attributed accounts with recordings, transcriptions and revisions. Witness records and declarative evidence dossiers.",
   "primitives_possibles": [
     "declarants_et_pseudonymes",
     "seances_et_intervenants",
@@ -21,9 +21,7 @@
     "preuves_de_capture_et_chaine_de_conservation"
   ],
   "contraintes_a_preserver": [
-    "Distinguer les mots du témoin, ceux de l’enquêteur, les faits allégués, les événements observés, la transcription et l’analyse. Préserver les versions et conserver la provenance; ne jamais présumer de la vérité ou de la valeur juridique.",
-    "Distinguer date du fait allégué, date du recueil et date de la saisie.",
-    "Ne pas stocker de données personnelles réelles dans les modèles distribués."
+    "Reported claims are not automatically verified facts."
   ],
   "exemple_payload_vide": {
     "depositions": [],
@@ -43,5 +41,5 @@
     "chaines_de_conservation": []
   },
   "contrat_logique": "a_definir_pour_un_domaine_reel",
-  "bibliotheque": "Arketype 1.1.0"
+  "bibliotheque": "Arketype 1.2.2 (English edition)"
 }

@@ -1,5 +1,5 @@
-# Notes du profil `layered`
+# Local Authoring Kit profile
 
-Prévoir plusieurs régimes/plans sémantiques et typer les passages entre mécanique, structure, interprétation et preuve.
+**Profile:** `layered`. This is an initial tooling profile, not proof of domain compliance.
 
-Ce profil est une amorce et non une contrainte normative.
+Semantic ownership, source authority, legal constraints, executable behaviour and publication must be established independently for each real use case.

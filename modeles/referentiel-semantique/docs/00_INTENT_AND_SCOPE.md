@@ -1,9 +1,9 @@
-# Intention et scope
+# Purpose and scope
 
-Ce modèle neutre sert à démarrer un Kristal de famille **Référentiel sémantique**.
+This neutral starter workspace illustrates **Semantic Reference** (`ARK-01`).
 
-**Forme candidate** : Savoirs, entités, propriétés, relations et contextes sourcés.
+**Purpose:** Connected concepts, entities and sourced relationships. Reusable knowledge stores, dictionaries, educational and cultural references.
 
-Cas de référence (analogiques, non clonés) : Ekole — organisations humaines; encyclopédies offline.
+**Typical applications:** knowledge base, semantic dictionary, museum and education reference.
 
-Aucun fait ou corpus métier n’est prérempli. Définir le domaine réel, les destinataires, les droits et les preuves avant de cristalliser quoi que ce soit.
+It contains no admitted domain facts, personal data, privileged process authority or normative Logical Contract. Define sources, scope, permissions and ownership for any real instance.

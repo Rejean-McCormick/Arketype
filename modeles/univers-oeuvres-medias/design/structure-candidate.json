@@ -4,7 +4,7 @@
   "forme": "univers-oeuvres-medias",
   "statut": "illustration-non-canonique",
   "n_est_pas_un_artefact_enregistre": true,
-  "intention": "Référents d’univers, œuvres, événements fictifs, manifestations médiatiques et correspondances.",
+  "intention": "Linked works, settings, characters and media manifestations. Worldbuilding, archives and media continuity.",
   "primitives_possibles": [
     "univers",
     "oeuvres",
@@ -15,7 +15,7 @@
     "restrictions_de_lecture"
   ],
   "contraintes_a_preserver": [
-    "Une plateforme ou un fichier média n’est pas l’identité de l’œuvre; distinguer canon fictionnel et faits documentaires."
+    "Preserve provenance and distinction between work and interpretation."
   ],
   "exemple_payload_vide": {
     "univers": [],
@@ -26,5 +26,5 @@
     "lectures_autorisees": []
   },
   "contrat_logique": "a_definir_pour_un_domaine_reel",
-  "bibliotheque": "Arketype 1.0"
+  "bibliotheque": "Arketype 1.2.2 (English edition)"
 }

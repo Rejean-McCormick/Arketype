@@ -1,15 +1,9 @@
-# Frontière sémantique
+# Semantic ownership boundary
 
-## Possède
+**Candidate responsibility:** relational-model-owner.
 
-À définir lors de l’instanciation (aucune autorité transférée par le modèle).
+**Preserve:** Avoid collapsing relationships from different layers.
 
-## Ne possède pas
+**Avoid:** Do not collapse distinct temporal, institutional or role relationships into one universal graph.
 
-- Les faits, œuvres, droits ou décisions des systèmes cités en exemple.
-- Les contenus externes simplement référencés.
-- Les privilèges d’exécution ni les autorisations de publication.
-
-## Références externes
-
-Utiliser les références v9 épinglées à un engagement logique exact lorsque la connaissance dépend d’un autre Kristal.
+External sources and separately owned knowledge states should be linked through explicit references rather than silently duplicated into the local canon. Any real-world ownership decision requires a domain contract.

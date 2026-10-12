@@ -1,5 +1,5 @@
-# Notes du profil `research`
+# Local Authoring Kit profile
 
-Prévoir mémoire établie/importée, research graph, tentatives append-only, evidence et promotion explicite.
+**Profile:** `research`. This is an initial tooling profile, not proof of domain compliance.
 
-Ce profil est une amorce et non une contrainte normative.
+Semantic ownership, source authority, legal constraints, executable behaviour and publication must be established independently for each real use case.

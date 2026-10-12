@@ -4,7 +4,7 @@
   "forme": "composition-hybride",
   "statut": "illustration-non-canonique",
   "n_est_pas_un_artefact_enregistre": true,
-  "intention": "Assemble plusieurs formes natives sans fusionner leurs propriétaires ni la couche opérationnelle.",
+  "intention": "An assemblage of several kinds of independent knowledge structure. Cross-system models and multi-part applications.",
   "primitives_possibles": [
     "sous_modeles",
     "frontieres",
@@ -14,7 +14,7 @@
     "projections"
   ],
   "contraintes_a_preserver": [
-    "Ne pas assimiler application opérationnelle, dossier personnel, moteur de calcul et Kristal de connaissance."
+    "Do not merge semantic owners or treat application logic as canon."
   ],
   "exemple_payload_vide": {
     "sous_modeles": [],
@@ -24,5 +24,5 @@
     "projections": []
   },
   "contrat_logique": "a_definir_pour_un_domaine_reel",
-  "bibliotheque": "Arketype 1.0"
+  "bibliotheque": "Arketype 1.2.2 (English edition)"
 }

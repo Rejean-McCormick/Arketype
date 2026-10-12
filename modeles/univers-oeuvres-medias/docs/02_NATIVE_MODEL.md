@@ -1,23 +1,11 @@
-# Forme native candidate
+# Candidate native model
 
-**Archétype Arketype :** ARK-13 — Univers / œuvres / médias
+**Native kind (stable machine identifier):** `oeuvres_evenements_manifestations`
 
-Référents d’univers, œuvres, événements fictifs, manifestations médiatiques et correspondances.
+**Reader pattern:** Creative universe cluster (`cluster`); secondary motifs: network.
 
-## Primitives envisagées
+**Situated representation:** Works, characters, fictional events and media manifestations form a related universe.
 
-- `univers`
-- `oeuvres`
-- `evenements`
-- `manifestations`
-- `alias`
-- `sources`
-- `restrictions_de_lecture`
+**Candidate primitives:** univers, oeuvres, events, manifestations, alias, sources, restrictions of lecture.
 
-## Invariant d’intégrité conceptuelle
-
-Une plateforme ou un fichier média n’est pas l’identité de l’œuvre; distinguer canon fictionnel et faits documentaires.
-
-## Fichier candidat
-
-`design/structure-candidate.json` est une **aide**, pas une source de vérité et pas un contrat logique v9 enregistré. Avant toute utilisation, décider les primitives réelles, réduire/étendre la forme, documenter ce qui serait perdu lors d’une conversion et définir les Logical Contracts exacts.
+The example in `design/structure-candidate.json` is a **noncanonical scaffold**, not registered domain content. Its existing property names are stable technical identifiers.

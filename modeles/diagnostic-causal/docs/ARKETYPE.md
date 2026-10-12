@@ -1,12 +1,12 @@
-# Fiche d’archétype
+# Arketype record — Causal Diagnosis
 
-- Identifiant Arketype : `ARK-08`
-- Famille : Processus
-- Profil d’amorce du Local Kit : `executable`
-- Type de modèle natif **candidat** : `reseau_causal_et_diagnostic`
-- Exemples de rapprochement : VehicleDiag; composante diagnostique de MediKristal
-- Statut : `stub`, non publié, pas de claims canoniques enregistrés
-- Le fichier `design/structure-candidate.json` reste volontairement **hors canon**
+- **Archetype:** `ARK-08` (`diagnostic-causal`).
+- **Family:** Processes.
+- **Local status:** `stub`, no domain assertions.
+- **Visual pattern:** hub (Diagnostic hub).
+- **Candidate scaffold:** `design/structure-candidate.json`.
+- **Metadata:** `archetypes/diagnostic-causal.json`.
 
-- Fiche catalogue : `archetypes/diagnostic-causal.json` (à la racine de la bibliothèque).
-- Les primitives de design ne font **pas** partie du canon par défaut.
+**Use cases:** system troubleshooting, vehicle diagnosis, root cause analysis.
+
+To create a new independent workspace, run `python arketype.py create --type diagnostic-causal --slug your-new-slug --title "Your title" --parent PATH` from the library root.

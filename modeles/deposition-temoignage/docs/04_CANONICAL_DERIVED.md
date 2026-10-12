@@ -1,7 +1,5 @@
-# Canonique et dérivé
+# Canonical versus derived information
 
-Les dépôts réels ne sont pas fournis. La définition des *Logical Artifacts* et du *Logical Contract* appartient au projet instancié.
+The distributed workspace is a **stub with an empty canon**. A domain owner must define actual Logical Artifacts and Logical Contracts before content can be admitted or qualified.
 
-**Candidates au canon (après admission et qualification)** : constat de recueil, déclarations attribuées et état de la transcription avec sources vérifiées selon contrat du propriétaire.
-
-**Dérivés** : résumé, traduction automatisée, regroupement thématique, chronologie inférée, index de personnes, appréciation de crédibilité. Une vue dérivée ne doit pas se faire passer pour l'original et doit signaler ses pertes.
+Reader diagrams, summaries, HTML pages, search indexes, reports, hypothetical simulations and AI outputs are **derived or design-only materials** unless an applicable contract says otherwise. An output should never impersonate an original source or claim authority merely because it was generated.

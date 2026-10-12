@@ -1,9 +1,12 @@
-# ARK-18 — État de systèmes / parc technique
+# Arketype record — System-State Matrix
 
-Forme visuelle dominante : `matrix`.
+- **Archetype:** `ARK-18` (`etat-systemes`).
+- **Family:** Structures.
+- **Local status:** `stub`, no domain assertions.
+- **Visual pattern:** matrix (System-state matrix).
+- **Candidate scaffold:** `design/structure-candidate.json`.
+- **Metadata:** `archetypes/etat-systemes.json`.
 
-Chaque système est observé selon plusieurs dimensions, avec éventuellement des dates et des écarts.
+**Use cases:** infrastructure status, asset inventory, system monitoring.
 
-L’état observé, le statut calculé, la configuration désirée et le jugement opératoire doivent rester distincts.
-
-Arketype documente un modèle de départ non normatif, sans conclusions canoniques.
+To create a new independent workspace, run `python arketype.py create --type etat-systemes --slug your-new-slug --title "Your title" --parent PATH` from the library root.

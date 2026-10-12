@@ -4,7 +4,7 @@
   "forme": "registre-evenementiel",
   "statut": "illustration-non-canonique",
   "n_est_pas_un_artefact_enregistre": true,
-  "intention": "Événements successifs, révisions, validités temporelles et relations historiques.",
+  "intention": "Dated observations, events and revisions. Incident logs, history, audit trails and case timelines.",
   "primitives_possibles": [
     "evenements",
     "acteurs",
@@ -14,7 +14,7 @@
     "versions"
   ],
   "contraintes_a_preserver": [
-    "Distinguer date des faits, date d’enregistrement et ordre de saisie; ne pas effacer les corrections."
+    "An event log is not necessarily current state or causal proof."
   ],
   "exemple_payload_vide": {
     "evenements_append_only": [],
@@ -24,5 +24,5 @@
     "references_sources": []
   },
   "contrat_logique": "a_definir_pour_un_domaine_reel",
-  "bibliotheque": "Arketype 1.0"
+  "bibliotheque": "Arketype 1.2.2 (English edition)"
 }

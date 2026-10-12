@@ -2,7 +2,7 @@
   "format": "arketype.catalog/1.0-non-normatif",
   "name": "Arketype",
   "abbreviation": "ARK",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "status": "bibliotheque_de_conception_non_normative",
   "framework_reference": "10.0.0-draft.3.1",
   "authoring_kit_reference": "3.2.4",
@@ -11,142 +11,143 @@
     {
       "id": "ARK-01",
       "slug": "referentiel-semantique",
-      "name": "Référentiel sémantique",
-      "family": "Savoir",
+      "name": "Semantic Reference",
+      "family": "Knowledge",
       "file": "archetypes/referentiel-semantique.json"
     },
     {
       "id": "ARK-02",
       "slug": "federation-topologie",
-      "name": "Fédération / topologie",
+      "name": "Federation / Topology",
       "family": "Composition",
       "file": "archetypes/federation-topologie.json"
     },
     {
       "id": "ARK-03",
       "slug": "carte-jalons-preuves",
-      "name": "Carte de jalons et de preuves",
-      "family": "Savoir",
+      "name": "Milestone and Proof Map",
+      "family": "Knowledge",
       "file": "archetypes/carte-jalons-preuves.json"
     },
     {
       "id": "ARK-04",
       "slug": "procedure-protocole",
-      "name": "Procédure / protocole",
-      "family": "Processus",
+      "name": "Procedure / Protocol",
+      "family": "Processes",
       "file": "archetypes/procedure-protocole.json"
     },
     {
       "id": "ARK-05",
       "slug": "compilation-collection",
-      "name": "Compilation / collection",
+      "name": "Compilation / Collection",
       "family": "Composition",
       "file": "archetypes/compilation-collection.json"
     },
     {
       "id": "ARK-06",
       "slug": "memoire-recherche",
-      "name": "Mémoire de recherche",
-      "family": "Savoir",
+      "name": "Research Memory",
+      "family": "Knowledge",
       "file": "archetypes/memoire-recherche.json"
     },
     {
       "id": "ARK-07",
       "slug": "invariant-theorie",
-      "name": "Invariant / théorie formelle",
-      "family": "Savoir",
+      "name": "Invariant / Formal Theory",
+      "family": "Knowledge",
       "file": "archetypes/invariant-theorie.json"
     },
     {
       "id": "ARK-08",
       "slug": "diagnostic-causal",
-      "name": "Diagnostic causal",
-      "family": "Processus",
+      "name": "Causal Diagnosis",
+      "family": "Processes",
       "file": "archetypes/diagnostic-causal.json"
     },
     {
       "id": "ARK-09",
       "slug": "modele-multiplexe",
-      "name": "Modèle multiplexe / organisations",
+      "name": "Multiplex / Organizational Model",
       "family": "Structures",
       "file": "archetypes/modele-multiplexe.json"
     },
     {
       "id": "ARK-10",
       "slug": "parcours-pedagogique",
-      "name": "Parcours pédagogique",
+      "name": "Learning Path",
       "family": "Composition",
       "file": "archetypes/parcours-pedagogique.json"
     },
     {
       "id": "ARK-11",
       "slug": "registre-evenementiel",
-      "name": "Registre événementiel / chronologie",
+      "name": "Event Ledger / Chronology",
       "family": "Structures",
       "file": "archetypes/registre-evenementiel.json"
     },
     {
       "id": "ARK-12",
       "slug": "interpretations-couches",
-      "name": "Interprétations multicouches",
-      "family": "Savoir",
+      "name": "Layered Interpretations",
+      "family": "Knowledge",
       "file": "archetypes/interpretations-couches.json"
     },
     {
       "id": "ARK-13",
       "slug": "univers-oeuvres-medias",
-      "name": "Univers / œuvres / médias",
+      "name": "Media and Creative Universes",
       "family": "Structures",
       "file": "archetypes/univers-oeuvres-medias.json"
     },
     {
       "id": "ARK-14",
       "slug": "simulation-transition",
-      "name": "Simulation / transitions",
-      "family": "Processus",
+      "name": "Simulation / Transitions",
+      "family": "Processes",
       "file": "archetypes/simulation-transition.json"
     },
     {
       "id": "ARK-15",
       "slug": "composition-hybride",
-      "name": "Composition hybride / sous-systèmes",
+      "name": "Hybrid Composition",
       "family": "Composition",
       "file": "archetypes/composition-hybride.json"
     },
     {
       "id": "ARK-16",
       "slug": "deposition-temoignage",
-      "name": "Déposition / témoignage",
+      "name": "Testimony / Deposition",
       "family": "Sources",
       "file": "archetypes/deposition-temoignage.json"
     },
     {
       "id": "ARK-17",
       "slug": "taxonomie-classification",
-      "name": "Taxonomie / classification naturelle",
-      "family": "Savoir",
+      "name": "Taxonomy / Natural Classification",
+      "family": "Knowledge",
       "file": "archetypes/taxonomie-classification.json"
     },
     {
       "id": "ARK-18",
       "slug": "etat-systemes",
-      "name": "État de systèmes / parc technique",
+      "name": "System-State Matrix",
       "family": "Structures",
       "file": "archetypes/etat-systemes.json"
     },
     {
       "id": "ARK-19",
       "slug": "dossier-suivi",
-      "name": "Dossier de suivi / casefile",
+      "name": "Casefile / Follow-Up",
       "family": "Structures",
       "file": "archetypes/dossier-suivi.json"
     }
   ],
-  "description": "Bibliothèque locale d’archétypes, de profils d’usage et de modèles neutres pour créer des Kristals.",
+  "description": "Local library of structural archetypes, neutral templates, situated visual diagrams, and design-only composition recipes for Kristal.",
   "inventories": {
     "visual_grammar": "inventaires/grammaire-visuelle.json",
     "archetypes": "inventaires/archetypes-visuels.json",
     "use_case_profiles": "inventaires/profils-usage.json",
     "situated_diagrams": "inventaires/diagrammes-situes.json"
-  }
+  },
+  "language": "en"
 }

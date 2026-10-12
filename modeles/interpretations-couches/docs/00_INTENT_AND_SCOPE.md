@@ -1,9 +1,9 @@
-# Intention et scope
+# Purpose and scope
 
-Ce modèle neutre sert à démarrer un Kristal de famille **Interprétations multicouches**.
+This neutral starter workspace illustrates **Layered Interpretations** (`ARK-12`).
 
-**Forme candidate** : Sépare calculs/formes reproductibles et interprétations, comparaisons ou hypothèses.
+**Purpose:** Separate derived readings of shared underlying material. Comparative analysis and alternative interpretations.
 
-Cas de référence (analogiques, non clonés) : Pi-Theory, analyse culturelle ou sémiotique.
+**Typical applications:** comparative study, interpretation layers, analysis views.
 
-Aucun fait ou corpus métier n’est prérempli. Définir le domaine réel, les destinataires, les droits et les preuves avant de cristalliser quoi que ce soit.
+It contains no admitted domain facts, personal data, privileged process authority or normative Logical Contract. Define sources, scope, permissions and ownership for any real instance.

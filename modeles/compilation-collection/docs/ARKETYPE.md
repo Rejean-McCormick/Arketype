@@ -1,12 +1,12 @@
-# Fiche d’archétype
+# Arketype record — Compilation / Collection
 
-- Identifiant Arketype : `ARK-05`
-- Famille : Composition
-- Profil d’amorce du Local Kit : `open`
-- Type de modèle natif **candidat** : `collection_referencee`
-- Exemples de rapprochement : Livre de recettes, anthologie, sélection d’œuvres
-- Statut : `stub`, non publié, pas de claims canoniques enregistrés
-- Le fichier `design/structure-candidate.json` reste volontairement **hors canon**
+- **Archetype:** `ARK-05` (`compilation-collection`).
+- **Family:** Composition.
+- **Local status:** `stub`, no domain assertions.
+- **Visual pattern:** cluster (Curated collection).
+- **Candidate scaffold:** `design/structure-candidate.json`.
+- **Metadata:** `archetypes/compilation-collection.json`.
 
-- Fiche catalogue : `archetypes/compilation-collection.json` (à la racine de la bibliothèque).
-- Les primitives de design ne font **pas** partie du canon par défaut.
+**Use cases:** cookbook, anthology, curated reference.
+
+To create a new independent workspace, run `python arketype.py create --type compilation-collection --slug your-new-slug --title "Your title" --parent PATH` from the library root.

@@ -1,17 +1,17 @@
 {
   "format": "arketype.assembly-recipe/1.0-non-normatif",
   "id": "etat-de-systemes",
-  "title": "État de systèmes",
+  "title": "System-State Tracking",
   "primary_archetype": "etat-systemes",
   "components": [
     {
       "archetype": "registre-evenementiel",
       "relation": "historique_associe",
-      "design_note": "Le suivi temporel est associé mais ne se confond pas avec la matrice d’état.",
+      "design_note": "Design-only link to Event Ledger / Chronology. Keep independent ownership, references and validation explicit.",
       "status": "unresolved"
     }
   ],
-  "guidance": "Séparer observation courante, cible souhaitée, historique et diagnostic.",
+  "guidance": "Separate current observations, desired states, history and diagnosis.",
   "composition_status": "design_only",
   "logical_contract": "to_define",
   "source_references": "to_pin_on_real_instance",

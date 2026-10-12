@@ -1,9 +1,9 @@
-# Intention et scope
+# Purpose and scope
 
-Ce modèle neutre sert à démarrer un Kristal de famille **Fédération / topologie**.
+This neutral starter workspace illustrates **Federation / Topology** (`ARK-02`).
 
-**Forme candidate** : Parent, enfants et frontières d’ownership avec états référencés.
+**Purpose:** Hierarchy or network of separately identifiable knowledge states. Distributed campuses, organizational units and linked subsystems.
 
-Cas de référence (analogiques, non clonés) : UCKK université → voies → cours.
+**Typical applications:** multi-campus structure, federated sites, independent subsystems.
 
-Aucun fait ou corpus métier n’est prérempli. Définir le domaine réel, les destinataires, les droits et les preuves avant de cristalliser quoi que ce soit.
+It contains no admitted domain facts, personal data, privileged process authority or normative Logical Contract. Define sources, scope, permissions and ownership for any real instance.

@@ -1,12 +1,12 @@
-# Fiche d’archétype
+# Arketype record — Procedure / Protocol
 
-- Identifiant Arketype : `ARK-04`
-- Famille : Processus
-- Profil d’amorce du Local Kit : `procedural`
-- Type de modèle natif **candidat** : `procedure_graph_conditionnelle`
-- Exemples de rapprochement : PoliceOps, HospitalOps, recette exécutée
-- Statut : `stub`, non publié, pas de claims canoniques enregistrés
-- Le fichier `design/structure-candidate.json` reste volontairement **hors canon**
+- **Archetype:** `ARK-04` (`procedure-protocole`).
+- **Family:** Processes.
+- **Local status:** `stub`, no domain assertions.
+- **Visual pattern:** branching (Conditional protocol).
+- **Candidate scaffold:** `design/structure-candidate.json`.
+- **Metadata:** `archetypes/procedure-protocole.json`.
 
-- Fiche catalogue : `archetypes/procedure-protocole.json` (à la racine de la bibliothèque).
-- Les primitives de design ne font **pas** partie du canon par défaut.
+**Use cases:** standard operating procedure, field protocol, operations checklist.
+
+To create a new independent workspace, run `python arketype.py create --type procedure-protocole --slug your-new-slug --title "Your title" --parent PATH` from the library root.

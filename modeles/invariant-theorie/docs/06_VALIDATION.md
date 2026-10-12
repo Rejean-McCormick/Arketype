@@ -1,23 +1,10 @@
-# Validation du domaine et lifecycle v10
+# Validation considerations
 
-## Invariants structurels
+1. Identify the actual semantic owner and sources.
+2. Define the candidate native schema and applicable Logical Contract.
+3. Preserve provenance and versioning as required by the domain.
+4. Confirm the integrity condition: Proof obligations need real justification and scope.
+5. Separate technical workspace validation from domain factual, scientific, legal and operational qualification.
+6. Make explicit publication, activation and reader-access decisions separately.
 
-TODO
-
-## Invariants épistémiques
-
-TODO
-
-## Tests de reconstruction
-
-TODO
-
-## Logical Commitments
-
-TODO — préciser les profils et golden cases propres au domaine si nécessaire.
-
-## Critères de publication
-
-TODO
-
-Flux recommandé : `check` → `build-v9`. Pour inventaire/validation/synchronisation GitHub utiliser Kristal Manager. Pour qualification/publication/activation réseau utiliser Kristal GitHub Setup (Bootstrap). Les commandes `github-*` de ce kit restent des compatibilités avancées.
+The included Local Kit `check` and `build-v9` commands establish only the technical properties that they test.
