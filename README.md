@@ -1,7 +1,7 @@
 # Arketype
 
 **A visual archetype library for Kristal knowledge-state workspaces**  
-**Release:** 1.2.2 · **Status:** local design library, non-normative
+**Release:** 1.3.0 · **Status:** local design library, non-normative
 
 Arketype helps you explore, compare, and instantiate different structural forms of Kristals. It provides neutral workspace templates, documented archetypes, illustrative composition plans, a visual HTML catalogue, and local creation tools. Its diagrams explain *how a knowledge structure is organized*; they do not certify claims, establish domain standards, or authorize operational actions.
 
@@ -16,8 +16,8 @@ Arketype helps you explore, compare, and instantiate different structural forms 
 
 ## Start here
 
-1. Extract the repository archive, then open **`catalogue/index.html`** in a browser. It works offline and provides search, structural filters, labeled diagrams, and links to the underlying JSON.
-2. Read the **[GitHub Wiki source](wiki/Home.md)** for concepts, detailed archetype descriptions, examples, composition rules, and safety boundaries.
+1. Extract the repository archive, then **double-click `Lancer_Arketype.pyw`** on Windows (Python 3.10+ with Tkinter). It opens a unified desktop launcher with **Home**, **Catalogue**, **Create Kristal**, and **Developer Ops**. The Catalogue is searchable in the launcher; **Open full visual catalogue** opens the illustrated offline HTML view. The Developer Ops console runs only an explicit allowlist of local library commands, tests and validation—never an arbitrary shell.
+2. You can also open **`catalogue/index.html`** directly without Python or Tkinter. It provides search, structural filters, labeled diagrams and links to JSON. Read the **[GitHub Wiki source](wiki/Home.md)** for concepts, detailed archetype descriptions, examples, composition rules, and safety boundaries.
 3. Use Python 3.10+ to explore or instantiate a workspace from the repository root:
 
 ```bash
@@ -36,7 +36,7 @@ python arketype.py create --type taxonomie-classification \
   --slug nature-atlas --title "Nature Atlas" --parent . --dry-run
 ```
 
-Remove `--dry-run` to create `./nature-atlas` with a new identity and an empty canon. The optional Windows interface is **`Lancer_Arketype.pyw`** (Python with Tkinter); its graphical behavior on Windows has not been independently verified.
+Remove `--dry-run` to create `./nature-atlas` with a new identity and an empty canon. The Windows **desktop launcher** is `Lancer_Arketype.pyw` (Python with Tkinter). The interface has been smoke-tested under a virtual Linux display; a native Windows machine test is still pending. The creation page previews before writing. Developer Ops runs on a background thread to keep the window responsive.
 
 ## The catalogue and its source data
 
@@ -57,8 +57,11 @@ python arketype.py build-html
 | `assemblages/*.json` | Fourteen non-canonical composition proposals |
 | `modeles/` | Neutral Authoring Kit workspaces; not populated domain datasets |
 | `catalogue/index.html` | Offline HTML interface generated from JSON |
-| `catalogue/Arketype_Visual_Catalogue_v1.2.2.pdf` | Included printable catalogue |
+| `catalogue/Arketype_Visual_Catalogue_v1.3.0.pdf` | Included printable catalogue |
 | `wiki/` | English GitHub Wiki pages, ready for a separate Wiki repository |
+| `Lancer_Arketype.pyw` | Single Windows entrypoint for the desktop launcher |
+| `arketype_gui.py` | Offline desktop UI: Home, Catalogue, Create Kristal, Developer Ops |
+| `arketype_launcher_ops.py` | Tested allowlist for local console operations (no shell) |
 
 The HTML and Windows interfaces use the visual branding color **`#1E6864`** and the supplied logo.
 

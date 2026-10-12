@@ -2,6 +2,8 @@
 
 - [Home](Home)
 - [Getting Started](Getting-Started)
+- [Desktop Launcher](Desktop-Launcher)
+- [Developer Ops](Developer-Ops)
 - [Architecture](Architecture)
 - [Visual Grammar](Visual-Grammar)
 - [Archetype Catalog](Archetype-Catalog)

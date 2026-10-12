@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.3.0 — Unified desktop launcher
+
+- Replaced the creation-only desktop window with a unified **Home / Catalogue / Create Kristal / Developer Ops** launcher.
+- Added in-app archetype/profile browsing, search, structural filters and profile-to-creation handoff.
+- Added an allowlisted local Developer Ops command console with background execution and readable logs.
+- Kept user-provided logo exclusively in the UIs, with brand `#1E6864`; README and Wiki remain English.
+- Added headless operation tests and Linux virtual-display GUI smoke checks.
+- Kept the existing archetype slugs, kit contract, template identities, and noncanonical boundaries.
+
 ## 1.2.2 — English-language edition
 
 - Localized repository documentation, archetype metadata, assembly explanations, use-case profiles, situated diagrams, desktop controls, HTML catalogue and PDF to English.

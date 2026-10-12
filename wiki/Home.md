@@ -4,7 +4,7 @@
 
 Arketype helps answer a practical question: **what structure best fits the knowledge you want to preserve?** A procedure tends to follow steps; a taxonomy branches into classes; a system-state registry compares observations; a follow-up casefile gathers records; a research map connects milestones and referenced proofs. Those are different structures and should not be forced into one universal template.
 
-Arketype 1.2.2 provides **19 archetypes**, **19 neutral workspaces**, **14 design-only composition recipes**, **5 situated use-case profiles**, and **24 labeled diagrams** built from JSON inventories. The accompanying offline HTML catalogue uses a consistent visual grammar and the supplied brand identity.
+Arketype 1.3.0 provides **19 archetypes**, **19 neutral workspaces**, **14 design-only composition recipes**, **5 situated use-case profiles**, and **24 labeled diagrams** built from JSON inventories. The accompanying offline HTML catalogue uses a consistent visual grammar and the supplied brand identity.
 
 ## Find your path
 
@@ -33,3 +33,6 @@ Arketype 1.2.2 provides **19 archetypes**, **19 neutral workspaces**, **14 desig
 The repository's HTML catalogue is the preferred **visual UI**: `catalogue/index.html`. These wiki pages are an English-language *documentation companion* to the actual repository data; they do not replace its JSON inventory or the Kristal Framework.
 
 > **Scope:** Arketype is a non-normative design library. Technical checks verify the local workspace envelope, not the truth of source material, legal sufficiency, clinical fitness, or authority to execute a protocol. It does not publish, synchronize or activate Kristals.
+
+
+**Desktop launcher:** [Desktop Launcher](Desktop-Launcher) · [Developer Ops](Developer-Ops).

@@ -1,21 +1,18 @@
-# Arketype 1.2.2 — English edition verification report
+# Arketype 1.3.0 — Unified desktop launcher verification
 
-## Verified contents
+## Scope
 
-- **19 candidate archetypes** and **19 neutral Local Kit workspaces** with distinct `state_ref` values.
-- **14 design-only assembly recipes**, **5 use-case profiles**, **10 visual patterns**, and **24 labeled situated diagrams**.
-- All source archetype metadata, use-case descriptions, assembly guidance, visual pattern labels, UI labels, root documentation, and template-facing documentation are in **English**.
-- **17 GitHub Wiki pages** in English; the README is in English and does not embed a logo.
-- User-supplied logo appears in both the generated offline HTML catalogue and the optional Windows Tkinter interface; brand color **#1E6864** is retained.
-- Printable **13-page A4 PDF** regenerated from the English JSON reader data and previewed visually.
-- **36/36 Python unit tests passed** on the English edition, including a full Authoring Kit check of every workspace.
-- All **19 starter workspaces** separately passed Authoring Kit `check`, `build-v9`, and `check` after English workspace metadata was applied. Their canonical domain indexes remain empty.
-- A new sample instance initialized successfully and generated English README/agent documentation.
+The repository contains **19 neutral Kristal templates** with distinct `state_ref` identities, **14 design-only compositions**, **5 situated use-case profiles**, **10 visual patterns**, and **24 situated diagram records**. The former creation-only Tkinter window has been replaced by a desktop launcher with Home, Catalogue, Create Kristal and Developer Ops. The provided logo and brand color `#1E6864` appear in the UIs, not the README.
 
-## Deliberately stable technical identifiers
+## Verification performed
 
-Original slugs, file paths, schema property names and internal machine status values remain unchanged to protect existing integrations and references. The bundled upstream Authoring Kit executable (`kristal.py`) is also preserved, rather than presenting a modified fork as version 3.2.4; its internal diagnostic strings and comments may retain the upstream language. These machine details are not the reader-facing locale of the Arketype library.
+- **43/43 Python tests passed** on the extracted repository, including the existing Authoring Kit checks and new launcher command parsing, rejection, and hash-verification tests.
+- The new launcher was instantiated and navigated under `xvfb-run` on Linux: all four pages opened; the catalogue exposed 19 archetypes and five profiles; profile-to-creator handoff selected the intended primary archetype and composition recipe.
+- Console commands use a fixed allowlist, separate subprocess arguments (`shell=False`) and background execution; no arbitrary shell, publishing, synchronization or activation command is offered.
+- The catalogue HTML and **13-page A4 PDF** were regenerated from the English JSON source and the PDF was rendered for visual inspection.
+- GitHub Wiki sources now document the new launcher and Developer Ops in English; the repository README remains English and contains no logo.
+- The supplied Authoring Kit executable remains unmodified, and technical identifiers remain stable.
 
-## Limits
+## Qualification limits
 
-The diagrams and design JSON are noncanonical illustrations, not real domain Logical Contracts or qualified proof. Technical builds and local checks do not establish legal, factual, scientific or operational validity. GUI functionality has not been interactively tested on Windows. No remote GitHub repository or Wiki was changed; no publication or activation was performed.
+The desktop UI has **not been tested on an actual Windows computer**; only a virtual-display Linux smoke test was performed. Passing local `check` and `build-v9` on empty templates does not validate real domain knowledge. There is no remote publication/activation and no real HR, testimony, or sensitive data in the templates.

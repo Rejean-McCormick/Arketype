@@ -6,7 +6,7 @@ Start from a **local copy** of the full Arketype repository. Python **3.10 or la
 
 Open `catalogue/index.html` from the extracted repository. Search by keyword, filter by family or structural pattern, and inspect the labeled diagrams. Each archetype card links to a descriptive JSON file; use-case cards link to their proposed composition recipes. The catalogue is an offline generated projection.
 
-A printable edition is included as `catalogue/Arketype_Visual_Catalogue_v1.2.2.pdf`. It is optional: HTML is the primary interface.
+A printable edition is included as `catalogue/Arketype_Visual_Catalogue_v1.3.0.pdf`. It is optional: HTML is the primary interface.
 
 ## 2. Inspect the library
 
@@ -59,6 +59,12 @@ To regenerate the HTML after updating source JSON:
 python arketype.py build-html
 ```
 
-For the optional GUI on Windows, launch `Lancer_Arketype.pyw` with Python/Tkinter. Its supplied logo and the `#1E6864` brand color appear in the UI; the GUI remains optional and has not been tested on every Windows configuration.
+## Desktop launcher (Windows)
+
+Double-click **`Lancer_Arketype.pyw`** with Python 3.10+ and Tkinter. It opens one application with **Home**, **Catalogue**, **Create Kristal**, and **Developer Ops**. Search the catalogue, choose an archetype or use-case profile, and send it directly to the creation form. Preview a workspace before creating it.
+
+Developer Ops offers local `list`, `search`, `show`, `profile`, `recipes`, `validate`, `validate --check-kit`, `test`, `inventory`, and `build-html` operations. Enter `help` for the exact allowlist. There is **no arbitrary shell**, remote publication, or activation. Long-running operations run in the background so the window stays responsive. The launcher uses the supplied logo and brand color `#1E6864`; no logo is embedded in the README.
+
+Native Windows testing remains a separate validation step; headless GUI tests have been performed on Linux.
 
 **Next:** [Working with Templates](Working-with-Templates) · [CLI Reference](CLI-Reference) · [Security and Boundaries](Security-and-Boundaries)

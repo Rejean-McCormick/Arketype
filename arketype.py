@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Arketype — catalogue et instanciation locale.
+"""Arketype — local cataloguing and workspace instantiation.
 
 Arketype metadata is non-normative documentation; local creation uses the bundled Authoring Kit.
-Ce programme ne publie, ne synchronise ni n'active jamais un Kristal.
+This program never publishes, synchronizes, or activates a Kristal.
 """
 from __future__ import annotations
 import argparse
@@ -73,7 +73,7 @@ def use_case_profiles() -> list[dict]:
 def use_case_profile(slug: str) -> dict:
     match = next((item for item in use_case_profiles() if item['slug'] == slug), None)
     if match is None:
-        raise ValueError(f'Profil d’usage inconnu : {slug}. Use `python arketype.py profiles`.')
+        raise ValueError(f'Unknown use-case profile : {slug}. Use `python arketype.py profiles`.')
     return match
 
 
@@ -94,7 +94,7 @@ def search(term: str, family: str = '') -> list[dict]:
 def render_archetype(a: dict) -> str:
     return '\n'.join([
         f"{a['id']} — {a['name']}",
-        f"Family: {a['family']} | Profil du Local Kit : {a['kit_profile']}",
+        f"Family: {a['family']} | Local Kit profile: {a['kit_profile']}",
         f"Purpose: {a['description']}",
         f"Visual pattern: {a.get('visual_pattern','')} / {a.get('structure_label','')}",
         f"Situated structure: {a.get('situational_schema','')}",
@@ -204,7 +204,7 @@ def create(type_slug: str, slug: str, title: str, parent: str | Path,
         (working/'design'/'composition-plan.json').write_text(json.dumps(plan,ensure_ascii=False,indent=2)+'\n','utf8')
         (working/'arketype.instance.json').write_text(json.dumps({
              'format':'arketype.instance-origin/1.0-non-normatif',
-             'library_version':'1.2.2','primary_archetype':type_slug,
+             'library_version':'1.3.0','primary_archetype':type_slug,
              'assembly_recipe':recipe,'additional_archetypes':[p['archetype'] for p in plan['components']],
              'state_ref_at_initialization':ws['state_ref'],
              'authoring_kit_reference':'3.2.4',
@@ -393,7 +393,7 @@ def main(argv: list[str] | None = None) -> int:
             for a in matches: print(f"{a['id']}  {a['slug']} — {a['name']}")
             if not matches: print('No matching archetypes found.')
         elif args.command=='recipes':
-            for r in assemblies():print(f"{r['id']:25} {r['title']} (principal : {r['primary_archetype']})")
+            for r in assemblies():print(f"{r['id']:25} {r['title']} (primary: {r['primary_archetype']})")
         elif args.command=='recipe':
             print(json.dumps(assembly(args.id),ensure_ascii=False,indent=2))
         elif args.command=='profiles':
