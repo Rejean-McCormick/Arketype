@@ -37,5 +37,19 @@
   "maturity": "candidate",
   "canonical_claims_in_template": false,
   "composition": "explicit_design_only",
-  "contract_status": "not_defined"
+  "contract_status": "not_defined",
+  "visual_pattern": "linear",
+  "secondary_patterns": [
+    "matrix"
+  ],
+  "structure_label": "chaîne d’états",
+  "situational_schema": "États, transitions, paramètres et scénarios de passage.",
+  "canonical_use_cases": [
+    "simulation de systèmes",
+    "transitions d’état",
+    "scénarios d’évolution"
+  ],
+  "case_examples": [
+    "Simulations et transitions"
+  ]
 }

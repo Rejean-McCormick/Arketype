@@ -39,5 +39,19 @@
   "maturity": "candidate",
   "canonical_claims_in_template": false,
   "composition": "explicit_design_only",
-  "contract_status": "not_defined"
+  "contract_status": "not_defined",
+  "visual_pattern": "multilayer",
+  "secondary_patterns": [
+    "network"
+  ],
+  "structure_label": "structure multicouche",
+  "situational_schema": "Même réalité organisée sur plusieurs couches ou plans de relation.",
+  "canonical_use_cases": [
+    "organisations complexes",
+    "relations sociales",
+    "vues multi-niveaux"
+  ],
+  "case_examples": [
+    "Organisations humaines"
+  ]
 }

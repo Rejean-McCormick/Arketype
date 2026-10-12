@@ -1,0 +1,16 @@
+{
+  "format": "arketype.casefile-form/1.0-non-normatif",
+  "statut": "FORMULAIRE_VIERGE_HORS_CANON_NE_PAS_REMPLIR_DANS_LE_REPO",
+  "dossier_id": null,
+  "sujet": null,
+  "notes": [],
+  "actions": [],
+  "pieces": [],
+  "chronologie": [],
+  "evaluation": {
+    "statut": "non_evalue"
+  },
+  "acces": {
+    "sensibilite": "a_definir"
+  }
+}

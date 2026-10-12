@@ -1,98 +1,50 @@
 # Arketype
 
-**Version 1.1.0 — Bibliothèque d’archétypes pour Kristal**
+![Symbole K fourni](assets/logo-k.svg)
 
-Arketype répertorie des formes de Kristals, leurs propriétés, leurs structures candidates, des **workspaces neutralisés**, des compositions guidées et un outil pour créer de nouvelles instances indépendantes. Le nom du dépôt est désormais **`Arketype`**.
+**Couleur de marque : `#1E6864`**
 
-Le dépôt contient **16 archétypes**, **16 modèles locaux vides** et **9 assemblages de conception**. Les modèles ne contiennent aucun fait métier, aucune déposition ni identité réelle, et **ne créent aucune autorité ni permission de publier**.
+**Version 1.2.1 — Bibliothèque d’archétypes, profils d’usage et catalogue visuel pour Kristal**
 
-Arketype **ne remplace pas** Kristal Framework, l'Authoring Kit, les outils de qualification, ni les applications métiers. Il réutilise le Local Kit 3.2.4 sans redéfinir les contrats Kristal v9/v10.
+Arketype répertorie des formes de Kristals, leurs propriétés, leurs structures candidates, des **workspaces neutralisés**, des compositions guidées, des **profils d’usage situés** et un **catalogue HTML** généré depuis des inventaires JSON.
 
-## Démarrer sous Windows
+Le dépôt contient **19 archétypes**, **19 modèles locaux vides**, **14 assemblages de conception** et **5 profils d’usage**. Les modèles ne contiennent aucun fait métier, aucune donnée réelle et **ne créent aucune autorité ni permission de publier**.
 
-Ouvrir `Lancer_Arketype.pyw` par double-clic (Python 3.10+ avec Tkinter). Choisir l'archétype, éventuellement un assemblage, le slug, le titre et un dossier parent existant. L'interface n'a pas été testée sur Windows dans cette livraison.
+## Nouveau dans cette version
 
-En ligne de commande :
+- **catalogue HTML** : `catalogue/index.html`
+- **grammaire visuelle standardisée** : linéaire, embranchements, hub, grappe, arbre, timeline, matrice, casefile, multicouche, réseau
+- **inventaires JSON liés** : `inventaires/grammaire-visuelle.json`, `inventaires/archetypes-visuels.json`, `inventaires/profils-usage.json`
+- **nouveaux archétypes** :
+  - **ARK-17** — Taxonomie / classification naturelle
+  - **ARK-18** — État de systèmes / parc technique
+  - **ARK-19** — Dossier de suivi / casefile
+- **nouveaux profils d’usage** : troubleshooting de système, environnement protocolaire, taxonomie de la nature, état de systèmes, suivi d’employé
+
+## Démarrer
 
 ```bash
 python arketype.py list
-python arketype.py search "déposition"
-python arketype.py show deposition-temoignage
-python arketype.py recipes
-python arketype.py recipe dossier-depositions
+python arketype.py profiles
+python arketype.py profile troubleshooting-systeme
+python arketype.py build-html
 python arketype.py validate --check-kit
 ```
 
-Créer un nouveau Kristal de témoignages (neutre, sans données) :
+Le catalogue HTML généré se trouve par défaut dans `catalogue/index.html`.
+
+## Catalogue visuel et impression
+
+Ouvrir **`catalogue/index.html`** après extraction de l'archive. Aucune connexion n'est nécessaire.
+Rechercher par mot-clé et filtrer par famille ou motif. Chaque carte comprend un diagramme **situé avec nœuds nommés** et un lien vers sa fiche JSON.
+Pour régénérer le catalogue après modification des inventaires :
 
 ```bash
-python arketype.py create --type deposition-temoignage --slug temoignages-projet --title "Témoignages du projet" --parent "C:\MesKristals"
+python arketype.py build-html
 ```
 
-Prévisualiser l'assemblage de dépositions, sans aucune écriture :
+Un exemple PDF est également fourni dans `catalogue/Arketype_Catalogue_Visuel_v1.2.1.pdf`. Pour imprimer depuis Chrome/Edge, utiliser Imprimer → PDF (les cartes et diagrammes disposent d'une mise en page dédiée).
 
-```bash
-python arketype.py compose --recipe dossier-depositions --slug dossiers-collecte --title "Dossier de dépositions" --parent "C:\MesKristals" --dry-run
-```
+**Sources :** `catalogue.json`, `archetypes/*.json`, `inventaires/archetypes-visuels.json`, `inventaires/grammaire-visuelle.json`, `inventaires/profils-usage.json` et `inventaires/diagrammes-situes.json`. L'HTML est une projection générée et non une vue synchronisée en temps réel; la commande `build-html` effectue sa mise à jour.
 
-La commande `create` initialise un **nouveau** workspace avec son propre `state_ref`, copie le modèle de conception hors canon, lance `check` via l’Authoring Kit puis place le dossier créé à l’emplacement choisi. Elle refuse l'écrasement de destinations préexistantes. Les recettes d'assemblage ne fusionnent jamais des canons ni ne qualifient des faits.
-
-## Archétypes
-
-| ID | Nom | Famille |
-|---|---|---|
-| ARK-01 | Référentiel sémantique | Savoir |
-| ARK-02 | Fédération / topologie | Composition |
-| ARK-03 | Carte de jalons et de preuves | Savoir |
-| ARK-04 | Procédure / protocole | Processus |
-| ARK-05 | Compilation / collection | Composition |
-| ARK-06 | Mémoire de recherche | Savoir |
-| ARK-07 | Invariant / théorie formelle | Savoir |
-| ARK-08 | Diagnostic causal | Processus |
-| ARK-09 | Modèle multiplexe / organisations | Structures |
-| ARK-10 | Parcours pédagogique | Composition |
-| ARK-11 | Registre événementiel / chronologie | Structures |
-| ARK-12 | Interprétations multicouches | Savoir |
-| ARK-13 | Univers / œuvres / médias | Structures |
-| ARK-14 | Simulation / transitions | Processus |
-| ARK-15 | Composition hybride / sous-systèmes | Composition |
-| **ARK-16** | **Déposition / témoignage** | **Sources** |
-
-Les familles sont des portes d’entrée non exclusives. Les formes restent ouvertes et combinables.
-
-## Dépositions et témoignages : nouveau modèle
-
-`modeles/deposition-temoignage/` fournit :
-
-- une **structure candidate** avec séances, déclarants, déclarations attribuées, dates des événements allégués, supports originaux, transcriptions, versions, rectifications et provenances ;
-- une **fiche de déposition vierge** (`design/fiche-deposition-vierge.json`) distinguant original, questions/réponses, transcription, interprétation et attestation ;
-- des règles épistémiques : **« cette personne a déclaré P » ≠ « P est vrai »** ;
-- des protections documentaires : pseudonymisation, confidentialité, consentement ou autre base valable, accès, rétention, et distinctions entre signatures, enregistrements et statuts juridiques ;
-- l'assemblage `dossier-depositions` reliant chronologie, interprétations et corroborations **sans les absorber** dans le témoignage.
-
-Ce modèle n'est **pas une application sécurisée de prise de déposition** ni une procédure juridique officielle. Le formulaire reste dans `design/` hors canon et ne doit pas être rempli avec des données personnelles réelles dans le dépôt. Un système opérationnel de recueil doit gérer séparément authentification, droits, conservation, enregistrement et admissions sémantiques.
-
-Voir [Guide des dépositions](docs/09_DEPOSITIONS_TEMOIGNAGES.md).
-
-## Organisation
-
-| Élément | Rôle |
-|---|---|
-| `archetypes/` | Une fiche descriptive par archétype |
-| `modeles/` | 16 workspaces v9 de départ neutralisés |
-| `assemblages/` | 9 assemblages guidés, statut `design_only` |
-| `catalogue.json` | Index de recherche |
-| `schemas/` | Schémas JSON descriptifs non normatifs |
-| `arketype.py` | CLI : recherche, affichage, validation, création et composition |
-| `Lancer_Arketype.pyw` | Créateur graphique Tkinter pour Windows |
-| `docs/` | Méthode, limites, sécurité, provenance, extension |
-| `RAPPORT_TESTS.md` | Tests effectués et limites de qualification |
-
-## Frontières et précautions
-
-- `design/` et les assemblages sont des propositions; **aucun Logical Contract de domaine** n'est créé par Arketype.
-- `check` et `build-v9` sur des workspaces vides prouvent leur cohérence technique locale, pas la conformité d'un protocole ni la véracité d'un témoignage.
-- Une lecture, un index et un Context Pack ne confèrent pas de droit de consulter des données privées.
-- **Build ≠ qualification ≠ synchronisation ≠ publication ≠ activation.** Aucune publication ou activation n'est effectuée.
-
-Voir [Classification](docs/02_CLASSIFICATION.md), [Composition](docs/03_COMPOSITION.md), [Cas d'usage](docs/04_CAS_REELS.md), [Sécurité](docs/05_SECURITE_ET_LIMITES.md), [Extension](docs/06_ETENDRE_ARKETYPE.md) et [Provenance](docs/07_PROVENANCE.md).
+**Identité et sécurité :** chaque modèle neutre doit posséder un `state_ref` propre. Les reçus `build-v9` sont des preuves d'exécution technique locale, **pas** une qualification sémantique. Pour les témoignages et dossiers d'employés, ne pas saisir de données sensibles dans les modèles publics : les politiques d'accès, de conservation et de consentement restent à concevoir.

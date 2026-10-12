@@ -37,5 +37,19 @@
   "maturity": "candidate",
   "canonical_claims_in_template": false,
   "composition": "explicit_design_only",
-  "contract_status": "not_defined"
+  "contract_status": "not_defined",
+  "visual_pattern": "timeline",
+  "secondary_patterns": [
+    "casefile"
+  ],
+  "structure_label": "ligne du temps",
+  "situational_schema": "Événements et changements consignés dans leur ordre ou leur datation.",
+  "canonical_use_cases": [
+    "chronologie",
+    "journal d’activité",
+    "audit temporel"
+  ],
+  "case_examples": [
+    "Historique et suivi"
+  ]
 }

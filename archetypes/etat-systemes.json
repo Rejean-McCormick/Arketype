@@ -1,0 +1,57 @@
+{
+  "id": "ARK-18",
+  "slug": "etat-systemes",
+  "name": "État de systèmes / parc technique",
+  "family": "Structures",
+  "description": "Structure pour décrire l’état courant et l’historique essentiel de systèmes, équipements ou environnements techniques.",
+  "kit_profile": "open",
+  "native_kind_candidate": "matrice_etat_systemes",
+  "responsibility_mode": "system-state-owner",
+  "structural_traits": [
+    "matrice",
+    "etat",
+    "inventaire"
+  ],
+  "epistemic_modes": [
+    "observe",
+    "compare",
+    "suit"
+  ],
+  "deployment_options": [
+    "local",
+    "federe"
+  ],
+  "primitive_candidates": [
+    "systemes",
+    "composants",
+    "dimensions_d_etat",
+    "valeurs",
+    "dates_d_observation",
+    "statuts",
+    "ecarts"
+  ],
+  "reference_use_case": "Stocker l’état de tel et tel de mes systèmes, comparer et suivre leur évolution.",
+  "integrity_rule": "L’état observé, le statut calculé, la configuration désirée et le jugement opératoire doivent rester distincts.",
+  "antipattern": "Ne pas confondre un snapshot d’état avec un journal complet ou un protocole de réparation.",
+  "design_question": "Quelles dimensions d’état, quelles fréquences d’observation et quels écarts sont importants ?",
+  "template_path": "modeles/etat-systemes",
+  "kind": "open_archetype_not_standard",
+  "maturity": "candidate",
+  "canonical_claims_in_template": false,
+  "composition": "explicit_design_only",
+  "contract_status": "not_defined",
+  "visual_pattern": "matrix",
+  "secondary_patterns": [
+    "timeline"
+  ],
+  "structure_label": "matrice d’état",
+  "situational_schema": "Chaque système est observé selon plusieurs dimensions, avec éventuellement des dates et des écarts.",
+  "canonical_use_cases": [
+    "inventaire d’état de systèmes",
+    "tableau de santé technique",
+    "suivi de parc"
+  ],
+  "case_examples": [
+    "État de systèmes personnels ou opérationnels"
+  ]
+}

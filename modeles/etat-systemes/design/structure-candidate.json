@@ -1,0 +1,30 @@
+{
+  "format": "arketype.structure-candidate/1.0-non-normatif",
+  "id_type": "ARK-18",
+  "forme": "etat-systemes",
+  "statut": "illustration-non-canonique",
+  "n_est_pas_un_artefact_enregistre": true,
+  "intention": "Structure pour décrire l’état courant et l’historique essentiel de systèmes, équipements ou environnements techniques.",
+  "primitives_possibles": [
+    "systemes",
+    "composants",
+    "dimensions_d_etat",
+    "valeurs",
+    "dates_d_observation",
+    "statuts",
+    "ecarts"
+  ],
+  "contraintes_a_preserver": [
+    "L’état observé, le statut calculé, la configuration désirée et le jugement opératoire doivent rester distincts."
+  ],
+  "exemple_payload_vide": {
+    "systemes": [],
+    "composants": [],
+    "dimensions_d_etat": [],
+    "valeurs": [],
+    "dates_d_observation": [],
+    "statuts": []
+  },
+  "contrat_logique": "a_definir_pour_un_domaine_reel",
+  "bibliotheque": "Arketype 1.2"
+}

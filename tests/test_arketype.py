@@ -11,8 +11,9 @@ class CatalogueTests(unittest.TestCase):
     def test_integrity(self):
         r=arketype.validate(check_kit=False)
         self.assertTrue(r['ok'],r['errors'])
-        self.assertEqual(r['archetype_count'],16)
-        self.assertEqual(r['recipe_count'],9)
+        self.assertEqual(r['archetype_count'],19)
+        self.assertEqual(r['recipe_count'],14)
+        self.assertEqual(r['profile_count'],5)
     def test_recherche_unicode(self):
         self.assertIn('parcours-pedagogique',[i['slug'] for i in arketype.search('PEDAGOGIQUE')])
         self.assertIn('procedure-protocole',[i['slug'] for i in arketype.search('PoliceOps')])
@@ -102,5 +103,66 @@ class InstantiationTests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 arketype.create('procedure-protocole','un-test','Un',td,recipe='ekole-multiusage')
             self.assertEqual([],list(Path(td).iterdir()))
+
+
+class Upgrade121Tests(unittest.TestCase):
+    def test_all_template_refs_unique_and_named(self):
+        refs=[]
+        for a in arketype.catalogue():
+            model=arketype.ROOT/a['template_path']
+            ws=arketype.read_json(model/'kristal.workspace.json')
+            self.assertEqual(ws['slug'],'tpl-'+a['slug'])
+            self.assertEqual(ws['state_ref'],'urn:kristal:state:tpl-'+a['slug'])
+            self.assertFalse(arketype.read_json(model/'canon/state.index.json').get('artifacts',[]))
+            refs.append(ws['state_ref'])
+        self.assertEqual(len(set(refs)),19)
+    def test_new_build_receipts_match_their_models(self):
+        for slug in ('taxonomie-classification','etat-systemes','dossier-suivi'):
+            model=arketype.ROOT/'modeles'/slug
+            ws=arketype.read_json(model/'kristal.workspace.json')
+            receipt=arketype.read_json(model/'build/v9/build-receipt.json')
+            self.assertEqual(ws['state_ref'],receipt['state_ref'])
+            self.assertEqual(receipt['generated_logical_artifacts'],0)
+    def test_casefile_has_no_deposition_form(self):
+        model=arketype.ROOT/'modeles/dossier-suivi'
+        self.assertFalse((model/'design/fiche-deposition-vierge.json').exists())
+        self.assertTrue((model/'design/fiche-suivi-vierge.json').exists())
+    def test_profile_inventory_consistency(self):
+        profiles=arketype.use_case_profiles()
+        self.assertEqual(len(profiles),5)
+        for profile in profiles:
+            self.assertEqual(arketype.assembly(profile['assemblage_reference'])['primary_archetype'], profile['primary_archetype'])
+    def test_diagrams_have_named_nodes_and_valid_edges(self):
+        d=arketype.read_json(arketype.ROOT/'inventaires/diagrammes-situes.json')['diagrams']
+        self.assertEqual(len(d),24)
+        for diag in d:
+            ids={n['id'] for n in diag['nodes']}
+            self.assertTrue(all(n['label'] for n in diag['nodes']))
+            self.assertTrue(all(e['from'] in ids and e['to'] in ids for e in diag['edges']))
+            self.assertEqual(diag['status'],'illustration_non_canonique')
+    def test_html_color_logo_and_sources(self):
+        with tempfile.TemporaryDirectory() as td:
+            dest=arketype.generate_html_catalog(Path(td)/'index.html')
+            html=dest.read_text(encoding='utf-8')
+            for term in ('#1e6864','../assets/logo-k.svg','diagrammes-situes.json','search-arch','beforeprint','Diagnostic causal','Taxonomie de la nature'):
+                self.assertIn(term,html)
+    def test_all_kits_check_locally(self):
+        report=arketype.validate(check_kit=True)
+        self.assertTrue(report['ok'],report['errors'])
+    def test_new_archetype_instance_form(self):
+        with tempfile.TemporaryDirectory() as td:
+            dest=arketype.create('etat-systemes','essai-etat','Essai d’état',td)
+            self.assertTrue((dest/'design/matrice-etat-vierge.json').is_file())
+            self.assertFalse(arketype.read_json(dest/'arketype.instance.json')['published'])
+    def test_dossier_instance_not_deposition(self):
+        with tempfile.TemporaryDirectory() as td:
+            dest=arketype.create('dossier-suivi','essai-dossier','Dossier neutre',td)
+            self.assertFalse((dest/'design/fiche-deposition-vierge.json').exists())
+            self.assertTrue((dest/'design/fiche-suivi-vierge.json').exists())
+    def test_taxonomy_instance_is_independent(self):
+        with tempfile.TemporaryDirectory() as td:
+            dest=arketype.create('taxonomie-classification','essai-taxonomie','Taxonomie neutre',td)
+            ref=arketype.read_json(dest/'kristal.workspace.json')['state_ref']
+            self.assertNotEqual(ref,arketype.read_json(arketype.ROOT/'modeles/taxonomie-classification/kristal.workspace.json')['state_ref'])
 
 if __name__=='__main__':unittest.main()

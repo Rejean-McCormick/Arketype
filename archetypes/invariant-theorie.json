@@ -39,5 +39,19 @@
   "maturity": "candidate",
   "canonical_claims_in_template": false,
   "composition": "explicit_design_only",
-  "contract_status": "not_defined"
+  "contract_status": "not_defined",
+  "visual_pattern": "tree",
+  "secondary_patterns": [
+    "linear"
+  ],
+  "structure_label": "arbre théorique",
+  "situational_schema": "Définitions, axiomes, invariants, théorèmes et dépendances conceptuelles.",
+  "canonical_use_cases": [
+    "corpus théorique",
+    "modèle formel",
+    "règles invariantes"
+  ],
+  "case_examples": [
+    "Théorie formelle et invariants"
+  ]
 }

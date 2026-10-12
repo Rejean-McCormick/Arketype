@@ -39,5 +39,19 @@
   "maturity": "candidate",
   "canonical_claims_in_template": false,
   "composition": "explicit_design_only",
-  "contract_status": "not_defined"
+  "contract_status": "not_defined",
+  "visual_pattern": "cluster",
+  "secondary_patterns": [
+    "tree"
+  ],
+  "structure_label": "référentiel en grappe",
+  "situational_schema": "Concepts, entités et relations regroupés en noyaux thématiques interreliés.",
+  "canonical_use_cases": [
+    "base de connaissances réutilisable",
+    "référentiel de concepts",
+    "noyau sémantique multiusage"
+  ],
+  "case_examples": [
+    "Ekole – socle de savoir réutilisable"
+  ]
 }

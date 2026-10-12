@@ -38,5 +38,21 @@
   "maturity": "candidate",
   "canonical_claims_in_template": false,
   "composition": "explicit_design_only",
-  "contract_status": "not_defined"
+  "contract_status": "not_defined",
+  "visual_pattern": "hub",
+  "secondary_patterns": [
+    "timeline",
+    "network"
+  ],
+  "structure_label": "hub de diagnostic",
+  "situational_schema": "Un problème central relie symptômes, causes possibles, tests et conclusions locales.",
+  "canonical_use_cases": [
+    "troubleshooting de système",
+    "diagnostic de panne",
+    "analyse causale"
+  ],
+  "case_examples": [
+    "VehicleDiag",
+    "Troubleshooting système"
+  ]
 }

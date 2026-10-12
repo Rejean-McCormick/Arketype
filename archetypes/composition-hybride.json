@@ -37,5 +37,19 @@
   "maturity": "candidate",
   "canonical_claims_in_template": false,
   "composition": "explicit_design_only",
-  "contract_status": "not_defined"
+  "contract_status": "not_defined",
+  "visual_pattern": "network",
+  "secondary_patterns": [
+    "multilayer"
+  ],
+  "structure_label": "assemblage hybride",
+  "situational_schema": "Assemblage de plusieurs sous-systèmes de nature différente, chacun gardant son rôle.",
+  "canonical_use_cases": [
+    "système composite",
+    "MediKristal partiel",
+    "orchestration inter-modèles"
+  ],
+  "case_examples": [
+    "MediKristal – partie conforme + dynamique applicative"
+  ]
 }

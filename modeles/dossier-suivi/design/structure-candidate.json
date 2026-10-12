@@ -1,0 +1,30 @@
+{
+  "format": "arketype.structure-candidate/1.0-non-normatif",
+  "id_type": "ARK-19",
+  "forme": "dossier-suivi",
+  "statut": "illustration-non-canonique",
+  "n_est_pas_un_artefact_enregistre": true,
+  "intention": "Dossier structuré pour suivre une personne, un employé, un dossier RH ou un cas opérationnel dans la durée.",
+  "primitives_possibles": [
+    "dossiers",
+    "pieces",
+    "notes",
+    "actions",
+    "jalons",
+    "evaluations",
+    "restrictions_d_acces"
+  ],
+  "contraintes_a_preserver": [
+    "Le dossier, les pièces, les évaluations, les décisions et les données sensibles doivent rester séparés et tracés."
+  ],
+  "exemple_payload_vide": {
+    "dossiers": [],
+    "pieces": [],
+    "notes": [],
+    "actions": [],
+    "jalons": [],
+    "evaluations": []
+  },
+  "contrat_logique": "a_definir_pour_un_domaine_reel",
+  "bibliotheque": "Arketype 1.2"
+}

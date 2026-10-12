@@ -39,5 +39,19 @@
   "maturity": "candidate",
   "canonical_claims_in_template": false,
   "composition": "explicit_design_only",
-  "contract_status": "not_defined"
+  "contract_status": "not_defined",
+  "visual_pattern": "hub",
+  "secondary_patterns": [
+    "linear"
+  ],
+  "structure_label": "carte de jalons",
+  "situational_schema": "Carrefours, points terminaux et liens abrégés vers preuves déjà validées ailleurs.",
+  "canonical_use_cases": [
+    "cartographie de démonstrations",
+    "atlas de preuves",
+    "carte d’arrimage"
+  ],
+  "case_examples": [
+    "Carte des chemins rendus et des preuves avancées"
+  ]
 }

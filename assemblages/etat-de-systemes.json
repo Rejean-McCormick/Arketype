@@ -1,0 +1,20 @@
+{
+  "format": "arketype.assembly-recipe/1.0-non-normatif",
+  "id": "etat-de-systemes",
+  "title": "État de systèmes",
+  "primary_archetype": "etat-systemes",
+  "components": [
+    {
+      "archetype": "registre-evenementiel",
+      "relation": "historique_associe",
+      "design_note": "Le suivi temporel est associé mais ne se confond pas avec la matrice d’état.",
+      "status": "unresolved"
+    }
+  ],
+  "guidance": "Séparer observation courante, cible souhaitée, historique et diagnostic.",
+  "composition_status": "design_only",
+  "logical_contract": "to_define",
+  "source_references": "to_pin_on_real_instance",
+  "authoritative_ownership": "to_decide",
+  "publication_authorization": false
+}

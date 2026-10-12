@@ -1,0 +1,161 @@
+{
+  "format": "arketype.visual-grammar/1.0-non-normatif",
+  "version": "1.0.0",
+  "purpose": "Motifs visuels standardisés pour représenter la structure d'un Kristal",
+  "patterns": [
+    {
+      "id": "linear",
+      "label": "Linéaire",
+      "description": "Suite ordonnée d’étapes ou de transformations.",
+      "ascii": [
+        "[1] -> [2] -> [3] -> [4]"
+      ],
+      "best_for": [
+        "procédures",
+        "parcours",
+        "pipelines"
+      ]
+    },
+    {
+      "id": "branching",
+      "label": "Linéaire avec embranchements",
+      "description": "Chaîne principale avec bifurcations, exceptions et décisions.",
+      "ascii": [
+        "[1] -> [2] -> [3]",
+        "          \\-> [3a]",
+        "          \\-> [3b]"
+      ],
+      "best_for": [
+        "protocoles",
+        "décisions conditionnelles",
+        "support opérationnel"
+      ]
+    },
+    {
+      "id": "hub",
+      "label": "Noyau et satellites",
+      "description": "Un centre relie des observations, preuves, états ou pièces satellites.",
+      "ascii": [
+        "    [A]",
+        "     |",
+        "[B]-[C]-[D]",
+        "     |",
+        "    [E]"
+      ],
+      "best_for": [
+        "diagnostic",
+        "cartes de preuves",
+        "dossiers centrés sur un cas"
+      ]
+    },
+    {
+      "id": "cluster",
+      "label": "Grappe / constellation",
+      "description": "Plusieurs petits ensembles liés, sans hiérarchie centrale stricte.",
+      "ascii": [
+        "(a)--(b)   (e)",
+        " | \\  |   /",
+        "(c)--(d)--(f)"
+      ],
+      "best_for": [
+        "écosystèmes",
+        "ensembles thématiques",
+        "organisations distribuées"
+      ]
+    },
+    {
+      "id": "tree",
+      "label": "Arbre / taxonomie",
+      "description": "Hiérarchie ramifiée du général vers le particulier.",
+      "ascii": [
+        "   [Racine]",
+        "    /    \\",
+        " [A]      [B]",
+        " /  \\      |",
+        "[A1][A2]  [B1]"
+      ],
+      "best_for": [
+        "taxonomies",
+        "nomenclatures",
+        "classifications"
+      ]
+    },
+    {
+      "id": "timeline",
+      "label": "Ligne du temps",
+      "description": "Événements, états ou décisions placés dans la durée.",
+      "ascii": [
+        "t0 --- t1 --- t2 --- t3"
+      ],
+      "best_for": [
+        "suivi",
+        "historique",
+        "chronologies"
+      ]
+    },
+    {
+      "id": "matrix",
+      "label": "Matrice / tableau d’état",
+      "description": "Comparer des éléments selon plusieurs dimensions ou critères.",
+      "ascii": [
+        "      | A | B | C |",
+        "sys-1 | x |   | y |",
+        "sys-2 |   | x | y |"
+      ],
+      "best_for": [
+        "état de systèmes",
+        "inventaires",
+        "comparaisons"
+      ]
+    },
+    {
+      "id": "casefile",
+      "label": "Dossier / casefile",
+      "description": "Un dossier central contenant pièces, notes, évaluations et suivis.",
+      "ascii": [
+        "[Dossier]",
+        " |- pièce 1",
+        " |- note",
+        " |- action",
+        " \\- suivi"
+      ],
+      "best_for": [
+        "suivi d'employé",
+        "enquêtes",
+        "dossiers de cas"
+      ]
+    },
+    {
+      "id": "multilayer",
+      "label": "Multicouche",
+      "description": "Même sujet vu à travers plusieurs couches ou interprétations.",
+      "ascii": [
+        "[Couche 1]",
+        "-----------",
+        "[Couche 2]",
+        "-----------",
+        "[Couche 3]"
+      ],
+      "best_for": [
+        "interprétations",
+        "organisations",
+        "vues croisées"
+      ]
+    },
+    {
+      "id": "network",
+      "label": "Réseau / fédération",
+      "description": "Plusieurs nœuds autonomes reliés par des liens de référence ou de coordination.",
+      "ascii": [
+        "[N1]--[N2]--[N3]",
+        "  \\     |     /",
+        "      [N4]"
+      ],
+      "best_for": [
+        "campus",
+        "fédérations",
+        "sous-systèmes autonomes"
+      ]
+    }
+  ]
+}

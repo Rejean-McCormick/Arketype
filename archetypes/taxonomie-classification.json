@@ -1,0 +1,57 @@
+{
+  "id": "ARK-17",
+  "slug": "taxonomie-classification",
+  "name": "Taxonomie / classification naturelle",
+  "family": "Savoir",
+  "description": "Arbre de classification pour cartographier espèces, types, catégories ou éléments du vivant et de la nature.",
+  "kit_profile": "open",
+  "native_kind_candidate": "arbre_taxonomique_classification",
+  "responsibility_mode": "taxonomy-owner",
+  "structural_traits": [
+    "arbre",
+    "taxonomie",
+    "classification"
+  ],
+  "epistemic_modes": [
+    "decrit",
+    "classe",
+    "versionne"
+  ],
+  "deployment_options": [
+    "local",
+    "federe"
+  ],
+  "primitive_candidates": [
+    "racines",
+    "groupes",
+    "classes",
+    "sous_classes",
+    "specimens",
+    "relations_de_classement",
+    "synonymes"
+  ],
+  "reference_use_case": "Mapper des éléments de la nature, taxonomies et nomenclatures.",
+  "integrity_rule": "Une relation de classement ne prouve pas une causalité ni une identité absolue; les critères de classement et leur version doivent être explicites.",
+  "antipattern": "Ne pas confondre taxonomie, observation de terrain et théorie causale.",
+  "design_question": "Quel schéma de classification, quelles autorités de nomination et quelles exceptions doivent être tracés ?",
+  "template_path": "modeles/taxonomie-classification",
+  "kind": "open_archetype_not_standard",
+  "maturity": "candidate",
+  "canonical_claims_in_template": false,
+  "composition": "explicit_design_only",
+  "contract_status": "not_defined",
+  "visual_pattern": "tree",
+  "secondary_patterns": [
+    "cluster"
+  ],
+  "structure_label": "arbre taxonomique",
+  "situational_schema": "Une racine se ramifie en catégories de plus en plus spécifiques, avec synonymes et variantes.",
+  "canonical_use_cases": [
+    "taxonomie du vivant",
+    "classification d’objets naturels",
+    "cartographie d’espèces"
+  ],
+  "case_examples": [
+    "Taxonomie d’éléments de la nature"
+  ]
+}

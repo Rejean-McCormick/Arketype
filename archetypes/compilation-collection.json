@@ -39,5 +39,19 @@
   "maturity": "candidate",
   "canonical_claims_in_template": false,
   "composition": "explicit_design_only",
-  "contract_status": "not_defined"
+  "contract_status": "not_defined",
+  "visual_pattern": "cluster",
+  "secondary_patterns": [
+    "casefile"
+  ],
+  "structure_label": "collection éditoriale",
+  "situational_schema": "Une compilation regroupe des éléments relativement autonomes sous une cohérence éditoriale.",
+  "canonical_use_cases": [
+    "livre de recettes",
+    "anthologie",
+    "collection thématique"
+  ],
+  "case_examples": [
+    "Livre de recettes"
+  ]
 }

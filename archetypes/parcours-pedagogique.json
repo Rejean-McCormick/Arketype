@@ -37,5 +37,19 @@
   "maturity": "candidate",
   "canonical_claims_in_template": false,
   "composition": "explicit_design_only",
-  "contract_status": "not_defined"
+  "contract_status": "not_defined",
+  "visual_pattern": "linear",
+  "secondary_patterns": [
+    "branching"
+  ],
+  "structure_label": "parcours séquencé",
+  "situational_schema": "Suite d’étapes d’apprentissage, avec jalons, ressources et bifurcations possibles.",
+  "canonical_use_cases": [
+    "curriculum",
+    "progression d’apprentissage",
+    "itinéraire pédagogique"
+  ],
+  "case_examples": [
+    "Parcours éducatif dans Ekole"
+  ]
 }

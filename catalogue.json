@@ -2,7 +2,7 @@
   "format": "arketype.catalog/1.0-non-normatif",
   "name": "Arketype",
   "abbreviation": "ARK",
-  "version": "1.1.0",
+  "version": "1.2.1",
   "status": "bibliotheque_de_conception_non_normative",
   "framework_reference": "10.0.0-draft.3.1",
   "authoring_kit_reference": "3.2.4",
@@ -119,7 +119,34 @@
       "name": "Déposition / témoignage",
       "family": "Sources",
       "file": "archetypes/deposition-temoignage.json"
+    },
+    {
+      "id": "ARK-17",
+      "slug": "taxonomie-classification",
+      "name": "Taxonomie / classification naturelle",
+      "family": "Savoir",
+      "file": "archetypes/taxonomie-classification.json"
+    },
+    {
+      "id": "ARK-18",
+      "slug": "etat-systemes",
+      "name": "État de systèmes / parc technique",
+      "family": "Structures",
+      "file": "archetypes/etat-systemes.json"
+    },
+    {
+      "id": "ARK-19",
+      "slug": "dossier-suivi",
+      "name": "Dossier de suivi / casefile",
+      "family": "Structures",
+      "file": "archetypes/dossier-suivi.json"
     }
   ],
-  "description": "Bibliothèque locale d’archétypes et de modèles neutres pour créer des Kristals."
+  "description": "Bibliothèque locale d’archétypes, de profils d’usage et de modèles neutres pour créer des Kristals.",
+  "inventories": {
+    "visual_grammar": "inventaires/grammaire-visuelle.json",
+    "archetypes": "inventaires/archetypes-visuels.json",
+    "use_case_profiles": "inventaires/profils-usage.json",
+    "situated_diagrams": "inventaires/diagrammes-situes.json"
+  }
 }

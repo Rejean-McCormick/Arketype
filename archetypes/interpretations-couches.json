@@ -37,5 +37,19 @@
   "maturity": "candidate",
   "canonical_claims_in_template": false,
   "composition": "explicit_design_only",
-  "contract_status": "not_defined"
+  "contract_status": "not_defined",
+  "visual_pattern": "multilayer",
+  "secondary_patterns": [
+    "hub"
+  ],
+  "structure_label": "couches d’interprétation",
+  "situational_schema": "Une même base peut recevoir plusieurs lectures, analyses ou interprétations distinctes.",
+  "canonical_use_cases": [
+    "analyses comparées",
+    "superposition d’interprétations",
+    "lecture multiangle"
+  ],
+  "case_examples": [
+    "Analyses multicouches"
+  ]
 }

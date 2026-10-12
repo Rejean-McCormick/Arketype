@@ -1,0 +1,11 @@
+{
+  "format": "arketype.state-matrix/1.0-non-normatif",
+  "statut": "FORMULAIRE_VIERGE_HORS_CANON_NE_PAS_REMPLIR_DANS_LE_REPO",
+  "dimensions": [
+    "disponibilite",
+    "version",
+    "sante",
+    "derniere_observation"
+  ],
+  "systemes": []
+}

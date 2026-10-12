@@ -34,5 +34,19 @@
   "maturity": "candidate",
   "canonical_claims_in_template": false,
   "composition": "explicit_design_only",
-  "contract_status": "not_defined"
+  "contract_status": "not_defined",
+  "visual_pattern": "network",
+  "secondary_patterns": [
+    "tree"
+  ],
+  "structure_label": "réseau fédéré",
+  "situational_schema": "Sous-ensembles autonomes reliés par topologie, appartenance ou délégation.",
+  "canonical_use_cases": [
+    "fédération de sites",
+    "campus",
+    "réseau de sous-systèmes"
+  ],
+  "case_examples": [
+    "UCKK – université, voies, cours"
+  ]
 }

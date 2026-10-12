@@ -1,0 +1,1326 @@
+{
+  "format": "arketype.situated-diagrams/1.0-non-normatif",
+  "version": "1.2.1",
+  "coordinate_system": {
+    "viewbox": "0 0 660 244"
+  },
+  "authority": "aucune_assertion_ni_contrat_logique",
+  "diagrams": [
+    {
+      "kind": "archetype",
+      "slug": "carte-jalons-preuves",
+      "pattern": "hub",
+      "status": "illustration_non_canonique",
+      "caption": "Carrefours, points terminaux et liens abrégés vers preuves déjà validées ailleurs.",
+      "nodes": [
+        {
+          "id": "n1",
+          "label": "Jalons",
+          "x": 330,
+          "y": 119
+        },
+        {
+          "id": "n2",
+          "label": "Preuve externe",
+          "x": 112,
+          "y": 65
+        },
+        {
+          "id": "n3",
+          "label": "Frontière",
+          "x": 548,
+          "y": 65
+        },
+        {
+          "id": "n4",
+          "label": "Arrimage",
+          "x": 112,
+          "y": 185
+        },
+        {
+          "id": "n5",
+          "label": "Question ouverte",
+          "x": 548,
+          "y": 185
+        }
+      ],
+      "edges": [
+        {
+          "from": "n1",
+          "to": "n2"
+        },
+        {
+          "from": "n1",
+          "to": "n3"
+        },
+        {
+          "from": "n1",
+          "to": "n4"
+        },
+        {
+          "from": "n1",
+          "to": "n5"
+        }
+      ]
+    },
+    {
+      "kind": "archetype",
+      "slug": "compilation-collection",
+      "pattern": "cluster",
+      "status": "illustration_non_canonique",
+      "caption": "Une compilation regroupe des éléments relativement autonomes sous une cohérence éditoriale.",
+      "nodes": [
+        {
+          "id": "n1",
+          "label": "Recueil",
+          "x": 110,
+          "y": 95
+        },
+        {
+          "id": "n2",
+          "label": "Recette A",
+          "x": 262,
+          "y": 48
+        },
+        {
+          "id": "n3",
+          "label": "Recette B",
+          "x": 263,
+          "y": 178
+        },
+        {
+          "id": "n4",
+          "label": "Index",
+          "x": 440,
+          "y": 100
+        },
+        {
+          "id": "n5",
+          "label": "Annotation",
+          "x": 560,
+          "y": 178
+        }
+      ],
+      "edges": [
+        {
+          "from": "n1",
+          "to": "n2"
+        },
+        {
+          "from": "n1",
+          "to": "n3"
+        },
+        {
+          "from": "n2",
+          "to": "n4"
+        },
+        {
+          "from": "n3",
+          "to": "n4"
+        },
+        {
+          "from": "n4",
+          "to": "n5"
+        }
+      ]
+    },
+    {
+      "kind": "archetype",
+      "slug": "composition-hybride",
+      "pattern": "network",
+      "status": "illustration_non_canonique",
+      "caption": "Assemblage de plusieurs sous-systèmes de nature différente, chacun gardant son rôle.",
+      "nodes": [
+        {
+          "id": "n1",
+          "label": "Orchestration",
+          "x": 330,
+          "y": 118
+        },
+        {
+          "id": "n2",
+          "label": "Kristal A",
+          "x": 114,
+          "y": 55
+        },
+        {
+          "id": "n3",
+          "label": "Kristal B",
+          "x": 546,
+          "y": 55
+        },
+        {
+          "id": "n4",
+          "label": "Service",
+          "x": 114,
+          "y": 186
+        },
+        {
+          "id": "n5",
+          "label": "Projection",
+          "x": 546,
+          "y": 186
+        }
+      ],
+      "edges": [
+        {
+          "from": "n1",
+          "to": "n2"
+        },
+        {
+          "from": "n1",
+          "to": "n3"
+        },
+        {
+          "from": "n1",
+          "to": "n4"
+        },
+        {
+          "from": "n1",
+          "to": "n5"
+        },
+        {
+          "from": "n2",
+          "to": "n3"
+        },
+        {
+          "from": "n4",
+          "to": "n5"
+        }
+      ]
+    },
+    {
+      "kind": "archetype",
+      "slug": "deposition-temoignage",
+      "pattern": "casefile",
+      "status": "illustration_non_canonique",
+      "caption": "Déclarations, supports, transcriptions, signatures, versions et évaluations distinctes.",
+      "nodes": [
+        {
+          "id": "n1",
+          "label": "Déposition",
+          "x": 160,
+          "y": 122
+        },
+        {
+          "id": "n2",
+          "label": "Récit original",
+          "x": 472,
+          "y": 34
+        },
+        {
+          "id": "n3",
+          "label": "Transcription",
+          "x": 472,
+          "y": 91
+        },
+        {
+          "id": "n4",
+          "label": "Correction",
+          "x": 472,
+          "y": 152
+        },
+        {
+          "id": "n5",
+          "label": "Évaluation",
+          "x": 472,
+          "y": 211
+        }
+      ],
+      "edges": [
+        {
+          "from": "n1",
+          "to": "n2"
+        },
+        {
+          "from": "n1",
+          "to": "n3"
+        },
+        {
+          "from": "n1",
+          "to": "n4"
+        },
+        {
+          "from": "n1",
+          "to": "n5"
+        }
+      ]
+    },
+    {
+      "kind": "archetype",
+      "slug": "diagnostic-causal",
+      "pattern": "hub",
+      "status": "illustration_non_canonique",
+      "caption": "Un problème central relie symptômes, causes possibles, tests et conclusions locales.",
+      "nodes": [
+        {
+          "id": "n1",
+          "label": "Panne",
+          "x": 330,
+          "y": 119
+        },
+        {
+          "id": "n2",
+          "label": "Symptômes",
+          "x": 112,
+          "y": 65
+        },
+        {
+          "id": "n3",
+          "label": "Hypothèses",
+          "x": 548,
+          "y": 65
+        },
+        {
+          "id": "n4",
+          "label": "Tests",
+          "x": 112,
+          "y": 185
+        },
+        {
+          "id": "n5",
+          "label": "Résultat",
+          "x": 548,
+          "y": 185
+        }
+      ],
+      "edges": [
+        {
+          "from": "n1",
+          "to": "n2"
+        },
+        {
+          "from": "n1",
+          "to": "n3"
+        },
+        {
+          "from": "n1",
+          "to": "n4"
+        },
+        {
+          "from": "n1",
+          "to": "n5"
+        }
+      ]
+    },
+    {
+      "kind": "archetype",
+      "slug": "dossier-suivi",
+      "pattern": "casefile",
+      "status": "illustration_non_canonique",
+      "caption": "Un dossier central accueille notes, événements, pièces, actions et évaluations distinctes.",
+      "nodes": [
+        {
+          "id": "n1",
+          "label": "Dossier RH",
+          "x": 160,
+          "y": 122
+        },
+        {
+          "id": "n2",
+          "label": "Rencontres",
+          "x": 472,
+          "y": 34
+        },
+        {
+          "id": "n3",
+          "label": "Pièces",
+          "x": 472,
+          "y": 91
+        },
+        {
+          "id": "n4",
+          "label": "Actions",
+          "x": 472,
+          "y": 152
+        },
+        {
+          "id": "n5",
+          "label": "Suivi",
+          "x": 472,
+          "y": 211
+        }
+      ],
+      "edges": [
+        {
+          "from": "n1",
+          "to": "n2"
+        },
+        {
+          "from": "n1",
+          "to": "n3"
+        },
+        {
+          "from": "n1",
+          "to": "n4"
+        },
+        {
+          "from": "n1",
+          "to": "n5"
+        }
+      ]
+    },
+    {
+      "kind": "archetype",
+      "slug": "etat-systemes",
+      "pattern": "matrix",
+      "status": "illustration_non_canonique",
+      "caption": "Chaque système est observé selon plusieurs dimensions, avec éventuellement des dates et des écarts.",
+      "nodes": [
+        {
+          "id": "n1",
+          "label": "Serveur A / OK",
+          "x": 135,
+          "y": 76
+        },
+        {
+          "id": "n2",
+          "label": "Serveur B / ?",
+          "x": 330,
+          "y": 76
+        },
+        {
+          "id": "n3",
+          "label": "Version A",
+          "x": 525,
+          "y": 76
+        },
+        {
+          "id": "n4",
+          "label": "Version B",
+          "x": 135,
+          "y": 173
+        },
+        {
+          "id": "n5",
+          "label": "État cible",
+          "x": 330,
+          "y": 173
+        },
+        {
+          "id": "n6",
+          "label": "Écart",
+          "x": 525,
+          "y": 173
+        }
+      ],
+      "edges": []
+    },
+    {
+      "kind": "archetype",
+      "slug": "federation-topologie",
+      "pattern": "network",
+      "status": "illustration_non_canonique",
+      "caption": "Sous-ensembles autonomes reliés par topologie, appartenance ou délégation.",
+      "nodes": [
+        {
+          "id": "n1",
+          "label": "Fédération",
+          "x": 330,
+          "y": 118
+        },
+        {
+          "id": "n2",
+          "label": "Campus",
+          "x": 114,
+          "y": 55
+        },
+        {
+          "id": "n3",
+          "label": "Voie",
+          "x": 546,
+          "y": 55
+        },
+        {
+          "id": "n4",
+          "label": "Cours",
+          "x": 114,
+          "y": 186
+        },
+        {
+          "id": "n5",
+          "label": "Service",
+          "x": 546,
+          "y": 186
+        }
+      ],
+      "edges": [
+        {
+          "from": "n1",
+          "to": "n2"
+        },
+        {
+          "from": "n1",
+          "to": "n3"
+        },
+        {
+          "from": "n1",
+          "to": "n4"
+        },
+        {
+          "from": "n1",
+          "to": "n5"
+        },
+        {
+          "from": "n2",
+          "to": "n3"
+        },
+        {
+          "from": "n4",
+          "to": "n5"
+        }
+      ]
+    },
+    {
+      "kind": "archetype",
+      "slug": "interpretations-couches",
+      "pattern": "multilayer",
+      "status": "illustration_non_canonique",
+      "caption": "Une même base peut recevoir plusieurs lectures, analyses ou interprétations distinctes.",
+      "nodes": [
+        {
+          "id": "n1",
+          "label": "Faits sourcés",
+          "x": 330,
+          "y": 29
+        },
+        {
+          "id": "n2",
+          "label": "Lecture A",
+          "x": 330,
+          "y": 88
+        },
+        {
+          "id": "n3",
+          "label": "Lecture B",
+          "x": 330,
+          "y": 148
+        },
+        {
+          "id": "n4",
+          "label": "Comparaison",
+          "x": 330,
+          "y": 208
+        }
+      ],
+      "edges": []
+    },
+    {
+      "kind": "archetype",
+      "slug": "invariant-theorie",
+      "pattern": "tree",
+      "status": "illustration_non_canonique",
+      "caption": "Définitions, axiomes, invariants, théorèmes et dépendances conceptuelles.",
+      "nodes": [
+        {
+          "id": "n1",
+          "label": "Axiome",
+          "x": 330,
+          "y": 40
+        },
+        {
+          "id": "n2",
+          "label": "Théorème A",
+          "x": 170,
+          "y": 111
+        },
+        {
+          "id": "n3",
+          "label": "Théorème B",
+          "x": 492,
+          "y": 111
+        },
+        {
+          "id": "n4",
+          "label": "Lemme A",
+          "x": 170,
+          "y": 198
+        },
+        {
+          "id": "n5",
+          "label": "Lemme B",
+          "x": 492,
+          "y": 198
+        }
+      ],
+      "edges": [
+        {
+          "from": "n1",
+          "to": "n2"
+        },
+        {
+          "from": "n1",
+          "to": "n3"
+        },
+        {
+          "from": "n2",
+          "to": "n4"
+        },
+        {
+          "from": "n3",
+          "to": "n5"
+        }
+      ]
+    },
+    {
+      "kind": "archetype",
+      "slug": "memoire-recherche",
+      "pattern": "timeline",
+      "status": "illustration_non_canonique",
+      "caption": "Questions, hypothèses, pistes, sources et résultats se sédimentent dans le temps.",
+      "nodes": [
+        {
+          "id": "n1",
+          "label": "Question",
+          "x": 85,
+          "y": 121
+        },
+        {
+          "id": "n2",
+          "label": "Hypothèse",
+          "x": 208,
+          "y": 121
+        },
+        {
+          "id": "n3",
+          "label": "Essai",
+          "x": 330,
+          "y": 121
+        },
+        {
+          "id": "n4",
+          "label": "Résultat",
+          "x": 453,
+          "y": 121
+        },
+        {
+          "id": "n5",
+          "label": "À vérifier",
+          "x": 578,
+          "y": 121
+        }
+      ],
+      "edges": [
+        {
+          "from": "n1",
+          "to": "n2"
+        },
+        {
+          "from": "n2",
+          "to": "n3"
+        },
+        {
+          "from": "n3",
+          "to": "n4"
+        },
+        {
+          "from": "n4",
+          "to": "n5"
+        }
+      ]
+    },
+    {
+      "kind": "archetype",
+      "slug": "modele-multiplexe",
+      "pattern": "multilayer",
+      "status": "illustration_non_canonique",
+      "caption": "Même réalité organisée sur plusieurs couches ou plans de relation.",
+      "nodes": [
+        {
+          "id": "n1",
+          "label": "Personnes",
+          "x": 330,
+          "y": 29
+        },
+        {
+          "id": "n2",
+          "label": "Rôles",
+          "x": 330,
+          "y": 88
+        },
+        {
+          "id": "n3",
+          "label": "Institutions",
+          "x": 330,
+          "y": 148
+        },
+        {
+          "id": "n4",
+          "label": "Ressources",
+          "x": 330,
+          "y": 208
+        }
+      ],
+      "edges": []
+    },
+    {
+      "kind": "archetype",
+      "slug": "parcours-pedagogique",
+      "pattern": "linear",
+      "status": "illustration_non_canonique",
+      "caption": "Suite d’étapes d’apprentissage, avec jalons, ressources et bifurcations possibles.",
+      "nodes": [
+        {
+          "id": "n1",
+          "label": "Découvrir",
+          "x": 84,
+          "y": 120
+        },
+        {
+          "id": "n2",
+          "label": "Comprendre",
+          "x": 250,
+          "y": 120
+        },
+        {
+          "id": "n3",
+          "label": "Pratiquer",
+          "x": 416,
+          "y": 120
+        },
+        {
+          "id": "n4",
+          "label": "Évaluer",
+          "x": 582,
+          "y": 120
+        }
+      ],
+      "edges": [
+        {
+          "from": "n1",
+          "to": "n2"
+        },
+        {
+          "from": "n2",
+          "to": "n3"
+        },
+        {
+          "from": "n3",
+          "to": "n4"
+        }
+      ]
+    },
+    {
+      "kind": "archetype",
+      "slug": "procedure-protocole",
+      "pattern": "branching",
+      "status": "illustration_non_canonique",
+      "caption": "Étapes normées, préconditions, exceptions, rôles et issues possibles.",
+      "nodes": [
+        {
+          "id": "n1",
+          "label": "Précondition",
+          "x": 74,
+          "y": 120
+        },
+        {
+          "id": "n2",
+          "label": "Étape",
+          "x": 230,
+          "y": 120
+        },
+        {
+          "id": "n3",
+          "label": "Issue A",
+          "x": 410,
+          "y": 65
+        },
+        {
+          "id": "n4",
+          "label": "Exception",
+          "x": 410,
+          "y": 176
+        },
+        {
+          "id": "n5",
+          "label": "Clôture",
+          "x": 582,
+          "y": 120
+        }
+      ],
+      "edges": [
+        {
+          "from": "n1",
+          "to": "n2"
+        },
+        {
+          "from": "n2",
+          "to": "n3"
+        },
+        {
+          "from": "n2",
+          "to": "n4"
+        },
+        {
+          "from": "n3",
+          "to": "n5"
+        },
+        {
+          "from": "n4",
+          "to": "n5"
+        }
+      ]
+    },
+    {
+      "kind": "archetype",
+      "slug": "referentiel-semantique",
+      "pattern": "cluster",
+      "status": "illustration_non_canonique",
+      "caption": "Concepts, entités et relations regroupés en noyaux thématiques interreliés.",
+      "nodes": [
+        {
+          "id": "n1",
+          "label": "Concept",
+          "x": 110,
+          "y": 95
+        },
+        {
+          "id": "n2",
+          "label": "Source A",
+          "x": 262,
+          "y": 48
+        },
+        {
+          "id": "n3",
+          "label": "Relation",
+          "x": 263,
+          "y": 178
+        },
+        {
+          "id": "n4",
+          "label": "Contexte",
+          "x": 440,
+          "y": 100
+        },
+        {
+          "id": "n5",
+          "label": "Entité",
+          "x": 560,
+          "y": 178
+        }
+      ],
+      "edges": [
+        {
+          "from": "n1",
+          "to": "n2"
+        },
+        {
+          "from": "n1",
+          "to": "n3"
+        },
+        {
+          "from": "n2",
+          "to": "n4"
+        },
+        {
+          "from": "n3",
+          "to": "n4"
+        },
+        {
+          "from": "n4",
+          "to": "n5"
+        }
+      ]
+    },
+    {
+      "kind": "archetype",
+      "slug": "registre-evenementiel",
+      "pattern": "timeline",
+      "status": "illustration_non_canonique",
+      "caption": "Événements et changements consignés dans leur ordre ou leur datation.",
+      "nodes": [
+        {
+          "id": "n1",
+          "label": "Événement 1",
+          "x": 85,
+          "y": 121
+        },
+        {
+          "id": "n2",
+          "label": "Révision",
+          "x": 208,
+          "y": 121
+        },
+        {
+          "id": "n3",
+          "label": "Action",
+          "x": 330,
+          "y": 121
+        },
+        {
+          "id": "n4",
+          "label": "Contrôle",
+          "x": 453,
+          "y": 121
+        },
+        {
+          "id": "n5",
+          "label": "Événement 2",
+          "x": 578,
+          "y": 121
+        }
+      ],
+      "edges": [
+        {
+          "from": "n1",
+          "to": "n2"
+        },
+        {
+          "from": "n2",
+          "to": "n3"
+        },
+        {
+          "from": "n3",
+          "to": "n4"
+        },
+        {
+          "from": "n4",
+          "to": "n5"
+        }
+      ]
+    },
+    {
+      "kind": "archetype",
+      "slug": "simulation-transition",
+      "pattern": "linear",
+      "status": "illustration_non_canonique",
+      "caption": "États, transitions, paramètres et scénarios de passage.",
+      "nodes": [
+        {
+          "id": "n1",
+          "label": "État initial",
+          "x": 84,
+          "y": 120
+        },
+        {
+          "id": "n2",
+          "label": "Action",
+          "x": 250,
+          "y": 120
+        },
+        {
+          "id": "n3",
+          "label": "Transition",
+          "x": 416,
+          "y": 120
+        },
+        {
+          "id": "n4",
+          "label": "État final",
+          "x": 582,
+          "y": 120
+        }
+      ],
+      "edges": [
+        {
+          "from": "n1",
+          "to": "n2"
+        },
+        {
+          "from": "n2",
+          "to": "n3"
+        },
+        {
+          "from": "n3",
+          "to": "n4"
+        }
+      ]
+    },
+    {
+      "kind": "archetype",
+      "slug": "taxonomie-classification",
+      "pattern": "tree",
+      "status": "illustration_non_canonique",
+      "caption": "Une racine se ramifie en catégories de plus en plus spécifiques, avec synonymes et variantes.",
+      "nodes": [
+        {
+          "id": "n1",
+          "label": "Groupe racine",
+          "x": 330,
+          "y": 40
+        },
+        {
+          "id": "n2",
+          "label": "Famille A",
+          "x": 170,
+          "y": 111
+        },
+        {
+          "id": "n3",
+          "label": "Famille B",
+          "x": 492,
+          "y": 111
+        },
+        {
+          "id": "n4",
+          "label": "Espèce A1",
+          "x": 170,
+          "y": 198
+        },
+        {
+          "id": "n5",
+          "label": "Espèce B1",
+          "x": 492,
+          "y": 198
+        }
+      ],
+      "edges": [
+        {
+          "from": "n1",
+          "to": "n2"
+        },
+        {
+          "from": "n1",
+          "to": "n3"
+        },
+        {
+          "from": "n2",
+          "to": "n4"
+        },
+        {
+          "from": "n3",
+          "to": "n5"
+        }
+      ]
+    },
+    {
+      "kind": "archetype",
+      "slug": "univers-oeuvres-medias",
+      "pattern": "cluster",
+      "status": "illustration_non_canonique",
+      "caption": "Univers, œuvres, personnages, médias et déclinaisons reliés comme constellation.",
+      "nodes": [
+        {
+          "id": "n1",
+          "label": "Univers",
+          "x": 110,
+          "y": 95
+        },
+        {
+          "id": "n2",
+          "label": "Personnage",
+          "x": 262,
+          "y": 48
+        },
+        {
+          "id": "n3",
+          "label": "Œuvre",
+          "x": 263,
+          "y": 178
+        },
+        {
+          "id": "n4",
+          "label": "Épisode",
+          "x": 440,
+          "y": 100
+        },
+        {
+          "id": "n5",
+          "label": "Adaptation",
+          "x": 560,
+          "y": 178
+        }
+      ],
+      "edges": [
+        {
+          "from": "n1",
+          "to": "n2"
+        },
+        {
+          "from": "n1",
+          "to": "n3"
+        },
+        {
+          "from": "n2",
+          "to": "n4"
+        },
+        {
+          "from": "n3",
+          "to": "n4"
+        },
+        {
+          "from": "n4",
+          "to": "n5"
+        }
+      ]
+    },
+    {
+      "kind": "profile",
+      "slug": "environnement-protocolaire",
+      "pattern": "branching",
+      "status": "illustration_non_canonique",
+      "caption": "Un protocole linéaire comporte bifurcations, exceptions, escalades et traces d’exécution séparées.",
+      "nodes": [
+        {
+          "id": "n1",
+          "label": "Conditions",
+          "x": 74,
+          "y": 120
+        },
+        {
+          "id": "n2",
+          "label": "Action",
+          "x": 230,
+          "y": 120
+        },
+        {
+          "id": "n3",
+          "label": "Chemin A",
+          "x": 410,
+          "y": 65
+        },
+        {
+          "id": "n4",
+          "label": "Exception",
+          "x": 410,
+          "y": 176
+        },
+        {
+          "id": "n5",
+          "label": "Clôture",
+          "x": 582,
+          "y": 120
+        }
+      ],
+      "edges": [
+        {
+          "from": "n1",
+          "to": "n2"
+        },
+        {
+          "from": "n2",
+          "to": "n3"
+        },
+        {
+          "from": "n2",
+          "to": "n4"
+        },
+        {
+          "from": "n3",
+          "to": "n5"
+        },
+        {
+          "from": "n4",
+          "to": "n5"
+        }
+      ]
+    },
+    {
+      "kind": "profile",
+      "slug": "etat-de-systemes",
+      "pattern": "matrix",
+      "status": "illustration_non_canonique",
+      "caption": "Les systèmes occupent les lignes; les dimensions d’état, les colonnes; la temporalité demeure distincte.",
+      "nodes": [
+        {
+          "id": "n1",
+          "label": "Système A",
+          "x": 135,
+          "y": 76
+        },
+        {
+          "id": "n2",
+          "label": "Système B",
+          "x": 330,
+          "y": 76
+        },
+        {
+          "id": "n3",
+          "label": "Disponible ?",
+          "x": 525,
+          "y": 76
+        },
+        {
+          "id": "n4",
+          "label": "Versions",
+          "x": 135,
+          "y": 173
+        },
+        {
+          "id": "n5",
+          "label": "Capacité",
+          "x": 330,
+          "y": 173
+        },
+        {
+          "id": "n6",
+          "label": "Alerte",
+          "x": 525,
+          "y": 173
+        }
+      ],
+      "edges": []
+    },
+    {
+      "kind": "profile",
+      "slug": "suivi-employe",
+      "pattern": "casefile",
+      "status": "illustration_non_canonique",
+      "caption": "Un dossier central relie documents, rencontres, suivis, témoignages et actions décidées, sans les fusionner.",
+      "nodes": [
+        {
+          "id": "n1",
+          "label": "Dossier",
+          "x": 160,
+          "y": 122
+        },
+        {
+          "id": "n2",
+          "label": "Rencontres",
+          "x": 472,
+          "y": 34
+        },
+        {
+          "id": "n3",
+          "label": "Notes",
+          "x": 472,
+          "y": 91
+        },
+        {
+          "id": "n4",
+          "label": "Décisions",
+          "x": 472,
+          "y": 152
+        },
+        {
+          "id": "n5",
+          "label": "Prochain suivi",
+          "x": 472,
+          "y": 211
+        }
+      ],
+      "edges": [
+        {
+          "from": "n1",
+          "to": "n2"
+        },
+        {
+          "from": "n1",
+          "to": "n3"
+        },
+        {
+          "from": "n1",
+          "to": "n4"
+        },
+        {
+          "from": "n1",
+          "to": "n5"
+        }
+      ]
+    },
+    {
+      "kind": "profile",
+      "slug": "taxonomie-nature",
+      "pattern": "tree",
+      "status": "illustration_non_canonique",
+      "caption": "Une racine se ramifie en catégories, sous-catégories et spécimens avec synonymes et variantes.",
+      "nodes": [
+        {
+          "id": "n1",
+          "label": "Vivant",
+          "x": 330,
+          "y": 40
+        },
+        {
+          "id": "n2",
+          "label": "Famille A",
+          "x": 170,
+          "y": 111
+        },
+        {
+          "id": "n3",
+          "label": "Famille B",
+          "x": 492,
+          "y": 111
+        },
+        {
+          "id": "n4",
+          "label": "Espèce A",
+          "x": 170,
+          "y": 198
+        },
+        {
+          "id": "n5",
+          "label": "Espèce B",
+          "x": 492,
+          "y": 198
+        }
+      ],
+      "edges": [
+        {
+          "from": "n1",
+          "to": "n2"
+        },
+        {
+          "from": "n1",
+          "to": "n3"
+        },
+        {
+          "from": "n2",
+          "to": "n4"
+        },
+        {
+          "from": "n3",
+          "to": "n5"
+        }
+      ]
+    },
+    {
+      "kind": "profile",
+      "slug": "troubleshooting-systeme",
+      "pattern": "hub",
+      "status": "illustration_non_canonique",
+      "caption": "Un nœud-problème central relie les observations, les causes possibles, les tests et les états observés.",
+      "nodes": [
+        {
+          "id": "n1",
+          "label": "Incident",
+          "x": 330,
+          "y": 119
+        },
+        {
+          "id": "n2",
+          "label": "Symptômes",
+          "x": 112,
+          "y": 65
+        },
+        {
+          "id": "n3",
+          "label": "Logs",
+          "x": 548,
+          "y": 65
+        },
+        {
+          "id": "n4",
+          "label": "Hypothèses",
+          "x": 112,
+          "y": 185
+        },
+        {
+          "id": "n5",
+          "label": "Test",
+          "x": 548,
+          "y": 185
+        }
+      ],
+      "edges": [
+        {
+          "from": "n1",
+          "to": "n2"
+        },
+        {
+          "from": "n1",
+          "to": "n3"
+        },
+        {
+          "from": "n1",
+          "to": "n4"
+        },
+        {
+          "from": "n1",
+          "to": "n5"
+        }
+      ]
+    }
+  ]
+}

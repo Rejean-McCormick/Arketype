@@ -40,5 +40,19 @@
   "maturity": "candidate",
   "canonical_claims_in_template": false,
   "composition": "explicit_design_only",
-  "contract_status": "not_defined"
+  "contract_status": "not_defined",
+  "visual_pattern": "timeline",
+  "secondary_patterns": [
+    "hub"
+  ],
+  "structure_label": "mémoire évolutive",
+  "situational_schema": "Questions, hypothèses, pistes, sources et résultats se sédimentent dans le temps.",
+  "canonical_use_cases": [
+    "carnet de recherche",
+    "dossier d’étude",
+    "journal d’exploration"
+  ],
+  "case_examples": [
+    "Recherche, étude autodidacte"
+  ]
 }

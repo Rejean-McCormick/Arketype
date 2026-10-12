@@ -49,5 +49,19 @@
   "maturity": "candidate",
   "canonical_claims_in_template": false,
   "composition": "explicit_design_only",
-  "contract_status": "not_defined"
+  "contract_status": "not_defined",
+  "visual_pattern": "casefile",
+  "secondary_patterns": [
+    "timeline"
+  ],
+  "structure_label": "dossier de déposition",
+  "situational_schema": "Déclarations, supports, transcriptions, signatures, versions et évaluations distinctes.",
+  "canonical_use_cases": [
+    "prise de témoignage",
+    "dossier de déposition",
+    "recueil déclaratif"
+  ],
+  "case_examples": [
+    "Auditions, témoignages, déclarations"
+  ]
 }

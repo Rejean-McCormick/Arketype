@@ -41,5 +41,20 @@
   "maturity": "candidate",
   "canonical_claims_in_template": false,
   "composition": "explicit_design_only",
-  "contract_status": "not_defined"
+  "contract_status": "not_defined",
+  "visual_pattern": "branching",
+  "secondary_patterns": [
+    "linear"
+  ],
+  "structure_label": "séquence conditionnelle",
+  "situational_schema": "Étapes normées, préconditions, exceptions, rôles et issues possibles.",
+  "canonical_use_cases": [
+    "environnement protocolaire",
+    "procédure métier",
+    "playbook opérationnel"
+  ],
+  "case_examples": [
+    "PoliceOps",
+    "HospitalOps"
+  ]
 }

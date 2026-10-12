@@ -1,0 +1,20 @@
+{
+  "format": "arketype.assembly-recipe/1.0-non-normatif",
+  "id": "taxonomie-nature",
+  "title": "Taxonomie de la nature",
+  "primary_archetype": "taxonomie-classification",
+  "components": [
+    {
+      "archetype": "referentiel-semantique",
+      "relation": "definitions_et_termes",
+      "design_note": "Les concepts et synonymes enrichissent la taxonomie sans la remplacer.",
+      "status": "unresolved"
+    }
+  ],
+  "guidance": "Identifier le schéma de classification, les synonymes, les exceptions et les sources d’autorité.",
+  "composition_status": "design_only",
+  "logical_contract": "to_define",
+  "source_references": "to_pin_on_real_instance",
+  "authoritative_ownership": "to_decide",
+  "publication_authorization": false
+}

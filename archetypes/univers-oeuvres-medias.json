@@ -39,5 +39,19 @@
   "maturity": "candidate",
   "canonical_claims_in_template": false,
   "composition": "explicit_design_only",
-  "contract_status": "not_defined"
+  "contract_status": "not_defined",
+  "visual_pattern": "cluster",
+  "secondary_patterns": [
+    "network"
+  ],
+  "structure_label": "constellation narrative",
+  "situational_schema": "Univers, œuvres, personnages, médias et déclinaisons reliés comme constellation.",
+  "canonical_use_cases": [
+    "lore",
+    "franchise",
+    "corpus créatif"
+  ],
+  "case_examples": [
+    "Univers / œuvres / médias"
+  ]
 }

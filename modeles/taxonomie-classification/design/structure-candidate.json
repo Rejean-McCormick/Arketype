@@ -1,0 +1,30 @@
+{
+  "format": "arketype.structure-candidate/1.0-non-normatif",
+  "id_type": "ARK-17",
+  "forme": "taxonomie-classification",
+  "statut": "illustration-non-canonique",
+  "n_est_pas_un_artefact_enregistre": true,
+  "intention": "Arbre de classification pour cartographier espèces, types, catégories ou éléments du vivant et de la nature.",
+  "primitives_possibles": [
+    "racines",
+    "groupes",
+    "classes",
+    "sous_classes",
+    "specimens",
+    "relations_de_classement",
+    "synonymes"
+  ],
+  "contraintes_a_preserver": [
+    "Une relation de classement ne prouve pas une causalité ni une identité absolue; les critères de classement et leur version doivent être explicites."
+  ],
+  "exemple_payload_vide": {
+    "racines": [],
+    "groupes": [],
+    "classes": [],
+    "sous_classes": [],
+    "specimens": [],
+    "relations_de_classement": []
+  },
+  "contrat_logique": "a_definir_pour_un_domaine_reel",
+  "bibliotheque": "Arketype 1.2"
+}
