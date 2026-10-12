@@ -1,0 +1,26 @@
+{
+  "format": "arketype.assembly-recipe/1.0-non-normatif",
+  "id": "operations-protocoles",
+  "title": "PoliceOps et HospitalOps – connaissances procédurales",
+  "primary_archetype": "procedure-protocole",
+  "components": [
+    {
+      "archetype": "registre-evenementiel",
+      "relation": "reference_externe",
+      "design_note": "Les événements métiers et leur audit ne sont pas le protocole canonique.",
+      "status": "unresolved"
+    },
+    {
+      "archetype": "simulation-transition",
+      "relation": "projection_derivee",
+      "design_note": "Une mise en situation n’est pas l’exécution autorisée du protocole.",
+      "status": "unresolved"
+    }
+  ],
+  "guidance": "Séparer le protocole documenté, sa version, les préconditions et l’autorité d’exécution.",
+  "composition_status": "design_only",
+  "logical_contract": "to_define",
+  "source_references": "to_pin_on_real_instance",
+  "authoritative_ownership": "to_decide",
+  "publication_authorization": false
+}

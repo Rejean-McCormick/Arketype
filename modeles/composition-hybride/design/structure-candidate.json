@@ -1,0 +1,28 @@
+{
+  "format": "arketype.structure-candidate/1.0-non-normatif",
+  "id_type": "ARK-15",
+  "forme": "composition-hybride",
+  "statut": "illustration-non-canonique",
+  "n_est_pas_un_artefact_enregistre": true,
+  "intention": "Assemble plusieurs formes natives sans fusionner leurs propriétaires ni la couche opérationnelle.",
+  "primitives_possibles": [
+    "sous_modeles",
+    "frontieres",
+    "contrats_interface",
+    "references",
+    "politiques",
+    "projections"
+  ],
+  "contraintes_a_preserver": [
+    "Ne pas assimiler application opérationnelle, dossier personnel, moteur de calcul et Kristal de connaissance."
+  ],
+  "exemple_payload_vide": {
+    "sous_modeles": [],
+    "contrats_de_composition": [],
+    "frontieres_dautorite": [],
+    "references_epinglees": [],
+    "projections": []
+  },
+  "contrat_logique": "a_definir_pour_un_domaine_reel",
+  "bibliotheque": "Arketype 1.0"
+}

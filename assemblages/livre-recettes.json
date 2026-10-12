@@ -1,0 +1,20 @@
+{
+  "format": "arketype.assembly-recipe/1.0-non-normatif",
+  "id": "livre-recettes",
+  "title": "Livre de recettes",
+  "primary_archetype": "compilation-collection",
+  "components": [
+    {
+      "archetype": "procedure-protocole",
+      "relation": "reference_externe",
+      "design_note": "Chaque recette/variante peut porter son propre DAG de procédure.",
+      "status": "unresolved"
+    }
+  ],
+  "guidance": "La compilation possède l’organisation du livre, pas nécessairement la totalité des recettes.",
+  "composition_status": "design_only",
+  "logical_contract": "to_define",
+  "source_references": "to_pin_on_real_instance",
+  "authoritative_ownership": "to_decide",
+  "publication_authorization": false
+}

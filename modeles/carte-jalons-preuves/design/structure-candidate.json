@@ -1,0 +1,30 @@
+{
+  "format": "arketype.structure-candidate/1.0-non-normatif",
+  "id_type": "ARK-03",
+  "forme": "carte-jalons-preuves",
+  "statut": "illustration-non-canonique",
+  "n_est_pas_un_artefact_enregistre": true,
+  "intention": "Carte de carrefours, frontières atteintes et extrémités; références vers les preuves déjà faites ailleurs.",
+  "primitives_possibles": [
+    "carrefours",
+    "points_terminaux",
+    "frontieres_atteintes",
+    "arcs_resume",
+    "references_de_preuve",
+    "points_arrimage",
+    "obligations_ouvertes"
+  ],
+  "contraintes_a_preserver": [
+    "Un arc abrégé n’équivaut pas à une preuve: lien vers preuve exacte, portée et statut de validation requis."
+  ],
+  "exemple_payload_vide": {
+    "carrefours": [],
+    "extremites": [],
+    "arcs_resume": [],
+    "preuves_referencees": [],
+    "points_arrimage": [],
+    "obligations_ouvertes": []
+  },
+  "contrat_logique": "a_definir_pour_un_domaine_reel",
+  "bibliotheque": "Arketype 1.0"
+}

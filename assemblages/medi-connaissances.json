@@ -1,0 +1,32 @@
+{
+  "format": "arketype.assembly-recipe/1.0-non-normatif",
+  "id": "medi-connaissances",
+  "title": "MediKristal – noyau de connaissances extrait",
+  "primary_archetype": "composition-hybride",
+  "components": [
+    {
+      "archetype": "referentiel-semantique",
+      "relation": "sous_modele_candidate",
+      "design_note": "Référentiel de connaissances validables.",
+      "status": "unresolved"
+    },
+    {
+      "archetype": "procedure-protocole",
+      "relation": "sous_modele_candidate",
+      "design_note": "Protocoles distincts des actions cliniques.",
+      "status": "unresolved"
+    },
+    {
+      "archetype": "diagnostic-causal",
+      "relation": "sous_modele_candidate",
+      "design_note": "Modèles explicatifs sans décisions cliniques automatisées.",
+      "status": "unresolved"
+    }
+  ],
+  "guidance": "Dossiers patients, permissions et transactions restent hors du Kristal de connaissance et aucune validité clinique n’est présumée.",
+  "composition_status": "design_only",
+  "logical_contract": "to_define",
+  "source_references": "to_pin_on_real_instance",
+  "authoritative_ownership": "to_decide",
+  "publication_authorization": false
+}

@@ -1,0 +1,118 @@
+{
+  "suite": "Arketype 1.1.0 / 16 neutral templates",
+  "context": "local private working copy; not a publication or domain qualification",
+  "results": [
+    {
+      "slug": "carte-jalons-preuves",
+      "check": true,
+      "build_v9": true,
+      "members": 0,
+      "duration_s": 0.94
+    },
+    {
+      "slug": "compilation-collection",
+      "check": true,
+      "build_v9": true,
+      "members": 0,
+      "duration_s": 0.81
+    },
+    {
+      "slug": "composition-hybride",
+      "check": true,
+      "build_v9": true,
+      "members": 0,
+      "duration_s": 0.78
+    },
+    {
+      "slug": "deposition-temoignage",
+      "check": true,
+      "build_v9": true,
+      "members": 0,
+      "duration_s": 0.98
+    },
+    {
+      "slug": "diagnostic-causal",
+      "check": true,
+      "build_v9": true,
+      "members": 0,
+      "duration_s": 1.02
+    },
+    {
+      "slug": "federation-topologie",
+      "check": true,
+      "build_v9": true,
+      "members": 0,
+      "duration_s": 1.16
+    },
+    {
+      "slug": "interpretations-couches",
+      "check": true,
+      "build_v9": true,
+      "members": 0,
+      "duration_s": 1.05
+    },
+    {
+      "slug": "invariant-theorie",
+      "check": true,
+      "build_v9": true,
+      "members": 0,
+      "duration_s": 0.8
+    },
+    {
+      "slug": "memoire-recherche",
+      "check": true,
+      "build_v9": true,
+      "members": 0,
+      "duration_s": 0.97
+    },
+    {
+      "slug": "modele-multiplexe",
+      "check": true,
+      "build_v9": true,
+      "members": 0,
+      "duration_s": 0.92
+    },
+    {
+      "slug": "parcours-pedagogique",
+      "check": true,
+      "build_v9": true,
+      "members": 0,
+      "duration_s": 0.89
+    },
+    {
+      "slug": "procedure-protocole",
+      "check": true,
+      "build_v9": true,
+      "members": 0,
+      "duration_s": 0.85
+    },
+    {
+      "slug": "referentiel-semantique",
+      "check": true,
+      "build_v9": true,
+      "members": 0,
+      "duration_s": 0.8
+    },
+    {
+      "slug": "registre-evenementiel",
+      "check": true,
+      "build_v9": true,
+      "members": 0,
+      "duration_s": 1.14
+    },
+    {
+      "slug": "simulation-transition",
+      "check": true,
+      "build_v9": true,
+      "members": 0,
+      "duration_s": 1.08
+    },
+    {
+      "slug": "univers-oeuvres-medias",
+      "check": true,
+      "build_v9": true,
+      "members": 0,
+      "duration_s": 1.04
+    }
+  ]
+}

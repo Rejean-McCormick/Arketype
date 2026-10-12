@@ -1,0 +1,26 @@
+{
+  "format": "arketype.assembly-recipe/1.0-non-normatif",
+  "id": "univers-medias",
+  "title": "Univers, œuvres et parcours culturels",
+  "primary_archetype": "univers-oeuvres-medias",
+  "components": [
+    {
+      "archetype": "compilation-collection",
+      "relation": "projection_ou_reference",
+      "design_note": "Une sélection curatoriale ne devient pas propriétaire des œuvres.",
+      "status": "unresolved"
+    },
+    {
+      "archetype": "registre-evenementiel",
+      "relation": "couche_candidate",
+      "design_note": "Distinguer événements fictifs et événements de publication.",
+      "status": "unresolved"
+    }
+  ],
+  "guidance": "Les manifestations physiques et les plateformes sont distinctes de l’identité de l’œuvre.",
+  "composition_status": "design_only",
+  "logical_contract": "to_define",
+  "source_references": "to_pin_on_real_instance",
+  "authoritative_ownership": "to_decide",
+  "publication_authorization": false
+}

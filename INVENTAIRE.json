@@ -1,0 +1,3042 @@
+{
+  "format": "arketype.file-inventory/1.0-non-normatif",
+  "version": "1.0.0",
+  "scope": "local_archive_bytes_not_logical_commitments",
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "6bded2d8b3f088611862c5ee51c6c7eff465e1b7938b5c12bb5c9084b7ed5cbe",
+      "size_bytes": 1040
+    },
+    {
+      "path": "CHANGELOG.md",
+      "sha256": "2732a5c5e588391158f5c5b55c4deaf70256c8e18241f2d401983afcc7123415",
+      "size_bytes": 973
+    },
+    {
+      "path": "Lancer_Arketype.pyw",
+      "sha256": "71122c9c330ba7082c8ad417cb5a2673a16d12e1e27ff5773ada804a45b1948b",
+      "size_bytes": 3179
+    },
+    {
+      "path": "RAPPORT_TESTS.md",
+      "sha256": "b8713a02fa13991d15476051e6e5b20eeb824e0ade1151c57ddf26767f65e209",
+      "size_bytes": 2718
+    },
+    {
+      "path": "README.md",
+      "sha256": "94fed30a9a27ceda6949f9d32e7db4ecb9ec545877534e556f35d2eaee12aafb",
+      "size_bytes": 6748
+    },
+    {
+      "path": "archetypes/carte-jalons-preuves.json",
+      "sha256": "100c13d12858fa6cbe23c32d8955858a4fc05258ff1dc6676756a04c9642516d",
+      "size_bytes": 1445
+    },
+    {
+      "path": "archetypes/compilation-collection.json",
+      "sha256": "36f1ade32be12ca5f752f4e0c2652454e7411a78e6eea34c2715361f1afddd0b",
+      "size_bytes": 1379
+    },
+    {
+      "path": "archetypes/composition-hybride.json",
+      "sha256": "896718d15361b46c8867ffb0776b0bf23af7416b930d0817a5066c4dfaea1d3c",
+      "size_bytes": 1368
+    },
+    {
+      "path": "archetypes/diagnostic-causal.json",
+      "sha256": "3d459a5bc1865a7ac6afa409b23b02f25f222253d5df2d6afe96d7c3ecd724b4",
+      "size_bytes": 1335
+    },
+    {
+      "path": "archetypes/federation-topologie.json",
+      "sha256": "8ffe6d25cba3068f7ce7bef6910daa806ed6319c73278ca0ee0159113631a7b8",
+      "size_bytes": 1261
+    },
+    {
+      "path": "archetypes/interpretations-couches.json",
+      "sha256": "a35fc2ec727df702ba10f6c00b6c1ef6e0dab9b83e0c43819535b744a07e1246",
+      "size_bytes": 1363
+    },
+    {
+      "path": "archetypes/invariant-theorie.json",
+      "sha256": "d7d2a00df2c19c60c542b13d9c224067c745c4915ae137e5d7d004d20ccccccb",
+      "size_bytes": 1340
+    },
+    {
+      "path": "archetypes/memoire-recherche.json",
+      "sha256": "fd026f9e02b7008ebbcbe465e53b9b2309850df4c95784cc107004d11398d95b",
+      "size_bytes": 1345
+    },
+    {
+      "path": "archetypes/modele-multiplexe.json",
+      "sha256": "d306e3a5e30dadf93507bfdea3a3e30c80c5e899da313fe93ccd4bfcfd748b25",
+      "size_bytes": 1342
+    },
+    {
+      "path": "archetypes/parcours-pedagogique.json",
+      "sha256": "a3b27a73ee44bdb50aeb89d2ed0457b14214947faea87f0aeebd85b7f6c011e4",
+      "size_bytes": 1379
+    },
+    {
+      "path": "archetypes/procedure-protocole.json",
+      "sha256": "0c25e96f89547245c0a7ec14e4c5d2890002f8425fea27f275043dbf99964265",
+      "size_bytes": 1415
+    },
+    {
+      "path": "archetypes/referentiel-semantique.json",
+      "sha256": "adbca3d401bcd16ce0fc677ad978737c5d0ae434123152c81075cfced6af2ded",
+      "size_bytes": 1367
+    },
+    {
+      "path": "archetypes/registre-evenementiel.json",
+      "sha256": "b1348c52ee3d5fe8aa8e086cf1f04196a344f67f0d96f0be6c69bb13f7cf5d6a",
+      "size_bytes": 1335
+    },
+    {
+      "path": "archetypes/simulation-transition.json",
+      "sha256": "d02700a406999d49db83b870065c682e2b1ff5e9fa241269b8a7feb12b1ff07b",
+      "size_bytes": 1268
+    },
+    {
+      "path": "archetypes/univers-oeuvres-medias.json",
+      "sha256": "3402b97b78027bc6085c1110a6fcc4b1c8f30c644f2fdcad8cbda6e81ab3a267",
+      "size_bytes": 1410
+    },
+    {
+      "path": "assemblages/atlas-preuves.json",
+      "sha256": "4f8c2fa0d0b32905186a8360565674c39ada61527fd979efebfc44457891a846",
+      "size_bytes": 978
+    },
+    {
+      "path": "assemblages/diagnostic-vehicule.json",
+      "sha256": "1b836593567bc96ffffe80215cb7eb2f22b9687d88ace2c709c5c796172d2b2b",
+      "size_bytes": 925
+    },
+    {
+      "path": "assemblages/ekole-multiusage.json",
+      "sha256": "1f3a545629525a19e83b9a0447f6fbee078f33cbb8b91e624ddf36937feecb97",
+      "size_bytes": 960
+    },
+    {
+      "path": "assemblages/livre-recettes.json",
+      "sha256": "542262800f6f25a8ce692c1f35884de81563fbdc8628d51744518385c094a319",
+      "size_bytes": 716
+    },
+    {
+      "path": "assemblages/medi-connaissances.json",
+      "sha256": "dbf016837dd4bb8f79f62f5f7d5426ded0b051266e6deefc46a913c7a8da7209",
+      "size_bytes": 1174
+    },
+    {
+      "path": "assemblages/operations-protocoles.json",
+      "sha256": "1354d26d9593d7748d7d65476c311f0bbb37ae43c49942d9032210d904ea9071",
+      "size_bytes": 995
+    },
+    {
+      "path": "assemblages/uckk-campus.json",
+      "sha256": "873fe671f95f4ca2f6ffa9f905c8ae8e837d16695604eaf26ab302f3474d6d28",
+      "size_bytes": 790
+    },
+    {
+      "path": "assemblages/univers-medias.json",
+      "sha256": "12f99aa26b955a8eb01153dd6d2311562d567bc04518e6a5224a45b2ff98d9b4",
+      "size_bytes": 959
+    },
+    {
+      "path": "catalogue.json",
+      "sha256": "fb2766439033c5e855e2338f596c969dcbb407ee741fc2d585c43051c67ff822",
+      "size_bytes": 3334
+    },
+    {
+      "path": "docs/01_CONCEPTS.md",
+      "sha256": "cd468d7d3769b3cf66012437986046d5543f3112d2aab8e1c799aa5ed0149c10",
+      "size_bytes": 2319
+    },
+    {
+      "path": "docs/02_CLASSIFICATION.md",
+      "sha256": "b06573c94861605e5e19bdec64db806f477db4901309d31bd71ddb4f727bcd79",
+      "size_bytes": 2681
+    },
+    {
+      "path": "docs/03_COMPOSITION.md",
+      "sha256": "172d87632656d7c5742c80d81989c71d15df1c63e3c0ac86f711254e91fb6f53",
+      "size_bytes": 2779
+    },
+    {
+      "path": "docs/04_CAS_REELS.md",
+      "sha256": "2ea3a44338a64d89dc0126e05cf7bc36bd179ebf1ecc9b12d42d1b9c8a36b2b1",
+      "size_bytes": 1822
+    },
+    {
+      "path": "docs/05_SECURITE_ET_LIMITES.md",
+      "sha256": "224a987074e56cb52386eac16531dd8f503aa21473594264c7585c8e4df09316",
+      "size_bytes": 2095
+    },
+    {
+      "path": "docs/06_ETENDRE_ARKETYPE.md",
+      "sha256": "3b300b9e2c4c6820f32f358d8330e640af3266847f704055b2697a55d20ca504",
+      "size_bytes": 1910
+    },
+    {
+      "path": "docs/07_PROVENANCE.md",
+      "sha256": "b25bfa23ccc5324a516bfb83eaa927280da6eb7e8bddf167d961aa6dc721fb18",
+      "size_bytes": 2129
+    },
+    {
+      "path": "docs/08_GUIDE_PARCOURS.md",
+      "sha256": "dbf0740eadc7c0fd6b2a0c825820c7a18a15958351e7888731e4da1dd1cc889c",
+      "size_bytes": 2771
+    },
+    {
+      "path": "arketype.py",
+      "sha256": "6031a09535346d0a32193bef61d8f85bfbf84aafe905c2ec89f24ea90a839822",
+      "size_bytes": 16416
+    },
+    {
+      "path": "modeles/carte-jalons-preuves/.gitignore",
+      "sha256": "ba9e766905d86932af10e20f99bdafe6b4a37eab2b45a1d91e011bc12985858f",
+      "size_bytes": 99
+    },
+    {
+      "path": "modeles/carte-jalons-preuves/AGENTS.md",
+      "sha256": "211615e096aa531e0f933cd6562802dffa48fa4227ba3211b734f49fbafff406",
+      "size_bytes": 1416
+    },
+    {
+      "path": "modeles/carte-jalons-preuves/README.md",
+      "sha256": "c17627e8e385bcb63306254946dc50f09695b6e17a003de9be34cbaba3afd0c8",
+      "size_bytes": 922
+    },
+    {
+      "path": "modeles/carte-jalons-preuves/build/v9/build-receipt.json",
+      "sha256": "2046c91453d2eedb28f701f7d74d56cd4e77aafa933c4175f4bf3870c1ed819b",
+      "size_bytes": 718
+    },
+    {
+      "path": "modeles/carte-jalons-preuves/build/v9/state-snapshot.json",
+      "sha256": "2beed235c16e9c67f7917efc23f9850b4fcfa19fef0b6b87c76051a1ffd1fe32",
+      "size_bytes": 366
+    },
+    {
+      "path": "modeles/carte-jalons-preuves/build/v9/v9-capabilities.json",
+      "sha256": "40bd95a6d168768ab6bd65f8f9c5f4cbdfa79c0c810860b95f66ffe29d564ff1",
+      "size_bytes": 817
+    },
+    {
+      "path": "modeles/carte-jalons-preuves/canon/domain/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "modeles/carte-jalons-preuves/canon/epistemic/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "modeles/carte-jalons-preuves/canon/operations/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "modeles/carte-jalons-preuves/canon/state.index.json",
+      "sha256": "28a1ce910aa079e50199b467487fac9af0584ad43360200f5a4666d2481e1c08",
+      "size_bytes": 275
+    },
+    {
+      "path": "modeles/carte-jalons-preuves/design/structure-candidate.json",
+      "sha256": "6be2bafba8b65dc500c374050757c3e282cefa653fe722e648d2f99b8711d220",
+      "size_bytes": 986
+    },
+    {
+      "path": "modeles/carte-jalons-preuves/docs/00_INTENT_AND_SCOPE.md",
+      "sha256": "86dcaaa97f031c71957e128ee457fd6afa1bdeb415ee753cf162bf0c4995b8d1",
+      "size_bytes": 517
+    },
+    {
+      "path": "modeles/carte-jalons-preuves/docs/01_SEMANTIC_BOUNDARY.md",
+      "sha256": "4355ec2011fabb6d3e60a015d333b8bad50715d04bdda77aded1f41afefeb9e7",
+      "size_bytes": 495
+    },
+    {
+      "path": "modeles/carte-jalons-preuves/docs/02_NATIVE_MODEL.md",
+      "sha256": "0dadd83510ab59e56743af6cdcdec0bfd27dcee1405e896e9b1281cfbfd6af19",
+      "size_bytes": 863
+    },
+    {
+      "path": "modeles/carte-jalons-preuves/docs/03_EPISTEMIC_MODEL.md",
+      "sha256": "8917c735309e5434f1f9e4d6d8da95e78a016a4255552199b5855ee0d6b46487",
+      "size_bytes": 470
+    },
+    {
+      "path": "modeles/carte-jalons-preuves/docs/04_CANONICAL_DERIVED.md",
+      "sha256": "9ca1154b18ae0980a96e562cedbef1ce85a2912940cf52819dd0fd402e1b1345",
+      "size_bytes": 311
+    },
+    {
+      "path": "modeles/carte-jalons-preuves/docs/05_ORIENTATIONS.md",
+      "sha256": "4ef452034359517fbbc8038117817fc8695d5c3effc12544e8b7437ac6323b77",
+      "size_bytes": 287
+    },
+    {
+      "path": "modeles/carte-jalons-preuves/docs/06_VALIDATION.md",
+      "sha256": "7de295f7e82cd14494c07df64ab72ced9f4efa76150d4a0daccaecf90e6bc8a4",
+      "size_bytes": 573
+    },
+    {
+      "path": "modeles/carte-jalons-preuves/docs/07_HOSTING_AND_PUBLICATION.md",
+      "sha256": "ae4e01c7a5ecdb94b4603452bdc78973771b000addd3ed83ebf2082db1d5022b",
+      "size_bytes": 795
+    },
+    {
+      "path": "modeles/carte-jalons-preuves/docs/08_GLOSSARY.md",
+      "sha256": "1f6375e83316f360dc9e98383876a5cea39f9d826293c9a9ee4dbb22a7928c01",
+      "size_bytes": 218
+    },
+    {
+      "path": "modeles/carte-jalons-preuves/docs/ARKETYPE.md",
+      "sha256": "4c55ff42ff9d1f4c1ecdcabc562c8ae4b3524253ff4ab1fa5f8f80dd74b928b8",
+      "size_bytes": 591
+    },
+    {
+      "path": "modeles/carte-jalons-preuves/docs/PROFILE_NOTES.md",
+      "sha256": "3ddc4acbeaf5301db93a1d4c522a6b17babde4417aa0b03703b5bf00a00542ef",
+      "size_bytes": 200
+    },
+    {
+      "path": "modeles/carte-jalons-preuves/arketype.template.json",
+      "sha256": "811784bf0953a7d243ff02e725a5c995574f536dd04d3f801f1303059c30e2c9",
+      "size_bytes": 309
+    },
+    {
+      "path": "modeles/carte-jalons-preuves/kristal.workspace.json",
+      "sha256": "ba0f379916e649011727ff1002d1ea13ad3402586a925f416488c031b94160ec",
+      "size_bytes": 2047
+    },
+    {
+      "path": "modeles/carte-jalons-preuves/runtime/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "modeles/carte-jalons-preuves/sources/source-catalog.json",
+      "sha256": "4e11d46142630914cfd1fb447c6b065d9143d24d179a18edc1162f3063edfce9",
+      "size_bytes": 64
+    },
+    {
+      "path": "modeles/carte-jalons-preuves/state/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "modeles/carte-jalons-preuves/tools/_templates/AGENTS.kristal.md",
+      "sha256": "211615e096aa531e0f933cd6562802dffa48fa4227ba3211b734f49fbafff406",
+      "size_bytes": 1416
+    },
+    {
+      "path": "modeles/carte-jalons-preuves/tools/_templates/AI_START_HERE.md",
+      "sha256": "bd988bba7c5ed7cd1ad8b69aa62e99d0fa9066ab89b1dc81f7a0c3739e8c1d07",
+      "size_bytes": 2595
+    },
+    {
+      "path": "modeles/carte-jalons-preuves/tools/_templates/github-hosting.json",
+      "sha256": "774e87548a6917b1b25e7c610d727d19af4df081897a816a02744ff5eaf021c9",
+      "size_bytes": 378
+    },
+    {
+      "path": "modeles/carte-jalons-preuves/tools/_templates/gitignore-kristal.txt",
+      "sha256": "ba9e766905d86932af10e20f99bdafe6b4a37eab2b45a1d91e011bc12985858f",
+      "size_bytes": 99
+    },
+    {
+      "path": "modeles/carte-jalons-preuves/tools/_templates/projection.json",
+      "sha256": "9a93c6e5ae26d5d989458a3c7dd43fbe3b5d878a23a6db61d9cc82594d068eb2",
+      "size_bytes": 565
+    },
+    {
+      "path": "modeles/carte-jalons-preuves/tools/_templates/readme-kristal.md",
+      "sha256": "8c006082936943cd65ebf45403f7c951831f8ce4dd640849d994d5c8c180f682",
+      "size_bytes": 844
+    },
+    {
+      "path": "modeles/carte-jalons-preuves/tools/_templates/source-catalog.json",
+      "sha256": "4e11d46142630914cfd1fb447c6b065d9143d24d179a18edc1162f3063edfce9",
+      "size_bytes": 64
+    },
+    {
+      "path": "modeles/carte-jalons-preuves/tools/_templates/state.index.json",
+      "sha256": "28a1ce910aa079e50199b467487fac9af0584ad43360200f5a4666d2481e1c08",
+      "size_bytes": 275
+    },
+    {
+      "path": "modeles/carte-jalons-preuves/tools/_templates/workspace.json",
+      "sha256": "6e048d7ed0086aa47ca6ebd1a3d3798057a5d9861bc2a5b732d04c8b0cc23a2d",
+      "size_bytes": 1680
+    },
+    {
+      "path": "modeles/carte-jalons-preuves/tools/kristal.py",
+      "sha256": "282ab66efcab5aa414e4663103d498c53e570cd3a52142cbdd39cbc5c2da5d95",
+      "size_bytes": 123848
+    },
+    {
+      "path": "modeles/compilation-collection/.gitignore",
+      "sha256": "ba9e766905d86932af10e20f99bdafe6b4a37eab2b45a1d91e011bc12985858f",
+      "size_bytes": 99
+    },
+    {
+      "path": "modeles/compilation-collection/AGENTS.md",
+      "sha256": "211615e096aa531e0f933cd6562802dffa48fa4227ba3211b734f49fbafff406",
+      "size_bytes": 1416
+    },
+    {
+      "path": "modeles/compilation-collection/README.md",
+      "sha256": "5a90a1807de8f079910eff9e3bb746f8d6d2fb21b2bd307b4beaf8a2ca2cee9d",
+      "size_bytes": 912
+    },
+    {
+      "path": "modeles/compilation-collection/build/v9/build-receipt.json",
+      "sha256": "91637fe512553e15c685a22e949bca492e5f8c9bdf6dd74d75fca7644bcfc403",
+      "size_bytes": 720
+    },
+    {
+      "path": "modeles/compilation-collection/build/v9/state-snapshot.json",
+      "sha256": "a6060e3858820adf01a68600039136227baeb8c31dad05bb8ead0a2d62703995",
+      "size_bytes": 368
+    },
+    {
+      "path": "modeles/compilation-collection/build/v9/v9-capabilities.json",
+      "sha256": "40bd95a6d168768ab6bd65f8f9c5f4cbdfa79c0c810860b95f66ffe29d564ff1",
+      "size_bytes": 817
+    },
+    {
+      "path": "modeles/compilation-collection/canon/domain/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "modeles/compilation-collection/canon/epistemic/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "modeles/compilation-collection/canon/operations/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "modeles/compilation-collection/canon/state.index.json",
+      "sha256": "28a1ce910aa079e50199b467487fac9af0584ad43360200f5a4666d2481e1c08",
+      "size_bytes": 275
+    },
+    {
+      "path": "modeles/compilation-collection/design/structure-candidate.json",
+      "sha256": "5afe92acae66fcc95f409125f6cec17157a312df9b21899a8798edb2403a3c5e",
+      "size_bytes": 906
+    },
+    {
+      "path": "modeles/compilation-collection/docs/00_INTENT_AND_SCOPE.md",
+      "sha256": "8687354284074de8ab577f60d725b8686770e59469b81ce33ca3717b77194bcb",
+      "size_bytes": 493
+    },
+    {
+      "path": "modeles/compilation-collection/docs/01_SEMANTIC_BOUNDARY.md",
+      "sha256": "4355ec2011fabb6d3e60a015d333b8bad50715d04bdda77aded1f41afefeb9e7",
+      "size_bytes": 495
+    },
+    {
+      "path": "modeles/compilation-collection/docs/02_NATIVE_MODEL.md",
+      "sha256": "e7873aa4146b24c99200ecdae76a01a088de6161ec5ad47c71c608b46e36ecc2",
+      "size_bytes": 809
+    },
+    {
+      "path": "modeles/compilation-collection/docs/03_EPISTEMIC_MODEL.md",
+      "sha256": "616cd0d03771ee455f6cfa6d7cdbb43703bdfc2b857422f8984f2c86f710e83f",
+      "size_bytes": 483
+    },
+    {
+      "path": "modeles/compilation-collection/docs/04_CANONICAL_DERIVED.md",
+      "sha256": "9ca1154b18ae0980a96e562cedbef1ce85a2912940cf52819dd0fd402e1b1345",
+      "size_bytes": 311
+    },
+    {
+      "path": "modeles/compilation-collection/docs/05_ORIENTATIONS.md",
+      "sha256": "4ef452034359517fbbc8038117817fc8695d5c3effc12544e8b7437ac6323b77",
+      "size_bytes": 287
+    },
+    {
+      "path": "modeles/compilation-collection/docs/06_VALIDATION.md",
+      "sha256": "7de295f7e82cd14494c07df64ab72ced9f4efa76150d4a0daccaecf90e6bc8a4",
+      "size_bytes": 573
+    },
+    {
+      "path": "modeles/compilation-collection/docs/07_HOSTING_AND_PUBLICATION.md",
+      "sha256": "ae4e01c7a5ecdb94b4603452bdc78973771b000addd3ed83ebf2082db1d5022b",
+      "size_bytes": 795
+    },
+    {
+      "path": "modeles/compilation-collection/docs/08_GLOSSARY.md",
+      "sha256": "1f6375e83316f360dc9e98383876a5cea39f9d826293c9a9ee4dbb22a7928c01",
+      "size_bytes": 218
+    },
+    {
+      "path": "modeles/compilation-collection/docs/ARKETYPE.md",
+      "sha256": "0cee0503be427a121bcd8a9feed15b5f2ef7a9449fbf2cab8e54e6baada60f0b",
+      "size_bytes": 589
+    },
+    {
+      "path": "modeles/compilation-collection/docs/PROFILE_NOTES.md",
+      "sha256": "5f62161b993e08b75068058c91f55fb7e105775d86fcf52e38fdd2f6be7d7d44",
+      "size_bytes": 180
+    },
+    {
+      "path": "modeles/compilation-collection/arketype.template.json",
+      "sha256": "203a14bd5f508fd354aeda36e733e02b86415bebb1bbccc0540910461a243eb0",
+      "size_bytes": 307
+    },
+    {
+      "path": "modeles/compilation-collection/kristal.workspace.json",
+      "sha256": "25c0d4dc8864d35d0f6fe878a31546f9bdf80928fd833deedc999bf4440c8d90",
+      "size_bytes": 2031
+    },
+    {
+      "path": "modeles/compilation-collection/runtime/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "modeles/compilation-collection/sources/source-catalog.json",
+      "sha256": "4e11d46142630914cfd1fb447c6b065d9143d24d179a18edc1162f3063edfce9",
+      "size_bytes": 64
+    },
+    {
+      "path": "modeles/compilation-collection/state/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "modeles/compilation-collection/tools/_templates/AGENTS.kristal.md",
+      "sha256": "211615e096aa531e0f933cd6562802dffa48fa4227ba3211b734f49fbafff406",
+      "size_bytes": 1416
+    },
+    {
+      "path": "modeles/compilation-collection/tools/_templates/AI_START_HERE.md",
+      "sha256": "bd988bba7c5ed7cd1ad8b69aa62e99d0fa9066ab89b1dc81f7a0c3739e8c1d07",
+      "size_bytes": 2595
+    },
+    {
+      "path": "modeles/compilation-collection/tools/_templates/github-hosting.json",
+      "sha256": "774e87548a6917b1b25e7c610d727d19af4df081897a816a02744ff5eaf021c9",
+      "size_bytes": 378
+    },
+    {
+      "path": "modeles/compilation-collection/tools/_templates/gitignore-kristal.txt",
+      "sha256": "ba9e766905d86932af10e20f99bdafe6b4a37eab2b45a1d91e011bc12985858f",
+      "size_bytes": 99
+    },
+    {
+      "path": "modeles/compilation-collection/tools/_templates/projection.json",
+      "sha256": "9a93c6e5ae26d5d989458a3c7dd43fbe3b5d878a23a6db61d9cc82594d068eb2",
+      "size_bytes": 565
+    },
+    {
+      "path": "modeles/compilation-collection/tools/_templates/readme-kristal.md",
+      "sha256": "8c006082936943cd65ebf45403f7c951831f8ce4dd640849d994d5c8c180f682",
+      "size_bytes": 844
+    },
+    {
+      "path": "modeles/compilation-collection/tools/_templates/source-catalog.json",
+      "sha256": "4e11d46142630914cfd1fb447c6b065d9143d24d179a18edc1162f3063edfce9",
+      "size_bytes": 64
+    },
+    {
+      "path": "modeles/compilation-collection/tools/_templates/state.index.json",
+      "sha256": "28a1ce910aa079e50199b467487fac9af0584ad43360200f5a4666d2481e1c08",
+      "size_bytes": 275
+    },
+    {
+      "path": "modeles/compilation-collection/tools/_templates/workspace.json",
+      "sha256": "6e048d7ed0086aa47ca6ebd1a3d3798057a5d9861bc2a5b732d04c8b0cc23a2d",
+      "size_bytes": 1680
+    },
+    {
+      "path": "modeles/compilation-collection/tools/kristal.py",
+      "sha256": "282ab66efcab5aa414e4663103d498c53e570cd3a52142cbdd39cbc5c2da5d95",
+      "size_bytes": 123848
+    },
+    {
+      "path": "modeles/composition-hybride/.gitignore",
+      "sha256": "ba9e766905d86932af10e20f99bdafe6b4a37eab2b45a1d91e011bc12985858f",
+      "size_bytes": 99
+    },
+    {
+      "path": "modeles/composition-hybride/AGENTS.md",
+      "sha256": "211615e096aa531e0f933cd6562802dffa48fa4227ba3211b734f49fbafff406",
+      "size_bytes": 1416
+    },
+    {
+      "path": "modeles/composition-hybride/README.md",
+      "sha256": "acf20e3d13415faa8c397fad0cf384bc13a8624d0ef204b3e6158b65d95c5d47",
+      "size_bytes": 936
+    },
+    {
+      "path": "modeles/composition-hybride/build/v9/build-receipt.json",
+      "sha256": "3b67cadaad25322818ca454901f754bdb7605e312348dfda64dc1feab396bfb4",
+      "size_bytes": 717
+    },
+    {
+      "path": "modeles/composition-hybride/build/v9/state-snapshot.json",
+      "sha256": "5ffdf8e89875851268a2405bf70421be112abe5c5e976ae1b293f3d486f93598",
+      "size_bytes": 365
+    },
+    {
+      "path": "modeles/composition-hybride/build/v9/v9-capabilities.json",
+      "sha256": "40bd95a6d168768ab6bd65f8f9c5f4cbdfa79c0c810860b95f66ffe29d564ff1",
+      "size_bytes": 817
+    },
+    {
+      "path": "modeles/composition-hybride/canon/domain/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "modeles/composition-hybride/canon/epistemic/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "modeles/composition-hybride/canon/operations/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "modeles/composition-hybride/canon/state.index.json",
+      "sha256": "28a1ce910aa079e50199b467487fac9af0584ad43360200f5a4666d2481e1c08",
+      "size_bytes": 275
+    },
+    {
+      "path": "modeles/composition-hybride/design/structure-candidate.json",
+      "sha256": "de4470677521c5ab72e597bdefebc6b1b597dc5af7f01a55ca716533e2d66882",
+      "size_bytes": 907
+    },
+    {
+      "path": "modeles/composition-hybride/docs/00_INTENT_AND_SCOPE.md",
+      "sha256": "80e28ea38f902189f87758507e356edba906038469eb8f23230c81196c47e0a0",
+      "size_bytes": 527
+    },
+    {
+      "path": "modeles/composition-hybride/docs/01_SEMANTIC_BOUNDARY.md",
+      "sha256": "4355ec2011fabb6d3e60a015d333b8bad50715d04bdda77aded1f41afefeb9e7",
+      "size_bytes": 495
+    },
+    {
+      "path": "modeles/composition-hybride/docs/02_NATIVE_MODEL.md",
+      "sha256": "1ba92205498c593359ec9c58c41dbd521c8f7ac45b42258b44ec0f8edeee689e",
+      "size_bytes": 806
+    },
+    {
+      "path": "modeles/composition-hybride/docs/03_EPISTEMIC_MODEL.md",
+      "sha256": "172df75559008f06194a131902ffb3409720f376758be87829099bf9a7ed30ed",
+      "size_bytes": 466
+    },
+    {
+      "path": "modeles/composition-hybride/docs/04_CANONICAL_DERIVED.md",
+      "sha256": "9ca1154b18ae0980a96e562cedbef1ce85a2912940cf52819dd0fd402e1b1345",
+      "size_bytes": 311
+    },
+    {
+      "path": "modeles/composition-hybride/docs/05_ORIENTATIONS.md",
+      "sha256": "4ef452034359517fbbc8038117817fc8695d5c3effc12544e8b7437ac6323b77",
+      "size_bytes": 287
+    },
+    {
+      "path": "modeles/composition-hybride/docs/06_VALIDATION.md",
+      "sha256": "7de295f7e82cd14494c07df64ab72ced9f4efa76150d4a0daccaecf90e6bc8a4",
+      "size_bytes": 573
+    },
+    {
+      "path": "modeles/composition-hybride/docs/07_HOSTING_AND_PUBLICATION.md",
+      "sha256": "ae4e01c7a5ecdb94b4603452bdc78973771b000addd3ed83ebf2082db1d5022b",
+      "size_bytes": 795
+    },
+    {
+      "path": "modeles/composition-hybride/docs/08_GLOSSARY.md",
+      "sha256": "1f6375e83316f360dc9e98383876a5cea39f9d826293c9a9ee4dbb22a7928c01",
+      "size_bytes": 218
+    },
+    {
+      "path": "modeles/composition-hybride/docs/ARKETYPE.md",
+      "sha256": "a7b32848420a235eb2a69accf31f46e28eee616d78f5e0f5dfd475b09eef986b",
+      "size_bytes": 608
+    },
+    {
+      "path": "modeles/composition-hybride/docs/PROFILE_NOTES.md",
+      "sha256": "5f62161b993e08b75068058c91f55fb7e105775d86fcf52e38fdd2f6be7d7d44",
+      "size_bytes": 180
+    },
+    {
+      "path": "modeles/composition-hybride/arketype.template.json",
+      "sha256": "5bd7536873aa30c0f946c6e0c592398d23e527ee4c17c8134421b89029d0f85e",
+      "size_bytes": 304
+    },
+    {
+      "path": "modeles/composition-hybride/kristal.workspace.json",
+      "sha256": "7da12bafadb82865eb4c399db994d2177496e5845cb1ac31ab82ce5987cae5ca",
+      "size_bytes": 2055
+    },
+    {
+      "path": "modeles/composition-hybride/runtime/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "modeles/composition-hybride/sources/source-catalog.json",
+      "sha256": "4e11d46142630914cfd1fb447c6b065d9143d24d179a18edc1162f3063edfce9",
+      "size_bytes": 64
+    },
+    {
+      "path": "modeles/composition-hybride/state/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "modeles/composition-hybride/tools/_templates/AGENTS.kristal.md",
+      "sha256": "211615e096aa531e0f933cd6562802dffa48fa4227ba3211b734f49fbafff406",
+      "size_bytes": 1416
+    },
+    {
+      "path": "modeles/composition-hybride/tools/_templates/AI_START_HERE.md",
+      "sha256": "bd988bba7c5ed7cd1ad8b69aa62e99d0fa9066ab89b1dc81f7a0c3739e8c1d07",
+      "size_bytes": 2595
+    },
+    {
+      "path": "modeles/composition-hybride/tools/_templates/github-hosting.json",
+      "sha256": "774e87548a6917b1b25e7c610d727d19af4df081897a816a02744ff5eaf021c9",
+      "size_bytes": 378
+    },
+    {
+      "path": "modeles/composition-hybride/tools/_templates/gitignore-kristal.txt",
+      "sha256": "ba9e766905d86932af10e20f99bdafe6b4a37eab2b45a1d91e011bc12985858f",
+      "size_bytes": 99
+    },
+    {
+      "path": "modeles/composition-hybride/tools/_templates/projection.json",
+      "sha256": "9a93c6e5ae26d5d989458a3c7dd43fbe3b5d878a23a6db61d9cc82594d068eb2",
+      "size_bytes": 565
+    },
+    {
+      "path": "modeles/composition-hybride/tools/_templates/readme-kristal.md",
+      "sha256": "8c006082936943cd65ebf45403f7c951831f8ce4dd640849d994d5c8c180f682",
+      "size_bytes": 844
+    },
+    {
+      "path": "modeles/composition-hybride/tools/_templates/source-catalog.json",
+      "sha256": "4e11d46142630914cfd1fb447c6b065d9143d24d179a18edc1162f3063edfce9",
+      "size_bytes": 64
+    },
+    {
+      "path": "modeles/composition-hybride/tools/_templates/state.index.json",
+      "sha256": "28a1ce910aa079e50199b467487fac9af0584ad43360200f5a4666d2481e1c08",
+      "size_bytes": 275
+    },
+    {
+      "path": "modeles/composition-hybride/tools/_templates/workspace.json",
+      "sha256": "6e048d7ed0086aa47ca6ebd1a3d3798057a5d9861bc2a5b732d04c8b0cc23a2d",
+      "size_bytes": 1680
+    },
+    {
+      "path": "modeles/composition-hybride/tools/kristal.py",
+      "sha256": "282ab66efcab5aa414e4663103d498c53e570cd3a52142cbdd39cbc5c2da5d95",
+      "size_bytes": 123848
+    },
+    {
+      "path": "modeles/diagnostic-causal/.gitignore",
+      "sha256": "ba9e766905d86932af10e20f99bdafe6b4a37eab2b45a1d91e011bc12985858f",
+      "size_bytes": 99
+    },
+    {
+      "path": "modeles/diagnostic-causal/AGENTS.md",
+      "sha256": "211615e096aa531e0f933cd6562802dffa48fa4227ba3211b734f49fbafff406",
+      "size_bytes": 1416
+    },
+    {
+      "path": "modeles/diagnostic-causal/README.md",
+      "sha256": "c8b8a7a6d8b547bf60dab40c6ee1b0fe27749d9882fd12885bcfeb27e490d537",
+      "size_bytes": 898
+    },
+    {
+      "path": "modeles/diagnostic-causal/build/v9/build-receipt.json",
+      "sha256": "4f737a8f70d01022bd5b67451e066bc14b82f9ba56221e2cd21176524dde8591",
+      "size_bytes": 715
+    },
+    {
+      "path": "modeles/diagnostic-causal/build/v9/state-snapshot.json",
+      "sha256": "c950c438e49ed1b1a50c69354d73533dd1ccf3ba0bc580a040b4da544f841ef5",
+      "size_bytes": 363
+    },
+    {
+      "path": "modeles/diagnostic-causal/build/v9/v9-capabilities.json",
+      "sha256": "40bd95a6d168768ab6bd65f8f9c5f4cbdfa79c0c810860b95f66ffe29d564ff1",
+      "size_bytes": 817
+    },
+    {
+      "path": "modeles/diagnostic-causal/canon/domain/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "modeles/diagnostic-causal/canon/epistemic/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "modeles/diagnostic-causal/canon/operations/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "modeles/diagnostic-causal/canon/state.index.json",
+      "sha256": "28a1ce910aa079e50199b467487fac9af0584ad43360200f5a4666d2481e1c08",
+      "size_bytes": 275
+    },
+    {
+      "path": "modeles/diagnostic-causal/design/structure-candidate.json",
+      "sha256": "b1673599e708331ec9e054cac36c14076ca2add095ece2ab57b409b3a63c2f45",
+      "size_bytes": 912
+    },
+    {
+      "path": "modeles/diagnostic-causal/docs/00_INTENT_AND_SCOPE.md",
+      "sha256": "b668351d733074ccb4c8b58e11d6153da6bc76fbaaba9e98b27d29421eede646",
+      "size_bytes": 466
+    },
+    {
+      "path": "modeles/diagnostic-causal/docs/01_SEMANTIC_BOUNDARY.md",
+      "sha256": "4355ec2011fabb6d3e60a015d333b8bad50715d04bdda77aded1f41afefeb9e7",
+      "size_bytes": 495
+    },
+    {
+      "path": "modeles/diagnostic-causal/docs/02_NATIVE_MODEL.md",
+      "sha256": "2712c6bd875ac3c87906e6f82ef87711c9646b3a0c2542872db64f16b10811d3",
+      "size_bytes": 779
+    },
+    {
+      "path": "modeles/diagnostic-causal/docs/03_EPISTEMIC_MODEL.md",
+      "sha256": "bc175b9a8f49c8062ab441f5e026ab95efec4dc0264964616a0c31eec7be0502",
+      "size_bytes": 465
+    },
+    {
+      "path": "modeles/diagnostic-causal/docs/04_CANONICAL_DERIVED.md",
+      "sha256": "9ca1154b18ae0980a96e562cedbef1ce85a2912940cf52819dd0fd402e1b1345",
+      "size_bytes": 311
+    },
+    {
+      "path": "modeles/diagnostic-causal/docs/05_ORIENTATIONS.md",
+      "sha256": "4ef452034359517fbbc8038117817fc8695d5c3effc12544e8b7437ac6323b77",
+      "size_bytes": 287
+    },
+    {
+      "path": "modeles/diagnostic-causal/docs/06_VALIDATION.md",
+      "sha256": "7de295f7e82cd14494c07df64ab72ced9f4efa76150d4a0daccaecf90e6bc8a4",
+      "size_bytes": 573
+    },
+    {
+      "path": "modeles/diagnostic-causal/docs/07_HOSTING_AND_PUBLICATION.md",
+      "sha256": "ae4e01c7a5ecdb94b4603452bdc78973771b000addd3ed83ebf2082db1d5022b",
+      "size_bytes": 795
+    },
+    {
+      "path": "modeles/diagnostic-causal/docs/08_GLOSSARY.md",
+      "sha256": "1f6375e83316f360dc9e98383876a5cea39f9d826293c9a9ee4dbb22a7928c01",
+      "size_bytes": 218
+    },
+    {
+      "path": "modeles/diagnostic-causal/docs/ARKETYPE.md",
+      "sha256": "c29ea2faea2032c3461dd5aaf662cd86dac7bd09bcbfa64d96a5fb54079f3a8c",
+      "size_bytes": 592
+    },
+    {
+      "path": "modeles/diagnostic-causal/docs/PROFILE_NOTES.md",
+      "sha256": "8cabfaa9ff626dc91fff969b8add4d91492bc587555fa0e6cccb53a4aa22779b",
+      "size_bytes": 214
+    },
+    {
+      "path": "modeles/diagnostic-causal/arketype.template.json",
+      "sha256": "498cbc4c757188eeda4115bf9bf12fce6902f158cf2864430ea2c5ac68475e43",
+      "size_bytes": 308
+    },
+    {
+      "path": "modeles/diagnostic-causal/kristal.workspace.json",
+      "sha256": "1bf4a5663186f3c13cc940d60d22ee3a19a7bab2b6e5165a2ae64a20c1c783a8",
+      "size_bytes": 2019
+    },
+    {
+      "path": "modeles/diagnostic-causal/runtime/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "modeles/diagnostic-causal/sources/source-catalog.json",
+      "sha256": "4e11d46142630914cfd1fb447c6b065d9143d24d179a18edc1162f3063edfce9",
+      "size_bytes": 64
+    },
+    {
+      "path": "modeles/diagnostic-causal/state/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "modeles/diagnostic-causal/tools/_templates/AGENTS.kristal.md",
+      "sha256": "211615e096aa531e0f933cd6562802dffa48fa4227ba3211b734f49fbafff406",
+      "size_bytes": 1416
+    },
+    {
+      "path": "modeles/diagnostic-causal/tools/_templates/AI_START_HERE.md",
+      "sha256": "bd988bba7c5ed7cd1ad8b69aa62e99d0fa9066ab89b1dc81f7a0c3739e8c1d07",
+      "size_bytes": 2595
+    },
+    {
+      "path": "modeles/diagnostic-causal/tools/_templates/github-hosting.json",
+      "sha256": "774e87548a6917b1b25e7c610d727d19af4df081897a816a02744ff5eaf021c9",
+      "size_bytes": 378
+    },
+    {
+      "path": "modeles/diagnostic-causal/tools/_templates/gitignore-kristal.txt",
+      "sha256": "ba9e766905d86932af10e20f99bdafe6b4a37eab2b45a1d91e011bc12985858f",
+      "size_bytes": 99
+    },
+    {
+      "path": "modeles/diagnostic-causal/tools/_templates/projection.json",
+      "sha256": "9a93c6e5ae26d5d989458a3c7dd43fbe3b5d878a23a6db61d9cc82594d068eb2",
+      "size_bytes": 565
+    },
+    {
+      "path": "modeles/diagnostic-causal/tools/_templates/readme-kristal.md",
+      "sha256": "8c006082936943cd65ebf45403f7c951831f8ce4dd640849d994d5c8c180f682",
+      "size_bytes": 844
+    },
+    {
+      "path": "modeles/diagnostic-causal/tools/_templates/source-catalog.json",
+      "sha256": "4e11d46142630914cfd1fb447c6b065d9143d24d179a18edc1162f3063edfce9",
+      "size_bytes": 64
+    },
+    {
+      "path": "modeles/diagnostic-causal/tools/_templates/state.index.json",
+      "sha256": "28a1ce910aa079e50199b467487fac9af0584ad43360200f5a4666d2481e1c08",
+      "size_bytes": 275
+    },
+    {
+      "path": "modeles/diagnostic-causal/tools/_templates/workspace.json",
+      "sha256": "6e048d7ed0086aa47ca6ebd1a3d3798057a5d9861bc2a5b732d04c8b0cc23a2d",
+      "size_bytes": 1680
+    },
+    {
+      "path": "modeles/diagnostic-causal/tools/kristal.py",
+      "sha256": "282ab66efcab5aa414e4663103d498c53e570cd3a52142cbdd39cbc5c2da5d95",
+      "size_bytes": 123848
+    },
+    {
+      "path": "modeles/federation-topologie/.gitignore",
+      "sha256": "ba9e766905d86932af10e20f99bdafe6b4a37eab2b45a1d91e011bc12985858f",
+      "size_bytes": 99
+    },
+    {
+      "path": "modeles/federation-topologie/AGENTS.md",
+      "sha256": "211615e096aa531e0f933cd6562802dffa48fa4227ba3211b734f49fbafff406",
+      "size_bytes": 1416
+    },
+    {
+      "path": "modeles/federation-topologie/README.md",
+      "sha256": "be5c369607039a35c03e40f48dd13554d21b810f2b44d1d6672135792c2f4fc4",
+      "size_bytes": 912
+    },
+    {
+      "path": "modeles/federation-topologie/build/v9/build-receipt.json",
+      "sha256": "01da878353bac710b6a7d24fee8100256b8c1ce24e505139bcd0213f83c2c62c",
+      "size_bytes": 718
+    },
+    {
+      "path": "modeles/federation-topologie/build/v9/state-snapshot.json",
+      "sha256": "466fa706f28300bf933a8bcd687d3523344130c098ef9dc8e609ac750318e1ba",
+      "size_bytes": 366
+    },
+    {
+      "path": "modeles/federation-topologie/build/v9/v9-capabilities.json",
+      "sha256": "40bd95a6d168768ab6bd65f8f9c5f4cbdfa79c0c810860b95f66ffe29d564ff1",
+      "size_bytes": 817
+    },
+    {
+      "path": "modeles/federation-topologie/canon/domain/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "modeles/federation-topologie/canon/epistemic/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "modeles/federation-topologie/canon/operations/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "modeles/federation-topologie/canon/state.index.json",
+      "sha256": "28a1ce910aa079e50199b467487fac9af0584ad43360200f5a4666d2481e1c08",
+      "size_bytes": 275
+    },
+    {
+      "path": "modeles/federation-topologie/design/structure-candidate.json",
+      "sha256": "551c5fa2cf3d83ffa9e3cfc2fe35a7b71dec34e2206b02794d9925cc93a358a7",
+      "size_bytes": 830
+    },
+    {
+      "path": "modeles/federation-topologie/docs/00_INTENT_AND_SCOPE.md",
+      "sha256": "bdba884e727ef08d81330e239f2113d386c480e1352fd10b3456754d60c371b7",
+      "size_bytes": 454
+    },
+    {
+      "path": "modeles/federation-topologie/docs/01_SEMANTIC_BOUNDARY.md",
+      "sha256": "4355ec2011fabb6d3e60a015d333b8bad50715d04bdda77aded1f41afefeb9e7",
+      "size_bytes": 495
+    },
+    {
+      "path": "modeles/federation-topologie/docs/02_NATIVE_MODEL.md",
+      "sha256": "b8917787901f444c7541de5a09c7966bc2b7e50b63f246dbb996be3ce8bb05b4",
+      "size_bytes": 754
+    },
+    {
+      "path": "modeles/federation-topologie/docs/03_EPISTEMIC_MODEL.md",
+      "sha256": "fa3c7b65f707dad8b0f394c38e73f6517c009f7e9f89b94260e96afaa60c0b8d",
+      "size_bytes": 453
+    },
+    {
+      "path": "modeles/federation-topologie/docs/04_CANONICAL_DERIVED.md",
+      "sha256": "9ca1154b18ae0980a96e562cedbef1ce85a2912940cf52819dd0fd402e1b1345",
+      "size_bytes": 311
+    },
+    {
+      "path": "modeles/federation-topologie/docs/05_ORIENTATIONS.md",
+      "sha256": "4ef452034359517fbbc8038117817fc8695d5c3effc12544e8b7437ac6323b77",
+      "size_bytes": 287
+    },
+    {
+      "path": "modeles/federation-topologie/docs/06_VALIDATION.md",
+      "sha256": "7de295f7e82cd14494c07df64ab72ced9f4efa76150d4a0daccaecf90e6bc8a4",
+      "size_bytes": 573
+    },
+    {
+      "path": "modeles/federation-topologie/docs/07_HOSTING_AND_PUBLICATION.md",
+      "sha256": "ae4e01c7a5ecdb94b4603452bdc78973771b000addd3ed83ebf2082db1d5022b",
+      "size_bytes": 795
+    },
+    {
+      "path": "modeles/federation-topologie/docs/08_GLOSSARY.md",
+      "sha256": "1f6375e83316f360dc9e98383876a5cea39f9d826293c9a9ee4dbb22a7928c01",
+      "size_bytes": 218
+    },
+    {
+      "path": "modeles/federation-topologie/docs/ARKETYPE.md",
+      "sha256": "d41a6094095879db2103613b3a3e3571bea767e5afea442ed5f59dd49b576a95",
+      "size_bytes": 588
+    },
+    {
+      "path": "modeles/federation-topologie/docs/PROFILE_NOTES.md",
+      "sha256": "cf71c6149bff3609bf6a2aeb80f5069665797fd00d92951537d0c4f7c6a87e2c",
+      "size_bytes": 196
+    },
+    {
+      "path": "modeles/federation-topologie/arketype.template.json",
+      "sha256": "a6354757b142632d373a637c6792875bc07465df1f67a7508529917078e2882c",
+      "size_bytes": 315
+    },
+    {
+      "path": "modeles/federation-topologie/kristal.workspace.json",
+      "sha256": "837a5b3fe9db5287ad0e520eba2946c86c196caad42c10b82dc12669cff95524",
+      "size_bytes": 2045
+    },
+    {
+      "path": "modeles/federation-topologie/runtime/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "modeles/federation-topologie/sources/source-catalog.json",
+      "sha256": "4e11d46142630914cfd1fb447c6b065d9143d24d179a18edc1162f3063edfce9",
+      "size_bytes": 64
+    },
+    {
+      "path": "modeles/federation-topologie/state/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "modeles/federation-topologie/tools/_templates/AGENTS.kristal.md",
+      "sha256": "211615e096aa531e0f933cd6562802dffa48fa4227ba3211b734f49fbafff406",
+      "size_bytes": 1416
+    },
+    {
+      "path": "modeles/federation-topologie/tools/_templates/AI_START_HERE.md",
+      "sha256": "bd988bba7c5ed7cd1ad8b69aa62e99d0fa9066ab89b1dc81f7a0c3739e8c1d07",
+      "size_bytes": 2595
+    },
+    {
+      "path": "modeles/federation-topologie/tools/_templates/github-hosting.json",
+      "sha256": "774e87548a6917b1b25e7c610d727d19af4df081897a816a02744ff5eaf021c9",
+      "size_bytes": 378
+    },
+    {
+      "path": "modeles/federation-topologie/tools/_templates/gitignore-kristal.txt",
+      "sha256": "ba9e766905d86932af10e20f99bdafe6b4a37eab2b45a1d91e011bc12985858f",
+      "size_bytes": 99
+    },
+    {
+      "path": "modeles/federation-topologie/tools/_templates/projection.json",
+      "sha256": "9a93c6e5ae26d5d989458a3c7dd43fbe3b5d878a23a6db61d9cc82594d068eb2",
+      "size_bytes": 565
+    },
+    {
+      "path": "modeles/federation-topologie/tools/_templates/readme-kristal.md",
+      "sha256": "8c006082936943cd65ebf45403f7c951831f8ce4dd640849d994d5c8c180f682",
+      "size_bytes": 844
+    },
+    {
+      "path": "modeles/federation-topologie/tools/_templates/source-catalog.json",
+      "sha256": "4e11d46142630914cfd1fb447c6b065d9143d24d179a18edc1162f3063edfce9",
+      "size_bytes": 64
+    },
+    {
+      "path": "modeles/federation-topologie/tools/_templates/state.index.json",
+      "sha256": "28a1ce910aa079e50199b467487fac9af0584ad43360200f5a4666d2481e1c08",
+      "size_bytes": 275
+    },
+    {
+      "path": "modeles/federation-topologie/tools/_templates/workspace.json",
+      "sha256": "6e048d7ed0086aa47ca6ebd1a3d3798057a5d9861bc2a5b732d04c8b0cc23a2d",
+      "size_bytes": 1680
+    },
+    {
+      "path": "modeles/federation-topologie/tools/kristal.py",
+      "sha256": "282ab66efcab5aa414e4663103d498c53e570cd3a52142cbdd39cbc5c2da5d95",
+      "size_bytes": 123848
+    },
+    {
+      "path": "modeles/interpretations-couches/.gitignore",
+      "sha256": "ba9e766905d86932af10e20f99bdafe6b4a37eab2b45a1d91e011bc12985858f",
+      "size_bytes": 99
+    },
+    {
+      "path": "modeles/interpretations-couches/AGENTS.md",
+      "sha256": "211615e096aa531e0f933cd6562802dffa48fa4227ba3211b734f49fbafff406",
+      "size_bytes": 1416
+    },
+    {
+      "path": "modeles/interpretations-couches/README.md",
+      "sha256": "d1a0c1f47437912769b79090d86ac26db70c7b7fe05105ad11239687d7e268eb",
+      "size_bytes": 922
+    },
+    {
+      "path": "modeles/interpretations-couches/build/v9/build-receipt.json",
+      "sha256": "791f0e13c18394e75558e274b562c10e60ae94899d98f357734132ffa4ec0bde",
+      "size_bytes": 721
+    },
+    {
+      "path": "modeles/interpretations-couches/build/v9/state-snapshot.json",
+      "sha256": "0d128507df4d628f8fcfb3f52c6473b9a0b00d4dc5107def614c54c5d21aabab",
+      "size_bytes": 369
+    },
+    {
+      "path": "modeles/interpretations-couches/build/v9/v9-capabilities.json",
+      "sha256": "40bd95a6d168768ab6bd65f8f9c5f4cbdfa79c0c810860b95f66ffe29d564ff1",
+      "size_bytes": 817
+    },
+    {
+      "path": "modeles/interpretations-couches/canon/domain/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "modeles/interpretations-couches/canon/epistemic/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "modeles/interpretations-couches/canon/operations/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "modeles/interpretations-couches/canon/state.index.json",
+      "sha256": "28a1ce910aa079e50199b467487fac9af0584ad43360200f5a4666d2481e1c08",
+      "size_bytes": 275
+    },
+    {
+      "path": "modeles/interpretations-couches/design/structure-candidate.json",
+      "sha256": "99fcd207b02bd40c008f2ca6f6aa5c6f60b7dbc6a1666f22a568a03bb5bb9c4a",
+      "size_bytes": 891
+    },
+    {
+      "path": "modeles/interpretations-couches/docs/00_INTENT_AND_SCOPE.md",
+      "sha256": "e84e9b0c34be90e815c62837c692b2944bc16b0f0912ebfeffa0f7aa425fc13e",
+      "size_bytes": 483
+    },
+    {
+      "path": "modeles/interpretations-couches/docs/01_SEMANTIC_BOUNDARY.md",
+      "sha256": "4355ec2011fabb6d3e60a015d333b8bad50715d04bdda77aded1f41afefeb9e7",
+      "size_bytes": 495
+    },
+    {
+      "path": "modeles/interpretations-couches/docs/02_NATIVE_MODEL.md",
+      "sha256": "a04c4064fea138b9f88496b8065ef7a8ab6ca5a2c11ae9725c61b0d2dddd2445",
+      "size_bytes": 783
+    },
+    {
+      "path": "modeles/interpretations-couches/docs/03_EPISTEMIC_MODEL.md",
+      "sha256": "edd8a9d540c1985e97028c4c978f618150a392ba160d9b06c39ff7c796107a7e",
+      "size_bytes": 459
+    },
+    {
+      "path": "modeles/interpretations-couches/docs/04_CANONICAL_DERIVED.md",
+      "sha256": "9ca1154b18ae0980a96e562cedbef1ce85a2912940cf52819dd0fd402e1b1345",
+      "size_bytes": 311
+    },
+    {
+      "path": "modeles/interpretations-couches/docs/05_ORIENTATIONS.md",
+      "sha256": "4ef452034359517fbbc8038117817fc8695d5c3effc12544e8b7437ac6323b77",
+      "size_bytes": 287
+    },
+    {
+      "path": "modeles/interpretations-couches/docs/06_VALIDATION.md",
+      "sha256": "7de295f7e82cd14494c07df64ab72ced9f4efa76150d4a0daccaecf90e6bc8a4",
+      "size_bytes": 573
+    },
+    {
+      "path": "modeles/interpretations-couches/docs/07_HOSTING_AND_PUBLICATION.md",
+      "sha256": "ae4e01c7a5ecdb94b4603452bdc78973771b000addd3ed83ebf2082db1d5022b",
+      "size_bytes": 795
+    },
+    {
+      "path": "modeles/interpretations-couches/docs/08_GLOSSARY.md",
+      "sha256": "1f6375e83316f360dc9e98383876a5cea39f9d826293c9a9ee4dbb22a7928c01",
+      "size_bytes": 218
+    },
+    {
+      "path": "modeles/interpretations-couches/docs/ARKETYPE.md",
+      "sha256": "edf8a99874a8947a9877c74f93f43e13087b6bcaae65897e842b116e25db7499",
+      "size_bytes": 588
+    },
+    {
+      "path": "modeles/interpretations-couches/docs/PROFILE_NOTES.md",
+      "sha256": "7204cd9a55d23d1dcca037e2a556fa37c611910bb9165338bd34374939efd931",
+      "size_bytes": 213
+    },
+    {
+      "path": "modeles/interpretations-couches/arketype.template.json",
+      "sha256": "a2bafea586dede9ac53ab06fe016784ffa00e801f8e14601fd13b1333f3b26dd",
+      "size_bytes": 311
+    },
+    {
+      "path": "modeles/interpretations-couches/kristal.workspace.json",
+      "sha256": "d2765297737e25e3e832c327702fdc77f17044ec7f0f11a1eef4728928fb6c80",
+      "size_bytes": 2055
+    },
+    {
+      "path": "modeles/interpretations-couches/runtime/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "modeles/interpretations-couches/sources/source-catalog.json",
+      "sha256": "4e11d46142630914cfd1fb447c6b065d9143d24d179a18edc1162f3063edfce9",
+      "size_bytes": 64
+    },
+    {
+      "path": "modeles/interpretations-couches/state/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "modeles/interpretations-couches/tools/_templates/AGENTS.kristal.md",
+      "sha256": "211615e096aa531e0f933cd6562802dffa48fa4227ba3211b734f49fbafff406",
+      "size_bytes": 1416
+    },
+    {
+      "path": "modeles/interpretations-couches/tools/_templates/AI_START_HERE.md",
+      "sha256": "bd988bba7c5ed7cd1ad8b69aa62e99d0fa9066ab89b1dc81f7a0c3739e8c1d07",
+      "size_bytes": 2595
+    },
+    {
+      "path": "modeles/interpretations-couches/tools/_templates/github-hosting.json",
+      "sha256": "774e87548a6917b1b25e7c610d727d19af4df081897a816a02744ff5eaf021c9",
+      "size_bytes": 378
+    },
+    {
+      "path": "modeles/interpretations-couches/tools/_templates/gitignore-kristal.txt",
+      "sha256": "ba9e766905d86932af10e20f99bdafe6b4a37eab2b45a1d91e011bc12985858f",
+      "size_bytes": 99
+    },
+    {
+      "path": "modeles/interpretations-couches/tools/_templates/projection.json",
+      "sha256": "9a93c6e5ae26d5d989458a3c7dd43fbe3b5d878a23a6db61d9cc82594d068eb2",
+      "size_bytes": 565
+    },
+    {
+      "path": "modeles/interpretations-couches/tools/_templates/readme-kristal.md",
+      "sha256": "8c006082936943cd65ebf45403f7c951831f8ce4dd640849d994d5c8c180f682",
+      "size_bytes": 844
+    },
+    {
+      "path": "modeles/interpretations-couches/tools/_templates/source-catalog.json",
+      "sha256": "4e11d46142630914cfd1fb447c6b065d9143d24d179a18edc1162f3063edfce9",
+      "size_bytes": 64
+    },
+    {
+      "path": "modeles/interpretations-couches/tools/_templates/state.index.json",
+      "sha256": "28a1ce910aa079e50199b467487fac9af0584ad43360200f5a4666d2481e1c08",
+      "size_bytes": 275
+    },
+    {
+      "path": "modeles/interpretations-couches/tools/_templates/workspace.json",
+      "sha256": "6e048d7ed0086aa47ca6ebd1a3d3798057a5d9861bc2a5b732d04c8b0cc23a2d",
+      "size_bytes": 1680
+    },
+    {
+      "path": "modeles/interpretations-couches/tools/kristal.py",
+      "sha256": "282ab66efcab5aa414e4663103d498c53e570cd3a52142cbdd39cbc5c2da5d95",
+      "size_bytes": 123848
+    },
+    {
+      "path": "modeles/invariant-theorie/.gitignore",
+      "sha256": "ba9e766905d86932af10e20f99bdafe6b4a37eab2b45a1d91e011bc12985858f",
+      "size_bytes": 99
+    },
+    {
+      "path": "modeles/invariant-theorie/AGENTS.md",
+      "sha256": "211615e096aa531e0f933cd6562802dffa48fa4227ba3211b734f49fbafff406",
+      "size_bytes": 1416
+    },
+    {
+      "path": "modeles/invariant-theorie/README.md",
+      "sha256": "1167c744288c1fde938243beffec87d3de75e29784151b472293796821a4cc2c",
+      "size_bytes": 922
+    },
+    {
+      "path": "modeles/invariant-theorie/build/v9/build-receipt.json",
+      "sha256": "bf0c70a301c2290af0ab6fc7d5cf53624bb6828a98b4abe3ff0aee6b91bbbca4",
+      "size_bytes": 715
+    },
+    {
+      "path": "modeles/invariant-theorie/build/v9/state-snapshot.json",
+      "sha256": "5bb94388efcb043b70e4a071ad7c75e090fdd92a962f244855d209e6e7d8efa7",
+      "size_bytes": 363
+    },
+    {
+      "path": "modeles/invariant-theorie/build/v9/v9-capabilities.json",
+      "sha256": "40bd95a6d168768ab6bd65f8f9c5f4cbdfa79c0c810860b95f66ffe29d564ff1",
+      "size_bytes": 817
+    },
+    {
+      "path": "modeles/invariant-theorie/canon/domain/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "modeles/invariant-theorie/canon/epistemic/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "modeles/invariant-theorie/canon/operations/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "modeles/invariant-theorie/canon/state.index.json",
+      "sha256": "28a1ce910aa079e50199b467487fac9af0584ad43360200f5a4666d2481e1c08",
+      "size_bytes": 275
+    },
+    {
+      "path": "modeles/invariant-theorie/design/structure-candidate.json",
+      "sha256": "8a20a1509d8a9397c958f91048cf48537684ae49a2ebbe0d83c5c207c757448d",
+      "size_bytes": 906
+    },
+    {
+      "path": "modeles/invariant-theorie/docs/00_INTENT_AND_SCOPE.md",
+      "sha256": "11afe3e6dbb8945904b6cd0a674de1b3b8b058398cc50cb3fdb8542233cc395b",
+      "size_bytes": 492
+    },
+    {
+      "path": "modeles/invariant-theorie/docs/01_SEMANTIC_BOUNDARY.md",
+      "sha256": "4355ec2011fabb6d3e60a015d333b8bad50715d04bdda77aded1f41afefeb9e7",
+      "size_bytes": 495
+    },
+    {
+      "path": "modeles/invariant-theorie/docs/02_NATIVE_MODEL.md",
+      "sha256": "c6dad23822c1218e835efd6bda58c1b25c99357652d522c60d099a2c6d484342",
+      "size_bytes": 774
+    },
+    {
+      "path": "modeles/invariant-theorie/docs/03_EPISTEMIC_MODEL.md",
+      "sha256": "47f09db1b5eae69b370fad6e976b3ef96707d20f8a103f4c2efd681d797476e5",
+      "size_bytes": 438
+    },
+    {
+      "path": "modeles/invariant-theorie/docs/04_CANONICAL_DERIVED.md",
+      "sha256": "9ca1154b18ae0980a96e562cedbef1ce85a2912940cf52819dd0fd402e1b1345",
+      "size_bytes": 311
+    },
+    {
+      "path": "modeles/invariant-theorie/docs/05_ORIENTATIONS.md",
+      "sha256": "4ef452034359517fbbc8038117817fc8695d5c3effc12544e8b7437ac6323b77",
+      "size_bytes": 287
+    },
+    {
+      "path": "modeles/invariant-theorie/docs/06_VALIDATION.md",
+      "sha256": "7de295f7e82cd14494c07df64ab72ced9f4efa76150d4a0daccaecf90e6bc8a4",
+      "size_bytes": 573
+    },
+    {
+      "path": "modeles/invariant-theorie/docs/07_HOSTING_AND_PUBLICATION.md",
+      "sha256": "ae4e01c7a5ecdb94b4603452bdc78973771b000addd3ed83ebf2082db1d5022b",
+      "size_bytes": 795
+    },
+    {
+      "path": "modeles/invariant-theorie/docs/08_GLOSSARY.md",
+      "sha256": "1f6375e83316f360dc9e98383876a5cea39f9d826293c9a9ee4dbb22a7928c01",
+      "size_bytes": 218
+    },
+    {
+      "path": "modeles/invariant-theorie/docs/ARKETYPE.md",
+      "sha256": "db49213afed26865bdb4211a5fedab12ed5d73d3ce6ed30483437b1c53065db4",
+      "size_bytes": 593
+    },
+    {
+      "path": "modeles/invariant-theorie/docs/PROFILE_NOTES.md",
+      "sha256": "43ebf84b5ee45f2cb8c28d2a8aea6c1c3fb60318714bc129357ff2d009292f02",
+      "size_bytes": 211
+    },
+    {
+      "path": "modeles/invariant-theorie/arketype.template.json",
+      "sha256": "6fd36e31f788aa040dcd2e51352b94280c926af8e18d7ff3b6e9ba65efdc1827",
+      "size_bytes": 307
+    },
+    {
+      "path": "modeles/invariant-theorie/kristal.workspace.json",
+      "sha256": "29ee02bccfc3551e08a806cb9359f895c0b078764cc7a90779f9f462b2a70a99",
+      "size_bytes": 2047
+    },
+    {
+      "path": "modeles/invariant-theorie/runtime/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "modeles/invariant-theorie/sources/source-catalog.json",
+      "sha256": "4e11d46142630914cfd1fb447c6b065d9143d24d179a18edc1162f3063edfce9",
+      "size_bytes": 64
+    },
+    {
+      "path": "modeles/invariant-theorie/state/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "modeles/invariant-theorie/tools/_templates/AGENTS.kristal.md",
+      "sha256": "211615e096aa531e0f933cd6562802dffa48fa4227ba3211b734f49fbafff406",
+      "size_bytes": 1416
+    },
+    {
+      "path": "modeles/invariant-theorie/tools/_templates/AI_START_HERE.md",
+      "sha256": "bd988bba7c5ed7cd1ad8b69aa62e99d0fa9066ab89b1dc81f7a0c3739e8c1d07",
+      "size_bytes": 2595
+    },
+    {
+      "path": "modeles/invariant-theorie/tools/_templates/github-hosting.json",
+      "sha256": "774e87548a6917b1b25e7c610d727d19af4df081897a816a02744ff5eaf021c9",
+      "size_bytes": 378
+    },
+    {
+      "path": "modeles/invariant-theorie/tools/_templates/gitignore-kristal.txt",
+      "sha256": "ba9e766905d86932af10e20f99bdafe6b4a37eab2b45a1d91e011bc12985858f",
+      "size_bytes": 99
+    },
+    {
+      "path": "modeles/invariant-theorie/tools/_templates/projection.json",
+      "sha256": "9a93c6e5ae26d5d989458a3c7dd43fbe3b5d878a23a6db61d9cc82594d068eb2",
+      "size_bytes": 565
+    },
+    {
+      "path": "modeles/invariant-theorie/tools/_templates/readme-kristal.md",
+      "sha256": "8c006082936943cd65ebf45403f7c951831f8ce4dd640849d994d5c8c180f682",
+      "size_bytes": 844
+    },
+    {
+      "path": "modeles/invariant-theorie/tools/_templates/source-catalog.json",
+      "sha256": "4e11d46142630914cfd1fb447c6b065d9143d24d179a18edc1162f3063edfce9",
+      "size_bytes": 64
+    },
+    {
+      "path": "modeles/invariant-theorie/tools/_templates/state.index.json",
+      "sha256": "28a1ce910aa079e50199b467487fac9af0584ad43360200f5a4666d2481e1c08",
+      "size_bytes": 275
+    },
+    {
+      "path": "modeles/invariant-theorie/tools/_templates/workspace.json",
+      "sha256": "6e048d7ed0086aa47ca6ebd1a3d3798057a5d9861bc2a5b732d04c8b0cc23a2d",
+      "size_bytes": 1680
+    },
+    {
+      "path": "modeles/invariant-theorie/tools/kristal.py",
+      "sha256": "282ab66efcab5aa414e4663103d498c53e570cd3a52142cbdd39cbc5c2da5d95",
+      "size_bytes": 123848
+    },
+    {
+      "path": "modeles/memoire-recherche/.gitignore",
+      "sha256": "ba9e766905d86932af10e20f99bdafe6b4a37eab2b45a1d91e011bc12985858f",
+      "size_bytes": 99
+    },
+    {
+      "path": "modeles/memoire-recherche/AGENTS.md",
+      "sha256": "211615e096aa531e0f933cd6562802dffa48fa4227ba3211b734f49fbafff406",
+      "size_bytes": 1416
+    },
+    {
+      "path": "modeles/memoire-recherche/README.md",
+      "sha256": "40e9541a2ca381777d30c175d2869d8cb10f413311d0d352af51c1687e0d383f",
+      "size_bytes": 906
+    },
+    {
+      "path": "modeles/memoire-recherche/build/v9/build-receipt.json",
+      "sha256": "69b32b2d0aaed56149374b67d9eabfb59b652906ba7e118ee80cc835c1014e8e",
+      "size_bytes": 715
+    },
+    {
+      "path": "modeles/memoire-recherche/build/v9/state-snapshot.json",
+      "sha256": "b89a6fa7e5c8c9b859fbd96dea112abd8985ac141ba26d5b7f1ca35b1f0a345a",
+      "size_bytes": 363
+    },
+    {
+      "path": "modeles/memoire-recherche/build/v9/v9-capabilities.json",
+      "sha256": "40bd95a6d168768ab6bd65f8f9c5f4cbdfa79c0c810860b95f66ffe29d564ff1",
+      "size_bytes": 817
+    },
+    {
+      "path": "modeles/memoire-recherche/canon/domain/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "modeles/memoire-recherche/canon/epistemic/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "modeles/memoire-recherche/canon/operations/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "modeles/memoire-recherche/canon/state.index.json",
+      "sha256": "28a1ce910aa079e50199b467487fac9af0584ad43360200f5a4666d2481e1c08",
+      "size_bytes": 275
+    },
+    {
+      "path": "modeles/memoire-recherche/design/structure-candidate.json",
+      "sha256": "894471884ccb0aa812ed8824a33e813eea081737a2e7bd6962e638158056eb13",
+      "size_bytes": 880
+    },
+    {
+      "path": "modeles/memoire-recherche/docs/00_INTENT_AND_SCOPE.md",
+      "sha256": "1cd8566bdbae9d5f114e3f9bb4636230657566e240c5acfc18dc61836ecc5961",
+      "size_bytes": 458
+    },
+    {
+      "path": "modeles/memoire-recherche/docs/01_SEMANTIC_BOUNDARY.md",
+      "sha256": "4355ec2011fabb6d3e60a015d333b8bad50715d04bdda77aded1f41afefeb9e7",
+      "size_bytes": 495
+    },
+    {
+      "path": "modeles/memoire-recherche/docs/02_NATIVE_MODEL.md",
+      "sha256": "4c5b28f48157a82b1c481292d5b991714a2002fb8f13f112baf15832dc5a776d",
+      "size_bytes": 750
+    },
+    {
+      "path": "modeles/memoire-recherche/docs/03_EPISTEMIC_MODEL.md",
+      "sha256": "a29b0032717bf97c92e29ce4ec3fa4cdf6e64c740d430cd2c5d0bed887cea5f9",
+      "size_bytes": 442
+    },
+    {
+      "path": "modeles/memoire-recherche/docs/04_CANONICAL_DERIVED.md",
+      "sha256": "9ca1154b18ae0980a96e562cedbef1ce85a2912940cf52819dd0fd402e1b1345",
+      "size_bytes": 311
+    },
+    {
+      "path": "modeles/memoire-recherche/docs/05_ORIENTATIONS.md",
+      "sha256": "4ef452034359517fbbc8038117817fc8695d5c3effc12544e8b7437ac6323b77",
+      "size_bytes": 287
+    },
+    {
+      "path": "modeles/memoire-recherche/docs/06_VALIDATION.md",
+      "sha256": "7de295f7e82cd14494c07df64ab72ced9f4efa76150d4a0daccaecf90e6bc8a4",
+      "size_bytes": 573
+    },
+    {
+      "path": "modeles/memoire-recherche/docs/07_HOSTING_AND_PUBLICATION.md",
+      "sha256": "ae4e01c7a5ecdb94b4603452bdc78973771b000addd3ed83ebf2082db1d5022b",
+      "size_bytes": 795
+    },
+    {
+      "path": "modeles/memoire-recherche/docs/08_GLOSSARY.md",
+      "sha256": "1f6375e83316f360dc9e98383876a5cea39f9d826293c9a9ee4dbb22a7928c01",
+      "size_bytes": 218
+    },
+    {
+      "path": "modeles/memoire-recherche/docs/ARKETYPE.md",
+      "sha256": "2d41f826eb22bf98417cc8b174a360d3bba64ca6322e4fe240df8e83a557cb97",
+      "size_bytes": 583
+    },
+    {
+      "path": "modeles/memoire-recherche/docs/PROFILE_NOTES.md",
+      "sha256": "3ddc4acbeaf5301db93a1d4c522a6b17babde4417aa0b03703b5bf00a00542ef",
+      "size_bytes": 200
+    },
+    {
+      "path": "modeles/memoire-recherche/arketype.template.json",
+      "sha256": "41a6468670d845b672611220e6ab051e101f8f056c88ff59f375d33925d431fa",
+      "size_bytes": 306
+    },
+    {
+      "path": "modeles/memoire-recherche/kristal.workspace.json",
+      "sha256": "c3eea0ec364b7fbb988aa8c2c9cc5348f80e12936812bf4e40f177110cd43a52",
+      "size_bytes": 2033
+    },
+    {
+      "path": "modeles/memoire-recherche/runtime/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "modeles/memoire-recherche/sources/source-catalog.json",
+      "sha256": "4e11d46142630914cfd1fb447c6b065d9143d24d179a18edc1162f3063edfce9",
+      "size_bytes": 64
+    },
+    {
+      "path": "modeles/memoire-recherche/state/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "modeles/memoire-recherche/tools/_templates/AGENTS.kristal.md",
+      "sha256": "211615e096aa531e0f933cd6562802dffa48fa4227ba3211b734f49fbafff406",
+      "size_bytes": 1416
+    },
+    {
+      "path": "modeles/memoire-recherche/tools/_templates/AI_START_HERE.md",
+      "sha256": "bd988bba7c5ed7cd1ad8b69aa62e99d0fa9066ab89b1dc81f7a0c3739e8c1d07",
+      "size_bytes": 2595
+    },
+    {
+      "path": "modeles/memoire-recherche/tools/_templates/github-hosting.json",
+      "sha256": "774e87548a6917b1b25e7c610d727d19af4df081897a816a02744ff5eaf021c9",
+      "size_bytes": 378
+    },
+    {
+      "path": "modeles/memoire-recherche/tools/_templates/gitignore-kristal.txt",
+      "sha256": "ba9e766905d86932af10e20f99bdafe6b4a37eab2b45a1d91e011bc12985858f",
+      "size_bytes": 99
+    },
+    {
+      "path": "modeles/memoire-recherche/tools/_templates/projection.json",
+      "sha256": "9a93c6e5ae26d5d989458a3c7dd43fbe3b5d878a23a6db61d9cc82594d068eb2",
+      "size_bytes": 565
+    },
+    {
+      "path": "modeles/memoire-recherche/tools/_templates/readme-kristal.md",
+      "sha256": "8c006082936943cd65ebf45403f7c951831f8ce4dd640849d994d5c8c180f682",
+      "size_bytes": 844
+    },
+    {
+      "path": "modeles/memoire-recherche/tools/_templates/source-catalog.json",
+      "sha256": "4e11d46142630914cfd1fb447c6b065d9143d24d179a18edc1162f3063edfce9",
+      "size_bytes": 64
+    },
+    {
+      "path": "modeles/memoire-recherche/tools/_templates/state.index.json",
+      "sha256": "28a1ce910aa079e50199b467487fac9af0584ad43360200f5a4666d2481e1c08",
+      "size_bytes": 275
+    },
+    {
+      "path": "modeles/memoire-recherche/tools/_templates/workspace.json",
+      "sha256": "6e048d7ed0086aa47ca6ebd1a3d3798057a5d9861bc2a5b732d04c8b0cc23a2d",
+      "size_bytes": 1680
+    },
+    {
+      "path": "modeles/memoire-recherche/tools/kristal.py",
+      "sha256": "282ab66efcab5aa414e4663103d498c53e570cd3a52142cbdd39cbc5c2da5d95",
+      "size_bytes": 123848
+    },
+    {
+      "path": "modeles/modele-multiplexe/.gitignore",
+      "sha256": "ba9e766905d86932af10e20f99bdafe6b4a37eab2b45a1d91e011bc12985858f",
+      "size_bytes": 99
+    },
+    {
+      "path": "modeles/modele-multiplexe/AGENTS.md",
+      "sha256": "211615e096aa531e0f933cd6562802dffa48fa4227ba3211b734f49fbafff406",
+      "size_bytes": 1416
+    },
+    {
+      "path": "modeles/modele-multiplexe/README.md",
+      "sha256": "3df7ad580e0d5918f9359335f097b04763a0e975eaa1649564ad9ea648dd193c",
+      "size_bytes": 932
+    },
+    {
+      "path": "modeles/modele-multiplexe/build/v9/build-receipt.json",
+      "sha256": "7c531a7154a3a559b6d41239cae64124caa58900500ea313dcd86c00fdb22a7f",
+      "size_bytes": 715
+    },
+    {
+      "path": "modeles/modele-multiplexe/build/v9/state-snapshot.json",
+      "sha256": "dcb31b49cd815a9bd67f72784b8bf3f6203f184cebfff2924f059a48b4280361",
+      "size_bytes": 363
+    },
+    {
+      "path": "modeles/modele-multiplexe/build/v9/v9-capabilities.json",
+      "sha256": "40bd95a6d168768ab6bd65f8f9c5f4cbdfa79c0c810860b95f66ffe29d564ff1",
+      "size_bytes": 817
+    },
+    {
+      "path": "modeles/modele-multiplexe/canon/domain/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "modeles/modele-multiplexe/canon/epistemic/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "modeles/modele-multiplexe/canon/operations/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "modeles/modele-multiplexe/canon/state.index.json",
+      "sha256": "28a1ce910aa079e50199b467487fac9af0584ad43360200f5a4666d2481e1c08",
+      "size_bytes": 275
+    },
+    {
+      "path": "modeles/modele-multiplexe/design/structure-candidate.json",
+      "sha256": "240b85d49e866cccfd068b8cc0f6c8d92eb3ada2798c67b2f56dad42f28822b6",
+      "size_bytes": 873
+    },
+    {
+      "path": "modeles/modele-multiplexe/docs/00_INTENT_AND_SCOPE.md",
+      "sha256": "e4c3e4a39ee8c9f7e26cad48c802f78ce4bda858faa21d154a650a2e3afa64a4",
+      "size_bytes": 507
+    },
+    {
+      "path": "modeles/modele-multiplexe/docs/01_SEMANTIC_BOUNDARY.md",
+      "sha256": "4355ec2011fabb6d3e60a015d333b8bad50715d04bdda77aded1f41afefeb9e7",
+      "size_bytes": 495
+    },
+    {
+      "path": "modeles/modele-multiplexe/docs/02_NATIVE_MODEL.md",
+      "sha256": "a3aec18b4ce763fe01c9d8d49e7603ecc0619874fcab968d583dcf6349be54e2",
+      "size_bytes": 779
+    },
+    {
+      "path": "modeles/modele-multiplexe/docs/03_EPISTEMIC_MODEL.md",
+      "sha256": "be0a7d1ade2f7d05e76eba04fbd917a8e18cc126af532c8c9fea54316c76654d",
+      "size_bytes": 440
+    },
+    {
+      "path": "modeles/modele-multiplexe/docs/04_CANONICAL_DERIVED.md",
+      "sha256": "9ca1154b18ae0980a96e562cedbef1ce85a2912940cf52819dd0fd402e1b1345",
+      "size_bytes": 311
+    },
+    {
+      "path": "modeles/modele-multiplexe/docs/05_ORIENTATIONS.md",
+      "sha256": "4ef452034359517fbbc8038117817fc8695d5c3effc12544e8b7437ac6323b77",
+      "size_bytes": 287
+    },
+    {
+      "path": "modeles/modele-multiplexe/docs/06_VALIDATION.md",
+      "sha256": "7de295f7e82cd14494c07df64ab72ced9f4efa76150d4a0daccaecf90e6bc8a4",
+      "size_bytes": 573
+    },
+    {
+      "path": "modeles/modele-multiplexe/docs/07_HOSTING_AND_PUBLICATION.md",
+      "sha256": "ae4e01c7a5ecdb94b4603452bdc78973771b000addd3ed83ebf2082db1d5022b",
+      "size_bytes": 795
+    },
+    {
+      "path": "modeles/modele-multiplexe/docs/08_GLOSSARY.md",
+      "sha256": "1f6375e83316f360dc9e98383876a5cea39f9d826293c9a9ee4dbb22a7928c01",
+      "size_bytes": 218
+    },
+    {
+      "path": "modeles/modele-multiplexe/docs/ARKETYPE.md",
+      "sha256": "a3033a1f08b71a19657d4c514c80fc9e309fdfef877c16a1fcc3f763a34a5fdb",
+      "size_bytes": 592
+    },
+    {
+      "path": "modeles/modele-multiplexe/docs/PROFILE_NOTES.md",
+      "sha256": "5f62161b993e08b75068058c91f55fb7e105775d86fcf52e38fdd2f6be7d7d44",
+      "size_bytes": 180
+    },
+    {
+      "path": "modeles/modele-multiplexe/arketype.template.json",
+      "sha256": "9f7a48fb88cf7098e09f2c980be62955cc052aa3a5f9c660fba1f950fdc2806f",
+      "size_bytes": 302
+    },
+    {
+      "path": "modeles/modele-multiplexe/kristal.workspace.json",
+      "sha256": "6ef3c10f82e5a31be8f9d90849f05fe8d202dbeed53a032e6ba20a0385c7ab54",
+      "size_bytes": 2051
+    },
+    {
+      "path": "modeles/modele-multiplexe/runtime/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "modeles/modele-multiplexe/sources/source-catalog.json",
+      "sha256": "4e11d46142630914cfd1fb447c6b065d9143d24d179a18edc1162f3063edfce9",
+      "size_bytes": 64
+    },
+    {
+      "path": "modeles/modele-multiplexe/state/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "modeles/modele-multiplexe/tools/_templates/AGENTS.kristal.md",
+      "sha256": "211615e096aa531e0f933cd6562802dffa48fa4227ba3211b734f49fbafff406",
+      "size_bytes": 1416
+    },
+    {
+      "path": "modeles/modele-multiplexe/tools/_templates/AI_START_HERE.md",
+      "sha256": "bd988bba7c5ed7cd1ad8b69aa62e99d0fa9066ab89b1dc81f7a0c3739e8c1d07",
+      "size_bytes": 2595
+    },
+    {
+      "path": "modeles/modele-multiplexe/tools/_templates/github-hosting.json",
+      "sha256": "774e87548a6917b1b25e7c610d727d19af4df081897a816a02744ff5eaf021c9",
+      "size_bytes": 378
+    },
+    {
+      "path": "modeles/modele-multiplexe/tools/_templates/gitignore-kristal.txt",
+      "sha256": "ba9e766905d86932af10e20f99bdafe6b4a37eab2b45a1d91e011bc12985858f",
+      "size_bytes": 99
+    },
+    {
+      "path": "modeles/modele-multiplexe/tools/_templates/projection.json",
+      "sha256": "9a93c6e5ae26d5d989458a3c7dd43fbe3b5d878a23a6db61d9cc82594d068eb2",
+      "size_bytes": 565
+    },
+    {
+      "path": "modeles/modele-multiplexe/tools/_templates/readme-kristal.md",
+      "sha256": "8c006082936943cd65ebf45403f7c951831f8ce4dd640849d994d5c8c180f682",
+      "size_bytes": 844
+    },
+    {
+      "path": "modeles/modele-multiplexe/tools/_templates/source-catalog.json",
+      "sha256": "4e11d46142630914cfd1fb447c6b065d9143d24d179a18edc1162f3063edfce9",
+      "size_bytes": 64
+    },
+    {
+      "path": "modeles/modele-multiplexe/tools/_templates/state.index.json",
+      "sha256": "28a1ce910aa079e50199b467487fac9af0584ad43360200f5a4666d2481e1c08",
+      "size_bytes": 275
+    },
+    {
+      "path": "modeles/modele-multiplexe/tools/_templates/workspace.json",
+      "sha256": "6e048d7ed0086aa47ca6ebd1a3d3798057a5d9861bc2a5b732d04c8b0cc23a2d",
+      "size_bytes": 1680
+    },
+    {
+      "path": "modeles/modele-multiplexe/tools/kristal.py",
+      "sha256": "282ab66efcab5aa414e4663103d498c53e570cd3a52142cbdd39cbc5c2da5d95",
+      "size_bytes": 123848
+    },
+    {
+      "path": "modeles/parcours-pedagogique/.gitignore",
+      "sha256": "ba9e766905d86932af10e20f99bdafe6b4a37eab2b45a1d91e011bc12985858f",
+      "size_bytes": 99
+    },
+    {
+      "path": "modeles/parcours-pedagogique/AGENTS.md",
+      "sha256": "211615e096aa531e0f933cd6562802dffa48fa4227ba3211b734f49fbafff406",
+      "size_bytes": 1416
+    },
+    {
+      "path": "modeles/parcours-pedagogique/README.md",
+      "sha256": "dbbdf59eeb3e3f489ccd0d36d2e4624fa65e7b1e44de322f8542c50dba44a51b",
+      "size_bytes": 906
+    },
+    {
+      "path": "modeles/parcours-pedagogique/build/v9/build-receipt.json",
+      "sha256": "485c5a698a9378db54a833745f69f7c29698d3c51423d3d70014980d9e9fa2ad",
+      "size_bytes": 718
+    },
+    {
+      "path": "modeles/parcours-pedagogique/build/v9/state-snapshot.json",
+      "sha256": "bf5b227c0044c1caf2d1982ccdd10da16c6868067603288b1f5e7d2aed7838a8",
+      "size_bytes": 366
+    },
+    {
+      "path": "modeles/parcours-pedagogique/build/v9/v9-capabilities.json",
+      "sha256": "40bd95a6d168768ab6bd65f8f9c5f4cbdfa79c0c810860b95f66ffe29d564ff1",
+      "size_bytes": 817
+    },
+    {
+      "path": "modeles/parcours-pedagogique/canon/domain/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "modeles/parcours-pedagogique/canon/epistemic/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "modeles/parcours-pedagogique/canon/operations/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "modeles/parcours-pedagogique/canon/state.index.json",
+      "sha256": "28a1ce910aa079e50199b467487fac9af0584ad43360200f5a4666d2481e1c08",
+      "size_bytes": 275
+    },
+    {
+      "path": "modeles/parcours-pedagogique/design/structure-candidate.json",
+      "sha256": "b823dfb36abf262fd8a045e98ed215ea184f1bed9a47ec266530239829ffd7d9",
+      "size_bytes": 915
+    },
+    {
+      "path": "modeles/parcours-pedagogique/docs/00_INTENT_AND_SCOPE.md",
+      "sha256": "b7e192598c473154e5a05138399260c495273fe24d38f1b3b4ea679b3af40a48",
+      "size_bytes": 481
+    },
+    {
+      "path": "modeles/parcours-pedagogique/docs/01_SEMANTIC_BOUNDARY.md",
+      "sha256": "4355ec2011fabb6d3e60a015d333b8bad50715d04bdda77aded1f41afefeb9e7",
+      "size_bytes": 495
+    },
+    {
+      "path": "modeles/parcours-pedagogique/docs/02_NATIVE_MODEL.md",
+      "sha256": "51ec95ddadc028850f8060c6e0c824a17c08cc6e63c6e96e74ba64d9ba5911f0",
+      "size_bytes": 808
+    },
+    {
+      "path": "modeles/parcours-pedagogique/docs/03_EPISTEMIC_MODEL.md",
+      "sha256": "03d35623b35396b71e9a383f4ef9235888b506eac2c90ad1a087129ae829efb5",
+      "size_bytes": 486
+    },
+    {
+      "path": "modeles/parcours-pedagogique/docs/04_CANONICAL_DERIVED.md",
+      "sha256": "9ca1154b18ae0980a96e562cedbef1ce85a2912940cf52819dd0fd402e1b1345",
+      "size_bytes": 311
+    },
+    {
+      "path": "modeles/parcours-pedagogique/docs/05_ORIENTATIONS.md",
+      "sha256": "4ef452034359517fbbc8038117817fc8695d5c3effc12544e8b7437ac6323b77",
+      "size_bytes": 287
+    },
+    {
+      "path": "modeles/parcours-pedagogique/docs/06_VALIDATION.md",
+      "sha256": "7de295f7e82cd14494c07df64ab72ced9f4efa76150d4a0daccaecf90e6bc8a4",
+      "size_bytes": 573
+    },
+    {
+      "path": "modeles/parcours-pedagogique/docs/07_HOSTING_AND_PUBLICATION.md",
+      "sha256": "ae4e01c7a5ecdb94b4603452bdc78973771b000addd3ed83ebf2082db1d5022b",
+      "size_bytes": 795
+    },
+    {
+      "path": "modeles/parcours-pedagogique/docs/08_GLOSSARY.md",
+      "sha256": "1f6375e83316f360dc9e98383876a5cea39f9d826293c9a9ee4dbb22a7928c01",
+      "size_bytes": 218
+    },
+    {
+      "path": "modeles/parcours-pedagogique/docs/ARKETYPE.md",
+      "sha256": "cc2b61fa09560b074aba08fa84ac910c249325efe444b4ed4e5930a7cad5c67d",
+      "size_bytes": 586
+    },
+    {
+      "path": "modeles/parcours-pedagogique/docs/PROFILE_NOTES.md",
+      "sha256": "5f62161b993e08b75068058c91f55fb7e105775d86fcf52e38fdd2f6be7d7d44",
+      "size_bytes": 180
+    },
+    {
+      "path": "modeles/parcours-pedagogique/arketype.template.json",
+      "sha256": "de5628e847c32b50ba6b1743ca4692105234da6259e4549b878c64bf6e1bb32a",
+      "size_bytes": 305
+    },
+    {
+      "path": "modeles/parcours-pedagogique/kristal.workspace.json",
+      "sha256": "b4e0ba302fe5b508e4b55e5d0a3c9732996efd43812cbe93def4f5b2246e2548",
+      "size_bytes": 2029
+    },
+    {
+      "path": "modeles/parcours-pedagogique/runtime/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "modeles/parcours-pedagogique/sources/source-catalog.json",
+      "sha256": "4e11d46142630914cfd1fb447c6b065d9143d24d179a18edc1162f3063edfce9",
+      "size_bytes": 64
+    },
+    {
+      "path": "modeles/parcours-pedagogique/state/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "modeles/parcours-pedagogique/tools/_templates/AGENTS.kristal.md",
+      "sha256": "211615e096aa531e0f933cd6562802dffa48fa4227ba3211b734f49fbafff406",
+      "size_bytes": 1416
+    },
+    {
+      "path": "modeles/parcours-pedagogique/tools/_templates/AI_START_HERE.md",
+      "sha256": "bd988bba7c5ed7cd1ad8b69aa62e99d0fa9066ab89b1dc81f7a0c3739e8c1d07",
+      "size_bytes": 2595
+    },
+    {
+      "path": "modeles/parcours-pedagogique/tools/_templates/github-hosting.json",
+      "sha256": "774e87548a6917b1b25e7c610d727d19af4df081897a816a02744ff5eaf021c9",
+      "size_bytes": 378
+    },
+    {
+      "path": "modeles/parcours-pedagogique/tools/_templates/gitignore-kristal.txt",
+      "sha256": "ba9e766905d86932af10e20f99bdafe6b4a37eab2b45a1d91e011bc12985858f",
+      "size_bytes": 99
+    },
+    {
+      "path": "modeles/parcours-pedagogique/tools/_templates/projection.json",
+      "sha256": "9a93c6e5ae26d5d989458a3c7dd43fbe3b5d878a23a6db61d9cc82594d068eb2",
+      "size_bytes": 565
+    },
+    {
+      "path": "modeles/parcours-pedagogique/tools/_templates/readme-kristal.md",
+      "sha256": "8c006082936943cd65ebf45403f7c951831f8ce4dd640849d994d5c8c180f682",
+      "size_bytes": 844
+    },
+    {
+      "path": "modeles/parcours-pedagogique/tools/_templates/source-catalog.json",
+      "sha256": "4e11d46142630914cfd1fb447c6b065d9143d24d179a18edc1162f3063edfce9",
+      "size_bytes": 64
+    },
+    {
+      "path": "modeles/parcours-pedagogique/tools/_templates/state.index.json",
+      "sha256": "28a1ce910aa079e50199b467487fac9af0584ad43360200f5a4666d2481e1c08",
+      "size_bytes": 275
+    },
+    {
+      "path": "modeles/parcours-pedagogique/tools/_templates/workspace.json",
+      "sha256": "6e048d7ed0086aa47ca6ebd1a3d3798057a5d9861bc2a5b732d04c8b0cc23a2d",
+      "size_bytes": 1680
+    },
+    {
+      "path": "modeles/parcours-pedagogique/tools/kristal.py",
+      "sha256": "282ab66efcab5aa414e4663103d498c53e570cd3a52142cbdd39cbc5c2da5d95",
+      "size_bytes": 123848
+    },
+    {
+      "path": "modeles/procedure-protocole/.gitignore",
+      "sha256": "ba9e766905d86932af10e20f99bdafe6b4a37eab2b45a1d91e011bc12985858f",
+      "size_bytes": 99
+    },
+    {
+      "path": "modeles/procedure-protocole/AGENTS.md",
+      "sha256": "211615e096aa531e0f933cd6562802dffa48fa4227ba3211b734f49fbafff406",
+      "size_bytes": 1416
+    },
+    {
+      "path": "modeles/procedure-protocole/README.md",
+      "sha256": "8c4b26810cd295039f4ed2b7e07cf75207fa391223789bd1966ea667460bbe18",
+      "size_bytes": 908
+    },
+    {
+      "path": "modeles/procedure-protocole/build/v9/build-receipt.json",
+      "sha256": "fd7f945dc1a503f740074ec435549924e2a9593b932ff819cd4ec958e944352c",
+      "size_bytes": 717
+    },
+    {
+      "path": "modeles/procedure-protocole/build/v9/state-snapshot.json",
+      "sha256": "b6e3993c6394cfcdf94ba94c2dec8c4ed5924a850567d489d739d6a418aa7a97",
+      "size_bytes": 365
+    },
+    {
+      "path": "modeles/procedure-protocole/build/v9/v9-capabilities.json",
+      "sha256": "40bd95a6d168768ab6bd65f8f9c5f4cbdfa79c0c810860b95f66ffe29d564ff1",
+      "size_bytes": 817
+    },
+    {
+      "path": "modeles/procedure-protocole/canon/domain/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "modeles/procedure-protocole/canon/epistemic/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "modeles/procedure-protocole/canon/operations/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "modeles/procedure-protocole/canon/state.index.json",
+      "sha256": "28a1ce910aa079e50199b467487fac9af0584ad43360200f5a4666d2481e1c08",
+      "size_bytes": 275
+    },
+    {
+      "path": "modeles/procedure-protocole/design/structure-candidate.json",
+      "sha256": "4302f63e243204fa55e4c67ae1db987a5dadffd657f55e9abb2545ef3690e696",
+      "size_bytes": 978
+    },
+    {
+      "path": "modeles/procedure-protocole/docs/00_INTENT_AND_SCOPE.md",
+      "sha256": "ae4b2a9cd12ee3147533bb5cc9a99f7b445d0b96164f1304b411dd30ff4d6865",
+      "size_bytes": 474
+    },
+    {
+      "path": "modeles/procedure-protocole/docs/01_SEMANTIC_BOUNDARY.md",
+      "sha256": "4355ec2011fabb6d3e60a015d333b8bad50715d04bdda77aded1f41afefeb9e7",
+      "size_bytes": 495
+    },
+    {
+      "path": "modeles/procedure-protocole/docs/02_NATIVE_MODEL.md",
+      "sha256": "b29389fb19d8c72f64bf0b02b16c14404e37f9aba3cd2f7221fe71aebb0cade9",
+      "size_bytes": 840
+    },
+    {
+      "path": "modeles/procedure-protocole/docs/03_EPISTEMIC_MODEL.md",
+      "sha256": "e0e6ea3fb339ddde86da1f0cd8f24b853aef417b8b35f3e4af39ab438f1c61ea",
+      "size_bytes": 488
+    },
+    {
+      "path": "modeles/procedure-protocole/docs/04_CANONICAL_DERIVED.md",
+      "sha256": "9ca1154b18ae0980a96e562cedbef1ce85a2912940cf52819dd0fd402e1b1345",
+      "size_bytes": 311
+    },
+    {
+      "path": "modeles/procedure-protocole/docs/05_ORIENTATIONS.md",
+      "sha256": "4ef452034359517fbbc8038117817fc8695d5c3effc12544e8b7437ac6323b77",
+      "size_bytes": 287
+    },
+    {
+      "path": "modeles/procedure-protocole/docs/06_VALIDATION.md",
+      "sha256": "7de295f7e82cd14494c07df64ab72ced9f4efa76150d4a0daccaecf90e6bc8a4",
+      "size_bytes": 573
+    },
+    {
+      "path": "modeles/procedure-protocole/docs/07_HOSTING_AND_PUBLICATION.md",
+      "sha256": "ae4e01c7a5ecdb94b4603452bdc78973771b000addd3ed83ebf2082db1d5022b",
+      "size_bytes": 795
+    },
+    {
+      "path": "modeles/procedure-protocole/docs/08_GLOSSARY.md",
+      "sha256": "1f6375e83316f360dc9e98383876a5cea39f9d826293c9a9ee4dbb22a7928c01",
+      "size_bytes": 218
+    },
+    {
+      "path": "modeles/procedure-protocole/docs/ARKETYPE.md",
+      "sha256": "0cfe3b566ce341450672bcf251724ac286441099ec2fad15a01056978a1dba64",
+      "size_bytes": 588
+    },
+    {
+      "path": "modeles/procedure-protocole/docs/PROFILE_NOTES.md",
+      "sha256": "3e2d0526ebe4706a24452082fd3251cf983cc346f8f7a08cf442158e06e9bb75",
+      "size_bytes": 235
+    },
+    {
+      "path": "modeles/procedure-protocole/arketype.template.json",
+      "sha256": "46a495a4bb1a59bf3bac778dc5453da77a0832f44ea2688d4784e0165e60e71d",
+      "size_bytes": 310
+    },
+    {
+      "path": "modeles/procedure-protocole/kristal.workspace.json",
+      "sha256": "0f05af4548af75999f1d3199f73ae1f6e7b3b252cbcecf4fa551c9217e7111a2",
+      "size_bytes": 2036
+    },
+    {
+      "path": "modeles/procedure-protocole/runtime/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "modeles/procedure-protocole/sources/source-catalog.json",
+      "sha256": "4e11d46142630914cfd1fb447c6b065d9143d24d179a18edc1162f3063edfce9",
+      "size_bytes": 64
+    },
+    {
+      "path": "modeles/procedure-protocole/state/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "modeles/procedure-protocole/tools/_templates/AGENTS.kristal.md",
+      "sha256": "211615e096aa531e0f933cd6562802dffa48fa4227ba3211b734f49fbafff406",
+      "size_bytes": 1416
+    },
+    {
+      "path": "modeles/procedure-protocole/tools/_templates/AI_START_HERE.md",
+      "sha256": "bd988bba7c5ed7cd1ad8b69aa62e99d0fa9066ab89b1dc81f7a0c3739e8c1d07",
+      "size_bytes": 2595
+    },
+    {
+      "path": "modeles/procedure-protocole/tools/_templates/github-hosting.json",
+      "sha256": "774e87548a6917b1b25e7c610d727d19af4df081897a816a02744ff5eaf021c9",
+      "size_bytes": 378
+    },
+    {
+      "path": "modeles/procedure-protocole/tools/_templates/gitignore-kristal.txt",
+      "sha256": "ba9e766905d86932af10e20f99bdafe6b4a37eab2b45a1d91e011bc12985858f",
+      "size_bytes": 99
+    },
+    {
+      "path": "modeles/procedure-protocole/tools/_templates/projection.json",
+      "sha256": "9a93c6e5ae26d5d989458a3c7dd43fbe3b5d878a23a6db61d9cc82594d068eb2",
+      "size_bytes": 565
+    },
+    {
+      "path": "modeles/procedure-protocole/tools/_templates/readme-kristal.md",
+      "sha256": "8c006082936943cd65ebf45403f7c951831f8ce4dd640849d994d5c8c180f682",
+      "size_bytes": 844
+    },
+    {
+      "path": "modeles/procedure-protocole/tools/_templates/source-catalog.json",
+      "sha256": "4e11d46142630914cfd1fb447c6b065d9143d24d179a18edc1162f3063edfce9",
+      "size_bytes": 64
+    },
+    {
+      "path": "modeles/procedure-protocole/tools/_templates/state.index.json",
+      "sha256": "28a1ce910aa079e50199b467487fac9af0584ad43360200f5a4666d2481e1c08",
+      "size_bytes": 275
+    },
+    {
+      "path": "modeles/procedure-protocole/tools/_templates/workspace.json",
+      "sha256": "6e048d7ed0086aa47ca6ebd1a3d3798057a5d9861bc2a5b732d04c8b0cc23a2d",
+      "size_bytes": 1680
+    },
+    {
+      "path": "modeles/procedure-protocole/tools/kristal.py",
+      "sha256": "282ab66efcab5aa414e4663103d498c53e570cd3a52142cbdd39cbc5c2da5d95",
+      "size_bytes": 123848
+    },
+    {
+      "path": "modeles/referentiel-semantique/.gitignore",
+      "sha256": "ba9e766905d86932af10e20f99bdafe6b4a37eab2b45a1d91e011bc12985858f",
+      "size_bytes": 99
+    },
+    {
+      "path": "modeles/referentiel-semantique/AGENTS.md",
+      "sha256": "211615e096aa531e0f933cd6562802dffa48fa4227ba3211b734f49fbafff406",
+      "size_bytes": 1416
+    },
+    {
+      "path": "modeles/referentiel-semantique/README.md",
+      "sha256": "0517a2f24f1818c8a8b685974e27271e15b01bf1521f0d9cbd9e9caf85840d07",
+      "size_bytes": 914
+    },
+    {
+      "path": "modeles/referentiel-semantique/build/v9/build-receipt.json",
+      "sha256": "1b9f9c43b1ea1c344476e031256ef35a20dc3c7d3145bc3a7b15a84d7ea66a71",
+      "size_bytes": 720
+    },
+    {
+      "path": "modeles/referentiel-semantique/build/v9/state-snapshot.json",
+      "sha256": "4044f5b5117f18b332115cc90ca3ecea0b94d782d96c6e4174772c80684f09ce",
+      "size_bytes": 368
+    },
+    {
+      "path": "modeles/referentiel-semantique/build/v9/v9-capabilities.json",
+      "sha256": "40bd95a6d168768ab6bd65f8f9c5f4cbdfa79c0c810860b95f66ffe29d564ff1",
+      "size_bytes": 817
+    },
+    {
+      "path": "modeles/referentiel-semantique/canon/domain/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "modeles/referentiel-semantique/canon/epistemic/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "modeles/referentiel-semantique/canon/operations/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "modeles/referentiel-semantique/canon/state.index.json",
+      "sha256": "28a1ce910aa079e50199b467487fac9af0584ad43360200f5a4666d2481e1c08",
+      "size_bytes": 275
+    },
+    {
+      "path": "modeles/referentiel-semantique/design/structure-candidate.json",
+      "sha256": "953760d96eb47245ef50f42245ad82eff25344727cc4fecf3deef32cdf931d61",
+      "size_bytes": 865
+    },
+    {
+      "path": "modeles/referentiel-semantique/docs/00_INTENT_AND_SCOPE.md",
+      "sha256": "d51b57bf74d093d9d979e9584ce5f64bef48a0960019272aaea8ae9b627fcc2e",
+      "size_bytes": 469
+    },
+    {
+      "path": "modeles/referentiel-semantique/docs/01_SEMANTIC_BOUNDARY.md",
+      "sha256": "4355ec2011fabb6d3e60a015d333b8bad50715d04bdda77aded1f41afefeb9e7",
+      "size_bytes": 495
+    },
+    {
+      "path": "modeles/referentiel-semantique/docs/02_NATIVE_MODEL.md",
+      "sha256": "03f8c75b9b13d68628230695f857401d02b03207e48c79497fbd846542a1308a",
+      "size_bytes": 769
+    },
+    {
+      "path": "modeles/referentiel-semantique/docs/03_EPISTEMIC_MODEL.md",
+      "sha256": "fe71e155d3300836ac962af5713d6de41f9ee62010d757be0e6e1036a368459c",
+      "size_bytes": 472
+    },
+    {
+      "path": "modeles/referentiel-semantique/docs/04_CANONICAL_DERIVED.md",
+      "sha256": "9ca1154b18ae0980a96e562cedbef1ce85a2912940cf52819dd0fd402e1b1345",
+      "size_bytes": 311
+    },
+    {
+      "path": "modeles/referentiel-semantique/docs/05_ORIENTATIONS.md",
+      "sha256": "4ef452034359517fbbc8038117817fc8695d5c3effc12544e8b7437ac6323b77",
+      "size_bytes": 287
+    },
+    {
+      "path": "modeles/referentiel-semantique/docs/06_VALIDATION.md",
+      "sha256": "7de295f7e82cd14494c07df64ab72ced9f4efa76150d4a0daccaecf90e6bc8a4",
+      "size_bytes": 573
+    },
+    {
+      "path": "modeles/referentiel-semantique/docs/07_HOSTING_AND_PUBLICATION.md",
+      "sha256": "ae4e01c7a5ecdb94b4603452bdc78973771b000addd3ed83ebf2082db1d5022b",
+      "size_bytes": 795
+    },
+    {
+      "path": "modeles/referentiel-semantique/docs/08_GLOSSARY.md",
+      "sha256": "1f6375e83316f360dc9e98383876a5cea39f9d826293c9a9ee4dbb22a7928c01",
+      "size_bytes": 218
+    },
+    {
+      "path": "modeles/referentiel-semantique/docs/ARKETYPE.md",
+      "sha256": "bf30a6b6ba2713f3e7644b4c44938cdf504efa2e6d1069172a2ba4a6c70d6294",
+      "size_bytes": 591
+    },
+    {
+      "path": "modeles/referentiel-semantique/docs/PROFILE_NOTES.md",
+      "sha256": "5f62161b993e08b75068058c91f55fb7e105775d86fcf52e38fdd2f6be7d7d44",
+      "size_bytes": 180
+    },
+    {
+      "path": "modeles/referentiel-semantique/arketype.template.json",
+      "sha256": "fe271ea17c77bdaf292b6f204c9f886d3107a1d46a04a2519c6dd720b11dc379",
+      "size_bytes": 307
+    },
+    {
+      "path": "modeles/referentiel-semantique/kristal.workspace.json",
+      "sha256": "9373f96f4143c41f3acf3228c5b161a66f89035481825a4bebc67846e25db8e5",
+      "size_bytes": 2037
+    },
+    {
+      "path": "modeles/referentiel-semantique/runtime/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "modeles/referentiel-semantique/sources/source-catalog.json",
+      "sha256": "4e11d46142630914cfd1fb447c6b065d9143d24d179a18edc1162f3063edfce9",
+      "size_bytes": 64
+    },
+    {
+      "path": "modeles/referentiel-semantique/state/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "modeles/referentiel-semantique/tools/_templates/AGENTS.kristal.md",
+      "sha256": "211615e096aa531e0f933cd6562802dffa48fa4227ba3211b734f49fbafff406",
+      "size_bytes": 1416
+    },
+    {
+      "path": "modeles/referentiel-semantique/tools/_templates/AI_START_HERE.md",
+      "sha256": "bd988bba7c5ed7cd1ad8b69aa62e99d0fa9066ab89b1dc81f7a0c3739e8c1d07",
+      "size_bytes": 2595
+    },
+    {
+      "path": "modeles/referentiel-semantique/tools/_templates/github-hosting.json",
+      "sha256": "774e87548a6917b1b25e7c610d727d19af4df081897a816a02744ff5eaf021c9",
+      "size_bytes": 378
+    },
+    {
+      "path": "modeles/referentiel-semantique/tools/_templates/gitignore-kristal.txt",
+      "sha256": "ba9e766905d86932af10e20f99bdafe6b4a37eab2b45a1d91e011bc12985858f",
+      "size_bytes": 99
+    },
+    {
+      "path": "modeles/referentiel-semantique/tools/_templates/projection.json",
+      "sha256": "9a93c6e5ae26d5d989458a3c7dd43fbe3b5d878a23a6db61d9cc82594d068eb2",
+      "size_bytes": 565
+    },
+    {
+      "path": "modeles/referentiel-semantique/tools/_templates/readme-kristal.md",
+      "sha256": "8c006082936943cd65ebf45403f7c951831f8ce4dd640849d994d5c8c180f682",
+      "size_bytes": 844
+    },
+    {
+      "path": "modeles/referentiel-semantique/tools/_templates/source-catalog.json",
+      "sha256": "4e11d46142630914cfd1fb447c6b065d9143d24d179a18edc1162f3063edfce9",
+      "size_bytes": 64
+    },
+    {
+      "path": "modeles/referentiel-semantique/tools/_templates/state.index.json",
+      "sha256": "28a1ce910aa079e50199b467487fac9af0584ad43360200f5a4666d2481e1c08",
+      "size_bytes": 275
+    },
+    {
+      "path": "modeles/referentiel-semantique/tools/_templates/workspace.json",
+      "sha256": "6e048d7ed0086aa47ca6ebd1a3d3798057a5d9861bc2a5b732d04c8b0cc23a2d",
+      "size_bytes": 1680
+    },
+    {
+      "path": "modeles/referentiel-semantique/tools/kristal.py",
+      "sha256": "282ab66efcab5aa414e4663103d498c53e570cd3a52142cbdd39cbc5c2da5d95",
+      "size_bytes": 123848
+    },
+    {
+      "path": "modeles/registre-evenementiel/.gitignore",
+      "sha256": "ba9e766905d86932af10e20f99bdafe6b4a37eab2b45a1d91e011bc12985858f",
+      "size_bytes": 99
+    },
+    {
+      "path": "modeles/registre-evenementiel/AGENTS.md",
+      "sha256": "211615e096aa531e0f933cd6562802dffa48fa4227ba3211b734f49fbafff406",
+      "size_bytes": 1416
+    },
+    {
+      "path": "modeles/registre-evenementiel/README.md",
+      "sha256": "33ffb83ec0707a87a7c5a3dd696e54ea79177ed6312e354dbfcf253fe61e3873",
+      "size_bytes": 938
+    },
+    {
+      "path": "modeles/registre-evenementiel/build/v9/build-receipt.json",
+      "sha256": "333fcd6f668fda1ad54a02b13894ee7ba307a83a15524583197e628e39a0ff9c",
+      "size_bytes": 719
+    },
+    {
+      "path": "modeles/registre-evenementiel/build/v9/state-snapshot.json",
+      "sha256": "188733d0ddb08271b4169b5d2fb00532558a2b54798c241c13f85a7fe22f81a8",
+      "size_bytes": 367
+    },
+    {
+      "path": "modeles/registre-evenementiel/build/v9/v9-capabilities.json",
+      "sha256": "40bd95a6d168768ab6bd65f8f9c5f4cbdfa79c0c810860b95f66ffe29d564ff1",
+      "size_bytes": 817
+    },
+    {
+      "path": "modeles/registre-evenementiel/canon/domain/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "modeles/registre-evenementiel/canon/epistemic/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "modeles/registre-evenementiel/canon/operations/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "modeles/registre-evenementiel/canon/state.index.json",
+      "sha256": "28a1ce910aa079e50199b467487fac9af0584ad43360200f5a4666d2481e1c08",
+      "size_bytes": 275
+    },
+    {
+      "path": "modeles/registre-evenementiel/design/structure-candidate.json",
+      "sha256": "f6b98c04a1ed1c55754ce21fbe1aeff4f65000497526c45786b83706681b418e",
+      "size_bytes": 877
+    },
+    {
+      "path": "modeles/registre-evenementiel/docs/00_INTENT_AND_SCOPE.md",
+      "sha256": "39779ace513fffb65099014a4ae13350df270ea04117bd8c761f3e39806381cc",
+      "size_bytes": 495
+    },
+    {
+      "path": "modeles/registre-evenementiel/docs/01_SEMANTIC_BOUNDARY.md",
+      "sha256": "4355ec2011fabb6d3e60a015d333b8bad50715d04bdda77aded1f41afefeb9e7",
+      "size_bytes": 495
+    },
+    {
+      "path": "modeles/registre-evenementiel/docs/02_NATIVE_MODEL.md",
+      "sha256": "4c58d825f9a4b75e71ee99d6d0dc3b5b4102e3e70a0be23807ed0f336619e398",
+      "size_bytes": 784
+    },
+    {
+      "path": "modeles/registre-evenementiel/docs/03_EPISTEMIC_MODEL.md",
+      "sha256": "39b37cf3986206a90e8193f3d4a632c98a2f8ba9711a6d659c8cdb03087b33a5",
+      "size_bytes": 459
+    },
+    {
+      "path": "modeles/registre-evenementiel/docs/04_CANONICAL_DERIVED.md",
+      "sha256": "9ca1154b18ae0980a96e562cedbef1ce85a2912940cf52819dd0fd402e1b1345",
+      "size_bytes": 311
+    },
+    {
+      "path": "modeles/registre-evenementiel/docs/05_ORIENTATIONS.md",
+      "sha256": "4ef452034359517fbbc8038117817fc8695d5c3effc12544e8b7437ac6323b77",
+      "size_bytes": 287
+    },
+    {
+      "path": "modeles/registre-evenementiel/docs/06_VALIDATION.md",
+      "sha256": "7de295f7e82cd14494c07df64ab72ced9f4efa76150d4a0daccaecf90e6bc8a4",
+      "size_bytes": 573
+    },
+    {
+      "path": "modeles/registre-evenementiel/docs/07_HOSTING_AND_PUBLICATION.md",
+      "sha256": "ae4e01c7a5ecdb94b4603452bdc78973771b000addd3ed83ebf2082db1d5022b",
+      "size_bytes": 795
+    },
+    {
+      "path": "modeles/registre-evenementiel/docs/08_GLOSSARY.md",
+      "sha256": "1f6375e83316f360dc9e98383876a5cea39f9d826293c9a9ee4dbb22a7928c01",
+      "size_bytes": 218
+    },
+    {
+      "path": "modeles/registre-evenementiel/docs/ARKETYPE.md",
+      "sha256": "7701274d2516f38224a4976e51baceb7762df3b12caf76172ab1a76618e0cb10",
+      "size_bytes": 593
+    },
+    {
+      "path": "modeles/registre-evenementiel/docs/PROFILE_NOTES.md",
+      "sha256": "5f62161b993e08b75068058c91f55fb7e105775d86fcf52e38fdd2f6be7d7d44",
+      "size_bytes": 180
+    },
+    {
+      "path": "modeles/registre-evenementiel/arketype.template.json",
+      "sha256": "b8af076411457fd4367efb88075cd8c7f6916b048132e7ef07457322fbe417d5",
+      "size_bytes": 306
+    },
+    {
+      "path": "modeles/registre-evenementiel/kristal.workspace.json",
+      "sha256": "a6c4dbdfca0305140ca1ef20265127395a40bc33f65a71190f886e71fe71d485",
+      "size_bytes": 2064
+    },
+    {
+      "path": "modeles/registre-evenementiel/runtime/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "modeles/registre-evenementiel/sources/source-catalog.json",
+      "sha256": "4e11d46142630914cfd1fb447c6b065d9143d24d179a18edc1162f3063edfce9",
+      "size_bytes": 64
+    },
+    {
+      "path": "modeles/registre-evenementiel/state/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "modeles/registre-evenementiel/tools/_templates/AGENTS.kristal.md",
+      "sha256": "211615e096aa531e0f933cd6562802dffa48fa4227ba3211b734f49fbafff406",
+      "size_bytes": 1416
+    },
+    {
+      "path": "modeles/registre-evenementiel/tools/_templates/AI_START_HERE.md",
+      "sha256": "bd988bba7c5ed7cd1ad8b69aa62e99d0fa9066ab89b1dc81f7a0c3739e8c1d07",
+      "size_bytes": 2595
+    },
+    {
+      "path": "modeles/registre-evenementiel/tools/_templates/github-hosting.json",
+      "sha256": "774e87548a6917b1b25e7c610d727d19af4df081897a816a02744ff5eaf021c9",
+      "size_bytes": 378
+    },
+    {
+      "path": "modeles/registre-evenementiel/tools/_templates/gitignore-kristal.txt",
+      "sha256": "ba9e766905d86932af10e20f99bdafe6b4a37eab2b45a1d91e011bc12985858f",
+      "size_bytes": 99
+    },
+    {
+      "path": "modeles/registre-evenementiel/tools/_templates/projection.json",
+      "sha256": "9a93c6e5ae26d5d989458a3c7dd43fbe3b5d878a23a6db61d9cc82594d068eb2",
+      "size_bytes": 565
+    },
+    {
+      "path": "modeles/registre-evenementiel/tools/_templates/readme-kristal.md",
+      "sha256": "8c006082936943cd65ebf45403f7c951831f8ce4dd640849d994d5c8c180f682",
+      "size_bytes": 844
+    },
+    {
+      "path": "modeles/registre-evenementiel/tools/_templates/source-catalog.json",
+      "sha256": "4e11d46142630914cfd1fb447c6b065d9143d24d179a18edc1162f3063edfce9",
+      "size_bytes": 64
+    },
+    {
+      "path": "modeles/registre-evenementiel/tools/_templates/state.index.json",
+      "sha256": "28a1ce910aa079e50199b467487fac9af0584ad43360200f5a4666d2481e1c08",
+      "size_bytes": 275
+    },
+    {
+      "path": "modeles/registre-evenementiel/tools/_templates/workspace.json",
+      "sha256": "6e048d7ed0086aa47ca6ebd1a3d3798057a5d9861bc2a5b732d04c8b0cc23a2d",
+      "size_bytes": 1680
+    },
+    {
+      "path": "modeles/registre-evenementiel/tools/kristal.py",
+      "sha256": "282ab66efcab5aa414e4663103d498c53e570cd3a52142cbdd39cbc5c2da5d95",
+      "size_bytes": 123848
+    },
+    {
+      "path": "modeles/simulation-transition/.gitignore",
+      "sha256": "ba9e766905d86932af10e20f99bdafe6b4a37eab2b45a1d91e011bc12985858f",
+      "size_bytes": 99
+    },
+    {
+      "path": "modeles/simulation-transition/AGENTS.md",
+      "sha256": "211615e096aa531e0f933cd6562802dffa48fa4227ba3211b734f49fbafff406",
+      "size_bytes": 1416
+    },
+    {
+      "path": "modeles/simulation-transition/README.md",
+      "sha256": "74f524a47119927e8367e607213f4f9f4cc8053fc36db8bb8b5bbba7a2d63435",
+      "size_bytes": 912
+    },
+    {
+      "path": "modeles/simulation-transition/build/v9/build-receipt.json",
+      "sha256": "4bcc3a27555c2ba7c8965501cd1ad6c1e063af150928b60f280704a988438807",
+      "size_bytes": 719
+    },
+    {
+      "path": "modeles/simulation-transition/build/v9/state-snapshot.json",
+      "sha256": "d1f7062f80311584856b5b3bb0741ac65c4a0909069cc34e865cdd3480da475d",
+      "size_bytes": 367
+    },
+    {
+      "path": "modeles/simulation-transition/build/v9/v9-capabilities.json",
+      "sha256": "40bd95a6d168768ab6bd65f8f9c5f4cbdfa79c0c810860b95f66ffe29d564ff1",
+      "size_bytes": 817
+    },
+    {
+      "path": "modeles/simulation-transition/canon/domain/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "modeles/simulation-transition/canon/epistemic/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "modeles/simulation-transition/canon/operations/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "modeles/simulation-transition/canon/state.index.json",
+      "sha256": "28a1ce910aa079e50199b467487fac9af0584ad43360200f5a4666d2481e1c08",
+      "size_bytes": 275
+    },
+    {
+      "path": "modeles/simulation-transition/design/structure-candidate.json",
+      "sha256": "7efafb2fdcbc69a08efdeca5c102333f32e03af63d0fc4c9e3db557eb5220191",
+      "size_bytes": 833
+    },
+    {
+      "path": "modeles/simulation-transition/docs/00_INTENT_AND_SCOPE.md",
+      "sha256": "d72b627756ceb1fcb355a0291e68f06eff1ed40eaf0e61c4eaa54145153d263a",
+      "size_bytes": 456
+    },
+    {
+      "path": "modeles/simulation-transition/docs/01_SEMANTIC_BOUNDARY.md",
+      "sha256": "4355ec2011fabb6d3e60a015d333b8bad50715d04bdda77aded1f41afefeb9e7",
+      "size_bytes": 495
+    },
+    {
+      "path": "modeles/simulation-transition/docs/02_NATIVE_MODEL.md",
+      "sha256": "df2e1365340b052f76ad0d809538d5486f4d011c2a933e429c4899bfb07ed5cb",
+      "size_bytes": 731
+    },
+    {
+      "path": "modeles/simulation-transition/docs/03_EPISTEMIC_MODEL.md",
+      "sha256": "8d45bee86519c12124f9707b27da91d9b2f2f4087edf64b3603f6d4e368f1ebf",
+      "size_bytes": 442
+    },
+    {
+      "path": "modeles/simulation-transition/docs/04_CANONICAL_DERIVED.md",
+      "sha256": "9ca1154b18ae0980a96e562cedbef1ce85a2912940cf52819dd0fd402e1b1345",
+      "size_bytes": 311
+    },
+    {
+      "path": "modeles/simulation-transition/docs/05_ORIENTATIONS.md",
+      "sha256": "4ef452034359517fbbc8038117817fc8695d5c3effc12544e8b7437ac6323b77",
+      "size_bytes": 287
+    },
+    {
+      "path": "modeles/simulation-transition/docs/06_VALIDATION.md",
+      "sha256": "7de295f7e82cd14494c07df64ab72ced9f4efa76150d4a0daccaecf90e6bc8a4",
+      "size_bytes": 573
+    },
+    {
+      "path": "modeles/simulation-transition/docs/07_HOSTING_AND_PUBLICATION.md",
+      "sha256": "ae4e01c7a5ecdb94b4603452bdc78973771b000addd3ed83ebf2082db1d5022b",
+      "size_bytes": 795
+    },
+    {
+      "path": "modeles/simulation-transition/docs/08_GLOSSARY.md",
+      "sha256": "1f6375e83316f360dc9e98383876a5cea39f9d826293c9a9ee4dbb22a7928c01",
+      "size_bytes": 218
+    },
+    {
+      "path": "modeles/simulation-transition/docs/ARKETYPE.md",
+      "sha256": "9d099f97cb34b71af62ddd6e60bd9abd225bfc3cbfe18bbbe1322aa88eab735d",
+      "size_bytes": 581
+    },
+    {
+      "path": "modeles/simulation-transition/docs/PROFILE_NOTES.md",
+      "sha256": "8cabfaa9ff626dc91fff969b8add4d91492bc587555fa0e6cccb53a4aa22779b",
+      "size_bytes": 214
+    },
+    {
+      "path": "modeles/simulation-transition/arketype.template.json",
+      "sha256": "dc0c060559c8f4eb2ce1b213044cec5e225451a03af9ae412a14fec039b7598b",
+      "size_bytes": 312
+    },
+    {
+      "path": "modeles/simulation-transition/kristal.workspace.json",
+      "sha256": "9fb8d8f368b8ff893b195538751e5ac8f3265233d56f7105d61d70536c16695b",
+      "size_bytes": 2038
+    },
+    {
+      "path": "modeles/simulation-transition/runtime/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "modeles/simulation-transition/sources/source-catalog.json",
+      "sha256": "4e11d46142630914cfd1fb447c6b065d9143d24d179a18edc1162f3063edfce9",
+      "size_bytes": 64
+    },
+    {
+      "path": "modeles/simulation-transition/state/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "modeles/simulation-transition/tools/_templates/AGENTS.kristal.md",
+      "sha256": "211615e096aa531e0f933cd6562802dffa48fa4227ba3211b734f49fbafff406",
+      "size_bytes": 1416
+    },
+    {
+      "path": "modeles/simulation-transition/tools/_templates/AI_START_HERE.md",
+      "sha256": "bd988bba7c5ed7cd1ad8b69aa62e99d0fa9066ab89b1dc81f7a0c3739e8c1d07",
+      "size_bytes": 2595
+    },
+    {
+      "path": "modeles/simulation-transition/tools/_templates/github-hosting.json",
+      "sha256": "774e87548a6917b1b25e7c610d727d19af4df081897a816a02744ff5eaf021c9",
+      "size_bytes": 378
+    },
+    {
+      "path": "modeles/simulation-transition/tools/_templates/gitignore-kristal.txt",
+      "sha256": "ba9e766905d86932af10e20f99bdafe6b4a37eab2b45a1d91e011bc12985858f",
+      "size_bytes": 99
+    },
+    {
+      "path": "modeles/simulation-transition/tools/_templates/projection.json",
+      "sha256": "9a93c6e5ae26d5d989458a3c7dd43fbe3b5d878a23a6db61d9cc82594d068eb2",
+      "size_bytes": 565
+    },
+    {
+      "path": "modeles/simulation-transition/tools/_templates/readme-kristal.md",
+      "sha256": "8c006082936943cd65ebf45403f7c951831f8ce4dd640849d994d5c8c180f682",
+      "size_bytes": 844
+    },
+    {
+      "path": "modeles/simulation-transition/tools/_templates/source-catalog.json",
+      "sha256": "4e11d46142630914cfd1fb447c6b065d9143d24d179a18edc1162f3063edfce9",
+      "size_bytes": 64
+    },
+    {
+      "path": "modeles/simulation-transition/tools/_templates/state.index.json",
+      "sha256": "28a1ce910aa079e50199b467487fac9af0584ad43360200f5a4666d2481e1c08",
+      "size_bytes": 275
+    },
+    {
+      "path": "modeles/simulation-transition/tools/_templates/workspace.json",
+      "sha256": "6e048d7ed0086aa47ca6ebd1a3d3798057a5d9861bc2a5b732d04c8b0cc23a2d",
+      "size_bytes": 1680
+    },
+    {
+      "path": "modeles/simulation-transition/tools/kristal.py",
+      "sha256": "282ab66efcab5aa414e4663103d498c53e570cd3a52142cbdd39cbc5c2da5d95",
+      "size_bytes": 123848
+    },
+    {
+      "path": "modeles/univers-oeuvres-medias/.gitignore",
+      "sha256": "ba9e766905d86932af10e20f99bdafe6b4a37eab2b45a1d91e011bc12985858f",
+      "size_bytes": 99
+    },
+    {
+      "path": "modeles/univers-oeuvres-medias/AGENTS.md",
+      "sha256": "211615e096aa531e0f933cd6562802dffa48fa4227ba3211b734f49fbafff406",
+      "size_bytes": 1416
+    },
+    {
+      "path": "modeles/univers-oeuvres-medias/README.md",
+      "sha256": "bfa866ddce588e0d1df43b4d9011112ea25825f0ef872812a13d0eed5d5e3da3",
+      "size_bytes": 918
+    },
+    {
+      "path": "modeles/univers-oeuvres-medias/build/v9/build-receipt.json",
+      "sha256": "6b5b4e3eca5fe76373de9a9831c4ddd4e2a88c6f79efefff600eeba02485169c",
+      "size_bytes": 720
+    },
+    {
+      "path": "modeles/univers-oeuvres-medias/build/v9/state-snapshot.json",
+      "sha256": "5a666338ea39812b3faedeedb695ec138ebcc90a42bc0f4c2aaed5ee47cd5dc8",
+      "size_bytes": 368
+    },
+    {
+      "path": "modeles/univers-oeuvres-medias/build/v9/v9-capabilities.json",
+      "sha256": "40bd95a6d168768ab6bd65f8f9c5f4cbdfa79c0c810860b95f66ffe29d564ff1",
+      "size_bytes": 817
+    },
+    {
+      "path": "modeles/univers-oeuvres-medias/canon/domain/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "modeles/univers-oeuvres-medias/canon/epistemic/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "modeles/univers-oeuvres-medias/canon/operations/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "modeles/univers-oeuvres-medias/canon/state.index.json",
+      "sha256": "28a1ce910aa079e50199b467487fac9af0584ad43360200f5a4666d2481e1c08",
+      "size_bytes": 275
+    },
+    {
+      "path": "modeles/univers-oeuvres-medias/design/structure-candidate.json",
+      "sha256": "3e22c7d5c706635ec3041081887b27bf2af8fa0ac8398d3d6766ed88dc074b5d",
+      "size_bytes": 931
+    },
+    {
+      "path": "modeles/univers-oeuvres-medias/docs/00_INTENT_AND_SCOPE.md",
+      "sha256": "8380067d8162769bef60928dec135184a00f5a635fe6196ae7cb14da19547475",
+      "size_bytes": 495
+    },
+    {
+      "path": "modeles/univers-oeuvres-medias/docs/01_SEMANTIC_BOUNDARY.md",
+      "sha256": "4355ec2011fabb6d3e60a015d333b8bad50715d04bdda77aded1f41afefeb9e7",
+      "size_bytes": 495
+    },
+    {
+      "path": "modeles/univers-oeuvres-medias/docs/02_NATIVE_MODEL.md",
+      "sha256": "cf02e32087f9cbcaf24d226257427cb65932e15677c636a3749b60c1ea42f9ed",
+      "size_bytes": 827
+    },
+    {
+      "path": "modeles/univers-oeuvres-medias/docs/03_EPISTEMIC_MODEL.md",
+      "sha256": "28e95ef0662a87d5693ed76a69476f565ff0cff678b4d6430ebb62c01424ebc6",
+      "size_bytes": 485
+    },
+    {
+      "path": "modeles/univers-oeuvres-medias/docs/04_CANONICAL_DERIVED.md",
+      "sha256": "9ca1154b18ae0980a96e562cedbef1ce85a2912940cf52819dd0fd402e1b1345",
+      "size_bytes": 311
+    },
+    {
+      "path": "modeles/univers-oeuvres-medias/docs/05_ORIENTATIONS.md",
+      "sha256": "4ef452034359517fbbc8038117817fc8695d5c3effc12544e8b7437ac6323b77",
+      "size_bytes": 287
+    },
+    {
+      "path": "modeles/univers-oeuvres-medias/docs/06_VALIDATION.md",
+      "sha256": "7de295f7e82cd14494c07df64ab72ced9f4efa76150d4a0daccaecf90e6bc8a4",
+      "size_bytes": 573
+    },
+    {
+      "path": "modeles/univers-oeuvres-medias/docs/07_HOSTING_AND_PUBLICATION.md",
+      "sha256": "ae4e01c7a5ecdb94b4603452bdc78973771b000addd3ed83ebf2082db1d5022b",
+      "size_bytes": 795
+    },
+    {
+      "path": "modeles/univers-oeuvres-medias/docs/08_GLOSSARY.md",
+      "sha256": "1f6375e83316f360dc9e98383876a5cea39f9d826293c9a9ee4dbb22a7928c01",
+      "size_bytes": 218
+    },
+    {
+      "path": "modeles/univers-oeuvres-medias/docs/ARKETYPE.md",
+      "sha256": "5726c8847c048cdd25c1abc4a5d29639e91197fceddb8a80ee1ba465e5a2bb40",
+      "size_bytes": 589
+    },
+    {
+      "path": "modeles/univers-oeuvres-medias/docs/PROFILE_NOTES.md",
+      "sha256": "5f62161b993e08b75068058c91f55fb7e105775d86fcf52e38fdd2f6be7d7d44",
+      "size_bytes": 180
+    },
+    {
+      "path": "modeles/univers-oeuvres-medias/arketype.template.json",
+      "sha256": "56a33966dcd51526be8b6932eff24598da5c5e858b70c906b38fa5ccd3e6d4c2",
+      "size_bytes": 307
+    },
+    {
+      "path": "modeles/univers-oeuvres-medias/kristal.workspace.json",
+      "sha256": "4919338945a904c4ed92fbb2035f6262b5224115b0ec094413dd98e559992606",
+      "size_bytes": 2049
+    },
+    {
+      "path": "modeles/univers-oeuvres-medias/runtime/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "modeles/univers-oeuvres-medias/sources/source-catalog.json",
+      "sha256": "4e11d46142630914cfd1fb447c6b065d9143d24d179a18edc1162f3063edfce9",
+      "size_bytes": 64
+    },
+    {
+      "path": "modeles/univers-oeuvres-medias/state/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "modeles/univers-oeuvres-medias/tools/_templates/AGENTS.kristal.md",
+      "sha256": "211615e096aa531e0f933cd6562802dffa48fa4227ba3211b734f49fbafff406",
+      "size_bytes": 1416
+    },
+    {
+      "path": "modeles/univers-oeuvres-medias/tools/_templates/AI_START_HERE.md",
+      "sha256": "bd988bba7c5ed7cd1ad8b69aa62e99d0fa9066ab89b1dc81f7a0c3739e8c1d07",
+      "size_bytes": 2595
+    },
+    {
+      "path": "modeles/univers-oeuvres-medias/tools/_templates/github-hosting.json",
+      "sha256": "774e87548a6917b1b25e7c610d727d19af4df081897a816a02744ff5eaf021c9",
+      "size_bytes": 378
+    },
+    {
+      "path": "modeles/univers-oeuvres-medias/tools/_templates/gitignore-kristal.txt",
+      "sha256": "ba9e766905d86932af10e20f99bdafe6b4a37eab2b45a1d91e011bc12985858f",
+      "size_bytes": 99
+    },
+    {
+      "path": "modeles/univers-oeuvres-medias/tools/_templates/projection.json",
+      "sha256": "9a93c6e5ae26d5d989458a3c7dd43fbe3b5d878a23a6db61d9cc82594d068eb2",
+      "size_bytes": 565
+    },
+    {
+      "path": "modeles/univers-oeuvres-medias/tools/_templates/readme-kristal.md",
+      "sha256": "8c006082936943cd65ebf45403f7c951831f8ce4dd640849d994d5c8c180f682",
+      "size_bytes": 844
+    },
+    {
+      "path": "modeles/univers-oeuvres-medias/tools/_templates/source-catalog.json",
+      "sha256": "4e11d46142630914cfd1fb447c6b065d9143d24d179a18edc1162f3063edfce9",
+      "size_bytes": 64
+    },
+    {
+      "path": "modeles/univers-oeuvres-medias/tools/_templates/state.index.json",
+      "sha256": "28a1ce910aa079e50199b467487fac9af0584ad43360200f5a4666d2481e1c08",
+      "size_bytes": 275
+    },
+    {
+      "path": "modeles/univers-oeuvres-medias/tools/_templates/workspace.json",
+      "sha256": "6e048d7ed0086aa47ca6ebd1a3d3798057a5d9861bc2a5b732d04c8b0cc23a2d",
+      "size_bytes": 1680
+    },
+    {
+      "path": "modeles/univers-oeuvres-medias/tools/kristal.py",
+      "sha256": "282ab66efcab5aa414e4663103d498c53e570cd3a52142cbdd39cbc5c2da5d95",
+      "size_bytes": 123848
+    },
+    {
+      "path": "outils/_templates/AGENTS.kristal.md",
+      "sha256": "211615e096aa531e0f933cd6562802dffa48fa4227ba3211b734f49fbafff406",
+      "size_bytes": 1416
+    },
+    {
+      "path": "outils/_templates/AI_START_HERE.md",
+      "sha256": "bd988bba7c5ed7cd1ad8b69aa62e99d0fa9066ab89b1dc81f7a0c3739e8c1d07",
+      "size_bytes": 2595
+    },
+    {
+      "path": "outils/_templates/github-hosting.json",
+      "sha256": "774e87548a6917b1b25e7c610d727d19af4df081897a816a02744ff5eaf021c9",
+      "size_bytes": 378
+    },
+    {
+      "path": "outils/_templates/gitignore-kristal.txt",
+      "sha256": "ba9e766905d86932af10e20f99bdafe6b4a37eab2b45a1d91e011bc12985858f",
+      "size_bytes": 99
+    },
+    {
+      "path": "outils/_templates/projection.json",
+      "sha256": "9a93c6e5ae26d5d989458a3c7dd43fbe3b5d878a23a6db61d9cc82594d068eb2",
+      "size_bytes": 565
+    },
+    {
+      "path": "outils/_templates/readme-kristal.md",
+      "sha256": "8c006082936943cd65ebf45403f7c951831f8ce4dd640849d994d5c8c180f682",
+      "size_bytes": 844
+    },
+    {
+      "path": "outils/_templates/source-catalog.json",
+      "sha256": "4e11d46142630914cfd1fb447c6b065d9143d24d179a18edc1162f3063edfce9",
+      "size_bytes": 64
+    },
+    {
+      "path": "outils/_templates/state.index.json",
+      "sha256": "28a1ce910aa079e50199b467487fac9af0584ad43360200f5a4666d2481e1c08",
+      "size_bytes": 275
+    },
+    {
+      "path": "outils/_templates/workspace.json",
+      "sha256": "6e048d7ed0086aa47ca6ebd1a3d3798057a5d9861bc2a5b732d04c8b0cc23a2d",
+      "size_bytes": 1680
+    },
+    {
+      "path": "outils/kristal.py",
+      "sha256": "282ab66efcab5aa414e4663103d498c53e570cd3a52142cbdd39cbc5c2da5d95",
+      "size_bytes": 123848
+    },
+    {
+      "path": "schemas/archetype.schema.json",
+      "sha256": "3c30b4d11585292ef9eadb0557196cf45b186642f39520cc5a4a0c96fd024788",
+      "size_bytes": 1643
+    },
+    {
+      "path": "schemas/assembly-recipe.schema.json",
+      "sha256": "4f97971287d4b40202a2e28007d039e68ce53df2dd582d5afb851eafd2c7b671",
+      "size_bytes": 1133
+    },
+    {
+      "path": "test-results.json",
+      "sha256": "ae59059769ace1d123d5919318a38d01f44f4f252dc36b6a5c603adb6cc2b767",
+      "size_bytes": 2203
+    },
+    {
+      "path": "tests/test_arketype.py",
+      "sha256": "dda46d4c81154ea4502122f557592464a16dc429875365a1b5da03e785a5bfd4",
+      "size_bytes": 4408
+    }
+  ]
+}

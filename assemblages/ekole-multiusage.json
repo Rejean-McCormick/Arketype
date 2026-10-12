@@ -1,0 +1,26 @@
+{
+  "format": "arketype.assembly-recipe/1.0-non-normatif",
+  "id": "ekole-multiusage",
+  "title": "Ekole – savoir réutilisable",
+  "primary_archetype": "referentiel-semantique",
+  "components": [
+    {
+      "archetype": "modele-multiplexe",
+      "relation": "couche_candidate",
+      "design_note": "Couches de relations contextualisées à spécifier selon les sources.",
+      "status": "unresolved"
+    },
+    {
+      "archetype": "parcours-pedagogique",
+      "relation": "projection_ou_reference",
+      "design_note": "Parcours didactiques indépendants des faits encyclopédiques.",
+      "status": "unresolved"
+    }
+  ],
+  "guidance": "Le même savoir peut alimenter école, musée, loisir, recherche et création; les vues restent dérivées.",
+  "composition_status": "design_only",
+  "logical_contract": "to_define",
+  "source_references": "to_pin_on_real_instance",
+  "authoritative_ownership": "to_decide",
+  "publication_authorization": false
+}

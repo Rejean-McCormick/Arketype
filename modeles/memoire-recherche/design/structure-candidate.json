@@ -1,0 +1,30 @@
+{
+  "format": "arketype.structure-candidate/1.0-non-normatif",
+  "id_type": "ARK-06",
+  "forme": "memoire-recherche",
+  "statut": "illustration-non-canonique",
+  "n_est_pas_un_artefact_enregistre": true,
+  "intention": "Suit connaissance établie, hypothèses, essais, résultats et obligations.",
+  "primitives_possibles": [
+    "connaissances",
+    "hypotheses",
+    "tentatives",
+    "obligations",
+    "resultats",
+    "strategies",
+    "promotions"
+  ],
+  "contraintes_a_preserver": [
+    "Aucune promotion implicite d’un essai ou d’une stratégie en vérité du domaine."
+  ],
+  "exemple_payload_vide": {
+    "knowledge": [],
+    "hypotheses": [],
+    "proof_obligations": [],
+    "attempts_append_only": [],
+    "strategy_notes": [],
+    "promotion_records": []
+  },
+  "contrat_logique": "a_definir_pour_un_domaine_reel",
+  "bibliotheque": "Arketype 1.0"
+}

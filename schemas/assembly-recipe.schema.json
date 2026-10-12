@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Arketype assembly recipe (non-normative)",
+  "type": "object",
+  "required": [
+    "format",
+    "id",
+    "primary_archetype",
+    "components",
+    "composition_status"
+  ],
+  "properties": {
+    "format": {
+      "const": "arketype.assembly-recipe/1.0-non-normatif"
+    },
+    "id": {
+      "type": "string"
+    },
+    "primary_archetype": {
+      "type": "string"
+    },
+    "components": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "archetype",
+          "relation",
+          "status"
+        ],
+        "properties": {
+          "archetype": {
+            "type": "string"
+          },
+          "relation": {
+            "enum": [
+              "reference_externe",
+              "couche_candidate",
+              "projection_ou_reference",
+              "projection_derivee",
+              "sous_modele_candidate"
+            ]
+          },
+          "status": {
+            "const": "unresolved"
+          }
+        }
+      }
+    },
+    "composition_status": {
+      "const": "design_only"
+    }
+  }
+}

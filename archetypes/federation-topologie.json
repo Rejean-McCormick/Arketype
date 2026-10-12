@@ -1,0 +1,38 @@
+{
+  "id": "ARK-02",
+  "legacy_id": "TK-02",
+  "slug": "federation-topologie",
+  "name": "Fédération / topologie",
+  "family": "Composition",
+  "description": "Parent, enfants et frontières d’ownership avec états référencés.",
+  "kit_profile": "hierarchy-stub",
+  "native_kind_candidate": "identites_topologie_reservees",
+  "responsibility_mode": "topology-owner",
+  "structural_traits": [
+    "structurel",
+    "federe"
+  ],
+  "epistemic_modes": [
+    "reference"
+  ],
+  "deployment_options": [
+    "federe"
+  ],
+  "primitive_candidates": [
+    "noeuds",
+    "liens_parent_enfant",
+    "scopes",
+    "references_epinglees",
+    "statuts_de_cristallisation"
+  ],
+  "reference_use_case": "UCKK université → voies → cours",
+  "integrity_rule": "Le parent référence des engagements d’enfants; il ne s’approprie ni ne copie leur contenu.",
+  "antipattern": "Une référence vers un cours n’est pas une copie ni une permission.",
+  "design_question": "Où commence et finit la responsabilité du parent ?",
+  "template_path": "modeles/federation-topologie",
+  "kind": "open_archetype_not_standard",
+  "maturity": "candidate",
+  "canonical_claims_in_template": false,
+  "composition": "explicit_design_only",
+  "contract_status": "not_defined"
+}

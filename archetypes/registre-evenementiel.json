@@ -1,0 +1,41 @@
+{
+  "id": "ARK-11",
+  "legacy_id": "TK-11",
+  "slug": "registre-evenementiel",
+  "name": "Registre événementiel / chronologie",
+  "family": "Structures",
+  "description": "Événements successifs, révisions, validités temporelles et relations historiques.",
+  "kit_profile": "open",
+  "native_kind_candidate": "ledger_evenements_temporalises",
+  "responsibility_mode": "event-history-owner",
+  "structural_traits": [
+    "chronologique",
+    "append_only"
+  ],
+  "epistemic_modes": [
+    "atteste",
+    "hypothese"
+  ],
+  "deployment_options": [
+    "local",
+    "federe"
+  ],
+  "primitive_candidates": [
+    "evenements",
+    "acteurs",
+    "horodatages",
+    "validites",
+    "liens_causaux_hypotheses",
+    "versions"
+  ],
+  "reference_use_case": "Chroniques, trajectoires, provenance de décisions",
+  "integrity_rule": "Distinguer date des faits, date d’enregistrement et ordre de saisie; ne pas effacer les corrections.",
+  "antipattern": "La date du fait diffère de celle de l’inscription.",
+  "design_question": "Quelle politique de correction et conservation est applicable ?",
+  "template_path": "modeles/registre-evenementiel",
+  "kind": "open_archetype_not_standard",
+  "maturity": "candidate",
+  "canonical_claims_in_template": false,
+  "composition": "explicit_design_only",
+  "contract_status": "not_defined"
+}

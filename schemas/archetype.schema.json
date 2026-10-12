@@ -1,0 +1,88 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Arketype archetype metadata (non-normative)",
+  "type": "object",
+  "required": [
+    "id",
+    "slug",
+    "name",
+    "family",
+    "description",
+    "kit_profile",
+    "native_kind_candidate",
+    "integrity_rule",
+    "template_path",
+    "kind",
+    "maturity",
+    "contract_status"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^ARK-[0-9]{2}$"
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "family": {
+      "enum": [
+        "Savoir",
+        "Composition",
+        "Structures",
+        "Processus",
+        "Sources"
+      ]
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1
+    },
+    "kit_profile": {
+      "enum": [
+        "open",
+        "research",
+        "invariant",
+        "procedural",
+        "hierarchy-stub",
+        "executable",
+        "layered"
+      ]
+    },
+    "native_kind_candidate": {
+      "type": "string",
+      "minLength": 1
+    },
+    "integrity_rule": {
+      "type": "string",
+      "minLength": 1
+    },
+    "template_path": {
+      "type": "string",
+      "minLength": 1
+    },
+    "primitive_candidates": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "kind": {
+      "const": "open_archetype_not_standard"
+    },
+    "maturity": {
+      "const": "candidate"
+    },
+    "contract_status": {
+      "const": "not_defined"
+    },
+    "canonical_claims_in_template": {
+      "const": false
+    }
+  },
+  "additionalProperties": true
+}

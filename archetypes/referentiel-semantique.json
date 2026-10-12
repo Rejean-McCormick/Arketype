@@ -1,0 +1,43 @@
+{
+  "id": "ARK-01",
+  "legacy_id": "TK-01",
+  "slug": "referentiel-semantique",
+  "name": "Référentiel sémantique",
+  "family": "Savoir",
+  "description": "Savoirs, entités, propriétés, relations et contextes sourcés.",
+  "kit_profile": "open",
+  "native_kind_candidate": "referentiel_contextualise",
+  "responsibility_mode": "knowledge-owner",
+  "structural_traits": [
+    "descriptif",
+    "contextuel"
+  ],
+  "epistemic_modes": [
+    "atteste",
+    "hypothese",
+    "interprete"
+  ],
+  "deployment_options": [
+    "local",
+    "federe",
+    "offline"
+  ],
+  "primitive_candidates": [
+    "referents",
+    "types",
+    "relations_typees",
+    "assertions_contextualisees",
+    "sources",
+    "provenance"
+  ],
+  "reference_use_case": "Ekole — organisations humaines; encyclopédies offline",
+  "integrity_rule": "Ne pas confondre import Wikidata, preuve de source et fait validé; les adaptations pédagogiques restent des vues.",
+  "antipattern": "Ne pas importer directement des labels externes comme faits canoniques.",
+  "design_question": "Quelles entités et relations ce Kristal possède-t-il réellement ?",
+  "template_path": "modeles/referentiel-semantique",
+  "kind": "open_archetype_not_standard",
+  "maturity": "candidate",
+  "canonical_claims_in_template": false,
+  "composition": "explicit_design_only",
+  "contract_status": "not_defined"
+}

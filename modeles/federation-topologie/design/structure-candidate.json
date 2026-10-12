@@ -1,0 +1,26 @@
+{
+  "format": "arketype.structure-candidate/1.0-non-normatif",
+  "id_type": "ARK-02",
+  "forme": "federation-topologie",
+  "statut": "illustration-non-canonique",
+  "n_est_pas_un_artefact_enregistre": true,
+  "intention": "Parent, enfants et frontières d’ownership avec états référencés.",
+  "primitives_possibles": [
+    "noeuds",
+    "liens_parent_enfant",
+    "scopes",
+    "references_epinglees",
+    "statuts_de_cristallisation"
+  ],
+  "contraintes_a_preserver": [
+    "Le parent référence des engagements d’enfants; il ne s’approprie ni ne copie leur contenu."
+  ],
+  "exemple_payload_vide": {
+    "noeuds": [],
+    "liens": [],
+    "references_etats_epinglees": [],
+    "statuts_de_cristallisation": []
+  },
+  "contrat_logique": "a_definir_pour_un_domaine_reel",
+  "bibliotheque": "Arketype 1.0"
+}

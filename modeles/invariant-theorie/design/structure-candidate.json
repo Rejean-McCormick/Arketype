@@ -1,0 +1,30 @@
+{
+  "format": "arketype.structure-candidate/1.0-non-normatif",
+  "id_type": "ARK-07",
+  "forme": "invariant-theorie",
+  "statut": "illustration-non-canonique",
+  "n_est_pas_un_artefact_enregistre": true,
+  "intention": "Expose invariants, formulations, conséquences, témoins, réfutations et vérifications.",
+  "primitives_possibles": [
+    "invariants",
+    "morphes_equivalents",
+    "consequences",
+    "contre_exemples",
+    "preuves",
+    "certificats",
+    "tests"
+  ],
+  "contraintes_a_preserver": [
+    "Un test, une conséquence nécessaire et une preuve ne sont pas interchangeables."
+  ],
+  "exemple_payload_vide": {
+    "invariants": [],
+    "formulations_equivalentes": [],
+    "consequences_non_equivalentes": [],
+    "contre_exemples": [],
+    "preuves": [],
+    "certificats": []
+  },
+  "contrat_logique": "a_definir_pour_un_domaine_reel",
+  "bibliotheque": "Arketype 1.0"
+}

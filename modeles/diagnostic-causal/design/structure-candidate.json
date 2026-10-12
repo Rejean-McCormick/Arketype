@@ -1,0 +1,31 @@
+{
+  "format": "arketype.structure-candidate/1.0-non-normatif",
+  "id_type": "ARK-08",
+  "forme": "diagnostic-causal",
+  "statut": "illustration-non-canonique",
+  "n_est_pas_un_artefact_enregistre": true,
+  "intention": "Rassemble structure, modes de panne, observations et tests différenciants.",
+  "primitives_possibles": [
+    "topologie",
+    "etats_operatoires",
+    "perturbations",
+    "observations",
+    "hypotheses",
+    "tests",
+    "inference_derivee"
+  ],
+  "contraintes_a_preserver": [
+    "Ne pas confondre structure causale, pondération probabiliste, résultat de modèle et décision autorisée."
+  ],
+  "exemple_payload_vide": {
+    "topologies": [],
+    "etats": [],
+    "perturbations": [],
+    "observations": [],
+    "hypotheses": [],
+    "tests": [],
+    "inferences_derivees": []
+  },
+  "contrat_logique": "a_definir_pour_un_domaine_reel",
+  "bibliotheque": "Arketype 1.0"
+}

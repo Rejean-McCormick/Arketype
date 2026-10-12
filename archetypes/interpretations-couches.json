@@ -1,0 +1,41 @@
+{
+  "id": "ARK-12",
+  "legacy_id": "TK-12",
+  "slug": "interpretations-couches",
+  "name": "Interprétations multicouches",
+  "family": "Savoir",
+  "description": "Sépare calculs/formes reproductibles et interprétations, comparaisons ou hypothèses.",
+  "kit_profile": "layered",
+  "native_kind_candidate": "regimes_interpretatifs_separes",
+  "responsibility_mode": "interpretation-owner",
+  "structural_traits": [
+    "multicouche",
+    "correspondances"
+  ],
+  "epistemic_modes": [
+    "interprete",
+    "hypothese",
+    "calcule"
+  ],
+  "deployment_options": [
+    "local"
+  ],
+  "primitive_candidates": [
+    "donnees",
+    "transformations",
+    "couches_interpretatives",
+    "liens_typés",
+    "hypotheses",
+    "limites"
+  ],
+  "reference_use_case": "Pi-Theory, analyse culturelle ou sémiotique",
+  "integrity_rule": "Une transformation exacte ne valide pas automatiquement sa lecture ontologique, causale ou historique.",
+  "antipattern": "Une relation symbolique n’est pas une causalité démontrée.",
+  "design_question": "Quelles transitions entre couches sont autorisées et avec quelles réserves ?",
+  "template_path": "modeles/interpretations-couches",
+  "kind": "open_archetype_not_standard",
+  "maturity": "candidate",
+  "canonical_claims_in_template": false,
+  "composition": "explicit_design_only",
+  "contract_status": "not_defined"
+}

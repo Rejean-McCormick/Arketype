@@ -1,0 +1,42 @@
+{
+  "id": "ARK-08",
+  "legacy_id": "TK-08",
+  "slug": "diagnostic-causal",
+  "name": "Diagnostic causal",
+  "family": "Processus",
+  "description": "Rassemble structure, modes de panne, observations et tests différenciants.",
+  "kit_profile": "executable",
+  "native_kind_candidate": "reseau_causal_et_diagnostic",
+  "responsibility_mode": "causal-model-owner",
+  "structural_traits": [
+    "reseau_causal",
+    "observabilite"
+  ],
+  "epistemic_modes": [
+    "modelise",
+    "inference"
+  ],
+  "deployment_options": [
+    "local",
+    "projete"
+  ],
+  "primitive_candidates": [
+    "topologie",
+    "etats_operatoires",
+    "perturbations",
+    "observations",
+    "hypotheses",
+    "tests",
+    "inference_derivee"
+  ],
+  "reference_use_case": "VehicleDiag; composante diagnostique de MediKristal",
+  "integrity_rule": "Ne pas confondre structure causale, pondération probabiliste, résultat de modèle et décision autorisée.",
+  "antipattern": "Séparer état observé, modèle et posterior calculé.",
+  "design_question": "Qui assume les décisions opérationnelles issues du diagnostic ?",
+  "template_path": "modeles/diagnostic-causal",
+  "kind": "open_archetype_not_standard",
+  "maturity": "candidate",
+  "canonical_claims_in_template": false,
+  "composition": "explicit_design_only",
+  "contract_status": "not_defined"
+}

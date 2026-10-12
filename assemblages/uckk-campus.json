@@ -1,0 +1,20 @@
+{
+  "format": "arketype.assembly-recipe/1.0-non-normatif",
+  "id": "uckk-campus",
+  "title": "Campus UCKK et cours Moodle",
+  "primary_archetype": "federation-topologie",
+  "components": [
+    {
+      "archetype": "parcours-pedagogique",
+      "relation": "reference_externe",
+      "design_note": "Les cours détiennent leurs états; Moodle reçoit une projection, pas un canon concurrent.",
+      "status": "unresolved"
+    }
+  ],
+  "guidance": "La fédération réserve la topologie université/voies/cours. Tout engagement d’enfant doit être fixé au moment de la cristallisation.",
+  "composition_status": "design_only",
+  "logical_contract": "to_define",
+  "source_references": "to_pin_on_real_instance",
+  "authoritative_ownership": "to_decide",
+  "publication_authorization": false
+}

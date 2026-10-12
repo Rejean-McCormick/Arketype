@@ -1,0 +1,44 @@
+{
+  "id": "ARK-06",
+  "legacy_id": "TK-06",
+  "slug": "memoire-recherche",
+  "name": "Mémoire de recherche",
+  "family": "Savoir",
+  "description": "Suit connaissance établie, hypothèses, essais, résultats et obligations.",
+  "kit_profile": "research",
+  "native_kind_candidate": "knowledge_research_strategy_separes",
+  "responsibility_mode": "research-owner",
+  "structural_traits": [
+    "graphe_recherche",
+    "historique_essais"
+  ],
+  "epistemic_modes": [
+    "hypothese",
+    "essai",
+    "obligation",
+    "prouve"
+  ],
+  "deployment_options": [
+    "local",
+    "federe"
+  ],
+  "primitive_candidates": [
+    "connaissances",
+    "hypotheses",
+    "tentatives",
+    "obligations",
+    "resultats",
+    "strategies",
+    "promotions"
+  ],
+  "reference_use_case": "Projet scientifique, recherche formelle",
+  "integrity_rule": "Aucune promotion implicite d’un essai ou d’une stratégie en vérité du domaine.",
+  "antipattern": "Une tentative, même réussie techniquement, ne constitue pas une promotion canonique.",
+  "design_question": "Quel est le protocole de promotion des résultats ?",
+  "template_path": "modeles/memoire-recherche",
+  "kind": "open_archetype_not_standard",
+  "maturity": "candidate",
+  "canonical_claims_in_template": false,
+  "composition": "explicit_design_only",
+  "contract_status": "not_defined"
+}

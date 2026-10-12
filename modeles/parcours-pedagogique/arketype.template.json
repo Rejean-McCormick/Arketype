@@ -1,0 +1,10 @@
+{
+  "format": "arketype.template/1.0-non-normatif",
+  "archetype_id": "ARK-10",
+  "archetype_slug": "parcours-pedagogique",
+  "template_status": "stub",
+  "authoring_kit_profile": "open",
+  "canon_domaine_pre_rempli": false,
+  "autorisations_de_publication": false,
+  "generated_with_authoring_kit": "3.2.4"
+}

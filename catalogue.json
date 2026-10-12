@@ -1,0 +1,125 @@
+{
+  "format": "arketype.catalog/1.0-non-normatif",
+  "name": "Arketype",
+  "abbreviation": "ARK",
+  "version": "1.1.0",
+  "status": "bibliotheque_de_conception_non_normative",
+  "framework_reference": "10.0.0-draft.3.1",
+  "authoring_kit_reference": "3.2.4",
+  "authority": "aucune_autorite_semantique_transferee",
+  "archetypes": [
+    {
+      "id": "ARK-01",
+      "slug": "referentiel-semantique",
+      "name": "Référentiel sémantique",
+      "family": "Savoir",
+      "file": "archetypes/referentiel-semantique.json"
+    },
+    {
+      "id": "ARK-02",
+      "slug": "federation-topologie",
+      "name": "Fédération / topologie",
+      "family": "Composition",
+      "file": "archetypes/federation-topologie.json"
+    },
+    {
+      "id": "ARK-03",
+      "slug": "carte-jalons-preuves",
+      "name": "Carte de jalons et de preuves",
+      "family": "Savoir",
+      "file": "archetypes/carte-jalons-preuves.json"
+    },
+    {
+      "id": "ARK-04",
+      "slug": "procedure-protocole",
+      "name": "Procédure / protocole",
+      "family": "Processus",
+      "file": "archetypes/procedure-protocole.json"
+    },
+    {
+      "id": "ARK-05",
+      "slug": "compilation-collection",
+      "name": "Compilation / collection",
+      "family": "Composition",
+      "file": "archetypes/compilation-collection.json"
+    },
+    {
+      "id": "ARK-06",
+      "slug": "memoire-recherche",
+      "name": "Mémoire de recherche",
+      "family": "Savoir",
+      "file": "archetypes/memoire-recherche.json"
+    },
+    {
+      "id": "ARK-07",
+      "slug": "invariant-theorie",
+      "name": "Invariant / théorie formelle",
+      "family": "Savoir",
+      "file": "archetypes/invariant-theorie.json"
+    },
+    {
+      "id": "ARK-08",
+      "slug": "diagnostic-causal",
+      "name": "Diagnostic causal",
+      "family": "Processus",
+      "file": "archetypes/diagnostic-causal.json"
+    },
+    {
+      "id": "ARK-09",
+      "slug": "modele-multiplexe",
+      "name": "Modèle multiplexe / organisations",
+      "family": "Structures",
+      "file": "archetypes/modele-multiplexe.json"
+    },
+    {
+      "id": "ARK-10",
+      "slug": "parcours-pedagogique",
+      "name": "Parcours pédagogique",
+      "family": "Composition",
+      "file": "archetypes/parcours-pedagogique.json"
+    },
+    {
+      "id": "ARK-11",
+      "slug": "registre-evenementiel",
+      "name": "Registre événementiel / chronologie",
+      "family": "Structures",
+      "file": "archetypes/registre-evenementiel.json"
+    },
+    {
+      "id": "ARK-12",
+      "slug": "interpretations-couches",
+      "name": "Interprétations multicouches",
+      "family": "Savoir",
+      "file": "archetypes/interpretations-couches.json"
+    },
+    {
+      "id": "ARK-13",
+      "slug": "univers-oeuvres-medias",
+      "name": "Univers / œuvres / médias",
+      "family": "Structures",
+      "file": "archetypes/univers-oeuvres-medias.json"
+    },
+    {
+      "id": "ARK-14",
+      "slug": "simulation-transition",
+      "name": "Simulation / transitions",
+      "family": "Processus",
+      "file": "archetypes/simulation-transition.json"
+    },
+    {
+      "id": "ARK-15",
+      "slug": "composition-hybride",
+      "name": "Composition hybride / sous-systèmes",
+      "family": "Composition",
+      "file": "archetypes/composition-hybride.json"
+    },
+    {
+      "id": "ARK-16",
+      "slug": "deposition-temoignage",
+      "name": "Déposition / témoignage",
+      "family": "Sources",
+      "file": "archetypes/deposition-temoignage.json"
+    }
+  ],
+  "description": "Bibliothèque locale d’archétypes et de modèles neutres pour créer des Kristals."
+}

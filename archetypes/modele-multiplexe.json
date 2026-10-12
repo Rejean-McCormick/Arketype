@@ -1,0 +1,43 @@
+{
+  "id": "ARK-09",
+  "legacy_id": "TK-09",
+  "slug": "modele-multiplexe",
+  "name": "Modèle multiplexe / organisations",
+  "family": "Structures",
+  "description": "Réseaux de rôles, institutions, ressources et règles selon des couches et échelles distinctes.",
+  "kit_profile": "open",
+  "native_kind_candidate": "graphe_multiplexe_contextualise",
+  "responsibility_mode": "relational-model-owner",
+  "structural_traits": [
+    "multiplex",
+    "temporel"
+  ],
+  "epistemic_modes": [
+    "atteste",
+    "interprete",
+    "hypothese"
+  ],
+  "deployment_options": [
+    "local",
+    "federe"
+  ],
+  "primitive_candidates": [
+    "entites",
+    "couches_relationnelles",
+    "roles",
+    "ressources",
+    "regles",
+    "temps",
+    "points_de_vue"
+  ],
+  "reference_use_case": "Organisations humaines, pouvoir, réseaux techniques",
+  "integrity_rule": "Conserver les couches et perspectives; aucun rôle, droit ou autorité par défaut.",
+  "antipattern": "Ne pas écraser les perspectives ni les périodes divergentes.",
+  "design_question": "Comment chaque couche relationnelle est-elle située ?",
+  "template_path": "modeles/modele-multiplexe",
+  "kind": "open_archetype_not_standard",
+  "maturity": "candidate",
+  "canonical_claims_in_template": false,
+  "composition": "explicit_design_only",
+  "contract_status": "not_defined"
+}

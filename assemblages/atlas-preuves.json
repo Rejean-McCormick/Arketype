@@ -1,0 +1,26 @@
+{
+  "format": "arketype.assembly-recipe/1.0-non-normatif",
+  "id": "atlas-preuves",
+  "title": "Carte de carrefours, terminus et preuves",
+  "primary_archetype": "carte-jalons-preuves",
+  "components": [
+    {
+      "archetype": "invariant-theorie",
+      "relation": "reference_externe",
+      "design_note": "Citer l’état, l’artéfact et la portée de la preuve complète.",
+      "status": "unresolved"
+    },
+    {
+      "archetype": "memoire-recherche",
+      "relation": "reference_externe",
+      "design_note": "Les obligations encore ouvertes restent distinctes des preuves qualifiées.",
+      "status": "unresolved"
+    }
+  ],
+  "guidance": "N’enregistrer que carrefours, extrémités, frontières atteintes, points d’arrimage et références épinglées.",
+  "composition_status": "design_only",
+  "logical_contract": "to_define",
+  "source_references": "to_pin_on_real_instance",
+  "authoritative_ownership": "to_decide",
+  "publication_authorization": false
+}

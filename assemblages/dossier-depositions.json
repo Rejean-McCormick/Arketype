@@ -1,0 +1,32 @@
+{
+  "format": "arketype.assembly-recipe/1.0-non-normatif",
+  "id": "dossier-depositions",
+  "title": "Dossier de dépositions, chronologie et interprétations séparées",
+  "primary_archetype": "deposition-temoignage",
+  "components": [
+    {
+      "archetype": "registre-evenementiel",
+      "relation": "reference_externe",
+      "design_note": "La chronologie des événements rapportés n’est pas une chronologie de faits confirmés; conserver les attributions et les sources.",
+      "status": "unresolved"
+    },
+    {
+      "archetype": "interpretations-couches",
+      "relation": "reference_externe",
+      "design_note": "Les synthèses, analyses de cohérence et évaluations de crédibilité sont distinctes des propos originaux.",
+      "status": "unresolved"
+    },
+    {
+      "archetype": "carte-jalons-preuves",
+      "relation": "reference_externe",
+      "design_note": "Référencer les corroborations ou contradictions vérifiées ailleurs, sans convertir automatiquement les dépositions en preuve suffisante.",
+      "status": "unresolved"
+    }
+  ],
+  "guidance": "Établir d’abord le cadre légal/éthique, l’autorité de recueil, les droits, la protection des personnes, les contrats de référence et la séparation capture/analyse/corroboration. Aucun consentement ni droit de publication n’est implicite.",
+  "composition_status": "design_only",
+  "logical_contract": "to_define",
+  "source_references": "to_pin_on_real_instance",
+  "authoritative_ownership": "to_decide",
+  "publication_authorization": false
+}

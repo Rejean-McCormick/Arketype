@@ -1,0 +1,28 @@
+{
+  "format": "arketype.structure-candidate/1.0-non-normatif",
+  "id_type": "ARK-11",
+  "forme": "registre-evenementiel",
+  "statut": "illustration-non-canonique",
+  "n_est_pas_un_artefact_enregistre": true,
+  "intention": "Événements successifs, révisions, validités temporelles et relations historiques.",
+  "primitives_possibles": [
+    "evenements",
+    "acteurs",
+    "horodatages",
+    "validites",
+    "liens_causaux_hypotheses",
+    "versions"
+  ],
+  "contraintes_a_preserver": [
+    "Distinguer date des faits, date d’enregistrement et ordre de saisie; ne pas effacer les corrections."
+  ],
+  "exemple_payload_vide": {
+    "evenements_append_only": [],
+    "sujets": [],
+    "relations_temporales": [],
+    "corrections": [],
+    "references_sources": []
+  },
+  "contrat_logique": "a_definir_pour_un_domaine_reel",
+  "bibliotheque": "Arketype 1.0"
+}

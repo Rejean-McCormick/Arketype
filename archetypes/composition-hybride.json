@@ -1,0 +1,41 @@
+{
+  "id": "ARK-15",
+  "legacy_id": "TK-15",
+  "slug": "composition-hybride",
+  "name": "Composition hybride / sous-systèmes",
+  "family": "Composition",
+  "description": "Assemble plusieurs formes natives sans fusionner leurs propriétaires ni la couche opérationnelle.",
+  "kit_profile": "open",
+  "native_kind_candidate": "composition_de_sous_modeles",
+  "responsibility_mode": "composition-coordinator",
+  "structural_traits": [
+    "composition",
+    "frontieres"
+  ],
+  "epistemic_modes": [
+    "reference",
+    "mixte"
+  ],
+  "deployment_options": [
+    "local",
+    "federe"
+  ],
+  "primitive_candidates": [
+    "sous_modeles",
+    "frontieres",
+    "contrats_interface",
+    "references",
+    "politiques",
+    "projections"
+  ],
+  "reference_use_case": "Partie Kristal conforme à extraire d’un système comme MediKristal",
+  "integrity_rule": "Ne pas assimiler application opérationnelle, dossier personnel, moteur de calcul et Kristal de connaissance.",
+  "antipattern": "Un modèle hybride n’est pas une fusion d’autorités.",
+  "design_question": "Quels sous-modèles doivent rester hors du canon Kristal ?",
+  "template_path": "modeles/composition-hybride",
+  "kind": "open_archetype_not_standard",
+  "maturity": "candidate",
+  "canonical_claims_in_template": false,
+  "composition": "explicit_design_only",
+  "contract_status": "not_defined"
+}

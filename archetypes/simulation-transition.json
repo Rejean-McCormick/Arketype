@@ -1,0 +1,41 @@
+{
+  "id": "ARK-14",
+  "legacy_id": "TK-14",
+  "slug": "simulation-transition",
+  "name": "Simulation / transitions",
+  "family": "Processus",
+  "description": "Établit règles de changement d’état et scénarios reproductibles.",
+  "kit_profile": "executable",
+  "native_kind_candidate": "modele_etats_transitions",
+  "responsibility_mode": "simulation-model-owner",
+  "structural_traits": [
+    "etats",
+    "transitions"
+  ],
+  "epistemic_modes": [
+    "simule",
+    "modelise"
+  ],
+  "deployment_options": [
+    "local",
+    "projete"
+  ],
+  "primitive_candidates": [
+    "etats",
+    "transitions",
+    "contraintes",
+    "variables",
+    "scenario",
+    "resultats_derived"
+  ],
+  "reference_use_case": "Simulateur, jeu, modèles exploratoires",
+  "integrity_rule": "Une sortie simulée n’est ni une observation du monde ni une autorisation d’agir.",
+  "antipattern": "Une simulation n’affirme pas une observation du monde réel.",
+  "design_question": "Quels paramètres et hypothèses gouvernent le scénario ?",
+  "template_path": "modeles/simulation-transition",
+  "kind": "open_archetype_not_standard",
+  "maturity": "candidate",
+  "canonical_claims_in_template": false,
+  "composition": "explicit_design_only",
+  "contract_status": "not_defined"
+}

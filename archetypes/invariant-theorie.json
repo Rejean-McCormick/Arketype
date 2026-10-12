@@ -1,0 +1,43 @@
+{
+  "id": "ARK-07",
+  "legacy_id": "TK-07",
+  "slug": "invariant-theorie",
+  "name": "Invariant / théorie formelle",
+  "family": "Savoir",
+  "description": "Expose invariants, formulations, conséquences, témoins, réfutations et vérifications.",
+  "kit_profile": "invariant",
+  "native_kind_candidate": "invariant_formalisations_preuves",
+  "responsibility_mode": "formal-theory-owner",
+  "structural_traits": [
+    "invariants",
+    "preuves"
+  ],
+  "epistemic_modes": [
+    "prouve",
+    "refute",
+    "hypothese"
+  ],
+  "deployment_options": [
+    "local",
+    "federe"
+  ],
+  "primitive_candidates": [
+    "invariants",
+    "morphes_equivalents",
+    "consequences",
+    "contre_exemples",
+    "preuves",
+    "certificats",
+    "tests"
+  ],
+  "reference_use_case": "Primalité, invariants mathématiques, Prime Bridge",
+  "integrity_rule": "Un test, une conséquence nécessaire et une preuve ne sont pas interchangeables.",
+  "antipattern": "Un algorithme ou test n’équivaut pas à une démonstration générale.",
+  "design_question": "Quels axiomes et systèmes de preuve sont employés ?",
+  "template_path": "modeles/invariant-theorie",
+  "kind": "open_archetype_not_standard",
+  "maturity": "candidate",
+  "canonical_claims_in_template": false,
+  "composition": "explicit_design_only",
+  "contract_status": "not_defined"
+}

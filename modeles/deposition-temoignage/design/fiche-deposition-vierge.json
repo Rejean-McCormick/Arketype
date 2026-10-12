@@ -1,0 +1,69 @@
+{
+  "format": "arketype.deposition-draft/1.0-illustratif-non-canonique",
+  "statut": "FORMULAIRE_VIERGE_HORS_CANON_NE_PAS_REMPLIR_DANS_LE_REPO",
+  "identifiant_deposition": null,
+  "cadre_de_recueil": {
+    "objet": null,
+    "organisme_ou_projet_responsable": null,
+    "base_et_autorisation_de_collecte": null,
+    "langue": null,
+    "nature_de_l_entretien": null,
+    "statut_juridique": null
+  },
+  "seance": {
+    "identifiant": null,
+    "date_heure_debut_iso8601_avec_fuseau": null,
+    "date_heure_fin_iso8601_avec_fuseau": null,
+    "lieu_ou_modalite": null,
+    "responsable_de_recueil_ref": null,
+    "interpretariat": null
+  },
+  "participant": {
+    "ref_pseudonyme": null,
+    "role": null,
+    "identite_reelle_externe_protegee_ref": null,
+    "representation_ou_accompagnement": null
+  },
+  "conditions": {
+    "information_sur_l_usage_et_la_conservation": null,
+    "consentement_ou_autre_base_applicable_ref": null,
+    "restrictions_de_diffusion": [],
+    "retrait_rectification_et_autres_droits": null,
+    "politique_de_retention_ref": null
+  },
+  "recit": {
+    "support_original_ref": null,
+    "methode_enregistrement": null,
+    "transcription_litterale_ref": null,
+    "declaration_reformulee_ref": null,
+    "questions_reponses": [],
+    "passages_incertains": [],
+    "traductions_refs": []
+  },
+  "allegations": [],
+  "validation_du_compte_rendu": {
+    "lecture_ou_relecture": null,
+    "observations_du_declarant": [],
+    "signature_ou_attestation_ref": null,
+    "statut_verifie": false
+  },
+  "historique": {
+    "version": null,
+    "date_enregistrement_iso8601": null,
+    "auteur_enregistrement_ref": null,
+    "versions_anterieures": [],
+    "ajouts_corrections_et_retractations": []
+  },
+  "provenance": {
+    "empreintes_supports_octets": [],
+    "chaine_de_conservation_refs": [],
+    "pieces_associees_refs": []
+  },
+  "evaluation_distincte": {
+    "analyses_externes_refs": [],
+    "corroborations_externes_refs": [],
+    "contradictions_externes_refs": [],
+    "statut_factuel": "non_evalue"
+  },
+  "portee": "Un récit recueilli n’est ni automatiquement vrai, ni assermenté, ni recevable juridiquement."
+}

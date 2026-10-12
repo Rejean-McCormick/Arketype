@@ -1,0 +1,29 @@
+{
+  "format": "arketype.structure-candidate/1.0-non-normatif",
+  "id_type": "ARK-14",
+  "forme": "simulation-transition",
+  "statut": "illustration-non-canonique",
+  "n_est_pas_un_artefact_enregistre": true,
+  "intention": "Établit règles de changement d’état et scénarios reproductibles.",
+  "primitives_possibles": [
+    "etats",
+    "transitions",
+    "contraintes",
+    "variables",
+    "scenario",
+    "resultats_derived"
+  ],
+  "contraintes_a_preserver": [
+    "Une sortie simulée n’est ni une observation du monde ni une autorisation d’agir."
+  ],
+  "exemple_payload_vide": {
+    "variables": [],
+    "etats": [],
+    "transitions": [],
+    "contraintes": [],
+    "scenarios": [],
+    "sorties_derivees": []
+  },
+  "contrat_logique": "a_definir_pour_un_domaine_reel",
+  "bibliotheque": "Arketype 1.0"
+}

@@ -1,0 +1,47 @@
+{
+  "format": "arketype.structure-candidate/1.0-non-normatif",
+  "id_type": "ARK-16",
+  "forme": "deposition-temoignage",
+  "statut": "illustration-non-canonique",
+  "n_est_pas_un_artefact_enregistre": true,
+  "intention": "Recueillir et conserver des récits attribués, leurs circonstances de collecte, versions, supports originaux, transcriptions, corrections et provenances, sans convertir les propos en faits établis.",
+  "primitives_possibles": [
+    "declarants_et_pseudonymes",
+    "seances_et_intervenants",
+    "questions_reponses",
+    "enonces_attribues",
+    "dates_des_faits_allegues",
+    "dates_de_recueil",
+    "supports_originaux",
+    "transcriptions_et_traductions",
+    "corrections_ajouts_retractations",
+    "consentements_et_bases_de_traitement",
+    "restrictions_d_acces",
+    "references_externes_de_corroboration",
+    "preuves_de_capture_et_chaine_de_conservation"
+  ],
+  "contraintes_a_preserver": [
+    "Distinguer les mots du témoin, ceux de l’enquêteur, les faits allégués, les événements observés, la transcription et l’analyse. Préserver les versions et conserver la provenance; ne jamais présumer de la vérité ou de la valeur juridique.",
+    "Distinguer date du fait allégué, date du recueil et date de la saisie.",
+    "Ne pas stocker de données personnelles réelles dans les modèles distribués."
+  ],
+  "exemple_payload_vide": {
+    "depositions": [],
+    "seances": [],
+    "participants_pseudonymises": [],
+    "questions_et_reponses": [],
+    "enonces_attribues": [],
+    "evenements_allegues": [],
+    "supports_originaux_references": [],
+    "transcriptions": [],
+    "traductions": [],
+    "rectifications_et_retractations": [],
+    "pieces_jointes_references": [],
+    "consentements_et_autorisations": [],
+    "protections_et_restrictions": [],
+    "corroborations_referencees": [],
+    "chaines_de_conservation": []
+  },
+  "contrat_logique": "a_definir_pour_un_domaine_reel",
+  "bibliotheque": "Arketype 1.1.0"
+}

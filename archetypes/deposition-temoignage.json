@@ -1,0 +1,53 @@
+{
+  "id": "ARK-16",
+  "slug": "deposition-temoignage",
+  "name": "Déposition / témoignage",
+  "family": "Sources",
+  "description": "Recueillir et conserver des récits attribués, leurs circonstances de collecte, versions, supports originaux, transcriptions, corrections et provenances, sans convertir les propos en faits établis.",
+  "kit_profile": "open",
+  "native_kind_candidate": "registre_declarations_provenance_versions",
+  "responsibility_mode": "testimony-record-owner",
+  "structural_traits": [
+    "declarations_attribuees",
+    "sessions_horodatees",
+    "versions_non_destructives",
+    "pieces_et_transcriptions_referencees",
+    "confidentialite_par_defaut"
+  ],
+  "epistemic_modes": [
+    "rapporté",
+    "déclaré",
+    "non_vérifié",
+    "contesté",
+    "corroboration_externe_distincte"
+  ],
+  "deployment_options": [
+    "local_prive",
+    "hebergement_restreint_sur_autorisation"
+  ],
+  "primitive_candidates": [
+    "declarants_et_pseudonymes",
+    "seances_et_intervenants",
+    "questions_reponses",
+    "enonces_attribues",
+    "dates_des_faits_allegues",
+    "dates_de_recueil",
+    "supports_originaux",
+    "transcriptions_et_traductions",
+    "corrections_ajouts_retractations",
+    "consentements_et_bases_de_traitement",
+    "restrictions_d_acces",
+    "references_externes_de_corroboration",
+    "preuves_de_capture_et_chaine_de_conservation"
+  ],
+  "reference_use_case": "Enquête historique, recueil de témoignages, dépositions encadrées, recherche qualitative, récit oral, auditions internes.",
+  "integrity_rule": "Distinguer les mots du témoin, ceux de l’enquêteur, les faits allégués, les événements observés, la transcription et l’analyse. Préserver les versions et conserver la provenance; ne jamais présumer de la vérité ou de la valeur juridique.",
+  "antipattern": "Transformer une affirmation non vérifiée en fait canonique; écraser une version; confondre compte rendu, enregistrement, interprétation et déclaration signée; diffuser des identités sans autorisation.",
+  "design_question": "Qui est habilité à recueillir la déposition, sur quelle base, avec quelles protections, vérifications, versions et règles de conservation ?",
+  "template_path": "modeles/deposition-temoignage",
+  "kind": "open_archetype_not_standard",
+  "maturity": "candidate",
+  "canonical_claims_in_template": false,
+  "composition": "explicit_design_only",
+  "contract_status": "not_defined"
+}

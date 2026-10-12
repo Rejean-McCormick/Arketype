@@ -1,0 +1,29 @@
+{
+  "format": "arketype.structure-candidate/1.0-non-normatif",
+  "id_type": "ARK-12",
+  "forme": "interpretations-couches",
+  "statut": "illustration-non-canonique",
+  "n_est_pas_un_artefact_enregistre": true,
+  "intention": "Sépare calculs/formes reproductibles et interprétations, comparaisons ou hypothèses.",
+  "primitives_possibles": [
+    "donnees",
+    "transformations",
+    "couches_interpretatives",
+    "liens_typés",
+    "hypotheses",
+    "limites"
+  ],
+  "contraintes_a_preserver": [
+    "Une transformation exacte ne valide pas automatiquement sa lecture ontologique, causale ou historique."
+  ],
+  "exemple_payload_vide": {
+    "donnees": [],
+    "transformations": [],
+    "couches": [],
+    "passages_types": [],
+    "hypotheses": [],
+    "contre_hypotheses": []
+  },
+  "contrat_logique": "a_definir_pour_un_domaine_reel",
+  "bibliotheque": "Arketype 1.0"
+}
