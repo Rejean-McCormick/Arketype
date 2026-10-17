@@ -14,6 +14,3 @@ Arketype 1.4.0 ships a single Windows desktop entrypoint: **`Lancer_Arketype.pyw
 No UI action publishes, synchronizes, activates, or authorizes an operational response. All composition recipes remain design-only. A workspace starts with no canonical domain content. GUI operations are local; tests have run under a Linux virtual display, not on every Windows installation.
 
 **Next:** [Developer Ops](Developer-Ops) · [Working with Templates](Working-with-Templates) · [Visual Grammar](Visual-Grammar)
-
-
-**Developer Ops** includes **Ecosystem Compatibility**, an optional read-only comparison of locally selected Framework, Kit, workspace, Manager and Bootstrap checkouts. It never syncs or publishes. See [Ecosystem Compatibility](Ecosystem-Compatibility).

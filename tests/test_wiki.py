@@ -37,12 +37,12 @@ class WikiDocumentationTests(unittest.TestCase):
             self.assertIn('`' + entry['slug'] + '`', text)
         profiles = json.loads((ROOT / 'inventaires/profils-usage.json').read_text(encoding='utf-8'))['profiles']
         ptext = (WIKI / 'Use-Case-Profiles.md').read_text(encoding='utf-8')
-        self.assertEqual(len(profiles), 5)
+        self.assertEqual(len(profiles), 21)
         for profile in profiles:
             self.assertIn(profile['assemblage_reference'], ptext)
         recipes = list((ROOT / 'assemblages').glob('*.json'))
         rtext = (WIKI / 'Composition-Recipes.md').read_text(encoding='utf-8')
-        self.assertEqual(len(recipes), 14)
+        self.assertEqual(len(recipes), 23)
         for recipe in recipes:
             self.assertIn('`' + recipe.stem + '`', rtext)
 

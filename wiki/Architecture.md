@@ -41,3 +41,6 @@ Arketype currently references Authoring Kit **3.2.4** and Kristal Framework **10
 Each component retains its own semantic purpose. The composition recipe is a proposal; no automatic canonical merge occurs.
 
 **See also:** [Data Formats](Data-Formats), [Composition Recipes](Composition-Recipes), [Security and Boundaries](Security-and-Boundaries).
+
+
+**Update 1.6.0:** [Framework v11 and diK](Framework-v11-and-diK) describes the new optional Kit 4 mode; earlier 3.2.4 / Framework 10 references remain historically descriptive, not the active new creation option.

@@ -1,0 +1,26 @@
+{
+  "format": "arketype.assembly-recipe/1.0-non-normatif",
+  "id": "recherche-mathematique",
+  "title": "Mathematical Research Workflow",
+  "primary_archetype": "memoire-recherche",
+  "components": [
+    {
+      "archetype": "carte-jalons-preuves",
+      "relation": "reference_externe",
+      "design_note": "Design-only link to carte-jalons-preuves: define ownership, exact references and authoritative source first.",
+      "status": "unresolved"
+    },
+    {
+      "archetype": "invariant-theorie",
+      "relation": "reference_externe",
+      "design_note": "Design-only link to invariant-theorie: define ownership, exact references and authoritative source first.",
+      "status": "unresolved"
+    }
+  ],
+  "guidance": "Do not turn conjectures, attempted proofs or route maps into certified theorems.",
+  "composition_status": "design_only",
+  "logical_contract": "to_define",
+  "source_references": "to_pin_on_real_instance",
+  "authoritative_ownership": "to_decide",
+  "publication_authorization": false
+}

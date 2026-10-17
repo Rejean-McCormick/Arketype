@@ -1,10 +1,14 @@
 {
-  "library_version": "1.4.0",
+  "library_version": "1.6.0",
   "language": "en",
-  "tests_run": 51,
-  "tests_passed": 51,
+  "tests_run": 78,
+  "tests_passed": 76,
+  "tests_skipped": 2,
+  "failures": 0,
+  "errors": 0,
   "passed": true,
   "local_kit_template_checks": 19,
-  "gui_virtual_display_smoke": true,
-  "mode": "local_nonpublishing"
+  "local_kit_template_builds": 19,
+  "status": "local_verification_external_integration_not_run",
+  "report": "VALIDATION_160.md"
 }

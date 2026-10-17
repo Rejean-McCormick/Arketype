@@ -1,13 +1,9 @@
 {
-  "format": "arketype.file-inventory/1.0-non-normatif",
-  "version": "1.4.0",
-  "scope": "local_archive_bytes_not_logical_commitments",
-  "language": "en",
   "files": [
     {
       "path": ".github/workflows/tests.yml",
-      "sha256": "c473858ab4baaebce172209b321f3e34c2d52979496289c1985f7b858525b9b4",
-      "size_bytes": 1179
+      "sha256": "25f23defbeab14d45ecf6bdc6904f4590f96c6ae6894f802aadddf2b4a519246",
+      "size_bytes": 398
     },
     {
       "path": ".gitignore",
@@ -16,18 +12,23 @@
     },
     {
       "path": "AGENTS.md",
-      "sha256": "184b89e80527559ee58ba8b142806885409e9250659fd8a5306c851bca5d1b25",
-      "size_bytes": 1069
+      "sha256": "2abcfb96968921367e8769d4551f53c2e7076ee361696a7425eadbb3289e8d6d",
+      "size_bytes": 2964
     },
     {
       "path": "CHANGELOG.md",
-      "sha256": "ee9f82869dc69958c512866adaf8ccf4295ebc6925ceb89b4f83bf2b1380791a",
-      "size_bytes": 2452
+      "sha256": "c3d3c7094c2ebda0c792da856a7f4e1290c51e9fb2aa45e488a72f1fadcaced8",
+      "size_bytes": 3068
     },
     {
       "path": "DESCRIPTION_GITHUB_EN.txt",
       "sha256": "c93ddf20584b31dea263f0b3bb474718826feb7aef7551108aa7958a6b4df4ae",
       "size_bytes": 327
+    },
+    {
+      "path": "GUIDE_MISE_A_JOUR_FR.md",
+      "sha256": "534fc1fe428e8755e2d544e8aa7d2fe546de3eaed3969595467e0055135ae733",
+      "size_bytes": 5244
     },
     {
       "path": "GitSink.bat",
@@ -41,13 +42,28 @@
     },
     {
       "path": "RAPPORT_TESTS.md",
-      "sha256": "7b7617363054c78a6cbd7e12557a747bdd43fd546dad496719284514c601880f",
-      "size_bytes": 3095
+      "sha256": "f2add47f4c4b4f861c33016668c2df76dd9dc61d4d66e81c75492fb745c985cf",
+      "size_bytes": 1983
     },
     {
       "path": "README.md",
-      "sha256": "0381cd2927423c907cc02565247b98a252383b17d06c6752cdaea192fcae3af7",
-      "size_bytes": 7853
+      "sha256": "6a5912a1784ce36e443e6b79135faf2610ffd432fdc3605618f726ae4b3e4565",
+      "size_bytes": 11681
+    },
+    {
+      "path": "SNAPSHOT_INDEX.txt",
+      "sha256": "777f3da1fd6127f49ad58ab78cabace324154923c768b60e9acb3adb74f5ad4c",
+      "size_bytes": 43171
+    },
+    {
+      "path": "VALIDATION_160.md",
+      "sha256": "5fbb1b2d93f5dd29a13b5c30184e5738e66668c269024dba85bef11c18d5acbe",
+      "size_bytes": 3375
+    },
+    {
+      "path": "VALIDATION_V15.md",
+      "sha256": "4c630e49d8134dc1ea83f89ee7c543be140b04d9994b6e861e6147e6697ba6dc",
+      "size_bytes": 3524
     },
     {
       "path": "ZmartZnap.pyw",
@@ -151,23 +167,28 @@
     },
     {
       "path": "arketype.py",
-      "sha256": "a168546e39e80508ea06ff54438b72f52ddaea60240a6189fd41436bac0d6ef5",
-      "size_bytes": 27020
+      "sha256": "8279c805203e4cfd6287894a82597fd7777e6b44921727d472cb35335617f152",
+      "size_bytes": 34573
     },
     {
       "path": "arketype_ecosystem.py",
-      "sha256": "0132329213fb8103b9b39f8bed8fae7943b2fae9069523e70213c7a017ec0928",
-      "size_bytes": 10025
+      "sha256": "729ec14fdf292e7d8d757bd18ad571565276ef3b05cdf7d9fa95c81ae0fb65cf",
+      "size_bytes": 12344
     },
     {
       "path": "arketype_gui.py",
-      "sha256": "6c6e79ff151ba19cf80c1ef85a2ec8932c5d11f6ac8054361942ac338141a222",
-      "size_bytes": 31551
+      "sha256": "ea72b1a0d271d44a1c430286dd0d6907edd19fa0c4c9ae2b19793ca90912709b",
+      "size_bytes": 30592
     },
     {
       "path": "arketype_launcher_ops.py",
-      "sha256": "716739470e79c819f8bd75a20405123f605694719c204cc2b0382afd73d1b4f0",
-      "size_bytes": 7509
+      "sha256": "e9538f400cdbc64f110456163bb6270e14d27f34cc834b7fc3fcb002c2412b4a",
+      "size_bytes": 7475
+    },
+    {
+      "path": "arketype_semantic.py",
+      "sha256": "9f7d20ef83a03460a787d6dba23b61d50f16d0864b36ef3c93563b54178cd599",
+      "size_bytes": 3611
     },
     {
       "path": "assemblages/atlas-preuves.json",
@@ -175,14 +196,39 @@
       "size_bytes": 970
     },
     {
+      "path": "assemblages/carte-preuves-longues.json",
+      "sha256": "cb6f3386acf3ad4d009bf3c9c23e0a786506d855c25ef9b11b993b8fd114ab72",
+      "size_bytes": 1017
+    },
+    {
+      "path": "assemblages/collection-traditions.json",
+      "sha256": "0004882e6a30e97de26e1670ab52a22c3935e2a9befa82e8aab24e49495de638",
+      "size_bytes": 1062
+    },
+    {
       "path": "assemblages/diagnostic-vehicule.json",
       "sha256": "7c976cd5d2c853a063bc1647d68b0dfd046218bd2066e273e2985d0b89739d6a",
       "size_bytes": 1012
     },
     {
+      "path": "assemblages/dossier-civique.json",
+      "sha256": "1787239cfebf36b80f63364ec689a4e6f313b82860f1f98791003d9504a32555",
+      "size_bytes": 1010
+    },
+    {
       "path": "assemblages/dossier-depositions.json",
       "sha256": "b7c65ad4b636e2355f7ad43917526e914e5ffb6241f661d19034d6851eb75be1",
       "size_bytes": 1275
+    },
+    {
+      "path": "assemblages/dossier-medical.json",
+      "sha256": "e2e392b60eb33e89f826ffe6c866da6d04b502706a780cc8eb80ff9b2393691a",
+      "size_bytes": 1012
+    },
+    {
+      "path": "assemblages/dossier-scolaire.json",
+      "sha256": "07776d51fd500960d2009a7acbee7406d9fef703ac4b7ee17b6b4683b4f00357",
+      "size_bytes": 1018
     },
     {
       "path": "assemblages/ekole-multiusage.json",
@@ -215,9 +261,29 @@
       "size_bytes": 1019
     },
     {
+      "path": "assemblages/organisations-contextuelles.json",
+      "sha256": "c40124a71c891de5a79b20fe1fb0ff21c328c8ecd83aafafe8a0b7be96776ba9",
+      "size_bytes": 1052
+    },
+    {
+      "path": "assemblages/parcours-moodle.json",
+      "sha256": "6e48454c7c4d4d2ad038522622837cb6256880f8b8751a1d712e5feb63296490",
+      "size_bytes": 819
+    },
+    {
+      "path": "assemblages/recherche-mathematique.json",
+      "sha256": "6e4edeed36c3e8232dad371a83fe72d1b078e40c4a3d115ccae1e51d37b6c2ee",
+      "size_bytes": 1015
+    },
+    {
       "path": "assemblages/suivi-employe.json",
       "sha256": "5f4f7a87c1e9b6e261e93c74fcc36d35cc95b46dc5ea041a58e70911de7ace05",
       "size_bytes": 1018
+    },
+    {
+      "path": "assemblages/systeme-scolaire.json",
+      "sha256": "a74a043ac6695db3d0d0fa590eafd2a6e44c6161a200069538bef7d7de9bafc2",
+      "size_bytes": 1023
     },
     {
       "path": "assemblages/taxonomie-nature.json",
@@ -241,8 +307,8 @@
     },
     {
       "path": "assets/logo-k-ui.png",
-      "sha256": "489ee591f073e4a187450ad47a24188212760b9fa0d18fc195b2e09801861647",
-      "size_bytes": 4615
+      "sha256": "394662b30947efa075d421190a9149375257f9d54ece505049ab891c9916455f",
+      "size_bytes": 7684
     },
     {
       "path": "assets/logo-k.svg",
@@ -250,9 +316,9 @@
       "size_bytes": 1578
     },
     {
-      "path": "catalogue/Arketype_Visual_Catalogue_v1.4.0.pdf",
-      "sha256": "34199474d855ffe3508943254f6ba17e918c0e9dcb5d21752cc2f6cac5c197df",
-      "size_bytes": 97159
+      "path": "catalogue.json",
+      "sha256": "806e8a2359a0c19b4c12bea65217646d2af233529cba9077bc10ac6d7ff3268a",
+      "size_bytes": 4800
     },
     {
       "path": "catalogue/__init__.py",
@@ -261,23 +327,18 @@
     },
     {
       "path": "catalogue/creer_pdf.py",
-      "sha256": "83903ca44ff2bbb91146739a4d69052fd53d76c5e1120ef747024ea6896222b0",
-      "size_bytes": 7865
+      "sha256": "c4b2c6a2e1fa6cb9b6bd7942e829f205723ff725e771db5b3e93c07f3ec16f2f",
+      "size_bytes": 7911
     },
     {
       "path": "catalogue/index.html",
-      "sha256": "dad3a5b897d82a120fb7f814b8493e6c4511fef68525a155b09fd235536a679e",
-      "size_bytes": 128569
+      "sha256": "cec323d63b7171d4dbb8fff7c8b1fff8ee30f38d0ad4024164c7d990027339ce",
+      "size_bytes": 201243
     },
     {
       "path": "catalogue/renderer.py",
-      "sha256": "01b40b12750039ff89615cbefd91e84f9de77c5734315e970c5fa7eec30a03a3",
-      "size_bytes": 21057
-    },
-    {
-      "path": "catalogue.json",
-      "sha256": "d82a45d9e4529cf11d390c82414bdeb791134560fbd69b7e431aff04604d0aa0",
-      "size_bytes": 4468
+      "sha256": "2e27e4a254f2e9986aff321ca9faa296637a9a4f1faee337dcd6a57538312bd2",
+      "size_bytes": 22612
     },
     {
       "path": "docs/01_CONCEPTS.md",
@@ -331,13 +392,48 @@
     },
     {
       "path": "docs/11_CATALOGUE_HTML.md",
-      "sha256": "28064cc15281177c48044268bce1e92d21b83bd2f589f5c318f86a2590863592",
-      "size_bytes": 777
+      "sha256": "be4a16f2d608b12956da7ad738f449919a89c6e87ccb9e143aa6e1476cd5bbe0",
+      "size_bytes": 676
+    },
+    {
+      "path": "docs/12_USAGE_PROFILES_AND_SCOPES.md",
+      "sha256": "ec7ad132ed3ffef058cfdeeb238cbc0b6f47231721c48d8cd4c54c2e41954133",
+      "size_bytes": 3822
+    },
+    {
+      "path": "docs/13_SKOPE_COMPATIBILITY.md",
+      "sha256": "374136f8d1592bf45aeb4c71912c72f07f3bf3a8e668afc56aedb7c40e0ce9aa",
+      "size_bytes": 1586
+    },
+    {
+      "path": "docs/14_FRAMEWORK_V11_ET_DIK.md",
+      "sha256": "bff772a947358ed5936d89de1e4ec9998c47c3e0221b260eabb5036ee1e38989",
+      "size_bytes": 4148
+    },
+    {
+      "path": "docs/15_MISE_A_JOUR_ARKETYPE_160.md",
+      "sha256": "791d1e56085af454868544e7a178fafd0cdac6ab16544143e77db804e358b5f7",
+      "size_bytes": 3441
     },
     {
       "path": "docs/ECOSYSTEM_ALIGNMENT.md",
-      "sha256": "cefe2f23c6fcf3d090a4c4aa37ce88b4d49c7f6f71246d10c77222f06a3ea7b2",
-      "size_bytes": 4461
+      "sha256": "703c4b7501fd996b938f787bdab088ab2c49e6afc988e44ea283a008c90f583c",
+      "size_bytes": 5257
+    },
+    {
+      "path": "examples/scope-guidance-preuves.json",
+      "sha256": "d339482a9ce28f10316e348cb2bd6d284d86128628c8ffff842e0a9b8903a6f8",
+      "size_bytes": 1890
+    },
+    {
+      "path": "examples/scope-guidance-uckk.json",
+      "sha256": "9edbea618fc76cbf5c3917c095fac6256aee90cc0990718ff5a77987a435ad11",
+      "size_bytes": 1743
+    },
+    {
+      "path": "examples/scope-guidance-vehiclediag.json",
+      "sha256": "a63af27f8bc6640d4dce37e5c045b1a4b24aa72471ae679ee0982e28888ddc37",
+      "size_bytes": 1937
     },
     {
       "path": "inventaires/archetypes-visuels.json",
@@ -345,9 +441,14 @@
       "size_bytes": 11264
     },
     {
+      "path": "inventaires/cas-reels-usage.json",
+      "sha256": "4bdfc96b504f6f5c206f3e2b7c97a517dfe82b2178c9181c5b8aed8410205e2c",
+      "size_bytes": 3887
+    },
+    {
       "path": "inventaires/diagrammes-situes.json",
-      "sha256": "d589ae7e4a715aee2821ac6ed1055734e197aa6f5c70845cb792ad99a1ede2ca",
-      "size_bytes": 26822
+      "sha256": "05a5591ccd711d49ef069e271346a31fcb8957675c5024614ff2ec7fd8f6a432",
+      "size_bytes": 46552
     },
     {
       "path": "inventaires/grammaire-visuelle.json",
@@ -356,8 +457,13 @@
     },
     {
       "path": "inventaires/profils-usage.json",
-      "sha256": "931e09d5174c55e7c77ab2a928c01fff7de25aa16739275bea60d2fe61ba1065",
-      "size_bytes": 5697
+      "sha256": "f4b49fad2bed55330a55be8bfc572e93bd34cfa8e000cf54dcfac8d1769a90b0",
+      "size_bytes": 59129
+    },
+    {
+      "path": "inventaires/taxonomie-usages.json",
+      "sha256": "3b2ad4ed35a30996bca3bdc72e17163ded5881bdae3d5291d4180ba840345e32",
+      "size_bytes": 1933
     },
     {
       "path": "modeles/carte-jalons-preuves/.gitignore",
@@ -3945,6 +4051,76 @@
       "size_bytes": 1680
     },
     {
+      "path": "outils/authoring_v11/README.md",
+      "sha256": "fc93d21eb2570df4ba6041295308be6c2bdf88ccb389a446cb75d6087e335256",
+      "size_bytes": 756
+    },
+    {
+      "path": "outils/authoring_v11/VENDOR_PIN.json",
+      "sha256": "984f65159d6ee34472a59bb0006d5320eeccc2f38c3946fb7312f28ba6861933",
+      "size_bytes": 2139
+    },
+    {
+      "path": "outils/authoring_v11/VERSION",
+      "sha256": "b5cb9b0d029aae724acb556eb57de218bd2d667305b3aecb7cfef5ea4bd0fbf8",
+      "size_bytes": 14
+    },
+    {
+      "path": "outils/authoring_v11/templates/AGENTS.kristal.md",
+      "sha256": "bbee46b6de943d0f07f9fad7dc64a4040902295bdcfd27c5840340fe6931a879",
+      "size_bytes": 735
+    },
+    {
+      "path": "outils/authoring_v11/templates/AI_START_HERE.md",
+      "sha256": "bd988bba7c5ed7cd1ad8b69aa62e99d0fa9066ab89b1dc81f7a0c3739e8c1d07",
+      "size_bytes": 2595
+    },
+    {
+      "path": "outils/authoring_v11/templates/github-hosting.json",
+      "sha256": "774e87548a6917b1b25e7c610d727d19af4df081897a816a02744ff5eaf021c9",
+      "size_bytes": 378
+    },
+    {
+      "path": "outils/authoring_v11/templates/gitignore-kristal.txt",
+      "sha256": "ba9e766905d86932af10e20f99bdafe6b4a37eab2b45a1d91e011bc12985858f",
+      "size_bytes": 99
+    },
+    {
+      "path": "outils/authoring_v11/templates/projection.json",
+      "sha256": "9a93c6e5ae26d5d989458a3c7dd43fbe3b5d878a23a6db61d9cc82594d068eb2",
+      "size_bytes": 565
+    },
+    {
+      "path": "outils/authoring_v11/templates/readme-kristal.md",
+      "sha256": "0b1770d06f4bcb86cfac69c1b7c891206a5d282181136c82631819502067cd00",
+      "size_bytes": 520
+    },
+    {
+      "path": "outils/authoring_v11/templates/source-catalog.json",
+      "sha256": "4e11d46142630914cfd1fb447c6b065d9143d24d179a18edc1162f3063edfce9",
+      "size_bytes": 64
+    },
+    {
+      "path": "outils/authoring_v11/templates/state.index.json",
+      "sha256": "28a1ce910aa079e50199b467487fac9af0584ad43360200f5a4666d2481e1c08",
+      "size_bytes": 275
+    },
+    {
+      "path": "outils/authoring_v11/templates/workspace.json",
+      "sha256": "68d44e0f267871fb1e3554c33e37693aa59a6972d3c4ee2deb3a6ec41f8224d1",
+      "size_bytes": 1704
+    },
+    {
+      "path": "outils/authoring_v11/tools/kristal.py",
+      "sha256": "efba8f6b346ce358823de665e850ab5672a1769e3acfae8f19ec02fbbb0a32a0",
+      "size_bytes": 175676
+    },
+    {
+      "path": "outils/authoring_v11/tools/kristal_v11_core.py",
+      "sha256": "3aa9b2627c63fab2e10bd4385ce790d9330072255558d295c1bf6bab5444dc6d",
+      "size_bytes": 31724
+    },
+    {
       "path": "outils/kristal.py",
       "sha256": "282ab66efcab5aa414e4663103d498c53e570cd3a52142cbdd39cbc5c2da5d95",
       "size_bytes": 123848
@@ -3955,44 +4131,79 @@
       "size_bytes": 1670
     },
     {
+      "path": "schemas/arketype.scope-guidance.schema.json",
+      "sha256": "702cc4b19b57defa709f16435b5474c5e4b4faf42e0bb0b832e8c01e4552c7fc",
+      "size_bytes": 1247
+    },
+    {
       "path": "schemas/assembly-recipe.schema.json",
       "sha256": "683b84a580013755905002b1520fe153c59ba7e930ab4b2f571fae230104bbe8",
       "size_bytes": 1143
     },
     {
+      "path": "schemas/use-case-profile.schema.json",
+      "sha256": "3e9ea5d77d6409fac3c746548d8e19b6f4961464f9b662047995f9365b20d927",
+      "size_bytes": 1685
+    },
+    {
       "path": "test-results.json",
-      "sha256": "21a23939f3089f0f9738815a74437e62932958bd3ab95a5145d32550aaa7d3e6",
-      "size_bytes": 217
+      "sha256": "14f75490af98911d793905c2d8dd955cff9011cf1511e56068cfad8a3cb1e09e",
+      "size_bytes": 332
     },
     {
       "path": "tests/test_arketype.py",
-      "sha256": "f3b8e6a3b0213319042bde542d94013fa8862dccd4d6904b3961a34fb26c2642",
-      "size_bytes": 11458
+      "sha256": "5ab7b6147f6a5fe75191f00f8c2cb73abfad761886962d47f0194227327ba4a3",
+      "size_bytes": 11460
     },
     {
       "path": "tests/test_ecosystem.py",
-      "sha256": "334fc2af489fefeb3d8ab08c1155babd7a18f23f2a674a6252a533e440a2c6a7",
-      "size_bytes": 6028
+      "sha256": "01abab71327a9054595e81d441864feb919982fa221fa81369aef5a836cebb9e",
+      "size_bytes": 6024
     },
     {
       "path": "tests/test_launcher.py",
-      "sha256": "0609e0cddfa53e2093e8e366f4826250f06fc2a6688928506c04e9d6f8f5c49a",
-      "size_bytes": 4308
+      "sha256": "29935574b42213f42f42faf600c3555cd5e5b938596e6f27d11787cd0a14e94e",
+      "size_bytes": 4348
+    },
+    {
+      "path": "tests/test_upgrade_160.py",
+      "sha256": "988744b80be811c8fd419697012bf31ed799472aec10a825f68058d2dcf98eb9",
+      "size_bytes": 4068
+    },
+    {
+      "path": "tests/test_usage_scope.py",
+      "sha256": "152b84919bb80a0de4bb7b2f3ef3f5175788eb8000c6dd48782edcde5fe8182a",
+      "size_bytes": 6686
+    },
+    {
+      "path": "tests/test_v11_integration.py",
+      "sha256": "3172370009a05500e2f2898437ac438fbb3a4b20682105a0999062839061e89b",
+      "size_bytes": 4545
     },
     {
       "path": "tests/test_wiki.py",
-      "sha256": "c6e38656a463718e3f3fb8e18ec342e787ef98150e07e09bba7c6c856696e7c7",
-      "size_bytes": 3523
+      "sha256": "dcb0ec3e8178638021225853af003a4c6a57c2b301b0f52755a202931bd00b86",
+      "size_bytes": 3524
+    },
+    {
+      "path": "tools/build_release.py",
+      "sha256": "2d47f56ed68ff1ec85cdd40a782161bee01cdb500fe9e644af28397af2aa0aa1",
+      "size_bytes": 2876
+    },
+    {
+      "path": "use_cases.py",
+      "sha256": "1e4c0ecb14abb0b971a9dc1022d5d7a68ccde1a65e415af03470a25d451e95f5",
+      "size_bytes": 11104
     },
     {
       "path": "wiki/Archetype-Catalog.md",
-      "sha256": "19d8627e4a60e0433fe9318d9a9ad6395a549ff74aeac1671379754593b298ae",
+      "sha256": "9124a9749449202b7ea4e08a7e3e805c39ad37ca5e8db89815b5a0436264f4e2",
       "size_bytes": 13970
     },
     {
       "path": "wiki/Architecture.md",
-      "sha256": "99902e6a03836e53be142e8b94e3d9fca6c9b1de511fe8c5db2f4792caa08b8a",
-      "size_bytes": 2916
+      "sha256": "c07a149b890b2ff53326b5a281a2d477ac238aee8b64832f488cebb170c6588c",
+      "size_bytes": 3131
     },
     {
       "path": "wiki/CLI-Reference.md",
@@ -4001,8 +4212,8 @@
     },
     {
       "path": "wiki/Composition-Recipes.md",
-      "sha256": "181e6001fea0556b50a3b9a8e5f1a4e6182b99a810b30b6454cbeabf501638fe",
-      "size_bytes": 3756
+      "sha256": "6febb3a2ec9ad4aabb4c292c508808c4985f28114ff244ee66dd01c21af62212",
+      "size_bytes": 4863
     },
     {
       "path": "wiki/Data-Formats.md",
@@ -4011,18 +4222,18 @@
     },
     {
       "path": "wiki/Desktop-Launcher.md",
-      "sha256": "25ef7a7e42c33f354fbf2dccc9ec8f7d50ae0ab7528834a9e45c2691218a6eb7",
-      "size_bytes": 1810
+      "sha256": "a061320e0ec946748a0c6c3e6ecad593000b9b25a5dbe28b370bca716d01c465",
+      "size_bytes": 1554
     },
     {
       "path": "wiki/Developer-Ops.md",
-      "sha256": "4c0247c7fcb60c2d331ce8705231e7af0190c3c2b56ac91f3800185118efcd48",
-      "size_bytes": 2283
+      "sha256": "4a7bd8c431f7d4fd1473b35d0afe569a3edf601f40e3dc2185e7f53728897232",
+      "size_bytes": 1804
     },
     {
       "path": "wiki/Ecosystem-Compatibility.md",
-      "sha256": "61904e35100f5a25826b9937b9b95d73e9541d23ac82917ffb654b9637c7be65",
-      "size_bytes": 2054
+      "sha256": "56219d15478ffcac19a5bd35da50e74a16361c3eebd73df302dd85ede5d3e7ee",
+      "size_bytes": 2521
     },
     {
       "path": "wiki/Extending-Arketype.md",
@@ -4035,9 +4246,14 @@
       "size_bytes": 2058
     },
     {
+      "path": "wiki/Framework-v11-and-diK.md",
+      "sha256": "1be9780b8fd52593111367c1835091ad581d79fe1be37bba93186740e37272ee",
+      "size_bytes": 2345
+    },
+    {
       "path": "wiki/Getting-Started.md",
-      "sha256": "2b9b943f7157ddddec106c2368a4ef254632e1090ed7b7b8b43d94c4ffaf7fa9",
-      "size_bytes": 3619
+      "sha256": "72140bd279a262d009b05696db789e615d25de391b1b3442f6d832a9bb7c1b9c",
+      "size_bytes": 3827
     },
     {
       "path": "wiki/Glossary.md",
@@ -4046,8 +4262,8 @@
     },
     {
       "path": "wiki/Home.md",
-      "sha256": "325e108674c28fd7b4318442435615beb4897daad6046b842b14be6f6fa582c0",
-      "size_bytes": 3159
+      "sha256": "1517a956bb00175bed65c2dc7f2105b3b46195e50397fcb6819abf3a4cd7dc4f",
+      "size_bytes": 2931
     },
     {
       "path": "wiki/Publishing-the-Wiki.md",
@@ -4061,13 +4277,18 @@
     },
     {
       "path": "wiki/Use-Case-Profiles.md",
-      "sha256": "236d319b01019366d943a8119384058d04eb21fc6f065a0910797551df29efd5",
-      "size_bytes": 6089
+      "sha256": "38c457ca23165dad0ebf04aa4740f396414fbeaf411d50ecca53e1f53d042fa8",
+      "size_bytes": 8660
+    },
+    {
+      "path": "wiki/Use-Cases-and-Scope.md",
+      "sha256": "4187fec782425b678969877324715abd9467774f82cf145b477a2f895e365ea5",
+      "size_bytes": 2012
     },
     {
       "path": "wiki/Validation-and-Testing.md",
-      "sha256": "5f8ea4d599cb8e833aebf90919ba115fd68d9eb03f73a85868e4d4331489bcca",
-      "size_bytes": 1898
+      "sha256": "30c44c73ac86933600272a7cc0e5185666eea51a3a7a17b624a803046727b39c",
+      "size_bytes": 1846
     },
     {
       "path": "wiki/Visual-Grammar.md",
@@ -4081,8 +4302,12 @@
     },
     {
       "path": "wiki/_Sidebar.md",
-      "sha256": "22959a5101e5d16514f030dd6a82b95415a9c6a075248f64f6c19d87eccade27",
-      "size_bytes": 732
+      "sha256": "306e446d45c569dfef68a90bba561ad048c6df7237acdf0403f1be6b4cf85fe2",
+      "size_bytes": 773
     }
-  ]
+  ],
+  "format": "arketype.file-inventory/1.0-non-normatif",
+  "language": "en",
+  "scope": "local_archive_bytes_not_logical_commitments",
+  "version": "1.6.0"
 }

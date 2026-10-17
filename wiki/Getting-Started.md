@@ -68,3 +68,6 @@ Developer Ops offers local `list`, `search`, `show`, `profile`, `recipes`, `vali
 Native Windows testing remains a separate validation step; headless GUI tests have been performed on Linux.
 
 **Next:** [Working with Templates](Working-with-Templates) · [CLI Reference](CLI-Reference) · [Security and Boundaries](Security-and-Boundaries)
+
+
+**Update 1.6.0:** choose optional `--authoring v11` (or the desktop creation checkbox) for Kit 4 blank workspaces and the strict-v11 readiness checklist. See [Framework v11 and diK](Framework-v11-and-diK).

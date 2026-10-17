@@ -104,7 +104,7 @@ class ArketypeDesktop(tk.Tk):
                             command=lambda item=page: self.show_page(item))
             btn.pack(fill='x', padx=8, pady=(10 if page == 'Home' else 3, 0))
             self.nav_buttons[page] = btn
-        tk.Label(self.nav, text='Arketype 1.4.0\nOffline design library',
+        tk.Label(self.nav, text='Arketype 1.5.0\nOffline design library',
                  bg='#edf4f1', fg=MUTED, justify='left', padx=17).pack(side='bottom', anchor='w', pady=20)
         self.pages: dict[str, ttk.Frame] = {}
         self.status_var = tk.StringVar(value='Ready · no remote actions')
@@ -141,7 +141,7 @@ class ArketypeDesktop(tk.Tk):
              'Choose an archetype, preview an optional design-only composition, and create a blank workspace.',
              'Create Kristal'),
             ('Developer Ops', 'Inspect and verify the library',
-             'Run approved commands and inspect ecosystem compatibility without network writes.',
+             'Run approved local commands, unit tests, integrity checks, and HTML regeneration.',
              'Open Developer Ops'),
         ]
         for page, title, explanation, cta in choices:
@@ -180,7 +180,7 @@ class ArketypeDesktop(tk.Tk):
         a_tab = ttk.Frame(tabs, padding=8)
         u_tab = ttk.Frame(tabs, padding=8)
         tabs.add(a_tab, text='19 Archetypes')
-        tabs.add(u_tab, text='5 Use-case profiles')
+        tabs.add(u_tab, text=f'{len(self.profiles)} Use-case profiles')
         self.catalog_tabs = tabs
         self.archetype_tree = self._make_tree(a_tab, ('id', 'name', 'family', 'pattern'),
              {'id': 75, 'name': 260, 'family': 110, 'pattern': 125})
@@ -197,7 +197,7 @@ class ArketypeDesktop(tk.Tk):
         actions.pack(fill='x')
         ttk.Button(actions, text='Open full visual catalogue', style='Accent.TButton',
                    command=self.open_visual_catalogue).pack(side='left')
-        ttk.Button(actions, text='Use selected archetype', command=self._use_selected).pack(side='left', padx=10)
+        ttk.Button(actions, text='Create from selected entry', command=self._use_selected).pack(side='left', padx=10)
         ttk.Button(actions, text='Open catalogue JSON', command=lambda: self._open_file(ROOT / 'catalogue.json')).pack(side='left')
         self._refresh_catalogue()
 
@@ -271,6 +271,7 @@ class ArketypeDesktop(tk.Tk):
                 owner = self.profiles[selected[0]]
                 self.selected_type.set(owner['primary_archetype'])
                 self.selected_recipe.set(owner['assemblage_reference'])
+                self.selected_profile.set(owner['slug'])
                 self._update_creator_type(update_recipe=False)
                 self.show_page('Create Kristal')
                 return
@@ -278,6 +279,7 @@ class ArketypeDesktop(tk.Tk):
             selected = self.archetype_tree.selection()
             if selected:
                 self.selected_type.set(selected[0])
+                self.selected_profile.set('None')
                 self._update_creator_type()
                 self.show_page('Create Kristal')
                 return
@@ -291,10 +293,11 @@ class ArketypeDesktop(tk.Tk):
         frm.columnconfigure(1, weight=1)
         self.selected_type = tk.StringVar(value=next(iter(self.arch)))
         self.selected_recipe = tk.StringVar(value='None')
+        self.selected_profile = tk.StringVar(value='None')
         self.new_slug = tk.StringVar()
         self.new_title = tk.StringVar()
         self.parent_folder = tk.StringVar()
-        labels = ('Primary archetype', 'Optional assembly', 'Kristal slug', 'Kristal title', 'Parent directory')
+        labels = ('Primary archetype', 'Optional assembly', 'Use-case profile', 'Kristal slug', 'Kristal title', 'Parent directory')
         for row, title in enumerate(labels):
             ttk.Label(frm, text=title).grid(row=row, column=0, sticky='w', padx=(0, 18), pady=10)
         # Two-part description selected by human-readable display and stable slug.
@@ -311,13 +314,21 @@ class ArketypeDesktop(tk.Tk):
         self.recipe_widget = ttk.Combobox(frm, textvariable=self.recipe_display, state='readonly')
         self.recipe_widget.grid(row=1, column=1, sticky='ew', pady=5)
         self.recipe_widget.bind('<<ComboboxSelected>>', self._on_recipe_change)
-        ttk.Entry(frm, textvariable=self.new_slug).grid(row=2, column=1, sticky='ew', pady=5)
-        ttk.Entry(frm, textvariable=self.new_title).grid(row=3, column=1, sticky='ew', pady=5)
+        self.profile_display = tk.StringVar(value='None')
+        self.profile_labels = {'None':'None'}
+        self.profile_widget = ttk.Combobox(frm, textvariable=self.profile_display, state='readonly')
+        self.profile_widget.grid(row=2, column=1, sticky='ew', pady=5)
+        self.profile_widget.bind('<<ComboboxSelected>>', self._on_profile_change)
+        ttk.Entry(frm, textvariable=self.new_slug).grid(row=3, column=1, sticky='ew', pady=5)
+        ttk.Entry(frm, textvariable=self.new_title).grid(row=4, column=1, sticky='ew', pady=5)
         p_frame = ttk.Frame(frm)
-        p_frame.grid(row=4, column=1, sticky='ew', pady=5)
+        p_frame.grid(row=5, column=1, sticky='ew', pady=5)
         p_frame.columnconfigure(0, weight=1)
         ttk.Entry(p_frame, textvariable=self.parent_folder).grid(row=0, column=0, sticky='ew')
         ttk.Button(p_frame, text='Browse…', command=self._choose_folder).grid(row=0, column=1, padx=(8, 0))
+        self.authoring_v11 = tk.BooleanVar(value=False)
+        ttk.Checkbutton(p, text='Use Authoring Kit 4 / v11-ready empty workspace (no Q IDs minted)',
+                        variable=self.authoring_v11).pack(anchor='w', pady=(8, 0))
         self.creator_description = tk.Text(p, height=10, wrap='word', relief='solid',
                                            bg='white', font=('Segoe UI', 10), padx=12, pady=10)
         self.creator_description.pack(fill='both', expand=True, pady=(12, 8))
@@ -349,6 +360,13 @@ class ArketypeDesktop(tk.Tk):
             if rec['primary_archetype'] == typ:
                 self.assembly_labels[f"{rec['title']}  [{rec['id']}]"] = rec['id']
         self.recipe_widget.configure(values=list(self.assembly_labels))
+        self.profile_labels = {'None':'None'}
+        for pr in self.profiles.values():
+            if pr['primary_archetype'] == typ:
+                self.profile_labels[f"{pr['id']} · {pr['name']}"] = pr['slug']
+        self.profile_widget.configure(values=list(self.profile_labels))
+        if self.selected_profile.get() not in self.profile_labels.values():self.selected_profile.set('None')
+        self.profile_display.set(next((k for k,v in self.profile_labels.items() if v==self.selected_profile.get()),'None'))
         if update_recipe:
             self.selected_recipe.set('None')
         selected = next((k for k, v in self.assembly_labels.items() if v == self.selected_recipe.get()), 'None')
@@ -357,6 +375,17 @@ class ArketypeDesktop(tk.Tk):
 
     def _on_recipe_change(self, event=None):
         self.selected_recipe.set(self.assembly_labels[self.recipe_display.get()])
+        if self.selected_profile.get() != 'None' and self.profiles[self.selected_profile.get()]['assemblage_reference'] != self.selected_recipe.get():
+            self.selected_profile.set('None')
+            self.profile_display.set('None')
+        self._update_creator_description()
+
+    def _on_profile_change(self, event=None):
+        self.selected_profile.set(self.profile_labels[self.profile_display.get()])
+        if self.selected_profile.get() != 'None':
+            pr=self.profiles[self.selected_profile.get()]
+            self.selected_recipe.set(pr['assemblage_reference'])
+            self.recipe_display.set(next((k for k,v in self.assembly_labels.items() if v==self.selected_recipe.get()),'None'))
         self._update_creator_description()
 
     def _update_creator_description(self):
@@ -366,6 +395,10 @@ class ArketypeDesktop(tk.Tk):
             desc += f"\n\nAssembly: {recipe['title']}\n" + '\n'.join(
                 f"  + {c['archetype']} [{c['relation']}]" for c in recipe['components'])
             desc += '\n\nDesign-only proposal. No canonical states will be merged.'
+        if self.selected_profile.get() != 'None':
+            pr=self.profiles[self.selected_profile.get()]
+            desc += f"\n\nUse-case profile: {pr['name']} ({pr['domain']}, {pr['usage_family']})"
+            desc += '\nScope design guidance will be written outside canon; coverage remains unverified.'
         self.creator_description.configure(state='normal')
         self.creator_description.delete('1.0', 'end')
         self.creator_description.insert('1.0', desc)
@@ -382,8 +415,10 @@ class ArketypeDesktop(tk.Tk):
                 recipe = None
             if not folder:
                 raise ValueError('Select an existing parent directory.')
+            profile = self.selected_profile.get()
+            profile = profile if profile != 'None' else None
             if dry_run:
-                result = create(typ, slug, title, folder, recipe=recipe, dry_run=True)
+                result = create(typ, slug, title, folder, recipe=recipe, dry_run=True, usage_profile=profile, authoring='v11' if self.authoring_v11.get() else 'legacy')
                 messagebox.showinfo('Preview — No files written', json.dumps(result, ensure_ascii=False, indent=2))
                 return
             if self.busy:
@@ -391,34 +426,27 @@ class ArketypeDesktop(tk.Tk):
             if not messagebox.askyesno('Confirm local creation',
                 f'Create a neutral Kristal named "{title}" in:\n{folder}/{slug}\n\nNo domain content is published.'):
                 return
-            self._start_job('create', (typ, slug, title, folder, recipe))
+            self._start_job('create', (typ, slug, title, folder, recipe, profile, 'v11' if self.authoring_v11.get() else 'legacy'))
         except Exception as exc:
             messagebox.showerror('Arketype — Creation issue', str(exc))
 
     def _make_ops(self):
-        p = self._page('Developer Ops', 'Developer Ops',
-                       'Approved local operations and read-only ecosystem diagnostics. No shell, publication, or activation.')
-        tabs = ttk.Notebook(p)
-        tabs.pack(fill='both', expand=True)
-        console = ttk.Frame(tabs, padding=(2, 12))
-        diagnostic = ttk.Frame(tabs, padding=(2, 12))
-        tabs.add(console, text='Console')
-        tabs.add(diagnostic, text='Ecosystem Compatibility')
-        self.ops_tabs = tabs
-        actions = ttk.Frame(console)
+        p = self._page('Developer Ops', 'Developer Ops console',
+                       'Local allowlisted commands only. No shell execution, remote deployment, or activation.')
+        actions = ttk.Frame(p)
         actions.pack(fill='x', pady=(0, 12))
         for title, cmd in (('Status', 'status'), ('Validate', 'validate'),
                            ('Check Local Kit', 'validate --check-kit'), ('Run tests', 'test'),
                            ('Verify inventory', 'inventory'), ('Regenerate HTML', 'build-html')):
             ttk.Button(actions, text=title, command=lambda c=cmd: self._run_console(c)).pack(side='left', padx=(0, 7))
-        self.ops_output = scrolledtext.ScrolledText(console, wrap='word', font=('Consolas', 10),
+        self.ops_output = scrolledtext.ScrolledText(p, wrap='word', font=('Consolas', 10),
                   bg='#112b2b', fg='#e4f4ed', insertbackground='white', relief='flat',
                   padx=14, pady=13)
         self.ops_output.pack(fill='both', expand=True)
         self.ops_output.insert('end', 'Arketype Developer Ops · Type help for available commands.\n'
                                       'No remote publication or activation is supported.\n\n')
         self.ops_output.configure(state='disabled')
-        command_frame = ttk.Frame(console)
+        command_frame = ttk.Frame(p)
         command_frame.pack(fill='x', pady=(10, 0))
         ttk.Label(command_frame, text='arketype >').pack(side='left')
         self.ops_input = tk.StringVar()
@@ -431,60 +459,6 @@ class ArketypeDesktop(tk.Tk):
                                          command=self._run_console)
         self.ops_run_button.pack(side='left')
         ttk.Button(command_frame, text='Clear', command=self._clear_console).pack(side='left', padx=(8, 0))
-
-        ttk.Label(diagnostic, text='Read-only source inspection — not a Framework conformance check or C1 qualification.',
-                  style='Sub.TLabel').pack(anchor='w', pady=(0, 10))
-        selectors = ttk.Frame(diagnostic)
-        selectors.pack(fill='x')
-        selectors.columnconfigure(1, weight=1)
-        self.ecosystem_paths = {}
-        for row, (name, label) in enumerate((
-            ('framework', 'Framework checkout (optional)'),
-            ('kit', 'External Authoring Kit checkout (optional)'),
-            ('workspace', 'Local Kristal workspace (optional)'),
-            ('manager', 'Manager checkout (optional)'),
-            ('bootstrap', 'Bootstrap checkout (optional)'),
-        )):
-            value = tk.StringVar()
-            self.ecosystem_paths[name] = value
-            ttk.Label(selectors, text=label).grid(row=row, column=0, sticky='w', padx=(0, 8), pady=4)
-            ttk.Entry(selectors, textvariable=value).grid(row=row, column=1, sticky='ew', pady=4)
-            ttk.Button(selectors, text='Browse…',
-                command=lambda var=value: self._browse_ecosystem_path(var)).grid(row=row, column=2, padx=(7, 0), pady=4)
-        buttons = ttk.Frame(diagnostic)
-        buttons.pack(fill='x', pady=(10, 8))
-        self.ecosystem_run_button = ttk.Button(buttons, text='Inspect local compatibility',
-                 style='Accent.TButton', command=self._refresh_ecosystem)
-        self.ecosystem_run_button.pack(side='left')
-        ttk.Label(buttons, text='Empty paths mean NOT CONFIGURED, not PASS.',
-                 style='Sub.TLabel').pack(side='left', padx=12)
-        self.ecosystem_output = scrolledtext.ScrolledText(diagnostic, wrap='word', font=('Consolas', 10),
-                  bg='#112b2b', fg='#e4f4ed', insertbackground='white', padx=14, pady=12,
-                  relief='flat')
-        self.ecosystem_output.pack(fill='both', expand=True)
-        self.ecosystem_output.insert('end', 'Choose local checkouts, or inspect only the bundled Kit and 19 neutral templates.\n'
-                 'No external commands, network or publishing actions will run.\n')
-        self.ecosystem_output.configure(state='disabled')
-
-    def _browse_ecosystem_path(self, variable):
-        directory = filedialog.askdirectory(title='Select a local checkout or workspace')
-        if directory:
-            variable.set(directory)
-
-    def _refresh_ecosystem(self):
-        if self.busy:
-            return
-        # Paths are options to a fixed read-only inspector, never shell arguments.
-        args = tuple(part for name, value in self.ecosystem_paths.items() if value.get().strip()
-                          for part in ('--' + name, value.get().strip()))
-        from arketype_launcher_ops import Operation
-        self._start_job('ecosystem', Operation('compat', 'local', args))
-
-    def _render_ecosystem(self, text):
-        self.ecosystem_output.configure(state='normal')
-        self.ecosystem_output.delete('1.0', 'end')
-        self.ecosystem_output.insert('end', text)
-        self.ecosystem_output.configure(state='disabled')
 
     def _history_up(self, event):
         if self.history:
@@ -536,17 +510,16 @@ class ArketypeDesktop(tk.Tk):
         self.busy = True
         self.ops_run_button.configure(state='disabled')
         self.create_button.configure(state='disabled')
-        self.ecosystem_run_button.configure(state='disabled')
         self.status_var.set('Working locally…')
         def work():
             try:
                 if mode == 'create':
-                    typ, slug, title, folder, recipe = payload
-                    result = create(typ, slug, title, folder, recipe=recipe)
+                    typ, slug, title, folder, recipe, profile, authoring_mode = payload
+                    result = create(typ, slug, title, folder, recipe=recipe, usage_profile=profile, authoring=authoring_mode)
                     self.events.put(('create', 0, str(result)))
                 else:
                     code, output = run_operation(payload)
-                    self.events.put((mode, code, output))
+                    self.events.put(('operation', code, output))
             except Exception as exc:
                 self.events.put((mode, 1, str(exc)))
         threading.Thread(target=work, daemon=True).start()
@@ -558,7 +531,6 @@ class ArketypeDesktop(tk.Tk):
                 self.busy = False
                 self.ops_run_button.configure(state='normal')
                 self.create_button.configure(state='normal')
-                self.ecosystem_run_button.configure(state='normal')
                 self.status_var.set('Ready · local only · no publication or activation')
                 if mode == 'create':
                     if code == 0:
@@ -567,8 +539,6 @@ class ArketypeDesktop(tk.Tk):
                         self._append_console('Created local workspace: ' + output)
                     else:
                         messagebox.showerror('Creation failed', output)
-                elif mode == 'ecosystem':
-                    self._render_ecosystem(output)
                 else:
                     self._append_console(output + f'\n[Exit code: {code}]\n')
                     if code != 0:

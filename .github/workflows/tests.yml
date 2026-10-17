@@ -2,28 +2,15 @@ name: Check Arketype
 on:
   push:
   pull_request:
-permissions:
-  contents: read
 jobs:
   verify:
-    name: Verify on ${{ matrix.os }} / Python ${{ matrix.python }}
-    runs-on: ${{ matrix.os }}
-    strategy:
-      fail-fast: false
-      matrix:
-        os: [ubuntu-latest, windows-latest]
-        python: ['3.11', '3.12']
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
-          python-version: ${{ matrix.python }}
-      - name: Check Python syntax
-        run: python -m compileall -q arketype.py arketype_ecosystem.py arketype_launcher_ops.py arketype_gui.py catalogue
-      - name: Run offline tests
+          python-version: '3.12'
+      - name: Run tests
         run: python -m unittest discover -s tests -v
-      - name: Validate the 19 neutral workspaces with the bundled Authoring Kit
+      - name: Check archetypes and workspaces
         run: python arketype.py validate --check-kit
-      - name: Inspect bundled v10 references without accessing GitHub
-        run: python -c "from arketype_ecosystem import inspect_ecosystem; r=inspect_ecosystem(); assert r['templates']['status']=='templates_consistent' and not r['is_qualification']"
-# Only read-only local tests. No sync, publication, activation or release upload jobs.

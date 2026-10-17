@@ -1,6 +1,6 @@
 {
   "format": "arketype.situated-diagrams/1.0-non-normatif",
-  "version": "1.2.1",
+  "version": "1.4.0",
   "coordinate_system": {
     "viewbox": "0 0 660 244"
   },
@@ -1301,6 +1301,908 @@
           "label": "Test",
           "x": 548,
           "y": 185
+        }
+      ],
+      "edges": [
+        {
+          "from": "n1",
+          "to": "n2"
+        },
+        {
+          "from": "n1",
+          "to": "n3"
+        },
+        {
+          "from": "n1",
+          "to": "n4"
+        },
+        {
+          "from": "n1",
+          "to": "n5"
+        }
+      ]
+    },
+    {
+      "kind": "profile",
+      "slug": "campus-federe",
+      "pattern": "network",
+      "status": "illustration_non_canonique",
+      "caption": "Institution references pathways; pathways reference independent course states. Diagram is illustrative and not an operational or evidentiary assertion.",
+      "nodes": [
+        {
+          "id": "n1",
+          "label": "Federated Univer",
+          "x": 330,
+          "y": 120
+        },
+        {
+          "id": "n2",
+          "label": "Independent States",
+          "x": 110,
+          "y": 65
+        },
+        {
+          "id": "n3",
+          "label": "Stable References",
+          "x": 547,
+          "y": 65
+        },
+        {
+          "id": "n4",
+          "label": "Curriculum Boundar",
+          "x": 110,
+          "y": 186
+        },
+        {
+          "id": "n5",
+          "label": "Course Coverage",
+          "x": 547,
+          "y": 186
+        }
+      ],
+      "edges": [
+        {
+          "from": "n1",
+          "to": "n2"
+        },
+        {
+          "from": "n1",
+          "to": "n3"
+        },
+        {
+          "from": "n1",
+          "to": "n4"
+        },
+        {
+          "from": "n1",
+          "to": "n5"
+        }
+      ]
+    },
+    {
+      "kind": "profile",
+      "slug": "publication-moodle",
+      "pattern": "linear",
+      "status": "illustration_non_canonique",
+      "caption": "Mapping of course identities, learning units and outcomes to LMS resources. Diagram is illustrative and not an operational or evidentiary assertion.",
+      "nodes": [
+        {
+          "id": "n1",
+          "label": "Moodle Learning ",
+          "x": 74,
+          "y": 119
+        },
+        {
+          "id": "n2",
+          "label": "Course Identity",
+          "x": 230,
+          "y": 119
+        },
+        {
+          "id": "n3",
+          "label": "Activity Equivalen",
+          "x": 409,
+          "y": 119
+        },
+        {
+          "id": "n4",
+          "label": "Resource Links",
+          "x": 578,
+          "y": 119
+        }
+      ],
+      "edges": [
+        {
+          "from": "n1",
+          "to": "n2"
+        },
+        {
+          "from": "n2",
+          "to": "n3"
+        },
+        {
+          "from": "n3",
+          "to": "n4"
+        }
+      ]
+    },
+    {
+      "kind": "profile",
+      "slug": "collection-traditions",
+      "pattern": "cluster",
+      "status": "illustration_non_canonique",
+      "caption": "Independent traditions are indexed and cross-referenced without collapsing distinct beliefs. Diagram is illustrative and not an operational or evidentiary assertion.",
+      "nodes": [
+        {
+          "id": "n1",
+          "label": "Traditions and M",
+          "x": 119,
+          "y": 122
+        },
+        {
+          "id": "n2",
+          "label": "Tradition Boundari",
+          "x": 276,
+          "y": 68
+        },
+        {
+          "id": "n3",
+          "label": "Attribution",
+          "x": 276,
+          "y": 177
+        },
+        {
+          "id": "n4",
+          "label": "Translation Varian",
+          "x": 456,
+          "y": 95
+        },
+        {
+          "id": "n5",
+          "label": "Provenance",
+          "x": 551,
+          "y": 181
+        }
+      ],
+      "edges": [
+        {
+          "from": "n1",
+          "to": "n2"
+        },
+        {
+          "from": "n1",
+          "to": "n3"
+        },
+        {
+          "from": "n1",
+          "to": "n4"
+        },
+        {
+          "from": "n1",
+          "to": "n5"
+        }
+      ]
+    },
+    {
+      "kind": "profile",
+      "slug": "organisations-sociales",
+      "pattern": "multilayer",
+      "status": "illustration_non_canonique",
+      "caption": "Layers connect roles, institutions and resources over dated and sourced relationships. Diagram is illustrative and not an operational or evidentiary assertion.",
+      "nodes": [
+        {
+          "id": "n1",
+          "label": "Contextual Socia",
+          "x": 132,
+          "y": 53
+        },
+        {
+          "id": "n2",
+          "label": "Actor Attribution",
+          "x": 330,
+          "y": 53
+        },
+        {
+          "id": "n3",
+          "label": "Period And Localit",
+          "x": 528,
+          "y": 53
+        },
+        {
+          "id": "n4",
+          "label": "Rules Vs Observati",
+          "x": 220,
+          "y": 176
+        },
+        {
+          "id": "n5",
+          "label": "Provenance",
+          "x": 445,
+          "y": 176
+        }
+      ],
+      "edges": [
+        {
+          "from": "n1",
+          "to": "n2"
+        },
+        {
+          "from": "n1",
+          "to": "n3"
+        },
+        {
+          "from": "n1",
+          "to": "n4"
+        },
+        {
+          "from": "n1",
+          "to": "n5"
+        }
+      ]
+    },
+    {
+      "kind": "profile",
+      "slug": "navigation-preuves-longues",
+      "pattern": "hub",
+      "status": "illustration_non_canonique",
+      "caption": "A sparse route graph links proof landmarks and open areas, not formal proof derivations. Diagram is illustrative and not an operational or evidentiary assertion.",
+      "nodes": [
+        {
+          "id": "n1",
+          "label": "Long-Proof Landm",
+          "x": 330,
+          "y": 119
+        },
+        {
+          "id": "n2",
+          "label": "Entry And Exit End",
+          "x": 112,
+          "y": 65
+        },
+        {
+          "id": "n3",
+          "label": "Junction Provenanc",
+          "x": 548,
+          "y": 65
+        },
+        {
+          "id": "n4",
+          "label": "Status Of Proof",
+          "x": 112,
+          "y": 185
+        },
+        {
+          "id": "n5",
+          "label": "Refutation Or Open",
+          "x": 548,
+          "y": 185
+        }
+      ],
+      "edges": [
+        {
+          "from": "n1",
+          "to": "n2"
+        },
+        {
+          "from": "n1",
+          "to": "n3"
+        },
+        {
+          "from": "n1",
+          "to": "n4"
+        },
+        {
+          "from": "n1",
+          "to": "n5"
+        }
+      ]
+    },
+    {
+      "kind": "profile",
+      "slug": "recherche-mathematique",
+      "pattern": "network",
+      "status": "illustration_non_canonique",
+      "caption": "Hypotheses and proof obligations branch into experiments and verification evidence. Diagram is illustrative and not an operational or evidentiary assertion.",
+      "nodes": [
+        {
+          "id": "n1",
+          "label": "Mathematical Res",
+          "x": 330,
+          "y": 120
+        },
+        {
+          "id": "n2",
+          "label": "Attempt Provenance",
+          "x": 110,
+          "y": 65
+        },
+        {
+          "id": "n3",
+          "label": "Open Obligations",
+          "x": 547,
+          "y": 65
+        },
+        {
+          "id": "n4",
+          "label": "Counterexamples",
+          "x": 110,
+          "y": 186
+        },
+        {
+          "id": "n5",
+          "label": "Verification Evide",
+          "x": 547,
+          "y": 186
+        }
+      ],
+      "edges": [
+        {
+          "from": "n1",
+          "to": "n2"
+        },
+        {
+          "from": "n1",
+          "to": "n3"
+        },
+        {
+          "from": "n1",
+          "to": "n4"
+        },
+        {
+          "from": "n1",
+          "to": "n5"
+        }
+      ]
+    },
+    {
+      "kind": "profile",
+      "slug": "dossier-scolaire",
+      "pattern": "casefile",
+      "status": "illustration_non_canonique",
+      "caption": "Casefile links student history to assessments, supports, decisions and dates. Diagram is illustrative and not an operational or evidentiary assertion.",
+      "nodes": [
+        {
+          "id": "n1",
+          "label": "Individual Schoo",
+          "x": 160,
+          "y": 122
+        },
+        {
+          "id": "n2",
+          "label": "Identity Separatio",
+          "x": 472,
+          "y": 34
+        },
+        {
+          "id": "n3",
+          "label": "Consent And Lawful",
+          "x": 472,
+          "y": 91
+        },
+        {
+          "id": "n4",
+          "label": "Role Based Access",
+          "x": 472,
+          "y": 152
+        },
+        {
+          "id": "n5",
+          "label": "Retention",
+          "x": 472,
+          "y": 211
+        }
+      ],
+      "edges": [
+        {
+          "from": "n1",
+          "to": "n2"
+        },
+        {
+          "from": "n1",
+          "to": "n3"
+        },
+        {
+          "from": "n1",
+          "to": "n4"
+        },
+        {
+          "from": "n1",
+          "to": "n5"
+        }
+      ]
+    },
+    {
+      "kind": "profile",
+      "slug": "dossier-medical",
+      "pattern": "casefile",
+      "status": "illustration_non_canonique",
+      "caption": "Care episodes connect observations, decisions, documents and reviews without automated care delivery. Diagram is illustrative and not an operational or evidentiary assertion.",
+      "nodes": [
+        {
+          "id": "n1",
+          "label": "Individual Medic",
+          "x": 160,
+          "y": 122
+        },
+        {
+          "id": "n2",
+          "label": "Clinical Source At",
+          "x": 472,
+          "y": 34
+        },
+        {
+          "id": "n3",
+          "label": "Consent And Access",
+          "x": 472,
+          "y": 91
+        },
+        {
+          "id": "n4",
+          "label": "Care Episode Datin",
+          "x": 472,
+          "y": 152
+        },
+        {
+          "id": "n5",
+          "label": "Hypotheses Vs Find",
+          "x": 472,
+          "y": 211
+        }
+      ],
+      "edges": [
+        {
+          "from": "n1",
+          "to": "n2"
+        },
+        {
+          "from": "n1",
+          "to": "n3"
+        },
+        {
+          "from": "n1",
+          "to": "n4"
+        },
+        {
+          "from": "n1",
+          "to": "n5"
+        }
+      ]
+    },
+    {
+      "kind": "profile",
+      "slug": "dossier-civique",
+      "pattern": "casefile",
+      "status": "illustration_non_canonique",
+      "caption": "A person-specific administrative case connects applications, notices, dates and decision records. Diagram is illustrative and not an operational or evidentiary assertion.",
+      "nodes": [
+        {
+          "id": "n1",
+          "label": "Civic",
+          "x": 160,
+          "y": 122
+        },
+        {
+          "id": "n2",
+          "label": "Jurisdiction And E",
+          "x": 472,
+          "y": 34
+        },
+        {
+          "id": "n3",
+          "label": "Person Identity",
+          "x": 472,
+          "y": 91
+        },
+        {
+          "id": "n4",
+          "label": "Source And Legal B",
+          "x": 472,
+          "y": 152
+        },
+        {
+          "id": "n5",
+          "label": "Appeals And Correc",
+          "x": 472,
+          "y": 211
+        }
+      ],
+      "edges": [
+        {
+          "from": "n1",
+          "to": "n2"
+        },
+        {
+          "from": "n1",
+          "to": "n3"
+        },
+        {
+          "from": "n1",
+          "to": "n4"
+        },
+        {
+          "from": "n1",
+          "to": "n5"
+        }
+      ]
+    },
+    {
+      "kind": "profile",
+      "slug": "diagnostic-vehicule",
+      "pattern": "hub",
+      "status": "illustration_non_canonique",
+      "caption": "Diagnostic hub ties symptoms and test points to causal candidate paths and observed states. Diagram is illustrative and not an operational or evidentiary assertion.",
+      "nodes": [
+        {
+          "id": "n1",
+          "label": "Vehicle Fault Di",
+          "x": 330,
+          "y": 119
+        },
+        {
+          "id": "n2",
+          "label": "Vehicle/Oem Applic",
+          "x": 112,
+          "y": 65
+        },
+        {
+          "id": "n3",
+          "label": "Source Quality",
+          "x": 548,
+          "y": 65
+        },
+        {
+          "id": "n4",
+          "label": "Measurement Condit",
+          "x": 112,
+          "y": 185
+        },
+        {
+          "id": "n5",
+          "label": "Safety Limits",
+          "x": 548,
+          "y": 185
+        }
+      ],
+      "edges": [
+        {
+          "from": "n1",
+          "to": "n2"
+        },
+        {
+          "from": "n1",
+          "to": "n3"
+        },
+        {
+          "from": "n1",
+          "to": "n4"
+        },
+        {
+          "from": "n1",
+          "to": "n5"
+        }
+      ]
+    },
+    {
+      "kind": "profile",
+      "slug": "operations-police",
+      "pattern": "branching",
+      "status": "illustration_non_canonique",
+      "caption": "A branching process identifies authorized roles, conditions and external event logging. Diagram is illustrative and not an operational or evidentiary assertion.",
+      "nodes": [
+        {
+          "id": "n1",
+          "label": "Police Operation",
+          "x": 75,
+          "y": 120
+        },
+        {
+          "id": "n2",
+          "label": "Jurisdiction",
+          "x": 229,
+          "y": 120
+        },
+        {
+          "id": "n3",
+          "label": "Authorization",
+          "x": 411,
+          "y": 64
+        },
+        {
+          "id": "n4",
+          "label": "Policy Edition",
+          "x": 411,
+          "y": 176
+        },
+        {
+          "id": "n5",
+          "label": "Exceptions And Esc",
+          "x": 582,
+          "y": 120
+        }
+      ],
+      "edges": [
+        {
+          "from": "n1",
+          "to": "n2"
+        },
+        {
+          "from": "n1",
+          "to": "n3"
+        },
+        {
+          "from": "n1",
+          "to": "n4"
+        },
+        {
+          "from": "n1",
+          "to": "n5"
+        }
+      ]
+    },
+    {
+      "kind": "profile",
+      "slug": "operations-hopital",
+      "pattern": "branching",
+      "status": "illustration_non_canonique",
+      "caption": "Conditional workflow links roles, resources, escalation and external history. Diagram is illustrative and not an operational or evidentiary assertion.",
+      "nodes": [
+        {
+          "id": "n1",
+          "label": "Hospital Operati",
+          "x": 75,
+          "y": 120
+        },
+        {
+          "id": "n2",
+          "label": "Clinical Approval",
+          "x": 229,
+          "y": 120
+        },
+        {
+          "id": "n3",
+          "label": "Resource Dependenc",
+          "x": 411,
+          "y": 64
+        },
+        {
+          "id": "n4",
+          "label": "Exceptions",
+          "x": 411,
+          "y": 176
+        },
+        {
+          "id": "n5",
+          "label": "Version Applicabil",
+          "x": 582,
+          "y": 120
+        }
+      ],
+      "edges": [
+        {
+          "from": "n1",
+          "to": "n2"
+        },
+        {
+          "from": "n1",
+          "to": "n3"
+        },
+        {
+          "from": "n1",
+          "to": "n4"
+        },
+        {
+          "from": "n1",
+          "to": "n5"
+        }
+      ]
+    },
+    {
+      "kind": "profile",
+      "slug": "orchestration-medicale",
+      "pattern": "network",
+      "status": "illustration_non_canonique",
+      "caption": "Application orchestrates independent knowledge bases and adapters, with no inherited clinical authority. Diagram is illustrative and not an operational or evidentiary assertion.",
+      "nodes": [
+        {
+          "id": "n1",
+          "label": "Medical Knowledg",
+          "x": 330,
+          "y": 120
+        },
+        {
+          "id": "n2",
+          "label": "Source Edition And",
+          "x": 110,
+          "y": 65
+        },
+        {
+          "id": "n3",
+          "label": "Separate Applicati",
+          "x": 547,
+          "y": 65
+        },
+        {
+          "id": "n4",
+          "label": "Api Input/Output C",
+          "x": 110,
+          "y": 186
+        },
+        {
+          "id": "n5",
+          "label": "Evidence Status",
+          "x": 547,
+          "y": 186
+        }
+      ],
+      "edges": [
+        {
+          "from": "n1",
+          "to": "n2"
+        },
+        {
+          "from": "n1",
+          "to": "n3"
+        },
+        {
+          "from": "n1",
+          "to": "n4"
+        },
+        {
+          "from": "n1",
+          "to": "n5"
+        }
+      ]
+    },
+    {
+      "kind": "profile",
+      "slug": "cartographie-scolaire",
+      "pattern": "network",
+      "status": "illustration_non_canonique",
+      "caption": "Institutions, paths and rule layers connect through dated transitions and jurisdiction labels. Diagram is illustrative and not an operational or evidentiary assertion.",
+      "nodes": [
+        {
+          "id": "n1",
+          "label": "School System an",
+          "x": 330,
+          "y": 120
+        },
+        {
+          "id": "n2",
+          "label": "Jurisdiction",
+          "x": 110,
+          "y": 65
+        },
+        {
+          "id": "n3",
+          "label": "Effective Dates",
+          "x": 547,
+          "y": 65
+        },
+        {
+          "id": "n4",
+          "label": "Program Scope",
+          "x": 110,
+          "y": 186
+        },
+        {
+          "id": "n5",
+          "label": "Source Versions",
+          "x": 547,
+          "y": 186
+        }
+      ],
+      "edges": [
+        {
+          "from": "n1",
+          "to": "n2"
+        },
+        {
+          "from": "n1",
+          "to": "n3"
+        },
+        {
+          "from": "n1",
+          "to": "n4"
+        },
+        {
+          "from": "n1",
+          "to": "n5"
+        }
+      ]
+    },
+    {
+      "kind": "profile",
+      "slug": "referentiel-polyusage",
+      "pattern": "multilayer",
+      "status": "illustration_non_canonique",
+      "caption": "One primary source reference feeds distinct projections without taking over each reader. Diagram is illustrative and not an operational or evidentiary assertion.",
+      "nodes": [
+        {
+          "id": "n1",
+          "label": "Multi-Purpose Se",
+          "x": 132,
+          "y": 53
+        },
+        {
+          "id": "n2",
+          "label": "Semantic Ownership",
+          "x": 330,
+          "y": 53
+        },
+        {
+          "id": "n3",
+          "label": "Source Identity",
+          "x": 528,
+          "y": 53
+        },
+        {
+          "id": "n4",
+          "label": "View Provenance",
+          "x": 220,
+          "y": 176
+        },
+        {
+          "id": "n5",
+          "label": "Reuse Permissions",
+          "x": 445,
+          "y": 176
+        }
+      ],
+      "edges": [
+        {
+          "from": "n1",
+          "to": "n2"
+        },
+        {
+          "from": "n1",
+          "to": "n3"
+        },
+        {
+          "from": "n1",
+          "to": "n4"
+        },
+        {
+          "from": "n1",
+          "to": "n5"
+        }
+      ]
+    },
+    {
+      "kind": "profile",
+      "slug": "temoignages-enquete",
+      "pattern": "casefile",
+      "status": "illustration_non_canonique",
+      "caption": "Attributed statements attach to a restricted dossier and dated revisions. Diagram is illustrative and not an operational or evidentiary assertion.",
+      "nodes": [
+        {
+          "id": "n1",
+          "label": "Attributed Testi",
+          "x": 160,
+          "y": 122
+        },
+        {
+          "id": "n2",
+          "label": "Attribution",
+          "x": 472,
+          "y": 34
+        },
+        {
+          "id": "n3",
+          "label": "Revision Trail",
+          "x": 472,
+          "y": 91
+        },
+        {
+          "id": "n4",
+          "label": "Privacy",
+          "x": 472,
+          "y": 152
+        },
+        {
+          "id": "n5",
+          "label": "Evidence Vs Allega",
+          "x": 472,
+          "y": 211
         }
       ],
       "edges": [

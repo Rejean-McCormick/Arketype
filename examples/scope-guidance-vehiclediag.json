@@ -1,0 +1,70 @@
+{
+  "format": "arketype.scope-guidance/1.0",
+  "status": "draft_requires_review",
+  "profile_slug": "diagnostic-vehicule",
+  "profile_id": "PRF-15",
+  "structure": {
+    "primary_archetype": "diagnostic-causal",
+    "supporting_archetypes": [
+      "modele-multiplexe",
+      "etat-systemes",
+      "registre-evenementiel"
+    ],
+    "provenance": "candidate_from_design_catalog"
+  },
+  "dimensions": {
+    "usage_family": "diagnosis",
+    "domain": "automotive",
+    "integration_targets": [
+      "vehicle-diagnostic-app"
+    ],
+    "authority": "external_required",
+    "data_access": "not_granted"
+  },
+  "inclusions": [
+    "symptoms",
+    "vehicle applicability",
+    "DTCs",
+    "measurements",
+    "test points"
+  ],
+  "exclusions": [
+    "Generic examples do not replace OEM-specific repair or safety instructions.",
+    "Do not perform vehicle interventions without qualified authorization and risk controls."
+  ],
+  "coverage_questions": [
+    {
+      "question": "vehicle/OEM applicability",
+      "status": "not_evaluated",
+      "evidence": "not_inspected"
+    },
+    {
+      "question": "source quality",
+      "status": "not_evaluated",
+      "evidence": "not_inspected"
+    },
+    {
+      "question": "measurement conditions",
+      "status": "not_evaluated",
+      "evidence": "not_inspected"
+    },
+    {
+      "question": "safety limits",
+      "status": "not_evaluated",
+      "evidence": "not_inspected"
+    },
+    {
+      "question": "inference vs observation",
+      "status": "not_evaluated",
+      "evidence": "not_inspected"
+    }
+  ],
+  "local_observation": null,
+  "limitations": [
+    "A suggested usage is not a verified description of any real state.",
+    "Scope needs owner review before mapping to the Skope proposal and injection contract.",
+    "No operational, medical, legal, access or publication authority is conferred."
+  ],
+  "publication_authorized": false,
+  "activation_authorized": false
+}

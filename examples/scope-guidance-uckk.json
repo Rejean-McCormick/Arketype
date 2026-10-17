@@ -1,0 +1,64 @@
+{
+  "format": "arketype.scope-guidance/1.0",
+  "status": "draft_requires_review",
+  "profile_slug": "campus-federe",
+  "profile_id": "PRF-06",
+  "structure": {
+    "primary_archetype": "federation-topologie",
+    "supporting_archetypes": [
+      "parcours-pedagogique",
+      "referentiel-semantique"
+    ],
+    "provenance": "candidate_from_design_catalog"
+  },
+  "dimensions": {
+    "usage_family": "learning",
+    "domain": "education",
+    "integration_targets": [
+      "LMS",
+      "Moodle"
+    ],
+    "authority": "external_required",
+    "data_access": "not_granted"
+  },
+  "inclusions": [
+    "institution identity",
+    "pathway refs",
+    "course refs",
+    "ownership boundaries"
+  ],
+  "exclusions": [
+    "A campus index does not own the logical content of courses.",
+    "An LMS publication requires an independently approved integration."
+  ],
+  "coverage_questions": [
+    {
+      "question": "independent states",
+      "status": "not_evaluated",
+      "evidence": "not_inspected"
+    },
+    {
+      "question": "stable references",
+      "status": "not_evaluated",
+      "evidence": "not_inspected"
+    },
+    {
+      "question": "curriculum boundaries",
+      "status": "not_evaluated",
+      "evidence": "not_inspected"
+    },
+    {
+      "question": "course coverage",
+      "status": "not_evaluated",
+      "evidence": "not_inspected"
+    }
+  ],
+  "local_observation": null,
+  "limitations": [
+    "A suggested usage is not a verified description of any real state.",
+    "Scope needs owner review before mapping to the Skope proposal and injection contract.",
+    "No operational, medical, legal, access or publication authority is conferred."
+  ],
+  "publication_authorized": false,
+  "activation_authorized": false
+}

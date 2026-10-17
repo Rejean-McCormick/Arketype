@@ -1,0 +1,20 @@
+{
+  "format": "arketype.assembly-recipe/1.0-non-normatif",
+  "id": "parcours-moodle",
+  "title": "Moodle Learning Path Export Design",
+  "primary_archetype": "parcours-pedagogique",
+  "components": [
+    {
+      "archetype": "federation-topologie",
+      "relation": "reference_externe",
+      "design_note": "Explicitly map course states to external LMS course identities, retaining owners and versioned resource references.",
+      "status": "unresolved"
+    }
+  ],
+  "guidance": "Design-only mapping for Moodle adapters. No LMS access, installation, course import, grade handling or publication is performed.",
+  "composition_status": "design_only",
+  "logical_contract": "to_define",
+  "source_references": "to_pin_on_real_instance",
+  "authoritative_ownership": "to_decide",
+  "publication_authorization": false
+}

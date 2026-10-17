@@ -1,0 +1,88 @@
+{
+  "format": "arketype.real-use-cases/1.0-non-normatif",
+  "version": "1.4.0",
+  "notice": "Examples are based on user-provided archives; profiles are design recommendations, not a certification or complete audit. Archives are not bundled or altered.",
+  "cases": [
+    {
+      "id": "uckk",
+      "archive_input": "UCKK-Kristal-v9(3).zip",
+      "evidence_path": "manifest.json",
+      "suggested_profile": "campus-federe",
+      "observed_basis": "native v9 multistate federation, institutional and course states",
+      "boundary": "reference_overrides_not_content",
+      "status": "design_mapping_not_verified_compatibility"
+    },
+    {
+      "id": "traditions",
+      "archive_input": "collection_kristals_traditions_enrichie_v3(1).zip",
+      "evidence_path": "kristals/*/kristal.workspace.json",
+      "suggested_profile": "collection-traditions",
+      "observed_basis": "multiple independent source-attributed tradition workspaces",
+      "boundary": "comparisons_not_equivalences",
+      "status": "design_mapping_not_verified_compatibility"
+    },
+    {
+      "id": "ekole",
+      "archive_input": "Ekole_Kristal_Organisations_Humaines_Autochtones_Europeens_Quebec_v1(4).zip",
+      "evidence_path": "kristals/modele-organisation-humaine/kristal.workspace.json",
+      "suggested_profile": "organisations-sociales",
+      "observed_basis": "situated graph of roles, resources, rules and period",
+      "boundary": "not_authority_for_communities",
+      "status": "design_mapping_not_verified_compatibility"
+    },
+    {
+      "id": "math-grand-challenges",
+      "archive_input": "Kristal-Grand-Challenges_Code_snapshot.zip",
+      "evidence_path": "challenges/*/map/proof-landmarks.json",
+      "suggested_profile": "navigation-preuves-longues",
+      "observed_basis": "noncanonical endpoints/junctions with proof-usable=false",
+      "boundary": "route_not_proof",
+      "status": "design_mapping_not_verified_compatibility"
+    },
+    {
+      "id": "formulator",
+      "archive_input": "Formulator_Code_snapshot.zip",
+      "evidence_path": "docs/12_MATH_ATLAS.md",
+      "suggested_profile": "recherche-mathematique",
+      "observed_basis": "research navigation, DAG mathematical territories",
+      "boundary": "verification_separate",
+      "status": "design_mapping_not_verified_compatibility"
+    },
+    {
+      "id": "vehiclediag",
+      "archive_input": "A-Kristal-VehiculeDiag(1).zip",
+      "evidence_path": "A-Kristal-VehiculeDiag/kristal.workspace.json",
+      "suggested_profile": "diagnostic-vehicule",
+      "observed_basis": "causal multiplex diagnosis with observed/test references",
+      "boundary": "no_field_repair_authority",
+      "status": "design_mapping_not_verified_compatibility"
+    },
+    {
+      "id": "scolqc",
+      "archive_input": "A-Kristal-ScolQc(1).zip",
+      "evidence_path": "A-Kristal-ScolQc/kristal.workspace.json",
+      "suggested_profile": "cartographie-scolaire",
+      "observed_basis": "Québec educational paths, temporal rules, provenance",
+      "boundary": "no_admissions_decision",
+      "status": "design_mapping_not_verified_compatibility"
+    },
+    {
+      "id": "medikristal",
+      "archive_input": "SmartSnap(20261013-124258).zip",
+      "evidence_path": "MediKristal/README.md",
+      "suggested_profile": "orchestration-medicale",
+      "observed_basis": "standalone software and API with Kristal adapters",
+      "boundary": "not_single_kristal_or_clinically_validated",
+      "status": "design_mapping_not_verified_compatibility"
+    },
+    {
+      "id": "policeops",
+      "archive_input": "BU-10-Kristaux-Custom-Depart(1).zip",
+      "evidence_path": "Kristal-PoliceOps/",
+      "suggested_profile": "operations-police",
+      "observed_basis": "operation procedure project snapshot",
+      "boundary": "not_execution_authority",
+      "status": "design_mapping_not_verified_compatibility"
+    }
+  ]
+}

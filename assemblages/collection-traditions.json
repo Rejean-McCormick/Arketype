@@ -1,0 +1,26 @@
+{
+  "format": "arketype.assembly-recipe/1.0-non-normatif",
+  "id": "collection-traditions",
+  "title": "Traditions Comparative Collection",
+  "primary_archetype": "compilation-collection",
+  "components": [
+    {
+      "archetype": "interpretations-couches",
+      "relation": "reference_externe",
+      "design_note": "Design-only link to interpretations-couches: define ownership, exact references and authoritative source first.",
+      "status": "unresolved"
+    },
+    {
+      "archetype": "referentiel-semantique",
+      "relation": "reference_externe",
+      "design_note": "Design-only link to referentiel-semantique: define ownership, exact references and authoritative source first.",
+      "status": "unresolved"
+    }
+  ],
+  "guidance": "Keep each tradition separately authored and sourced; comparison is an explicitly attributed reader view.",
+  "composition_status": "design_only",
+  "logical_contract": "to_define",
+  "source_references": "to_pin_on_real_instance",
+  "authoritative_ownership": "to_decide",
+  "publication_authorization": false
+}

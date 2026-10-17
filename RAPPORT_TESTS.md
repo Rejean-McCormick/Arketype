@@ -1,27 +1,29 @@
-# Arketype 1.4.0 — v10 ecosystem compatibility release report
+# Arketype 1.4.0 — validation de la bibliothèque d'usages
 
-## What changed in the uploaded source archive
+**Date : 13 octobre 2026** · **Livraison locale sans publication**
 
-- Added **Developer Ops > Ecosystem Compatibility** with explicitly selected paths for local Framework, Authoring Kit, Kristal workspace, Manager and Bootstrap checkouts. All checks are read-only; no external command is executed by the inspector.
-- Added allowlisted `compat` command, static file inspections, byte hashes, and clear `not_configured`, `review_required`, `declared_version_matches`, `metadata_only` and `identical_bytes` statuses.
-- Added ecosystem boundaries and usage documentation in English, including GitHub Wiki and README; retained supplied logo exclusively in HTML and desktop interfaces and brand color `#1E6864`.
-- Preserved 19 empty workspaces, 14 design-only assemblies, 5 use-case profiles, 10 visual motifs and 24 situated diagrams. Their original technical IDs, state_refs and the bundled Authoring Kit 3.2.4 are not changed.
-- Fixed a **pre-existing regression in the uploaded 1.3.0 repository**: the `dossier-suivi` blank template contained an extra `design/fiche-deposition-vierge.json` that its own validator forbids. Removed only this inappropriate noncanonical copy; the original blank form remains in `deposition-temoignage`.
-- Added a two-platform (Windows and Ubuntu), Python 3.11/3.12, read-only test matrix and `permissions: contents: read`. Repository actions are still tag-based and **immutable pin verification** remains a GitHub maintainer follow-up.
-- Regenerated the offline HTML and **13-page A4 PDF** from the English JSON sources. Removed stale PDF versions and `.git` metadata from the distributable ZIP.
+## Résultat
 
-## Tests and inspection
+- **55/55 tests Python** réussis (`python -m unittest discover -s tests -q`).
+- **19/19 modèles** reconnus et vérifiés par les commandes `check` du Local Authoring Kit (`python arketype.py validate --check-kit`).
+- **19 archétypes ARK** existants préservés, **21 profils PRF**, **23 recettes de composition**, **40 diagrammes**, **10 motifs visuels**.
+- Interface de bureau vérifiée sous Xvfb Linux avec 21 profils, y compris sélection du profil scolaire; vérification native Windows non effectuée.
+- Projection HTML générée; catalogue PDF 1.4.0 de **21 pages**, contrôles visuels effectués sur les pages de couverture et de fin.
+- Reconnaissance heuristique exercée sur les archives exemples UCKK, collection de traditions, Ekole, Grand Challenges, Formulator, VehiculeDiag, ScolQc et MediKristal. Une archive multi-projet exige `--focus` pour isoler le cas.
+- Aucun projet d'exemple externe, état canonique, logiciel médical, cours Moodle ou dossier personnel n'a été modifié.
 
-- **51/51 Python unittest tests passed** on the extracted local repository, including 8 new ecosystem tests.
-- `python arketype.py validate --check-kit`: **PASS**, 19 archetypes, 14 recipes, 5 profiles and 24 diagrams, all 19 local Kit checks.
-- Linux virtual-display Tkinter smoke: **PASS** for the four launcher pages, `Ecosystem Compatibility` refresh/output, and selecting a use-case profile into the Create Kristal form.
-- Printable PDF generated as `catalogue/Arketype_Visual_Catalogue_v1.4.0.pdf` and its English A4 cover visually inspected.
-- Source ZIP CRC and every file-inventory SHA-256 verified at packaging.
+## Limites
 
-## Deliberate evidence limitations
+- La reconnaissance n'inspecte que chemins de fichiers et métadonnées bornées. Elle n'évalue pas le contenu intégral ni la validité des preuves, des protocoles et des sources métier.
+- Les questions de couverture sont toutes `not_evaluated` par conception.
+- `arketype.scope-guidance/1.0` ne peut pas être injecté directement comme `state_scope`. Une application telle que Skope doit créer une proposition compatible avec son propre contrat, contrôler les empreintes et demander l'autorisation du propriétaire du workspace.
+- Aucun test Windows natif, aucune validation clinique, juridique, culturelle ou pédagogique de terrain.
 
-- A Framework `10.0.0-draft.3.1` label is a **declared design baseline**, not proof of Framework conformance or an approved GitHub commit SHA.
-- Local file byte identity proves only identity of bytes, not a qualified logical commitment or current remote HEAD.
-- The inspector does not run the Framework TCK, Manager runtime, Bootstrap doctor/plan/apply, KristalDiag/C1, C2 grants, C3 publishing, GitHub networking, or AI/domain builds on selected workspaces.
-- Manager source availability, GitHub collection readiness and Windows-native GUI testing remain separate tasks.
-- **No GitHub repository was changed, pushed, qualified, synchronized, published or activated.** This is a complete updated local source distribution for review/commit.
+## Commandes de revalidation
+
+```sh
+python -m unittest discover -s tests -q
+python arketype.py validate --check-kit
+python arketype.py build-html
+python catalogue/creer_pdf.py
+```

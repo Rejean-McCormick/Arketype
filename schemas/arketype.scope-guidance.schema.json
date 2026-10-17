@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Arketype noncanonical scope design guidance; not a Skope injection payload",
+  "type": "object",
+  "required": [
+    "format",
+    "status",
+    "profile_slug",
+    "structure",
+    "dimensions",
+    "inclusions",
+    "exclusions",
+    "coverage_questions",
+    "limitations",
+    "publication_authorized",
+    "activation_authorized"
+  ],
+  "properties": {
+    "format": {
+      "const": "arketype.scope-guidance/1.0"
+    },
+    "status": {
+      "const": "draft_requires_review"
+    },
+    "profile_slug": {
+      "type": "string"
+    },
+    "structure": {
+      "type": "object"
+    },
+    "dimensions": {
+      "type": "object"
+    },
+    "inclusions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "exclusions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "coverage_questions": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "publication_authorized": {
+      "const": false
+    },
+    "activation_authorized": {
+      "const": false
+    }
+  }
+}

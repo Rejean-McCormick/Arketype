@@ -15,6 +15,7 @@ class LauncherOperationTests(unittest.TestCase):
             'help': ('local', ()),
             'status': ('local', ()),
             'list': ('cli', ('list',)),
+            'uses': ('cli', ('uses',)),
             'search "causal diagnosis"': ('cli', ('search', 'causal diagnosis')),
             'show diagnostic-causal': ('cli', ('show', 'diagnostic-causal')),
             'profile suivi-employe': ('cli', ('profile', 'suivi-employe')),

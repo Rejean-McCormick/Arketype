@@ -1,0 +1,64 @@
+{
+  "format": "arketype.vendor-pins/1.0",
+  "kit_version": "4.0.0-draft.3",
+  "framework_reference": "11.0.0-draft.4",
+  "framework_schema_compatibility": "v11 draft.3 unchanged as verified by Framework draft.4 release",
+  "source": "Kristal-Authoring-Kit-4.0.0-draft.3.zip provided in this conversation",
+  "copied_paths": [
+    {
+      "upstream": "templates/AGENTS.kristal.md",
+      "sha256": "bbee46b6de943d0f07f9fad7dc64a4040902295bdcfd27c5840340fe6931a879",
+      "bytes": 735
+    },
+    {
+      "upstream": "templates/AI_START_HERE.md",
+      "sha256": "bd988bba7c5ed7cd1ad8b69aa62e99d0fa9066ab89b1dc81f7a0c3739e8c1d07",
+      "bytes": 2595
+    },
+    {
+      "upstream": "templates/github-hosting.json",
+      "sha256": "774e87548a6917b1b25e7c610d727d19af4df081897a816a02744ff5eaf021c9",
+      "bytes": 378
+    },
+    {
+      "upstream": "templates/gitignore-kristal.txt",
+      "sha256": "ba9e766905d86932af10e20f99bdafe6b4a37eab2b45a1d91e011bc12985858f",
+      "bytes": 99
+    },
+    {
+      "upstream": "templates/projection.json",
+      "sha256": "9a93c6e5ae26d5d989458a3c7dd43fbe3b5d878a23a6db61d9cc82594d068eb2",
+      "bytes": 565
+    },
+    {
+      "upstream": "templates/readme-kristal.md",
+      "sha256": "0b1770d06f4bcb86cfac69c1b7c891206a5d282181136c82631819502067cd00",
+      "bytes": 520
+    },
+    {
+      "upstream": "templates/source-catalog.json",
+      "sha256": "4e11d46142630914cfd1fb447c6b065d9143d24d179a18edc1162f3063edfce9",
+      "bytes": 64
+    },
+    {
+      "upstream": "templates/state.index.json",
+      "sha256": "28a1ce910aa079e50199b467487fac9af0584ad43360200f5a4666d2481e1c08",
+      "bytes": 275
+    },
+    {
+      "upstream": "templates/workspace.json",
+      "sha256": "68d44e0f267871fb1e3554c33e37693aa59a6972d3c4ee2deb3a6ec41f8224d1",
+      "bytes": 1704
+    },
+    {
+      "upstream": "tools/kristal.py",
+      "sha256": "efba8f6b346ce358823de665e850ab5672a1769e3acfae8f19ec02fbbb0a32a0",
+      "bytes": 175676
+    },
+    {
+      "upstream": "tools/kristal_v11_core.py",
+      "sha256": "3aa9b2627c63fab2e10bd4385ce790d9330072255558d295c1bf6bab5444dc6d",
+      "bytes": 31724
+    }
+  ]
+}

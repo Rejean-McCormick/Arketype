@@ -1,7 +1,7 @@
 # Arketype
 
 **A visual archetype library for Kristal knowledge-state workspaces**  
-**Release:** 1.4.0 · **Status:** local design library, non-normative
+**Release:** 1.6.0 · **Status:** local design library, non-normative
 
 Arketype helps you explore, compare, and instantiate different structural forms of Kristals. It provides neutral workspace templates, documented archetypes, illustrative composition plans, a visual HTML catalogue, and local creation tools. Its diagrams explain *how a knowledge structure is organized*; they do not certify claims, establish domain standards, or authorize operational actions.
 
@@ -9,14 +9,21 @@ Arketype helps you explore, compare, and instantiate different structural forms 
 | --- | ---: | --- |
 | Archetypes | **19** | Distinct structural starting points |
 | Neutral workspaces | **19** | Empty local templates with separate `state_ref` identities |
-| Composition recipes | **14** | Design-only ways to combine forms while preserving boundaries |
-| Use-case profiles | **5** | Concrete scenarios such as troubleshooting, taxonomy and employee follow-up |
-| Situated diagrams | **24** | Labeled illustrations, one per archetype and use-case profile |
+| Composition recipes | **23** | Design-only ways to combine forms while preserving boundaries |
+| Use-case profiles | **21** | Concrete scenarios such as troubleshooting, taxonomy and employee follow-up |
+| Situated diagrams | **40** | Labeled illustrations, one per archetype and use-case profile |
 | Visual patterns | **10** | A shared vocabulary: tree, network, matrix, timeline, casefile and others |
+
+## New in 1.6.0: official logo and ecosystem alignment
+
+- Integrated the **user-supplied SVG logo unchanged** (`assets/logo-k.svg`) and derived a desktop PNG for Tkinter (`assets/logo-k-ui.png`). Both offline UI surfaces now have their expected assets.
+- Regenerated the 19 historical v9 build receipts without changing any template `state_ref` or canonical artifacts; corrected the casefile/deposition form separation.
+- Updated the opt-in v11 Authoring Kit to **4.0.0-draft.3** (selectively pinned vendor files), design baseline to **Framework 11.0.0-draft.4**, and external read-only diK baseline to **alpha.7**.
+- See [the upgrade notes](docs/15_MISE_A_JOUR_ARKETYPE_160.md) and [the validation report](VALIDATION_160.md).
 
 ## Start here
 
-1. Extract the repository archive, then **double-click `Lancer_Arketype.pyw`** on Windows (Python 3.10+ with Tkinter). It opens a unified desktop launcher with **Home**, **Catalogue**, **Create Kristal**, and **Developer Ops**. The Catalogue is searchable in the launcher; **Open full visual catalogue** opens the illustrated offline HTML view. Developer Ops includes an allowlisted local console and **Ecosystem Compatibility** read-only diagnostics for explicitly selected checkouts—never an arbitrary shell, remote sync, or publication.
+1. Extract the repository archive, then **double-click `Lancer_Arketype.pyw`** on Windows (Python 3.10+ with Tkinter). It opens a unified desktop launcher with **Home**, **Catalogue**, **Create Kristal**, and **Developer Ops**. The Catalogue is searchable in the launcher; **Open full visual catalogue** opens the illustrated offline HTML view. The Developer Ops console runs only an explicit allowlist of local library commands, tests and validation—never an arbitrary shell.
 2. You can also open **`catalogue/index.html`** directly without Python or Tkinter. It provides search, structural filters, labeled diagrams and links to JSON. Read the **[GitHub Wiki source](wiki/Home.md)** for concepts, detailed archetype descriptions, examples, composition rules, and safety boundaries.
 3. Use Python 3.10+ to explore or instantiate a workspace from the repository root:
 
@@ -53,19 +60,19 @@ python arketype.py build-html
 | `inventaires/archetypes-visuels.json` | Visual properties of the 19 archetypes |
 | `inventaires/grammaire-visuelle.json` | Ten standardized diagram patterns |
 | `inventaires/diagrammes-situes.json` | Labeled, illustrative nodes and edges |
-| `inventaires/profils-usage.json` | Five concrete use-case profiles |
-| `assemblages/*.json` | Fourteen non-canonical composition proposals |
+| `inventaires/profils-usage.json` | Twenty-one profiles with scope expectations and coverage checks |
+| `inventaires/taxonomie-usages.json` | Independent usage / domain / integration dimensions |
+| `inventaires/cas-reels-usage.json` | Noncanonical mappings to the supplied example archives |
+| `assemblages/*.json` | Twenty-three noncanonical composition proposals |
 | `modeles/` | Neutral Authoring Kit workspaces; not populated domain datasets |
 | `catalogue/index.html` | Offline HTML interface generated from JSON |
-| `catalogue/Arketype_Visual_Catalogue_v1.4.0.pdf` | Included printable catalogue |
+| `catalogue/Arketype_Visual_Catalogue_v1.4.0.pdf` | Optional historical printable catalogue (not present in this snapshot; HTML is included) |
 | `wiki/` | English GitHub Wiki pages, ready for a separate Wiki repository |
 | `Lancer_Arketype.pyw` | Single Windows entrypoint for the desktop launcher |
 | `arketype_gui.py` | Offline desktop UI: Home, Catalogue, Create Kristal, Developer Ops |
 | `arketype_launcher_ops.py` | Tested allowlist for local console operations (no shell) |
-| `arketype_ecosystem.py` | Read-only Framework / Kit / local workspace compatibility inspector |
-| `docs/ECOSYSTEM_ALIGNMENT.md` | Inter-repository ownership boundaries and inspection limits |
 
-The HTML and Windows interfaces use the visual branding color **`#1E6864`** and the supplied logo.
+The HTML and Windows interfaces use the visual branding color **`#1E6864`** and a original user-supplied SVG logo (kept byte-for-byte) and a derived desktop PNG.
 
 ## Representative use cases
 
@@ -76,6 +83,45 @@ The HTML and Windows interfaces use the visual branding color **`#1E6864`** and 
 - **Employee follow-up:** a restricted casefile combining notes, actions, supporting documents, and timeline references.
 
 The same foundation also supports UCKK-style federations, multi-use Ekole knowledge references, sparse proof maps, media universes, research memory, and testimony/deposition records.
+
+## New in 1.4.0: from structure to use-case and scope
+
+The **19 original structural archetypes remain intact**. Use-case profiles now specify five independent design dimensions: structural composition, usage family, domain, integration targets and authority/data boundaries. There are **21 use-case profiles**, **23 noncanonical assembly recipes**, and **40 diagrams**. The new profiles cover UCKK federation and Moodle export design, attributed traditions, contextual social organizations, mathematical proof landmarks/research, school/medical/civic casefiles, vehicle diagnosis, police/hospital operations, MediKristal knowledge orchestration, Québec education mapping, Ekole-style reuse, and testimony.
+
+`arketype.py` now supports read-only local profile recognition and generation of a **noncanonical scope guidance** JSON. These are *suggestions*; neither scanning nor a matching filename proves content coverage, scientific validity or readiness. For multi-project archives, use `--focus` to avoid cross-project matches.
+
+```bash
+python arketype.py uses
+python arketype.py profiles
+python arketype.py recognize --path /path/to/kristal-or-archive.zip --focus optional/subproject
+python arketype.py scope-guide --profile diagnostic-vehicule
+python arketype.py create --profile dossier-scolaire --slug suivi-scolaire-test --title "School dossier" --parent . --dry-run
+```
+
+The generated `arketype.scope-guidance/1.0` is a **design exchange document**, not a `state_scope` mutation, a Skope `kristal-scope-proposal/1.0` payload or a publication command. For injection, Skope and the local owner must inspect and explicitly approve a separately mapped proposal. See [docs/12_USAGE_PROFILES_AND_SCOPES.md](docs/12_USAGE_PROFILES_AND_SCOPES.md).
+
+## Framework v11 and diK readiness (introduced in 1.5.0; updated in 1.6.0)
+
+Creation supports a deliberately **optional** v11-ready mode while retaining the 19 original neutral archetypes and legacy Kit 3.2.4 workspaces:
+
+```bash
+python arketype.py create --type taxonomie-classification \
+  --slug taxonomy-new --title "Taxonomy new" --parent . --authoring v11 --dry-run
+python arketype.py create --type taxonomie-classification \
+  --slug taxonomy-new --title "Taxonomy new" --parent . --authoring v11
+python arketype.py semantic-status --path ./taxonomy-new
+```
+
+`--authoring v11` runs the bundled Kit **4.0.0-draft.3**, retains an **empty** canonical state and provides `design/v11-semantic-readiness.json`. It does **not** mint KQ/KP/KA/KS, enable strict v11 automatically, create fake Wikidata QIDs, fabricate multilingual labels, or publish anything. Actual v11 activation requires valid namespaced identities, graph, crosswalk and dictionary catalog registered as logical artifacts, then an explicit `tools/kristal.py enable-v11` + `check-v11`. Read [Framework v11 and diK](docs/14_FRAMEWORK_V11_ET_DIK.md).
+
+For **read-only diK completeness** with an explicit trusted diK source directory:
+
+```bash
+python arketype.py dik-coverage --dik-root /path/to/diK-v1.0.0-alpha.7 \
+  --project /path/to/dik.project.json --locales fr,en,fr-CA
+```
+
+The source is executed **only** because it is explicitly supplied; this command does not download diK, change a dictionary or write a report file. Words in design diagrams remain descriptive; only admitted v11 **canonical graphs** require KQ/KP identities.
 
 ## Important boundaries
 
@@ -93,12 +139,8 @@ python -m unittest discover -s tests -v
 python arketype.py validate --check-kit
 ```
 
-The repository uses the included Kristal Authoring Kit **3.2.4** and refers to Kristal Framework **10.0.0-draft.3.1** (**draft**, not a qualified GitHub network). See [Getting Started](wiki/Getting-Started.md), [Architecture](wiki/Architecture.md), [CLI Reference](wiki/CLI-Reference.md), and [Security and Boundaries](wiki/Security-and-Boundaries.md) for the detailed workflow.
+The 19 historical template workspaces and legacy creation mode continue to use **Authoring Kit 3.2.4**. An optional **Authoring Kit 4.0.0-draft.3** is bundled for `--authoring v11` and the design reference is **Kristal Framework 11.0.0-draft.4**. diK **1.0.0-alpha.7** can be connected read-only through an explicitly selected local source checkout. No test has certified cross-repository production conformance. See [Getting Started](wiki/Getting-Started.md), [Architecture](wiki/Architecture.md), [CLI Reference](wiki/CLI-Reference.md), and [Security and Boundaries](wiki/Security-and-Boundaries.md) for the detailed workflow.
 
 ## GitHub Wiki publishing
 
 The `wiki/` folder is **ready-to-publish Wiki content**, but GitHub stores a repository Wiki in a **separate Git repository**. Committing this folder to the main Arketype repository does **not** publish the Wiki automatically. Follow [Publishing the Wiki](wiki/Publishing-the-Wiki.md) after enabling the Wiki on the intended GitHub repository; no remote publication is performed by this archive.
-
-## Ecosystem compatibility (read-only)
-
-In the Windows launcher open **Developer Ops → Ecosystem Compatibility**. Choose optional local Framework, external Kit, workspace, Manager and Bootstrap checkout folders to inspect metadata and file hashes. Results explicitly differentiate **declared reference**, **identical bytes**, **not configured**, **review required** and **not verified**. The inspector does not run C1/C2/C3 or access GitHub, and cannot publish or activate a Kristal. See [Ecosystem Alignment](docs/ECOSYSTEM_ALIGNMENT.md) and [Wiki guide](wiki/Ecosystem-Compatibility.md).

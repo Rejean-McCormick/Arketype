@@ -14,6 +14,7 @@ import subprocess
 import sys
 import tempfile
 import unicodedata
+from use_cases import inspect_local, recognize, scope_guidance
 
 ROOT = Path(__file__).resolve().parent
 INDEX = ROOT / 'catalogue.json'
@@ -119,6 +120,9 @@ def render_profile(p: dict) -> str:
         f"Situated structure: {p['situational_schema']}",
         f"Use cases: {', '.join(p['use_cases'])}",
         f"Boundaries: {' | '.join(p['boundaries'])}",
+        f"Usage: {p['usage_family']} | Domain: {p['domain']}",
+        f"Integration targets: {', '.join(p['integration_targets']) or 'none specified'}",
+        f"Coverage questions: {'; '.join(c['label'] for c in p['coverage_checks'])}",
         f"Assembly: {p['assemblage_reference']}"
     ])
 
@@ -154,8 +158,11 @@ def plan_for(primary: str, recipe: str | None = None, additions: list[str] | Non
 
 def create(type_slug: str, slug: str, title: str, parent: str | Path,
            recipe: str | None = None, additions: list[str] | None = None,
-           dry_run: bool = False) -> Path | dict:
+           dry_run: bool = False, usage_profile: str | None = None,
+           authoring: str = "legacy") -> Path | dict:
     a = archetype(type_slug)
+    if authoring not in ('legacy', 'v11'):
+        raise ValueError('Supported authoring modes: legacy, v11.')
     if not VALID_SLUG.fullmatch(slug or '') or len(slug) > 80:
         raise ValueError('Expected slug: lowercase ASCII letters, digits and hyphens (1–80 characters).')
     if not title or not title.strip() or len(title.strip()) > 250:
@@ -168,11 +175,19 @@ def create(type_slug: str, slug: str, title: str, parent: str | Path,
     destination = parent / slug
     if destination.exists() or destination.is_symlink():
         raise FileExistsError(f'Destination already exists : {destination}')
+    use_profile = use_case_profile(usage_profile) if usage_profile else None
+    if use_profile and use_profile['primary_archetype'] != type_slug:
+        raise ValueError('Usage profile primary archetype does not match requested type.')
+    if use_profile and recipe and recipe != use_profile['assemblage_reference']:
+        raise ValueError('Usage profile and assembly recipe disagree.')
+    if use_profile and not recipe: recipe = use_profile['assemblage_reference']
     plan = plan_for(type_slug, recipe, additions)
     if dry_run:
         return {'destination': str(destination), 'archetype': a['id'], 'title':title.strip(),
-                'plan':plan,'will_write':False}
-    tool = ROOT / 'outils' / 'kristal.py'
+                'plan':plan,'usage_profile':usage_profile,'authoring_mode':authoring,
+                'strict_v11_enabled':False,'will_write':False}
+    tool = (ROOT / 'outils/authoring_v11/tools/kristal.py' if authoring == 'v11'
+            else ROOT / 'outils/kristal.py')
     model = ROOT / a['template_path']
     if not tool.is_file() or not model.is_dir():
         raise FileNotFoundError('Bundled Authoring Kit or archetype template is missing from this Arketype archive.')
@@ -201,16 +216,42 @@ def create(type_slug: str, slug: str, title: str, parent: str | Path,
                 shutil.copyfile(source,working/'docs'/filename)
         with (working/'docs'/'ARKETYPE.md').open('a',encoding='utf8') as f:
             f.write(f'\n## Local instance\n\n- Title: **{title.strip()}**\n- Slug : `{slug}`\n- Initial state: `{ws["state_ref"]}`\n- Contracts and assertions: **not yet defined**.\n')
+        if use_profile:
+            (working/'design'/'scope-guidance.json').write_text(json.dumps(scope_guidance(use_profile),ensure_ascii=False,indent=2)+'\n','utf8')
         (working/'design'/'composition-plan.json').write_text(json.dumps(plan,ensure_ascii=False,indent=2)+'\n','utf8')
         (working/'arketype.instance.json').write_text(json.dumps({
              'format':'arketype.instance-origin/1.0-non-normatif',
-             'library_version':'1.4.0','primary_archetype':type_slug,
+             'library_version':'1.6.0','primary_archetype':type_slug,
+             'use_case_profile':usage_profile,
              'assembly_recipe':recipe,'additional_archetypes':[p['archetype'] for p in plan['components']],
              'state_ref_at_initialization':ws['state_ref'],
-             'authoring_kit_reference':'3.2.4',
+             'authoring_kit_reference':'4.0.0-draft.3' if authoring == 'v11' else '3.2.4',
+             'v11_readiness':'identity_registry_and_graph_not_created' if authoring == 'v11' else 'legacy_template',
              'status':'stub_no_domain_assertions','published':False,
              'authorized_for_publication':False
              },ensure_ascii=False,indent=2)+'\n',encoding='utf8')
+        if authoring == 'v11':
+            # No invented KQ, KP, Wikidata Q, default language or bogus claims.
+            # Authoring v4 can check v11 ONLY after actual identities and v9
+            # registered artifacts exist; creation is still an empty v9 stub.
+            note = working/'design'/'v11-semantic-readiness.json'
+            note.write_text(json.dumps({
+                'format':'arketype.v11-readiness/1.0-non-canonical',
+                'framework_baseline':'11.0.0-draft.4',
+                'authoring_kit_baseline':'4.0.0-draft.3',
+                'state':'pending_identity_allocation_and_review',
+                'strict_v11_enabled':False,
+                'no_provisional_wikidata_qids':True,
+                'do_not_infer_identity_from_words':True,
+                'steps':[
+                    'Allocate namespace-scoped KQ/KP/KA/KS through an authorized identity registry.',
+                    'Prepare strict v11 canonical graph, distinct lexical catalog and reviewed Wikidata crosswalk.',
+                    'Register graph/registry/crosswalk/catalog as new v9 logical artifacts.',
+                    'Run tools/kristal.py enable-v11 with registered paths, then check-v11, check and build-v9.',
+                    'Use diK for separately versioned lexical completeness reports and reviewed conversion plans.'
+                ],
+                'publication_authorized':False
+            }, ensure_ascii=False, indent=2)+'\n',encoding='utf-8')
         run_kit(['check',str(working)])
         index=read_json(working/'canon'/'state.index.json')
         if index.get('artifacts',[]) or index.get('canonical_artifacts',[]):
@@ -331,10 +372,20 @@ def validate(check_kit: bool = False) -> dict:
             if c['archetype'] not in slugs:errors.append(r['id']+': unknown component '+c['archetype'])
             if c['archetype']==r['primary_archetype']:errors.append(r['id']+': self-composition')
             if c.get('status')!='unresolved':errors.append(r['id']+': link marked resolved without evidence')
-    profs=use_case_profiles(); profile_ids=set()
+    profs=use_case_profiles(); profile_ids=set(); profile_slugs=set()
     for p in profs:
         if p['id'] in profile_ids: errors.append('Duplicate profile : '+p['id'])
         profile_ids.add(p['id'])
+        if p['slug'] in profile_slugs: errors.append('Duplicate profile slug: '+p['slug'])
+        profile_slugs.add(p['slug'])
+        if p.get('profile_status') != 'design_guidance_only': errors.append(p['slug']+': unsafe profile status')
+        if not p.get('coverage_checks'):errors.append(p['slug']+': missing coverage checks')
+        if any(c.get('status')!='not_evaluated' or c.get('evaluation')!='manual_evidence_required' for c in p.get('coverage_checks',[])):errors.append(p['slug']+': cannot pre-qualify coverage')
+        if not p.get('usage_family') or not p.get('domain') or not isinstance(p.get('integration_targets'),list):errors.append(p['slug']+': incomplete use-case dimensions')
+        try:
+            plan = assembly(p['assemblage_reference'])
+            if plan['primary_archetype'] != p['primary_archetype']:errors.append(p['slug']+': inconsistent assembly primary archetype')
+        except ValueError as exc: errors.append(str(exc))
         if p.get('primary_archetype') not in slugs: errors.append(p['slug']+': unknown primary archetype')
         for s in p.get('supporting_archetypes',[]):
             if s not in slugs: errors.append(p['slug']+': unknown supporting archetype '+s)
@@ -354,6 +405,12 @@ def validate(check_kit: bool = False) -> dict:
         if len(labels)!=len(d['nodes']): errors.append(d['slug']+': duplicate nodes')
         if not labels or any(not n.get('label') for n in d['nodes']): errors.append(d['slug']+': unlabeled nodes')
         if any(e.get('from') not in labels or e.get('to') not in labels for e in d['edges']): errors.append(d['slug']+': edge references an unknown node')
+    taxonomy=read_json(ROOT/'inventaires/taxonomie-usages.json')
+    known_usage=set(taxonomy['axes']['usage_family']['values'])
+    known_domains=set(taxonomy['axes']['domain']['values'])
+    for p in profs:
+        if p.get('usage_family') not in known_usage or p.get('domain') not in known_domains:errors.append(p['slug']+': taxonomy mismatch')
+    if not (ROOT/'schemas/use-case-profile.schema.json').is_file() or not (ROOT/'schemas/arketype.scope-guidance.schema.json').is_file():errors.append('Missing use-case contracts')
     if not (ROOT/'assets/logo-k.svg').is_file(): errors.append('Logo SVG absent')
     return {'ok':not errors,'archetype_count':len(types),'recipe_count':len(recipes),'profile_count':len(profs),'situated_diagrams':len(diagrams),'local_kit_checks':check_kit,'errors':errors}
 
@@ -369,17 +426,30 @@ def main(argv: list[str] | None = None) -> int:
     rp=commands.add_parser('recipe',help='Show assembly details');rp.add_argument('id')
     pr=commands.add_parser('profiles',help='List use-case profiles')
     pf=commands.add_parser('profile',help='Show a use-case profile');pf.add_argument('slug')
+    us=commands.add_parser('uses',help='List use-case family and domain dimensions')
+    rco=commands.add_parser('recognize',help='Read-only profile suggestions from local directory or ZIP metadata')
+    rco.add_argument('--path',required=True);rco.add_argument('--focus',default='',help='Optional ZIP-internal subproject prefix');rco.add_argument('--limit',type=int,default=6)
+    guide=commands.add_parser('scope-guide',help='Generate noncanonical scope guidance (not an injection payload)')
+    guide.add_argument('--profile',required=True);guide.add_argument('--path',default='');guide.add_argument('--focus',default='');guide.add_argument('--output',default='')
     bh=commands.add_parser('build-html',help='Generate the offline HTML catalogue');bh.add_argument('--output',default='')
     v=commands.add_parser('validate',help='Check Arketype consistency (read-only)');v.add_argument('--check-kit',action='store_true')
     for command in ('create','compose'):
         p=commands.add_parser(command,help='Create a local Kristal or prepare a composition')
-        p.add_argument('--type',help='Primary archetype; optional when using --recipe')
+        p.add_argument('--type',help='Primary archetype; optional with --recipe or --profile')
+        p.add_argument('--profile',help='Optional use-case profile to attach to the neutral workspace')
         p.add_argument('--recipe',help='Predefined assembly')
         p.add_argument('--with',dest='additions',action='append',default=[],metavar='ARCHETYPE',help='Additional archetype; repeat if needed')
         p.add_argument('--slug',required=True,help='Slug for the new Kristal')
         p.add_argument('--title',required=True,help='Title for the new Kristal')
         p.add_argument('--parent',required=True,help='Existing parent directory for new workspace')
         p.add_argument('--dry-run',action='store_true',help='Preview without writing')
+        p.add_argument('--authoring', choices=['legacy','v11'], default='legacy', help='v11: new blank Kit 4 draft workspace + KQ/KP readiness guidance; does NOT mint IDs or enable strict v11')
+    s = commands.add_parser('semantic-status',help='Read-only v11 readiness from local workspace metadata; never claims domain qualification')
+    s.add_argument('--path',required=True)
+    s = commands.add_parser('dik-coverage',help='Run the explicitly selected local diK CLI in read-only coverage mode')
+    s.add_argument('--project',required=True)
+    s.add_argument('--dik-root',required=True,help='Explicit local diK source checkout, not downloaded or executed implicitly')
+    s.add_argument('--locales',help='Comma-separated list of selected catalog locales')
     args=parser.parse_args(argv)
     try:
         if args.command=='list':
@@ -400,6 +470,26 @@ def main(argv: list[str] | None = None) -> int:
             for p in use_case_profiles(): print(f"{p['id']:8} {p['slug']:28} {p['name']} -> {p['primary_archetype']}")
         elif args.command=='profile':
             print(render_profile(use_case_profile(args.slug)))
+        elif args.command=='uses':
+            print(json.dumps(read_json(ROOT/'inventaires/taxonomie-usages.json'),ensure_ascii=False,indent=2))
+        elif args.command=='recognize':
+            print(json.dumps(recognize(inspect_local(args.path,args.focus),use_case_profiles(),args.limit),ensure_ascii=False,indent=2))
+        elif args.command=='scope-guide':
+            data=scope_guidance(use_case_profile(args.profile),inspect_local(args.path,args.focus) if args.path else None)
+            text=json.dumps(data,ensure_ascii=False,indent=2)+'\n'
+            if args.output:
+                dest=Path(args.output).expanduser().resolve()
+                if dest.exists():raise FileExistsError('Output already exists; cannot overwrite.')
+                if not dest.parent.is_dir(): raise ValueError('Output parent directory does not exist.')
+                dest.write_text(text,encoding='utf-8')
+                print(str(dest))
+            else:print(text,end='')
+        elif args.command=='semantic-status':
+            from arketype_semantic import semantic_status
+            print(json.dumps(semantic_status(Path(args.path)),ensure_ascii=False,indent=2))
+        elif args.command=='dik-coverage':
+            from arketype_semantic import run_dik_coverage
+            print(run_dik_coverage(Path(args.dik_root),Path(args.project),args.locales),end='')
         elif args.command=='build-html':
             out = Path(args.output).expanduser() if args.output else None
             print(str(generate_html_catalog(out)))
@@ -408,11 +498,11 @@ def main(argv: list[str] | None = None) -> int:
             print(json.dumps(report,ensure_ascii=False,indent=2))
             return 0 if report['ok'] else 1
         elif args.command in ('create','compose'):
-            typ=args.type or (assembly(args.recipe)['primary_archetype'] if args.recipe else None)
-            if not typ:parser.error('Provide --type or --recipe.')
-            if args.command=='compose' and not (args.recipe or args.additions):
+            typ=args.type or (assembly(args.recipe)['primary_archetype'] if args.recipe else None) or (use_case_profile(args.profile)['primary_archetype'] if args.profile else None)
+            if not typ:parser.error('Provide --type, --recipe or --profile.')
+            if args.command=='compose' and not (args.recipe or args.additions or args.profile):
                 parser.error('compose requires --recipe or at least one --with.')
-            result=create(typ,args.slug,args.title,args.parent,args.recipe,args.additions,args.dry_run)
+            result=create(typ,args.slug,args.title,args.parent,args.recipe,args.additions,args.dry_run,args.profile,args.authoring)
             if isinstance(result,dict):print(json.dumps(result,ensure_ascii=False,indent=2))
             else:print('Neutral Arketype workspace created and checked : '+str(result))
         return 0

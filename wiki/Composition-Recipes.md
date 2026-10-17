@@ -1,23 +1,32 @@
 # Composition Recipes
 
-The library contains **14 noncanonical composition recipes** under `assemblages/`. They describe how multiple archetype responsibilities **might** be related. They do not implement cross-state merging, data transport, validation, activation or publication.
+The library contains **23 noncanonical composition recipes** under `assemblages/`. They describe how multiple archetype responsibilities **might** be related. They do not implement cross-state merging, data transport, validation, activation or publication.
 
 | Recipe ID | English scenario | Primary archetype | Proposed supporting archetypes |
 | --- | --- | --- | --- |
-| `atlas-preuves` | Sparse proof atlas | `carte-jalons-preuves` | `invariant-theorie`, `memoire-recherche` |
-| `diagnostic-vehicule` | Vehicle diagnostics | `diagnostic-causal` | `modele-multiplexe`, `simulation-transition` |
-| `dossier-depositions` | Testimony dossier | `deposition-temoignage` | `registre-evenementiel`, `interpretations-couches`, `carte-jalons-preuves` |
-| `ekole-multiusage` | Ekole multipurpose reference | `referentiel-semantique` | `modele-multiplexe`, `parcours-pedagogique` |
-| `environnement-protocolaire` | Procedural environment | `procedure-protocole` | `registre-evenementiel`, `simulation-transition` |
-| `etat-de-systemes` | System-state tracking | `etat-systemes` | `registre-evenementiel` |
-| `livre-recettes` | Cookbook compilation | `compilation-collection` | `procedure-protocole` |
-| `medi-connaissances` | MediKristal knowledge component | `composition-hybride` | `referentiel-semantique`, `procedure-protocole`, `diagnostic-causal` |
-| `operations-protocoles` | PoliceOps / HospitalOps protocols | `procedure-protocole` | `registre-evenementiel`, `simulation-transition` |
-| `suivi-employe` | Employee follow-up | `dossier-suivi` | `registre-evenementiel`, `deposition-temoignage` |
-| `taxonomie-nature` | Nature taxonomy | `taxonomie-classification` | `referentiel-semantique` |
-| `troubleshooting-systeme` | System troubleshooting | `diagnostic-causal` | `registre-evenementiel`, `etat-systemes`, `composition-hybride` |
-| `uckk-campus` | UCKK campus federation | `federation-topologie` | `parcours-pedagogique` |
-| `univers-medias` | Media universe | `univers-oeuvres-medias` | `compilation-collection`, `registre-evenementiel` |
+| `atlas-preuves` | Proof Atlas | `carte-jalons-preuves` | `invariant-theorie`, `memoire-recherche` |
+| `carte-preuves-longues` | Long Proof Waypoints | `carte-jalons-preuves` | `invariant-theorie`, `memoire-recherche` |
+| `collection-traditions` | Traditions Comparative Collection | `compilation-collection` | `interpretations-couches`, `referentiel-semantique` |
+| `diagnostic-vehicule` | Vehicle Diagnostics | `diagnostic-causal` | `modele-multiplexe`, `simulation-transition` |
+| `dossier-civique` | Individual Civic Casefile | `dossier-suivi` | `registre-evenementiel`, `deposition-temoignage` |
+| `dossier-depositions` | Deposition Dossier | `deposition-temoignage` | `registre-evenementiel`, `interpretations-couches`, `carte-jalons-preuves` |
+| `dossier-medical` | Individual Medical File | `dossier-suivi` | `registre-evenementiel`, `diagnostic-causal` |
+| `dossier-scolaire` | Individual School File | `dossier-suivi` | `registre-evenementiel`, `parcours-pedagogique` |
+| `ekole-multiusage` | Ekole Multi-purpose Knowledge | `referentiel-semantique` | `modele-multiplexe`, `parcours-pedagogique` |
+| `environnement-protocolaire` | Procedural Environment | `procedure-protocole` | `registre-evenementiel`, `simulation-transition` |
+| `etat-de-systemes` | System-State Tracking | `etat-systemes` | `registre-evenementiel` |
+| `livre-recettes` | Recipe Collection | `compilation-collection` | `procedure-protocole` |
+| `medi-connaissances` | MediKristal Knowledge Component | `composition-hybride` | `referentiel-semantique`, `procedure-protocole`, `diagnostic-causal` |
+| `operations-protocoles` | Operations Protocols | `procedure-protocole` | `registre-evenementiel`, `simulation-transition` |
+| `organisations-contextuelles` | Situated Human Organizations | `modele-multiplexe` | `registre-evenementiel`, `referentiel-semantique` |
+| `parcours-moodle` | Moodle Learning Path Export Design | `parcours-pedagogique` | `federation-topologie` |
+| `recherche-mathematique` | Mathematical Research Workflow | `memoire-recherche` | `carte-jalons-preuves`, `invariant-theorie` |
+| `suivi-employe` | Employee Follow-Up Casefile | `dossier-suivi` | `registre-evenementiel`, `deposition-temoignage` |
+| `systeme-scolaire` | Education System Mapping | `modele-multiplexe` | `referentiel-semantique`, `parcours-pedagogique` |
+| `taxonomie-nature` | Nature Taxonomy | `taxonomie-classification` | `referentiel-semantique` |
+| `troubleshooting-systeme` | System Troubleshooting | `diagnostic-causal` | `registre-evenementiel`, `etat-systemes`, `composition-hybride` |
+| `uckk-campus` | University Campus Federation | `federation-topologie` | `parcours-pedagogique` |
+| `univers-medias` | Media Universe | `univers-oeuvres-medias` | `compilation-collection`, `registre-evenementiel` |
 
 ## Rules that apply to every composition
 

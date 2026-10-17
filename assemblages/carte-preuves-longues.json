@@ -1,0 +1,26 @@
+{
+  "format": "arketype.assembly-recipe/1.0-non-normatif",
+  "id": "carte-preuves-longues",
+  "title": "Long Proof Waypoints",
+  "primary_archetype": "carte-jalons-preuves",
+  "components": [
+    {
+      "archetype": "invariant-theorie",
+      "relation": "reference_externe",
+      "design_note": "Design-only link to invariant-theorie: define ownership, exact references and authoritative source first.",
+      "status": "unresolved"
+    },
+    {
+      "archetype": "memoire-recherche",
+      "relation": "reference_externe",
+      "design_note": "Design-only link to memoire-recherche: define ownership, exact references and authoritative source first.",
+      "status": "unresolved"
+    }
+  ],
+  "guidance": "Separate navigational junctions, endpoints, proof evidence, formal assertions and unsolved gaps.",
+  "composition_status": "design_only",
+  "logical_contract": "to_define",
+  "source_references": "to_pin_on_real_instance",
+  "authoritative_ownership": "to_decide",
+  "publication_authorization": false
+}

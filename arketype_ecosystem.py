@@ -75,13 +75,50 @@ def inspect_framework(root: Path, selected: str | Path | None = None) -> dict:
     try:
         release = _json(location / 'contracts' / 'release.json')
         contract_set = _json(location / 'contracts' / 'contract-set.json')
-        lock = _json(location / 'contracts' / 'v10-compatibility-lock.json')
+        lock = _json(location / 'contracts' / ('v11-compatibility-lock.json' if str(declared).startswith('11.') else 'v10-compatibility-lock.json'))
         version = release.get('version')
         agrees = version == declared == contract_set.get('version')
         status = 'declared_version_matches' if agrees else 'review_required'
         return _result(status, ('The release and contract-set declare the expected version. Full TCK and normative lock validation were NOT run.' if agrees else 'Framework release, contract-set, or Arketype design baseline differs.'), expected_version=declared, observed_version=version, release_status=release.get('status'), contract_set_sha256=_sha(location / 'contracts' / 'contract-set.json'), compatibility_lock_release=lock.get('release'))
     except (OSError, ValueError, UnicodeError, json.JSONDecodeError) as exc:
-        return _result('not_available', f'No readable Framework release, contract-set and v10 compatibility lock at this path: {exc}', expected_version=declared)
+        return _result('not_available', f'No readable Framework release, contract-set and matching compatibility lock at this path: {exc}', expected_version=declared)
+
+
+def inspect_modern_kit(root: Path = ROOT) -> dict:
+    """Check byte-level vendor pin for the opt-in Kit 4 source (not its TCK)."""
+    bundle=root/'outils/authoring_v11'
+    try:
+        pin=_json(bundle/'VENDOR_PIN.json')
+        files=pin['copied_paths']
+        problems=[]
+        for record in files:
+            file=bundle/record['upstream']
+            if not file.is_file() or _sha(file)!=record['sha256'] or file.stat().st_size != record['bytes']:
+                problems.append(record['upstream'])
+        return _result('vendored_source_verified' if not problems else 'review_required',
+                       'Pinned source bytes checked; independent v11 conformance or Kit4 full qualification NOT run.',
+                       kit_version=pin['kit_version'], file_count=len(files),problems=problems)
+    except (OSError,UnicodeError,ValueError,KeyError,TypeError) as exc:
+        return _result('not_available',f'No complete local Kit4 vendor pin: {exc}')
+
+
+def inspect_dik(selected: str | Path | None = None) -> dict:
+    """Read-only diK source inspection; never import or run untrusted code."""
+    if not selected:
+        return _result('not_configured','Select a local diK source checkout to observe its version and framework pin; no code executed.')
+    path=Path(selected).expanduser()
+    try:
+        meta=_json(path/'FRAMEWORK-SOURCE-SHA256.json')
+        pyproject=(path/'pyproject.toml').read_text(encoding='utf8')
+        has_sources=(path/'src/dik/cli.py').is_file()
+        import re
+        match=re.search(r'^version\s*=\s*[\'\"]([^\'\"]+)',pyproject,re.M)
+        return _result('local_source_present' if has_sources else 'source_incomplete',
+                       'Source presence and pin file inspected; not a runtime integration or conformance test.',
+                       dik_version=match.group(1) if match else None,
+                       framework_pin_present=bool(meta),cli_source_present=has_sources)
+    except (OSError,ValueError,UnicodeError) as exc:
+        return _result('not_available',f'No readable diK metadata: {exc}')
 
 
 def inspect_templates(root: Path = ROOT) -> dict:
@@ -138,7 +175,8 @@ def inspect_bootstrap(selected: str | Path | None = None) -> dict:
 
 def inspect_ecosystem(*, root: Path = ROOT, framework: str | Path | None = None,
                       kit: str | Path | None = None, workspace: str | Path | None = None,
-                      manager: str | Path | None = None, bootstrap: str | Path | None = None) -> dict:
+                      manager: str | Path | None = None, bootstrap: str | Path | None = None,
+                      dik: str | Path | None = None) -> dict:
     """Local source observations, deliberately not a qualification certificate."""
     return {'format': 'arketype.ecosystem-inspection/1.0-non-normative',
             'mode': 'read_only', 'is_qualification': False, 'does_not_publish': True,
@@ -146,6 +184,8 @@ def inspect_ecosystem(*, root: Path = ROOT, framework: str | Path | None = None,
             'authoring_kit': inspect_kit(root, kit),
             'templates': inspect_templates(root),
             'workspace': inspect_workspace(workspace),
+            'dik': inspect_dik(dik),
+            'modern_kit': inspect_modern_kit(root),
             'manager': inspect_manager(manager),
             'bootstrap': inspect_bootstrap(bootstrap),
             'limits': ['No remote GitHub checks', 'No C1/C2/C3 verification',
@@ -156,7 +196,7 @@ def inspect_ecosystem(*, root: Path = ROOT, framework: str | Path | None = None,
 def format_ecosystem_report(report: dict) -> str:
     lines = ['ARKETYPE — ECOSYSTEM COMPATIBILITY (READ ONLY)',
              'Local file observations, NOT a qualification or publication receipt.', '']
-    for section in ['framework', 'authoring_kit', 'templates', 'workspace', 'manager', 'bootstrap']:
+    for section in ['framework', 'authoring_kit', 'modern_kit', 'dik', 'templates', 'workspace', 'manager', 'bootstrap']:
         data = report[section]
         lines += [section.replace('_', ' ').upper() + f' [{data["status"]}]',
                   '  ' + data['details']]

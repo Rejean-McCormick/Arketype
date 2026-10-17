@@ -4,7 +4,7 @@
 
 Arketype helps answer a practical question: **what structure best fits the knowledge you want to preserve?** A procedure tends to follow steps; a taxonomy branches into classes; a system-state registry compares observations; a follow-up casefile gathers records; a research map connects milestones and referenced proofs. Those are different structures and should not be forced into one universal template.
 
-Arketype 1.4.0 provides **19 archetypes**, **19 neutral workspaces**, **14 design-only composition recipes**, **5 situated use-case profiles**, and **24 labeled diagrams** built from JSON inventories. The accompanying offline HTML catalogue uses a consistent visual grammar and the supplied brand identity.
+Arketype 1.4.0 provides **19 archetypes**, **19 neutral workspaces**, **23 design-only composition recipes**, **21 situated use-case profiles**, and **40 labeled diagrams** built from JSON inventories. The accompanying offline HTML catalogue uses a consistent visual grammar and the supplied brand identity.
 
 ## Find your path
 
@@ -36,6 +36,3 @@ The repository's HTML catalogue is the preferred **visual UI**: `catalogue/index
 
 
 **Desktop launcher:** [Desktop Launcher](Desktop-Launcher) · [Developer Ops](Developer-Ops).
-
-
-**Kristal v10 integration:** [Ecosystem Compatibility](Ecosystem-Compatibility) (local read-only diagnostics) and [Desktop Launcher](Desktop-Launcher). Konstellation remains the viewer of actual Kristal instances and concepts.

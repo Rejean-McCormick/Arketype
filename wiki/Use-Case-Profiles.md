@@ -1,14 +1,30 @@
 # Use-Case Profiles
 
-Arketype includes **five situated profiles**. Each links a primary archetype to optional supporting forms and a design-only assembly. Their examples below are fictitious and explain structure; they are not sample canonical domain records.
+Arketype includes **21 situated profiles**. Each links a primary archetype to optional supporting forms and a design-only assembly. Their examples below are fictitious and explain structure; they are not sample canonical domain records.
 
-| Profile | Primary archetype | Supporting forms | Main shape |
+| Profile | Usage · domain | Primary archetype | Assembly |
 | --- | --- | --- | --- |
-| [System Troubleshooting](#system-troubleshooting) | `diagnostic-causal` | `registre-evenementiel`, `etat-systemes`, `composition-hybride` | Hub / satellites |
-| [Procedural Environment](#procedural-environment) | `procedure-protocole` | `registre-evenementiel`, `simulation-transition` | Branching |
-| [Nature Taxonomy](#nature-taxonomy) | `taxonomie-classification` | `referentiel-semantique` | Tree |
-| [System-State Tracking](#system-state-tracking) | `etat-systemes` | `registre-evenementiel` | Matrix |
-| [Employee Follow-Up](#employee-follow-up) | `dossier-suivi` | `registre-evenementiel`, `deposition-temoignage` | Casefile |
+| `troubleshooting-systeme` — System Troubleshooting | diagnosis · technology | `diagnostic-causal` | `troubleshooting-systeme` |
+| `environnement-protocolaire` — Procedural Environment | procedures · cross-domain | `procedure-protocole` | `environnement-protocolaire` |
+| `taxonomie-nature` — Nature Taxonomy | knowledge · natural-world | `taxonomie-classification` | `taxonomie-nature` |
+| `etat-de-systemes` — System-State Tracking | monitoring · technology | `etat-systemes` | `etat-de-systemes` |
+| `suivi-employe` — Employee Follow-Up | case-management · workplace | `dossier-suivi` | `suivi-employe` |
+| `campus-federe` — Federated University / Campus | learning · education | `federation-topologie` | `uckk-campus` |
+| `publication-moodle` — Moodle Learning Publication | integration · education | `parcours-pedagogique` | `parcours-moodle` |
+| `collection-traditions` — Traditions and Mythology Collection | knowledge · culture | `compilation-collection` | `collection-traditions` |
+| `organisations-sociales` — Contextual Social Organizations | modeling · social-systems | `modele-multiplexe` | `organisations-contextuelles` |
+| `navigation-preuves-longues` — Long-Proof Landmarks and Junctions | research · mathematics | `carte-jalons-preuves` | `carte-preuves-longues` |
+| `recherche-mathematique` — Mathematical Research Frontier | research · mathematics | `memoire-recherche` | `recherche-mathematique` |
+| `dossier-scolaire` — Individual School Follow-Up | case-management · education | `dossier-suivi` | `dossier-scolaire` |
+| `dossier-medical` — Individual Medical Follow-Up | case-management · health | `dossier-suivi` | `dossier-medical` |
+| `dossier-civique` — Civic / Administrative Individual Casefile | case-management · civic | `dossier-suivi` | `dossier-civique` |
+| `diagnostic-vehicule` — Vehicle Fault Diagnosis | diagnosis · automotive | `diagnostic-causal` | `diagnostic-vehicule` |
+| `operations-police` — Police Operations Protocols | procedures · public-safety | `procedure-protocole` | `operations-protocoles` |
+| `operations-hopital` — Hospital Operations Protocols | procedures · health | `procedure-protocole` | `operations-protocoles` |
+| `orchestration-medicale` — Medical Knowledge Orchestration | orchestration · health | `composition-hybride` | `medi-connaissances` |
+| `cartographie-scolaire` — School System and Rules Mapping | modeling · education | `modele-multiplexe` | `systeme-scolaire` |
+| `referentiel-polyusage` — Multi-Purpose Semantic Reference | knowledge · cross-domain | `referentiel-semantique` | `ekole-multiusage` |
+| `temoignages-enquete` — Attributed Testimony and Inquiry | evidence · civic | `deposition-temoignage` | `dossier-depositions` |
 
 ## System Troubleshooting
 
@@ -122,6 +138,10 @@ A restricted record may track meetings, agreed actions, supporting documents and
 **Integrity requirement:** This model is not an HR application. No real personal data belongs in the public template; permissions and retention must be enforceable outside the descriptive model.
 
 **Composition recipe:** `assemblages/suivi-employe.json`.
+
+## Specialized profiles and scope requirements
+
+The profiles above have machine-readable evidence questions (`coverage_checks`), candidate inclusions/exclusions (`scope_guidance`), and application integration targets. None is prequalified. Examples backed by the supplied user archives are listed in `inventaires/cas-reels-usage.json`; they are not imported into the library. Full discussion is in [Use Cases and Scope](Use-Cases-and-Scope).
 
 ## Using the profiles
 

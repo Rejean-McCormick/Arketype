@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Arketype descriptive use-case profile",
+  "type": "object",
+  "required": [
+    "id",
+    "slug",
+    "name",
+    "primary_archetype",
+    "supporting_archetypes",
+    "usage_family",
+    "domain",
+    "integration_targets",
+    "coverage_checks",
+    "scope_guidance",
+    "profile_status"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^PRF-[0-9]{2}$"
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "primary_archetype": {
+      "type": "string"
+    },
+    "supporting_archetypes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "usage_family": {
+      "type": "string"
+    },
+    "domain": {
+      "type": "string"
+    },
+    "integration_targets": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "coverage_checks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "label",
+          "evaluation",
+          "status"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string"
+          },
+          "evaluation": {
+            "const": "manual_evidence_required"
+          },
+          "status": {
+            "const": "not_evaluated"
+          }
+        }
+      }
+    },
+    "scope_guidance": {
+      "type": "object"
+    },
+    "profile_status": {
+      "const": "design_guidance_only"
+    }
+  }
+}

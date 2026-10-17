@@ -1,0 +1,26 @@
+{
+  "format": "arketype.assembly-recipe/1.0-non-normatif",
+  "id": "dossier-scolaire",
+  "title": "Individual School File",
+  "primary_archetype": "dossier-suivi",
+  "components": [
+    {
+      "archetype": "registre-evenementiel",
+      "relation": "reference_externe",
+      "design_note": "Design-only link to registre-evenementiel: define ownership, exact references and authoritative source first.",
+      "status": "unresolved"
+    },
+    {
+      "archetype": "parcours-pedagogique",
+      "relation": "reference_externe",
+      "design_note": "Design-only link to parcours-pedagogique: define ownership, exact references and authoritative source first.",
+      "status": "unresolved"
+    }
+  ],
+  "guidance": "Separate education-system reference from individual student records and protect private data.",
+  "composition_status": "design_only",
+  "logical_contract": "to_define",
+  "source_references": "to_pin_on_real_instance",
+  "authoritative_ownership": "to_decide",
+  "publication_authorization": false
+}

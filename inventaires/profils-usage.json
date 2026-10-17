@@ -1,6 +1,6 @@
 {
   "format": "arketype.use-case-profile-index/1.0-non-normatif",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "profiles": [
     {
       "id": "PRF-01",
@@ -39,7 +39,49 @@
         "A diagnosis is not permission to intervene.",
         "An event log does not by itself prove cause."
       ],
-      "assemblage_reference": "troubleshooting-systeme"
+      "assemblage_reference": "troubleshooting-systeme",
+      "usage_family": "diagnosis",
+      "domain": "technology",
+      "integration_targets": [
+        "system-diag"
+      ],
+      "coverage_checks": [
+        {
+          "id": "chk-01",
+          "label": "hypothesis-vs-observation",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-02",
+          "label": "test evidence",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-03",
+          "label": "safety authorization",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        }
+      ],
+      "scope_guidance": {
+        "purpose": "Track symptoms, test competing hypotheses, and preserve observations while resolving technical incidents.",
+        "include_candidates": [
+          "symptoms",
+          "event logs",
+          "observed states",
+          "test results"
+        ],
+        "exclude_candidates": [
+          "A diagnosis is not permission to intervene.",
+          "An event log does not by itself prove cause."
+        ],
+        "operational_authority": "external_required",
+        "unverified_by_default": true
+      },
+      "profile_status": "design_guidance_only",
+      "source_basis": "original_arketype_v1.3"
     },
     {
       "id": "PRF-02",
@@ -76,7 +118,55 @@
         "Documented steps do not imply permission to act.",
         "Simulation is not authorized execution."
       ],
-      "assemblage_reference": "environnement-protocolaire"
+      "assemblage_reference": "environnement-protocolaire",
+      "usage_family": "procedures",
+      "domain": "cross-domain",
+      "integration_targets": [
+        "operations-app"
+      ],
+      "coverage_checks": [
+        {
+          "id": "chk-01",
+          "label": "roles",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-02",
+          "label": "exceptions",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-03",
+          "label": "versioning",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-04",
+          "label": "authorization",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        }
+      ],
+      "scope_guidance": {
+        "purpose": "Document prerequisites, authorized roles, exception handling and conditional process steps.",
+        "include_candidates": [
+          "steps",
+          "roles",
+          "preconditions",
+          "exceptions"
+        ],
+        "exclude_candidates": [
+          "Documented steps do not imply permission to act.",
+          "Simulation is not authorized execution."
+        ],
+        "operational_authority": "external_required",
+        "unverified_by_default": true
+      },
+      "profile_status": "design_guidance_only",
+      "source_basis": "original_arketype_v1.3"
     },
     {
       "id": "PRF-03",
@@ -112,7 +202,47 @@
         "Classification is not causal proof.",
         "One observation does not define the taxonomy."
       ],
-      "assemblage_reference": "taxonomie-nature"
+      "assemblage_reference": "taxonomie-nature",
+      "usage_family": "knowledge",
+      "domain": "natural-world",
+      "integration_targets": [],
+      "coverage_checks": [
+        {
+          "id": "chk-01",
+          "label": "classification criteria",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-02",
+          "label": "name provenance",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-03",
+          "label": "source refs",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        }
+      ],
+      "scope_guidance": {
+        "purpose": "Classify living and non-living natural entities with explicit criteria and source references.",
+        "include_candidates": [
+          "names",
+          "classification rules",
+          "synonyms",
+          "sources"
+        ],
+        "exclude_candidates": [
+          "Classification is not causal proof.",
+          "One observation does not define the taxonomy."
+        ],
+        "operational_authority": "external_required",
+        "unverified_by_default": true
+      },
+      "profile_status": "design_guidance_only",
+      "source_basis": "original_arketype_v1.3"
     },
     {
       "id": "PRF-04",
@@ -148,7 +278,49 @@
         "A snapshot is not a complete event history.",
         "Desired configuration is not observed state."
       ],
-      "assemblage_reference": "etat-de-systemes"
+      "assemblage_reference": "etat-de-systemes",
+      "usage_family": "monitoring",
+      "domain": "technology",
+      "integration_targets": [
+        "observability"
+      ],
+      "coverage_checks": [
+        {
+          "id": "chk-01",
+          "label": "timestamp",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-02",
+          "label": "observation-vs-target",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-03",
+          "label": "metric provenance",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        }
+      ],
+      "scope_guidance": {
+        "purpose": "Compare the observed condition of several systems across measurable dimensions.",
+        "include_candidates": [
+          "systems",
+          "metrics",
+          "timestamps",
+          "versions"
+        ],
+        "exclude_candidates": [
+          "A snapshot is not a complete event history.",
+          "Desired configuration is not observed state."
+        ],
+        "operational_authority": "external_required",
+        "unverified_by_default": true
+      },
+      "profile_status": "design_guidance_only",
+      "source_basis": "original_arketype_v1.3"
     },
     {
       "id": "PRF-05",
@@ -185,7 +357,1479 @@
         "A casefile is not an automatic verdict.",
         "Private employee information requires separate access controls and retention policy."
       ],
-      "assemblage_reference": "suivi-employe"
+      "assemblage_reference": "suivi-employe",
+      "usage_family": "case-management",
+      "domain": "workplace",
+      "integration_targets": [
+        "HR system"
+      ],
+      "coverage_checks": [
+        {
+          "id": "chk-01",
+          "label": "privacy access",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-02",
+          "label": "retention",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-03",
+          "label": "notes-vs-decision",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        }
+      ],
+      "scope_guidance": {
+        "purpose": "Structure a restricted employee casefile with meeting notes, actions and dated supporting records.",
+        "include_candidates": [
+          "meetings",
+          "notes",
+          "documents",
+          "actions"
+        ],
+        "exclude_candidates": [
+          "A casefile is not an automatic verdict.",
+          "Private employee information requires separate access controls and retention policy."
+        ],
+        "operational_authority": "external_required",
+        "unverified_by_default": true
+      },
+      "profile_status": "design_guidance_only",
+      "source_basis": "original_arketype_v1.3"
+    },
+    {
+      "id": "PRF-06",
+      "slug": "campus-federe",
+      "name": "Federated University / Campus",
+      "summary": "Federate separately owned institution, pathways and courses with stable links and explicit course boundaries.",
+      "primary_archetype": "federation-topologie",
+      "supporting_archetypes": [
+        "parcours-pedagogique",
+        "referentiel-semantique"
+      ],
+      "visual_pattern": "network",
+      "secondary_patterns": [
+        "network"
+      ],
+      "situational_schema": "Institution references pathways; pathways reference independent course states.",
+      "use_cases": [
+        "federated university / campus",
+        "education reference"
+      ],
+      "inputs": [
+        "institution identity",
+        "pathway refs",
+        "course refs",
+        "ownership boundaries"
+      ],
+      "outputs": [
+        "federation topology",
+        "learning navigation"
+      ],
+      "boundaries": [
+        "A campus index does not own the logical content of courses.",
+        "An LMS publication requires an independently approved integration."
+      ],
+      "assemblage_reference": "uckk-campus",
+      "usage_family": "learning",
+      "domain": "education",
+      "integration_targets": [
+        "LMS",
+        "Moodle"
+      ],
+      "coverage_checks": [
+        {
+          "id": "chk-01",
+          "label": "independent states",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-02",
+          "label": "stable references",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-03",
+          "label": "curriculum boundaries",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-04",
+          "label": "course coverage",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        }
+      ],
+      "scope_guidance": {
+        "purpose": "Federate separately owned institution, pathways and courses with stable links and explicit course boundaries.",
+        "include_candidates": [
+          "institution identity",
+          "pathway refs",
+          "course refs",
+          "ownership boundaries"
+        ],
+        "exclude_candidates": [
+          "A campus index does not own the logical content of courses.",
+          "An LMS publication requires an independently approved integration."
+        ],
+        "operational_authority": "external_required",
+        "unverified_by_default": true
+      },
+      "profile_status": "design_guidance_only",
+      "source_basis": "examples_and_library_inference"
+    },
+    {
+      "id": "PRF-07",
+      "slug": "publication-moodle",
+      "name": "Moodle Learning Publication",
+      "summary": "Prepare educational content and mappings for external Moodle integration without automatic transfer or publication.",
+      "primary_archetype": "parcours-pedagogique",
+      "supporting_archetypes": [
+        "federation-topologie"
+      ],
+      "visual_pattern": "linear",
+      "secondary_patterns": [
+        "network"
+      ],
+      "situational_schema": "Mapping of course identities, learning units and outcomes to LMS resources.",
+      "use_cases": [
+        "moodle learning publication",
+        "education reference"
+      ],
+      "inputs": [
+        "course structure",
+        "learning outcomes",
+        "activity mappings",
+        "edition refs"
+      ],
+      "outputs": [
+        "proposed export mapping",
+        "integration checklist"
+      ],
+      "boundaries": [
+        "A design profile cannot install or publish Moodle activities.",
+        "A course state does not confer a teacher or LMS administrator role."
+      ],
+      "assemblage_reference": "parcours-moodle",
+      "usage_family": "integration",
+      "domain": "education",
+      "integration_targets": [
+        "Moodle",
+        "LMS"
+      ],
+      "coverage_checks": [
+        {
+          "id": "chk-01",
+          "label": "course identity",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-02",
+          "label": "activity equivalence",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-03",
+          "label": "resource links",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-04",
+          "label": "versioning",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-05",
+          "label": "privacy controls",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        }
+      ],
+      "scope_guidance": {
+        "purpose": "Prepare educational content and mappings for external Moodle integration without automatic transfer or publication.",
+        "include_candidates": [
+          "course structure",
+          "learning outcomes",
+          "activity mappings",
+          "edition refs"
+        ],
+        "exclude_candidates": [
+          "A design profile cannot install or publish Moodle activities.",
+          "A course state does not confer a teacher or LMS administrator role."
+        ],
+        "operational_authority": "external_required",
+        "unverified_by_default": true
+      },
+      "profile_status": "design_guidance_only",
+      "source_basis": "examples_and_library_inference"
+    },
+    {
+      "id": "PRF-08",
+      "slug": "collection-traditions",
+      "name": "Traditions and Mythology Collection",
+      "summary": "Collect and compare sourced traditions while preserving each community attribution and its own context.",
+      "primary_archetype": "compilation-collection",
+      "supporting_archetypes": [
+        "interpretations-couches",
+        "referentiel-semantique"
+      ],
+      "visual_pattern": "cluster",
+      "secondary_patterns": [
+        "network"
+      ],
+      "situational_schema": "Independent traditions are indexed and cross-referenced without collapsing distinct beliefs.",
+      "use_cases": [
+        "traditions and mythology collection",
+        "culture reference"
+      ],
+      "inputs": [
+        "separate tradition states",
+        "attributed statements",
+        "sources",
+        "context"
+      ],
+      "outputs": [
+        "collection index",
+        "comparative reading map"
+      ],
+      "boundaries": [
+        "Comparisons do not assert religious equivalence or objective truth.",
+        "Do not include nonpublic, initiatory or restricted cultural knowledge without authorization."
+      ],
+      "assemblage_reference": "collection-traditions",
+      "usage_family": "knowledge",
+      "domain": "culture",
+      "integration_targets": [
+        "collection"
+      ],
+      "coverage_checks": [
+        {
+          "id": "chk-01",
+          "label": "tradition boundaries",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-02",
+          "label": "attribution",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-03",
+          "label": "translation variants",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-04",
+          "label": "provenance",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-05",
+          "label": "sacred or private exclusions",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        }
+      ],
+      "scope_guidance": {
+        "purpose": "Collect and compare sourced traditions while preserving each community attribution and its own context.",
+        "include_candidates": [
+          "separate tradition states",
+          "attributed statements",
+          "sources",
+          "context"
+        ],
+        "exclude_candidates": [
+          "Comparisons do not assert religious equivalence or objective truth.",
+          "Do not include nonpublic, initiatory or restricted cultural knowledge without authorization."
+        ],
+        "operational_authority": "external_required",
+        "unverified_by_default": true
+      },
+      "profile_status": "design_guidance_only",
+      "source_basis": "examples_and_library_inference"
+    },
+    {
+      "id": "PRF-09",
+      "slug": "organisations-sociales",
+      "name": "Contextual Social Organizations",
+      "summary": "Map roles, responsibilities, resources and institutions across socially and historically situated contexts.",
+      "primary_archetype": "modele-multiplexe",
+      "supporting_archetypes": [
+        "registre-evenementiel",
+        "referentiel-semantique"
+      ],
+      "visual_pattern": "multilayer",
+      "secondary_patterns": [
+        "network"
+      ],
+      "situational_schema": "Layers connect roles, institutions and resources over dated and sourced relationships.",
+      "use_cases": [
+        "contextual social organizations",
+        "social-systems reference"
+      ],
+      "inputs": [
+        "roles",
+        "tasks",
+        "resources",
+        "rules",
+        "period",
+        "provenance"
+      ],
+      "outputs": [
+        "societal map",
+        "role and relation views"
+      ],
+      "boundaries": [
+        "A descriptive social model must not speak for communities.",
+        "Norms and roles are context dependent and not universal."
+      ],
+      "assemblage_reference": "organisations-contextuelles",
+      "usage_family": "modeling",
+      "domain": "social-systems",
+      "integration_targets": [
+        "Ekole"
+      ],
+      "coverage_checks": [
+        {
+          "id": "chk-01",
+          "label": "actor attribution",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-02",
+          "label": "period and locality",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-03",
+          "label": "rules vs observations",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-04",
+          "label": "provenance",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-05",
+          "label": "cultural authority boundaries",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        }
+      ],
+      "scope_guidance": {
+        "purpose": "Map roles, responsibilities, resources and institutions across socially and historically situated contexts.",
+        "include_candidates": [
+          "roles",
+          "tasks",
+          "resources",
+          "rules",
+          "period",
+          "provenance"
+        ],
+        "exclude_candidates": [
+          "A descriptive social model must not speak for communities.",
+          "Norms and roles are context dependent and not universal."
+        ],
+        "operational_authority": "external_required",
+        "unverified_by_default": true
+      },
+      "profile_status": "design_guidance_only",
+      "source_basis": "examples_and_library_inference"
+    },
+    {
+      "id": "PRF-10",
+      "slug": "navigation-preuves-longues",
+      "name": "Long-Proof Landmarks and Junctions",
+      "summary": "Navigate extensive mathematical proofs using endpoints, intermediate junctions, proof references and open frontiers.",
+      "primary_archetype": "carte-jalons-preuves",
+      "supporting_archetypes": [
+        "invariant-theorie",
+        "memoire-recherche"
+      ],
+      "visual_pattern": "hub",
+      "secondary_patterns": [
+        "network"
+      ],
+      "situational_schema": "A sparse route graph links proof landmarks and open areas, not formal proof derivations.",
+      "use_cases": [
+        "long-proof landmarks and junctions",
+        "mathematics reference"
+      ],
+      "inputs": [
+        "proof endpoints",
+        "junctions",
+        "territory IDs",
+        "external proof references"
+      ],
+      "outputs": [
+        "route map",
+        "identified open gaps"
+      ],
+      "boundaries": [
+        "Navigation shortcuts are not proof steps or certified theorems.",
+        "Never mark an open problem solved from a route landmark."
+      ],
+      "assemblage_reference": "carte-preuves-longues",
+      "usage_family": "research",
+      "domain": "mathematics",
+      "integration_targets": [
+        "MathKristal",
+        "Formulator"
+      ],
+      "coverage_checks": [
+        {
+          "id": "chk-01",
+          "label": "entry and exit endpoints",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-02",
+          "label": "junction provenance",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-03",
+          "label": "status of proof",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-04",
+          "label": "refutation or open gaps",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-05",
+          "label": "external evidence links",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        }
+      ],
+      "scope_guidance": {
+        "purpose": "Navigate extensive mathematical proofs using endpoints, intermediate junctions, proof references and open frontiers.",
+        "include_candidates": [
+          "proof endpoints",
+          "junctions",
+          "territory IDs",
+          "external proof references"
+        ],
+        "exclude_candidates": [
+          "Navigation shortcuts are not proof steps or certified theorems.",
+          "Never mark an open problem solved from a route landmark."
+        ],
+        "operational_authority": "external_required",
+        "unverified_by_default": true
+      },
+      "profile_status": "design_guidance_only",
+      "source_basis": "examples_and_library_inference"
+    },
+    {
+      "id": "PRF-11",
+      "slug": "recherche-mathematique",
+      "name": "Mathematical Research Frontier",
+      "summary": "Organize ongoing mathematical research, hypotheses, failed attempts and external verification routes.",
+      "primary_archetype": "memoire-recherche",
+      "supporting_archetypes": [
+        "carte-jalons-preuves",
+        "invariant-theorie"
+      ],
+      "visual_pattern": "network",
+      "secondary_patterns": [
+        "network"
+      ],
+      "situational_schema": "Hypotheses and proof obligations branch into experiments and verification evidence.",
+      "use_cases": [
+        "mathematical research frontier",
+        "mathematics reference"
+      ],
+      "inputs": [
+        "hypotheses",
+        "counterexamples",
+        "proof obligations",
+        "attempts"
+      ],
+      "outputs": [
+        "research frontier",
+        "candidate proof routes"
+      ],
+      "boundaries": [
+        "Unverified hypotheses remain candidates.",
+        "Software tests do not mathematically certify claims."
+      ],
+      "assemblage_reference": "recherche-mathematique",
+      "usage_family": "research",
+      "domain": "mathematics",
+      "integration_targets": [
+        "Formulator",
+        "MathKristal"
+      ],
+      "coverage_checks": [
+        {
+          "id": "chk-01",
+          "label": "attempt provenance",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-02",
+          "label": "open obligations",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-03",
+          "label": "counterexamples",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-04",
+          "label": "verification evidence",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-05",
+          "label": "promotion gates",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        }
+      ],
+      "scope_guidance": {
+        "purpose": "Organize ongoing mathematical research, hypotheses, failed attempts and external verification routes.",
+        "include_candidates": [
+          "hypotheses",
+          "counterexamples",
+          "proof obligations",
+          "attempts"
+        ],
+        "exclude_candidates": [
+          "Unverified hypotheses remain candidates.",
+          "Software tests do not mathematically certify claims."
+        ],
+        "operational_authority": "external_required",
+        "unverified_by_default": true
+      },
+      "profile_status": "design_guidance_only",
+      "source_basis": "examples_and_library_inference"
+    },
+    {
+      "id": "PRF-12",
+      "slug": "dossier-scolaire",
+      "name": "Individual School Follow-Up",
+      "summary": "Maintain an individually restricted educational record with changes, interventions and accountable decisions.",
+      "primary_archetype": "dossier-suivi",
+      "supporting_archetypes": [
+        "registre-evenementiel",
+        "parcours-pedagogique"
+      ],
+      "visual_pattern": "casefile",
+      "secondary_patterns": [
+        "timeline"
+      ],
+      "situational_schema": "Casefile links student history to assessments, supports, decisions and dates.",
+      "use_cases": [
+        "individual school follow-up",
+        "education reference"
+      ],
+      "inputs": [
+        "authorized student record",
+        "dated observations",
+        "interventions",
+        "educational plans"
+      ],
+      "outputs": [
+        "follow-up timeline",
+        "proposed next actions"
+      ],
+      "boundaries": [
+        "Personal education records are sensitive; no real student data belong in a public template.",
+        "A school dossier does not itself decide placement or assessment."
+      ],
+      "assemblage_reference": "dossier-scolaire",
+      "usage_family": "case-management",
+      "domain": "education",
+      "integration_targets": [
+        "school-system"
+      ],
+      "coverage_checks": [
+        {
+          "id": "chk-01",
+          "label": "identity separation",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-02",
+          "label": "consent and lawful basis",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-03",
+          "label": "role-based access",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-04",
+          "label": "retention",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-05",
+          "label": "observations vs decisions",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        }
+      ],
+      "scope_guidance": {
+        "purpose": "Maintain an individually restricted educational record with changes, interventions and accountable decisions.",
+        "include_candidates": [
+          "authorized student record",
+          "dated observations",
+          "interventions",
+          "educational plans"
+        ],
+        "exclude_candidates": [
+          "Personal education records are sensitive; no real student data belong in a public template.",
+          "A school dossier does not itself decide placement or assessment."
+        ],
+        "operational_authority": "external_required",
+        "unverified_by_default": true
+      },
+      "profile_status": "design_guidance_only",
+      "source_basis": "examples_and_library_inference"
+    },
+    {
+      "id": "PRF-13",
+      "slug": "dossier-medical",
+      "name": "Individual Medical Follow-Up",
+      "summary": "Organize longitudinal patient records and clinical events with strict source and access boundaries.",
+      "primary_archetype": "dossier-suivi",
+      "supporting_archetypes": [
+        "registre-evenementiel",
+        "diagnostic-causal"
+      ],
+      "visual_pattern": "casefile",
+      "secondary_patterns": [
+        "timeline"
+      ],
+      "situational_schema": "Care episodes connect observations, decisions, documents and reviews without automated care delivery.",
+      "use_cases": [
+        "individual medical follow-up",
+        "health reference"
+      ],
+      "inputs": [
+        "authorized patient record",
+        "clinician observations",
+        "care history",
+        "dated documents"
+      ],
+      "outputs": [
+        "follow-up summary",
+        "open tasks and reviews"
+      ],
+      "boundaries": [
+        "Clinical decisions require qualified human authority.",
+        "Do not populate public templates with identifiable patient information."
+      ],
+      "assemblage_reference": "dossier-medical",
+      "usage_family": "case-management",
+      "domain": "health",
+      "integration_targets": [
+        "health-record"
+      ],
+      "coverage_checks": [
+        {
+          "id": "chk-01",
+          "label": "clinical source attribution",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-02",
+          "label": "consent and access",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-03",
+          "label": "care episode dating",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-04",
+          "label": "hypotheses vs findings",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-05",
+          "label": "retention",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        }
+      ],
+      "scope_guidance": {
+        "purpose": "Organize longitudinal patient records and clinical events with strict source and access boundaries.",
+        "include_candidates": [
+          "authorized patient record",
+          "clinician observations",
+          "care history",
+          "dated documents"
+        ],
+        "exclude_candidates": [
+          "Clinical decisions require qualified human authority.",
+          "Do not populate public templates with identifiable patient information."
+        ],
+        "operational_authority": "external_required",
+        "unverified_by_default": true
+      },
+      "profile_status": "design_guidance_only",
+      "source_basis": "examples_and_library_inference"
+    },
+    {
+      "id": "PRF-14",
+      "slug": "dossier-civique",
+      "name": "Civic / Administrative Individual Casefile",
+      "summary": "Track administrative cases and documentary decisions over time under explicit jurisdiction and authority.",
+      "primary_archetype": "dossier-suivi",
+      "supporting_archetypes": [
+        "registre-evenementiel",
+        "deposition-temoignage"
+      ],
+      "visual_pattern": "casefile",
+      "secondary_patterns": [
+        "timeline"
+      ],
+      "situational_schema": "A person-specific administrative case connects applications, notices, dates and decision records.",
+      "use_cases": [
+        "civic / administrative individual casefile",
+        "civic reference"
+      ],
+      "inputs": [
+        "authorized case identifier",
+        "forms",
+        "eligibility rules",
+        "notices"
+      ],
+      "outputs": [
+        "case chronology",
+        "pending requirements"
+      ],
+      "boundaries": [
+        "An administrative rule summary is not a legally binding decision.",
+        "Personal civil records require statutory or otherwise lawful authorization."
+      ],
+      "assemblage_reference": "dossier-civique",
+      "usage_family": "case-management",
+      "domain": "civic",
+      "integration_targets": [
+        "administration"
+      ],
+      "coverage_checks": [
+        {
+          "id": "chk-01",
+          "label": "jurisdiction and effective date",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-02",
+          "label": "person identity",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-03",
+          "label": "source and legal basis",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-04",
+          "label": "appeals and corrections",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-05",
+          "label": "retention",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        }
+      ],
+      "scope_guidance": {
+        "purpose": "Track administrative cases and documentary decisions over time under explicit jurisdiction and authority.",
+        "include_candidates": [
+          "authorized case identifier",
+          "forms",
+          "eligibility rules",
+          "notices"
+        ],
+        "exclude_candidates": [
+          "An administrative rule summary is not a legally binding decision.",
+          "Personal civil records require statutory or otherwise lawful authorization."
+        ],
+        "operational_authority": "external_required",
+        "unverified_by_default": true
+      },
+      "profile_status": "design_guidance_only",
+      "source_basis": "examples_and_library_inference"
+    },
+    {
+      "id": "PRF-15",
+      "slug": "diagnostic-vehicule",
+      "name": "Vehicle Fault Diagnosis",
+      "summary": "Diagnose vehicle failures using multiplex system topology, observations and testable hypotheses.",
+      "primary_archetype": "diagnostic-causal",
+      "supporting_archetypes": [
+        "modele-multiplexe",
+        "etat-systemes",
+        "registre-evenementiel"
+      ],
+      "visual_pattern": "hub",
+      "secondary_patterns": [
+        "network"
+      ],
+      "situational_schema": "Diagnostic hub ties symptoms and test points to causal candidate paths and observed states.",
+      "use_cases": [
+        "vehicle fault diagnosis",
+        "automotive reference"
+      ],
+      "inputs": [
+        "symptoms",
+        "vehicle applicability",
+        "DTCs",
+        "measurements",
+        "test points"
+      ],
+      "outputs": [
+        "candidate causes",
+        "discriminating tests"
+      ],
+      "boundaries": [
+        "Generic examples do not replace OEM-specific repair or safety instructions.",
+        "Do not perform vehicle interventions without qualified authorization and risk controls."
+      ],
+      "assemblage_reference": "diagnostic-vehicule",
+      "usage_family": "diagnosis",
+      "domain": "automotive",
+      "integration_targets": [
+        "vehicle-diagnostic-app"
+      ],
+      "coverage_checks": [
+        {
+          "id": "chk-01",
+          "label": "vehicle/OEM applicability",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-02",
+          "label": "source quality",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-03",
+          "label": "measurement conditions",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-04",
+          "label": "safety limits",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-05",
+          "label": "inference vs observation",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        }
+      ],
+      "scope_guidance": {
+        "purpose": "Diagnose vehicle failures using multiplex system topology, observations and testable hypotheses.",
+        "include_candidates": [
+          "symptoms",
+          "vehicle applicability",
+          "DTCs",
+          "measurements",
+          "test points"
+        ],
+        "exclude_candidates": [
+          "Generic examples do not replace OEM-specific repair or safety instructions.",
+          "Do not perform vehicle interventions without qualified authorization and risk controls."
+        ],
+        "operational_authority": "external_required",
+        "unverified_by_default": true
+      },
+      "profile_status": "design_guidance_only",
+      "source_basis": "examples_and_library_inference"
+    },
+    {
+      "id": "PRF-16",
+      "slug": "operations-police",
+      "name": "Police Operations Protocols",
+      "summary": "Organize versioned law-enforcement procedures, authorizations and exception pathways.",
+      "primary_archetype": "procedure-protocole",
+      "supporting_archetypes": [
+        "registre-evenementiel",
+        "simulation-transition"
+      ],
+      "visual_pattern": "branching",
+      "secondary_patterns": [
+        "network"
+      ],
+      "situational_schema": "A branching process identifies authorized roles, conditions and external event logging.",
+      "use_cases": [
+        "police operations protocols",
+        "public-safety reference"
+      ],
+      "inputs": [
+        "versioned policies",
+        "roles",
+        "preconditions",
+        "exceptions"
+      ],
+      "outputs": [
+        "proposed checklists",
+        "decision checkpoints"
+      ],
+      "boundaries": [
+        "Descriptive procedures are not authorization for policing actions.",
+        "Local law and supervised policy control all interventions."
+      ],
+      "assemblage_reference": "operations-protocoles",
+      "usage_family": "procedures",
+      "domain": "public-safety",
+      "integration_targets": [
+        "police-ops"
+      ],
+      "coverage_checks": [
+        {
+          "id": "chk-01",
+          "label": "jurisdiction",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-02",
+          "label": "authorization",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-03",
+          "label": "policy edition",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-04",
+          "label": "exceptions and escalation",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-05",
+          "label": "audit trace",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        }
+      ],
+      "scope_guidance": {
+        "purpose": "Organize versioned law-enforcement procedures, authorizations and exception pathways.",
+        "include_candidates": [
+          "versioned policies",
+          "roles",
+          "preconditions",
+          "exceptions"
+        ],
+        "exclude_candidates": [
+          "Descriptive procedures are not authorization for policing actions.",
+          "Local law and supervised policy control all interventions."
+        ],
+        "operational_authority": "external_required",
+        "unverified_by_default": true
+      },
+      "profile_status": "design_guidance_only",
+      "source_basis": "examples_and_library_inference"
+    },
+    {
+      "id": "PRF-17",
+      "slug": "operations-hopital",
+      "name": "Hospital Operations Protocols",
+      "summary": "Structure institutional care workflows and operational procedures with exceptions, roles and audit.",
+      "primary_archetype": "procedure-protocole",
+      "supporting_archetypes": [
+        "registre-evenementiel",
+        "etat-systemes"
+      ],
+      "visual_pattern": "branching",
+      "secondary_patterns": [
+        "network"
+      ],
+      "situational_schema": "Conditional workflow links roles, resources, escalation and external history.",
+      "use_cases": [
+        "hospital operations protocols",
+        "health reference"
+      ],
+      "inputs": [
+        "protocol versions",
+        "staff roles",
+        "resources",
+        "incident triggers"
+      ],
+      "outputs": [
+        "workflow map",
+        "checkpoints and escalation"
+      ],
+      "boundaries": [
+        "No protocol profile gives permission for clinical action.",
+        "Local clinical governance must approve actual implementation."
+      ],
+      "assemblage_reference": "operations-protocoles",
+      "usage_family": "procedures",
+      "domain": "health",
+      "integration_targets": [
+        "hospital-ops"
+      ],
+      "coverage_checks": [
+        {
+          "id": "chk-01",
+          "label": "clinical approval",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-02",
+          "label": "resource dependencies",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-03",
+          "label": "exceptions",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-04",
+          "label": "version applicability",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-05",
+          "label": "incident recording",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        }
+      ],
+      "scope_guidance": {
+        "purpose": "Structure institutional care workflows and operational procedures with exceptions, roles and audit.",
+        "include_candidates": [
+          "protocol versions",
+          "staff roles",
+          "resources",
+          "incident triggers"
+        ],
+        "exclude_candidates": [
+          "No protocol profile gives permission for clinical action.",
+          "Local clinical governance must approve actual implementation."
+        ],
+        "operational_authority": "external_required",
+        "unverified_by_default": true
+      },
+      "profile_status": "design_guidance_only",
+      "source_basis": "examples_and_library_inference"
+    },
+    {
+      "id": "PRF-18",
+      "slug": "orchestration-medicale",
+      "name": "Medical Knowledge Orchestration",
+      "summary": "Design knowledge-state interfaces for independent clinical knowledge and diagnostic pathway software.",
+      "primary_archetype": "composition-hybride",
+      "supporting_archetypes": [
+        "referentiel-semantique",
+        "diagnostic-causal",
+        "procedure-protocole"
+      ],
+      "visual_pattern": "network",
+      "secondary_patterns": [
+        "network"
+      ],
+      "situational_schema": "Application orchestrates independent knowledge bases and adapters, with no inherited clinical authority.",
+      "use_cases": [
+        "medical knowledge orchestration",
+        "health reference"
+      ],
+      "inputs": [
+        "source registries",
+        "ontology links",
+        "diagnostic models",
+        "API contracts"
+      ],
+      "outputs": [
+        "knowledge federation plan",
+        "adapter boundaries"
+      ],
+      "boundaries": [
+        "The independent MediKristal platform is not a single Kristal.",
+        "Reference software does not claim clinical validity or regulatory clearance."
+      ],
+      "assemblage_reference": "medi-connaissances",
+      "usage_family": "orchestration",
+      "domain": "health",
+      "integration_targets": [
+        "MediKristal",
+        "medical-API"
+      ],
+      "coverage_checks": [
+        {
+          "id": "chk-01",
+          "label": "source edition and license",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-02",
+          "label": "separate application authority",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-03",
+          "label": "API input/output contracts",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-04",
+          "label": "evidence status",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-05",
+          "label": "clinical qualification",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        }
+      ],
+      "scope_guidance": {
+        "purpose": "Design knowledge-state interfaces for independent clinical knowledge and diagnostic pathway software.",
+        "include_candidates": [
+          "source registries",
+          "ontology links",
+          "diagnostic models",
+          "API contracts"
+        ],
+        "exclude_candidates": [
+          "The independent MediKristal platform is not a single Kristal.",
+          "Reference software does not claim clinical validity or regulatory clearance."
+        ],
+        "operational_authority": "external_required",
+        "unverified_by_default": true
+      },
+      "profile_status": "design_guidance_only",
+      "source_basis": "examples_and_library_inference"
+    },
+    {
+      "id": "PRF-19",
+      "slug": "cartographie-scolaire",
+      "name": "School System and Rules Mapping",
+      "summary": "Map school sectors, cycles, transitions, regulations and temporally applicable conditions.",
+      "primary_archetype": "modele-multiplexe",
+      "supporting_archetypes": [
+        "referentiel-semantique",
+        "parcours-pedagogique"
+      ],
+      "visual_pattern": "network",
+      "secondary_patterns": [
+        "network"
+      ],
+      "situational_schema": "Institutions, paths and rule layers connect through dated transitions and jurisdiction labels.",
+      "use_cases": [
+        "school system and rules mapping",
+        "education reference"
+      ],
+      "inputs": [
+        "institutional sources",
+        "education cycles",
+        "curriculum rules",
+        "admission conditions"
+      ],
+      "outputs": [
+        "system map",
+        "conditional pathways"
+      ],
+      "boundaries": [
+        "A knowledge model cannot make actual admission or equivalence decisions.",
+        "Different educational institutions can apply narrower rules."
+      ],
+      "assemblage_reference": "systeme-scolaire",
+      "usage_family": "modeling",
+      "domain": "education",
+      "integration_targets": [
+        "ScolQc"
+      ],
+      "coverage_checks": [
+        {
+          "id": "chk-01",
+          "label": "jurisdiction",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-02",
+          "label": "effective dates",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-03",
+          "label": "program scope",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-04",
+          "label": "source versions",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-05",
+          "label": "institutional exceptions",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        }
+      ],
+      "scope_guidance": {
+        "purpose": "Map school sectors, cycles, transitions, regulations and temporally applicable conditions.",
+        "include_candidates": [
+          "institutional sources",
+          "education cycles",
+          "curriculum rules",
+          "admission conditions"
+        ],
+        "exclude_candidates": [
+          "A knowledge model cannot make actual admission or equivalence decisions.",
+          "Different educational institutions can apply narrower rules."
+        ],
+        "operational_authority": "external_required",
+        "unverified_by_default": true
+      },
+      "profile_status": "design_guidance_only",
+      "source_basis": "examples_and_library_inference"
+    },
+    {
+      "id": "PRF-20",
+      "slug": "referentiel-polyusage",
+      "name": "Multi-Purpose Semantic Reference",
+      "summary": "Reuse a sourced semantic reference across teaching, museum, research and other readers.",
+      "primary_archetype": "referentiel-semantique",
+      "supporting_archetypes": [
+        "parcours-pedagogique",
+        "interpretations-couches"
+      ],
+      "visual_pattern": "multilayer",
+      "secondary_patterns": [
+        "network"
+      ],
+      "situational_schema": "One primary source reference feeds distinct projections without taking over each reader.",
+      "use_cases": [
+        "multi-purpose semantic reference",
+        "cross-domain reference"
+      ],
+      "inputs": [
+        "sourced concepts",
+        "provenance",
+        "target audiences",
+        "reader views"
+      ],
+      "outputs": [
+        "shared source reference",
+        "purpose-specific views"
+      ],
+      "boundaries": [
+        "Audience-specific views do not rewrite the common source reference.",
+        "Creative or educational interpretation is not original evidence."
+      ],
+      "assemblage_reference": "ekole-multiusage",
+      "usage_family": "knowledge",
+      "domain": "cross-domain",
+      "integration_targets": [
+        "Ekole"
+      ],
+      "coverage_checks": [
+        {
+          "id": "chk-01",
+          "label": "semantic ownership",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-02",
+          "label": "source identity",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-03",
+          "label": "view provenance",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-04",
+          "label": "reuse permissions",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-05",
+          "label": "interpretive separation",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        }
+      ],
+      "scope_guidance": {
+        "purpose": "Reuse a sourced semantic reference across teaching, museum, research and other readers.",
+        "include_candidates": [
+          "sourced concepts",
+          "provenance",
+          "target audiences",
+          "reader views"
+        ],
+        "exclude_candidates": [
+          "Audience-specific views do not rewrite the common source reference.",
+          "Creative or educational interpretation is not original evidence."
+        ],
+        "operational_authority": "external_required",
+        "unverified_by_default": true
+      },
+      "profile_status": "design_guidance_only",
+      "source_basis": "examples_and_library_inference"
+    },
+    {
+      "id": "PRF-21",
+      "slug": "temoignages-enquete",
+      "name": "Attributed Testimony and Inquiry",
+      "summary": "Document statements and accounts without treating their claims as established conclusions.",
+      "primary_archetype": "deposition-temoignage",
+      "supporting_archetypes": [
+        "dossier-suivi",
+        "registre-evenementiel"
+      ],
+      "visual_pattern": "casefile",
+      "secondary_patterns": [
+        "timeline"
+      ],
+      "situational_schema": "Attributed statements attach to a restricted dossier and dated revisions.",
+      "use_cases": [
+        "attributed testimony and inquiry",
+        "civic reference"
+      ],
+      "inputs": [
+        "attributed account",
+        "transcript version",
+        "recording reference",
+        "context"
+      ],
+      "outputs": [
+        "statement dossier",
+        "provenance trail"
+      ],
+      "boundaries": [
+        "Testimony is not a finding of fact.",
+        "Disclosure and access require independent authorization."
+      ],
+      "assemblage_reference": "dossier-depositions",
+      "usage_family": "evidence",
+      "domain": "civic",
+      "integration_targets": [
+        "investigation"
+      ],
+      "coverage_checks": [
+        {
+          "id": "chk-01",
+          "label": "attribution",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-02",
+          "label": "revision trail",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-03",
+          "label": "privacy",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-04",
+          "label": "evidence vs allegation",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-05",
+          "label": "separate adjudication",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        }
+      ],
+      "scope_guidance": {
+        "purpose": "Document statements and accounts without treating their claims as established conclusions.",
+        "include_candidates": [
+          "attributed account",
+          "transcript version",
+          "recording reference",
+          "context"
+        ],
+        "exclude_candidates": [
+          "Testimony is not a finding of fact.",
+          "Disclosure and access require independent authorization."
+        ],
+        "operational_authority": "external_required",
+        "unverified_by_default": true
+      },
+      "profile_status": "design_guidance_only",
+      "source_basis": "examples_and_library_inference"
     }
   ],
   "language": "en"

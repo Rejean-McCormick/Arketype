@@ -2,10 +2,10 @@
   "format": "arketype.catalog/1.0-non-normatif",
   "name": "Arketype",
   "abbreviation": "ARK",
-  "version": "1.4.0",
+  "version": "1.6.0",
   "status": "bibliotheque_de_conception_non_normative",
-  "framework_reference": "10.0.0-draft.3.1",
-  "authoring_kit_reference": "3.2.4",
+  "framework_reference": "11.0.0-draft.4",
+  "authoring_kit_reference": "4.0.0-draft.3",
   "authority": "aucune_autorite_semantique_transferee",
   "archetypes": [
     {
@@ -149,5 +149,11 @@
     "use_case_profiles": "inventaires/profils-usage.json",
     "situated_diagrams": "inventaires/diagrammes-situes.json"
   },
-  "language": "en"
+  "language": "en",
+  "use_case_profile_index": "inventaires/profils-usage.json",
+  "usage_taxonomy": "inventaires/taxonomie-usages.json",
+  "scope_contract": "schemas/arketype.scope-guidance.schema.json",
+  "legacy_template_kit_reference": "3.2.4",
+  "semantic_v11_profile": "kristal.semantic-identity/11.0",
+  "dik_reference": "1.0.0-alpha.7"
 }

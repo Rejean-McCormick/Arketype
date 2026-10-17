@@ -23,3 +23,7 @@ For architecture and governance boundaries, see [Ecosystem Alignment](../docs/EC
 - A successful local template test does not qualify an external Kristal.
 - `C1`, `C2`, `C3`, GitHub host access, real collection indices, public/private visibility, immutable publication and activation are **not checked**.
 - Konstellation, not Arketype, is responsible for exploring real Kristal instances and their concepts.
+
+## Mise à jour 1.6.0
+
+Le mode `--authoring v11` utilise maintenant Authoring Kit `4.0.0-draft.3` épinglé par empreintes, Framework `11.0.0-draft.4` est la référence de conception, et diK `1.0.0-alpha.7` reste sélectionnable depuis une copie locale pour la couverture en lecture seule. Les identités v9 historiques et les opérations de publication demeurent inchangées. Les inspections par versions et empreintes ne sont **pas** une qualification normative.

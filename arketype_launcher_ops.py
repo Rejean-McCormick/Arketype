@@ -21,6 +21,7 @@ HELP = """Arketype Developer Ops — allowed commands
   list                 List all archetypes
   search WORDS         Search archetypes
   show SLUG            Inspect an archetype (stable slug)
+  uses                 List orthogonal usage taxonomy
   profiles             List use-case profiles
   profile SLUG         Inspect a use-case profile
   recipes              List composition recipes
@@ -28,11 +29,9 @@ HELP = """Arketype Developer Ops — allowed commands
   validate             Check catalogue, templates and links
   validate --check-kit Also run the bundled Authoring Kit checks
   test                 Run the Python unittest suite
-  compat               Inspect bundled Kit, templates and declared v10 baseline
-  compat --framework DIR --kit DIR --workspace DIR
-                       Compare explicitly selected local checkouts (read-only)
-  compat --manager DIR --bootstrap DIR
-                       Inspect the presence of optional tool sources
+  compat               Read-only local ecosystem compatibility observations
+  compat --dik PATH       Check selected local diK source metadata (no code executed)
+  compat --framework PATH   Compare a chosen local Framework root, not certify it
   inventory            Verify local file-inventory hashes
   build-html           Regenerate the local visual HTML catalogue
   open-catalogue       Open the offline HTML catalogue in your browser
@@ -63,8 +62,15 @@ def parse_operation(command: str) -> Operation:
     if not tokens:
         raise OperationError('Enter a command or type help.')
     action, *args = tokens
-    no_args = {'help', 'status', 'list', 'profiles', 'recipes', 'test',
+    no_args = {'help', 'status', 'list', 'uses', 'profiles', 'recipes', 'test',
                'inventory', 'build-html', 'open-catalogue', 'clear'}
+    if action == 'compat':
+        if not args:
+            return Operation('compat','local')
+        allowed={'--framework','--kit','--workspace','--manager','--bootstrap','--dik'}
+        if len(args) % 2 or len(args) > 12 or any(args[i] not in allowed or args[i+1].startswith('--') for i in range(0,len(args),2)) or len({args[i] for i in range(0,len(args),2)})!=len(args)//2:
+            raise OperationError('Use compat [--framework PATH] [--kit PATH] [--workspace PATH] [--manager PATH] [--bootstrap PATH] [--dik PATH].')
+        return Operation('compat','local',tuple(args))
     if action in no_args:
         if args:
             raise OperationError(f'{action} takes no arguments.')
@@ -75,16 +81,6 @@ def parse_operation(command: str) -> Operation:
         if action == 'test':
             return Operation(action, 'tests')
         return Operation(action, 'cli', (action,), changes_files=action == 'build-html')
-    if action == 'compat':
-        if len(args) % 2:
-            raise OperationError('Each compat option requires one local path.')
-        allowed = {'--framework', '--kit', '--workspace', '--manager', '--bootstrap'}
-        seen = set()
-        for flag, path in zip(args[::2], args[1::2]):
-            if flag not in allowed or flag in seen or not path.strip():
-                raise OperationError('Use compat with unique --framework, --kit, --workspace, --manager, --bootstrap PATH options.')
-            seen.add(flag)
-        return Operation('compat', 'local', tuple(args))
     if action == 'validate':
         if args not in ([], ['--check-kit']):
             raise OperationError('Use validate or validate --check-kit.')
@@ -127,8 +123,8 @@ def run_operation(op: Operation, root: Path = ROOT, timeout: int = 240) -> tuple
             return 0, HELP
         if op.name == 'compat':
             from arketype_ecosystem import inspect_ecosystem, format_ecosystem_report
-            arguments = {name.removeprefix('--').replace('-', '_'): path for name, path in zip(op.argv[::2], op.argv[1::2])}
-            return 0, format_ecosystem_report(inspect_ecosystem(root=root, **arguments))
+            params={op.argv[i].lstrip('-').replace('-','_'):op.argv[i+1] for i in range(0,len(op.argv),2)}
+            return 0, format_ecosystem_report(inspect_ecosystem(root=root,**params))
         if op.name == 'inventory':
             result = inventory_report(root)
             return (0 if result.endswith('All tracked files match.') else 1), result

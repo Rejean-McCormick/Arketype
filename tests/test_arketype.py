@@ -12,8 +12,8 @@ class CatalogueTests(unittest.TestCase):
         r=arketype.validate(check_kit=False)
         self.assertTrue(r['ok'],r['errors'])
         self.assertEqual(r['archetype_count'],19)
-        self.assertEqual(r['recipe_count'],14)
-        self.assertEqual(r['profile_count'],5)
+        self.assertEqual(r['recipe_count'],23)
+        self.assertEqual(r['profile_count'],21)
     def test_recherche_unicode(self):
         self.assertIn('parcours-pedagogique',[i['slug'] for i in arketype.search('LEARNING')])
         self.assertIn('procedure-protocole',[i['slug'] for i in arketype.search('institutional protocols')])
@@ -129,12 +129,12 @@ class Upgrade121Tests(unittest.TestCase):
         self.assertTrue((model/'design/fiche-suivi-vierge.json').exists())
     def test_profile_inventory_consistency(self):
         profiles=arketype.use_case_profiles()
-        self.assertEqual(len(profiles),5)
+        self.assertEqual(len(profiles),21)
         for profile in profiles:
             self.assertEqual(arketype.assembly(profile['assemblage_reference'])['primary_archetype'], profile['primary_archetype'])
     def test_diagrams_have_named_nodes_and_valid_edges(self):
         d=arketype.read_json(arketype.ROOT/'inventaires/diagrammes-situes.json')['diagrams']
-        self.assertEqual(len(d),24)
+        self.assertEqual(len(d),40)
         for diag in d:
             ids={n['id'] for n in diag['nodes']}
             self.assertTrue(all(n['label'] for n in diag['nodes']))

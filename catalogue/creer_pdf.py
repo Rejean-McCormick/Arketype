@@ -127,7 +127,7 @@ def cover(c,patterns,arch_count,profile_count):
     c.setFont('ArketypeBold',18);c.drawString(40,H-146,'of Kristals')
     print_text(c,'Different knowledge structures deserve distinct shapes. Explore archetypes, situated examples, and one common visual grammar.',40,H-174,W-80,10.6,16,MUTED,3)
     c.setFillColor(PALE);c.roundRect(40,H-247,W-80,47,8,fill=1,stroke=0)
-    print_text(c,f'{arch_count} archetypes    ·    {profile_count} profiles    ·    {len(patterns)} visual patterns    ·    14 assemblies',55,H-226,W-100,11,16,BRAND,2,True)
+    print_text(c,f'{arch_count} archetypes    ·    {profile_count} profiles    ·    {len(patterns)} visual patterns    ·    {len(list((ROOT/'assemblages').glob('*.json')))} assemblies',55,H-226,W-100,11,16,BRAND,2,True)
     c.setFont('ArketypeBold',14);c.setFillColor(DARK);c.drawString(40,H-276,'The visual grammar')
     y=H-303
     for i,p in enumerate(patterns):

@@ -35,9 +35,9 @@ class EcosystemInspectionTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as td:
             folder = Path(td) / 'contracts'
             folder.mkdir()
-            for filename, obj in [('release.json', {'version': '10.0.0-draft.3.1', 'status': 'draft'}),
-                                  ('contract-set.json', {'version': '10.0.0-draft.3.1'}),
-                                  ('v10-compatibility-lock.json', {'release': '10.0.0-draft.1'})]:
+            for filename, obj in [('release.json', {'version': '11.0.0-draft.4', 'status': 'draft'}),
+                                  ('contract-set.json', {'version': '11.0.0-draft.4'}),
+                                  ('v11-compatibility-lock.json', {'release': '11.0.0-draft.1'})]:
                 (folder / filename).write_text(json.dumps(obj), encoding='utf-8')
             result = inspect_framework(ROOT, td)
             self.assertEqual(result['status'], 'declared_version_matches')

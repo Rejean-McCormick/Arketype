@@ -1,0 +1,87 @@
+{
+  "format": "arketype.usage-taxonomy/1.0-non-normatif",
+  "version": "1.4.0",
+  "axes": {
+    "structure": {
+      "catalog": "catalogue.json",
+      "independent": true
+    },
+    "usage_family": {
+      "values": [
+        "case-management",
+        "diagnosis",
+        "evidence",
+        "integration",
+        "knowledge",
+        "learning",
+        "modeling",
+        "monitoring",
+        "orchestration",
+        "procedures",
+        "research"
+      ],
+      "independent": true
+    },
+    "domain": {
+      "values": [
+        "automotive",
+        "civic",
+        "cross-domain",
+        "culture",
+        "education",
+        "health",
+        "mathematics",
+        "natural-world",
+        "public-safety",
+        "social-systems",
+        "technology",
+        "workplace"
+      ],
+      "independent": true
+    },
+    "integrations": {
+      "values": [
+        "Ekole",
+        "Formulator",
+        "HR system",
+        "LMS",
+        "MathKristal",
+        "MediKristal",
+        "Moodle",
+        "ScolQc",
+        "administration",
+        "collection",
+        "health-record",
+        "hospital-ops",
+        "investigation",
+        "medical-API",
+        "observability",
+        "operations-app",
+        "police-ops",
+        "school-system",
+        "system-diag",
+        "vehicle-diagnostic-app"
+      ],
+      "independent": true
+    },
+    "authority_and_data": {
+      "attributes": [
+        "privacy",
+        "lawful_basis",
+        "role_based_access",
+        "source_provenance",
+        "version_applicability",
+        "human_authority",
+        "publication",
+        "activation"
+      ],
+      "independent": true
+    }
+  },
+  "compatibility": {
+    "all_use_profiles_are_descriptive": true,
+    "not_a_framework_contract": true,
+    "scope_guidance_requires_review": true
+  },
+  "inheritance_policy": "no automatic inferred authority, clinical validity, or canonical artifact"
+}
