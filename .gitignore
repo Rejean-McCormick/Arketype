@@ -11,3 +11,5 @@ __pycache__/
 .env.*
 # Keep sensitive testimonies and operational intake outside this repository.
 # The design/fiche-deposition-vierge.json file is intentionally a blank example.
+ZmartZnap.pyw
+GitSink.bat
