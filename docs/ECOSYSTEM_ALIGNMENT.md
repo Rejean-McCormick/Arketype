@@ -1,5 +1,7 @@
 # Ecosystem alignment — Arketype 1.6.0
 
+> **Snapshot verification (2026-10-27):** Current version declarations below reflect source metadata. The supplied code snapshot does not satisfy the full local Kit validation because 19 v9 receipts and application logo files are absent; a `dossier-suivi` deposition form also contradicts the intended template separation. See [snapshot verification](SNAPSHOT_VERIFICATION_2026-10-27.md). Check the complete checkout before asserting release readiness.
+
 **Current design reference:** Kristal Framework `11.0.0-draft.4`.  **New optional creator:** Kristal Authoring Kit `4.0.0-draft.3`. **Legacy templates:** bundled Kit `3.2.4`.  **Optional diK source:** `1.0.0-alpha.7`, explicitly selected when needed.
 
 Arketype has no authority to mint Wikidata QIDs or to apply migrations. It creates neutral design-only workspaces. `--authoring v11` produces a new empty workspace and a human-readable readiness guide, not a populated semantic graph. Existing models with v10 hosting baseline remain valid historical design scaffolds; v10 hosting is also compatible with the v11 semantic identity profile.

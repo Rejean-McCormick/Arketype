@@ -1,7 +1,9 @@
 # Arketype
 
 **A visual archetype library for Kristal knowledge-state workspaces**  
-**Release:** 1.6.0 · **Status:** local design library, non-normative
+**Declared release:** 1.6.0 · **Status:** local design library, non-normative
+
+> **Code snapshot verification (2026-10-27):** The supplied source snapshot does not include the application logo assets or 19 historical `build/v9` receipts, and contains an extra deposition form in `modeles/dossier-suivi`. Re-running the tests on that snapshot produced **78 tests: 67 passed, 6 failed, 3 errors, 2 skipped**; `validate --check-kit` fails. This does not prove the author's complete local repository is missing those files, because the snapshot may omit generated assets. See [snapshot verification details](docs/SNAPSHOT_VERIFICATION_2026-10-27.md). Do not use the older release validation report as proof of this specific snapshot's current test result.
 
 Arketype helps you explore, compare, and instantiate different structural forms of Kristals. It provides neutral workspace templates, documented archetypes, illustrative composition plans, a visual HTML catalogue, and local creation tools. Its diagrams explain *how a knowledge structure is organized*; they do not certify claims, establish domain standards, or authorize operational actions.
 
@@ -14,10 +16,10 @@ Arketype helps you explore, compare, and instantiate different structural forms 
 | Situated diagrams | **40** | Labeled illustrations, one per archetype and use-case profile |
 | Visual patterns | **10** | A shared vocabulary: tree, network, matrix, timeline, casefile and others |
 
-## New in 1.6.0: official logo and ecosystem alignment
+## Described in the 1.6.0 release: logo and ecosystem alignment
 
-- Integrated the **user-supplied SVG logo unchanged** (`assets/logo-k.svg`) and derived a desktop PNG for Tkinter (`assets/logo-k-ui.png`). Both offline UI surfaces now have their expected assets.
-- Regenerated the 19 historical v9 build receipts without changing any template `state_ref` or canonical artifacts; corrected the casefile/deposition form separation.
+- The release notes describe an unchanged user-supplied SVG logo (`assets/logo-k.svg`) and its Tkinter PNG derivative (`assets/logo-k-ui.png`). **Neither application asset is present in the supplied snapshot**. The separate Wiki copy does contain the SVG; do not assume the GUI assets are installed until checked locally.
+- The 1.6.0 historical validation describes regenerated v9 receipts and separated casefile/deposition forms. **The supplied snapshot omits the receipts and retains an extra deposition form in `dossier-suivi`**. Confirm those packaging fixes in a complete checkout before claiming a passing validation.
 - Updated the opt-in v11 Authoring Kit to **4.0.0-draft.3** (selectively pinned vendor files), design baseline to **Framework 11.0.0-draft.4**, and external read-only diK baseline to **alpha.7**.
 - See [the upgrade notes](docs/15_MISE_A_JOUR_ARKETYPE_160.md) and [the validation report](VALIDATION_160.md).
 
@@ -43,7 +45,7 @@ python arketype.py create --type taxonomie-classification \
   --slug nature-atlas --title "Nature Atlas" --parent . --dry-run
 ```
 
-Remove `--dry-run` to create `./nature-atlas` with a new identity and an empty canon. The Windows **desktop launcher** is `Lancer_Arketype.pyw` (Python with Tkinter). The interface has been smoke-tested under a virtual Linux display; a native Windows machine test is still pending. The creation page previews before writing. Developer Ops runs on a background thread to keep the window responsive.
+Remove `--dry-run` to create `./nature-atlas` with a new identity and an empty canon. The Windows **desktop launcher** is `Lancer_Arketype.pyw` (Python with Tkinter). The historical validation describes a Linux virtual-display GUI smoke test; the supplied snapshot is missing the logo assets and was not re-tested on native Windows. The creation page previews before writing. Developer Ops runs on a background thread to keep the window responsive.
 
 ## The catalogue and its source data
 
@@ -72,7 +74,7 @@ python arketype.py build-html
 | `arketype_gui.py` | Offline desktop UI: Home, Catalogue, Create Kristal, Developer Ops |
 | `arketype_launcher_ops.py` | Tested allowlist for local console operations (no shell) |
 
-The HTML and Windows interfaces use the visual branding color **`#1E6864`** and a original user-supplied SVG logo (kept byte-for-byte) and a derived desktop PNG.
+The visual interfaces reference brand color **`#1E6864`** and the approved SVG/PNG paths. The provided snapshot does not include the application files at those paths; if a local checkout also lacks them, the visual assets must be restored before asserting a complete GUI package.
 
 ## Representative use cases
 
@@ -139,7 +141,7 @@ python -m unittest discover -s tests -v
 python arketype.py validate --check-kit
 ```
 
-The 19 historical template workspaces and legacy creation mode continue to use **Authoring Kit 3.2.4**. An optional **Authoring Kit 4.0.0-draft.3** is bundled for `--authoring v11` and the design reference is **Kristal Framework 11.0.0-draft.4**. diK **1.0.0-alpha.7** can be connected read-only through an explicitly selected local source checkout. No test has certified cross-repository production conformance. See [Getting Started](wiki/Getting-Started.md), [Architecture](wiki/Architecture.md), [CLI Reference](wiki/CLI-Reference.md), and [Security and Boundaries](wiki/Security-and-Boundaries.md) for the detailed workflow.
+The 19 historical template workspaces and legacy creation mode are designed to use **Authoring Kit 3.2.4**. An optional **Authoring Kit 4.0.0-draft.3** is bundled for `--authoring v11` and the design reference is **Kristal Framework 11.0.0-draft.4**. diK **1.0.0-alpha.7** can be connected read-only through an explicitly selected local source checkout. No test has certified cross-repository production conformance. See [Getting Started](wiki/Getting-Started.md), [Architecture](wiki/Architecture.md), [CLI Reference](wiki/CLI-Reference.md), [Validation and Testing](wiki/Validation-and-Testing.md), and [Security and Boundaries](wiki/Security-and-Boundaries.md) for the detailed workflow.
 
 ## GitHub Wiki publishing
 

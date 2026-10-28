@@ -10,10 +10,12 @@ Migration of historical textual identities requires a scoped, independently revi
 
 See [Ecosystem Compatibility](Ecosystem-Compatibility.md) and `docs/14_FRAMEWORK_V11_ET_DIK.md` in the main repository for contract details.
 
-## Arketype 1.6.0 : limites de l'interopérabilité
+## Arketype 1.6.0 interoperability limitations
 
-- **Framework** `11.0.0-draft.4` est la référence; aucun schéma normatif n'est modifié par Arketype.
-- **Authoring Kit** `4.0.0-draft.3` est sélectionné uniquement par le mode `--authoring v11`; les 19 stubs historiques gardent la version `3.2.4`.
-- **diK** `1.0.0-alpha.7` demeure une source externe explicitement choisie pour les rapports de couverture en lecture seule. Les corrections de dictionnaire, l'import massif et les plans de migration restent dans diK et l'Authoring Kit.
+- **Framework** `11.0.0-draft.4` is the design reference; Arketype does not alter normative Framework schemas.
+- **Authoring Kit** `4.0.0-draft.3` is selected only with `--authoring v11`. The 19 historical templates retain Kit `3.2.4`.
+- **diK** `1.0.0-alpha.7` remains a separate source checkout explicitly selected for read-only coverage reporting. Dictionary curation, bulk import and migration planning belong to diK and the Authoring Kit.
 
-Une conformité réelle exige de tester les dépôts exacts ensemble; un résultat `vendored_source_verified` garantit les octets copiés du Kit, pas un certificat complet.
+End-to-end conformance requires validating exact repository versions together; `vendored_source_verified` checks copied Kit bytes, not the complete runtime or Framework conformance. The uploaded snapshot also has outstanding packaging and validation failures described in [[Snapshot-Verification-2026-10-27]].
+
+**See also:** [[Semantic-Authoring-v11]] · [[diK-and-Dictionaries]] · [[diK-Catalog-Exchange-v11]].

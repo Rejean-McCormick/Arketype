@@ -1,38 +1,45 @@
-# Arketype — Home
+# Arketype — Wiki
 
-**A visual library of structural archetypes for Kristal knowledge-state workspaces.**
+<img src="assets/logo-k.svg" alt="Official Kristal logo" width="220">
 
-Arketype helps answer a practical question: **what structure best fits the knowledge you want to preserve?** A procedure tends to follow steps; a taxonomy branches into classes; a system-state registry compares observations; a follow-up casefile gathers records; a research map connects milestones and referenced proofs. Those are different structures and should not be forced into one universal template.
+**Declared release: Arketype `1.6.0`** — a non-normative visual and structural design library for Kristal workspaces. Its optional ecosystem baseline is **Kristal Framework `11.0.0-draft.4`**, bundled **Authoring Kit `4.0.0-draft.3`** for new v11-ready workspaces, and a **separately supplied diK `1.0.0-alpha.7`** CLI. These are draft/alpha dependencies, **not** a claim of full cross-repository qualification.
 
-Arketype 1.4.0 provides **19 archetypes**, **19 neutral workspaces**, **23 design-only composition recipes**, **21 situated use-case profiles**, and **40 labeled diagrams** built from JSON inventories. The accompanying offline HTML catalogue uses a consistent visual grammar and the supplied brand identity.
+Arketype answers: **Which structural archetype fits the knowledge you want to preserve?** It does not own the truth of domain facts, allocate semantic identifiers, approve Wikidata mappings, or publish Kristals.
 
-## Find your path
+## What ships
 
-| You want to… | Start here |
+| Library component | Count | Meaning |
+| --- | ---: | --- |
+| Structural archetypes | **19** | Stable source slugs and IDs |
+| Neutral historical workspace templates | **19** | Independent `state_ref` identities; legacy Kit 3.2.4 |
+| Composition recipes | **23** | Proposals marked `design_only`, not canonical merges |
+| Use-case profiles | **21** | Situated design and authority/data constraints |
+| Situated visual diagrams | **40** | Illustrative projections, not native Kristal graphs |
+| Visual patterns | **10** | Shared reader conventions |
+
+Use `catalogue/index.html` for the offline visual catalogue, or `Lancer_Arketype.pyw` for the optional Windows desktop launcher. This Wiki includes the supplied original SVG (`assets/logo-k.svg`, matching the recorded SHA-256). The **uploaded code snapshot**, however, does not contain the application `assets/` files; their presence in a complete local checkout must be verified.
+
+> **Snapshot verification (27 October 2026):** The uploaded code snapshot identifies itself as Arketype 1.6.0, but it does **not** include `assets/logo-k.svg`, `assets/logo-k-ui.png`, or the 19 `modeles/*/build/v9/build-receipt.json` files. It also still contains `modeles/dossier-suivi/design/fiche-deposition-vierge.json`. Re-running `python -m unittest discover -s tests -q` on this snapshot produced **78 tests: 67 passed, 6 failed, 3 errors, 2 skipped**. `python arketype.py validate --check-kit` did not pass. These results describe the **provided snapshot**, not necessarily an unfiltered local Git checkout. See [[Snapshot-Verification-2026-10-27]] for details.
+
+## Get started
+
+| Goal | Guide |
 | --- | --- |
-| Understand the concepts and project boundaries | [Architecture](Architecture) |
-| See all structural types | [Archetype Catalog](Archetype-Catalog) |
-| Recognize trees, clusters, timelines, matrices and more | [Visual Grammar](Visual-Grammar) |
-| Explore real-life design scenarios | [Use-Case Profiles](Use-Case-Profiles) |
-| Review how multiple archetypes may be linked | [Composition Recipes](Composition-Recipes) |
-| Create a blank local Kristal | [Getting Started](Getting-Started) |
-| Use or extend the JSON source of truth | [Data Formats](Data-Formats), [Extending Arketype](Extending-Arketype) |
-| Check technical consistency and safety expectations | [Validation and Testing](Validation-and-Testing), [Security and Boundaries](Security-and-Boundaries) |
-| Install these pages in the GitHub Wiki | [Publishing the Wiki](Publishing-the-Wiki) |
+| Explore all forms and profiles | [[Archetype-Catalog]], [[Visual-Grammar]], [[Use-Case-Profiles]] |
+| Create an independent empty workspace | [[Getting-Started]], [[CLI-Reference]] |
+| Use optional v11 semantic authoring | [[Semantic-Authoring-v11]] |
+| Understand diK's role and coverage | [[diK-and-Dictionaries]] |
+| Review/pin a diK catalog in the Kit | [[diK-Catalog-Exchange-v11]] |
+| Check versions and qualification boundaries | [[Ecosystem-Compatibility]], [[Validation-and-Testing]] |
+| Extend noncanonical JSON descriptions | [[Data-Formats]], [[Extending-Arketype]] |
+| Publish Wiki changes in its own repository | [[Publishing-the-Wiki]] |
 
-## The central distinction
+## Crucial distinctions
 
-**Archetype ≠ template ≠ instance ≠ domain standard.**
+**Archetype ≠ canonical semantic identity ≠ populated Kristal.** Labels, diagram nodes, recipe IDs and slugs describe designs. If a canonical Framework v11 semantic graph is authored later, its entity/property/assertion/source identifiers are namespace-scoped **KQ/KP/KA/KS**. Display words belong in separate dictionary layers. Wikidata **Q/P** IDs remain external and need independently reviewed `exactMatch` decisions.
 
-- An **archetype** is a design pattern for a kind of knowledge structure.
-- A **template** is an empty, local Authoring Kit workspace that illustrates the archetype.
-- An **instance** is a newly initialized workspace with its own identity.
-- A **use-case profile** is a scenario showing how one or more archetypes may be useful.
-- A **composition recipe** is an unresolved proposal about relationships and responsibilities; it does not merge canons or authorize publication.
+`python arketype.py create` defaults to **legacy Kit 3.2.4**. `create --authoring v11` uses the bundled **Kit 4.0.0-draft.3**, but creates only a **blank v11-ready scaffold**. It does not automatically enable strict v11 or invent a KQ, QID, translation or validated semantic claim.
 
-The repository's HTML catalogue is the preferred **visual UI**: `catalogue/index.html`. These wiki pages are an English-language *documentation companion* to the actual repository data; they do not replace its JSON inventory or the Kristal Framework.
+Arketype's own tests validate design consistency and the local scaffold, not factual correctness, legal/clinical suitability, Framework TCK conformance, live Wikidata integration, publication or activation.
 
-> **Scope:** Arketype is a non-normative design library. Technical checks verify the local workspace envelope, not the truth of source material, legal sufficiency, clinical fitness, or authority to execute a protocol. It does not publish, synchronize or activate Kristals.
-
-
-**Desktop launcher:** [Desktop Launcher](Desktop-Launcher) · [Developer Ops](Developer-Ops).
+**See also:** [[Architecture]] · [[Security-and-Boundaries]] · [[Glossary]] · [[FAQ]] · [[Update-Notes-v1-6]] · [[Snapshot-Verification-2026-10-27]].

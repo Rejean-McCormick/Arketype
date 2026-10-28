@@ -1,6 +1,6 @@
 # Publishing the Wiki to GitHub
 
-This repository includes **GitHub Wiki-ready Markdown pages** in `wiki/`, including the `Home.md` entry point and `_Sidebar.md` navigation. The pages are in English. No remote Wiki is created or updated by the archive.
+This Wiki archive contains **GitHub Wiki-ready Markdown pages**, including the `Home.md` entry point and `_Sidebar.md` navigation. The pages are in English. No remote Wiki is created or updated by the archive.
 
 > **GitHub behavior:** A GitHub Wiki is a **separate Git repository**, typically available at `https://github.com/OWNER/REPOSITORY.wiki.git`. Pushing `wiki/` into the main repository does **not** automatically publish it as the website's Wiki.
 
@@ -30,4 +30,4 @@ This repository includes **GitHub Wiki-ready Markdown pages** in `wiki/`, includ
 
 Treat these source pages as the maintained documentation. GitHub does not sync them back automatically. After changing the main Arketype library, update the source Wiki pages, compare the Wiki clone with those files, and publish only after review. Do not put confidential data in public Wiki pages.
 
-**Important:** The logo is intentionally **not embedded in the main README**. It is used in the project's visual interfaces (offline HTML catalogue and optional desktop window), where it belongs.
+**Branding:** `assets/logo-k.svg` in this Wiki is an unchanged copy of the user-supplied SVG in Arketype 1.6.0. It can be linked from `Home.md` without changing the application README. The source distribution uses the same SVG and a derived PNG for the desktop launcher.

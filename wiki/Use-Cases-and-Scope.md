@@ -1,6 +1,6 @@
 # Use Cases, Scope and Coverage
 
-Arketype 1.4.0 treats the **structure**, **usage**, **domain**, **integration** and **authority/data constraints** of a Kristal as independent dimensions. A profile expresses design expectations, not proof of realized capabilities.
+Arketype 1.6.0 continues to treat the **structure**, **usage**, **domain**, **integration** and **authority/data constraints** of a Kristal as independent dimensions. A profile expresses design expectations, not proof of realized capabilities.
 
 - The 19 archetypes describe possible native structures. They are not domain standards.
 - The 21 profiles describe intended activities, expected inputs, outputs and review questions.

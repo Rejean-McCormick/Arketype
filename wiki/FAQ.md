@@ -1,4 +1,6 @@
 # Frequently Asked Questions
+**v1.6.0:** Arketype optionally creates an *empty* v11-ready Kit **4.0.0-draft.3** workspace (`create --authoring v11`) and can request a read-only coverage report from an explicitly selected local **diK alpha.7** checkout. Framework draft.4 is the current design baseline. None of these steps automatically migrates legacy text, allocates KQ/QIDs, activates a graph or certifies Framework conformance. See [[Semantic-Authoring-v11]], [[diK-and-Dictionaries]] and [[diK-Catalog-Exchange-v11]].
+
 
 ## Is Arketype a replacement for the Kristal Framework?
 
@@ -30,7 +32,7 @@ No. The `wiki/` directory is ready-to-publish Markdown; GitHub Wikis are separat
 
 ## Where is the logo?
 
-In the UI assets and presentations. The Markdown README intentionally has no embedded logo.
+The user-supplied SVG is preserved in the **Arketype 1.6.0** distribution at `assets/logo-k.svg`, with a derived PNG for the Windows launcher. This Wiki also carries an unchanged copy as `assets/logo-k.svg`. The main application README intentionally does not embed the logo.
 
 ## Can I store real employee dossiers or testimony in the included templates?
 

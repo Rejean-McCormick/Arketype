@@ -1,5 +1,7 @@
 # Arketype 1.6.0 — mise à jour d'écosystème et du logo
 
+> **Historical release record:** Results and file-presence claims below describe an earlier release validation. They are **not reproduced** by the uploaded 27 October 2026 source snapshot. See [snapshot verification](SNAPSHOT_VERIFICATION_2026-10-27.md) before citing these outcomes.
+
 ## État de la livraison
 
 Bibliothèque de conception **non normative**. Arketype propose 19 archétypes, 23 assemblages, 21 profils d'usage et 40 illustrations. Les stubs historiques gardent leurs `state_ref`, leurs formes et les outils d'Authoring Kit **3.2.4**.

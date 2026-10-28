@@ -1,5 +1,7 @@
 # Arketype 1.6.0 — Rapport de validation
 
+> **Historical release record:** Results and file-presence claims below describe an earlier release validation. They are **not reproduced** by the uploaded 27 October 2026 source snapshot. See [snapshot verification](docs/SNAPSHOT_VERIFICATION_2026-10-27.md) before citing these outcomes.
+
 **Date :** 2026-10-17. **Statut :** bibliothèque de conception locale, non normative; pas de certification de l'écosystème complet.
 
 ## Baseline de l'archive reçue

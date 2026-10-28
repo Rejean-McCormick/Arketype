@@ -7,7 +7,7 @@ Arketype describes **structural families**, not a single universal Kristal schem
 | Responsibility | Files | What they control |
 | --- | --- | --- |
 | Classification and discovery | `catalogue.json`, `archetypes/`, `inventaires/` | Candidate forms, intended uses, diagrams and boundaries |
-| Local template initialization | `modeles/`, `outils/kristal.py`, `arketype.py` | Creation of neutral workspaces with new identities |
+| Local template initialization | `modeles/`, `outils/kristal.py`, optional Kit 4, `arketype.py` | Creation of neutral workspaces with new identities, optionally v11-ready but empty |
 | Composition planning | `assemblages/`, `design/composition-plan.json` | Proposed relationships that are explicitly unresolved |
 | Reader presentations | `catalogue/index.html`, optional PDF, GUI | Human-readable projections and navigation |
 
@@ -26,7 +26,7 @@ Arketype describes **structural families**, not a single universal Kristal schem
 
 The repository contains **19** independently identifiable neutral Authoring Kit v9 template workspaces. The conceptual profiles and recipes do not create extra canonical states. They describe combinations that may be implemented after their logical contracts are designed.
 
-Arketype currently references Authoring Kit **3.2.4** and Kristal Framework **10.0.0-draft.3.1** as design context. It does not claim to implement the full Framework by itself.
+Arketype **1.6.0** retains the 19 original templates under bundled Authoring Kit **3.2.4**. Optional `--authoring v11` uses bundled Kit **4.0.0-draft.3**; the design baseline is Kristal Framework **11.0.0-draft.4**, and separately supplied diK **1.0.0-alpha.7** can be invoked for a read-only coverage report. The Kit alone is responsible for controlled catalog and canonical-artifact promotion, not Arketype. None of these modes makes Arketype an identity authority or a Framework conformance examiner. See [[Semantic-Authoring-v11]], [[diK-and-Dictionaries]] and [[diK-Catalog-Exchange-v11]].
 
 ## Example: a non-destructive troubleshooting composition
 
@@ -41,6 +41,3 @@ Arketype currently references Authoring Kit **3.2.4** and Kristal Framework **10
 Each component retains its own semantic purpose. The composition recipe is a proposal; no automatic canonical merge occurs.
 
 **See also:** [Data Formats](Data-Formats), [Composition Recipes](Composition-Recipes), [Security and Boundaries](Security-and-Boundaries).
-
-
-**Update 1.6.0:** [Framework v11 and diK](Framework-v11-and-diK) describes the new optional Kit 4 mode; earlier 3.2.4 / Framework 10 references remain historically descriptive, not the active new creation option.

@@ -18,9 +18,30 @@ Run `python arketype.py` from the repository root. The CLI ships with the comple
 | `validate --check-kit` | Also check each local template with the Kit | `python arketype.py validate --check-kit` |
 | `build-html` | Regenerate the offline visual catalogue | `python arketype.py build-html` |
 
+## v1.6 optional authoring and read-only semantic helpers
+
+| Command | Supported behavior |
+|---|---|
+| `create --authoring legacy` | Default Kit 3.2.4 neutral historical workspace |
+| `create --authoring v11` | Create a **new, empty** Kit 4.0.0-draft.3 workspace plus noncanonical readiness guidance |
+| `compose --authoring v11` | Optional v11-ready neutral composition scaffold; no automatic canonical merging |
+| `semantic-status --path PATH` | Inspect local v11 profile/readiness metadata **only** |
+| `dik-coverage --dik-root DIR --project FILE --locales fr,en,fr-CA` | Run explicitly selected local diK `1.0.0-alpha.7` in **read-only** report mode |
+
+```bash
+python arketype.py create --type referentiel-semantique \
+  --slug example-v11 --title "Example v11" --parent . --authoring v11
+python arketype.py semantic-status --path ./example-v11
+python arketype.py dik-coverage \
+  --dik-root /trusted/diK-v1.0.0-alpha.7 \
+  --project /projects/example/dik.project.json --locales fr,en,fr-CA
+```
+
+`--authoring v11` **does not** issue KQ/KP, assign Wikidata QIDs, enable strict v11, rewrite an older Kristal or install diK. The newer `import-dik-catalog`, `select-v11-catalog` and `recover-v11` subcommands belong to the **Kit inside a workspace**, not to `arketype.py`. See [[Semantic-Authoring-v11]], [[diK-and-Dictionaries]] and [[diK-Catalog-Exchange-v11]].
+
 ## `create` and `compose`
 
-Both accept `--type`, `--slug`, `--title`, `--parent`, optional `--recipe`, repeatable `--with` and `--dry-run`. For `compose`, a `--recipe` or at least one `--with` is required. If `--recipe` is supplied, the primary archetype may be inferred; any explicit `--type` must match its primary archetype.
+Both accept `--type`, `--slug`, `--title`, `--parent`, optional `--profile`, `--recipe`, repeatable `--with`, `--dry-run` and `--authoring {legacy,v11}`. For `compose`, a `--recipe` or at least one `--with` is required. If `--recipe` is supplied, the primary archetype may be inferred; any explicit `--type` must match its primary archetype.
 
 ```bash
 python arketype.py create   --type etat-systemes   --slug workstation-state   --title "Workstation State"   --parent .

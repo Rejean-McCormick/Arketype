@@ -53,3 +53,7 @@ An HTML view does **not** automatically refresh when JSON changes and does not g
 `INVENTAIRE.json` describes byte-level files in a distribution. It is not a replacement for source provenance, a pinned external commitment, or a Kristal logical contract. Similarly, the template `build/v9` receipts document local technical generation and do not establish domain truth.
 
 **See also:** [Visual Grammar](Visual-Grammar), [Architecture](Architecture), [Extending Arketype](Extending-Arketype).
+
+## Framework v11 design boundary
+
+Arketype JSON `slug`, `visual_pattern`, diagram nodes and profile labels are **design metadata**, not `KQ` semantic referents or `KP` predicates. New v11 canonical graphs and their multilingual lexical dictionaries are produced outside this catalogue by a compliant authoring tool. Read [[Semantic-Authoring-v11]] and [[diK-and-Dictionaries]].

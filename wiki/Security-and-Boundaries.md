@@ -27,3 +27,7 @@ Distinguish observed state, desired configuration, inferred system health, repor
 Before building a real application around an archetype, specify: the responsible data owner; user roles and access policies; lawful collection basis where relevant; retention; source attribution; immutable event history if required; version pinning; validation; error handling; and explicit publication/activation controls.
 
 **See also:** [Architecture](Architecture), [Composition Recipes](Composition-Recipes), [Validation and Testing](Validation-and-Testing).
+
+## New v11 boundary
+
+An opaque KQ/KP identity is not a license to publish or verify a claim; a matching Wikidata QID or multilingual term is not evidence of exact equivalence without review. Arketype 1.6.0 neither allocates KQ, applies diK migration plans, nor pulls private graph text into network searches. Its optional diK alpha.7 bridge is explicitly configured and read-only. Kit draft.3 catalog adoption and migration are separate, reviewed producer operations, and a downloaded/local digest alone does not authenticate Wikidata facts. See [[Semantic-Authoring-v11]] and [[diK-Catalog-Exchange-v11]].

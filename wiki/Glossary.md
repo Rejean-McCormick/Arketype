@@ -20,3 +20,15 @@
 | **Generated projection** | A reader-facing HTML/PDF representation derived from descriptive JSON. |
 
 English terminology on these pages is explanatory; stable source-file slugs and JSON format identifiers remain unchanged.
+
+## v11 semantic identity and diK vocabulary
+
+| Term | Meaning |
+|---|---|
+| **Semantic referent identifier** | Generic term for an entity/concept identity, not specifically a Wikidata QID. |
+| **KQ / KP / KA / KS** | Canonical namespace-scoped Kristal entity / property / assertion / source IDs. |
+| **QID / PID** | External Wikidata Q/P identifiers, linked by an approved, typed crosswalk. |
+| **Lexical dictionary** | Locale-specific labels/aliases keyed by semantic identity, not the identity itself. |
+| **Crosswalk** | Versioned, evidenced relation between internal and external IDs; label similarity is not proof. |
+| **diK coverage** | Per-Kristal, per-locale KQ/KP report distinguishing direct labels, fallback, missing and conflicts. |
+| **v11-ready scaffold** | New empty Kit 4.0.0-draft.3 workspace with noncanonical guidance; strict v11 is not automatically enabled. |
