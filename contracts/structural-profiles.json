@@ -1,0 +1,675 @@
+{
+  "format": "arketype.structural-profiles/0.1",
+  "catalog_version": "1.6.0",
+  "status": "non_normatif_detection_indicative",
+  "warning": "Les 3 facettes sont des heuristiques observables à partir des clefs JSON; elles ne sont pas des contrats normatifs Arketype et ne qualifient pas les Kristals.",
+  "profiles": [
+    {
+      "id": "ARK-01",
+      "slug": "referentiel-semantique",
+      "name": "Semantic Reference",
+      "facets": [
+        {
+          "id": "A",
+          "label": "Famille structurelle A",
+          "markers": [
+            "referents",
+            "concepts",
+            "entities",
+            "entites"
+          ]
+        },
+        {
+          "id": "B",
+          "label": "Famille structurelle B",
+          "markers": [
+            "relations",
+            "relation_types",
+            "assertions",
+            "predicats"
+          ]
+        },
+        {
+          "id": "C",
+          "label": "Famille structurelle C",
+          "markers": [
+            "sources",
+            "provenance",
+            "evidence"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ARK-02",
+      "slug": "federation-topologie",
+      "name": "Federation / Topology",
+      "facets": [
+        {
+          "id": "A",
+          "label": "Famille structurelle A",
+          "markers": [
+            "noeuds",
+            "nodes",
+            "topologie"
+          ]
+        },
+        {
+          "id": "B",
+          "label": "Famille structurelle B",
+          "markers": [
+            "liens",
+            "edges",
+            "references"
+          ]
+        },
+        {
+          "id": "C",
+          "label": "Famille structurelle C",
+          "markers": [
+            "scope",
+            "federation",
+            "federations"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ARK-03",
+      "slug": "carte-jalons-preuves",
+      "name": "Milestone and Proof Map",
+      "facets": [
+        {
+          "id": "A",
+          "label": "Famille structurelle A",
+          "markers": [
+            "jalons",
+            "milestones",
+            "etapes"
+          ]
+        },
+        {
+          "id": "B",
+          "label": "Famille structurelle B",
+          "markers": [
+            "preuves",
+            "evidence",
+            "references_de_preuve"
+          ]
+        },
+        {
+          "id": "C",
+          "label": "Famille structurelle C",
+          "markers": [
+            "arcs",
+            "frontieres",
+            "obligations"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ARK-04",
+      "slug": "procedure-protocole",
+      "name": "Procedure / Protocol",
+      "facets": [
+        {
+          "id": "A",
+          "label": "Famille structurelle A",
+          "markers": [
+            "etapes",
+            "steps",
+            "phases",
+            "procedure"
+          ]
+        },
+        {
+          "id": "B",
+          "label": "Famille structurelle B",
+          "markers": [
+            "conditions",
+            "preconditions",
+            "prerequisites"
+          ]
+        },
+        {
+          "id": "C",
+          "label": "Famille structurelle C",
+          "markers": [
+            "transitions",
+            "exceptions",
+            "outcomes"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ARK-05",
+      "slug": "compilation-collection",
+      "name": "Compilation / Collection",
+      "facets": [
+        {
+          "id": "A",
+          "label": "Famille structurelle A",
+          "markers": [
+            "entrees",
+            "entries",
+            "items",
+            "collection"
+          ]
+        },
+        {
+          "id": "B",
+          "label": "Famille structurelle B",
+          "markers": [
+            "references",
+            "sources",
+            "members"
+          ]
+        },
+        {
+          "id": "C",
+          "label": "Famille structurelle C",
+          "markers": [
+            "ordre",
+            "order",
+            "variantes",
+            "selection"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ARK-06",
+      "slug": "memoire-recherche",
+      "name": "Research Memory",
+      "facets": [
+        {
+          "id": "A",
+          "label": "Famille structurelle A",
+          "markers": [
+            "hypotheses",
+            "questions",
+            "research"
+          ]
+        },
+        {
+          "id": "B",
+          "label": "Famille structurelle B",
+          "markers": [
+            "preuves",
+            "evidence",
+            "tentatives",
+            "experiments"
+          ]
+        },
+        {
+          "id": "C",
+          "label": "Famille structurelle C",
+          "markers": [
+            "resultats",
+            "results",
+            "obligations"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ARK-07",
+      "slug": "invariant-theorie",
+      "name": "Invariant / Formal Theory",
+      "facets": [
+        {
+          "id": "A",
+          "label": "Famille structurelle A",
+          "markers": [
+            "invariants",
+            "invariant",
+            "theorems"
+          ]
+        },
+        {
+          "id": "B",
+          "label": "Famille structurelle B",
+          "markers": [
+            "preuves",
+            "proofs",
+            "certificats"
+          ]
+        },
+        {
+          "id": "C",
+          "label": "Famille structurelle C",
+          "markers": [
+            "contre_exemples",
+            "counterexamples",
+            "equivalences"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ARK-08",
+      "slug": "diagnostic-causal",
+      "name": "Causal Diagnosis",
+      "facets": [
+        {
+          "id": "A",
+          "label": "Famille structurelle A",
+          "markers": [
+            "symptomes",
+            "symptoms",
+            "observations"
+          ]
+        },
+        {
+          "id": "B",
+          "label": "Famille structurelle B",
+          "markers": [
+            "hypotheses",
+            "causes",
+            "faults"
+          ]
+        },
+        {
+          "id": "C",
+          "label": "Famille structurelle C",
+          "markers": [
+            "tests",
+            "mesures",
+            "measurements",
+            "diagnostic"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ARK-09",
+      "slug": "modele-multiplexe",
+      "name": "Multiplex / Organizational Model",
+      "facets": [
+        {
+          "id": "A",
+          "label": "Famille structurelle A",
+          "markers": [
+            "entites",
+            "entities",
+            "actors",
+            "acteurs"
+          ]
+        },
+        {
+          "id": "B",
+          "label": "Famille structurelle B",
+          "markers": [
+            "couches",
+            "layers",
+            "relations"
+          ]
+        },
+        {
+          "id": "C",
+          "label": "Famille structurelle C",
+          "markers": [
+            "roles",
+            "resources",
+            "ressources",
+            "rules"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ARK-10",
+      "slug": "parcours-pedagogique",
+      "name": "Learning Path",
+      "facets": [
+        {
+          "id": "A",
+          "label": "Famille structurelle A",
+          "markers": [
+            "objectifs",
+            "objectives",
+            "learning"
+          ]
+        },
+        {
+          "id": "B",
+          "label": "Famille structurelle B",
+          "markers": [
+            "sequences",
+            "activities",
+            "activites"
+          ]
+        },
+        {
+          "id": "C",
+          "label": "Famille structurelle C",
+          "markers": [
+            "evaluation",
+            "assessments",
+            "criteres_evaluation"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ARK-11",
+      "slug": "registre-evenementiel",
+      "name": "Event Ledger / Chronology",
+      "facets": [
+        {
+          "id": "A",
+          "label": "Famille structurelle A",
+          "markers": [
+            "events",
+            "evenements",
+            "ledger"
+          ]
+        },
+        {
+          "id": "B",
+          "label": "Famille structurelle B",
+          "markers": [
+            "timestamps",
+            "horodatages",
+            "date",
+            "time"
+          ]
+        },
+        {
+          "id": "C",
+          "label": "Famille structurelle C",
+          "markers": [
+            "acteurs",
+            "actors",
+            "causalite",
+            "provenance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ARK-12",
+      "slug": "interpretations-couches",
+      "name": "Layered Interpretations",
+      "facets": [
+        {
+          "id": "A",
+          "label": "Famille structurelle A",
+          "markers": [
+            "donnees",
+            "data",
+            "sources"
+          ]
+        },
+        {
+          "id": "B",
+          "label": "Famille structurelle B",
+          "markers": [
+            "transformations",
+            "layers",
+            "couches"
+          ]
+        },
+        {
+          "id": "C",
+          "label": "Famille structurelle C",
+          "markers": [
+            "interpretations",
+            "hypotheses",
+            "limites"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ARK-13",
+      "slug": "univers-oeuvres-medias",
+      "name": "Media and Creative Universes",
+      "facets": [
+        {
+          "id": "A",
+          "label": "Famille structurelle A",
+          "markers": [
+            "oeuvres",
+            "works",
+            "univers"
+          ]
+        },
+        {
+          "id": "B",
+          "label": "Famille structurelle B",
+          "markers": [
+            "media",
+            "manifestations",
+            "editions"
+          ]
+        },
+        {
+          "id": "C",
+          "label": "Famille structurelle C",
+          "markers": [
+            "aliases",
+            "alias",
+            "events",
+            "evenements"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ARK-14",
+      "slug": "simulation-transition",
+      "name": "Simulation / Transitions",
+      "facets": [
+        {
+          "id": "A",
+          "label": "Famille structurelle A",
+          "markers": [
+            "states",
+            "etats",
+            "statechart"
+          ]
+        },
+        {
+          "id": "B",
+          "label": "Famille structurelle B",
+          "markers": [
+            "transitions",
+            "dynamics",
+            "dynamique"
+          ]
+        },
+        {
+          "id": "C",
+          "label": "Famille structurelle C",
+          "markers": [
+            "scenario",
+            "scenarios",
+            "simulation",
+            "results"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ARK-15",
+      "slug": "composition-hybride",
+      "name": "Hybrid Composition",
+      "facets": [
+        {
+          "id": "A",
+          "label": "Famille structurelle A",
+          "markers": [
+            "sous_modeles",
+            "submodels",
+            "components"
+          ]
+        },
+        {
+          "id": "B",
+          "label": "Famille structurelle B",
+          "markers": [
+            "interfaces",
+            "boundaries",
+            "frontieres"
+          ]
+        },
+        {
+          "id": "C",
+          "label": "Famille structurelle C",
+          "markers": [
+            "references",
+            "policies",
+            "politiques"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ARK-16",
+      "slug": "deposition-temoignage",
+      "name": "Testimony / Deposition",
+      "facets": [
+        {
+          "id": "A",
+          "label": "Famille structurelle A",
+          "markers": [
+            "declarants",
+            "intervenants",
+            "witnesses"
+          ]
+        },
+        {
+          "id": "B",
+          "label": "Famille structurelle B",
+          "markers": [
+            "temoignages",
+            "statements",
+            "transcriptions",
+            "depositions"
+          ]
+        },
+        {
+          "id": "C",
+          "label": "Famille structurelle C",
+          "markers": [
+            "consentements",
+            "consents",
+            "custody",
+            "corroboration"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ARK-17",
+      "slug": "taxonomie-classification",
+      "name": "Taxonomy / Natural Classification",
+      "facets": [
+        {
+          "id": "A",
+          "label": "Famille structurelle A",
+          "markers": [
+            "classes",
+            "taxons",
+            "taxa",
+            "groups"
+          ]
+        },
+        {
+          "id": "B",
+          "label": "Famille structurelle B",
+          "markers": [
+            "subclasses",
+            "sous_classes",
+            "hierarchy",
+            "hierarchie"
+          ]
+        },
+        {
+          "id": "C",
+          "label": "Famille structurelle C",
+          "markers": [
+            "specimens",
+            "synonymes",
+            "classification"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ARK-18",
+      "slug": "etat-systemes",
+      "name": "System-State Matrix",
+      "facets": [
+        {
+          "id": "A",
+          "label": "Famille structurelle A",
+          "markers": [
+            "systemes",
+            "systems",
+            "components",
+            "composants"
+          ]
+        },
+        {
+          "id": "B",
+          "label": "Famille structurelle B",
+          "markers": [
+            "states",
+            "etats",
+            "dimensions",
+            "status"
+          ]
+        },
+        {
+          "id": "C",
+          "label": "Famille structurelle C",
+          "markers": [
+            "valeurs",
+            "values",
+            "observations",
+            "ecarts"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ARK-19",
+      "slug": "dossier-suivi",
+      "name": "Casefile / Follow-Up",
+      "facets": [
+        {
+          "id": "A",
+          "label": "Famille structurelle A",
+          "markers": [
+            "dossiers",
+            "cases",
+            "files"
+          ]
+        },
+        {
+          "id": "B",
+          "label": "Famille structurelle B",
+          "markers": [
+            "pieces",
+            "documents",
+            "attachments"
+          ]
+        },
+        {
+          "id": "C",
+          "label": "Famille structurelle C",
+          "markers": [
+            "actions",
+            "notes",
+            "jalons",
+            "evaluations"
+          ]
+        }
+      ]
+    }
+  ]
+}
