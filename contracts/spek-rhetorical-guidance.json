@@ -1,0 +1,217 @@
+{
+  "format": "arketype.spek-rhetorical-guidance/1.0",
+  "status": "non_normative_no_fact_selection",
+  "scope": "structural_hints_only",
+  "template_library": "spek.rhetorical-research-inventory/1.0",
+  "mappings": [
+    {
+      "arketype_slug": "carte-jalons-preuves",
+      "candidate_templates": [
+        "rhetorical.rst-evidence@1.0.0",
+        "rhetorical.toulmin-compact@1.0.0",
+        "rhetorical.pdtb-temporal-precedence@1.0.0"
+      ],
+      "selection_status": "ai_editorial_choice_required",
+      "semantic_permission": "none",
+      "note": "Suggestions structurelles, jamais assertions ni relations approuvées"
+    },
+    {
+      "arketype_slug": "compilation-collection",
+      "candidate_templates": [
+        "rhetorical.pdtb-conjunction@1.0.0",
+        "rhetorical.rst-summary@1.0.0",
+        "rhetorical.dita-reference@1.0.0"
+      ],
+      "selection_status": "ai_editorial_choice_required",
+      "semantic_permission": "none",
+      "note": "Suggestions structurelles, jamais assertions ni relations approuvées"
+    },
+    {
+      "arketype_slug": "composition-hybride",
+      "candidate_templates": [
+        "rhetorical.rst-elaboration@1.0.0",
+        "rhetorical.pdtb-conjunction@1.0.0",
+        "rhetorical.rst-summary@1.0.0"
+      ],
+      "selection_status": "ai_editorial_choice_required",
+      "semantic_permission": "none",
+      "note": "Suggestions structurelles, jamais assertions ni relations approuvées"
+    },
+    {
+      "arketype_slug": "deposition-temoignage",
+      "candidate_templates": [
+        "rhetorical.walton-position-to-know@1.0.0",
+        "rhetorical.rst-evidence@1.0.0",
+        "rhetorical.epistemic-multiple-perspectives@1.0.0"
+      ],
+      "selection_status": "ai_editorial_choice_required",
+      "semantic_permission": "none",
+      "note": "Suggestions structurelles, jamais assertions ni relations approuvées"
+    },
+    {
+      "arketype_slug": "diagnostic-causal",
+      "candidate_templates": [
+        "rhetorical.walton-cause-effect@1.0.0",
+        "rhetorical.rst-cause@1.0.0",
+        "rhetorical.dita-troubleshooting@1.0.0"
+      ],
+      "selection_status": "ai_editorial_choice_required",
+      "semantic_permission": "none",
+      "note": "Suggestions structurelles, jamais assertions ni relations approuvées"
+    },
+    {
+      "arketype_slug": "dossier-suivi",
+      "candidate_templates": [
+        "rhetorical.rst-background@1.0.0",
+        "rhetorical.rst-sequence@1.0.0",
+        "rhetorical.rst-summary@1.0.0"
+      ],
+      "selection_status": "ai_editorial_choice_required",
+      "semantic_permission": "none",
+      "note": "Suggestions structurelles, jamais assertions ni relations approuvées"
+    },
+    {
+      "arketype_slug": "etat-systemes",
+      "candidate_templates": [
+        "rhetorical.epistemic-measurement-context@1.0.0",
+        "rhetorical.rst-circumstance@1.0.0",
+        "rhetorical.rst-interpretation@1.0.0"
+      ],
+      "selection_status": "ai_editorial_choice_required",
+      "semantic_permission": "none",
+      "note": "Suggestions structurelles, jamais assertions ni relations approuvées"
+    },
+    {
+      "arketype_slug": "federation-topologie",
+      "candidate_templates": [
+        "rhetorical.pdtb-similarity@1.0.0",
+        "rhetorical.rst-contrast@1.0.0",
+        "rhetorical.rst-elaboration@1.0.0"
+      ],
+      "selection_status": "ai_editorial_choice_required",
+      "semantic_permission": "none",
+      "note": "Suggestions structurelles, jamais assertions ni relations approuvées"
+    },
+    {
+      "arketype_slug": "interpretations-couches",
+      "candidate_templates": [
+        "rhetorical.epistemic-observation-hypothesis@1.0.0",
+        "rhetorical.rst-interpretation@1.0.0",
+        "rhetorical.rst-concession@1.0.0"
+      ],
+      "selection_status": "ai_editorial_choice_required",
+      "semantic_permission": "none",
+      "note": "Suggestions structurelles, jamais assertions ni relations approuvées"
+    },
+    {
+      "arketype_slug": "invariant-theorie",
+      "candidate_templates": [
+        "rhetorical.rst-justify@1.0.0",
+        "rhetorical.toulmin-warrant-check@1.0.0",
+        "rhetorical.rst-condition@1.0.0"
+      ],
+      "selection_status": "ai_editorial_choice_required",
+      "semantic_permission": "none",
+      "note": "Suggestions structurelles, jamais assertions ni relations approuvées"
+    },
+    {
+      "arketype_slug": "memoire-recherche",
+      "candidate_templates": [
+        "rhetorical.cars-introduction@1.0.0",
+        "rhetorical.scientific-method-result@1.0.0",
+        "rhetorical.epistemic-observation-hypothesis@1.0.0"
+      ],
+      "selection_status": "ai_editorial_choice_required",
+      "semantic_permission": "none",
+      "note": "Suggestions structurelles, jamais assertions ni relations approuvées"
+    },
+    {
+      "arketype_slug": "modele-multiplexe",
+      "candidate_templates": [
+        "rhetorical.epistemic-multiple-perspectives@1.0.0",
+        "rhetorical.rst-elaboration@1.0.0",
+        "rhetorical.pdtb-similarity@1.0.0"
+      ],
+      "selection_status": "ai_editorial_choice_required",
+      "semantic_permission": "none",
+      "note": "Suggestions structurelles, jamais assertions ni relations approuvées"
+    },
+    {
+      "arketype_slug": "parcours-pedagogique",
+      "candidate_templates": [
+        "rhetorical.dita-concept@1.0.0",
+        "rhetorical.dita-task@1.0.0",
+        "rhetorical.pdtb-instantiation@1.0.0"
+      ],
+      "selection_status": "ai_editorial_choice_required",
+      "semantic_permission": "none",
+      "note": "Suggestions structurelles, jamais assertions ni relations approuvées"
+    },
+    {
+      "arketype_slug": "procedure-protocole",
+      "candidate_templates": [
+        "rhetorical.dita-task@1.0.0",
+        "rhetorical.rst-sequence@1.0.0",
+        "rhetorical.rst-condition@1.0.0"
+      ],
+      "selection_status": "ai_editorial_choice_required",
+      "semantic_permission": "none",
+      "note": "Suggestions structurelles, jamais assertions ni relations approuvées"
+    },
+    {
+      "arketype_slug": "referentiel-semantique",
+      "candidate_templates": [
+        "rhetorical.dita-concept@1.0.0",
+        "rhetorical.rst-elaboration@1.0.0",
+        "rhetorical.pdtb-level-of-detail@1.0.0"
+      ],
+      "selection_status": "ai_editorial_choice_required",
+      "semantic_permission": "none",
+      "note": "Suggestions structurelles, jamais assertions ni relations approuvées"
+    },
+    {
+      "arketype_slug": "registre-evenementiel",
+      "candidate_templates": [
+        "rhetorical.rst-sequence@1.0.0",
+        "rhetorical.pdtb-temporal-precedence@1.0.0",
+        "rhetorical.pdtb-temporal-synchronous@1.0.0"
+      ],
+      "selection_status": "ai_editorial_choice_required",
+      "semantic_permission": "none",
+      "note": "Suggestions structurelles, jamais assertions ni relations approuvées"
+    },
+    {
+      "arketype_slug": "simulation-transition",
+      "candidate_templates": [
+        "rhetorical.rst-condition@1.0.0",
+        "rhetorical.rst-result@1.0.0",
+        "rhetorical.epistemic-measurement-context@1.0.0"
+      ],
+      "selection_status": "ai_editorial_choice_required",
+      "semantic_permission": "none",
+      "note": "Suggestions structurelles, jamais assertions ni relations approuvées"
+    },
+    {
+      "arketype_slug": "taxonomie-classification",
+      "candidate_templates": [
+        "rhetorical.dita-concept@1.0.0",
+        "rhetorical.dita-reference@1.0.0",
+        "rhetorical.rst-elaboration@1.0.0"
+      ],
+      "selection_status": "ai_editorial_choice_required",
+      "semantic_permission": "none",
+      "note": "Suggestions structurelles, jamais assertions ni relations approuvées"
+    },
+    {
+      "arketype_slug": "univers-oeuvres-medias",
+      "candidate_templates": [
+        "rhetorical.rst-background@1.0.0",
+        "rhetorical.rst-elaboration@1.0.0",
+        "rhetorical.pdtb-level-of-detail@1.0.0"
+      ],
+      "selection_status": "ai_editorial_choice_required",
+      "semantic_permission": "none",
+      "note": "Suggestions structurelles, jamais assertions ni relations approuvées"
+    }
+  ]
+}
