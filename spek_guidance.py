@@ -10,7 +10,10 @@ class GuidanceError(ValueError): pass
 
 
 def validate(*, spek_inventory: Path | None = None):
-    data=json.loads((ROOT/'contracts/spek-rhetorical-guidance.json').read_text(encoding='utf-8'))
+    contract=ROOT/'contracts/spek-rhetorical-guidance.json'
+    if contract.is_symlink() or not contract.is_file():
+        raise GuidanceError('Contrat Arketype absent ou symbolique')
+    data=json.loads(contract.read_text(encoding='utf-8'))
     if (data.get('format')!=FORMAT or data.get('status')!='non_normative_no_fact_selection' or
         data.get('scope')!='structural_hints_only' or not isinstance(data.get('mappings'),list)):
         raise GuidanceError('Contrat de suggestions Arketype invalide')
@@ -27,7 +30,10 @@ def validate(*, spek_inventory: Path | None = None):
     if seen != known:
         raise GuidanceError('L’inventaire Arketype n’est pas intégralement couvert')
     if spek_inventory is not None:
-        other=json.loads(Path(spek_inventory).read_text(encoding='utf-8'))
+        inventory_path=Path(spek_inventory)
+        if inventory_path.is_symlink() or not inventory_path.is_file():
+            raise GuidanceError('Inventaire Spek absent ou symbolique')
+        other=json.loads(inventory_path.read_text(encoding='utf-8'))
         if other.get('format')!='spek.rhetorical-research-inventory/1.0':
             raise GuidanceError('Inventaire rhétorique Spek incompatible')
         available={p['template_ref'] for p in other.get('patterns',[]) if isinstance(p,dict)}

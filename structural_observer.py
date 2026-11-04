@@ -25,9 +25,12 @@ def normalized(value):
 
 
 def read_profiles(arketype_root=None):
-    root = Path(arketype_root) if arketype_root is not None else Path(__file__).resolve().parent.parent
-    location = root / 'arketype' / 'contracts' / 'structural-profiles.json'
-    if not location.is_file():
+    root = Path(arketype_root) if arketype_root is not None else Path(__file__).resolve().parent
+    location = root / 'contracts' / 'structural-profiles.json'
+    if not location.is_file() and arketype_root is not None:
+        # Legacy callers may pass the parent directory of the checkout.
+        location = root / 'arketype' / 'contracts' / 'structural-profiles.json'
+    if location.is_symlink() or not location.is_file():
         raise FileNotFoundError(f'Catalogue de profils ARK introuvable : {location}')
     obj = json.loads(location.read_text(encoding='utf-8'))
     if obj.get('format') != 'arketype.structural-profiles/0.1':
