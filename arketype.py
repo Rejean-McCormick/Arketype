@@ -159,8 +159,17 @@ def plan_for(primary: str, recipe: str | None = None, additions: list[str] | Non
 def create(type_slug: str, slug: str, title: str, parent: str | Path,
            recipe: str | None = None, additions: list[str] | None = None,
            dry_run: bool = False, usage_profile: str | None = None,
-           authoring: str = "legacy") -> Path | dict:
+           authoring: str = "legacy", external_kit: str | Path | None = None,
+           framework: str | Path | None = None) -> Path | dict:
     a = archetype(type_slug)
+    if (external_kit is None) != (framework is None):
+        raise ValueError('Both external Kit and Framework must be explicitly supplied together.')
+    if external_kit is not None and authoring != 'v11':
+        raise ValueError('External Kit selection is only supported for opt-in v11 authoring.')
+    external = None
+    if external_kit is not None:
+        from arketype_external_kit import preflight_external_v11_kit
+        external = preflight_external_v11_kit(external_kit, framework)
     if authoring not in ('legacy', 'v11'):
         raise ValueError('Supported authoring modes: legacy, v11.')
     if not VALID_SLUG.fullmatch(slug or '') or len(slug) > 80:
@@ -185,9 +194,12 @@ def create(type_slug: str, slug: str, title: str, parent: str | Path,
     if dry_run:
         return {'destination': str(destination), 'archetype': a['id'], 'title':title.strip(),
                 'plan':plan,'usage_profile':usage_profile,'authoring_mode':authoring,
-                'strict_v11_enabled':False,'will_write':False}
-    tool = (ROOT / 'outils/authoring_v11/tools/kristal.py' if authoring == 'v11'
-            else ROOT / 'outils/kristal.py')
+                'strict_v11_enabled':False,'will_write':False,
+                'selected_kit_version':external['kit_version'] if external else ('4.0.0-draft.3' if authoring=='v11' else '3.2.4')}
+    tool = (Path(external['script']) if external else
+            (ROOT / 'outils/authoring_v11/tools/kristal.py' if authoring == 'v11'
+             else ROOT / 'outils/kristal.py'))
+    selected_kit_version = external['kit_version'] if external else ('4.0.0-draft.3' if authoring == 'v11' else '3.2.4')
     model = ROOT / a['template_path']
     if not tool.is_file() or not model.is_dir():
         raise FileNotFoundError('Bundled Authoring Kit or archetype template is missing from this Arketype archive.')
@@ -225,7 +237,8 @@ def create(type_slug: str, slug: str, title: str, parent: str | Path,
              'use_case_profile':usage_profile,
              'assembly_recipe':recipe,'additional_archetypes':[p['archetype'] for p in plan['components']],
              'state_ref_at_initialization':ws['state_ref'],
-             'authoring_kit_reference':'4.0.0-draft.3' if authoring == 'v11' else '3.2.4',
+             'authoring_kit_reference':selected_kit_version,
+             'externally_verified_framework_pin':bool(external),
              'v11_readiness':'identity_registry_and_graph_not_created' if authoring == 'v11' else 'legacy_template',
              'status':'stub_no_domain_assertions','published':False,
              'authorized_for_publication':False
@@ -238,7 +251,7 @@ def create(type_slug: str, slug: str, title: str, parent: str | Path,
             note.write_text(json.dumps({
                 'format':'arketype.v11-readiness/1.0-non-canonical',
                 'framework_baseline':'11.0.0-draft.4',
-                'authoring_kit_baseline':'4.0.0-draft.3',
+                'authoring_kit_baseline':selected_kit_version,
                 'state':'pending_identity_allocation_and_review',
                 'strict_v11_enabled':False,
                 'no_provisional_wikidata_qids':True,
@@ -444,6 +457,8 @@ def main(argv: list[str] | None = None) -> int:
         p.add_argument('--parent',required=True,help='Existing parent directory for new workspace')
         p.add_argument('--dry-run',action='store_true',help='Preview without writing')
         p.add_argument('--authoring', choices=['legacy','v11'], default='legacy', help='v11: new blank Kit 4 draft workspace + KQ/KP readiness guidance; does NOT mint IDs or enable strict v11')
+        p.add_argument('--external-kit',help='Explicit external Kit 4.0.0-draft.4 for v11; requires --framework; never rewrites historical templates')
+        p.add_argument('--framework',help='Local Framework 11.0.0-draft.4 source; all 13 exact Kit pin digests must match')
     s = commands.add_parser('semantic-status',help='Read-only v11 readiness from local workspace metadata; never claims domain qualification')
     s.add_argument('--path',required=True)
     s = commands.add_parser('dik-coverage',help='Run the explicitly selected local diK CLI in read-only coverage mode')
@@ -502,7 +517,7 @@ def main(argv: list[str] | None = None) -> int:
             if not typ:parser.error('Provide --type, --recipe or --profile.')
             if args.command=='compose' and not (args.recipe or args.additions or args.profile):
                 parser.error('compose requires --recipe or at least one --with.')
-            result=create(typ,args.slug,args.title,args.parent,args.recipe,args.additions,args.dry_run,args.profile,args.authoring)
+            result=create(typ,args.slug,args.title,args.parent,args.recipe,args.additions,args.dry_run,args.profile,args.authoring,args.external_kit,args.framework)
             if isinstance(result,dict):print(json.dumps(result,ensure_ascii=False,indent=2))
             else:print('Neutral Arketype workspace created and checked : '+str(result))
         return 0

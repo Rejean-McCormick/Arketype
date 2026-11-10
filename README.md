@@ -146,3 +146,7 @@ The 19 historical template workspaces and legacy creation mode are designed to u
 ## GitHub Wiki publishing
 
 The `wiki/` folder is **ready-to-publish Wiki content**, but GitHub stores a repository Wiki in a **separate Git repository**. Committing this folder to the main Arketype repository does **not** publish the Wiki automatically. Follow [Publishing the Wiki](wiki/Publishing-the-Wiki.md) after enabling the Wiki on the intended GitHub repository; no remote publication is performed by this archive.
+
+## Branch 02 final-system alignment (2026-11-09)
+
+See [the English functional handoff and qualification limits](docs/17_BRANCH02_EXTERNAL_DRAFT4.md). This is an additive, owner-scoped alignment; no canonical state, public release or production deployment is implied.
