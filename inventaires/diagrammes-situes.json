@@ -2223,6 +2223,73 @@
           "to": "n5"
         }
       ]
+    },
+    {
+      "kind": "profile",
+      "slug": "situation-pedagogique-orchestrable",
+      "pattern": "network",
+      "status": "illustration_non_canonique",
+      "caption": "Design-only situation composition: references, not ownership, of exercises and context; planning and access remain external. No classroom deployment implied.",
+      "nodes": [
+        {
+          "id": "s",
+          "label": "Situation blueprint",
+          "x": 330,
+          "y": 110
+        },
+        {
+          "id": "o",
+          "label": "Learning objectives",
+          "x": 90,
+          "y": 35
+        },
+        {
+          "id": "a",
+          "label": "Activity catalogue",
+          "x": 90,
+          "y": 190
+        },
+        {
+          "id": "c",
+          "label": "Context sources",
+          "x": 550,
+          "y": 35
+        },
+        {
+          "id": "g",
+          "label": "Group rules",
+          "x": 550,
+          "y": 190
+        },
+        {
+          "id": "p",
+          "label": "Derived plan",
+          "x": 330,
+          "y": 250
+        }
+      ],
+      "edges": [
+        {
+          "from": "s",
+          "to": "o"
+        },
+        {
+          "from": "s",
+          "to": "a"
+        },
+        {
+          "from": "s",
+          "to": "c"
+        },
+        {
+          "from": "s",
+          "to": "g"
+        },
+        {
+          "from": "s",
+          "to": "p"
+        }
+      ]
     }
   ],
   "language": "en"

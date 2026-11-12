@@ -1830,6 +1830,138 @@
       },
       "profile_status": "design_guidance_only",
       "source_basis": "examples_and_library_inference"
+    },
+    {
+      "id": "PRF-22",
+      "slug": "situation-pedagogique-orchestrable",
+      "name": "Orchestrable Learning Situation",
+      "summary": "Compose a situated learning challenge from independently owned activity, knowledge, context and collaboration references, then derive teacher-reviewed plans for varying group sizes.",
+      "primary_archetype": "composition-hybride",
+      "supporting_archetypes": [
+        "parcours-pedagogique",
+        "referentiel-semantique",
+        "univers-oeuvres-medias",
+        "modele-multiplexe",
+        "simulation-transition",
+        "registre-evenementiel"
+      ],
+      "visual_pattern": "network",
+      "secondary_patterns": [
+        "branching",
+        "multilayer"
+      ],
+      "situational_schema": "Situation blueprint references independent activity and objective catalogues, a cultural/historical/fictional context, role and dependency graphs, and organization rules; execution and student evidence are external.",
+      "use_cases": [
+        "reusable pedagogical situation",
+        "narrative classroom mission",
+        "solo or collaborative classroom workshop"
+      ],
+      "inputs": [
+        "versioned learning-objective references",
+        "versioned activity references",
+        "context references and provenance",
+        "collaboration templates",
+        "resource/capacity constraints",
+        "teacher review"
+      ],
+      "outputs": [
+        "design-only situation blueprint",
+        "derived organization candidates",
+        "review checklist and export proposal"
+      ],
+      "boundaries": [
+        "No canonical ownership of external learning objects or cultural claims",
+        "No inferred equivalence of exercises after contextualization",
+        "No student identity, enrolment, real-world permissions or scores",
+        "A blueprint is not a deployed Orgo World or an authorized Konnaxion project",
+        "Teachers approve cultural and pedagogical adaptations and the final session plan"
+      ],
+      "assemblage_reference": "situation-pedagogique-orchestrable",
+      "usage_family": "learning",
+      "domain": "education",
+      "integration_targets": [
+        "Ekole",
+        "Kontexte",
+        "Kompose",
+        "Orgo",
+        "Konnaxion",
+        "Kor",
+        "Kamel"
+      ],
+      "coverage_checks": [
+        {
+          "id": "chk-01",
+          "label": "Learning target and exercise provenance",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-02",
+          "label": "Context claims and cultural appropriateness",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-03",
+          "label": "Pedagogical validity of contextualization",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-04",
+          "label": "Solo and multi-team fallback behavior",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-05",
+          "label": "Roles, dependencies and resource capacities",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-06",
+          "label": "Traceability of revised teacher decisions",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-07",
+          "label": "School permissions and participant privacy boundary",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        },
+        {
+          "id": "chk-08",
+          "label": "No publication or activation authorization inferred",
+          "evaluation": "manual_evidence_required",
+          "status": "not_evaluated"
+        }
+      ],
+      "scope_guidance": {
+        "purpose": "Describe a reusable pedagogical situation and its admissible organizational variations without executing it.",
+        "include_candidates": [
+          "learning refs",
+          "exercise refs",
+          "context source refs",
+          "roles",
+          "dependencies",
+          "adaptation constraints",
+          "teacher review needs"
+        ],
+        "exclude_candidates": [
+          "private learner data",
+          "authentication tokens",
+          "scores",
+          "live classroom decisions",
+          "unqualified cultural claims",
+          "runtime execution instructions"
+        ],
+        "operational_authority": "external_required",
+        "unverified_by_default": true
+      },
+      "profile_status": "design_guidance_only",
+      "source_basis": "user_goal_and_arketype_1.6.0_snapshot_review"
     }
   ],
   "language": "en"

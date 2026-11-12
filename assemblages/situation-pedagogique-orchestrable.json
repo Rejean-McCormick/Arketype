@@ -1,0 +1,50 @@
+{
+  "format": "arketype.assembly-recipe/1.0-non-normatif",
+  "id": "situation-pedagogique-orchestrable",
+  "title": "Orchestrable pedagogical situation (design-only)",
+  "primary_archetype": "composition-hybride",
+  "components": [
+    {
+      "archetype": "parcours-pedagogique",
+      "relation": "reference_externe",
+      "design_note": "Versioned learning activity dependency graph; preserve the original activity owner.",
+      "status": "unresolved"
+    },
+    {
+      "archetype": "referentiel-semantique",
+      "relation": "reference_externe",
+      "design_note": "Learning objectives, exercise repository, criteria and cultural sources remain external.",
+      "status": "unresolved"
+    },
+    {
+      "archetype": "univers-oeuvres-medias",
+      "relation": "reference_externe",
+      "design_note": "Optional fictional/narrative setting and its provenance; keep fiction distinct from documented facts.",
+      "status": "unresolved"
+    },
+    {
+      "archetype": "modele-multiplexe",
+      "relation": "sous_modele_candidate",
+      "design_note": "Pedagogical roles, team interactions and resource links, not actual identity or access rights.",
+      "status": "unresolved"
+    },
+    {
+      "archetype": "simulation-transition",
+      "relation": "projection_derivee",
+      "design_note": "Derived solo/8/30 learner what-if plans; never promote simulation to operational execution.",
+      "status": "unresolved"
+    },
+    {
+      "archetype": "registre-evenementiel",
+      "relation": "reference_externe",
+      "design_note": "External teacher-reviewed session evidence/audit; never fold learner records into the public blueprint.",
+      "status": "unresolved"
+    }
+  ],
+  "guidance": "Design-only assembly. All external references must be resolved and pinned by their owners prior to qualified use. The situation is not a live session, school admission, evaluation, or access grant.",
+  "composition_status": "design_only",
+  "logical_contract": "to_define",
+  "source_references": "to_pin_on_real_instance",
+  "authoritative_ownership": "to_decide",
+  "publication_authorization": false
+}
