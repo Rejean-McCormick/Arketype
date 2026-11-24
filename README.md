@@ -5,6 +5,8 @@
 
 > **Code snapshot verification (2026-10-27):** The supplied source snapshot does not include the application logo assets or 19 historical `build/v9` receipts, and contains an extra deposition form in `modeles/dossier-suivi`. Re-running the tests on that snapshot produced **78 tests: 67 passed, 6 failed, 3 errors, 2 skipped**; `validate --check-kit` fails. This does not prove the author's complete local repository is missing those files, because the snapshot may omit generated assets. See [snapshot verification details](docs/SNAPSHOT_VERIFICATION_2026-10-27.md). Do not use the older release validation report as proof of this specific snapshot's current test result.
 
+> **Recheck of the 2026-11-23 18:20 SmartDump:** The `modeles/dossier-suivi/design/` directory contains `structure-candidate.json` and `fiche-suivi-vierge.json`; the additional deposition form described in the **2026-10-27** observation is **not present in this new capture**. The historical 78-test tally is **not** a November test result. This new capture still does not include the application logo assets or generated v9 receipts, so full desktop/release validation is not established from the ZIP alone. Absence from SmartDump does not prove absence from a complete local checkout.
+
 Arketype helps you explore, compare, and instantiate different structural forms of Kristals. It provides neutral workspace templates, documented archetypes, illustrative composition plans, a visual HTML catalogue, and local creation tools. Its diagrams explain *how a knowledge structure is organized*; they do not certify claims, establish domain standards, or authorize operational actions.
 
 | Included | Count | What it means |
@@ -19,7 +21,7 @@ Arketype helps you explore, compare, and instantiate different structural forms 
 ## Described in the 1.6.0 release: logo and ecosystem alignment
 
 - The release notes describe an unchanged user-supplied SVG logo (`assets/logo-k.svg`) and its Tkinter PNG derivative (`assets/logo-k-ui.png`). **Neither application asset is present in the supplied snapshot**. The separate Wiki copy does contain the SVG; do not assume the GUI assets are installed until checked locally.
-- The 1.6.0 historical validation describes regenerated v9 receipts and separated casefile/deposition forms. **The supplied snapshot omits the receipts and retains an extra deposition form in `dossier-suivi`**. Confirm those packaging fixes in a complete checkout before claiming a passing validation.
+- The 1.6.0 historical validation describes regenerated v9 receipts and separated casefile/deposition forms. **The 2026-10-27 capture omitted the receipts and retained an extra deposition form in `dossier-suivi`; the 2026-11-23 capture still omits the receipts but no longer contains that additional form at the same location**. Confirm those packaging fixes in a complete checkout before claiming a passing validation.
 - Updated the opt-in v11 Authoring Kit to **4.0.0-draft.3** (selectively pinned vendor files), design baseline to **Framework 11.0.0-draft.4**, and external read-only diK baseline to **alpha.7**.
 - See [the upgrade notes](docs/15_MISE_A_JOUR_ARKETYPE_160.md) and [the validation report](VALIDATION_160.md).
 
