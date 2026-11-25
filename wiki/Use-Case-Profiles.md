@@ -1,6 +1,6 @@
 # Use-Case Profiles
 
-Arketype includes **21 situated profiles**. Each links a primary archetype to optional supporting forms and a design-only assembly. Their examples below are fictitious and explain structure; they are not sample canonical domain records.
+Arketype includes **22 situated profiles**. Each links a primary archetype to optional supporting forms and a design-only assembly. Their examples below are fictitious and explain structure; they are not sample canonical domain records.
 
 | Profile | Usage · domain | Primary archetype | Assembly |
 | --- | --- | --- | --- |
@@ -25,6 +25,7 @@ Arketype includes **21 situated profiles**. Each links a primary archetype to op
 | `cartographie-scolaire` — School System and Rules Mapping | modeling · education | `modele-multiplexe` | `systeme-scolaire` |
 | `referentiel-polyusage` — Multi-Purpose Semantic Reference | knowledge · cross-domain | `referentiel-semantique` | `ekole-multiusage` |
 | `temoignages-enquete` — Attributed Testimony and Inquiry | evidence · civic | `deposition-temoignage` | `dossier-depositions` |
+| `situation-pedagogique-orchestrable` — Orchestrable Learning Situation | learning · education | `composition-hybride` | `situation-pedagogique-orchestrable` |
 
 ## System Troubleshooting
 

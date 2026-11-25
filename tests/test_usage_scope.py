@@ -13,7 +13,7 @@ from use_cases import inspect_local, recognize, scope_guidance
 class UsageProfilesTests(unittest.TestCase):
     def test_all_profiles_have_coverage_not_evaluated(self):
         ps=arketype.use_case_profiles()
-        self.assertEqual(len(ps), 21)
+        self.assertEqual(len(ps), 22)
         self.assertEqual(len({p['slug'] for p in ps}),len(ps))
         for p in ps:
             self.assertTrue(p['coverage_checks'])

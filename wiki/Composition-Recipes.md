@@ -1,6 +1,6 @@
 # Composition Recipes
 
-The library contains **23 noncanonical composition recipes** under `assemblages/`. They describe how multiple archetype responsibilities **might** be related. They do not implement cross-state merging, data transport, validation, activation or publication.
+The library contains **24 noncanonical composition recipes** under `assemblages/`. They describe how multiple archetype responsibilities **might** be related. They do not implement cross-state merging, data transport, validation, activation or publication.
 
 | Recipe ID | English scenario | Primary archetype | Proposed supporting archetypes |
 | --- | --- | --- | --- |
@@ -21,6 +21,7 @@ The library contains **23 noncanonical composition recipes** under `assemblages/
 | `organisations-contextuelles` | Situated Human Organizations | `modele-multiplexe` | `registre-evenementiel`, `referentiel-semantique` |
 | `parcours-moodle` | Moodle Learning Path Export Design | `parcours-pedagogique` | `federation-topologie` |
 | `recherche-mathematique` | Mathematical Research Workflow | `memoire-recherche` | `carte-jalons-preuves`, `invariant-theorie` |
+| `situation-pedagogique-orchestrable` | Orchestrable pedagogical situation (design-only) | `composition-hybride` | `parcours-pedagogique`, `referentiel-semantique`, `univers-oeuvres-medias`, `modele-multiplexe`, `simulation-transition`, `registre-evenementiel` |
 | `suivi-employe` | Employee Follow-Up Casefile | `dossier-suivi` | `registre-evenementiel`, `deposition-temoignage` |
 | `systeme-scolaire` | Education System Mapping | `modele-multiplexe` | `referentiel-semantique`, `parcours-pedagogique` |
 | `taxonomie-nature` | Nature Taxonomy | `taxonomie-classification` | `referentiel-semantique` |
